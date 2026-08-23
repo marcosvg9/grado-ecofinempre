@@ -1,0 +1,127 @@
+/* Registro de fichas escritas.
+
+   Las fichas se cargan bajo demanda (import dinamico): al abrir el plan solo
+   se descarga el temario, y el contenido de cada ficha llega cuando se entra
+   en ella. Asi el paquete no crece con el numero de fichas.
+
+   Para anadir una ficha nueva: crear el archivo y anadir UNA linea aqui. */
+
+const CARGADORES = {
+  "1.01": () => import("./f1-01.js"),
+  "1.02": () => import("./f1-02.js"),
+  "1.03": () => import("./f1-03.js"),
+  "1.04": () => import("./f1-04.js"),
+  "1.05": () => import("./f1-05.js"),
+  "1.06": () => import("./f1-06.js"),
+  "1.07": () => import("./f1-07.js"),
+  "1.08": () => import("./f1-08.js"),
+  "1.09": () => import("./f1-09.js"),
+  "1.10": () => import("./f1-10.js"),
+  "2.01": () => import("./f2-01.js"),
+  "2.02": () => import("./f2-02.js"),
+  "2.03": () => import("./f2-03.js"),
+  "2.04": () => import("./f2-04.js"),
+  "2.05": () => import("./f2-05.js"),
+  "2.06": () => import("./f2-06.js"),
+  "2.07": () => import("./f2-07.js"),
+  "2.08": () => import("./f2-08.js"),
+  "2.09": () => import("./f2-09.js"),
+  "2.10": () => import("./f2-10.js"),
+  "3.01": () => import("./f3-01.js"),
+  "3.02": () => import("./f3-02.js"),
+  "3.03": () => import("./f3-03.js"),
+  "3.04": () => import("./f3-04.js"),
+  "3.05": () => import("./f3-05.js"),
+  "3.06": () => import("./f3-06.js"),
+  "3.07": () => import("./f3-07.js"),
+  "3.08": () => import("./f3-08.js"),
+  "3.09": () => import("./f3-09.js"),
+  "3.10": () => import("./f3-10.js"),
+  "4.01": () => import("./f4-01.js"),
+  "4.02": () => import("./f4-02.js"),
+  "4.03": () => import("./f4-03.js"),
+  "4.04": () => import("./f4-04.js"),
+  "4.05": () => import("./f4-05.js"),
+  "4.06": () => import("./f4-06.js"),
+  "4.07": () => import("./f4-07.js"),
+  "4.08": () => import("./f4-08.js"),
+  "4.09": () => import("./f4-09.js"),
+  "4.10": () => import("./f4-10.js"),
+  "5.01": () => import("./f5-01.js"),
+  "5.02": () => import("./f5-02.js"),
+  "5.03": () => import("./f5-03.js"),
+  "5.04": () => import("./f5-04.js"),
+  "5.05": () => import("./f5-05.js"),
+  "5.06": () => import("./f5-06.js"),
+  "5.07": () => import("./f5-07.js"),
+  "5.08": () => import("./f5-08.js"),
+  "5.09": () => import("./f5-09.js"),
+  "5.10": () => import("./f5-10.js"),
+  "6.01": () => import("./f6-01.js"),
+  "6.02": () => import("./f6-02.js"),
+  "6.03": () => import("./f6-03.js"),
+  "6.04": () => import("./f6-04.js"),
+  "6.05": () => import("./f6-05.js"),
+  "6.06": () => import("./f6-06.js"),
+  "6.07": () => import("./f6-07.js"),
+  "6.08": () => import("./f6-08.js"),
+  "6.09": () => import("./f6-09.js"),
+  "6.10": () => import("./f6-10.js"),
+  "7.01": () => import("./f7-01.js"),
+  "7.02": () => import("./f7-02.js"),
+  "7.03": () => import("./f7-03.js"),
+  "7.04": () => import("./f7-04.js"),
+  "7.05": () => import("./f7-05.js"),
+  "7.06": () => import("./f7-06.js"),
+  "7.07": () => import("./f7-07.js"),
+  "7.08": () => import("./f7-08.js"),
+  "7.09": () => import("./f7-09.js"),
+  "7.10": () => import("./f7-10.js"),
+  "8.01": () => import("./f8-01.js"),
+  "8.02": () => import("./f8-02.js"),
+  "8.03": () => import("./f8-03.js"),
+  "8.04": () => import("./f8-04.js"),
+  "8.05": () => import("./f8-05.js"),
+  "8.06": () => import("./f8-06.js"),
+  "8.07": () => import("./f8-07.js"),
+  "8.08": () => import("./f8-08.js"),
+  "8.09": () => import("./f8-09.js"),
+  "8.10": () => import("./f8-10.js"),
+  "9.01": () => import("./f9-01.js"),
+  "9.02": () => import("./f9-02.js"),
+  "9.03": () => import("./f9-03.js"),
+  "9.04": () => import("./f9-04.js"),
+  "9.05": () => import("./f9-05.js"),
+  "9.06": () => import("./f9-06.js"),
+  "9.07": () => import("./f9-07.js"),
+  "9.08": () => import("./f9-08.js"),
+  "9.09": () => import("./f9-09.js"),
+  "9.10": () => import("./f9-10.js"),
+  "10.01": () => import("./f10-01.js"),
+  "10.02": () => import("./f10-02.js"),
+  "10.03": () => import("./f10-03.js"),
+  "10.04": () => import("./f10-04.js"),
+  "10.05": () => import("./f10-05.js"),
+  "10.06": () => import("./f10-06.js"),
+  "10.07": () => import("./f10-07.js"),
+  "10.08": () => import("./f10-08.js"),
+  "10.09": () => import("./f10-09.js"),
+  "10.10": () => import("./f10-10.js"),
+};
+
+/* Codigos con ficha escrita. El plan lo usa para pintar la etiqueta «Ficha»
+   sin necesidad de cargar ningun contenido. */
+const CODIGOS = Object.keys(CARGADORES);
+export const CODIGOS_CON_FICHA = new Set(CODIGOS);
+
+export const FICHAS = CODIGOS.reduce((acc, codigo) => {
+  acc[codigo] = true;
+  return acc;
+}, {});
+
+export async function cargarFicha(codigo) {
+  const cargador = CARGADORES[codigo];
+  if (!cargador) return null;
+  const modulo = await cargador();
+  return modulo.default;
+}
