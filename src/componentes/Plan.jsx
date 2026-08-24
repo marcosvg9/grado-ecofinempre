@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from "react";
 import { BLOQUES, TEMAS, NIVELES } from "../datos/temario.js";
 import { FICHAS } from "../datos/fichas/index.js";
+import { resumen, hoyISO } from "../repaso.js";
 
 function FilaTema({ tema, estudiado, abrir, mostrarBloque }) {
   const tieneFicha = !!FICHAS[tema.codigo];
@@ -22,7 +23,35 @@ function FilaTema({ tema, estudiado, abrir, mostrarBloque }) {
   );
 }
 
-export default function Plan({ estudiados, alternar, irAFicha, reiniciar, exportar }) {
+function TarjetaRepaso({ preguntas, repaso, estudiados, irARepaso }) {
+  const r = useMemo(() => resumen(preguntas, repaso, estudiados, hoyISO()), [preguntas, repaso, estudiados]);
+  const hayAlgo = r.vencidas > 0 || r.nuevas > 0;
+
+  return (
+    <div className="tarjetaRepaso" data-activa={hayAlgo ? "true" : undefined}>
+      <div className="repasoCifra">
+        <strong>{r.vencidas + Math.min(r.nuevas, 10)}</strong>
+        <span>preguntas hoy</span>
+      </div>
+      <p className="repasoDetalle">
+        {r.vencidas > 0 && <>{r.vencidas} de repaso</>}
+        {r.vencidas > 0 && r.nuevas > 0 && " · "}
+        {r.nuevas > 0 && <>{r.nuevas} sin estrenar</>}
+        {!hayAlgo && "Nada vencido. Marca fichas como estudiadas para alimentar la cola."}
+        {r.enCurso > 0 && (
+          <span className="repasoDetalle2">
+            {r.enCurso} de {r.total} preguntas en circulación · {r.dominadas} asentadas
+          </span>
+        )}
+      </p>
+      <button className="boton" data-secundario={hayAlgo ? undefined : "true"} onClick={irARepaso} disabled={!hayAlgo}>
+        {hayAlgo ? "Empezar repaso" : "Sin repaso pendiente"}
+      </button>
+    </div>
+  );
+}
+
+export default function Plan({ estudiados, alternar, irAFicha, reiniciar, exportar, preguntas, repaso, irARepaso }) {
   const [vista, setVista] = useState("bloques");
   const [busqueda, setBusqueda] = useState("");
   const [filtroNivel, setFiltroNivel] = useState(0);
@@ -60,7 +89,7 @@ export default function Plan({ estudiados, alternar, irAFicha, reiniciar, export
 
   return (
     <div className="envoltorio">
-      <p className="eyebrow">Cien temas · Diez bloques · Cuatro niveles</p>
+      <p className="eyebrow">{total} temas · {BLOQUES.length} bloques · Cuatro niveles</p>
       <h1 className="titular">
         Economía, Finanzas,
         <br />
@@ -93,6 +122,8 @@ export default function Plan({ estudiados, alternar, irAFicha, reiniciar, export
           </div>
         ))}
       </div>
+
+      {preguntas && <TarjetaRepaso preguntas={preguntas} repaso={repaso} estudiados={estudiados} irARepaso={irARepaso} />}
 
       <div className="barraProgreso">
         <span className="cuenta">

@@ -6,10 +6,11 @@ const CLAVE = "grado-autodidacta:v1";
 export function leerProgreso() {
   try {
     const bruto = localStorage.getItem(CLAVE);
-    return bruto ? JSON.parse(bruto) : { estudiados: {}, notas: {} };
+    const base = { estudiados: {}, notas: {}, repaso: {} };
+    return bruto ? { ...base, ...JSON.parse(bruto) } : base;
   } catch (e) {
     // Modo privado o almacenamiento deshabilitado: se sigue en memoria.
-    return { estudiados: {}, notas: {} };
+    return { estudiados: {}, notas: {}, repaso: {} };
   }
 }
 

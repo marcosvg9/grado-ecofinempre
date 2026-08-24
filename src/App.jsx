@@ -1,14 +1,17 @@
 import React, { useState, useEffect, useCallback } from "react";
 import Plan from "./componentes/Plan.jsx";
 import Ficha from "./componentes/Ficha.jsx";
+import Repaso from "./componentes/Repaso.jsx";
 import { FICHAS, cargarFicha } from "./datos/fichas/index.js";
 import { TEMAS } from "./datos/temario.js";
 import { leerProgreso, guardarProgreso, exportarProgreso } from "./almacen.js";
+import { programar, hoyISO, contarVencidas } from "./repaso.js";
 
 /* Enrutado por hash, sin dependencias: #/ para el plan, #/ficha/5.02 para una ficha. */
 function rutaActual() {
   const h = window.location.hash.replace(/^#\/?/, "");
   if (h.startsWith("ficha/")) return { vista: "ficha", codigo: h.slice(6) };
+  if (h === "repaso") return { vista: "repaso" };
   return { vista: "plan" };
 }
 
@@ -17,6 +20,15 @@ export default function App() {
   const [estado, setEstado] = useState(() => leerProgreso());
   const [ficha, setFicha] = useState(null);
   const [cargando, setCargando] = useState(false);
+  const [preguntas, setPreguntas] = useState(null);
+
+  /* El índice de preguntas pesa bastante y no hace falta para leer fichas:
+     se trae en un chunk aparte cuando el navegador ya ha pintado. */
+  useEffect(() => {
+    let vivo = true;
+    import("./datos/preguntas.js").then((m) => vivo && setPreguntas(m.default));
+    return () => { vivo = false; };
+  }, []);
 
   useEffect(() => {
     const onHash = () => {
@@ -52,12 +64,23 @@ export default function App() {
     });
   }, []);
 
+  const calificar = useCallback((id, acierto) => {
+    const hoy = hoyISO();
+    setEstado((prev) => ({
+      ...prev,
+      repaso: { ...prev.repaso, [id]: programar(prev.repaso[id], acierto, hoy) },
+    }));
+  }, []);
+
   const irAFicha = (codigo) => { window.location.hash = `#/ficha/${codigo}`; };
+  const irARepaso = () => { window.location.hash = "#/repaso"; };
   const volver = () => { window.location.hash = "#/"; };
 
   const siguiente = ficha
     ? TEMAS[TEMAS.findIndex((t) => t.codigo === ficha.codigo) + 1] || null
     : null;
+
+  const vencidas = contarVencidas(estado.repaso, hoyISO());
 
   return (
     <>
@@ -66,6 +89,10 @@ export default function App() {
           <span className="marca">Grado autodidacta</span>
           <button className="navEnlace" data-activo={ruta.vista === "plan"} onClick={volver}>
             Plan
+          </button>
+          <button className="navEnlace" data-activo={ruta.vista === "repaso"} onClick={irARepaso}>
+            Repaso
+            {vencidas > 0 && <i className="insigniaNav">{vencidas}</i>}
           </button>
           <span className="navDerecha">
             <span className="navEnlace" style={{ cursor: "default" }}>
@@ -80,10 +107,29 @@ export default function App() {
           estudiados={estado.estudiados}
           alternar={alternar}
           irAFicha={irAFicha}
-          reiniciar={() => setEstado({ estudiados: {}, notas: {} })}
+          reiniciar={() => setEstado({ estudiados: {}, notas: {}, repaso: {} })}
           exportar={() => exportarProgreso(estado)}
+          preguntas={preguntas}
+          repaso={estado.repaso}
+          irARepaso={irARepaso}
         />
       )}
+
+      {ruta.vista === "repaso" &&
+        (preguntas ? (
+          <Repaso
+            preguntas={preguntas}
+            repaso={estado.repaso}
+            estudiados={estado.estudiados}
+            calificar={calificar}
+            volver={volver}
+            irAFicha={irAFicha}
+          />
+        ) : (
+          <div className="envoltorio estrecho">
+            <p className="vacio">Cargando preguntas…</p>
+          </div>
+        ))}
 
       {ruta.vista === "ficha" &&
         (ficha ? (

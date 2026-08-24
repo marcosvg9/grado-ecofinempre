@@ -1,4 +1,4 @@
-/* Los 100 temas del plan: 10 bloques x 10 temas.
+/* El temario del plan, en bloques de diez temas.
    n = nivel (1 fundamentos, 2 nucleo, 3 avanzado, 4 especializacion). */
 
 export const NIVELES = {
@@ -177,6 +177,40 @@ export const BLOQUES = [
       { t: "Índices encadenados, precios del año anterior y volumen", n: 4, k: "El encadenamiento sacrifica la aditividad a cambio de ponderaciones actualizadas. No hay solución sin coste.", b: "Lequiller y Blades, Understanding National Accounts" },
       { t: "Coste laboral unitario, productividad y competitividad", n: 4, k: "El CLU relaciona remuneración por asalariado con productividad. Su evolución explica los ajustes de precios relativos.", b: "Eurostat, metodología de cuentas nacionales" },
       { t: "Cuentas trimestrales, revisiones y datos en tiempo real", n: 4, k: "El primer dato publicado y el definitivo pueden contar historias distintas del mismo trimestre.", b: "Manual de cuentas trimestrales de Eurostat" },
+    ],
+  },
+  {
+    id: 11,
+    nombre: "Historia económica",
+    resumen: "Los hechos que dieron origen a los modelos, y por qué unos países se hicieron ricos.",
+    temas: [
+      { t: "De la economía orgánica a la revolución industrial", n: 2, k: "Durante milenios la renta por habitante apenas se movió. Explicar la ruptura importa más que datarla.", b: "Allen, La revolución industrial británica en perspectiva global" },
+      { t: "La primera globalización y el patrón oro, 1870-1914", n: 2, k: "Mercancías, capitales y personas se movieron con una libertad que no se ha vuelto a ver, atados a una regla monetaria rígida.", b: "O'Rourke y Williamson, Globalization and History" },
+      { t: "Guerras, hiperinflaciones y el final del patrón oro", n: 3, k: "Cuando un Estado necesita gastar más de lo que puede recaudar o pedir prestado, acaba emitiendo. Y eso tiene un límite.", b: "Eichengreen, Golden Fetters" },
+      { t: "La Gran Depresión: causas, transmisión y respuestas", n: 2, k: "No fue un accidente bursátil sino un colapso monetario y bancario, amplificado por el compromiso con el oro.", b: "Kindleberger, La crisis económica 1929-1939" },
+      { t: "Bretton Woods y la edad de oro, 1945-1973", n: 2, k: "Tipos fijos pero ajustables, capitales controlados y política monetaria propia: el trilema resuelto durante un cuarto de siglo.", b: "Eichengreen, La globalización del capital" },
+      { t: "Petróleo, estanflación y el giro de los ochenta", n: 3, k: "Un choque de oferta rompió la relación entre paro e inflación, y con ella el consenso de posguerra.", b: "Blanchard, Macroeconomía; Blyth, Austeridad" },
+      { t: "La segunda globalización, China y las cadenas de valor", n: 3, k: "Dejaron de comerciarse productos para comerciarse tareas, y eso cambió quién gana y quién pierde dentro de cada país.", b: "Baldwin, La gran convergencia" },
+      { t: "Crisis financieras: el patrón que se repite", n: 3, k: "Auge del crédito, garantía que se revaloriza sola, apalancamiento y sorpresa. Ocho siglos con el mismo guion.", b: "Reinhart y Rogoff, Esta vez es distinto" },
+      { t: "España: del atraso al desarrollismo y la integración europea", n: 2, k: "Un siglo de divergencia, tres décadas de convergencia acelerada y una economía que se abre tarde y de golpe.", b: "Carreras y Tafunell, Historia económica de la España contemporánea" },
+      { t: "Divergencia y convergencia: por qué unos países son ricos", n: 4, k: "Geografía, cultura o instituciones. La pregunta más importante de la disciplina y la que peor sabemos contestar.", b: "Acemoglu y Robinson, Por qué fracasan los países" },
+    ],
+  },
+  {
+    id: 12,
+    nombre: "Cuentas de los sectores institucionales",
+    resumen: "La anatomía del SEC 2010: qué hay dentro de cada cuenta, operación por operación.",
+    temas: [
+      { t: "Unidades institucionales, residencia y sectorización", n: 3, k: "Antes de contar nada hay que decidir quién es quién. La regla del 50 % y el control deciden en qué sector cae cada entidad.", b: "SEC 2010, capítulos 1-2 (Reglamento UE 549/2013)" },
+      { t: "La cuenta de producción: P.1, P.2 y el valor añadido", n: 3, k: "Producción de mercado, para uso propio y de no mercado. Lo que no tiene precio se valora por sus costes, y eso tiene consecuencias.", b: "SEC 2010, capítulo 3; Lequiller y Blades" },
+      { t: "La cuenta de explotación: remuneración, impuestos y excedente", n: 3, k: "La remuneración incluye las cotizaciones del empleador. Y en los autónomos, el excedente y el salario son el mismo número: renta mixta.", b: "SEC 2010, capítulo 4 (D.1, D.2, D.3)" },
+      { t: "Rentas de la propiedad y el saldo de rentas primarias", n: 3, k: "Intereses, dividendos, beneficios reinvertidos y rentas de la tierra. Su suma sectorial es la renta nacional bruta.", b: "SEC 2010, capítulo 4 (D.4); Banco de España, Cuentas Financieras" },
+      { t: "SIFMI y seguros: la producción que no se observa", n: 4, k: "Nadie factura el servicio de un depósito ni el de una póliza. El sistema lo estima por márgenes, y ese ajuste recorre todas las cuentas.", b: "SEC 2010, capítulos 14 y 16" },
+      { t: "Distribución secundaria: impuestos, cotizaciones y prestaciones", n: 3, k: "Aquí vive toda la redistribución. Comparar la renta primaria con la disponible mide exactamente cuánto redistribuye un Estado.", b: "SEC 2010, capítulo 4 (D.5, D.6)" },
+      { t: "Otras transferencias corrientes: qué hay dentro del D.7", n: 3, k: "Seguros no vida, financiación autonómica, cooperación, remesas, multas y recursos propios de la UE. Un cajón con seis compartimentos.", b: "SEC 2010, capítulo 4 (D.7)" },
+      { t: "Consumo final: gasto, consumo efectivo y transferencias en especie", n: 3, k: "Quién paga y quién consume no coinciden. La sanidad pública la paga el Estado y la consumen los hogares, y el sistema lo registra dos veces.", b: "SEC 2010, capítulo 3 (P.3, P.4) y capítulo 4 (D.63)" },
+      { t: "Cuentas de acumulación: capital, transferencias y capacidad de financiación", n: 3, k: "Comprar una vivienda no es consumo sino inversión, y por eso no reduce el ahorro del hogar. El saldo final dice quién presta a quién.", b: "SEC 2010, capítulos 6 y 8 (P.5, NP, D.9, B.9)" },
+      { t: "El resto del mundo (S.2) y el puente con la balanza de pagos", n: 4, k: "Un recurso para el resto del mundo es un empleo para la economía nacional. Todo el sector es un espejo, y equivocarse de signo arruina el análisis.", b: "SEC 2010, capítulo 18; FMI, Manual de Balanza de Pagos (MBP6)" },
     ],
   },
 ];
