@@ -1,6 +1,4 @@
-/* Ficha 6.03 — Costes ABC y asignación de indirectos.
-   Sin seccion de puente: el ABC es una herramienta puramente interna
-   y no tiene analogo en contabilidad nacional. */
+/* Ficha 6.03 — Costes ABC y asignación de indirectos. */
 
 export default {
   codigo: "6.03",
@@ -133,6 +131,26 @@ export default {
             { t: "Multiplicar actividades hasta lo inmanejable", d: "La precisión marginal decrece rápido y el coste de mantenimiento crece linealmente. Un sistema con demasiadas actividades acaba desactualizándose y volviendo a repartos automáticos, con lo que se pierde todo lo ganado." },
             { t: "Usar el coste ABC para valorar existencias en cuentas anuales", d: "El PGC exige coste de producción con criterios de reparto razonables y consistentes. El ABC puede ser compatible, pero no todos sus repartos lo son: los costes de estructura y buena parte de los de producto no forman parte del coste de producción a efectos contables." },
           ],
+        },
+      ],
+    },
+    {
+      titulo: "Puente con la contabilidad nacional",
+      contenido: [
+        {
+          tipo: "destacado",
+          parrafos: [
+            "Parece que el ABC no tiene nada que ver con las cuentas nacionales: es una herramienta interna, sin normalizar y sin destinatario externo. Y sin embargo el problema que resuelve —repartir costes comunes entre productos cuando no hay una relación causal evidente— es exactamente el que la contabilidad nacional se encuentra una y otra vez, resuelto con la misma lógica y con una respuesta distinta.",
+          ],
+          lista: [
+            "**La producción de no mercado se valora por suma de costes**, que es el reparto por absorción total llevado al límite: la ficha 12.02 muestra que el valor de la sanidad o la educación públicas se obtiene sumando remuneración, consumos intermedios, otros impuestos netos y consumo de capital fijo. No hay precio que revele el valor, así que se usa el coste, con la consecuencia que aquella ficha subrayaba: el excedente neto de un productor de no mercado es cero por construcción.",
+            "**El SIFMI es un problema de inductor en estado puro.** La ficha 12.05 explica que el servicio que presta un banco no se factura y hay que estimarlo por márgenes, y después **repartirlo entre los usuarios**. El inductor elegido es el saldo de préstamos y depósitos de cada sector, y de ahí sale que los hogares consuman una parte como consumo intermedio y otra como gasto final. Es la misma decisión que elegir «número de preparaciones» frente a «unidades producidas», con la diferencia de que aquí la elige un reglamento.",
+            "**Dividir una empresa en ramas de actividad es el mismo reparto.** Una sociedad que fabrica y además transporta y vende debe repartirse entre varias ramas para construir el valor añadido sectorial, y sus costes comunes —la sede, la dirección, los sistemas— no pertenecen a ninguna. El SEC lo resuelve por convención, igual que la empresa del ejemplo tuvo que decidir qué hacer con la dirección general.",
+            "**Y la decisión de no repartir la estructura tiene su gemelo exacto.** Donde el ABC deja los costes de estructura como coste del período, el sistema estadístico deja sin asignar lo que no admite un criterio defendible: hay partidas que se publican como no distribuidas antes que atribuirlas con una base arbitraria. Las dos disciplinas llegan a la misma conclusión: **un reparto sin causalidad no es información, es ruido con apariencia de precisión.**",
+            "La diferencia está en el destinatario, y explica por qué las respuestas divergen. El ABC busca **decisiones**, así que puede permitirse elegir el inductor que mejor explique el consumo de recursos en cada empresa. La contabilidad nacional busca **comparabilidad** entre países y entre años, así que necesita una regla única aunque sea peor para cada caso concreto. Un reparto normalizado y mediocre vence a uno excelente e irrepetible.",
+          ],
+          cierre:
+            "La idea que conviene llevarse es que **la asignación de costes indirectos no es un problema de contabilidad de gestión: es un problema de medición**. Aparece siempre que hay recursos compartidos y hace falta atribuir valor a las partes, y por eso reaparece idéntico en la valoración de los servicios públicos, en la estimación del SIFMI y en la sectorización de las empresas multiproducto. Quien haya entendido por qué falla una base única en una fábrica entenderá por qué el SEC dedica capítulos enteros a decidir inductores.",
         },
       ],
     },

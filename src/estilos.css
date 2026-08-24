@@ -243,3 +243,33 @@ p.parrafo { font-size: 15.5px; line-height: 1.65; margin: 0 0 14px; max-width: 6
 .repasoBotones { display: flex; flex-wrap: wrap; gap: 10px; }
 .repasoPie { font-family: var(--mono); font-size: 11px; letter-spacing: .06em; color: var(--tinta2); margin-top: 18px; }
 .tarjeta kbd { font-family: var(--mono); font-size: 10px; border: 1px solid currentColor; border-radius: 2px; padding: 1px 4px; margin-left: 7px; opacity: .55; }
+
+/* --- Referencias cruzadas entre fichas --- */
+.refFicha { color: var(--acento); text-decoration: none; border-bottom: 1px solid color-mix(in srgb, var(--acento) 35%, transparent); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.refFicha:hover { border-bottom-color: var(--acento); background: color-mix(in srgb, var(--acento) 9%, transparent); }
+b .refFicha, i .refFicha { color: inherit; border-bottom-color: color-mix(in srgb, currentColor 40%, transparent); }
+b .refFicha:hover, i .refFicha:hover { color: var(--acento); }
+
+/* --- Búsqueda --- */
+.navTecla { font-family: var(--mono); font-size: 9.5px; border: 1px solid var(--linea); border-radius: 2px; padding: 1px 4px; margin-left: 7px; opacity: .7; }
+.buscador { max-width: 780px; }
+.buscadorCampo { width: 100%; box-sizing: border-box; font-family: var(--serif); font-size: clamp(19px, 3vw, 26px); color: var(--tinta); background: var(--papel2); border: 1px solid var(--linea); border-radius: 3px; padding: 14px 16px; outline: none; }
+.buscadorCampo:focus { border-color: var(--acento); }
+.buscadorCampo::placeholder { color: var(--tinta2); opacity: .55; }
+.buscadorAviso { font-family: var(--mono); font-size: 11.5px; letter-spacing: .04em; color: var(--tinta2); margin: 14px 0 4px; }
+.buscadorVacio { padding-top: 6px; }
+.buscadorVacio .buscadorAviso { font-family: var(--sans); font-size: 14px; letter-spacing: 0; line-height: 1.6; max-width: 62ch; }
+.buscadorEjemplos { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 0; }
+.chip { font-family: var(--mono); font-size: 12px; color: var(--tinta2); background: var(--papel2); border: 1px solid var(--linea); border-radius: 999px; padding: 5px 13px; cursor: pointer; }
+.chip:hover { border-color: var(--acento); color: var(--acento); }
+.buscadorLista { list-style: none; margin: 6px 0 0; padding: 0; }
+.buscadorItem { display: flex; gap: 16px; width: 100%; text-align: left; font: inherit; color: inherit; background: none; border: none; border-top: 1px solid var(--linea); padding: 15px 10px 15px 4px; cursor: pointer; border-radius: 3px; }
+.buscadorItem[data-foco="true"] { background: var(--papel2); }
+.buscadorCod { font-family: var(--mono); font-size: 12px; color: var(--tinta2); padding-top: 3px; min-width: 42px; font-variant-numeric: tabular-nums; }
+.buscadorCuerpo { display: block; flex: 1; min-width: 0; }
+.buscadorTitulo { display: block; font-family: var(--serif); font-size: 17px; line-height: 1.35; color: var(--tinta); }
+.buscadorMeta { display: block; font-family: var(--mono); font-size: 10.5px; letter-spacing: .07em; text-transform: uppercase; color: var(--tinta2); margin-top: 5px; }
+.buscadorExtracto { display: block; font-size: 14px; line-height: 1.6; color: var(--tinta2); margin-top: 8px; max-width: 68ch; }
+.buscadorExtracto b { color: var(--tinta); background: color-mix(in srgb, var(--acento) 13%, transparent); border-radius: 2px; padding: 0 2px; font-weight: 600; }
+.buscadorPie { font-family: var(--mono); font-size: 11px; letter-spacing: .05em; color: var(--tinta2); opacity: .75; margin-top: 26px; border-top: 1px solid var(--linea); padding-top: 12px; }
+.buscadorPie kbd { font-family: var(--mono); font-size: 10px; border: 1px solid currentColor; border-radius: 2px; padding: 1px 4px; margin: 0 2px; opacity: .8; }

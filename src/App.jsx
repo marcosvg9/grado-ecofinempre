@@ -2,16 +2,19 @@ import React, { useState, useEffect, useCallback } from "react";
 import Plan from "./componentes/Plan.jsx";
 import Ficha from "./componentes/Ficha.jsx";
 import Repaso from "./componentes/Repaso.jsx";
+import Buscador from "./componentes/Buscador.jsx";
 import { FICHAS, cargarFicha } from "./datos/fichas/index.js";
 import { TEMAS } from "./datos/temario.js";
 import { leerProgreso, guardarProgreso, exportarProgreso } from "./almacen.js";
 import { programar, hoyISO, contarVencidas } from "./repaso.js";
 
-/* Enrutado por hash, sin dependencias: #/ para el plan, #/ficha/5.02 para una ficha. */
+/* Enrutado por hash, sin dependencias: #/ para el plan, #/ficha/5.02 para una
+   ficha, #/repaso para el repaso espaciado y #/buscar para la búsqueda. */
 function rutaActual() {
   const h = window.location.hash.replace(/^#\/?/, "");
   if (h.startsWith("ficha/")) return { vista: "ficha", codigo: h.slice(6) };
   if (h === "repaso") return { vista: "repaso" };
+  if (h.startsWith("buscar")) return { vista: "buscar", q: decodeURIComponent(h.slice(7)) };
   return { vista: "plan" };
 }
 
@@ -21,6 +24,7 @@ export default function App() {
   const [ficha, setFicha] = useState(null);
   const [cargando, setCargando] = useState(false);
   const [preguntas, setPreguntas] = useState(null);
+  const [indiceBusqueda, setIndiceBusqueda] = useState(null);
 
   /* El índice de preguntas pesa bastante y no hace falta para leer fichas:
      se trae en un chunk aparte cuando el navegador ya ha pintado. */
@@ -39,9 +43,32 @@ export default function App() {
     return () => window.removeEventListener("hashchange", onHash);
   }, []);
 
+  /* El índice de búsqueda pesa más que el de preguntas y no hace falta para
+     nada más: se trae la primera vez que se entra en la búsqueda. */
+  useEffect(() => {
+    if (ruta.vista !== "buscar" || indiceBusqueda) return;
+    let vivo = true;
+    import("./datos/busqueda.js").then((m) => vivo && setIndiceBusqueda(m));
+    return () => { vivo = false; };
+  }, [ruta.vista, indiceBusqueda]);
+
   useEffect(() => {
     guardarProgreso(estado);
   }, [estado]);
+
+  /* Barra inclinada para buscar desde cualquier sitio, salvo si se está
+     escribiendo en un campo. */
+  useEffect(() => {
+    const onTecla = (e) => {
+      if (e.key !== "/" || e.metaKey || e.ctrlKey || e.altKey) return;
+      const t = e.target;
+      if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.isContentEditable)) return;
+      e.preventDefault();
+      window.location.hash = "#/buscar";
+    };
+    window.addEventListener("keydown", onTecla);
+    return () => window.removeEventListener("keydown", onTecla);
+  }, []);
 
   useEffect(() => {
     if (ruta.vista === "ficha" && FICHAS[ruta.codigo]) {
@@ -74,6 +101,7 @@ export default function App() {
 
   const irAFicha = (codigo) => { window.location.hash = `#/ficha/${codigo}`; };
   const irARepaso = () => { window.location.hash = "#/repaso"; };
+  const irABuscar = () => { window.location.hash = "#/buscar"; };
   const volver = () => { window.location.hash = "#/"; };
 
   const siguiente = ficha
@@ -94,6 +122,10 @@ export default function App() {
             Repaso
             {vencidas > 0 && <i className="insigniaNav">{vencidas}</i>}
           </button>
+          <button className="navEnlace" data-activo={ruta.vista === "buscar"} onClick={irABuscar}>
+            Buscar
+            <kbd className="navTecla">/</kbd>
+          </button>
           <span className="navDerecha">
             <span className="navEnlace" style={{ cursor: "default" }}>
               {Object.keys(estado.estudiados).length} / {TEMAS.length}
@@ -113,6 +145,12 @@ export default function App() {
           repaso={estado.repaso}
           irARepaso={irARepaso}
         />
+      )}
+
+      {ruta.vista === "buscar" && (
+        <main className="interior contenido">
+          <Buscador indiceBusqueda={indiceBusqueda} irAFicha={irAFicha} inicial={ruta.q || ""} />
+        </main>
       )}
 
       {ruta.vista === "repaso" &&

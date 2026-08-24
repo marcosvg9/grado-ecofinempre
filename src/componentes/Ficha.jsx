@@ -28,8 +28,8 @@ export default function Ficha({ ficha, estudiado, alternar, volver, siguiente, i
       <p className="nucleo">{enLinea(ficha.nucleo)}</p>
       {(ficha.requiere || ficha.abre) && (
         <p className="requisitos">
-          {ficha.requiere && <>Requiere: {ficha.requiere}. </>}
-          {ficha.abre && <>Abre paso a: {ficha.abre}.</>}
+          {ficha.requiere && <>Requiere: {enLinea(ficha.requiere)}. </>}
+          {ficha.abre && <>Abre paso a: {enLinea(ficha.abre)}.</>}
         </p>
       )}
 

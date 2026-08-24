@@ -1,5 +1,5 @@
 /* GENERADO POR herramientas/indice-preguntas.mjs — no editar a mano.
-   640 preguntas extraídas de 120 fichas.
+   700 preguntas extraídas de 130 fichas.
    Para regenerar: node herramientas/indice-preguntas.mjs */
 
 export default [
@@ -2072,6 +2072,546 @@ export default [
   "titulo": "El resto del mundo (S.2) y el puente con la balanza de pagos",
   "q": "¿Qué relación hay entre el B.9 del S.2 y la balanza de pagos?",
   "a": "Equivale, con el signo cambiado, al saldo conjunto de la cuenta corriente y la cuenta de capital de la balanza de pagos. Los dos marcos están armonizados y sus grandes saldos coinciden por diseño, aunque los compilen organismos distintos con lenguajes distintos: recursos y empleos en el SEC, ingresos y pagos en el manual del FMI."
+ },
+ {
+  "id": "13.01#0",
+  "codigo": "13.01",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La gramática del sistema: cómo se lee cualquier código del SEC",
+  "q": "¿Qué distingue una operación P de una operación D?",
+  "a": "Que en la P hay un bien o un servicio de por medio y en la D no. La D reparte renta sin contrapartida real: salarios, impuestos, intereses, prestaciones, transferencias. Comprar acero es P.2; pagar el IBI del local es D.29, aunque ambos salgan de la misma cuenta corriente."
+ },
+ {
+  "id": "13.01#1",
+  "codigo": "13.01",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La gramática del sistema: cómo se lee cualquier código del SEC",
+  "q": "¿Por qué la remuneración de asalariados no cambia la renta nacional aunque sea enorme?",
+  "a": "Porque es empleo de las sociedades y recurso de los hogares por el mismo importe, así que se anula al agregar los sectores residentes. Solo altera la renta nacional la parte cuyo pagador o cobrador está fuera de la frontera, y esa es precisamente la diferencia entre el PIB y la renta nacional bruta."
+ },
+ {
+  "id": "13.01#2",
+  "codigo": "13.01",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La gramática del sistema: cómo se lee cualquier código del SEC",
+  "q": "¿Qué diferencia hay entre B.8g y B.8n, y por qué importa?",
+  "a": "La g incluye el consumo de capital fijo y la n lo ha restado, es decir, lo que hay que reponer solo para que el capital existente no se deteriore. En una economía madura son varios puntos del PIB, de modo que comparar una magnitud bruta con una neta puede invertir el signo de la conclusión."
+ },
+ {
+  "id": "13.01#3",
+  "codigo": "13.01",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La gramática del sistema: cómo se lee cualquier código del SEC",
+  "q": "¿Por qué las variaciones K no se registran como operaciones?",
+  "a": "Porque una operación es un acuerdo entre dos unidades, y nadie acuerda que una máquina se desgaste, que un piso suba de precio o que arda una nave. El sistema las aísla en cuentas propias para que no se confundan con actividad económica, y por eso una revalorización inmobiliaria general no entra en el PIB."
+ },
+ {
+  "id": "13.01#4",
+  "codigo": "13.01",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La gramática del sistema: cómo se lee cualquier código del SEC",
+  "q": "Capitalizar la I+D no cambió ni un euro del gasto de las empresas. ¿Por qué subió el PIB?",
+  "a": "Porque el valor añadido es producción menos consumos intermedios, y la reclasificación sacó la I+D del P.2 para llevarla a P.51g. Lo que antes restaba dejó de restar y además pasó a contar como inversión, componente de la demanda final. Y como los saldos encadenan, el efecto siguió hacia el excedente, el ahorro y la capacidad de financiación."
+ },
+ {
+  "id": "13.01#5",
+  "codigo": "13.01",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La gramática del sistema: cómo se lee cualquier código del SEC",
+  "q": "Sin consultar el reglamento, ¿dónde vive el código P.52?",
+  "a": "La P dice que hay bienes de por medio; el 5 dice que es formación de capital; el 2 dice que son existencias. Luego es la variación de existencias y vive en la cuenta de capital. La gramática basta: la letra sitúa la familia y el dígito estrecha."
+ },
+ {
+  "id": "13.02#0",
+  "codigo": "13.02",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Operaciones de bienes y servicios: el equilibrio por producto",
+  "q": "¿Cuáles son los dos únicos orígenes y los cuatro únicos destinos de un producto?",
+  "a": "Orígenes: la producción de unidades residentes (P.1) y las importaciones (P.7). Destinos: consumo intermedio (P.2), gasto en consumo final (P.3), formación bruta de capital (P.5) y exportaciones (P.6). No hay más, y por eso la identidad P.1 + P.7 = P.2 + P.3 + P.5 + P.6 tiene que cumplirse."
+ },
+ {
+  "id": "13.02#1",
+  "codigo": "13.02",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Operaciones de bienes y servicios: el equilibrio por producto",
+  "q": "¿Por qué no se pueden sumar P.3 y P.4?",
+  "a": "Porque son el mismo consumo visto de dos maneras: el P.3 lo atribuye a quien paga y el P.4 a quien disfruta. Sus totales agregados coinciden y solo cambia el reparto entre sectores, así que sumarlos duplicaría el consumo de la economía."
+ },
+ {
+  "id": "13.02#2",
+  "codigo": "13.02",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Operaciones de bienes y servicios: el equilibrio por producto",
+  "q": "En la economía de ejemplo la oferta suma 2.265 y el PIB es 1.000. ¿Por qué no coinciden?",
+  "a": "Porque la oferta incluye los 900 de consumos intermedios, cuyo valor ya está dentro del producto final, y los 365 importados, que no ha producido nadie residente. El PIB es la diferencia entre producción y consumo intermedio: 1.900 − 900 = 1.000."
+ },
+ {
+  "id": "13.02#3",
+  "codigo": "13.02",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Operaciones de bienes y servicios: el equilibrio por producto",
+  "q": "¿Qué separa el precio básico del precio de adquisición?",
+  "a": "Los impuestos sobre el producto no deducibles y los márgenes de comercio y transporte. En un litro de gasolina el productor recibe 0,60 € y el conductor paga 1,54 €: 0,17 € son márgenes de otras ramas y 0,77 € son impuestos."
+ },
+ {
+  "id": "13.02#4",
+  "codigo": "13.02",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Operaciones de bienes y servicios: el equilibrio por producto",
+  "q": "¿Por qué el IVA de la gasolina se calcula sobre una base que ya incluye el impuesto especial?",
+  "a": "Porque el impuesto sobre hidrocarburos forma parte del precio de productor, que es la base del IVA. Se paga impuesto sobre el impuesto: unos 0,105 € de los 0,2667 € de IVA recaen sobre los 0,50 € del especial. En total los impuestos son el 49,9 % del precio final."
+ },
+ {
+  "id": "13.02#5",
+  "codigo": "13.02",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Operaciones de bienes y servicios: el equilibrio por producto",
+  "q": "Los márgenes comerciales de un producto, ¿aumentan la oferta total de la economía?",
+  "a": "No. Son producción de las ramas de comercio y transporte y ya están contados en el P.1 de esas ramas. En las tablas de origen y destino se reasignan al producto vendido para que cuadre su precio de adquisición, pero no se añaden al total de la oferta."
+ },
+ {
+  "id": "13.03#0",
+  "codigo": "13.03",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "El consumo intermedio (P.2): la frontera con el salario y con la inversión",
+  "q": "¿Qué criterio separa el consumo intermedio de la formación de capital?",
+  "a": "El tiempo de servicio. Es consumo intermedio si se agota dentro del período contable, y formación bruta de capital fijo si presta servicio más de un año y de forma repetida. La harina de la panadería se consume; el horno, no."
+ },
+ {
+  "id": "13.03#1",
+  "codigo": "13.03",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "El consumo intermedio (P.2): la frontera con el salario y con la inversión",
+  "q": "¿Y qué criterio separa el consumo intermedio del salario en especie?",
+  "a": "A quién beneficia el gasto. Si lo exige el puesto, es consumo intermedio de la empresa; si lo disfruta el trabajador en su vida privada, es remuneración en especie. El uniforme es P.2; el coche de uso privado del directivo es D.11."
+ },
+ {
+  "id": "13.03#2",
+  "codigo": "13.03",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "El consumo intermedio (P.2): la frontera con el salario y con la inversión",
+  "q": "Una empresa gasta 100. ¿Por qué su valor añadido solo cae en 75?",
+  "a": "Porque los otros 25 no son consumos intermedios: 3 son salario en especie, 17 son formación de capital en I+D y software, 3 son un impuesto sobre la producción y 2 un objeto valioso. Ninguno de ellos resta del valor añadido, aunque los cuatro salgan de la misma cuenta corriente."
+ },
+ {
+  "id": "13.03#3",
+  "codigo": "13.03",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "El consumo intermedio (P.2): la frontera con el salario y con la inversión",
+  "q": "¿Por qué capitalizar la I+D elevó el PIB si el gasto de las empresas no cambió?",
+  "a": "Porque el valor añadido se obtiene restando el consumo intermedio de la producción, así que sacar la I+D del P.2 la suma directamente al valor añadido, y además la convierte en inversión, componente de la demanda final. La contrapartida es que el nuevo activo se deprecia, de modo que el efecto sobre las magnitudes netas es menor."
+ },
+ {
+  "id": "13.03#4",
+  "codigo": "13.03",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "El consumo intermedio (P.2): la frontera con el salario y con la inversión",
+  "q": "El IBI del local es un gasto corriente obligatorio. ¿Es consumo intermedio?",
+  "a": "No. Es un otro impuesto sobre la producción (D.29), porque no compra ningún bien ni servicio identificable. Ser obligatorio y corriente no basta: el consumo intermedio exige una contrapartida real. Lo mismo vale para el IAE y las licencias."
+ },
+ {
+  "id": "13.03#5",
+  "codigo": "13.03",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "El consumo intermedio (P.2): la frontera con el salario y con la inversión",
+  "q": "¿Por qué el coche del director aparece a la vez como inversión de la empresa y como salario del hogar?",
+  "a": "Porque la empresa sigue siendo la propietaria del activo, luego su compra es formación de capital fijo, pero el servicio que el directivo obtiene en su vida privada es remuneración en especie imputada cada año. Aumenta la renta primaria del hogar y reduce el excedente de la empresa sin que se mueva un euro de tesorería."
+ },
+ {
+  "id": "13.04#0",
+  "codigo": "13.04",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La remuneración de asalariados (D.1) por dentro",
+  "q": "¿Qué mide exactamente la remuneración de asalariados?",
+  "a": "Todo lo que desembolsa el empleador por tener a alguien trabajando: sueldos y salarios en efectivo y en especie, más las cotizaciones sociales efectivas e imputadas a su cargo. No es la nómina del trabajador, y la diferencia en España supera el treinta por ciento del salario bruto."
+ },
+ {
+  "id": "13.04#1",
+  "codigo": "13.04",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La remuneración de asalariados (D.1) por dentro",
+  "q": "¿Por qué las cotizaciones patronales aumentan la renta primaria del hogar?",
+  "a": "Porque el SEC las trata como renta del trabajador: son parte de lo que su trabajo genera y le compran derechos de protección social. El sistema hace un doble apunte: la empresa las paga dentro del D.1 y después el hogar las entrega a la Seguridad Social como D.611. El dinero no pasa por su bolsillo, pero da la vuelta contable entera."
+ },
+ {
+  "id": "13.04#2",
+  "codigo": "13.04",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La remuneración de asalariados (D.1) por dentro",
+  "q": "¿Qué son las cotizaciones imputadas y por qué existen?",
+  "a": "Son la contrapartida de las prestaciones que un empleador paga directamente sin haber constituido un fondo, como las pensiones de clases pasivas. No hay ningún flujo real. Sin ellas, esos trabajadores parecerían no generar derechos de pensión y sus empleadores tendrían costes laborales artificialmente bajos. Por construcción, D.122 iguala a D.622."
+ },
+ {
+  "id": "13.04#3",
+  "codigo": "13.04",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La remuneración de asalariados (D.1) por dentro",
+  "q": "Una aerolínea da billetes gratis a sus empleados. ¿Por cuánto se valora esa retribución?",
+  "a": "Por su coste de producción, no por la tarifa, porque la retribución en especie se valora a precios básicos cuando la produce el propio empleador y a precios de adquisición cuando la compra. Usar el precio de mercado sobreestimaría la remuneración de las empresas que retribuyen con producto propio."
+ },
+ {
+  "id": "13.04#4",
+  "codigo": "13.04",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La remuneración de asalariados (D.1) por dentro",
+  "q": "¿Por qué la participación salarial infravalora el peso del trabajo?",
+  "a": "Porque el D.1 solo recoge el trabajo asalariado: la retribución del autónomo está dentro de la renta mixta, mezclada con el rendimiento de su capital. Así medida, la participación salarial refleja sobre todo qué proporción del empleo está asalariada. La corrección habitual imputa a cada autónomo la remuneración media de un asalariado."
+ },
+ {
+  "id": "13.04#5",
+  "codigo": "13.04",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La remuneración de asalariados (D.1) por dentro",
+  "q": "En el ejemplo, ¿por qué el coste laboral es 500 y la nómina bruta 368?",
+  "a": "Los 132 de diferencia son 17 de retribución en especie que el trabajador sí disfruta, 110 de cotizaciones efectivas que le compran derechos y 5 de cotizaciones imputadas que no paga nadie. Es el 26,4 % del coste total, y ninguno de los tres conceptos aparece como ingreso en su cuenta bancaria."
+ },
+ {
+  "id": "13.05#0",
+  "codigo": "13.05",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Impuestos sobre la producción y las importaciones (D.2) y subvenciones (D.3)",
+  "q": "¿Qué separa el D.2 de los impuestos sobre la renta?",
+  "a": "Que el D.2 grava la actividad de producir o importar con independencia de los beneficios obtenidos. Una empresa en pérdidas sigue pagando el IVA que repercute, los impuestos especiales y el IBI de su local, pero no paga impuesto de sociedades."
+ },
+ {
+  "id": "13.05#1",
+  "codigo": "13.05",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Impuestos sobre la producción y las importaciones (D.2) y subvenciones (D.3)",
+  "q": "¿Cuál es el criterio que separa D.21 de D.29?",
+  "a": "Si el importe depende de lo que se vende. Si es proporcional a la cantidad o al valor de cada unidad producida, vendida o importada, es un impuesto sobre el producto; si grava el hecho de tener actividad con independencia de las ventas, es un otro impuesto sobre la producción."
+ },
+ {
+  "id": "13.05#2",
+  "codigo": "13.05",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Impuestos sobre la producción y las importaciones (D.2) y subvenciones (D.3)",
+  "q": "¿Por qué el IVA no aparece en ninguna cuenta de explotación?",
+  "a": "Porque los impuestos sobre los productos ya han salido al valorar la producción a precios básicos. Aparecen como recurso de las administraciones en la cuenta de asignación de renta primaria, y constituyen el puente entre el valor añadido a precios básicos y el PIB a precios de mercado."
+ },
+ {
+  "id": "13.05#3",
+  "codigo": "13.05",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Impuestos sobre la producción y las importaciones (D.2) y subvenciones (D.3)",
+  "q": "El IBI de la vivienda ocupada por su propietario, ¿qué código lleva?",
+  "a": "D.29, otros impuestos sobre la producción. En el SEC ese hogar es un productor: produce el servicio de alojamiento que se le imputa como alquiler, y el IBI grava un inmueble utilizado en esa producción. No es un impuesto sobre el patrimonio del hogar."
+ },
+ {
+  "id": "13.05#4",
+  "codigo": "13.05",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Impuestos sobre la producción y las importaciones (D.2) y subvenciones (D.3)",
+  "q": "¿Por qué los derechos de emisión son un impuesto y no la venta de un activo?",
+  "a": "Porque la empresa no adquiere ningún bien ni servicio identificable, sino el derecho a hacer algo que sin el permiso estaría prohibido, que es la definición económica de un impuesto. Y como se paga con independencia de que haya beneficio, encaja en el D.29."
+ },
+ {
+  "id": "13.05#5",
+  "codigo": "13.05",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Impuestos sobre la producción y las importaciones (D.2) y subvenciones (D.3)",
+  "q": "Un Estado subasta hoy permisos que cubren emisiones de los próximos años. ¿Cuándo se registra el ingreso?",
+  "a": "Cuando se produce la emisión, no cuando se cobra. Lo cobrado por adelantado se anota entretanto como un pasivo financiero de las administraciones, sin efecto sobre el déficit. La regla impide que adelantar subastas maquille el saldo de un ejercicio a costa de los siguientes."
+ },
+ {
+  "id": "13.06#0",
+  "codigo": "13.06",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Impuestos corrientes sobre la renta y el patrimonio (D.5)",
+  "q": "¿Qué dos condiciones definen al D.5?",
+  "a": "Que grave la renta o el patrimonio —a diferencia del D.2, aquí sí importa cuánto se ha ganado— y que sea periódico. Un impuesto que se paga cada año por tener algo es corriente; uno que se paga una sola vez cuando ese algo cambia de manos es de capital y va a otra cuenta."
+ },
+ {
+  "id": "13.06#1",
+  "codigo": "13.06",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Impuestos corrientes sobre la renta y el patrimonio (D.5)",
+  "q": "Un hogar hereda y paga 12.000 € de impuesto de sucesiones. ¿Cuánto baja su renta disponible?",
+  "a": "Nada. Es un impuesto de capital (D.91) que vive en la cuenta de capital y solo reduce el patrimonio neto. Ni la renta disponible ni el ahorro cambian, y por eso el importe no aparece en ninguna medida de presión fiscal sobre la renta."
+ },
+ {
+  "id": "13.06#2",
+  "codigo": "13.06",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Impuestos corrientes sobre la renta y el patrimonio (D.5)",
+  "q": "¿Por qué el IBI de la vivienda habitual no es un impuesto sobre el patrimonio del hogar?",
+  "a": "Porque en el SEC el propietario que ocupa su vivienda es un productor: produce el servicio de alojamiento que se le imputa como alquiler y que forma parte del PIB. El IBI grava por tanto un inmueble utilizado en la producción, y es D.29, igual que el recibo del local de una empresa."
+ },
+ {
+  "id": "13.06#3",
+  "codigo": "13.06",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Impuestos corrientes sobre la renta y el patrimonio (D.5)",
+  "q": "El impuesto de matriculación del coche, ¿reduce la renta disponible del comprador?",
+  "a": "No. Es un impuesto sobre los productos (D.214) que va dentro del precio de adquisición del vehículo. El hogar se gasta su renta comprando algo más caro, lo que contablemente no es lo mismo que pagar un impuesto directo, aunque en la cartera lo parezca."
+ },
+ {
+  "id": "13.06#4",
+  "codigo": "13.06",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Impuestos corrientes sobre la renta y el patrimonio (D.5)",
+  "q": "¿Por qué el déficit público en contabilidad nacional no coincide con el saldo de caja del Estado?",
+  "a": "Porque se registra en devengo: cada impuesto se imputa al ejercicio de la renta que grava y cada gasto al ejercicio en que se ejecuta, no a aquel en que entra o sale el dinero. Con retenciones que se liquidan al año siguiente la diferencia es de miles de millones. Es deliberado: en caja, retrasar pagos mejoraría el déficit."
+ },
+ {
+  "id": "13.06#5",
+  "codigo": "13.06",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Impuestos corrientes sobre la renta y el patrimonio (D.5)",
+  "q": "En el ejemplo, las cotizaciones del hogar duplican a sus impuestos sobre la renta. ¿Por qué importa?",
+  "a": "Porque las cotizaciones pesan 10.905 € frente a 4.920 € de D.5 y sin embargo casi nunca se citan al hablar de presión fiscal. Ese reparto es estructural en España, y buena parte de esas cotizaciones el trabajador ni siquiera las ve, porque las paga el empleador y el sistema se las atribuye a él."
+ },
+ {
+  "id": "13.07#0",
+  "codigo": "13.07",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Cotizaciones y prestaciones sociales (D.6) por dentro",
+  "q": "¿Por qué el D.62 aumenta la renta disponible y el D.63 no?",
+  "a": "Porque el D.62 se paga en dinero y el hogar decide qué hacer con él, mientras que el D.63 se entrega como bienes y servicios: sanidad, educación, medicamentos. El D.63 aumenta el consumo efectivo del hogar y su renta disponible ajustada, que son magnitudes distintas de la renta disponible."
+ },
+ {
+  "id": "13.07#1",
+  "codigo": "13.07",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Cotizaciones y prestaciones sociales (D.6) por dentro",
+  "q": "¿Qué distingue una prestación contributiva de una asistencial?",
+  "a": "La contributiva (D.621) es un derecho adquirido mediante cotización previa y su cuantía depende de lo cotizado; la asistencial (D.623) responde a una situación de necesidad y se financia con impuestos generales. Las dos son D.62 y aumentan la renta disponible, pero su lógica y su efecto redistributivo son opuestos."
+ },
+ {
+  "id": "13.07#2",
+  "codigo": "13.07",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Cotizaciones y prestaciones sociales (D.6) por dentro",
+  "q": "Un trabajador cuesta 39.000 € y su nómina bruta es 30.000 €. ¿Cuánto llega a su cuenta y por qué?",
+  "a": "23.595 €. Del coste total se restan los 9.000 € de cotización patronal (D.611), los 1.905 € de cotización propia (D.613) y los 4.500 € de retención (D.51). Y ese resultado coincide al euro con el líquido de la nómina, calculado restando al bruto solo lo que el trabajador ve."
+ },
+ {
+  "id": "13.07#3",
+  "codigo": "13.07",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Cotizaciones y prestaciones sociales (D.6) por dentro",
+  "q": "¿Cuál es la cuña fiscal del ejemplo y cómo se reparte?",
+  "a": "15.405 € sobre 39.000, un 39,5 % del coste laboral. Su componente principal no es el impuesto sobre la renta, que son 4.500 €, sino las cotizaciones sociales, que son 10.905 €: más del doble. Y de esas cotizaciones el trabajador solo ve descontados 1.905 € en su nómina."
+ },
+ {
+  "id": "13.07#4",
+  "codigo": "13.07",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Cotizaciones y prestaciones sociales (D.6) por dentro",
+  "q": "¿Por qué D.612, D.122 y D.622 son necesariamente el mismo número?",
+  "a": "Porque la cotización imputada existe únicamente como contrapartida de una prestación que un empleador paga directamente sin fondo constituido. Si no coincidieran, habría una prestación surgida de la nada o una cotización sin destino. En partida doble, las imputaciones tienen que cuadrar igual que los flujos reales."
+ },
+ {
+  "id": "13.07#5",
+  "codigo": "13.07",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Cotizaciones y prestaciones sociales (D.6) por dentro",
+  "q": "¿Es una beca una prestación social?",
+  "a": "No. Solo lo son las transferencias que cubren riesgos o necesidades socialmente reconocidos —vejez, enfermedad, desempleo, dependencia, familia, vivienda, exclusión— y una beca no cubre ninguno. Va a transferencias corrientes diversas o de capital según el caso. La lista de riesgos está fijada en el reglamento para que la frontera no dependa del criterio de cada país."
+ },
+ {
+  "id": "13.08#0",
+  "codigo": "13.08",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La formación de capital (P.5): activos fijos, existencias y objetos valiosos",
+  "q": "¿Cuál es el criterio que define la formación de capital?",
+  "a": "La adquisición de un activo producido que permanece en la economía para prestar servicio, almacenar valor o venderse más adelante. De ahí las tres exclusiones habituales: las acciones no lo son porque no hay activo producido, los terrenos porque no los ha producido nadie, y los duraderos de consumo porque el hogar los consume."
+ },
+ {
+  "id": "13.08#1",
+  "codigo": "13.08",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La formación de capital (P.5): activos fijos, existencias y objetos valiosos",
+  "q": "¿Por qué la vivienda es la excepción entre los bienes duraderos?",
+  "a": "Porque en el SEC el propietario produce con ella un servicio de alojamiento que se le imputa como alquiler y que forma parte del PIB. Al ser un activo que produce, su compra es formación bruta de capital fijo. La consecuencia es que comprar una casa no reduce el ahorro del hogar, solo su capacidad de financiación."
+ },
+ {
+  "id": "13.08#2",
+  "codigo": "13.08",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La formación de capital (P.5): activos fijos, existencias y objetos valiosos",
+  "q": "¿Por qué un cuadro es inversión y unas acciones no?",
+  "a": "Porque el cuadro es un bien producido que la economía retiene como depósito de valor, y por tanto es formación de capital en la categoría de objetos valiosos (P.53). Las acciones no son un bien producido: son un activo financiero, y su compra es una operación F que cambia la composición de la cartera."
+ },
+ {
+  "id": "13.08#3",
+  "codigo": "13.08",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La formación de capital (P.5): activos fijos, existencias y objetos valiosos",
+  "q": "La variación de existencias es el 0,4 % del PIB. ¿Por qué mueve tanto el crecimiento?",
+  "a": "Porque lo que entra en el crecimiento no es su nivel sino su cambio de un año a otro. Si un año se acumulan 4 y al siguiente se desacumulan 6, la contribución es de −10 sobre 1.000: un punto entero. Una partida diminuta puede mover el crecimiento un punto solo con cambiar de signo, cosa que hace con frecuencia."
+ },
+ {
+  "id": "13.08#4",
+  "codigo": "13.08",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La formación de capital (P.5): activos fijos, existencias y objetos valiosos",
+  "q": "¿Qué son las ganancias por tenencia y por qué hay que excluirlas de las existencias?",
+  "a": "Son el enriquecimiento que se produce porque el precio de lo almacenado cambió mientras estaba en el almacén. No son producción de nadie, así que pertenecen a la cuenta de revalorización y no al PIB. Las existencias hay que medirlas en volumen, y separar ambas cosas exige conocer los precios de entrada y salida a lo largo del año."
+ },
+ {
+  "id": "13.08#5",
+  "codigo": "13.08",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La formación de capital (P.5): activos fijos, existencias y objetos valiosos",
+  "q": "¿Qué dos categorías de activo fijo incorporó el SEC 2010 y qué efecto tuvieron?",
+  "a": "Los productos de propiedad intelectual, sobre todo la I+D y el software, y los sistemas de armamento. Ambas elevaron el nivel del PIB, porque lo que antes se restaba como consumo intermedio pasó a contarse como inversión. La lógica es la misma en los dos casos: prestan servicio durante años, así que no se consumen en el período."
+ },
+ {
+  "id": "13.09#0",
+  "codigo": "13.09",
+  "bloque": 13,
+  "nivel": 4,
+  "titulo": "Activos no producidos (NP): terrenos, espectro y derechos de emisión",
+  "q": "¿Qué define a un activo no producido?",
+  "a": "Que proporciona beneficios económicos a su propietario y no ha salido de ningún proceso de producción. Son las tierras y recursos naturales incluido el espectro, los contratos, arrendamientos y licencias transferibles, y el fondo de comercio. Su valor nunca entra en el PIB, por mucho que se compren y se vendan."
+ },
+ {
+  "id": "13.09#1",
+  "codigo": "13.09",
+  "bloque": 13,
+  "nivel": 4,
+  "titulo": "Activos no producidos (NP): terrenos, espectro y derechos de emisión",
+  "q": "Una empresa paga 300.000 € por un solar y 24.000 € en gastos de la operación. ¿Qué entra en el PIB?",
+  "a": "Solo los 24.000 €. El terreno no lo ha producido nadie, así que es una adquisición de activo no producido (NP). Los gastos de notaría, registro e intermediación sí son servicios prestados este año, y el sistema los trata como formación bruta de capital fijo en la categoría AN.116, creada exactamente para ellos."
+ },
+ {
+  "id": "13.09#2",
+  "codigo": "13.09",
+  "bloque": 13,
+  "nivel": 4,
+  "titulo": "Activos no producidos (NP): terrenos, espectro y derechos de emisión",
+  "q": "¿Por qué el NP agregado de un país apenas se mueve pese a un mercado inmobiliario activo?",
+  "a": "Porque es un código neto: lo que un residente adquiere, otro residente lo cede, y la operación se anula al agregar. El NP nacional solo cambia cuando el suelo, las licencias o las concesiones se compran o venden al resto del mundo."
+ },
+ {
+  "id": "13.09#3",
+  "codigo": "13.09",
+  "bloque": 13,
+  "nivel": 4,
+  "titulo": "Activos no producidos (NP): terrenos, espectro y derechos de emisión",
+  "q": "¿Qué diferencia hay entre vender un terreno y arrendarlo, en términos de cuentas?",
+  "a": "Vender es una operación NP que vive en la cuenta de capital y afecta a la capacidad de financiación. Arrendar produce una renta de la tierra (D.45), que es una renta de la propiedad y vive en la cuenta de asignación de renta primaria, afectando a la renta nacional."
+ },
+ {
+  "id": "13.09#4",
+  "codigo": "13.09",
+  "bloque": 13,
+  "nivel": 4,
+  "titulo": "Activos no producidos (NP): terrenos, espectro y derechos de emisión",
+  "q": "¿Por qué una licencia de espectro es un activo y un derecho de emisión un impuesto?",
+  "a": "Por lo que adquiere el comprador. En el espectro adquiere el uso exclusivo de un recurso natural escaso, que es un activo no producido. En el derecho de emisión adquiere el permiso para hacer algo que de otro modo estaría prohibido, que es la definición económica de un tributo. La forma es casi idéntica y el fondo, opuesto."
+ },
+ {
+  "id": "13.09#5",
+  "codigo": "13.09",
+  "bloque": 13,
+  "nivel": 4,
+  "titulo": "Activos no producidos (NP): terrenos, espectro y derechos de emisión",
+  "q": "¿Qué enseñó el episodio de las licencias de telefonía del año 2000?",
+  "a": "Que una operación puntual e irrepetible puede alterar el indicador con el que se vigila la política fiscal: Alemania pasó de déficit a superávit en un ejercicio y volvió al déficit al siguiente. La capacidad de financiación incluye la venta de patrimonio, que no es lo mismo que reducir el desequilibrio corriente. De ahí que hoy se usen saldos ajustados de operaciones puntuales y que las reglas de clasificación se endurecieran."
+ },
+ {
+  "id": "13.10#0",
+  "codigo": "13.10",
+  "bloque": 13,
+  "nivel": 4,
+  "titulo": "Balances, revalorizaciones y consumo de capital fijo",
+  "q": "¿Cuáles son las tres vías por las que cambia el patrimonio neto?",
+  "a": "El ahorro y las transferencias de capital (B.10.1), que es la única que procede de la actividad económica; las otras variaciones del volumen de activos (B.10.2), como hallazgos, catástrofes o reclasificaciones; y la revalorización (B.10.3), el efecto de que cambien los precios de lo que ya se tenía. La identidad es exacta y el sistema exige explicar el paso entero."
+ },
+ {
+  "id": "13.10#1",
+  "codigo": "13.10",
+  "bloque": 13,
+  "nivel": 4,
+  "titulo": "Balances, revalorizaciones y consumo de capital fijo",
+  "q": "El patrimonio del hogar sube 18.400 € en un año. ¿Cuánto ha ahorrado realmente?",
+  "a": "8.400 €, que es su ahorro bruto de 10.000 € menos 1.600 € de consumo de capital fijo por el desgaste de la vivienda. Los otros 10.000 € son revalorización: han aparecido porque subió un precio, no están en el PIB ni en la renta de nadie y son reversibles."
+ },
+ {
+  "id": "13.10#2",
+  "codigo": "13.10",
+  "bloque": 13,
+  "nivel": 4,
+  "titulo": "Balances, revalorizaciones y consumo de capital fijo",
+  "q": "¿En qué se diferencia el consumo de capital fijo de la amortización contable?",
+  "a": "El K.1 es una estimación económica del desgaste real, calculada a precio de reposición corriente y aplicada a todo el capital fijo, incluidas las infraestructuras públicas y la I+D capitalizada. La amortización contable sigue criterios jurídicos y la fiscal responde a incentivos tributarios; ninguna mide el desgaste."
+ },
+ {
+  "id": "13.10#3",
+  "codigo": "13.10",
+  "bloque": 13,
+  "nivel": 4,
+  "titulo": "Balances, revalorizaciones y consumo de capital fijo",
+  "q": "¿Qué distingue una ganancia por tenencia neutral de una real?",
+  "a": "La neutral se limita a seguir al nivel general de precios, de modo que el propietario mantiene el mismo poder de compra y no se ha enriquecido en términos reales. La real refleja un cambio del precio relativo del activo. En períodos de inflación alta, no separarlas convierte la actualización nominal en riqueza aparente."
+ },
+ {
+  "id": "13.10#4",
+  "codigo": "13.10",
+  "bloque": 13,
+  "nivel": 4,
+  "titulo": "Balances, revalorizaciones y consumo de capital fijo",
+  "q": "¿Por qué dos unidades con el mismo patrimonio neto pueden estar en situaciones opuestas?",
+  "a": "Porque el neto no dice nada del apalancamiento. Un hogar con 208.400 € de activos y 183.000 € de deuda y otro con 33.400 € de activos y ninguna deuda tienen el mismo B.90, y una caída del 15 % en el precio de la vivienda arruina al primero y no toca al segundo. Hay que mirar el balance bruto."
+ },
+ {
+  "id": "13.10#5",
+  "codigo": "13.10",
+  "bloque": 13,
+  "nivel": 4,
+  "titulo": "Balances, revalorizaciones y consumo de capital fijo",
+  "q": "¿Por qué las cuentas de flujos no advierten de una burbuja y los balances sí?",
+  "a": "Porque durante un auge de precios de activos el PIB, la renta y el consumo pueden crecer con normalidad mientras el patrimonio se infla por revalorización, que no produce nada. La señal es la proporción entre K.7 y ahorro neto: cuando la revalorización aporta más que el ahorro, el enriquecimiento descansa sobre precios que pueden bajar."
  },
  {
   "id": "2.01#0",

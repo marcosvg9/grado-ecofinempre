@@ -213,7 +213,25 @@ export const BLOQUES = [
       { t: "El resto del mundo (S.2) y el puente con la balanza de pagos", n: 4, k: "Un recurso para el resto del mundo es un empleo para la economía nacional. Todo el sector es un espejo, y equivocarse de signo arruina el análisis.", b: "SEC 2010, capítulo 18; FMI, Manual de Balanza de Pagos (MBP6)" },
     ],
   },
+  {
+    id: 13,
+    nombre: "Operaciones y activos del SEC 2010",
+    resumen: "Qué hay exactamente dentro de cada operación y de cada activo, con ejemplos reconocibles.",
+    temas: [
+      { t: "La gramática del sistema: cómo se lee cualquier código del SEC", n: 3, k: "P, D, B, K, F, AN y AF. Siete letras y una regla de partida doble explican por qué toda operación aparece siempre dos veces.", b: "SEC 2010, capítulo 1 y anexo 7.1 (Reglamento UE 549/2013)" },
+      { t: "Operaciones de bienes y servicios: el equilibrio por producto", n: 3, k: "Producción más importaciones es igual a consumos intermedios, consumo final, inversión y exportaciones. Una identidad que se cumple producto a producto.", b: "SEC 2010, capítulo 3; Eurostat, Manual de tablas de origen y destino" },
+      { t: "El consumo intermedio (P.2): la frontera con el salario y con la inversión", n: 3, k: "El mismo gasto puede ser insumo, retribución o inversión. Dónde se coloque cambia el valor añadido, y por eso capitalizar la I+D subió el PIB.", b: "SEC 2010, capítulo 3 (P.2) y capítulo 4 (D.11)" },
+      { t: "La remuneración de asalariados (D.1) por dentro", n: 3, k: "El coche de empresa es salario y el uniforme no. La regla es si el gasto beneficia al trabajador o si lo exige el puesto.", b: "SEC 2010, capítulo 4 (D.11, D.121, D.122)" },
+      { t: "Impuestos sobre la producción y las importaciones (D.2) y subvenciones (D.3)", n: 3, k: "En un litro de gasolina la mitad del precio son impuestos, y el IVA se cobra encima del impuesto especial.", b: "SEC 2010, capítulo 4 (D.2, D.3); Eurostat, decisión sobre derechos de emisión" },
+      { t: "Impuestos corrientes sobre la renta y el patrimonio (D.5)", n: 3, k: "Un mismo contribuyente paga impuestos que caen en cinco cuentas distintas. El IBI de su casa no está donde casi nadie lo busca.", b: "SEC 2010, capítulo 4 (D.5) y capítulo 6 (D.91)" },
+      { t: "Cotizaciones y prestaciones sociales (D.6) por dentro", n: 3, k: "Una nómina recorrida entera: de los 39.000 que cuesta el trabajador a los 23.595 que se lleva. La diferencia tiene nombre y códigos.", b: "SEC 2010, capítulo 4 (D.61, D.62, D.63)" },
+      { t: "La formación de capital (P.5): activos fijos, existencias y objetos valiosos", n: 3, k: "Un cuadro en el vestíbulo no es inversión productiva pero sí formación de capital. Y las existencias son la partida más volátil del sistema.", b: "SEC 2010, capítulos 3 y 7 (P.51g, P.52, P.53)" },
+      { t: "Activos no producidos (NP): terrenos, espectro y derechos de emisión", n: 4, k: "Vender licencias de telefonía sacó a un país del déficit en un solo año. Vender un terreno entre residentes no cambia nada.", b: "SEC 2010, capítulos 6 y 7 (AN.2, NP); Eurostat, MGDD" },
+      { t: "Balances, revalorizaciones y consumo de capital fijo", n: 4, k: "El patrimonio de un hogar puede crecer el doble de lo que ahorra. Lo que aparece de más no está en el PIB ni en la renta de nadie.", b: "SEC 2010, capítulos 6, 7 y 13 (K.1, K.7, B.90)" },
+    ],
+  },
 ];
+
 
 // Aplanamos la estructura y generamos códigos tipo 3.07
 export const TEMAS = BLOQUES.flatMap((bl) =>

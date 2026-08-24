@@ -1,4 +1,9 @@
 import React, { useState, useMemo } from "react";
+import { CODIGOS_CON_FICHA } from "../datos/fichas/index.js";
+import { TEMAS } from "../datos/temario.js";
+
+/* Titulo de cada ficha, para el tooltip de las referencias cruzadas. */
+const TITULOS = Object.fromEntries(TEMAS.map((t) => [t.codigo, `${t.codigo} · ${t.t}`]));
 
 /* ------------------------------------------------------------------
    Renderizadores de los bloques de contenido de una ficha.
@@ -9,14 +14,34 @@ import React, { useState, useMemo } from "react";
 const EUR = (v) =>
   new Intl.NumberFormat("es-ES", { minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(v) + " €";
 
-/* Formato en linea minimo: **negrita** y *cursiva*. */
+/* Codigos tipo 13.05 que aparecen en el texto y tienen ficha escrita se
+   convierten en enlaces. El \b final impide que «12.000 €» o «1.900» piquen:
+   tras los dos digitos no puede venir otro. */
+const RE_REF = /(\b\d{1,2}\.\d{2}\b)/g;
+
+function conEnlaces(texto, base) {
+  if (!texto.includes(".")) return texto;
+  const partes = texto.split(RE_REF);
+  if (partes.length === 1) return texto;
+  return partes.map((p, i) =>
+    CODIGOS_CON_FICHA.has(p) ? (
+      <a className="refFicha" href={`#/ficha/${p}`} key={`${base}r${i}`} title={TITULOS[p] || ""}>
+        {p}
+      </a>
+    ) : (
+      <React.Fragment key={`${base}r${i}`}>{p}</React.Fragment>
+    )
+  );
+}
+
+/* Formato en linea minimo: **negrita**, *cursiva* y referencias a fichas. */
 export function enLinea(texto) {
   if (typeof texto !== "string") return texto;
   const partes = texto.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g);
   return partes.map((p, i) => {
-    if (p.startsWith("**") && p.endsWith("**")) return <b key={i}>{p.slice(2, -2)}</b>;
-    if (p.startsWith("*") && p.endsWith("*") && p.length > 2) return <i key={i}>{p.slice(1, -1)}</i>;
-    return <React.Fragment key={i}>{p}</React.Fragment>;
+    if (p.startsWith("**") && p.endsWith("**")) return <b key={i}>{conEnlaces(p.slice(2, -2), i)}</b>;
+    if (p.startsWith("*") && p.endsWith("*") && p.length > 2) return <i key={i}>{conEnlaces(p.slice(1, -1), i)}</i>;
+    return <React.Fragment key={i}>{conEnlaces(p, i)}</React.Fragment>;
   });
 }
 

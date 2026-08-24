@@ -4,8 +4,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "indices": "node herramientas/indice-preguntas.mjs && node herramientas/indice-busqueda.mjs",
+    "dev": "npm run indices && vite",
+    "build": "npm run indices && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
