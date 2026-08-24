@@ -1,5 +1,5 @@
 /* GENERADO POR herramientas/indice-preguntas.mjs — no editar a mano.
-   700 preguntas extraídas de 130 fichas.
+   760 preguntas extraídas de 140 fichas.
    Para regenerar: node herramientas/indice-preguntas.mjs */
 
 export default [
@@ -2612,6 +2612,546 @@ export default [
   "titulo": "Balances, revalorizaciones y consumo de capital fijo",
   "q": "¿Por qué las cuentas de flujos no advierten de una burbuja y los balances sí?",
   "a": "Porque durante un auge de precios de activos el PIB, la renta y el consumo pueden crecer con normalidad mientras el patrimonio se infla por revalorización, que no produce nada. La señal es la proporción entre K.7 y ahorro neto: cuando la revalorización aporta más que el ahorro, el enriquecimiento descansa sobre precios que pueden bajar."
+ },
+ {
+  "id": "14.01#0",
+  "codigo": "14.01",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "El empresario, las fuentes del derecho mercantil y el Registro Mercantil",
+  "q": "¿Qué significa que el derecho mercantil sea «privado especial»?",
+  "a": "Privado, porque regula relaciones entre particulares en pie de igualdad y no entre el ciudadano y el poder público. Especial, porque se aplica solo al tráfico de empresa y desplaza en él al derecho común, que actúa como supletorio. Además, en su orden de fuentes los usos del comercio van por delante del derecho civil."
+ },
+ {
+  "id": "14.01#1",
+  "codigo": "14.01",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "El empresario, las fuentes del derecho mercantil y el Registro Mercantil",
+  "q": "¿Qué cuatro requisitos definen a un empresario?",
+  "a": "Actuar en nombre propio, de forma habitual, con ánimo de lucro y organizando medios materiales y humanos para producir o intercambiar bienes o servicios. Los cuatro a la vez: si falta uno, no hay empresario, y de ahí que ni el empleado ni la asociación sin ánimo de lucro lo sean."
+ },
+ {
+  "id": "14.01#2",
+  "codigo": "14.01",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "El empresario, las fuentes del derecho mercantil y el Registro Mercantil",
+  "q": "Una sociedad revoca un poder ante notario pero no lo inscribe. ¿Queda vinculada por lo que firme el antiguo apoderado?",
+  "a": "Sí, frente al tercero de buena fe, porque lo no inscrito no le perjudica. Si el tercero conocía la revocación, no: la fe pública protege la confianza, no la mala fe. Y si la revocación se hubiera inscrito, sería oponible aunque el tercero no consultara el Registro."
+ },
+ {
+  "id": "14.01#3",
+  "codigo": "14.01",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "El empresario, las fuentes del derecho mercantil y el Registro Mercantil",
+  "q": "¿Consta en el Registro Mercantil quién es socio de una sociedad limitada?",
+  "a": "No. Las transmisiones de participaciones constan en el libro registro de socios, que lleva la propia sociedad y es privado. El Registro publica quién administra, no quién posee, de modo que la información sobre propiedad es bastante más opaca que la de administración."
+ },
+ {
+  "id": "14.01#4",
+  "codigo": "14.01",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "El empresario, las fuentes del derecho mercantil y el Registro Mercantil",
+  "q": "¿Obliga un pacto parasocial a la sociedad?",
+  "a": "No. Vincula a los socios firmantes y genera responsabilidad por daños entre ellos, pero no es oponible a la sociedad ni a terceros: un acuerdo social adoptado contra lo pactado sigue siendo válido. Por eso lo que se quiere hacer valer frente a todos acaba en los estatutos, que sí se inscriben."
+ },
+ {
+  "id": "14.01#5",
+  "codigo": "14.01",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "El empresario, las fuentes del derecho mercantil y el Registro Mercantil",
+  "q": "¿Qué problema económico resuelve el Registro Mercantil?",
+  "a": "Una asimetría de información. Sin él, cada contraparte tendría que verificar por su cuenta y en cada operación quién representa a una sociedad y hasta dónde llega su poder. El Registro convierte ese coste privado y repetido en uno público y único, y por esa vía abarata el crédito comercial y permite contratar con desconocidos."
+ },
+ {
+  "id": "14.02#0",
+  "codigo": "14.02",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Formas jurídicas: autónomo, sociedad limitada, anónima y cooperativa",
+  "q": "Con 40.000 € de beneficio, ¿cuánto se ahorra montando una sociedad?",
+  "a": "Dos euros. Las curvas de carga del autónomo y de la sociedad son prácticamente idénticas hasta unos 68.500 € de beneficio, porque una paga escala progresiva y la otra tipo fijo más gravamen del dividendo, y ambos caminos se cruzan justo donde el marginal del trabajo alcanza a esa suma."
+ },
+ {
+  "id": "14.02#1",
+  "codigo": "14.02",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Formas jurídicas: autónomo, sociedad limitada, anónima y cooperativa",
+  "q": "¿Cuál es entonces la ventaja fiscal real de la sociedad?",
+  "a": "El diferimiento. Lo que no se reparte tributa una sola vez, al tipo de sociedades, y el segundo gravamen se pospone hasta que el dinero salga. Con 140.000 € de beneficio y 30.000 € retirados la ventaja llega a 18.434 €. El autónomo no puede diferir nada: su rendimiento tributa entero lo saque o no."
+ },
+ {
+  "id": "14.02#2",
+  "codigo": "14.02",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Formas jurídicas: autónomo, sociedad limitada, anónima y cooperativa",
+  "q": "¿Qué queda del capital mínimo de la limitada tras rebajarlo a un euro?",
+  "a": "El colchón, trasladado en el tiempo. Mientras el capital sea inferior a 3.000 €, hay que destinar al menos el 20 % del beneficio a reserva legal hasta alcanzar esa cifra entre capital y reservas, y si se liquida sin patrimonio bastante los socios responden solidariamente de la diferencia hasta 3.000 €."
+ },
+ {
+  "id": "14.02#3",
+  "codigo": "14.02",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Formas jurídicas: autónomo, sociedad limitada, anónima y cooperativa",
+  "q": "¿Por qué la anónima exige informe de experto para las aportaciones no dinerarias y la limitada no?",
+  "a": "Porque está diseñada para socios que no se conocen y no pueden vigilarse entre sí: si alguien aporta una máquina sobrevalorada, el capital queda vacío y los demás no tienen forma de saberlo. En una limitada con tres socios que trabajan juntos esa garantía es una factura sin función."
+ },
+ {
+  "id": "14.02#4",
+  "codigo": "14.02",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Formas jurídicas: autónomo, sociedad limitada, anónima y cooperativa",
+  "q": "¿Qué hace distinta a una cooperativa de una sociedad de capital?",
+  "a": "Que es una sociedad de personas: se es socio por participar en la actividad y no por aportar dinero, se vota por cabeza y no por capital, y el excedente se reparte en proporción a la actividad cooperativizada. Alinea bien a quien aporta trabajo o producto, y capta mal capital de quien no participa."
+ },
+ {
+  "id": "14.02#5",
+  "codigo": "14.02",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Formas jurídicas: autónomo, sociedad limitada, anónima y cooperativa",
+  "q": "Una sociedad anónima de titularidad pública que no cubre costes con sus ventas, ¿en qué sector del SEC está?",
+  "a": "En administraciones públicas (S.13), no en sociedades no financieras. El SEC clasifica por el criterio del 50 % de cobertura de costes con ventas y por el control, no por la forma jurídica, y por eso su deuda computa como deuda pública pese a ser una sociedad mercantil."
+ },
+ {
+  "id": "14.03#0",
+  "codigo": "14.03",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Capital social, aportaciones y el alcance de la responsabilidad limitada",
+  "q": "¿Qué es exactamente el capital social?",
+  "a": "Una cifra abstracta que figura en los estatutos y en el pasivo del balance y que marca el volumen de patrimonio que no puede repartirse entre los socios. No es dinero ni un fondo: una sociedad con 3.000 € de capital puede tener cero en caja. Es una cifra de retención a favor de los acreedores."
+ },
+ {
+  "id": "14.03#1",
+  "codigo": "14.03",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Capital social, aportaciones y el alcance de la responsabilidad limitada",
+  "q": "¿Por qué no se puede aportar trabajo a una sociedad de capital?",
+  "a": "Porque solo pueden aportarse bienes y derechos susceptibles de valoración económica, y el trabajo futuro no es un patrimonio que los acreedores puedan agredir. Como el capital es una cifra de garantía, no puede estar formado por promesas de esfuerzo. El trabajo se retribuye por otras vías."
+ },
+ {
+  "id": "14.03#2",
+  "codigo": "14.03",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Capital social, aportaciones y el alcance de la responsabilidad limitada",
+  "q": "¿Cómo resuelven anónima y limitada el problema de valorar una aportación no dineraria?",
+  "a": "De forma opuesta. La anónima previene: exige informe de experto independiente designado por el registrador. La limitada corrige: no exige experto, pero hace responder solidariamente a fundadores, aportante y adquirentes de la realidad y del valor de lo aportado, frente a la sociedad y frente a los acreedores."
+ },
+ {
+  "id": "14.03#3",
+  "codigo": "14.03",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Capital social, aportaciones y el alcance de la responsabilidad limitada",
+  "q": "Una limitada debe 200.000 €. ¿De cuánto protege realmente la responsabilidad limitada al socio?",
+  "a": "En el ejemplo, con claridad de 90.000 € de deuda comercial. Los 70.000 € del banco están avalados personalmente, las deudas con Hacienda y Seguridad Social tienen vías de derivación y las laborales vías propias. Protege frente al acreedor que no pudo negociar y no frente al que sí pudo."
+ },
+ {
+  "id": "14.03#4",
+  "codigo": "14.03",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Capital social, aportaciones y el alcance de la responsabilidad limitada",
+  "q": "¿Qué es la infracapitalización y por qué justifica levantar el velo?",
+  "a": "Dotar a la sociedad de recursos manifiestamente insuficientes para la actividad que va a desarrollar, trasladando el riesgo entero a los acreedores. No es tener poco capital sino una desproporción entre el riesgo asumido y los medios puestos: el socio no ha puesto piel en el juego."
+ },
+ {
+  "id": "14.03#5",
+  "codigo": "14.03",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Capital social, aportaciones y el alcance de la responsabilidad limitada",
+  "q": "¿Por qué bajar el capital mínimo a un euro no dejó desprotegidos a los acreedores?",
+  "a": "Porque el capital mínimo nunca los protegió bien: una cifra fija ni se ajusta al riesgo ni impide que se consuma el primer año. Y porque el colchón se trasladó en el tiempo mediante la reserva del 20 %, mientras se reforzaban la transparencia contable, los deberes de los administradores y un concurso que se active pronto."
+ },
+ {
+  "id": "14.04#0",
+  "codigo": "14.04",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Junta general y órgano de administración: quién decide qué",
+  "q": "¿Qué tienen en común todas las competencias reservadas a la junta general?",
+  "a": "Que afectan a la posición del socio o a la estructura de la sociedad: cuentas y resultado, nombramiento y cese de administradores, estatutos, capital, modificaciones estructurales, disolución y activos esenciales. Todo lo demás corresponde a los administradores."
+ },
+ {
+  "id": "14.04#1",
+  "codigo": "14.04",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Junta general y órgano de administración: quién decide qué",
+  "q": "Una sociedad con 4.000.000 € de activo vende una nave por 1.400.000 €. ¿Quién decide?",
+  "a": "La junta general. Supera el 25 % del valor de los activos del último balance, umbral a partir del cual la ley presume que el activo es esencial. Vender por 300.000 €, en cambio, sería gestión ordinaria del administrador: el mismo tipo de operación cambia de órgano según su tamaño relativo."
+ },
+ {
+  "id": "14.04#2",
+  "codigo": "14.04",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Junta general y órgano de administración: quién decide qué",
+  "q": "Los estatutos exigen autorización de la junta por encima de 500.000 € y el administrador firma 900.000 € sin ella. ¿Vale el contrato?",
+  "a": "Sí. El poder de representación se extiende a todo lo comprendido en el objeto social y las limitaciones de facultades son ineficaces frente al tercero de buena fe, aunque estén inscritas. El administrador responde frente a la sociedad y puede ser cesado, pero el contrato vincula."
+ },
+ {
+  "id": "14.04#3",
+  "codigo": "14.04",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Junta general y órgano de administración: quién decide qué",
+  "q": "¿Por qué la junta puede cesar al administrador sin causa y sin que figure en el orden del día?",
+  "a": "Porque es la contrapartida de que su poder hacia fuera sea prácticamente ilimitado. Cuando el control judicial de la conducta es caro y lento, el mecanismo eficaz es la revocabilidad inmediata. Es una regla imperativa que los estatutos no pueden suavizar."
+ },
+ {
+  "id": "14.04#4",
+  "codigo": "14.04",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Junta general y órgano de administración: quién decide qué",
+  "q": "¿Pueden los estatutos exigir unanimidad para un acuerdo?",
+  "a": "No. Convertiría a cualquier socio en titular de un derecho de veto y bloquearía la sociedad. Los estatutos pueden reforzar las mayorías, y suele convenir hacerlo para los acuerdos estructurales, pero la unanimidad queda fuera del margen que la ley concede."
+ },
+ {
+  "id": "14.04#5",
+  "codigo": "14.04",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Junta general y órgano de administración: quién decide qué",
+  "q": "¿Cuál es el conflicto de agencia dominante en la empresa española y con qué herramientas se aborda?",
+  "a": "No el clásico entre propiedad dispersa y gestor profesional, sino el que enfrenta a mayoría y minoría, porque el capital está concentrado y quien controla administra. Las herramientas propias son el deber de abstención en conflicto de interés, el régimen de operaciones vinculadas, la impugnación de acuerdos abusivos y el derecho de separación por falta de dividendos."
+ },
+ {
+  "id": "14.05#0",
+  "codigo": "14.05",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Deberes y responsabilidad de los administradores",
+  "q": "¿Genera responsabilidad una inversión que sale mal?",
+  "a": "No, si estaba sujeta a discrecionalidad y se decidió de buena fe, sin interés personal, con información suficiente y con un procedimiento adecuado. Se enjuicia el proceso y no el acierto. Lo que sí genera responsabilidad es decidir sin analizar, o decidir teniendo un interés personal no declarado."
+ },
+ {
+  "id": "14.05#1",
+  "codigo": "14.05",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Deberes y responsabilidad de los administradores",
+  "q": "¿Qué diferencia hay entre el deber de diligencia y el de lealtad?",
+  "a": "La diligencia exige dedicación e información suficiente y admite modulación estatutaria. La lealtad exige anteponer el interés social al propio y en su núcleo es imperativa e indispensable. Además, su infracción permite reclamar no solo el daño sino la devolución del enriquecimiento obtenido."
+ },
+ {
+  "id": "14.05#2",
+  "codigo": "14.05",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Deberes y responsabilidad de los administradores",
+  "q": "Capital 50.000 €, patrimonio neto 22.000 €. ¿Qué debe hacer el administrador y en cuánto tiempo?",
+  "a": "Convocar la junta general en el plazo de dos meses para que acuerde la disolución o remueva la causa, porque el neto ha caído por debajo de la mitad del capital. Si no lo hace, responde solidariamente de las obligaciones sociales posteriores a la aparición de la causa."
+ },
+ {
+  "id": "14.05#3",
+  "codigo": "14.05",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Deberes y responsabilidad de los administradores",
+  "q": "¿De qué deudas responde exactamente y qué revela esa delimitación?",
+  "a": "Solo de las nacidas después de la causa de disolución: 95.000 € en el ejemplo, no los 180.000 anteriores. Revela que no se castiga el fracaso sino haber seguido contratando con quien ya no podía pagar: el acreedor anterior asumió un riesgo que existía, el posterior contrató con una sociedad que debía haberse detenido."
+ },
+ {
+  "id": "14.05#4",
+  "codigo": "14.05",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Deberes y responsabilidad de los administradores",
+  "q": "¿Por qué ampliar capital es la peor forma de salir de la causa de disolución?",
+  "a": "Porque cada euro de capital nuevo eleva en cincuenta céntimos el umbral que hay que superar, así que hay que aportar más de lo que falta. Una aportación de socios a fondo perdido sube el patrimonio neto sin tocar el capital, y un préstamo participativo lo consigue sin que el socio pierda su condición de acreedor."
+ },
+ {
+  "id": "14.05#5",
+  "codigo": "14.05",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Deberes y responsabilidad de los administradores",
+  "q": "¿Quién es administrador a efectos de responsabilidad?",
+  "a": "El nombrado e inscrito y también el administrador de hecho: quien ejerce las funciones sin título, con título caducado, o quien imparte las instrucciones que los administradores formales se limitan a ejecutar. La figura existe para impedir gobernar detrás de un testaferro, y los tribunales atienden a quién decide, no al Registro."
+ },
+ {
+  "id": "14.06#0",
+  "codigo": "14.06",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Cuentas anuales: formulación, aprobación, depósito y auditoría",
+  "q": "¿Cuáles son las cuatro fases de las cuentas anuales y quién interviene en cada una?",
+  "a": "Formulación por los administradores, en tres meses desde el cierre; auditoría por auditor independiente cuando procede; aprobación por la junta general, dentro de los seis primeros meses; y depósito en el Registro Mercantil, en el mes siguiente a la aprobación. Ninguna sustituye a las otras."
+ },
+ {
+  "id": "14.06#1",
+  "codigo": "14.06",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Cuentas anuales: formulación, aprobación, depósito y auditoría",
+  "q": "¿Puede la junta modificar las cuentas formuladas?",
+  "a": "No. La formulación es competencia de los administradores y la junta solo puede aprobarlas o rechazarlas. Si no está de acuerdo, lo que procede es no aprobarlas y que se formulen otras, con las consecuencias de gobierno que eso implica."
+ },
+ {
+  "id": "14.06#2",
+  "codigo": "14.06",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Cuentas anuales: formulación, aprobación, depósito y auditoría",
+  "q": "¿Por qué el empresario individual no está obligado a depositar cuentas y la sociedad sí?",
+  "a": "Porque el depósito es el precio de la responsabilidad limitada: quien pide que sus deudas no alcancen a su patrimonio acepta a cambio que sus números sean públicos. El empresario individual responde con todo lo que tiene, así que el acreedor no necesita esa información para saber contra qué puede ir."
+ },
+ {
+  "id": "14.06#3",
+  "codigo": "14.06",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Cuentas anuales: formulación, aprobación, depósito y auditoría",
+  "q": "Una empresa supera dos de los tres límites por primera vez. ¿Debe auditarse ese ejercicio?",
+  "a": "No. Hace falta superar dos de los tres durante dos ejercicios consecutivos, así que la obligación nace al segundo. La simetría funciona igual al salir: se deja de estar obligado tras dos ejercicios seguidos por debajo. Y los umbrales concretos han cambiado y hay que consultarlos."
+ },
+ {
+  "id": "14.06#4",
+  "codigo": "14.06",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Cuentas anuales: formulación, aprobación, depósito y auditoría",
+  "q": "¿Qué dice y qué no dice una opinión de auditoría favorable?",
+  "a": "Dice que, en opinión del auditor, las cuentas expresan la imagen fiel conforme al marco normativo aplicable. No dice que la empresa sea solvente, ni que esté bien gestionada, ni garantiza que no haya fraude. Verifica la fidelidad del retrato, no la salud del retratado."
+ },
+ {
+  "id": "14.06#5",
+  "codigo": "14.06",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Cuentas anuales: formulación, aprobación, depósito y auditoría",
+  "q": "¿Qué relación hay entre el depósito de cuentas y el PIB del sector sociedades?",
+  "a": "Directa: las cuentas depositadas por cientos de miles de sociedades, normalizadas por un mismo plan contable, son la materia prima de la Central de Balances y de la estimación del sector sociedades no financieras en contabilidad nacional. Una obligación pensada para proteger acreedores acabó siendo infraestructura estadística."
+ },
+ {
+  "id": "14.07#0",
+  "codigo": "14.07",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Contratos mercantiles, garantías y el arrendamiento financiero",
+  "q": "¿Qué separa un contrato de agencia de uno de distribución?",
+  "a": "Quién asume el riesgo de la operación, no el título del contrato. El agente promueve de forma estable operaciones ajenas cobrando comisión, y por eso la ley le concede preaviso e indemnización por clientela. El distribuidor compra para revender en nombre y por cuenta propios, asume el riesgo y carece de régimen legal específico."
+ },
+ {
+  "id": "14.07#1",
+  "codigo": "14.07",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Contratos mercantiles, garantías y el arrendamiento financiero",
+  "q": "¿Por qué en un concurso importa tanto si la garantía es personal o real?",
+  "a": "Porque la personal solo añade un patrimonio, que compite con los demás acreedores de ese garante, mientras que la real otorga preferencia de cobro sobre un bien determinado. El acreedor con privilegio especial cobra del bien afecto y los ordinarios se reparten lo que quede, que suele ser muy poco."
+ },
+ {
+  "id": "14.07#2",
+  "codigo": "14.07",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Contratos mercantiles, garantías y el arrendamiento financiero",
+  "q": "En un leasing, ¿quién es el propietario de la máquina?",
+  "a": "Depende de la pregunta. Jurídicamente el arrendador, hasta que se ejercita la opción: puede recuperarla si no se paga y la reclama en un concurso. Económicamente el arrendatario, que la elige, la mantiene, la asegura, soporta su obsolescencia y ejercitará la opción con práctica certeza. La contabilidad y el SEC siguen la segunda respuesta."
+ },
+ {
+  "id": "14.07#3",
+  "codigo": "14.07",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Contratos mercantiles, garantías y el arrendamiento financiero",
+  "q": "Máquina de 100.000 €, cinco cuotas de 22.000 € y opción de 5.000 €. ¿Qué son los 15.000 € de diferencia?",
+  "a": "Intereses, no mayor coste del bien. Equivalen a un tipo implícito del 4,706 % anual, que es el que iguala el valor actual de las cinco cuotas más la opción a los 100.000 € de hoy. Sin ese cálculo el leasing no es comparable con ninguna otra forma de financiación."
+ },
+ {
+  "id": "14.07#4",
+  "codigo": "14.07",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Contratos mercantiles, garantías y el arrendamiento financiero",
+  "q": "¿Cómo registra el SEC un arrendamiento financiero?",
+  "a": "Como una transferencia de propiedad económica: el bien es formación bruta de capital fijo del arrendatario y se imputa un préstamo del arrendador por el mismo importe, que las cuotas amortizan. Es el mismo criterio que aplica a las importaciones, registradas por cambio de propiedad económica y no por movimiento físico."
+ },
+ {
+  "id": "14.07#5",
+  "codigo": "14.07",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Contratos mercantiles, garantías y el arrendamiento financiero",
+  "q": "¿Por qué el aval del socio vacía la responsabilidad limitada?",
+  "a": "Porque es un contrato distinto entre el banco y la persona física, que la sociedad no cubre. La responsabilidad limitada regula quién responde de las deudas de la sociedad, no impide que el socio contraiga una deuda propia garantizándolas. Quien tiene poder de negociación exige el aval; quien no lo tiene se queda con la protección legal."
+ },
+ {
+  "id": "14.08#0",
+  "codigo": "14.08",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "El contrato de trabajo: modalidades, extinción y negociación colectiva",
+  "q": "¿Qué dos notas convierten una relación en laboral?",
+  "a": "La ajenidad —los frutos del trabajo pertenecen desde el origen al empresario, que asume el riesgo y aporta los medios— y la dependencia —el trabajador se integra en una organización ajena y sigue instrucciones—. Si concurren, hay contrato de trabajo con independencia del nombre que las partes le den."
+ },
+ {
+  "id": "14.08#1",
+  "codigo": "14.08",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "El contrato de trabajo: modalidades, extinción y negociación colectiva",
+  "q": "¿Por qué la calificación no está a disposición de las partes?",
+  "a": "Porque si lo estuviera bastaría redactar bien un contrato para vaciar todo el derecho del trabajo. Los tribunales atienden a los indicios reales: horario impuesto, medios del empresario, integración en su estructura, retribución fija y periódica, imposibilidad de sustituirse por otro y exclusividad."
+ },
+ {
+  "id": "14.08#2",
+  "codigo": "14.08",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "El contrato de trabajo: modalidades, extinción y negociación colectiva",
+  "q": "Nueve años y cuatro meses, 28.800 € anuales. ¿Cuánto cambia según la calificación del despido?",
+  "a": "El despido objetivo procedente son 20 días por año: 187 días, 14.755 €. El improcedente son 33 días por año: 308 días, 24.302 €. La diferencia es de 9.547 €, un tercio del salario anual, y el trabajador ha hecho exactamente lo mismo en los dos casos."
+ },
+ {
+  "id": "14.08#3",
+  "codigo": "14.08",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "El contrato de trabajo: modalidades, extinción y negociación colectiva",
+  "q": "¿Qué diferencia hay entre despido improcedente y nulo?",
+  "a": "En el improcedente el empresario elige entre readmitir con salarios de tramitación o indemnizar con 33 días por año, tope de 24 mensualidades. En el nulo no hay opción: procede la readmisión y el abono de los salarios dejados de percibir. Se declara nulo cuando se vulneran derechos fundamentales o se afecta a situaciones especialmente protegidas."
+ },
+ {
+  "id": "14.08#4",
+  "codigo": "14.08",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "El contrato de trabajo: modalidades, extinción y negociación colectiva",
+  "q": "¿Cuándo dejan de crecer las indemnizaciones por antigüedad?",
+  "a": "La del despido objetivo a los 18,25 años, al alcanzar el tope de 12 mensualidades; la del improcedente a los 22,1 años, al alcanzar las 24. A partir de ahí un año más de servicio no añade nada, y el coste marginal de despedir al trabajador de muy larga antigüedad es cero."
+ },
+ {
+  "id": "14.08#5",
+  "codigo": "14.08",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "El contrato de trabajo: modalidades, extinción y negociación colectiva",
+  "q": "¿Qué tiene de singular la eficacia de un convenio colectivo?",
+  "a": "Que es normativa y general: obliga a todas las empresas y trabajadores de su ámbito, hayan negociado o no, funcionando como una norma y no como un contrato. Y opera como suelo y no como techo, dentro de una estructura escalonada en la que cada nivel puede mejorar al anterior pero nunca empeorarlo."
+ },
+ {
+  "id": "14.09#0",
+  "codigo": "14.09",
+  "bloque": 14,
+  "nivel": 4,
+  "titulo": "Insolvencia: preconcurso, concurso y segunda oportunidad",
+  "q": "¿Qué problema resuelve el derecho concursal?",
+  "a": "Uno de coordinación. La ejecución individual produce un mal resultado colectivo: el acreedor más rápido embarga la maquinaria y convierte en chatarra un negocio viable en dificultades. El concurso suspende esa carrera y sustituye la ejecución individual por un procedimiento colectivo que ordena el cobro."
+ },
+ {
+  "id": "14.09#1",
+  "codigo": "14.09",
+  "bloque": 14,
+  "nivel": 4,
+  "titulo": "Insolvencia: preconcurso, concurso y segunda oportunidad",
+  "q": "¿Qué aporta la categoría de «probabilidad de insolvencia»?",
+  "a": "Permite acceder a las herramientas preconcursales hasta dos años antes de no poder cumplir, sin estar todavía en insolvencia. Desplaza el momento de la intervención, que era el problema real: cuando el concurso llegaba, el valor ya se había destruido y solo quedaba liquidar."
+ },
+ {
+  "id": "14.09#2",
+  "codigo": "14.09",
+  "bloque": 14,
+  "nivel": 4,
+  "titulo": "Insolvencia: preconcurso, concurso y segunda oportunidad",
+  "q": "Masa activa 400.000 €, pasivo un millón. ¿Cuánto recuperan los acreedores ordinarios?",
+  "a": "10.000 € sobre 550.000 €: un 1,82 %. Antes cobran los créditos contra la masa (60.000 €), el privilegio especial hasta el valor del bien afecto (250.000 €) y el privilegio general (80.000 €). Los subordinados no cobran nada."
+ },
+ {
+  "id": "14.09#3",
+  "codigo": "14.09",
+  "bloque": 14,
+  "nivel": 4,
+  "titulo": "Insolvencia: preconcurso, concurso y segunda oportunidad",
+  "q": "Un crédito hipotecario de 300.000 € sobre un bien que se vende por 250.000 €. ¿Qué pasa con la diferencia?",
+  "a": "Los 50.000 € no cubiertos bajan a crédito ordinario y compiten con los demás, recuperando el mismo 1,82 %. El privilegio especial alcanza solo hasta el valor del bien afecto, no hasta el importe nominal del crédito."
+ },
+ {
+  "id": "14.09#4",
+  "codigo": "14.09",
+  "bloque": 14,
+  "nivel": 4,
+  "titulo": "Insolvencia: preconcurso, concurso y segunda oportunidad",
+  "q": "¿Qué permite la homologación judicial de un plan de reestructuración y por qué importa?",
+  "a": "Hacerlo vinculante incluso para acreedores y clases enteras que votaron en contra, siempre que respete garantías como que el disidente no reciba menos de lo que obtendría en la liquidación. Elimina el poder de veto del acreedor pequeño que bloqueaba para extraer un rescate a costa de todos."
+ },
+ {
+  "id": "14.09#5",
+  "codigo": "14.09",
+  "bloque": 14,
+  "nivel": 4,
+  "titulo": "Insolvencia: preconcurso, concurso y segunda oportunidad",
+  "q": "¿Cómo registra el SEC una deuda que se declara incobrable?",
+  "a": "Como una otra variación del volumen de activos (K.5), no como una operación: nadie compra ni vende nada. Reduce el patrimonio del acreedor sin pasar por su renta ni por el PIB. La conversión de deuda en capital, en cambio, sí es una operación financiera: sustituye un AF.4 por un AF.5."
+ },
+ {
+  "id": "14.10#0",
+  "codigo": "14.10",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Competencia, propiedad industrial y protección de datos",
+  "q": "¿Es ilegal tener una posición dominante?",
+  "a": "No. Se puede llegar a dominante compitiendo mejor y el ordenamiento no lo reprocha; lo prohibido es abusar de esa posición. Lo que sí ocurre es que a la empresa dominante se le exige una conducta más estricta: prácticas lícitas en un mercado competido pueden ser abusivas cuando las hace quien no tiene contrapeso."
+ },
+ {
+  "id": "14.10#1",
+  "codigo": "14.10",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Competencia, propiedad industrial y protección de datos",
+  "q": "Dos empresas facturan 120 y 40 millones en España y tendrían un 34 % de cuota conjunta. ¿Hay que notificar la operación?",
+  "a": "Sí, por el umbral de cuota. No se cumple el de volumen, porque una de ellas no llega a 60 millones, pero los umbrales son alternativos y basta superar uno. El de cuota existe precisamente para capturar operaciones pequeñas en euros que sí concentran un mercado local o de nicho."
+ },
+ {
+  "id": "14.10#2",
+  "codigo": "14.10",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Competencia, propiedad industrial y protección de datos",
+  "q": "¿Por qué la multa por cártel se calcula sobre el volumen de negocios mundial?",
+  "a": "Porque cuando la probabilidad de detección es baja, la sanción tiene que ser desproporcionada respecto del daño para disuadir. Un cártel que dura años y eleva los precios genera beneficios que una multa proporcionada no compensaría. El complemento es el programa de clemencia, que eleva la probabilidad de detección."
+ },
+ {
+  "id": "14.10#3",
+  "codigo": "14.10",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Competencia, propiedad industrial y protección de datos",
+  "q": "¿Qué compra la sociedad a cambio del monopolio de una patente?",
+  "a": "Dos cosas: el incentivo a investigar, sin el cual nadie invertiría porque el primer imitador vendería al coste marginal; y la divulgación íntegra de la invención, que se publica desde el principio y queda libre a los veinte años. La alternativa a la patente no es el conocimiento libre, es el secreto."
+ },
+ {
+  "id": "14.10#4",
+  "codigo": "14.10",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Competencia, propiedad industrial y protección de datos",
+  "q": "¿Por qué una marca puede durar indefinidamente y una patente no?",
+  "a": "Porque la marca no monopoliza una idea sino que identifica un origen: no impide fabricar lo mismo, solo hacerlo pasar por el producto de otro. Lejos de restringir la competencia, la hace posible, porque sin marcas el consumidor no podría distinguir calidades ni castigar a quien le defraudó."
+ },
+ {
+  "id": "14.10#5",
+  "codigo": "14.10",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Competencia, propiedad industrial y protección de datos",
+  "q": "¿Cómo clasifica el SEC una patente y cómo una marca comprada?",
+  "a": "La patente y la investigación que la sustenta son un activo producido: productos de propiedad intelectual (AN.117), que se capitalizan y se amortizan porque su vida útil es finita. Una marca comprada encaja entre los activos no producidos, próxima al fondo de comercio, y no se agota con el uso. Y una marca creada internamente no aparece en ningún balance."
  },
  {
   "id": "2.01#0",

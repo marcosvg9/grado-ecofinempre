@@ -137,6 +137,16 @@ const CARGADORES = {
   "13.08": () => import("./f13-08.js"),
   "13.09": () => import("./f13-09.js"),
   "13.10": () => import("./f13-10.js"),
+  "14.01": () => import("./f14-01.js"),
+  "14.02": () => import("./f14-02.js"),
+  "14.03": () => import("./f14-03.js"),
+  "14.04": () => import("./f14-04.js"),
+  "14.05": () => import("./f14-05.js"),
+  "14.06": () => import("./f14-06.js"),
+  "14.07": () => import("./f14-07.js"),
+  "14.08": () => import("./f14-08.js"),
+  "14.09": () => import("./f14-09.js"),
+  "14.10": () => import("./f14-10.js"),
 };
 
 /* Codigos con ficha escrita. El plan lo usa para pintar la etiqueta «Ficha»

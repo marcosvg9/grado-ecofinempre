@@ -321,7 +321,9 @@ function Grafico({
           {/* Ejes */}
           <line className="gEje" x1={sx(x0)} y1={sy(y0)} x2={W - mr + 14} y2={sy(y0)} />
           <line className="gEje" x1={sx(x0)} y1={sy(y0)} x2={sx(x0)} y2={mt - 6} />
-          {ejes.x && <text className="gEje2" x={W - 2} y={sy(y0) + 15} textAnchor="end">{ejes.x}</text>}
+          {/* El rotulo va DEBAJO de los numeros del eje (que estan en +18): si comparten
+              linea base, la ultima marca de la derecha choca con el. */}
+          {ejes.x && <text className="gEje2" x={W - 2} y={sy(y0) + 36} textAnchor="end">{ejes.x}</text>}
           {ejes.y && <text className="gEje2" x={2} y={mt - 12}>{ejes.y}</text>}
 
           {/* Curvas */}

@@ -105,7 +105,7 @@ export default {
               nombre: "Precio real",
               color: "acento",
               grosor: 2.6,
-              etiquetaEn: [0.09, 805.52],
+              etiquetaEn: [0.09, 824],
               puntos: [[0.01, 1145.6], [0.02, 1094.27], [0.03, 1045.8], [0.04, 1000], [0.05, 956.71], [0.06, 915.75], [0.07, 876.99], [0.08, 840.29], [0.09, 805.52]],
             },
             {
@@ -113,7 +113,7 @@ export default {
               color: "alerta",
               trazo: "discontinuo",
               grosor: 2,
-              etiquetaEn: [0.09, 788.32],
+              etiquetaEn: [0.09, 782],
               puntos: [[0.01, 1125.08], [0.03, 1040.89], [0.05, 956.7], [0.07, 872.51], [0.09, 788.32]],
             },
           ],

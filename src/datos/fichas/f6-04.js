@@ -96,7 +96,7 @@ export default {
               nombre: "Costes totales",
               color: "alerta",
               grosor: 2.4,
-              etiquetaEn: [10000, 205000],
+              etiquetaEn: [10000, 228000],
               puntos: [[0, 85000], [10000, 205000]],
             },
             {

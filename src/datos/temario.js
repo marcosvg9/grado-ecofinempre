@@ -230,6 +230,23 @@ export const BLOQUES = [
       { t: "Balances, revalorizaciones y consumo de capital fijo", n: 4, k: "El patrimonio de un hogar puede crecer el doble de lo que ahorra. Lo que aparece de más no está en el PIB ni en la renta de nadie.", b: "SEC 2010, capítulos 6, 7 y 13 (K.1, K.7, B.90)" },
     ],
   },
+  {
+    id: 14,
+    nombre: "Derecho de la empresa",
+    resumen: "Las reglas que deciden quién responde de qué, y por qué una decisión de forma jurídica es una decisión económica.",
+    temas: [
+      { t: "El empresario, las fuentes del derecho mercantil y el Registro Mercantil", n: 2, k: "Un derecho especial nacido de los usos de los comerciantes, y un registro público que convierte lo privado en oponible a terceros.", b: "Código de Comercio; Reglamento del Registro Mercantil" },
+      { t: "Formas jurídicas: autónomo, sociedad limitada, anónima y cooperativa", n: 2, k: "Con 40.000 € de beneficio, autónomo y sociedad pagan casi lo mismo. La elección se decide por responsabilidad y por diferimiento, no por el tipo.", b: "Ley de Sociedades de Capital (RDL 1/2010); Ley 18/2022" },
+      { t: "Capital social, aportaciones y el alcance de la responsabilidad limitada", n: 2, k: "El capital no es dinero disponible sino una cifra de retención. Y el velo societario se levanta más a menudo de lo que se cree.", b: "Ley de Sociedades de Capital, títulos II y III" },
+      { t: "Junta general y órgano de administración: quién decide qué", n: 2, k: "La propiedad no manda en el día a día y la administración no puede tocar lo esencial. Todo el gobierno corporativo vive en esa frontera.", b: "Ley de Sociedades de Capital, títulos V y VI" },
+      { t: "Deberes y responsabilidad de los administradores", n: 3, k: "Equivocarse no genera responsabilidad; no convocar la junta cuando las pérdidas se comen la mitad del capital, sí.", b: "Ley de Sociedades de Capital, arts. 225-241 y 363-367" },
+      { t: "Cuentas anuales: formulación, aprobación, depósito y auditoría", n: 2, k: "Depositar las cuentas no es un trámite: es lo que convierte la contabilidad privada en información pública, y es la materia prima del sistema estadístico.", b: "Ley de Sociedades de Capital, título VII; Ley 22/2015 de Auditoría" },
+      { t: "Contratos mercantiles, garantías y el arrendamiento financiero", n: 3, k: "En un leasing la propiedad jurídica y la económica están en manos distintas, y la contabilidad sigue a la segunda.", b: "Código de Comercio; Código Civil; PGC, norma de registro y valoración 8ª" },
+      { t: "El contrato de trabajo: modalidades, extinción y negociación colectiva", n: 3, k: "Nueve años de antigüedad separan una indemnización de 14.755 € de otra de 24.302 €. La diferencia es solo la causa alegada.", b: "Estatuto de los Trabajadores (RDL 2/2015); RDL 32/2021" },
+      { t: "Insolvencia: preconcurso, concurso y segunda oportunidad", n: 4, k: "Con 400.000 € de activo y un millón de pasivo, los acreedores ordinarios recuperan el 1,8 %. El orden de cobro lo explica entero.", b: "Texto Refundido de la Ley Concursal (RDL 1/2020); Ley 16/2022" },
+      { t: "Competencia, propiedad industrial y protección de datos", n: 3, k: "Una patente dura veinte años y se agota; una marca dura diez y se renueva para siempre. Esa asimetría explica media estrategia empresarial.", b: "Ley 15/2007 de Defensa de la Competencia; Ley 24/2015 de Patentes; RGPD" },
+    ],
+  },
 ];
 
 
