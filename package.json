@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "indices": "node herramientas/indice-preguntas.mjs && node herramientas/indice-busqueda.mjs",
+    "check": "node herramientas/validar.mjs",
     "dev": "npm run indices && vite",
     "build": "npm run indices && vite build",
     "preview": "vite preview"
