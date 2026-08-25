@@ -65,7 +65,7 @@ export default function Ruta({ estudiados, irAFicha, alternar }) {
     <section className="ruta">
       <h1 className="rutaTitular">Ruta de estudio</h1>
       <p className="rutaEntrada">
-        Cada ficha declara de qué otras depende. Con eso se ordenan las 140: aquí están las que
+        Cada ficha declara de qué otras depende. Con eso se ordenan las {TEMAS.length}: aquí están las que
         ya puedes abordar porque tienes hechos sus prerrequisitos, y las que todavía no.
       </p>
 
@@ -112,7 +112,7 @@ export default function Ruta({ estudiados, irAFicha, alternar }) {
       {r.disponibles.length === 0 ? (
         <p className="rutaAviso">
           {r.estudiadas === r.total
-            ? "Están las 140. No queda ruta que trazar."
+            ? `Están las ${r.total}. No queda ruta que trazar.`
             : "Nada disponible: desmarca alguna ficha para volver a abrir camino."}
         </p>
       ) : (

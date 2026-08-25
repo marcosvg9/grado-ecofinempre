@@ -101,7 +101,7 @@ export default function Plan({ estudiados, alternar, irAFicha, reiniciar, export
         abordarlo.
       </p>
 
-      <div className="matriz" role="group" aria-label="Mapa de los cien temas">
+      <div className="matriz" role="group" aria-label={`Mapa de los ${TEMAS.length} temas`}>
         {BLOQUES.map((bl) => (
           <div className="matrizFila" key={bl.id}>
             <span className="matrizNum">{bl.id}</span>

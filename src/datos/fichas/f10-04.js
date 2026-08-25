@@ -9,7 +9,7 @@ export default {
   nucleo:
     "El sistema de reparto descansa en una identidad contable con tres términos: el tipo de cotización, la relación entre cotizantes y pensionistas, y la pensión relativa al salario. Si la demografía cambia el segundo, alguno de los otros dos tiene que moverse. No hay reforma que esquive esa aritmética, solo distintas formas de repartir su coste.",
   requiere: "10.03 Sistema fiscal español · 10.02 Mercado de trabajo español · 1.10 Economía normativa",
-  abre: "10.05 Imposición óptima · 10.06 SEC 2010 · 3.07 Deuda y sostenibilidad",
+  abre: "10.05 Imposición óptima · 10.06 SEC 2010 · 3.11 Deuda pública y sostenibilidad",
   secciones: [
     {
       titulo: "Desarrollo",
@@ -161,7 +161,7 @@ export default {
           lista: [
             "Las **pensiones contributivas son transferencias corrientes**, no consumo público: aparecen en la cuenta de distribución secundaria de la renta de la ficha 10.06, redistribuyendo renta entre sectores. No forman parte del PIB por el lado del gasto, aunque financien consumo cuando el hogar las gasta. Confundirlo lleva a sumar dos veces.",
             "Las **cotizaciones sociales** entran como parte de la remuneración de asalariados en la cuenta de explotación, coherentemente con el análisis de incidencia de la ficha 10.03. El sistema de cuentas trata así lo que la ley llama cotización empresarial: como coste laboral, no como impuesto separado.",
-            "El SEC 2010 **no registra como pasivo el compromiso futuro de pensiones** de un sistema de reparto, porque no constituye una obligación exigible en el sentido contable. Ese compromiso se estima aparte, en cuentas suplementarias, y su magnitud es de un orden que **no aparece en ninguna cifra de deuda pública**. Es la razón de que la deuda registrada y la sostenibilidad a largo plazo de la ficha 3.07 sean discusiones distintas.",
+            "El SEC 2010 **no registra como pasivo el compromiso futuro de pensiones** de un sistema de reparto, porque no constituye una obligación exigible en el sentido contable. Ese compromiso se estima aparte, en cuentas suplementarias, y su magnitud es de un orden que **no aparece en ninguna cifra de deuda pública**. Es la razón de que la deuda registrada y la sostenibilidad a largo plazo de la ficha 3.11 sean discusiones distintas.",
             "El **gasto sanitario y educativo sí es consumo público**, y en él la remuneración de asalariados pesa muchísimo, lo que hace que su coste crezca con los salarios de toda la economía aunque su productividad medida apenas mejore. Es el efecto Baumol de la ficha 10.01 con consecuencias presupuestarias directas.",
             "Y las **prestaciones por desempleo** son el estabilizador automático más visible en las cuentas: su fuerte oscilación cíclica es lo que hace que el saldo público español se mueva tanto con el ciclo, y la razón de que distinguir el saldo estructural del observado —con toda la incertidumbre de la ficha 10.10— sea tan decisivo en el marco fiscal europeo.",
           ],

@@ -1,5 +1,5 @@
 /* GENERADO POR herramientas/indice-preguntas.mjs — no editar a mano.
-   760 preguntas extraídas de 140 fichas.
+   765 preguntas extraídas de 141 fichas.
    Para regenerar: node herramientas/indice-preguntas.mjs */
 
 export default [
@@ -4052,6 +4052,51 @@ export default [
   "titulo": "Economía abierta: tipo de cambio, balanza de pagos, Mundell-Fleming",
   "q": "El saldo corriente mejora durante una recesión. ¿Ha ganado competitividad el país?",
   "a": "No necesariamente. La caída de la renta reduce las importaciones y mejora el saldo sin que la capacidad exportadora haya cambiado. Para saber si el ajuste es estructural hay que comprobar si las exportaciones ganan cuota de mercado; si no, la mejora se revertirá al recuperarse la demanda interna."
+ },
+ {
+  "id": "3.11#0",
+  "codigo": "3.11",
+  "bloque": 3,
+  "nivel": 3,
+  "titulo": "Deuda pública y sostenibilidad fiscal",
+  "q": "La deuda es del 105 % del PIB, el tipo implícito del 5 %, el crecimiento nominal del 2 % y el saldo primario está equilibrado. ¿Dónde queda la deuda el año siguiente?",
+  "a": "En el 108,09 %. La bola de nieve es 105 · (0,05 − 0,02) / 1,02 = 3,09 puntos, y sin saldo primario nada la compensa. Comprobación en euros: con un PIB de 100 la deuda pasa de 105 a 110,25, el PIB a 102, y 110,25 / 102 = 108,09 %."
+ },
+ {
+  "id": "3.11#1",
+  "codigo": "3.11",
+  "bloque": 3,
+  "nivel": 3,
+  "titulo": "Deuda pública y sostenibilidad fiscal",
+  "q": "En ese mismo escenario, ¿qué saldo primario haría falta para dejar la deuda donde estaba?",
+  "a": "Un superávit primario del 3,09 % del PIB, que es exactamente la bola de nieve: sp* = b · (r − g) / (1 + g) = 105 · 0,03 / 1,02. Conviene notar la magnitud del esfuerzo: tres puntos de PIB todos los años solo para que el ratio no suba."
+ },
+ {
+  "id": "3.11#2",
+  "codigo": "3.11",
+  "bloque": 3,
+  "nivel": 3,
+  "titulo": "Deuda pública y sostenibilidad fiscal",
+  "q": "Ahora el tipo implícito es del 3 % y el crecimiento nominal del 4 %. ¿Hace falta superávit primario para estabilizar?",
+  "a": "No. sp* = 105 · (−0,01) / 1,04 = −1,01 %, es decir, un déficit primario del 1,01 % del PIB todavía deja el ratio constante. Es la asimetría central del tema: con r < g la aritmética trabaja a favor. Pero conviene no acomodarse, porque el signo de r − g puede invertirse mucho más deprisa de lo que se amortiza la deuda."
+ },
+ {
+  "id": "3.11#3",
+  "codigo": "3.11",
+  "bloque": 3,
+  "nivel": 3,
+  "titulo": "Deuda pública y sostenibilidad fiscal",
+  "q": "Un Estado cierra el año con un déficit del 5,15 % del PIB y su ratio de deuda sube solo 3,09 puntos. ¿Hay un error?",
+  "a": "No: es el efecto denominador. El déficit se mide contra el PIB del propio año, mientras que el ratio compara la deuda acumulada con un PIB que ha crecido. Con un crecimiento nominal del 2 %, ese crecimiento absorbe 2,06 puntos del déficit. Es la misma razón por la que la inflación erosiona el peso de la deuda ya emitida."
+ },
+ {
+  "id": "3.11#4",
+  "codigo": "3.11",
+  "bloque": 3,
+  "nivel": 3,
+  "titulo": "Deuda pública y sostenibilidad fiscal",
+  "q": "Otro Estado declara un déficit del 3,5 % y su deuda sube 4,7 puntos. ¿Qué explica la diferencia?",
+  "a": "El ajuste déficit-deuda, de 1,2 puntos. Las causas habituales son adquisiciones netas de activos financieros —endeudarse para prestar o para recapitalizar una entidad aumenta la deuda sin generar déficit—, las diferencias entre el registro en devengo del déficit y los flujos de caja, y los efectos de valoración o de tipo de cambio. No es un residuo estadístico: es una magnitud que debe poder desglosarse."
  },
  {
   "id": "4.01#0",

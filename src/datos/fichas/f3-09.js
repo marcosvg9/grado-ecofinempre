@@ -9,7 +9,7 @@ export default {
   nucleo:
     "El nivel de vida a largo plazo lo decide la productividad total de los factores, no la acumulación. Acumular capital eleva el nivel y no la tasa de crecimiento, y esa distinción entre nivel y tasa es la que separa una política que mejora el país una vez de otra que lo mejora indefinidamente.",
   requiere: "3.06 Oferta y demanda agregadas · 2.04 Tecnología y producción",
-  abre: "10.01 Estructura productiva española · 10.09 Coste laboral unitario · 9.10 Innovación",
+  abre: "3.11 Deuda pública y sostenibilidad · 10.01 Estructura productiva española · 10.09 Coste laboral unitario · 9.10 Innovación",
   secciones: [
     {
       titulo: "Desarrollo",

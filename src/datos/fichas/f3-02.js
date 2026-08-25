@@ -9,7 +9,7 @@ export default {
   nucleo:
     "Dos medidas distintas de la misma idea que divergen sistemáticamente. Saber cuándo usar cada una exige entender que no miden la misma cesta: una sigue lo que compran los hogares, incluidas las importaciones, y la otra lo que produce el país, incluidas las exportaciones.",
   requiere: "1.07 Números índice · 3.01 PIB y agregados",
-  abre: "3.03 Paro y curva de Phillips · 3.08 Política monetaria · 10.08 Índices encadenados",
+  abre: "3.03 Paro y curva de Phillips · 3.08 Política monetaria · 3.11 Deuda pública y sostenibilidad · 10.08 Índices encadenados",
   secciones: [
     {
       titulo: "Desarrollo",

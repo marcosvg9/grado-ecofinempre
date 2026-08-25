@@ -9,7 +9,7 @@ export default {
   nucleo:
     "Comprar una vivienda no es consumir sino invertir, y por eso no reduce el ahorro de quien la compra. De esa clasificación y de las transferencias de capital sale el saldo que cierra el sistema: quién presta y quién pide prestado, y por qué los sectores suman siempre el saldo exterior.",
   requiere: "12.08 Consumo final · 10.06 SEC 2010 · 12.07 Otras transferencias corrientes",
-  abre: "12.10 El resto del mundo · 3.07 Deuda y sostenibilidad · 10.04 Gasto público",
+  abre: "12.10 El resto del mundo · 3.11 Deuda pública y sostenibilidad · 10.04 Gasto público",
   secciones: [
     {
       titulo: "Desarrollo",
@@ -160,7 +160,7 @@ export default {
           ],
           lista: [
             "La **formación bruta de capital** de esta cuenta es el componente de inversión del PIB por el enfoque de la demanda de la ficha 10.07. Que incluya los productos de la propiedad intelectual —investigación, desarrollo y software— es una decisión del SEC 2010 con efectos apreciables sobre el nivel del PIB.",
-            "La **capacidad o necesidad de financiación de las administraciones públicas** es, en general, la cifra de déficit del procedimiento de déficit excesivo, aunque no necesariamente en todos los periodos. Es la magnitud que se compara con los umbrales europeos y la que la ficha 3.07 usa en la dinámica de la deuda.",
+            "La **capacidad o necesidad de financiación de las administraciones públicas** es, en general, la cifra de déficit del procedimiento de déficit excesivo, aunque no necesariamente en todos los periodos. Es la magnitud que se compara con los umbrales europeos y la que la ficha 3.11 usa en la dinámica de la deuda.",
             "La **identidad de saldos sectoriales** es la traducción contable de la identidad ahorro-inversión de la ficha 3.01, y la herramienta de diagnóstico que la ficha 10.06 presentaba. Su virtud es que no depende de ningún supuesto de comportamiento.",
             "El **consumo de capital fijo** se estima por el método del inventario permanente, acumulando la inversión de años anteriores con una vida útil por tipo de activo. Es lo que separa las magnitudes brutas de las netas, y su fragilidad explica que casi todo el análisis se haga en bruto pese a que el neto sea conceptualmente superior.",
             "Y las **cuentas financieras** son el paso siguiente: registran en qué instrumentos —depósitos, valores, préstamos, participaciones— se materializa la capacidad de financiación de cada sector, y son donde se ve quién financia a quién. Su discrepancia con esta cuenta se publica como ajuste.",

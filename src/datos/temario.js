@@ -58,6 +58,7 @@ export const BLOQUES = [
       { t: "Política monetaria: BCE, tipos y mecanismo de transmisión", n: 3, k: "Del tipo de intervención al precio del pan hay una cadena larga y con retardos inciertos.", b: "Banco de España, publicaciones divulgativas" },
       { t: "Crecimiento económico: Solow, capital humano y productividad", n: 3, k: "El nivel de vida a largo plazo lo decide la productividad total de los factores, no la acumulación.", b: "Jones, Introducción al crecimiento económico" },
       { t: "Economía abierta: tipo de cambio, balanza de pagos, Mundell-Fleming", n: 3, k: "No puedes tener a la vez tipo fijo, libre movilidad de capital y política monetaria propia.", b: "Krugman y Obstfeld, Economía internacional" },
+      { t: "Deuda pública y sostenibilidad fiscal", n: 3, k: "La sostenibilidad no es un nivel de deuda sino una trayectoria, y quien decide la pendiente es la diferencia entre el tipo de interés y el crecimiento.", b: "Blanchard, Macroeconomía" },
     ],
   },
   {

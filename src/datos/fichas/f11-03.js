@@ -8,7 +8,7 @@ export default {
   tiempo: "4 h",
   nucleo:
     "Cuando un Estado necesita gastar más de lo que puede recaudar y nadie le presta, acaba emitiendo dinero. Es un impuesto que no se vota y que se recauda solo, y tiene la particularidad de que destruir su propia base imponible es cuestión de meses.",
-  requiere: "11.02 La primera globalización · 3.02 Inflación y precios · 3.07 Deuda y sostenibilidad",
+  requiere: "11.02 La primera globalización · 3.02 Inflación y precios · 3.11 Deuda pública y sostenibilidad",
   abre: "11.04 La Gran Depresión · 3.08 Política monetaria · 11.06 Estanflación",
   secciones: [
     {
@@ -158,7 +158,7 @@ export default {
           lista: [
             "Con precios que se duplican cada pocos días, **la distinción entre valor nominal y volumen deja de poder establecerse**: no existe un nivel de precios del trimestre porque no hay un precio, hay una trayectoria. Todo el aparato de deflactación de la ficha 10.08 supone que se puede hablar de «los precios de un periodo», y esa suposición se rompe.",
             "El **señoreaje** aparece en la contabilidad nacional como un ingreso del banco central que acaba transferido a las administraciones públicas, y por tanto en la cuenta de renta de la ficha 10.06. Es la única figura fiscal que no requiere norma tributaria alguna y que, sin embargo, se registra como cualquier otro ingreso.",
-            "La **erosión de la deuda por inflación** es un flujo real muy grande que las cuentas no registran como tal: la deuda se contabiliza a valor nominal, así que la pérdida de los acreedores y la ganancia del Estado no aparecen en ningún saldo de la secuencia. Es lo que la ficha 3.07 llamaba represión financiera, y es invisible en el déficit publicado.",
+            "La **erosión de la deuda por inflación** es un flujo real muy grande que las cuentas no registran como tal: la deuda se contabiliza a valor nominal, así que la pérdida de los acreedores y la ganancia del Estado no aparecen en ningún saldo de la secuencia. Es lo que la ficha 3.11 llamaba represión financiera, y es invisible en el déficit publicado.",
             "El uso de **moneda extranjera** dentro del país descoloca las estadísticas monetarias y de balanza de pagos, porque una parte creciente de las transacciones deja de pasar por el sistema financiero nacional. Los agregados monetarios pierden significado justo cuando más se necesitan.",
             "Y las **series históricas de PIB real** de países que atravesaron hiperinflaciones son especialmente frágiles, porque el deflactor con el que se construyen es precisamente la magnitud que se vuelve inestimable. Es un caso extremo del aviso de la ficha 4.03 sobre tratar estimaciones como mediciones.",
           ],

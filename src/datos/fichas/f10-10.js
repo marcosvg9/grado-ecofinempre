@@ -9,7 +9,7 @@ export default {
   nucleo:
     "El primer dato de un trimestre y el definitivo pueden contar historias opuestas del mismo periodo. Y como las decisiones se toman con el primero, evaluar una política con la serie revisada es juzgar a alguien por información que no tenía.",
   requiere: "10.07 Producción, VAB y PIB · 4.10 Desestacionalización · 4.03 Probabilidad e inferencia",
-  abre: "3.08 Política monetaria · 3.07 Deuda y sostenibilidad · 1.10 Economía normativa",
+  abre: "3.08 Política monetaria · 3.11 Deuda pública y sostenibilidad · 1.10 Economía normativa",
   secciones: [
     {
       titulo: "Desarrollo",

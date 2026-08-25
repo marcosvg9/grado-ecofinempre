@@ -9,7 +9,7 @@ export default {
   nucleo:
     "Del tipo de intervención al precio del pan hay una cadena larga y con retardos inciertos. Esa incertidumbre no es un detalle operativo: obliga a decidir hoy en función de dónde estará la economía dentro de año y medio, con datos provisionales de lo que pasó hace tres meses.",
   requiere: "3.07 Dinero y bancos · 3.05 Modelo IS-LM · 3.03 Curva de Phillips",
-  abre: "3.10 Economía abierta · 8.03 Curva de tipos · 10.04 Gasto público",
+  abre: "3.10 Economía abierta · 3.11 Deuda pública y sostenibilidad · 8.03 Curva de tipos · 10.04 Gasto público",
   secciones: [
     {
       titulo: "Desarrollo",

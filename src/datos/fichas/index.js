@@ -37,6 +37,7 @@ const CARGADORES = {
   "3.08": () => import("./f3-08.js"),
   "3.09": () => import("./f3-09.js"),
   "3.10": () => import("./f3-10.js"),
+  "3.11": () => import("./f3-11.js"),
   "4.01": () => import("./f4-01.js"),
   "4.02": () => import("./f4-02.js"),
   "4.03": () => import("./f4-03.js"),

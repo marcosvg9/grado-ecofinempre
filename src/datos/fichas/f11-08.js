@@ -8,7 +8,7 @@ export default {
   tiempo: "4 h",
   nucleo:
     "Auge del crédito, una garantía que se revaloriza sola, apalancamiento creciente y una sorpresa. El guion es el mismo desde hace siglos, y lo único que cambia entre episodios es el activo de moda y el argumento por el que esta vez sería distinto.",
-  requiere: "11.04 La Gran Depresión · 8.01 Sistema financiero · 3.07 Deuda y sostenibilidad",
+  requiere: "11.04 La Gran Depresión · 8.01 Sistema financiero · 3.11 Deuda pública y sostenibilidad",
   abre: "11.09 España · 8.10 Gestión de riesgos · 10.06 SEC 2010",
   secciones: [
     {

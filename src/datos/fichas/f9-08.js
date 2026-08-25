@@ -8,7 +8,7 @@ export default {
   tiempo: "4 h",
   nucleo:
     "El precio es la única variable del marketing que genera ingresos; las demás generan costes. Y es también la de efecto más inmediato sobre el beneficio, porque un punto de precio cae íntegro al margen mientras que un punto de volumen arrastra su coste variable.",
-  requiere: "9.07 Segmentación · 6.04 Punto muerto · 2.03 Elasticidades",
+  requiere: "9.07 Segmentación · 6.04 Punto muerto · 1.03 Elasticidades",
   abre: "9.09 Operaciones · 2.07 Discriminación de precios",
   secciones: [
     {
