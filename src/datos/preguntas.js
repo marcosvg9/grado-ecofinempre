@@ -1,5 +1,5 @@
 /* GENERADO POR herramientas/indice-preguntas.mjs — no editar a mano.
-   765 preguntas extraídas de 141 fichas.
+   790 preguntas extraídas de 146 fichas.
    Para regenerar: node herramientas/indice-preguntas.mjs */
 
 export default [
@@ -452,6 +452,51 @@ export default [
   "titulo": "Economía normativa frente a positiva",
   "q": "Dos economistas discrepan sobre una política. ¿Cómo saber si el desacuerdo es resoluble?",
   "a": "Clasificando la afirmación. Si discrepan sobre qué mecanismo domina o sobre cuánto vale un parámetro, el desacuerdo es positivo y admite evidencia. Si discrepan sobre cuánto pesa la equidad o sobre qué debe asignarse por mercado, es normativo y no se resuelve con datos, solo se explicita."
+ },
+ {
+  "id": "1.11#0",
+  "codigo": "1.11",
+  "bloque": 1,
+  "nivel": 3,
+  "titulo": "Escuelas heterodoxas y enfoques alternativos",
+  "q": "Una empresa tiene un flujo de caja de 100 y paga un 6 % de interés. ¿A partir de qué nivel de deuda entra en postura Ponzi?",
+  "a": "A partir de 1.666,7, que es 100 ÷ 0,06. En ese punto los intereses absorben exactamente todo el flujo de caja y no queda nada para amortizar: es la frontera de la postura especulativa. Por encima, los intereses superan al flujo y la empresa debe endeudarse para pagarlos, de modo que la deuda crece sin que ocurra nada externo."
+ },
+ {
+  "id": "1.11#1",
+  "codigo": "1.11",
+  "bloque": 1,
+  "nivel": 3,
+  "titulo": "Escuelas heterodoxas y enfoques alternativos",
+  "q": "¿Por qué dice Minsky que la estabilidad es desestabilizadora?",
+  "a": "Porque durante una expansión prolongada las deudas se pagan y los impagos escasean, de modo que prestamistas y prestatarios reducen el margen de seguridad que consideran prudente. Cada decisión es individualmente razonable a la vista de la experiencia reciente, pero el efecto agregado desplaza al sistema de posturas cubiertas a posturas Ponzi. La fragilidad la genera la propia calma, sin necesidad de irracionalidad ni de choque externo."
+ },
+ {
+  "id": "1.11#2",
+  "codigo": "1.11",
+  "bloque": 1,
+  "nivel": 3,
+  "titulo": "Escuelas heterodoxas y enfoques alternativos",
+  "q": "El análisis estático trata el beneficio extraordinario como un síntoma de poder de mercado. ¿Qué objeta Schumpeter?",
+  "a": "Que en una industria innovadora ese beneficio es el premio temporal que retribuye la innovación y financia la siguiente, y que será erosionado por quien venga detrás. La dificultad práctica es que renta protegida por barreras artificiales y renta de innovación se parecen mucho en un corte transversal: solo se distinguen mirando la trayectoria, y el instrumental estático mide un momento."
+ },
+ {
+  "id": "1.11#3",
+  "codigo": "1.11",
+  "bloque": 1,
+  "nivel": 3,
+  "titulo": "Escuelas heterodoxas y enfoques alternativos",
+  "q": "¿Cuál es el argumento de Hayek contra la planificación central?",
+  "a": "Que el conocimiento necesario para planificar está disperso entre millones de personas, es en buena parte tácito y no existe reunido en ningún sitio. No es un argumento sobre la moralidad de planificar ni sobre la competencia de los planificadores, sino sobre la disponibilidad de la información. Su contrapartida positiva es que el sistema de precios transmite esa información sin que nadie tenga que conocerla entera."
+ },
+ {
+  "id": "1.11#4",
+  "codigo": "1.11",
+  "bloque": 1,
+  "nivel": 3,
+  "titulo": "Escuelas heterodoxas y enfoques alternativos",
+  "q": "¿Dónde aparece en las cuentas nacionales la destrucción creativa de Schumpeter?",
+  "a": "Como minoración del patrimonio, no como proceso productivo. La obsolescencia previsible entra en el consumo de capital fijo (K.1) y la imprevisible en las otras variaciones del volumen de activos (B.10.2). Es un buen ejemplo de que el sistema no es neutral: el mecanismo que una tradición considera el motor del crecimiento aparece contabilizado como una pérdida de valor."
  },
  {
   "id": "10.01#0",
@@ -992,6 +1037,51 @@ export default [
   "titulo": "Cuentas trimestrales, revisiones y datos en tiempo real",
   "q": "Un registro administrativo y una estimación de contabilidad nacional discrepan. ¿Cuál seguir?",
   "a": "El registro suele adelantarse: afiliación, recaudación y aduanas son censales, se publican pronto y apenas se revisan, mientras que las cuentas son estimaciones conciliadas sujetas a revisión. Cuando ambos coinciden, la señal es fiable; cuando discrepan, lo prudente es concluir que aún no hay señal clara."
+ },
+ {
+  "id": "10.11#0",
+  "codigo": "10.11",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "Distribución de la renta y desigualdad",
+  "q": "Los quintiles reciben el 3, 8, 14, 23 y 52 % de la renta. Calcula el Gini por trapecios.",
+  "a": "0,452. Los porcentajes acumulados son 0,03 / 0,11 / 0,25 / 0,48 / 1,00 y cada tramo de población vale 0,20. La suma Σ (Xᵢ − Xᵢ₋₁)(Yᵢ + Yᵢ₋₁) = 0,2 · (0,03 + 0,14 + 0,36 + 0,73 + 1,48) = 0,548, y el Gini es 1 − 0,548 = 0,452."
+ },
+ {
+  "id": "10.11#1",
+  "codigo": "10.11",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "Distribución de la renta y desigualdad",
+  "q": "Tras impuestos y prestaciones, los quintiles reciben 6, 11, 16, 23 y 44 %. ¿Cuánto redistribuye el sistema?",
+  "a": "Diez puntos de Gini: baja de 0,452 a 0,352, una reducción del 22 %. El S80/S20 pasa de 17,3 a 7,3, más de la mitad. Que el indicador de colas registre un efecto proporcionalmente mayor que el Gini indica que la acción pública se concentra en los extremos de la distribución, no en el centro: de hecho el cuarto quintil no se mueve."
+ },
+ {
+  "id": "10.11#2",
+  "codigo": "10.11",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "Distribución de la renta y desigualdad",
+  "q": "Dos países tienen el mismo Gini. ¿Puede afirmarse que su desigualdad es equivalente?",
+  "a": "No. El Gini resume la distribución en un escalar y distribuciones distintas pueden compartirlo; además es poco sensible a los extremos. Uno puede tener una cola inferior muy hundida por desempleo y el otro una cúspide muy concentrada. Hay que mirar además ratios entre percentiles y la participación del percentil superior, y comprobar que ambos midan la misma definición de renta."
+ },
+ {
+  "id": "10.11#3",
+  "codigo": "10.11",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "Distribución de la renta y desigualdad",
+  "q": "¿Por qué el Gini calculado sobre quintiles subestima la desigualdad?",
+  "a": "Porque supone reparto uniforme dentro de cada tramo y, por tanto, ignora la desigualdad interna de cada quintil. El cálculo sobre microdatos individuales siempre da un valor algo mayor, y la diferencia crece cuanto más gruesa sea la agrupación. No es un error si se advierte; lo es comparar un Gini de quintiles con otro de microdatos."
+ },
+ {
+  "id": "10.11#4",
+  "codigo": "10.11",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "Distribución de la renta y desigualdad",
+  "q": "¿Por qué las cuentas nacionales no bastan para medir la desigualdad?",
+  "a": "Porque publican saldos agregados por sector institucional: dan la renta disponible de todos los hogares (S.14) en conjunto, no su reparto entre ellos. Definen bien las etapas —B.5 de mercado, B.6 disponible, B.7 ajustada— pero la distribución hay que traerla de encuestas o de registros fiscales. Las cuentas distributivas intentan repartir los agregados del SEC imponiendo que la suma cuadre con el total contable."
  },
  {
   "id": "11.01#0",
@@ -3602,6 +3692,96 @@ export default [
   "titulo": "Fallos de mercado: externalidades, bienes públicos, información",
   "q": "¿Por qué ninguna franquicia resuelve del todo el riesgo moral?",
   "a": "Porque la franquicia que devuelve el incentivo a prevenir es también la que deja al asegurado soportando riesgo. En el ejemplo hace falta una franquicia de 4.000 sobre una pérdida de 5.000. Incentivos y aseguramiento se mueven en direcciones opuestas, y ese intercambio es irreducible mientras la conducta no sea observable."
+ },
+ {
+  "id": "2.11#0",
+  "codigo": "2.11",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Ventaja comparativa y ganancias del comercio",
+  "q": "Norte necesita 2 h por software y 4 h por textil; Sur, 8 h y 5 h. ¿Quién exporta cada bien?",
+  "a": "Norte exporta software y Sur exporta textil. Norte tiene ventaja absoluta en los dos, pero eso no decide nada. El coste de oportunidad de un software es 2/4 = 0,5 textil en Norte y 8/5 = 1,6 en Sur: Norte renuncia a menos y se especializa en software. Recíprocamente, un textil cuesta 0,625 software en Sur frente a 2,0 en Norte."
+ },
+ {
+  "id": "2.11#1",
+  "codigo": "2.11",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Ventaja comparativa y ganancias del comercio",
+  "q": "¿Puede un país tener ventaja comparativa en los dos bienes?",
+  "a": "No, nunca. Los costes de oportunidad son inversos entre sí: si producir A cuesta poco B, producir B cuesta mucho A por construcción aritmética. En el ejemplo, 0,5 y 2,0 son inversos, igual que 1,6 y 0,625. Por eso todo país, por improductivo que sea, tiene ventaja comparativa en algo, y por eso no existen países sin nada que exportar."
+ },
+ {
+  "id": "2.11#2",
+  "codigo": "2.11",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Ventaja comparativa y ganancias del comercio",
+  "q": "¿Entre qué valores debe situarse la relación de intercambio para que los dos países comercien?",
+  "a": "Entre 0,5 y 1,6 textil por software. Norte no vende por debajo de 0,5 porque fabricarlo él le sale más barato; Sur no compra por encima de 1,6 por la razón simétrica. Dentro del rango ambos ganan, y la posición exacta reparte la ganancia: cerca de 0,5 se la lleva Sur, cerca de 1,6 se la lleva Norte."
+ },
+ {
+  "id": "2.11#3",
+  "codigo": "2.11",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Ventaja comparativa y ganancias del comercio",
+  "q": "En el gráfico, el punto de consumo queda fuera de la frontera de posibilidades. ¿Ha aumentado la capacidad productiva del país?",
+  "a": "No. La frontera no se ha movido: Norte sigue pudiendo producir como mucho 1.200 software o 600 textil. Lo que ha cambiado es que ya no está obligado a consumir lo que produce. Al especializarse y cambiar en el mercado internacional a una relación distinta de su coste interno, accede a combinaciones de consumo que su tecnología no alcanza. El comercio funciona aquí como una tecnología indirecta para obtener textil."
+ },
+ {
+  "id": "2.11#4",
+  "codigo": "2.11",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Ventaja comparativa y ganancias del comercio",
+  "q": "Si el país en conjunto gana, ¿por qué hay oposición política al comercio?",
+  "a": "Porque «el país gana» significa que los ganadores podrían compensar a los perdedores, no que lo hagan. Con dos factores, Stolper-Samuelson predice que el factor escaso —el trabajo poco cualificado en una economía avanzada— pierde retribución real de forma permanente. Además la ganancia es difusa y pequeña por persona, mientras que la pérdida es concentrada y grande, lo que hace que solo un lado tenga incentivos para organizarse."
+ },
+ {
+  "id": "2.12#0",
+  "codigo": "2.12",
+  "bloque": 2,
+  "nivel": 3,
+  "titulo": "Política comercial: aranceles, cuotas y uniones aduaneras",
+  "q": "Con demanda Qd = 100 − P, oferta Qs = P − 20, precio mundial 30 y un arancel de 10: ¿cuánto se importa antes y después?",
+  "a": "Antes 60 unidades: a precio 30 se consumen 70 y se producen 10. Después 40: a precio 40 se consumen 60 y se producen 20. Las importaciones absorben los dos ajustes a la vez —el consumo cae 10 y la producción nacional sube 10—, y por eso caen 20, el doble que cada efecto por separado."
+ },
+ {
+  "id": "2.12#1",
+  "codigo": "2.12",
+  "bloque": 2,
+  "nivel": 3,
+  "titulo": "Política comercial: aranceles, cuotas y uniones aduaneras",
+  "q": "Calcula la pérdida de eficiencia y comprueba el resultado por dos caminos.",
+  "a": "Es 100. Por excedentes: los consumidores pierden 650, los productores ganan 150 y el Estado recauda 400, así que 650 − 150 − 400 = 100. Por triángulos: la distorsión de producción es ½ · 10 · 10 = 50 y la de consumo ½ · 10 · 10 = 50. Ambos caminos deben coincidir siempre; si no lo hacen, hay un error en las áreas."
+ },
+ {
+  "id": "2.12#2",
+  "codigo": "2.12",
+  "bloque": 2,
+  "nivel": 3,
+  "titulo": "Política comercial: aranceles, cuotas y uniones aduaneras",
+  "q": "Una cuota que limite las importaciones a 40 unidades, ¿produce el mismo resultado que el arancel?",
+  "a": "El mismo precio interno (40), la misma producción nacional (20) y la misma pérdida de eficiencia (100). Cambia el destinatario de los 400: con arancel los recauda el Estado; con cuota son renta de quien tiene la licencia de importación. Si las licencias se asignan discrecionalmente aparece además un gasto de recursos en obtenerlas, y si las obtienen exportadores extranjeros, los 400 salen del país y la pérdida nacional pasa de 100 a 500."
+ },
+ {
+  "id": "2.12#3",
+  "codigo": "2.12",
+  "bloque": 2,
+  "nivel": 3,
+  "titulo": "Política comercial: aranceles, cuotas y uniones aduaneras",
+  "q": "Un coche vale 20.000 € con 14.000 € de componentes importados. Con un arancel del 10 % sobre coches y ninguno sobre componentes, ¿cuál es la protección efectiva?",
+  "a": "Del 33,3 %. El valor añadido nacional pasa de 6.000 € (20.000 − 14.000) a 8.000 € (22.000 − 14.000), es decir, sube 2.000 sobre 6.000. Un arancel nominal del 10 % concede una protección al valor añadido tres veces mayor, y el efecto crece cuanto más pesen los insumos importados."
+ },
+ {
+  "id": "2.12#4",
+  "codigo": "2.12",
+  "bloque": 2,
+  "nivel": 3,
+  "titulo": "Política comercial: aranceles, cuotas y uniones aduaneras",
+  "q": "Con un arancel general del 20 %, un bien que cuesta 130 producirlo dentro, 100 en el país A y 110 en el socio B: ¿qué ocurre al formar una unión aduanera con B?",
+  "a": "Hay desviación de comercio y el país pierde 10 por unidad. Antes se importaba de A a 120 (100 + 20 de arancel), con 20 de recaudación. Tras la unión, B entra libre a 110 y desplaza a A, que sigue en 120. El consumidor ahorra 10 pero el Estado pierde los 20 que ingresaba: la diferencia es pérdida neta. El proveedor eficiente ha sido sustituido por el socio."
  },
  {
   "id": "3.01#0",
@@ -6437,6 +6617,51 @@ export default [
   "titulo": "Gestión de riesgos: VaR, cobertura y regulación bancaria",
   "q": "¿Por qué la ponderación cero de la deuda soberana genera riesgo sistémico?",
   "a": "Porque incentiva a los bancos a concentrar deuda de su propio Estado sin consumo de capital, creando un nexo en el que la solvencia bancaria y la soberana se amplifican mutuamente. Las cuentas financieras por sectores permiten medir esa concentración."
+ },
+ {
+  "id": "8.11#0",
+  "codigo": "8.11",
+  "bloque": 8,
+  "nivel": 2,
+  "titulo": "Fondos de inversión e inversión colectiva",
+  "q": "Un fondo tiene 48.600.000 € de patrimonio y 3.240.000 participaciones. Entran 1.500.000 € de suscripciones. ¿Cuál es el valor liquidativo antes y después?",
+  "a": "15,00 € en los dos momentos. Antes: 48.600.000 ÷ 3.240.000 = 15,00. La suscripción emite 1.500.000 ÷ 15 = 100.000 participaciones nuevas, así que el patrimonio pasa a 50.100.000 € y las participaciones a 3.340.000, cuyo cociente vuelve a ser 15,00. Las entradas y salidas de dinero no mueven el valor liquidativo: solo lo mueven los activos de la cartera."
+ },
+ {
+  "id": "8.11#1",
+  "codigo": "8.11",
+  "bloque": 8,
+  "nivel": 2,
+  "titulo": "Fondos de inversión e inversión colectiva",
+  "q": "Con 10.000 € al 7 % bruto durante 30 años, ¿cuánto cuesta pasar de una comisión del 0,30 % a una del 1,80 %?",
+  "a": "24.215 €. El indexado termina en 10.000 · 1,067³⁰ = 69.973 € y el activo en 10.000 · 1,052³⁰ = 45.759 €. El fondo barato acaba con un 52,9 % más de capital. Visto sobre la referencia sin comisiones (76.123 €), el punto y medio de diferencia se lleva el 31,8 % del resultado."
+ },
+ {
+  "id": "8.11#2",
+  "codigo": "8.11",
+  "bloque": 8,
+  "nivel": 2,
+  "titulo": "Fondos de inversión e inversión colectiva",
+  "q": "¿Por qué el conjunto de los gestores activos no puede batir al mercado?",
+  "a": "Porque entre indexados y activos poseen todo el mercado. Los indexados obtienen la rentabilidad del índice por construcción, así que los activos, como grupo, tienen que obtener también la del mercado antes de costes: es una identidad contable, no una hipótesis. Como sus costes son mayores, después de costes el activo medio queda por debajo del indexado medio. Algunos ganan, necesariamente a costa de otros activos."
+ },
+ {
+  "id": "8.11#3",
+  "codigo": "8.11",
+  "bloque": 8,
+  "nivel": 2,
+  "titulo": "Fondos de inversión e inversión colectiva",
+  "q": "La rentabilidad media histórica de los fondos de una categoría parece buena. ¿Qué precaución hay que tomar?",
+  "a": "El sesgo de supervivencia. Esa media se calcula sobre los fondos que todavía existen; los que fueron mal se cerraron o se fusionaron y salieron de la serie. La rentabilidad publicada es por tanto mejor que la que habría obtenido alguien que eligiera al azar hace veinte años. A ello se suma que el partícipe medio obtiene menos que el fondo, porque entra tras las subidas y sale tras las caídas."
+ },
+ {
+  "id": "8.11#4",
+  "codigo": "8.11",
+  "bloque": 8,
+  "nivel": 2,
+  "titulo": "Fondos de inversión e inversión colectiva",
+  "q": "Un fondo acumula sus dividendos sin repartirlos. ¿Aparece esa renta en las cuentas nacionales del hogar partícipe?",
+  "a": "Sí. El SEC la imputa como rentas de inversión atribuidas a los partícipes en fondos de inversión (D.443) y registra simultáneamente una reinversión por el mismo importe. La renta figura en el hogar aunque no la haya cobrado, porque el sistema la atribuye a quien soporta el riesgo económico. Es el mismo tratamiento que reciben los seguros y los fondos de pensiones."
  },
  {
   "id": "9.01#0",

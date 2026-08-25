@@ -8,7 +8,7 @@ export default {
   tiempo: "4 h",
   nucleo:
     "Cuando el coste de coordinar a distancia se hundió, dejaron de comerciarse productos para comerciarse tareas. Eso multiplicó la ganancia del intercambio y concentró las pérdidas en lugares y oficios muy concretos, con consecuencias políticas que tardaron veinte años en aparecer.",
-  requiere: "11.02 La primera globalización · 1.01 Ventaja comparativa · 11.06 El giro de los ochenta",
+  requiere: "11.02 La primera globalización · 2.11 Ventaja comparativa · 11.06 El giro de los ochenta",
   abre: "11.10 Divergencia y convergencia · 10.01 Estructura productiva española · 10.09 Competitividad",
   secciones: [
     {

@@ -9,7 +9,7 @@ export default {
   nucleo:
     "El sistema financiero existe para poner en contacto a quien tiene ahorro con quien tiene proyectos, y en el camino transforma plazos, tamaños y riesgos. Esa transformación es lo que lo hace útil y también lo que lo hace intrínsecamente frágil.",
   requiere: "3.07 Dinero y bancos · 7.01 Valor temporal del dinero",
-  abre: "8.02 Renta fija · 8.10 Gestión de riesgos",
+  abre: "8.02 Renta fija · 8.11 Fondos de inversión · 8.10 Gestión de riesgos",
   secciones: [
     {
       titulo: "Desarrollo",

@@ -9,7 +9,7 @@ export default {
   nucleo:
     "El sistema de reparto descansa en una identidad contable con tres términos: el tipo de cotización, la relación entre cotizantes y pensionistas, y la pensión relativa al salario. Si la demografía cambia el segundo, alguno de los otros dos tiene que moverse. No hay reforma que esquive esa aritmética, solo distintas formas de repartir su coste.",
   requiere: "10.03 Sistema fiscal español · 10.02 Mercado de trabajo español · 1.10 Economía normativa",
-  abre: "10.05 Imposición óptima · 10.06 SEC 2010 · 3.11 Deuda pública y sostenibilidad",
+  abre: "10.05 Imposición óptima · 10.11 Distribución de la renta · 10.06 SEC 2010 · 3.11 Deuda pública y sostenibilidad",
   secciones: [
     {
       titulo: "Desarrollo",

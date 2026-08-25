@@ -9,7 +9,7 @@ export default {
   nucleo:
     "Es la pregunta más importante de la disciplina y la que peor sabemos contestar. Geografía, cultura e instituciones compiten como explicación, todas tienen evidencia a favor y ninguna resuelve el problema de que las causas candidatas son también consecuencias.",
   requiere: "11.01 De la economía orgánica a la industrial · 11.07 La segunda globalización · 4.07 Variables instrumentales",
-  abre: "3.09 Crecimiento y productividad · 1.10 Economía normativa · 10.01 Estructura productiva española",
+  abre: "3.09 Crecimiento y productividad · 1.11 Escuelas heterodoxas · 1.10 Economía normativa · 10.01 Estructura productiva española",
   secciones: [
     {
       titulo: "Desarrollo",

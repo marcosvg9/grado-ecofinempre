@@ -9,7 +9,7 @@ export default {
   nucleo:
     "El riesgo de un activo dentro de una cartera no es su volatilidad individual sino su covarianza con el resto. De ahí se deduce que combinar activos imperfectamente correlacionados reduce el riesgo sin sacrificar rentabilidad, y que una parte del riesgo desaparece gratis mientras otra es irreducible.",
   requiere: "4.02 Estadística descriptiva · 8.04 Renta variable",
-  abre: "8.06 CAPM y beta · 8.10 Gestión de riesgos",
+  abre: "8.06 CAPM y beta · 8.11 Fondos de inversión · 8.10 Gestión de riesgos",
   secciones: [
     {
       titulo: "Desarrollo",

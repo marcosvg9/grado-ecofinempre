@@ -9,7 +9,7 @@ export default {
   nucleo:
     "Clásicos, marginalistas, keynesianos y neoclásicos responden preguntas distintas, no la misma peor o mejor. Leerlos como una carrera hacia la verdad actual impide ver lo único que hace útil esta historia: que cada escuela nació de un problema concreto que su antecesora no sabía tratar.",
   requiere: "1.08 Modelos económicos",
-  abre: "1.10 Normativa frente a positiva · 3.04 Modelo keynesiano · 3.09 Crecimiento",
+  abre: "1.10 Normativa frente a positiva · 1.11 Escuelas heterodoxas · 3.04 Modelo keynesiano · 3.09 Crecimiento",
   secciones: [
     {
       titulo: "Desarrollo",

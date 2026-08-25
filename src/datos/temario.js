@@ -24,6 +24,7 @@ export const BLOQUES = [
       { t: "Modelos económicos: supuestos, causalidad y falsación", n: 2, k: "Un modelo no se juzga por realista, sino por si sus predicciones sobreviven al contraste.", b: "Rodrik, Las leyes de la economía" },
       { t: "Historia del pensamiento económico", n: 2, k: "Clásicos, marginalistas, keynesianos y neoclásicos responden preguntas distintas, no la misma peor o mejor.", b: "Heilbroner, Vidas de los economistas ilustres" },
       { t: "Economía normativa frente a positiva", n: 2, k: "Dónde acaba la descripción y empieza el juicio de valor. La frontera se cruza más a menudo de lo que se admite.", b: "Rodrik, Las leyes de la economía" },
+      { t: "Escuelas heterodoxas y enfoques alternativos", n: 3, k: "Austriacos, schumpeterianos, poskeynesianos e institucionalistas no son notas al pie de la corriente principal: cada uno explica bien algo que ella trata mal.", b: "Chang, Economía para el 99% de la población" },
     ],
   },
   {
@@ -41,6 +42,8 @@ export const BLOQUES = [
       { t: "Oligopolio y teoría de juegos", n: 3, k: "Cournot, Bertrand y el equilibrio de Nash: cuando tu óptimo depende de lo que haga el otro.", b: "Gibbons, Un primer curso de teoría de juegos" },
       { t: "Mercados de factores y determinación de salarios", n: 3, k: "El salario como productividad marginal, y todas las razones por las que en la práctica no lo es.", b: "Borjas, Economía laboral" },
       { t: "Fallos de mercado: externalidades, bienes públicos, información", n: 3, k: "Selección adversa y riesgo moral explican por qué muchos mercados no existen.", b: "Stiglitz, La economía del sector público" },
+      { t: "Ventaja comparativa y ganancias del comercio", n: 2, k: "Dos países ganan intercambiando aunque uno sea más productivo en todo, porque lo que ordena el comercio no es la productividad sino el coste de oportunidad.", b: "Krugman y Obstfeld, Economía internacional" },
+      { t: "Política comercial: aranceles, cuotas y uniones aduaneras", n: 3, k: "Un arancel reparte: el consumidor pierde más de lo que ganan el productor y el Estado juntos, y la diferencia no se la queda nadie.", b: "Krugman y Obstfeld, Economía internacional" },
     ],
   },
   {
@@ -144,6 +147,7 @@ export const BLOQUES = [
       { t: "Derivados I: futuros y forwards", n: 4, k: "El precio del futuro se ancla al contado por arbitraje. El coste de acarreo cierra la ecuación.", b: "Hull, Introducción a los mercados de futuros y opciones" },
       { t: "Derivados II: opciones y Black-Scholes", n: 4, k: "Una opción es una cartera replicable. De ahí sale la fórmula, no de la preferencia por el riesgo.", b: "Hull, Introducción a los mercados de futuros y opciones" },
       { t: "Gestión de riesgos: VaR, cobertura y regulación bancaria", n: 4, k: "El VaR dice cuánto pierdes en el peor día normal, y calla sobre los días anormales.", b: "Hull, Risk Management and Financial Institutions" },
+      { t: "Fondos de inversión e inversión colectiva", n: 2, k: "El vehículo por el que la mayoría accede a los mercados. Su variable decisiva no es la rentabilidad prometida sino la comisión, porque esta sí es segura y además se acumula.", b: "Bogle, El pequeño libro para invertir con sentido común" },
     ],
   },
   {
@@ -178,6 +182,7 @@ export const BLOQUES = [
       { t: "Índices encadenados, precios del año anterior y volumen", n: 4, k: "El encadenamiento sacrifica la aditividad a cambio de ponderaciones actualizadas. No hay solución sin coste.", b: "Lequiller y Blades, Understanding National Accounts" },
       { t: "Coste laboral unitario, productividad y competitividad", n: 4, k: "El CLU relaciona remuneración por asalariado con productividad. Su evolución explica los ajustes de precios relativos.", b: "Eurostat, metodología de cuentas nacionales" },
       { t: "Cuentas trimestrales, revisiones y datos en tiempo real", n: 4, k: "El primer dato publicado y el definitivo pueden contar historias distintas del mismo trimestre.", b: "Manual de cuentas trimestrales de Eurostat" },
+      { t: "Distribución de la renta y desigualdad", n: 3, k: "Medir la desigualdad obliga a decidir antes qué renta se mide y entre quiénes. La misma economía da cifras muy distintas según dónde se ponga el corte.", b: "Atkinson, Desigualdad: ¿qué podemos hacer?" },
     ],
   },
   {

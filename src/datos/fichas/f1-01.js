@@ -9,7 +9,7 @@ export default {
   nucleo:
     "Toda decisión económica es una renuncia. El coste relevante nunca es el dinero gastado, sino la alternativa perdida, y esa diferencia —invisible en cualquier factura— es la que separa el razonamiento económico del contable.",
   requiere: "Ninguno: es el punto de partida del plan",
-  abre: "1.02 Oferta y demanda · 1.05 Pensamiento marginal · 2.05 Costes",
+  abre: "1.02 Oferta y demanda · 1.05 Pensamiento marginal · 2.05 Costes · 2.11 Ventaja comparativa",
   secciones: [
     {
       titulo: "Desarrollo",
