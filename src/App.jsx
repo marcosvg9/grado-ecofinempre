@@ -3,17 +3,20 @@ import Plan from "./componentes/Plan.jsx";
 import Ficha from "./componentes/Ficha.jsx";
 import Repaso from "./componentes/Repaso.jsx";
 import Buscador from "./componentes/Buscador.jsx";
+import Ruta from "./componentes/Ruta.jsx";
 import { FICHAS, cargarFicha } from "./datos/fichas/index.js";
 import { TEMAS } from "./datos/temario.js";
 import { leerProgreso, guardarProgreso, exportarProgreso } from "./almacen.js";
 import { programar, hoyISO, contarVencidas } from "./repaso.js";
 
 /* Enrutado por hash, sin dependencias: #/ para el plan, #/ficha/5.02 para una
-   ficha, #/repaso para el repaso espaciado y #/buscar para la búsqueda. */
+   ficha, #/repaso para el repaso espaciado, #/buscar para la búsqueda y
+   #/ruta para la ruta de estudio. */
 function rutaActual() {
   const h = window.location.hash.replace(/^#\/?/, "");
   if (h.startsWith("ficha/")) return { vista: "ficha", codigo: h.slice(6) };
   if (h === "repaso") return { vista: "repaso" };
+  if (h === "ruta") return { vista: "ruta" };
   if (h.startsWith("buscar")) return { vista: "buscar", q: decodeURIComponent(h.slice(7)) };
   return { vista: "plan" };
 }
@@ -102,6 +105,7 @@ export default function App() {
   const irAFicha = (codigo) => { window.location.hash = `#/ficha/${codigo}`; };
   const irARepaso = () => { window.location.hash = "#/repaso"; };
   const irABuscar = () => { window.location.hash = "#/buscar"; };
+  const irARuta = () => { window.location.hash = "#/ruta"; };
   const volver = () => { window.location.hash = "#/"; };
 
   const siguiente = ficha
@@ -121,6 +125,9 @@ export default function App() {
           <button className="navEnlace" data-activo={ruta.vista === "repaso"} onClick={irARepaso}>
             Repaso
             {vencidas > 0 && <i className="insigniaNav">{vencidas}</i>}
+          </button>
+          <button className="navEnlace" data-activo={ruta.vista === "ruta"} onClick={irARuta}>
+            Ruta
           </button>
           <button className="navEnlace" data-activo={ruta.vista === "buscar"} onClick={irABuscar}>
             Buscar
@@ -145,6 +152,12 @@ export default function App() {
           repaso={estado.repaso}
           irARepaso={irARepaso}
         />
+      )}
+
+      {ruta.vista === "ruta" && (
+        <main className="interior contenido">
+          <Ruta estudiados={estado.estudiados} irAFicha={irAFicha} alternar={alternar} />
+        </main>
       )}
 
       {ruta.vista === "buscar" && (

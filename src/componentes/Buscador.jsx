@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo, useRef } from "react";
 import { enLinea } from "./secciones.jsx";
 import { consultar, extracto } from "../buscar.js";
 import { cargarFicha } from "../datos/fichas/index.js";
-import { NIVELES, BLOQUES } from "../datos/temario.js";
+import { NIVELES, BLOQUES, TEMAS } from "../datos/temario.js";
 
 const EJEMPLOS = [
   "cotizaciones imputadas",
@@ -71,7 +71,7 @@ export default function Buscador({ indiceBusqueda, irAFicha, inicial = "" }) {
         className="buscadorCampo"
         type="search"
         value={texto}
-        placeholder="Buscar en las 130 fichas…"
+        placeholder={`Buscar en las ${TEMAS.length} fichas…`}
         onChange={(e) => setTexto(e.target.value)}
         onKeyDown={teclas}
         autoComplete="off"
