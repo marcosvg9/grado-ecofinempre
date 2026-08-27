@@ -253,6 +253,42 @@ export const BLOQUES = [
       { t: "Competencia, propiedad industrial y protección de datos", n: 3, k: "Una patente dura veinte años y se agota; una marca dura diez y se renueva para siempre. Esa asimetría explica media estrategia empresarial.", b: "Ley 15/2007 de Defensa de la Competencia; Ley 24/2015 de Patentes; RGPD" },
     ],
   },
+  {
+    id: 15,
+    nombre: "Ajuste estacional y series oficiales",
+    resumen: "Cómo se produce de verdad una serie ajustada: pre-ajuste, descomposición, diagnóstico y conciliación, con JDemetra+ como herramienta.",
+    temas: [
+      { t: "El flujo del ajuste estacional: de la serie bruta a la publicada", n: 3, k: "Una serie ajustada no sale de pulsar un botón: atraviesa pre-ajuste, descomposición, diagnóstico y conciliación, y cada etapa deja huella en el dato final.", b: "Directrices de Eurostat sobre ajuste estacional" },
+      { t: "Pre-ajuste: modelos RegARIMA y elección de la transformación", n: 4, k: "Antes de descomponer hay que limpiar y extender la serie. El modelo que se elija para hacerlo condiciona todo lo que venga después.", b: "Gómez y Maravall, Programs TRAMO and SEATS" },
+      { t: "Efectos de calendario: laborables, Semana Santa y año bisiesto", n: 3, k: "Febrero de un año bisiesto no es comparable con el del anterior, y la Semana Santa cambia de mes. Corregirlo no es cosmética: mueve décimas de PIB.", b: "Directrices de Eurostat sobre ajuste estacional" },
+      { t: "Valores atípicos: escalón, impulso y cambio transitorio", n: 3, k: "Distinguir un dato raro de un cambio de nivel permanente decide si la serie recuerda el episodio para siempre o lo olvida al mes siguiente.", b: "Gómez y Maravall, Programs TRAMO and SEATS" },
+      { t: "Descomposición: X-11 frente a SEATS", n: 4, k: "Dos filosofías para el mismo problema: promedios móviles con décadas de oficio detrás, o una descomposición derivada del modelo ARIMA estimado.", b: "Ladiray y Quenneville, Seasonal Adjustment with the X-11 Method" },
+      { t: "JDemetra+: herramienta, especificaciones y flujo de trabajo", n: 3, k: "La herramienta recomendada por Eurostat y usada por los institutos europeos. Entender sus especificaciones es entender qué decisiones se están delegando.", b: "Manual de referencia de JDemetra+" },
+      { t: "Diagnósticos de calidad y estacionalidad residual", n: 4, k: "Un ajuste puede ser malo sin que lo parezca. Los contrastes existen precisamente porque el resultado siempre tiene buen aspecto en el gráfico.", b: "Manual de referencia de JDemetra+" },
+      { t: "Política de revisiones y esquemas de refresco", n: 4, k: "Cada dato nuevo cambia el pasado ya publicado. Cuánto se deja cambiar es una decisión de política estadística, no un resultado técnico.", b: "Directrices de Eurostat sobre ajuste estacional" },
+      { t: "Benchmarking y conciliación: Denton y Cholette-Dagum", n: 4, k: "Cuadrar una serie trimestral con su total anual sin destrozar su perfil. El problema es viejo, la solución es un problema de optimización.", b: "Dagum y Cholette, Benchmarking, Temporal Distribution and Reconciliation" },
+      { t: "Desagregación temporal: Chow-Lin, Fernández y Litterman", n: 4, k: "Construir una serie trimestral que no se observa a partir de un total anual y de indicadores que sí. Es la columna vertebral de la contabilidad trimestral.", b: "Chow y Lin, «Best Linear Unbiased Interpolation»" },
+      { t: "Agregación directa frente a indirecta y coherencia de agregados", n: 4, k: "Ajustar el total o ajustar las partes y sumarlas dan resultados distintos, y ninguna de las dos opciones es gratis.", b: "Directrices de Eurostat sobre ajuste estacional" },
+      { t: "Predicción, retropredicción y nowcasting", n: 4, k: "Estimar el trimestre en curso antes de que existan sus datos, y reconstruir el pasado que nunca se midió. Las dos operaciones usan el mismo aparato en direcciones opuestas.", b: "Bańbura, Giannone y Reichlin, «Nowcasting»" }
+    ],
+  },
+  {
+    id: 16,
+    nombre: "Series temporales jerárquicas",
+    resumen: "Cómo lograr que las previsiones de las partes sumen la del total, y por qué imponer esa coherencia además las mejora.",
+    temas: [
+      { t: "Estructuras jerárquicas y agrupadas", n: 3, k: "Casi toda serie económica es la suma de otras, por territorio, por producto o por rama. Reconocer la estructura es el primer paso para explotarla.", b: "Hyndman y Athanasopoulos, Forecasting: Principles and Practice" },
+      { t: "Coherencia y la matriz de sumas", n: 4, k: "Toda la teoría cabe en una matriz que dice qué suma qué. Con ella, la coherencia deja de ser una restricción incómoda y pasa a ser un subespacio.", b: "Hyndman y otros, «Optimal Combination Forecasts for Hierarchical Time Series»" },
+      { t: "Bottom-up, top-down y middle-out", n: 3, k: "Los tres métodos clásicos comparten un defecto: cada uno tira a la basura una parte de la información disponible.", b: "Hyndman y Athanasopoulos, Forecasting: Principles and Practice" },
+      { t: "Combinación óptima y reconciliación MinT", n: 4, k: "Usar todas las previsiones a la vez y proyectarlas sobre el espacio coherente. No solo cuadra: reduce el error esperado.", b: "Wickramasuriya, Athanasopoulos y Hyndman, «Optimal Forecast Reconciliation»" },
+      { t: "Estimación de la matriz de covarianzas", n: 4, k: "La reconciliación óptima necesita una matriz que rara vez se puede estimar bien. Ahí es donde se decide si el método funciona en la práctica.", b: "Wickramasuriya, Athanasopoulos y Hyndman, «Optimal Forecast Reconciliation»" },
+      { t: "Jerarquías temporales: mensual, trimestral y anual", n: 4, k: "La misma serie agregada a distintas frecuencias forma una jerarquía. Reconciliarla mejora las previsiones a todos los horizontes a la vez.", b: "Athanasopoulos y otros, «Forecasting with Temporal Hierarchies»" },
+      { t: "Reconciliación probabilística", n: 4, k: "Reconciliar puntos no basta si lo que se publica son intervalos: la coherencia debe imponerse sobre distribuciones enteras.", b: "Panagiotelis y otros, «Probabilistic Forecast Reconciliation»" },
+      { t: "Evaluación de previsiones jerárquicas", n: 4, k: "Comparar métodos exige medir bien, y en una jerarquía las escalas difieren en órdenes de magnitud entre el total y las hojas.", b: "Hyndman y Koehler, «Another Look at Measures of Forecast Accuracy»" },
+      { t: "Aplicación a cuentas nacionales y estadística oficial", n: 4, k: "El sistema de cuentas es una jerarquía enorme con restricciones cruzadas. Ahí la coherencia no es una mejora opcional sino un requisito.", b: "Eurostat, Handbook on Quarterly National Accounts" },
+      { t: "Herramientas, diagnóstico y práctica", n: 3, k: "Qué comprobar antes de reconciliar, qué esperar de la mejora y cómo detectar que la estructura declarada no es la real.", b: "Hyndman y Athanasopoulos, Forecasting: Principles and Practice" },
+    ],
+  },
 ];
 
 

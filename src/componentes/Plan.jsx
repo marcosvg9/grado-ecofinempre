@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useRef } from "react";
 import { BLOQUES, TEMAS, NIVELES } from "../datos/temario.js";
 import { FICHAS } from "../datos/fichas/index.js";
 import { resumen, hoyISO } from "../repaso.js";
@@ -51,7 +51,8 @@ function TarjetaRepaso({ preguntas, repaso, estudiados, irARepaso }) {
   );
 }
 
-export default function Plan({ estudiados, alternar, irAFicha, reiniciar, exportar, preguntas, repaso, irARepaso }) {
+export default function Plan({ estudiados, alternar, irAFicha, reiniciar, exportar, importar, preguntas, repaso, irARepaso }) {
+  const campoArchivo = useRef(null);
   const [vista, setVista] = useState("bloques");
   const [busqueda, setBusqueda] = useState("");
   const [filtroNivel, setFiltroNivel] = useState(0);
@@ -134,6 +135,22 @@ export default function Plan({ estudiados, alternar, irAFicha, reiniciar, export
         <button className="botonMini" onClick={exportar}>
           Exportar progreso
         </button>
+        <button className="botonMini" style={{ marginLeft: 0 }} onClick={() => campoArchivo.current?.click()}>
+          Importar progreso
+        </button>
+        {/* El selector va oculto: el boton de arriba es quien lo abre. Se limpia
+            el valor para que elegir dos veces el mismo archivo vuelva a disparar. */}
+        <input
+          ref={campoArchivo}
+          type="file"
+          accept="application/json,.json"
+          style={{ display: "none" }}
+          onChange={(e) => {
+            const archivo = e.target.files?.[0];
+            e.target.value = "";
+            if (archivo) importar(archivo);
+          }}
+        />
         {hechos > 0 && (
           <button className="botonMini" style={{ marginLeft: 0 }} onClick={reiniciar}>
             Empezar de cero

@@ -6,7 +6,7 @@ import Buscador from "./componentes/Buscador.jsx";
 import Ruta from "./componentes/Ruta.jsx";
 import { FICHAS, cargarFicha } from "./datos/fichas/index.js";
 import { TEMAS } from "./datos/temario.js";
-import { leerProgreso, guardarProgreso, exportarProgreso } from "./almacen.js";
+import { leerProgreso, guardarProgreso, exportarProgreso, leerArchivoProgreso } from "./almacen.js";
 import { programar, hoyISO, contarVencidas } from "./repaso.js";
 
 /* Enrutado por hash, sin dependencias: #/ para el plan, #/ficha/5.02 para una
@@ -102,6 +102,30 @@ export default function App() {
     }));
   }, []);
 
+  /* Importar sustituye el progreso, asi que no se aplica nada sin que la
+     persona vea antes que hay dentro del archivo y que va a perder. */
+  const importar = useCallback(
+    async (archivo) => {
+      const r = await leerArchivoProgreso(archivo);
+      if (!r.ok) {
+        window.alert(`No se ha podido importar el progreso.\n\n${r.error}`);
+        return;
+      }
+      const { estudiados, repaso, descartados } = r.resumen;
+      const actuales = Object.keys(estado.estudiados).length;
+      const plural = (n, singular, prural) => `${n} ${n === 1 ? singular : prural}`;
+      const aviso =
+        `El archivo contiene ${plural(estudiados, "ficha estudiada", "fichas estudiadas")} ` +
+        `y ${plural(repaso, "pregunta en repaso", "preguntas en repaso")}.` +
+        (descartados ? `\nSe descartará${descartados === 1 ? "" : "n"} ${plural(descartados, "entrada no reconocida", "entradas no reconocidas")}.` : "") +
+        `\n\nEsto sustituirá tu progreso actual, que tiene ${plural(actuales, "ficha estudiada", "fichas estudiadas")}.` +
+        `\n\n¿Continuar?`;
+      if (!window.confirm(aviso)) return;
+      setEstado(r.estado);
+    },
+    [estado]
+  );
+
   const irAFicha = (codigo) => { window.location.hash = `#/ficha/${codigo}`; };
   const irARepaso = () => { window.location.hash = "#/repaso"; };
   const irABuscar = () => { window.location.hash = "#/buscar"; };
@@ -148,6 +172,7 @@ export default function App() {
           irAFicha={irAFicha}
           reiniciar={() => setEstado({ estudiados: {}, notas: {}, repaso: {} })}
           exportar={() => exportarProgreso(estado)}
+          importar={importar}
           preguntas={preguntas}
           repaso={estado.repaso}
           irARepaso={irARepaso}

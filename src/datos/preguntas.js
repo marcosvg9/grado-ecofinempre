@@ -1,5 +1,5 @@
 /* GENERADO POR herramientas/indice-preguntas.mjs — no editar a mano.
-   790 preguntas extraídas de 146 fichas.
+   900 preguntas extraídas de 168 fichas.
    Para regenerar: node herramientas/indice-preguntas.mjs */
 
 export default [
@@ -3242,6 +3242,996 @@ export default [
   "titulo": "Competencia, propiedad industrial y protección de datos",
   "q": "¿Cómo clasifica el SEC una patente y cómo una marca comprada?",
   "a": "La patente y la investigación que la sustenta son un activo producido: productos de propiedad intelectual (AN.117), que se capitalizan y se amortizan porque su vida útil es finita. Una marca comprada encaja entre los activos no producidos, próxima al fondo de comercio, y no se agota con el uso. Y una marca creada internamente no aparece en ningún balance."
+ },
+ {
+  "id": "15.01#0",
+  "codigo": "15.01",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "El flujo del ajuste estacional: de la serie bruta a la publicada",
+  "q": "¿Por qué para datos trimestrales se usa una media móvil 2×4 y no una simple de cuatro términos?",
+  "a": "Porque cuatro es par y una media simple de cuatro trimestres queda centrada entre dos periodos, no sobre uno. La versión 2×4 da medio peso a los dos extremos y peso completo a los tres centrales, con lo que el resultado queda centrado sobre un trimestre concreto. Es el mismo motivo por el que con datos mensuales se usa una 2×12."
+ },
+ {
+  "id": "15.01#1",
+  "codigo": "15.01",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "El flujo del ajuste estacional: de la serie bruta a la publicada",
+  "q": "Los factores estacionales estimados son 0,9711 · 1,0520 · 0,8709 · 1,1060. ¿Qué condición cumplen y por qué importa?",
+  "a": "Promedian exactamente 1, que es la condición de normalización en una descomposición multiplicativa. Importa porque garantiza que el ajuste solo redistribuye actividad dentro del año sin añadir ni quitar nivel: el total anual de la serie ajustada queda muy próximo al de la bruta. Si los factores no estuvieran normalizados, el ajuste desplazaría el nivel de la serie."
+ },
+ {
+  "id": "15.01#2",
+  "codigo": "15.01",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "El flujo del ajuste estacional: de la serie bruta a la publicada",
+  "q": "La serie bruta crece un 27,4 % en un trimestre y la ajustada un 0,3 %. ¿Cuál es correcta?",
+  "a": "Las dos, porque miden cosas distintas. La bruta describe lo que efectivamente ocurrió, incluida la campaña de fin de año que ocurre todos los años. La ajustada describe cuánto de ese movimiento excede a lo que era esperable por el calendario, y es la única que permite comparar trimestres consecutivos. Para la interanual la bruta sí es informativa, porque compara el mismo trimestre de dos años."
+ },
+ {
+  "id": "15.01#3",
+  "codigo": "15.01",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "El flujo del ajuste estacional: de la serie bruta a la publicada",
+  "q": "¿Por qué la tendencia estimada por media móvil no cubre los primeros ni los últimos trimestres?",
+  "a": "Porque una media móvil centrada de cuatro términos necesita dos observaciones a cada lado, así que pierde dos puntos al principio y dos al final. Como el dato interesante es justamente el último, el pre-ajuste resuelve el problema estimando un modelo ARIMA y extendiendo la serie con predicciones, de modo que los filtros dispongan de observaciones a ambos lados incluso en el extremo."
+ },
+ {
+  "id": "15.01#4",
+  "codigo": "15.01",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "El flujo del ajuste estacional: de la serie bruta a la publicada",
+  "q": "La serie ajustada suma 399,97 en el año y la bruta 400,0. ¿Es un error de cálculo?",
+  "a": "No: es el comportamiento normal del procedimiento. Los factores estacionales se estiman con información de todos los años y no se adaptan exactamente a cada uno, así que la suma anual de la serie ajustada no coincide con la de la bruta. En contabilidad nacional esa diferencia es inaceptable porque produciría dos cifras oficiales del mismo año, y se corrige con benchmarking, que reparte el desfase alterando lo menos posible el perfil de la serie."
+ },
+ {
+  "id": "15.02#0",
+  "codigo": "15.02",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Pre-ajuste: modelos RegARIMA y elección de la transformación",
+  "q": "¿Cuántas observaciones efectivas quedan al aplicar un modelo aerolínea a una serie trimestral de cinco años?",
+  "a": "Quince. Cinco años trimestrales son veinte observaciones, y las diferencias (1 − B)(1 − B⁴) consumen 1 + 4 = 5. Con tres años quedarían solo siete, y con dos, tres. Ese coste fijo es la razón de que las directrices europeas pidan cinco años de datos y consideren tres el mínimo publicable."
+ },
+ {
+  "id": "15.02#1",
+  "codigo": "15.02",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Pre-ajuste: modelos RegARIMA y elección de la transformación",
+  "q": "¿Por qué se extiende la serie con predicciones antes de aplicar los filtros?",
+  "a": "Porque los filtros simétricos de promedios móviles necesitan observaciones a ambos lados de cada punto, y en el extremo de la serie no existen. Sin la extensión habría que usar filtros asimétricos, que solo miran al pasado y producen estimaciones peores. El precio es que el dato ajustado más reciente depende de una predicción, y por eso es el que más se revisa."
+ },
+ {
+  "id": "15.02#2",
+  "codigo": "15.02",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Pre-ajuste: modelos RegARIMA y elección de la transformación",
+  "q": "¿Cómo se decide entre trabajar en niveles o en logaritmos?",
+  "a": "Comparando el ajuste de ambas versiones con un criterio de información. Conceptualmente, si la amplitud de las oscilaciones estacionales crece con el nivel de la serie, la descomposición apropiada es multiplicativa y el logaritmo la convierte en aditiva; si la amplitud es constante, se trabaja en niveles. La restricción práctica es que el logaritmo no admite ceros ni valores negativos."
+ },
+ {
+  "id": "15.02#3",
+  "codigo": "15.02",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Pre-ajuste: modelos RegARIMA y elección de la transformación",
+  "q": "Una serie de capacidad o necesidad de financiación pasa de positiva a negativa. ¿Qué implica para el ajuste?",
+  "a": "Que no se puede usar descomposición multiplicativa, porque el logaritmo no está definido para valores negativos ni cero. Hay que ajustarla en niveles con descomposición aditiva, aunque la amplitud parezca crecer con el nivel. Es una limitación de origen que afecta a todos los saldos contables del sistema, y explica por qué las cuentas de acumulación son especialmente incómodas de ajustar."
+ },
+ {
+  "id": "15.02#4",
+  "codigo": "15.02",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Pre-ajuste: modelos RegARIMA y elección de la transformación",
+  "q": "El dato bruto de un trimestre no se ha revisado, pero el ajustado ha cambiado. ¿Es posible?",
+  "a": "Sí, y es lo habitual. Al añadirse un trimestre nuevo, la predicción que sostenía el extremo se sustituye por el dato real, el modelo se reestima y cambian θ y Θ, y los factores estacionales se recalculan afectando también al pasado. Las tres cosas modifican la serie ajustada sin que ningún dato bruto se haya tocado."
+ },
+ {
+  "id": "15.03#0",
+  "codigo": "15.03",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "Efectos de calendario: laborables, Semana Santa y año bisiesto",
+  "q": "2024 T4 y 2025 T1 tuvieron ambos 63 días hábiles. ¿Por qué reciben correcciones de signo contrario?",
+  "a": "Porque la corrección mide la desviación respecto a lo normal en ese trimestre, no el número de días en absoluto. La media del cuarto trimestre es 62,33 días, así que 63 son muchos y la corrección es negativa (−1,06 %). La media del primero es 63,67, así que 63 son pocos y la corrección es positiva (+1,06 %). El mismo número de días significa cosas distintas según el trimestre."
+ },
+ {
+  "id": "15.03#1",
+  "codigo": "15.03",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "Efectos de calendario: laborables, Semana Santa y año bisiesto",
+  "q": "¿Por qué un filtro estacional no puede corregir los efectos de calendario?",
+  "a": "Porque el filtro estima la estacionalidad promediando cada trimestre a lo largo de los años, y por tanto solo captura lo que se repite igual. Los efectos de calendario cambian de un año a otro: en la serie del bloque, 2023 y 2024 tienen un patrón parecido y 2025 lo rompe. Lo que varía año a año no puede salir de un promedio por trimestre."
+ },
+ {
+  "id": "15.03#2",
+  "codigo": "15.03",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "Efectos de calendario: laborables, Semana Santa y año bisiesto",
+  "q": "¿Cuánto añade un año bisiesto a un primer trimestre, y por qué se corrige pese a ser poco?",
+  "a": "Un 1,11 %: el trimestre pasa de 90 a 91 días. En datos mensuales el efecto sobre febrero es del 3,57 %. Se corrige porque es sistemático y aparece cada cuatro años, y esa regularidad es precisamente el peligro: un filtro estacional podría interpretarlo como un componente cíclico espurio de periodo cuatro en lugar de como un artefacto del calendario."
+ },
+ {
+  "id": "15.03#3",
+  "codigo": "15.03",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "Efectos de calendario: laborables, Semana Santa y año bisiesto",
+  "q": "La serie bruta cae un 11,6 % entre 2024 T4 y 2025 T1, y la corregida de calendario un 9,7 %. ¿Cuál se publica como dato de crecimiento?",
+  "a": "Ninguna de las dos: ambas siguen conteniendo estacionalidad, y el primer trimestre es estructuralmente flojo. La corrección de calendario es solo la primera de las dos, y sobre la serie corregida se aplica después el ajuste estacional, que convierte esa caída en el crecimiento subyacente de en torno al 0,5 %. Las dos cifras del enunciado son etapas intermedias."
+ },
+ {
+  "id": "15.03#4",
+  "codigo": "15.03",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "Efectos de calendario: laborables, Semana Santa y año bisiesto",
+  "q": "¿Por qué la serie corregida de calendario no cuadra con los totales anuales?",
+  "a": "Porque un año tuvo los días hábiles que tuvo, y la corrección los normaliza a una referencia. La serie corregida es una magnitud contrafactual —lo que se habría producido con un calendario normal— y no tiene por qué sumar lo que efectivamente se produjo. Por eso la conciliación con las cuentas anuales se plantea sobre el dato bruto o el ajustado, y la corregida de calendario se trata como transformación analítica adicional."
+ },
+ {
+  "id": "15.04#0",
+  "codigo": "15.04",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "Valores atípicos: escalón, impulso y cambio transitorio",
+  "q": "¿Por qué un atípico sin tratar es especialmente dañino en el ajuste estacional?",
+  "a": "Porque los factores estacionales se estiman promediando cada periodo a lo largo de los años, y un promedio es sensible a los valores extremos. Un dato anómalo de un mayo concreto contamina el factor de mayo para todos los años de la serie, convirtiendo un episodio irrepetible en una característica permanente del calendario."
+ },
+ {
+  "id": "15.04#1",
+  "codigo": "15.04",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "Valores atípicos: escalón, impulso y cambio transitorio",
+  "q": "Un cambio transitorio con α = 0,7 tiene un impacto inicial de 10. ¿Cuánto queda en t+3 y cuál es su efecto acumulado?",
+  "a": "En t+3 queda 10 · 0,7³ = 3,43, es decir un 34,3 % del impacto inicial; cae por debajo del 10 % en t+7. El efecto acumulado es la suma geométrica 1/(1 − 0,7) = 3,33 veces el impacto inicial, o sea 33,3. El escalón, en cambio, acumula sin límite: por eso elegir entre ambos no es afinar un decimal."
+ },
+ {
+  "id": "15.04#2",
+  "codigo": "15.04",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "Valores atípicos: escalón, impulso y cambio transitorio",
+  "q": "¿Por qué es tan difícil distinguir un impulso de un escalón al final de la serie?",
+  "a": "Porque lo que los distingue es qué ocurre después del episodio, y al final de la serie hay muy pocas observaciones posteriores. Con una sola, ambos producen predicciones casi idénticas y el contraste elige casi al azar. Con dos o tres, la evidencia se acumula y el contraste se decide, lo que provoca reclasificaciones que el usuario percibe como revisiones."
+ },
+ {
+  "id": "15.04#3",
+  "codigo": "15.04",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "Valores atípicos: escalón, impulso y cambio transitorio",
+  "q": "Una empresa pública se reclasifica dentro del sector administraciones públicas y el agregado salta. ¿Es un atípico?",
+  "a": "Es un escalón, pero de origen contable y no económico: no ha cambiado la actividad, ha cambiado la sectorización. Debe tratarse como escalón y documentarse, porque quien compare con series antiguas no lo verá. Si el salto procede de un cambio de base o de clasificación, lo correcto no es un regresor sino enlazar las series."
+ },
+ {
+  "id": "15.04#4",
+  "codigo": "15.04",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "Valores atípicos: escalón, impulso y cambio transitorio",
+  "q": "¿Qué riesgo tiene bajar el umbral de detección para capturar más atípicos?",
+  "a": "Que se detecten atípicos donde solo hay ruido. Cada uno consume un grado de libertad y retira variabilidad de la serie, así que el resultado es una serie ajustada demasiado suave que ha absorbido como anomalías movimientos económicos reales. La suavidad no es señal de calidad: los filtros suavizan por construcción y el resultado siempre parece creíble."
+ },
+ {
+  "id": "15.05#0",
+  "codigo": "15.05",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Descomposición: X-11 frente a SEATS",
+  "q": "¿Cuál es la diferencia de principio entre X-11 y SEATS?",
+  "a": "X-11 decide cómo filtrar: aplica un algoritmo iterativo de promedios móviles cuyos filtros se eligieron por experiencia acumulada sobre miles de series. SEATS decide qué modelo genera los datos —el ARIMA estimado en el pre-ajuste— y deriva los filtros de su factorización. Uno parte del procedimiento y el otro del modelo."
+ },
+ {
+  "id": "15.05#1",
+  "codigo": "15.05",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Descomposición: X-11 frente a SEATS",
+  "q": "¿Por qué el filtro de Henderson tiene pesos negativos?",
+  "a": "Para poder salirse del rango de los datos que promedia. Un filtro con todos los pesos positivos produce siempre un valor intermedio entre los datos, así que redondea máximos y mínimos. Los pesos negativos en las colas permiten que la tendencia estimada siga un giro sin achatarlo, y son lo que hace al Henderson conservar polinomios de hasta tercer grado."
+ },
+ {
+  "id": "15.05#2",
+  "codigo": "15.05",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Descomposición: X-11 frente a SEATS",
+  "q": "¿Qué se está eligiendo al optar entre un filtro estacional 3×3 y uno 3×9?",
+  "a": "El compromiso entre rapidez de reacción y estabilidad. El 3×3 pesa cinco años del mismo periodo y reconoce deprisa un cambio del patrón estacional, a costa de recoger ruido. El 3×9 pesa once años y da factores muy estables, a costa de tardar años en registrar un cambio real. Es una hipótesis sobre si la estacionalidad de esa serie es estable o está cambiando."
+ },
+ {
+  "id": "15.05#3",
+  "codigo": "15.05",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Descomposición: X-11 frente a SEATS",
+  "q": "SEATS parte de un modelo estimado. ¿Significa eso que su descomposición es objetiva?",
+  "a": "No. La factorización de un ARIMA en componentes no es única: hay infinitas formas de repartir la varianza entre tendencia, estacionalidad e irregular. SEATS resuelve la indeterminación con el criterio de descomposición canónica, que asigna al irregular toda la varianza posible. Es una convención razonable, pero una convención: la subjetividad se traslada, no desaparece."
+ },
+ {
+  "id": "15.05#4",
+  "codigo": "15.05",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Descomposición: X-11 frente a SEATS",
+  "q": "¿Dónde difieren más las series ajustadas por uno y otro método, y por qué importa?",
+  "a": "En los extremos de la serie, en presencia de cambios del patrón estacional y en series cortas o muy irregulares. Importa porque el extremo es justamente el dato de coyuntura que se comenta y sobre el que se decide. También implica que comparar el crecimiento del último trimestre entre países que usan métodos distintos introduce diferencias de método donde se leen diferencias de economía."
+ },
+ {
+  "id": "15.06#0",
+  "codigo": "15.06",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "JDemetra+: herramienta, especificaciones y flujo de trabajo",
+  "q": "¿Por qué el sistema estadístico europeo recomienda una herramienta común en lugar de dejar elegir a cada instituto?",
+  "a": "Porque si cada uno usa su programa y sus opciones, las series nacionales dejan de ser comparables por razones de método y no de economía. Las diferencias entre X-11 y SEATS se concentran en los extremos de la serie, que es justamente el dato de coyuntura que se compara entre países. La herramienta común, junto con las directrices, es lo que convierte una obligación formal de transmitir series ajustadas en comparabilidad real."
+ },
+ {
+  "id": "15.06#1",
+  "codigo": "15.06",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "JDemetra+: herramienta, especificaciones y flujo de trabajo",
+  "q": "¿Qué significa subir de RSA1 a RSA5 en la escalera de especificaciones?",
+  "a": "Delegar más decisiones al programa: primero la transformación y los atípicos, luego los regresores de calendario, luego la identificación automática del modelo ARIMA, y por último la especificación detallada de días de la semana. La numeración indica qué se delega, no complejidad creciente: RSA3 tiene menos parámetros que RSA2 porque no corrige calendario."
+ },
+ {
+  "id": "15.06#2",
+  "codigo": "15.06",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "JDemetra+: herramienta, especificaciones y flujo de trabajo",
+  "q": "Una serie trimestral de tres años se ajusta con RSA5. ¿Qué problema hay?",
+  "a": "Que quedan siete observaciones efectivas —doce menos las cinco que consumen las diferencias— y RSA5 estima del orden de doce parámetros. Se está estimando más parámetros que datos disponibles. El programa no lo impedirá y producirá una salida de aspecto impecable, pero el ajuste será inestable y cambiará mucho con cada trimestre nuevo."
+ },
+ {
+  "id": "15.06#3",
+  "codigo": "15.06",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "JDemetra+: herramienta, especificaciones y flujo de trabajo",
+  "q": "¿Por qué no debe publicarse un ajuste hecho con especificación automática?",
+  "a": "Porque no es reproducible. Al reejecutarlo dentro de un año con más datos, el programa puede identificar otro modelo y detectar otros atípicos, devolviendo una serie distinta sin que ningún dato haya cambiado. El flujo correcto es explorar con una especificación automática, revisar lo que ha decidido, fijar esas decisiones en una especificación propia y archivarla."
+ },
+ {
+  "id": "15.06#4",
+  "codigo": "15.06",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "JDemetra+: herramienta, especificaciones y flujo de trabajo",
+  "q": "¿Qué aporta poder definir calendarios propios por serie?",
+  "a": "Permite tratar de forma distinta ramas con sensibilidad distinta a los días hábiles, y ajustar series regionales con sus festivos autonómicos. Un calendario nacional aplicado a una serie regional deja un residuo sistemático que aparece como estacionalidad residual en los diagnósticos, y un calendario único para todo el cuadro de cuentas impone que industria y servicios de no mercado respondan igual, que es falso."
+ },
+ {
+  "id": "15.07#0",
+  "codigo": "15.07",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Diagnósticos de calidad y estacionalidad residual",
+  "q": "¿Por qué no se puede validar un ajuste estacional comparándolo con el valor verdadero?",
+  "a": "Porque la estacionalidad no se observa: es un componente construido por el procedimiento, no una magnitud medible. No existe un dato verdadero contra el que calcular un error. Por eso los diagnósticos no comprueban que el resultado sea correcto, sino que no presenta síntomas de estar mal, que es un criterio más débil y el único disponible."
+ },
+ {
+  "id": "15.07#1",
+  "codigo": "15.07",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Diagnósticos de calidad y estacionalidad residual",
+  "q": "En la serie del ejemplo, el periodograma de la bruta vale 110 en la frecuencia de periodo 4 y 774 en la de periodo 2. ¿Qué significa?",
+  "a": "Que el componente dominante es el armónico y no la frecuencia anual. El patrón alterna con fuerza entre trimestres bajos y altos —el tercero hunde la serie y el cuarto la dispara—, y esa alternancia produce un componente de periodo dos más potente que el anual. Un diagnóstico que solo vigilara la frecuencia de periodo cuatro se perdería lo más grande."
+ },
+ {
+  "id": "15.07#2",
+  "codigo": "15.07",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Diagnósticos de calidad y estacionalidad residual",
+  "q": "¿Qué diferencia hay entre detectar estacionalidad residual en la serie ajustada y detectarla en el irregular?",
+  "a": "En la ajustada indica que el filtro no retiró toda la estacionalidad y se corrige ajustando mejor. En el irregular indica que la estacionalidad no es estable y el filtro persigue un patrón cambiante, lo que puede requerir acortar la ventana de estimación de los factores o revisar si hubo un cambio estructural. Son problemas distintos y por eso hay que aplicar los contrastes a las dos series."
+ },
+ {
+  "id": "15.07#3",
+  "codigo": "15.07",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Diagnósticos de calidad y estacionalidad residual",
+  "q": "Un analista baja el umbral de detección de atípicos y todos los diagnósticos mejoran. ¿Es una buena señal?",
+  "a": "No necesariamente. Capturar más atípicos deja la serie más limpia, reduce el irregular y mejora todos los indicadores, pero puede significar que se han retirado como anomalías movimientos económicos reales. Los diagnósticos premian la suavidad, así que no protegen del sobreajuste: hay que vigilar aparte cuántos regresores de atípico se han incluido y si cada uno tiene justificación en el mundo real."
+ },
+ {
+  "id": "15.07#4",
+  "codigo": "15.07",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Diagnósticos de calidad y estacionalidad residual",
+  "q": "Un escalón real se ha tratado como impulso. ¿Qué diagnóstico lo detectará?",
+  "a": "Ninguno del catálogo habitual. El error está en el nivel de la serie, no en su componente estacional, así que no habrá estacionalidad residual, los factores serán estables y las revisiones, pequeñas. Los contrastes vigilan la estacionalidad y son ciegos a los errores de especificación del nivel, que son precisamente los más dañinos y los peor identificados."
+ },
+ {
+  "id": "15.08#0",
+  "codigo": "15.08",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Política de revisiones y esquemas de refresco",
+  "q": "Enumera las fuentes de revisión de una serie ajustada cuando el dato bruto no cambia.",
+  "a": "Cuatro. Las predicciones que extendían la serie se sustituyen por datos reales, y los últimos valores ajustados dependían de ellas. El modelo se reestima con una observación más y cambian sus parámetros y sus filtros. Los factores estacionales se recalculan, lo que altera todo el pasado y no solo el extremo. Y la detección automática puede reclasificar un atípico, con efecto permanente sobre el nivel."
+ },
+ {
+  "id": "15.08#1",
+  "codigo": "15.08",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Política de revisiones y esquemas de refresco",
+  "q": "La revisión media del nivel es de 0,032 sobre una serie que vale 105. ¿Por qué no es una buena medida del coste?",
+  "a": "Porque el usuario lee tasas, y las tasas amplifican las revisiones del nivel: son el cociente de dos números casi iguales, así que un error pequeño en cualquiera se convierte en un error grande en el cociente. En el ejemplo, T11 pasa de una tasa de 0,07 % a una de 0,18 %: la revisión de 0,11 puntos es más de la mitad del dato final, pese a que el nivel apenas se movió tres centésimas."
+ },
+ {
+  "id": "15.08#2",
+  "codigo": "15.08",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Política de revisiones y esquemas de refresco",
+  "q": "¿Qué distingue el ajuste corriente parcial del concurrente?",
+  "a": "El corriente parcial congela la especificación —modelo, atípicos, regresores de calendario— durante todo el año y solo reestima parámetros y factores con cada dato nuevo; una vez al año hace una reidentificación completa anunciada. El concurrente reestima todo en cada publicación. El primero elimina la peor fuente de inestabilidad, que es la reidentificación del modelo, a cambio de mantener durante meses una especificación que se sabe subóptima."
+ },
+ {
+  "id": "15.08#3",
+  "codigo": "15.08",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Política de revisiones y esquemas de refresco",
+  "q": "¿Por qué los factores proyectados no son la opción segura pese a no producir revisiones?",
+  "a": "Porque estabilidad no es exactitud. Los factores se estiman una vez al año y se aplican fijos, así que si el patrón estacional cambia, la serie arrastra durante meses factores que ya no describen la realidad y no lo señala. Es la política más frágil ante cambios estructurales, y los episodios que rompen el patrón son precisamente los que más interesa medir bien."
+ },
+ {
+  "id": "15.08#4",
+  "codigo": "15.08",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Política de revisiones y esquemas de refresco",
+  "q": "¿Por qué la reidentificación anual se hace sobre el cuadro completo de cuentas y no serie a serie?",
+  "a": "Porque las partidas deben cumplir las identidades contables entre sí. Reidentificar el modelo del consumo final sin revisar a la vez el del PIB rompería la identidad del enfoque del gasto. A eso se suma que el calendario debe sincronizarse con el de las cuentas anuales, ya que no tiene sentido reidentificar en un trimestre en el que además va a cambiar toda la serie bruta."
+ },
+ {
+  "id": "15.09#0",
+  "codigo": "15.09",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Benchmarking y conciliación: Denton y Cholette-Dagum",
+  "q": "¿Por qué no se reparte la discrepancia anual a partes iguales entre los cuatro trimestres?",
+  "a": "Porque la corrección queda constante dentro de cada año y salta entre ejercicios, creando un escalón artificial en el enlace de año. En el ejemplo, con discrepancias de 0,03, 0,09 y 0,15, la corrección pasa de 0,0075 a 0,0225 de un trimestre al siguiente. Eso distorsiona la tasa del primer trimestre entre tres y cuatro veces más que Denton, y de forma sistemática."
+ },
+ {
+  "id": "15.09#1",
+  "codigo": "15.09",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Benchmarking y conciliación: Denton y Cholette-Dagum",
+  "q": "¿Qué minimiza exactamente el método de Denton?",
+  "a": "No la magnitud de la corrección, sino la suma de los cuadrados de las diferencias sucesivas de la corrección, sujeto a que las correcciones de cada año sumen la discrepancia correspondiente. Es decir, busca que la corrección evolucione lo más suavemente posible, lo que elimina los escalones en los saltos de año. Es un problema cuadrático con restricciones lineales que se resuelve con álgebra directa."
+ },
+ {
+  "id": "15.09#2",
+  "codigo": "15.09",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Benchmarking y conciliación: Denton y Cholette-Dagum",
+  "q": "¿Cuándo conviene la variante proporcional en lugar de la aditiva?",
+  "a": "Cuando la serie tiene tendencia acusada. La aditiva reparte la misma cantidad absoluta con independencia del nivel, así que pesa relativamente más donde la serie vale menos, deformando el perfil. La proporcional reparte según el nivel y es la recomendada para magnitudes económicas que crecen, especialmente en series nominales con inflación acumulada."
+ },
+ {
+  "id": "15.09#3",
+  "codigo": "15.09",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Benchmarking y conciliación: Denton y Cholette-Dagum",
+  "q": "La corrección de Denton resulta ser del mismo orden que la variación trimestral de la serie. ¿Qué indica?",
+  "a": "Que el benchmarking está sobrescribiendo el perfil del indicador en lugar de retocarlo. El resultado cumplirá la restricción anual y no significará nada, porque el perfil publicado no procede ya de ninguna observación. La respuesta correcta no es un método de conciliación mejor sino cambiar el indicador. En el ejemplo la corrección es un orden de magnitud menor que la variación, que es como debe ser."
+ },
+ {
+  "id": "15.09#4",
+  "codigo": "15.09",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Benchmarking y conciliación: Denton y Cholette-Dagum",
+  "q": "¿Por qué conciliar cada partida del PIB por separado no basta en contabilidad nacional?",
+  "a": "Porque hay dos restricciones simultáneas y esa solo resuelve una. Aplicar Denton a cada partida hace que cada una sume su total anual, pero no garantiza que el PIB siga siendo la suma de sus componentes en cada trimestre. La conciliación temporal y la contable forman un problema multidimensional, y resolverlas por separado no asegura que ambas se cumplan."
+ },
+ {
+  "id": "15.10#0",
+  "codigo": "15.10",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Desagregación temporal: Chow-Lin, Fernández y Litterman",
+  "q": "¿En qué se diferencia la desagregación temporal del benchmarking?",
+  "a": "En el punto de partida. En benchmarking existe una serie trimestral que se retoca para cuadrar con un total anual. En desagregación temporal no hay serie trimestral: hay que construirla a partir del total anual y de un indicador. El reparto de papeles es el mismo —el indicador aporta el perfil y el dato anual el nivel— y la restricción también, por lo que el instrumental de distribución del residuo es común a ambos problemas."
+ },
+ {
+  "id": "15.10#1",
+  "codigo": "15.10",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Desagregación temporal: Chow-Lin, Fernández y Litterman",
+  "q": "Se estima PIB = −282,12 + 3,2542 · indicador y la preliminar suma 1.019,54 frente a un anual de 1.020. ¿Qué se hace con la diferencia?",
+  "a": "Se distribuye entre los cuatro trimestres del año con un criterio de suavidad, de modo que la corrección no dé escalones en el enlace de ejercicios. Es el mismo problema que resolvía Denton en la ficha anterior. Tras distribuirla, la suma de los cuatro trimestres debe coincidir exactamente con 1.020, y esa comprobación aritmética es obligatoria."
+ },
+ {
+  "id": "15.10#2",
+  "codigo": "15.10",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Desagregación temporal: Chow-Lin, Fernández y Litterman",
+  "q": "La serie trimestral resultante tiene tasas de +36 % y −21 %. ¿Hay un error?",
+  "a": "No: es una serie bruta. Ha heredado toda la estacionalidad del indicador, que era un índice de producción industrial con su tercer trimestre hundido y su cuarto disparado. Para publicar un crecimiento trimestral interpretable hay que ajustarla estacionalmente después. La cadena completa de la contabilidad trimestral tiene dos fases de estimación encadenadas, y la desagregación precede al ajuste."
+ },
+ {
+  "id": "15.10#3",
+  "codigo": "15.10",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Desagregación temporal: Chow-Lin, Fernández y Litterman",
+  "q": "¿Qué diferencia a Chow-Lin de Fernández, y cuándo importa?",
+  "a": "El supuesto sobre el término de error: Chow-Lin lo trata como autorregresivo estacionario y estima su parámetro; Fernández asume directamente un paseo aleatorio, que es el caso límite y resulta apropiado con magnitudes en niveles, rara vez estacionarias. Importa poco cuando el indicador es bueno, porque los residuos son pequeños y las tres variantes son indistinguibles. Importa cuando los residuos son grandes, que es justo cuando el problema real es el indicador."
+ },
+ {
+  "id": "15.10#4",
+  "codigo": "15.10",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Desagregación temporal: Chow-Lin, Fernández y Litterman",
+  "q": "¿Por qué es traicionera la desagregación temporal?",
+  "a": "Porque siempre produce un resultado plausible: cumple la restricción anual y tiene un perfil creíble, aunque ese perfil sea enteramente artefacto del indicador elegido. Nada en el procedimiento avisa de que el indicador no representa bien la variable. La verificación útil es contrastar el perfil obtenido con otras fuentes de coyuntura independientes y comprobar que la relación estimada es estable en el tiempo."
+ },
+ {
+  "id": "15.11#0",
+  "codigo": "15.11",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Agregación directa frente a indirecta y coherencia de agregados",
+  "q": "¿Por qué la suma de las series ajustadas no coincide con la serie ajustada de la suma?",
+  "a": "Porque el ajuste estacional no es una operación lineal. Cada componente tiene su propio patrón estacional y se le estiman sus propios factores; al sumar los resultados, la operación no conmuta con el filtrado. La diferencia aparece siempre, aunque su magnitud dependa de cuánto se parezcan los patrones estacionales de los componentes."
+ },
+ {
+  "id": "15.11#1",
+  "codigo": "15.11",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Agregación directa frente a indirecta y coherencia de agregados",
+  "q": "El turismo tiene un factor de 1,66 en el tercer trimestre y la industria de 0,51, pero el total tiene 0,87. ¿Qué está ocurriendo?",
+  "a": "Los dos patrones son casi opuestos y se cancelan parcialmente al agregar. El turismo está un 66 % por encima de su tendencia y la industria un 49 % por debajo, y el total queda solo un 13 % por debajo. La estacionalidad del agregado es mucho más débil que la de sus partes, lo que amortigua la cifra pero oculta que debajo hay dos economías moviéndose en direcciones contrarias."
+ },
+ {
+  "id": "15.11#2",
+  "codigo": "15.11",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Agregación directa frente a indirecta y coherencia de agregados",
+  "q": "Un trimestre da +0,60 % por ajuste directo y −0,03 % por indirecto. ¿Cuál es correcto?",
+  "a": "Los dos, porque son dos respuestas legítimas a la misma pregunta con los mismos datos. La discrepancia surge de la cancelación de patrones: el ajuste directo ve una estacionalidad suave en el total y la retira, mientras que el indirecto retira estacionalidades enormes en cada rama y sus irregulares ya no se cancelan al sumar. Cuanto más opuestos son los patrones, más se separan ambos métodos."
+ },
+ {
+  "id": "15.11#3",
+  "codigo": "15.11",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Agregación directa frente a indirecta y coherencia de agregados",
+  "q": "¿Cuándo es preferible el ajuste indirecto y cuándo el directo?",
+  "a": "El indirecto cuando los componentes tienen patrones estacionales muy distintos, porque el directo estaría estimando un promedio que no describe bien a ninguna parte, y además permite dar a cada rama su calendario y sus atípicos. El directo cuando los patrones se parecen, porque el agregado tiene mejor relación señal-ruido —los irregulares se compensan al sumar— y su estacionalidad se estima mejor."
+ },
+ {
+  "id": "15.11#4",
+  "codigo": "15.11",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Agregación directa frente a indirecta y coherencia de agregados",
+  "q": "Un cuadro de cuentas trimestrales ajustado cuadra perfectamente. ¿Significa que no hubo discrepancia?",
+  "a": "No. La discrepancia no desaparece con la conciliación: se coloca en algún sitio, sea una partida designada o un reparto con criterio publicado. Además, en volúmenes encadenados hay una no aditividad previa e independiente del ajuste. Un cuadro coherente ha absorbido en alguna parte lo que el ajuste no podía cuadrar, y esa partida arrastra un residuo sin interpretación económica."
+ },
+ {
+  "id": "15.12#0",
+  "codigo": "15.12",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Predicción, retropredicción y nowcasting",
+  "q": "Un trimestre es la suma de tres meses independientes de igual varianza. Al cerrar el primero, ¿cuánto baja la incertidumbre?",
+  "a": "Un 18,4 %, no un 33 %. Queda por conocer dos tercios de la varianza, pero la incertidumbre se mide en desviaciones típicas, que son su raíz: se pasa de 1,732 σ a 1,414 σ. Al cerrar el segundo mes la reducción acumulada es del 42,3 %, y el tercer mes aporta el 58 % restante. La información llega de forma acelerada."
+ },
+ {
+  "id": "15.12#1",
+  "codigo": "15.12",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Predicción, retropredicción y nowcasting",
+  "q": "Un indicador tiene correlación 0,8 con la variable objetivo. ¿Cuánta incertidumbre queda al terminar el trimestre?",
+  "a": "El 60 % de la inicial. La reducción de varianza que aporta un indicador es proporcional al cuadrado de su correlación, así que con ρ = 0,8 se elimina el 64 % de la varianza de cada mes y queda el 36 %. Acumulado sobre los tres meses, la desviación típica final es el 60 % de la de partida. Un indicador acota el rango de lo que se publicará; no sustituye al dato."
+ },
+ {
+  "id": "15.12#2",
+  "codigo": "15.12",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Predicción, retropredicción y nowcasting",
+  "q": "¿Por qué el dato ajustado del último trimestre incorpora una predicción?",
+  "a": "Porque los filtros simétricos necesitan observaciones a ambos lados de cada punto y en el extremo de la serie no existen. El pre-ajuste extiende la serie con previsiones del modelo para poder aplicar el filtro completo en lugar de uno asimétrico, que sería peor. La consecuencia es que ese dato depende de una previsión aún no confirmada, y por eso es el que más se revisa."
+ },
+ {
+  "id": "15.12#3",
+  "codigo": "15.12",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Predicción, retropredicción y nowcasting",
+  "q": "¿Contra qué debe evaluarse un nowcast, y por qué?",
+  "a": "Contra la primera estimación oficial publicada, que es lo que intentaba anticipar. Compararlo con la serie revisada años después sería juzgarlo por información que no existía cuando se hizo. Esta posibilidad de validación rápida y sin ambigüedad es una ventaja metodológica del nowcasting sobre la previsión a largo plazo, que tarda años en poder evaluarse."
+ },
+ {
+  "id": "15.12#4",
+  "codigo": "15.12",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Predicción, retropredicción y nowcasting",
+  "q": "¿Qué precaución exige una serie histórica reconstruida por retropredicción?",
+  "a": "No usarla como evidencia sobre el periodo reconstruido. Si ese tramo se generó aplicando hacia atrás una relación estimada en el periodo de solape, cualquier regularidad que se encuentre puede ser artefacto del procedimiento, sobre todo si el solape fue corto o la relación no era estable. Sirve para dar contexto y leer tendencias largas, no como fuente sobre lo que no se observó."
+ },
+ {
+  "id": "16.01#0",
+  "codigo": "16.01",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Estructuras jerárquicas y agrupadas",
+  "q": "¿Qué distingue una jerarquía de una estructura agrupada?",
+  "a": "La jerarquía es estrictamente anidada: cada serie inferior pertenece a una y solo una superior, de modo que la estructura es un árbol. La estructura agrupada tiene varios criterios de agregación cruzados que no se contienen entre sí —región y línea de producto, por ejemplo—, así que no hay un árbol único sino una retícula. El aparato algebraico sirve igual; lo que se pierde es la intuición visual."
+ },
+ {
+  "id": "16.01#1",
+  "codigo": "16.01",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Estructuras jerárquicas y agrupadas",
+  "q": "Al agregar cuatro series hoja independientes, ¿cuánto cae el ruido relativo?",
+  "a": "A la mitad. La media se multiplica por cuatro pero la desviación típica solo por √4 = 2, así que el coeficiente de variación pasa a ser la mitad. En general cae con 1/√k. Es el mismo mecanismo que la diversificación de carteras: agregar es diversificar, y por eso los agregados se comportan mejor que sus partes."
+ },
+ {
+  "id": "16.01#2",
+  "codigo": "16.01",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Estructuras jerárquicas y agrupadas",
+  "q": "Si la previsión del agregado es la más fiable, ¿por qué no usar solo esa?",
+  "a": "Porque el agregado es ciego a la composición. Si una rama sube justo lo que otra baja, el total no se mueve y no puede avisar de un cambio estructural que está ocurriendo debajo. Hay información arriba —menos ruido— e información abajo —el detalle—, y el problema del bloque es cómo usar ambas en lugar de elegir una."
+ },
+ {
+  "id": "16.01#3",
+  "codigo": "16.01",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Estructuras jerárquicas y agrupadas",
+  "q": "Dos ramas hermanas de la jerarquía sufren un choque común. ¿Qué implica?",
+  "a": "Que sus errores de previsión estarán correlacionados aunque el árbol las declare separadas, es decir, que la estructura declarada no describe bien la dependencia real. Un método que suponga independencia entre hermanas desaprovecha esa información; uno que estime la correlación entre errores puede explotarla, y ahí está la diferencia entre reconciliación ingenua y óptima."
+ },
+ {
+  "id": "16.01#4",
+  "codigo": "16.01",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Estructuras jerárquicas y agrupadas",
+  "q": "¿Por qué el sistema de cuentas nacionales no es una jerarquía en sentido estricto?",
+  "a": "Porque organiza la información según varias clasificaciones simultáneas que no se anidan: sector institucional, rama de actividad, producto y operación. El valor añadido se desagrega por rama o por sector y ninguna contiene a la otra. Además las restricciones se cruzan: los tres enfoques del PIB, el equilibrio por producto y el cierre de las cuentas de cada sector se imponen a la vez."
+ },
+ {
+  "id": "16.02#0",
+  "codigo": "16.02",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Coherencia y la matriz de sumas",
+  "q": "En una jerarquía con un total, dos ramas y cuatro hojas, ¿cuántos grados de libertad hay?",
+  "a": "Cuatro, uno por hoja. Hay siete series, pero una vez fijadas las cuatro hojas las otras tres quedan determinadas por suma. Las tres restantes son restricciones: turismo igual a sus dos hojas, industria igual a las suyas, y total igual a la suma de las dos ramas. Confundir el número de series con el de cantidades independientes lleva a sobrestimar la información disponible."
+ },
+ {
+  "id": "16.02#1",
+  "codigo": "16.02",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Coherencia y la matriz de sumas",
+  "q": "¿Qué significa geométricamente que un conjunto de previsiones sea coherente?",
+  "a": "Que el vector de previsiones pertenece al subespacio generado por las columnas de la matriz de sumas, de dimensión igual al número de hojas. Las previsiones base, obtenidas por separado, son un punto del espacio completo que casi con seguridad cae fuera de ese subespacio. Reconciliar es llevarlo dentro, y el método define en qué dirección."
+ },
+ {
+  "id": "16.02#2",
+  "codigo": "16.02",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Coherencia y la matriz de sumas",
+  "q": "Las previsiones base son 132 para el total, 57,5 y 76 para las ramas, y 32, 24,5, 55 y 22 para las hojas. ¿Dónde falla la coherencia?",
+  "a": "En las tres restricciones. Hostelería más transporte dan 56,5 frente a 57,5 de turismo: sobra 1,0. Manufactura más energía dan 77,0 frente a 76,0 de industria: falta 1,0. Y turismo más industria dan 133,5 frente a 132,0 del total: sobran 1,5. Las siete cifras son individualmente razonables y conjuntamente imposibles."
+ },
+ {
+  "id": "16.02#3",
+  "codigo": "16.02",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Coherencia y la matriz de sumas",
+  "q": "¿Qué exige la condición de invariancia y por qué importa?",
+  "a": "Que el método devuelva los valores originales cuando se le entrega un conjunto ya coherente, es decir, que no toque lo que ya cuadra. Importa porque es lo que preserva la insesgadez: si las previsiones base fueran insesgadas, las reconciliadas también lo serían. Bottom-up y la reconciliación óptima la cumplen; top-down no, y de ahí procede el sesgo que se le atribuye."
+ },
+ {
+  "id": "16.02#4",
+  "codigo": "16.02",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Coherencia y la matriz de sumas",
+  "q": "¿Por qué no se puede reconciliar directamente sobre volúmenes encadenados o sobre tasas?",
+  "a": "Porque la construcción entera supone que los agregados son sumas de las hojas, y ninguna de esas dos magnitudes lo es. Los volúmenes encadenados no son aditivos ni siquiera en los datos observados, y la tasa de un agregado es una media ponderada de las de sus componentes, no su suma. Hay que reconciliar sobre niveles aditivos y derivar después las magnitudes que se publican."
+ },
+ {
+  "id": "16.03#0",
+  "codigo": "16.03",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Bottom-up, top-down y middle-out",
+  "q": "En la jerarquía del ejemplo, ¿cuántas previsiones base descarta cada método clásico?",
+  "a": "Bottom-up descarta tres de siete: las del total y las dos ramas, que son las series menos ruidosas. Top-down descarta seis de siete: las cuatro hojas y las dos ramas, es decir, todo el detalle. Ninguno usa más de la mitad de lo que se ha calculado, y ese es el defecto que comparten."
+ },
+ {
+  "id": "16.03#1",
+  "codigo": "16.03",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Bottom-up, top-down y middle-out",
+  "q": "El top-down deja energía en 21,12 cuando su previsión base era 22,0. ¿Qué se ha perdido?",
+  "a": "Todo lo que el modelo de energía supiera sobre esa serie en concreto. El reparto aplica su participación histórica del 16 % al total previsto, así que supone que la composición futura será la pasada. Si el modelo anticipaba un cambio de precios o una parada programada, el reparto lo borra sin dejar rastro. La hipótesis falla justo cuando hay algo que prever."
+ },
+ {
+  "id": "16.03#2",
+  "codigo": "16.03",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Bottom-up, top-down y middle-out",
+  "q": "¿De dónde procede el sesgo del top-down?",
+  "a": "De que incumple la condición de invariancia: modificaría incluso unas previsiones base ya coherentes, imponiendo sus proporciones históricas en lugar de respetar las que traían. Un método que altera lo que ya estaba bien no puede preservar la insesgadez. No es un error de implementación sino una propiedad estructural del procedimiento."
+ },
+ {
+  "id": "16.03#3",
+  "codigo": "16.03",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Bottom-up, top-down y middle-out",
+  "q": "¿Por qué no basta comparar métodos midiendo el error en el nivel agregado?",
+  "a": "Porque top-down acierta ahí por construcción —respeta exactamente la previsión del total— y bottom-up acierta por construcción en las hojas. Evaluar en un solo nivel garantiza que gane el método que lo respeta, sin decir nada sobre su calidad global. La comparación honesta exige medir en todos los niveles a la vez."
+ },
+ {
+  "id": "16.03#4",
+  "codigo": "16.03",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Bottom-up, top-down y middle-out",
+  "q": "¿En qué situación sigue siendo razonable un top-down?",
+  "a": "Cuando las hojas son casi ruido puro. En jerarquías con miles de referencias por punto de venta, modelar cada serie individualmente no aporta nada porque su previsión sería poco más que su media histórica; repartir un agregado bien previsto con proporciones estables da un resultado defendible con una fracción del coste. El criterio general es dónde está concentrada la información."
+ },
+ {
+  "id": "16.04#0",
+  "codigo": "16.04",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Combinación óptima y reconciliación MinT",
+  "q": "Bottom-up deja el total en 133,50, la proyección ortogonal en 132,64 y la ponderada en 133,00. ¿Por qué difieren si las tres son coherentes?",
+  "a": "Porque la coherencia solo confina el resultado a un subespacio de dimensión cuatro —una por hoja— y dentro de él caben infinitas soluciones. Lo que distingue a los métodos es qué previsiones usan y con qué métrica miden la proximidad. Bottom-up ignora la previsión del total; las otras dos la usan, con distinta ponderación."
+ },
+ {
+  "id": "16.04#1",
+  "codigo": "16.04",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Combinación óptima y reconciliación MinT",
+  "q": "¿De dónde sale la reducción de error si no se ha añadido información?",
+  "a": "De una restricción que siempre se cumple y que las previsiones base estaban violando. El punto verdadero está siempre dentro del subespacio coherente, porque los datos observados cuadran por definición. La componente del error perpendicular al subespacio apunta a una región donde la verdad no puede estar: es error con certeza. Proyectar la elimina y deja intacta la otra componente."
+ },
+ {
+  "id": "16.04#2",
+  "codigo": "16.04",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Combinación óptima y reconciliación MinT",
+  "q": "¿Qué matriz de covarianzas interviene en MinT, y cuál es el error común?",
+  "a": "La de los errores de previsión base. El error común es usar la de las series o la de los niveles, que son cosas distintas: dos series pueden estar muy correlacionadas y tener errores de previsión independientes, o al revés. La matriz correcta recoge dos cosas a la vez, cuánto se equivoca cada previsión y cómo se equivocan juntas."
+ },
+ {
+  "id": "16.04#3",
+  "codigo": "16.04",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Combinación óptima y reconciliación MinT",
+  "q": "La proyección ortogonal mueve el total 0,643 y la ponderada 1,000. ¿Qué explica la diferencia?",
+  "a": "La ponderación estructural declara que el total tiene mayor varianza de error, porque agrega cuatro hojas, así que acepta moverlo más y mover menos las hojas. Es el comportamiento correcto si esa hipótesis sobre las varianzas es acertada, y el equivocado si no lo es. La ponderación es a la vez lo que hace óptimo al método y lo que lo hace frágil."
+ },
+ {
+  "id": "16.04#4",
+  "codigo": "16.04",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Combinación óptima y reconciliación MinT",
+  "q": "Las previsiones base casi cuadran. ¿Cuánto se gana reconciliándolas?",
+  "a": "Poco: si la incoherencia es pequeña, la componente perpendicular del error también lo es y hay poco que eliminar. La relación es la inversa de lo que sugiere la intuición: cuanto peor cuadren las previsiones, más se gana reconciliándolas. Eso significa también que una incoherencia grande es una señal de que los modelos base son inconsistentes entre sí y conviene mirar por qué."
+ },
+ {
+  "id": "16.05#0",
+  "codigo": "16.05",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Estimación de la matriz de covarianzas",
+  "q": "¿Cuántas series admite una matriz de covarianzas completa estimada con diez años de datos mensuales?",
+  "a": "Quince exactamente. Una matriz de n series tiene n(n+1)/2 entradas distintas, y diez años mensuales dan 120 observaciones: 15 · 16 / 2 = 120. A partir de ahí hay más parámetros que datos y la matriz muestral deja de ser invertible. Como los parámetros crecen con el cuadrado y las observaciones linealmente, el problema no se resuelve esperando a tener más historia."
+ },
+ {
+  "id": "16.05#1",
+  "codigo": "16.05",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Estimación de la matriz de covarianzas",
+  "q": "¿Qué se pierde al suponer la matriz diagonal?",
+  "a": "Las covarianzas, es decir, la información sobre cómo se equivocan juntas las previsiones. La diagonal solo recoge cuánto se equivoca cada una. Si dos ramas fallan siempre en el mismo sentido por compartir un choque común, la reconciliación podría aprovecharlo y con una matriz diagonal no puede. Diagonalizar equivale a creerse el árbol declarado."
+ },
+ {
+  "id": "16.05#2",
+  "codigo": "16.05",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Estimación de la matriz de covarianzas",
+  "q": "¿En qué se diferencian la diagonal estructural y la de varianzas de residuos?",
+  "a": "La estructural asigna a cada serie una varianza proporcional al número de hojas que agrega: no exige estimar nada, solo contar, y por eso es robusta. La de varianzas usa los residuos de cada modelo, que es información real, y funciona mejor cuando la calidad de los modelos difiere mucho entre series; pero falla si los residuos históricos no representan bien el error futuro, por ejemplo tras un cambio estructural."
+ },
+ {
+  "id": "16.05#3",
+  "codigo": "16.05",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Estimación de la matriz de covarianzas",
+  "q": "¿Por qué la contracción se ha convertido en la opción por defecto?",
+  "a": "Porque mezcla la matriz muestral —informativa pero inestable— con una diagonal estable, dando más peso a la primera cuanto más datos haya. Conserva parte de la información de correlación sin heredar la casi singularidad de la muestral, y el resultado siempre es invertible. No es óptima en ningún sentido teórico limpio, pero funciona bien en la práctica."
+ },
+ {
+  "id": "16.05#4",
+  "codigo": "16.05",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Estimación de la matriz de covarianzas",
+  "q": "¿Qué comparación hay que hacer siempre antes de adoptar una aproximación?",
+  "a": "Contra la proyección ortogonal, que no supone nada. Cualquier aproximación más sofisticada tiene que demostrar mejora fuera de muestra sobre ella; si no lo hace, la complejidad añadida no se justifica. La ganancia de refinar la matriz es real pero modesta, y la pérdida por refinarla mal puede ser grande."
+ },
+ {
+  "id": "16.06#0",
+  "codigo": "16.06",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Jerarquías temporales: mensual, trimestral y anual",
+  "q": "¿Cuántas series forman la jerarquía temporal completa de una serie mensual?",
+  "a": "Veintiocho. Los niveles son los divisores de doce —1, 2, 3, 4, 6 y 12 meses—, que dan 12, 6, 4, 3, 2 y 1 periodos por año respectivamente. Los grados de libertad siguen siendo doce, los del nivel mensual, así que hay dieciséis restricciones. Con datos trimestrales los divisores son 1, 2 y 4, lo que da siete series y cuatro grados de libertad."
+ },
+ {
+  "id": "16.06#1",
+  "codigo": "16.06",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Jerarquías temporales: mensual, trimestral y anual",
+  "q": "¿Por qué mejora las previsiones reconciliar una jerarquía temporal si solo hay una serie?",
+  "a": "Porque cada frecuencia destaca una dinámica distinta de la misma economía y se modeliza por separado. El modelo mensual aprende bien el corto plazo y la estacionalidad, y peor la tendencia; el anual, al revés. Sus errores de especificación son distintos por construcción, así que combinar sus previsiones aporta información genuina, igual que diversificar entre activos poco correlacionados."
+ },
+ {
+  "id": "16.06#2",
+  "codigo": "16.06",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Jerarquías temporales: mensual, trimestral y anual",
+  "q": "¿Por qué no se puede agregar de cinco en cinco meses?",
+  "a": "Porque cinco no divide a doce y los bloques no encajarían en el año: el sexto bloque cruzaría el cambio de ejercicio y las restricciones de suma dejarían de ser las que la matriz declara. Los niveles disponibles son exactamente los divisores del periodo estacional. Tampoco valen las agregaciones solapadas, como las medias móviles, porque los bloques comparten observaciones."
+ },
+ {
+  "id": "16.06#3",
+  "codigo": "16.06",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Jerarquías temporales: mensual, trimestral y anual",
+  "q": "¿En qué se diferencia esto del benchmarking de las cuentas trimestrales?",
+  "a": "En la simetría. El benchmarking da autoridad total al dato anual y traslada todo el ajuste a los trimestres, lo que equivale a declarar varianza cero para el nivel anual. La reconciliación temporal no privilegia ningún nivel a priori: el reparto lo decide la matriz de covarianzas según la fiabilidad relativa. Son el mismo problema con distinto supuesto sobre quién sabe más."
+ },
+ {
+  "id": "16.06#4",
+  "codigo": "16.06",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Jerarquías temporales: mensual, trimestral y anual",
+  "q": "Un equipo cuadra a mano el desfase entre su previsión trimestral y la anual. ¿Qué está decidiendo sin darse cuenta?",
+  "a": "Cuál de las dos previsiones considera más fiable. Ajustar el trimestre más lejano, o repartir la diferencia por igual, son criterios implícitos sobre dónde colocar el error, tomados sin evaluarlos. Plantearlo como jerarquía temporal hace explícita esa decisión y, además, produce un conjunto que espera equivocarse menos que cualquiera de las dos previsiones originales."
+ },
+ {
+  "id": "16.07#0",
+  "codigo": "16.07",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Reconciliación probabilística",
+  "q": "Cuatro hojas tienen cada una un intervalo del 90 % de ±1,645 σ. ¿Cuál es el del total si los errores son independientes?",
+  "a": "±3,290 σ, la mitad de lo que da sumar los cuatro intervalos. La varianza de la suma de cuatro variables independientes es 4 σ², así que su desviación típica es 2 σ y el intervalo, ±1,645 · 2 σ. Sumar las anchuras daría ±6,580 σ, que solo sería correcto si las cuatro se equivocaran siempre a la vez y en el mismo sentido."
+ },
+ {
+  "id": "16.07#1",
+  "codigo": "16.07",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Reconciliación probabilística",
+  "q": "¿Qué significa que una previsión probabilística de una jerarquía sea coherente?",
+  "a": "Que asigna probabilidad cero a cualquier combinación de valores que viole las restricciones de suma, es decir, que toda la masa de probabilidad está sobre el subespacio coherente. Reconciliar los puntos solo coloca la media dentro del subespacio; la reconciliación probabilística coloca la distribución entera."
+ },
+ {
+  "id": "16.07#2",
+  "codigo": "16.07",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Reconciliación probabilística",
+  "q": "¿Por qué es más grave diagonalizar la matriz de covarianzas al construir intervalos que al reconciliar puntos?",
+  "a": "Porque diagonalizar equivale a afirmar que los errores son independientes, y de esa hipótesis depende directamente la anchura del intervalo del agregado. Si los errores están positivamente correlacionados y se supone independencia, los intervalos salen sistemáticamente demasiado estrechos, lo que transmite una confianza injustificada. En la reconciliación puntual el efecto es mucho más leve."
+ },
+ {
+  "id": "16.07#3",
+  "codigo": "16.07",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Reconciliación probabilística",
+  "q": "¿Cómo se conserva la correlación entre series al simular trayectorias?",
+  "a": "Remuestreando vectores completos de residuos: todas las series del mismo periodo a la vez, en lugar de residuos serie a serie. Así la dependencia entre errores queda incorporada por construcción, sin haber estimado ninguna matriz de covarianzas. Es un argumento de peso a favor del enfoque no paramétrico en jerarquías grandes donde estimar la matriz sería imposible."
+ },
+ {
+  "id": "16.07#4",
+  "codigo": "16.07",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Reconciliación probabilística",
+  "q": "¿Por qué unos intervalos marginales no permiten calcular la probabilidad de recesión técnica?",
+  "a": "Porque la pregunta involucra dos trimestres consecutivos de la misma serie, que es una propiedad conjunta. Un intervalo dice qué puede pasar con una serie en un horizonte, pero no cómo se relacionan los errores de un periodo y del siguiente. Con trayectorias simuladas la respuesta es inmediata: se cuenta en qué proporción de ellas hay dos trimestres negativos seguidos."
+ },
+ {
+  "id": "16.08#0",
+  "codigo": "16.08",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Evaluación de previsiones jerárquicas",
+  "q": "Todas las series de la jerarquía se equivocan un 1 %. ¿Qué cuota del error absoluto medio aporta el total?",
+  "a": "El 33,1 %, siendo una de siete series. La cuota equitativa sería del 14,29 %, así que pesa 2,32 veces lo que le corresponde. Las cuatro hojas juntas aportan el 33,5 %, prácticamente lo mismo que el total por sí solo. Como los errores absolutos son proporcionales al nivel, promediarlos sin escalar mide sobre todo el nivel más agregado."
+ },
+ {
+  "id": "16.08#1",
+  "codigo": "16.08",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Evaluación de previsiones jerárquicas",
+  "q": "¿Por qué es tramposo comparar bottom-up y top-down midiendo solo en las hojas?",
+  "a": "Porque bottom-up reproduce sin error las previsiones base de las hojas: es exacto ahí por construcción. Top-down lo es en el total. Medir en un solo nivel garantiza que gane el método que lo respeta, sin decir nada sobre su calidad global. La comparación honesta exige evaluar en todos los niveles y presentar los resultados por separado."
+ },
+ {
+  "id": "16.08#2",
+  "codigo": "16.08",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Evaluación de previsiones jerárquicas",
+  "q": "¿Qué corrige una medida escalada y de qué depende?",
+  "a": "Corrige el problema de escala dividiendo el error de cada serie por una referencia propia —habitualmente el error de una previsión ingenua sobre su histórico—, lo que produce un número adimensional promediable entre series de cualquier tamaño. Depende de qué previsión ingenua se elija: una serie muy predecible tiene un denominador pequeño y hará parecer mediocre a un método bueno."
+ },
+ {
+  "id": "16.08#3",
+  "codigo": "16.08",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Evaluación de previsiones jerárquicas",
+  "q": "¿Qué referencias hay que incluir en una comparación de métodos de reconciliación?",
+  "a": "Las previsiones base sin reconciliar, aunque sean incoherentes, y la proyección ortogonal. Las primeras dicen cuánto aporta reconciliar; la segunda, cuánto aporta ponderar. Sin ambas, una mejora observada no se puede atribuir a nada concreto: solo se sabe que un método salió mejor que otro, sin entender por qué."
+ },
+ {
+  "id": "16.08#4",
+  "codigo": "16.08",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Evaluación de previsiones jerárquicas",
+  "q": "Un método mejora un 2 % sobre treinta orígenes de evaluación. ¿Basta para adoptarlo?",
+  "a": "No sin dos comprobaciones. Primera, si la diferencia es distinguible del ruido: los contrastes de igualdad de exactitud predictiva existen para eso. Segunda, si compensa el coste: mantener una reconciliación óptima con matriz estimada exige vigilancia continua, mientras que un bottom-up funciona solo. La decisión correcta no siempre es adoptar el método que gana la comparación."
+ },
+ {
+  "id": "16.09#0",
+  "codigo": "16.09",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Aplicación a cuentas nacionales y estadística oficial",
+  "q": "Una tabla de origen y destino de 50 × 50 debe cuadrar por filas y columnas. ¿Cuántos grados de libertad tiene?",
+  "a": "2.401, que es (50 − 1)². Hay 2.500 celdas y 2n = 100 restricciones, de las cuales una es redundante porque el total general se cuenta dos veces: quedan 99 efectivas. Contar las 100 como independientes sobrestima cuánto atan y produce sistemas mal planteados al implementar la reconciliación."
+ },
+ {
+  "id": "16.09#1",
+  "codigo": "16.09",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Aplicación a cuentas nacionales y estadística oficial",
+  "q": "¿Por qué se dice que cuadrar una tabla grande es una restricción débil?",
+  "a": "Porque las celdas crecen con el cuadrado de la dimensión y las restricciones solo linealmente. En una tabla de 10 × 10 las restricciones son el 19 % de las celdas; en una de 50 × 50, el 4 %; en una de 100 × 100, el 2 %. Queda enorme libertad para que las cifras individuales estén equivocadas sin que ningún cuadre lo revele."
+ },
+ {
+  "id": "16.09#2",
+  "codigo": "16.09",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Aplicación a cuentas nacionales y estadística oficial",
+  "q": "¿Qué distingue una restricción contable de una vinculante por norma?",
+  "a": "La contable se deriva de una definición y debe cumplirse exactamente: el PIB es la suma de sus componentes porque así se define. La vinculante por norma impone que cierto dato no se toque —el anual manda sobre el trimestral, algunos agregados tienen consecuencias jurídicas—, lo que equivale a declarar varianza cero y convierte el problema en una proyección con restricciones duras."
+ },
+ {
+  "id": "16.09#3",
+  "codigo": "16.09",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Aplicación a cuentas nacionales y estadística oficial",
+  "q": "Un compilador coloca sistemáticamente la discrepancia en la variación de existencias. ¿Qué está declarando?",
+  "a": "Que esa partida tiene varianza infinita, es decir, que su estimación no vale nada y puede absorber cualquier residuo sin coste. Puede ser cierto, y si lo es conviene enunciarlo explícitamente. Si no lo es, la práctica está deteriorando de forma sistemática una estimación mejor de lo que ese trato sugiere."
+ },
+ {
+  "id": "16.09#4",
+  "codigo": "16.09",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Aplicación a cuentas nacionales y estadística oficial",
+  "q": "¿Qué aporta este marco a la compilación de cuentas nacionales?",
+  "a": "No reconciliar donde no se reconciliaba, sino escribir el criterio con el que ya se reconcilia. El juicio del compilador sobre qué fuente es más fiable suele ser sólido, pero no está documentado, no se puede auditar y se pierde al cambiar la persona. Una matriz de ponderaciones explícita es discutible, revisable y reproducible; el argumento principal es de transparencia."
+ },
+ {
+  "id": "16.10#0",
+  "codigo": "16.10",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Herramientas, diagnóstico y práctica",
+  "q": "¿Cuál es la primera comprobación antes de reconciliar y por qué se salta tanto?",
+  "a": "Verificar que la estructura declarada se cumple en los datos históricos: que las hojas sumaban su rama y las ramas el total, periodo a periodo. Se salta porque parece obvio, y con frecuencia no se cumple por definiciones que no encajan, partidas contadas dos veces o series enlazadas con criterios distintos. Si la estructura no cuadra sobre lo observado, reconciliar impone una restricción falsa."
+ },
+ {
+  "id": "16.10#1",
+  "codigo": "16.10",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Herramientas, diagnóstico y práctica",
+  "q": "Manufactura y energía reciben el mismo ajuste absoluto. ¿Por qué no es lo mismo?",
+  "a": "Porque sus niveles difieren: 55 frente a 22. El mismo ajuste de 0,548 supone un 1,00 % para manufactura y un 2,49 % para energía. La proyección ortogonal reparte por igual dentro de cada nodo sin saber que para una serie eso es el doble de su crecimiento típico y para la otra, cinco veces. Es la limitación que la ponderación corrige."
+ },
+ {
+  "id": "16.10#2",
+  "codigo": "16.10",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Herramientas, diagnóstico y práctica",
+  "q": "Una serie recibe un ajuste del 2,49 % cuando su crecimiento trimestral típico es del 0,5 %. ¿Qué conclusión se saca?",
+  "a": "Que es una alarma, no un afinamiento. Significa que el modelo de esa serie dice algo muy distinto de lo que dicen sus vecinos, y conviene mirar por qué antes de publicar. La regla práctica: si el ajuste es del orden del ruido de la serie, la reconciliación está retocando; si es del orden de su señal, está reescribiendo."
+ },
+ {
+  "id": "16.10#3",
+  "codigo": "16.10",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Herramientas, diagnóstico y práctica",
+  "q": "¿Qué mejora cabe esperar de la reconciliación óptima frente a los métodos clásicos?",
+  "a": "Unos pocos puntos porcentuales de reducción de error: real y modesta, no una transformación. La razón es que la ganancia procede de eliminar la componente incoherente del error, y esa componente es pequeña cuando los modelos base son razonables. Lo que sí se obtiene con seguridad es coherencia garantizada."
+ },
+ {
+  "id": "16.10#4",
+  "codigo": "16.10",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Herramientas, diagnóstico y práctica",
+  "q": "¿Qué requisito debe cumplir la herramienta que se elija?",
+  "a": "Permitir especificar la matriz de sumas explícitamente. Las interfaces que solo aceptan jerarquías anidadas dejan de servir en cuanto la estructura tiene criterios cruzados, que es lo habitual con más de una clasificación. El ecosistema de R está maduro y cubre jerarquías transversales, agrupadas y temporales con reconciliación probabilística; en Python las opciones son menos completas."
  },
  {
   "id": "2.01#0",
