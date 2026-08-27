@@ -39,7 +39,7 @@ for (const b of BLOQUES) {
 
 const TIPOS = new Set([
   "parrafos", "rejilla", "pasos", "tabla", "acordeon",
-  "preguntas", "destacado", "fuentes", "diario", "grafico",
+  "preguntas", "destacado", "fuentes", "diario", "grafico", "test",
 ]);
 const SECCIONES = ["Errores típicos", "Compruébate", "Para profundizar", "Puente con la contabilidad nacional"];
 const CAMPOS = ["tiempo", "nucleo", "requiere", "abre"];
@@ -54,6 +54,7 @@ const archivos = fs.readdirSync(dir).filter((f) => /^f\d+-\d+\.js$/.test(f)).sor
 const prerreq = {};
 let incidencias = 0;
 let graficos = 0;
+let testItems = 0;
 const porBloque = {};
 
 for (const archivo of archivos) {
@@ -83,6 +84,26 @@ for (const archivo of archivos) {
   for (const s of f.secciones) {
     for (const b of s.contenido) {
       if (!TIPOS.has(b.tipo)) err(`tipo desconocido: ${b.tipo}`);
+
+      /* Un test mal formado no rompe el render, solo enseña mal: una
+         «correcta» fuera de rango marcaría buena una opción inexistente
+         y ninguna otra comprobación lo notaría. */
+      if (b.tipo === "test") {
+        (b.items || []).forEach((p, i) => {
+          testItems++;
+          const donde = `test #${i + 1}`;
+          const n = (p.opciones || []).length;
+          if (n < 3) err(`${donde}: ${n} opciones, hacen falta al menos 3`);
+          if (!Number.isInteger(p.correcta) || p.correcta < 0 || p.correcta >= n)
+            err(`${donde}: «correcta» = ${p.correcta} fuera de rango`);
+          if (new Set(p.opciones).size !== n) err(`${donde}: opciones repetidas`);
+          if ((p.porque || []).length !== n)
+            err(`${donde}: ${(p.porque || []).length} explicaciones para ${n} opciones`);
+          if (!p.q) err(`${donde}: sin enunciado`);
+        });
+        continue;
+      }
+
       if (b.tipo !== "grafico") continue;
       graficos++;
       const chk = (pts, donde) => (pts || []).forEach((p) => {
@@ -103,7 +124,7 @@ for (const archivo of archivos) {
 
 console.log(
   incidencias === 0
-    ? `\nSin incidencias en las ${archivos.length} fichas. Gráficos: ${graficos}`
+    ? `\nSin incidencias en las ${archivos.length} fichas. Gráficos: ${graficos}. Preguntas de test: ${testItems}`
     : `\n${incidencias} incidencias.`
 );
 console.log("Progreso:", archivos.length, "/", Object.keys(temas).length);

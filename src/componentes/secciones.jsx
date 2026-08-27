@@ -178,6 +178,67 @@ function Preguntas({ items }) {
   ));
 }
 
+/* --- Test de opción múltiple ------------------------------------------
+   Comprobación de salida del tema. Al elegir opción la respuesta queda
+   fijada: reintentar hasta acertar convierte la prueba en un juego de
+   descarte y deja de medir nada. Se explica también por qué falla la
+   opción elegida, no solo por qué acierta la buena; el error concreto
+   que uno comete es más informativo que la respuesta correcta. */
+const LETRAS = "abcdefgh";
+
+function Test({ items = [], nota }) {
+  const [elegidas, setElegidas] = useState({});
+  const respondidas = Object.keys(elegidas).length;
+  const aciertos = items.reduce((n, p, i) => n + (elegidas[i] === p.correcta ? 1 : 0), 0);
+  const completo = items.length > 0 && respondidas === items.length;
+
+  return (
+    <>
+      {items.map((p, i) => {
+        const elegida = elegidas[i];
+        const hecha = elegida !== undefined;
+        const acertada = elegida === p.correcta;
+        return (
+          <div className="pregunta" key={i}>
+            <p className="preguntaT">{enLinea(p.q)}</p>
+            <ol className="testOpciones">
+              {p.opciones.map((op, j) => (
+                <li key={j}>
+                  <button
+                    className="testOpcion"
+                    disabled={hecha}
+                    data-estado={!hecha ? "" : j === p.correcta ? "bien" : j === elegida ? "mal" : "gris"}
+                    onClick={() => setElegidas((e) => ({ ...e, [i]: j }))}
+                  >
+                    <span className="testLetra">{LETRAS[j]}</span>
+                    <span>{enLinea(op)}</span>
+                  </button>
+                </li>
+              ))}
+            </ol>
+            {hecha && (
+              <div className="testExplica">
+                <p className="testVeredicto" data-ok={acertada}>
+                  {acertada ? "Correcta." : `Incorrecta: la buena es la ${LETRAS[p.correcta]}.`}
+                </p>
+                {!acertada && p.porque[elegida] && <p className="respuesta">{enLinea(p.porque[elegida])}</p>}
+                <p className="respuesta">{enLinea(p.porque[p.correcta])}</p>
+              </div>
+            )}
+          </div>
+        );
+      })}
+      {completo && (
+        <p className="testMarcador">
+          <strong>{aciertos} de {items.length}.</strong>
+          <button className="preguntaBtn" onClick={() => setElegidas({})}>Repetir</button>
+        </p>
+      )}
+      {nota && <p className="respuesta" style={{ marginTop: 12 }}>{enLinea(nota)}</p>}
+    </>
+  );
+}
+
 /* --- Bloque destacado (puente con contabilidad nacional, avisos) --- */
 function Destacado({ parrafos = [], lista = [], cierre }) {
   return (
@@ -559,6 +620,7 @@ const REGISTRO = {
   tabla: Tabla,
   acordeon: Acordeon,
   preguntas: Preguntas,
+  test: Test,
   destacado: Destacado,
   fuentes: Fuentes,
   grafico: Grafico,

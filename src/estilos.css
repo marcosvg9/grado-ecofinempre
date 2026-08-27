@@ -173,6 +173,23 @@ p.parrafo { font-size: 15.5px; line-height: 1.65; margin: 0 0 14px; max-width: 6
 .preguntaBtn:hover { border-color: var(--acento); color: var(--acento); }
 .respuesta { font-size: 14.5px; line-height: 1.6; color: var(--tinta2); margin: 10px 0 0; max-width: 66ch; }
 
+/* Test de opción múltiple. El color solo aparece tras responder: antes,
+   todas las opciones tienen que verse igual de neutras. */
+.testOpciones { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.testOpcion { display: flex; gap: 10px; align-items: baseline; width: 100%; text-align: left; font-family: inherit; font-size: 15px; line-height: 1.5; background: var(--papel); border: 1px solid var(--linea); border-radius: 3px; padding: 9px 12px; color: var(--tinta); cursor: pointer; }
+.testOpcion:not(:disabled):hover { border-color: var(--acento); }
+.testOpcion:disabled { cursor: default; }
+.testLetra { font-family: var(--mono); font-size: 12.5px; color: var(--tinta2); flex: none; }
+.testOpcion[data-estado="bien"] { border-color: var(--acento); background: #E4EEEB; }
+.testOpcion[data-estado="bien"] .testLetra { color: var(--acento); }
+.testOpcion[data-estado="mal"] { border-color: var(--alerta); background: #F4EBE1; }
+.testOpcion[data-estado="mal"] .testLetra { color: var(--alerta); }
+.testOpcion[data-estado="gris"] { opacity: .5; }
+.testExplica { margin-top: 12px; border-top: 1px solid var(--linea); padding-top: 10px; }
+.testVeredicto { font-size: 14px; font-weight: 600; margin: 0 0 6px; color: var(--alerta); }
+.testVeredicto[data-ok="true"] { color: var(--acento); }
+.testMarcador { display: flex; gap: 12px; align-items: center; font-size: 15px; color: var(--tinta2); margin: 16px 0 0; }
+
 .destacado { background: var(--papel2); border: 1px solid var(--linea); border-left: 3px solid var(--tinta); border-radius: 3px; padding: 18px 20px; margin: 8px 0; }
 .lista { margin: 0; padding-left: 20px; font-size: 15px; line-height: 1.7; }
 .lista li { margin-bottom: 6px; }
