@@ -62,9 +62,10 @@ export default function Ruta({ estudiados, irAFicha, alternar }) {
   const pct = Math.round((r.estudiadas / r.total) * 100);
 
   return (
-    <section className="ruta">
-      <h1 className="rutaTitular">Ruta de estudio</h1>
-      <p className="rutaEntrada">
+    <div className="envoltorio estrecho">
+      <p className="eyebrow">{r.estudiadas} de {r.total} · Orden por prerrequisitos</p>
+      <h1 className="titular">Ruta de estudio</h1>
+      <p className="lede">
         Cada ficha declara de qué otras depende. Con eso se ordenan las {TEMAS.length}: aquí están las que
         ya puedes abordar porque tienes hechos sus prerrequisitos, y las que todavía no.
       </p>
@@ -173,6 +174,6 @@ export default function Ruta({ estudiados, irAFicha, alternar }) {
           decidir qué está disponible.
         </p>
       )}
-    </section>
+    </div>
   );
 }
