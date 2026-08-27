@@ -35,18 +35,18 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Media aritmética", sub: "Minimiza la suma de errores al cuadrado.", cols: ["x̄ = (1/n)·Σxᵢ"] },
+            { nom: "Media aritmética", sub: "Minimiza la suma de errores al cuadrado.", cols: ["$\\bar x = \\dfrac{1}{n}\\sum_i x_i$"] },
             { nom: "Mediana", sub: "Minimiza la suma de errores absolutos. Robusta.", cols: ["valor que deja el 50 % a cada lado"] },
-            { nom: "Varianza muestral", sub: "n − 1 en el denominador para que sea insesgada.", cols: ["s² = Σ(xᵢ − x̄)² ÷ (n − 1)"] },
-            { nom: "Desviación típica", sub: "En las unidades de la variable.", cols: ["s = √(s²)"] },
-            { nom: "Coeficiente de variación", sub: "Compara dispersiones entre escalas distintas.", cols: ["CV = s ÷ x̄"] },
-            { nom: "Rango intercuartílico", sub: "Anchura del 50 % central. Robusto.", cols: ["IQR = Q₃ − Q₁"] },
-            { nom: "Regla del atípico", sub: "Criterio convencional, no una prueba.", cols: ["fuera de [Q₁ − 1,5·IQR, Q₃ + 1,5·IQR]"] },
-            { nom: "Asimetría", sub: "Positiva: cola derecha larga, media > mediana.", cols: ["g₁ = m₃ ÷ s³"] },
-            { nom: "Curtosis en exceso", sub: "Positiva: colas más gruesas que la normal.", cols: ["g₂ = m₄ ÷ s⁴ − 3"] },
-            { nom: "Tipificación", sub: "Desviaciones típicas por encima de la media.", cols: ["z = (x − μ) ÷ σ"] },
-            { nom: "Regla empírica (normal)", sub: "Solo vale si la distribución es normal.", cols: ["±1σ: 68,3 % · ±2σ: 95,4 % · ±3σ: 99,7 %"] },
-            { nom: "Lognormal", sub: "Si log X es normal. Media siempre mayor que mediana.", cols: ["mediana = e^μ · media = e^(μ+σ²/2)"] },
+            { nom: "Varianza muestral", sub: "n − 1 en el denominador para que sea insesgada.", cols: ["$s^2 = \\dfrac{\\sum_i (x_i - \\bar x)^2}{n - 1}$"] },
+            { nom: "Desviación típica", sub: "En las unidades de la variable.", cols: ["$s = \\sqrt{s^2}$"] },
+            { nom: "Coeficiente de variación", sub: "Compara dispersiones entre escalas distintas.", cols: ["$\\mathrm{CV} = \\dfrac{s}{\\bar x}$"] },
+            { nom: "Rango intercuartílico", sub: "Anchura del 50 % central. Robusto.", cols: ["$\\mathrm{IQR} = Q_3 - Q_1$"] },
+            { nom: "Regla del atípico", sub: "Criterio convencional, no una prueba.", cols: ["fuera de $[\\,Q_1 - 1{,}5\\,\\mathrm{IQR},\\ Q_3 + 1{,}5\\,\\mathrm{IQR}\\,]$"] },
+            { nom: "Asimetría", sub: "Positiva: cola derecha larga, media > mediana.", cols: ["$g_1 = \\dfrac{m_3}{s^3}$"] },
+            { nom: "Curtosis en exceso", sub: "Positiva: colas más gruesas que la normal.", cols: ["$g_2 = \\dfrac{m_4}{s^4} - 3$"] },
+            { nom: "Tipificación", sub: "Desviaciones típicas por encima de la media.", cols: ["$z = \\dfrac{x - \\mu}{\\sigma}$"] },
+            { nom: "Regla empírica (normal)", sub: "Solo vale si la distribución es normal.", cols: ["$\\pm 1\\sigma$: 68,3 % · $\\pm 2\\sigma$: 95,4 % · $\\pm 3\\sigma$: 99,7 %"] },
+            { nom: "Lognormal", sub: "Si log X es normal. Media siempre mayor que mediana.", cols: ["mediana $= e^{\\mu}$ · media $= e^{\\mu + \\sigma^2/2}$"] },
           ],
         },
       ],
@@ -95,14 +95,14 @@ export default {
             ["Desviación típica", "23,05", "5,04", "Se divide por más de cuatro"],
             ["Coeficiente de variación", "0,77", "0,22", "La dispersión relativa era artificial"],
             ["Rango intercuartílico", "9", "8", "Estable: describe el núcleo de la plantilla"],
-            { celdas: ["Asimetría", "2,44", "≈ 0,5", "Fuertemente positiva: cola derecha"], clase: "total" },
+            { celdas: ["Asimetría", "2,44", "$\\approx 0{,}5$", "Fuertemente positiva: cola derecha"], clase: "total" },
           ],
-          nota: "La comparación entre las dos columnas es una prueba de robustez casera y muy informativa. **Media, desviación típica y coeficiente de variación se descomponen al retirar un dato de diez; mediana, moda y rango intercuartílico casi no se enteran.** El criterio convencional confirma que 94 es atípico: el límite superior es Q₃ + 1,5·IQR = 28 + 13,5 = **41,5**. Ojo con la conclusión fácil: que un dato sea atípico **no autoriza a borrarlo**. Ese salario existe y forma parte del coste laboral de la empresa. Lo que indica es que la media no es el estadístico adecuado para responder a la pregunta de cuánto se cobra ahí.",
+          nota: "La comparación entre las dos columnas es una prueba de robustez casera y muy informativa. **Media, desviación típica y coeficiente de variación se descomponen al retirar un dato de diez; mediana, moda y rango intercuartílico casi no se enteran.** El criterio convencional confirma que 94 es atípico: el límite superior es $Q_3 + 1{,}5\\,\\mathrm{IQR} = 28 + 13{,}5 = 41{,}5$. Ojo con la conclusión fácil: que un dato sea atípico **no autoriza a borrarlo**. Ese salario existe y forma parte del coste laboral de la empresa. Lo que indica es que la media no es el estadístico adecuado para responder a la pregunta de cuánto se cobra ahí.",
         },
         {
           tipo: "parrafos",
           items: [
-            "**Esto no es un artefacto de tener diez datos.** Las distribuciones salariales reales tienen la misma forma, y el motivo es el señalado en el desarrollo: los salarios crecen de forma multiplicativa. Si se ajusta una **lognormal** que reproduzca la mediana y la media de nuestra muestra —22 y 30— resultan los parámetros μ = 3,091 y σ = 0,788, y la distribución completa queda así:",
+            "**Esto no es un artefacto de tener diez datos.** Las distribuciones salariales reales tienen la misma forma, y el motivo es el señalado en el desarrollo: los salarios crecen de forma multiplicativa. Si se ajusta una **lognormal** que reproduzca la mediana y la media de nuestra muestra —22 y 30— resultan los parámetros $\\mu$ = 3,091 y $\\sigma$ = 0,788, y la distribución completa queda así:",
           ],
         },
         {
@@ -159,7 +159,7 @@ export default {
           tipo: "acordeon",
           items: [
             { t: "Usar la media en distribuciones con cola larga", d: "En renta, salarios, patrimonio o facturación la media está arrastrada por la cola derecha y no describe al individuo típico. En el ejemplo, ocho de cada diez cobran menos que la media, y en la lognormal ajustada el porcentaje es del 65 %. Si la pregunta es cómo vive alguien normal, la mediana es la respuesta." },
-            { t: "Eliminar los atípicos porque el criterio los señala", d: "La regla de Q₃ + 1,5·IQR es una convención para detectar, no una licencia para borrar. Un dato extremo puede ser un error de registro, y entonces se corrige, o puede ser una observación real e importante, y entonces excluirla es peor que el problema que causa. Lo que hay que hacer es averiguar de dónde sale." },
+            { t: "Eliminar los atípicos porque el criterio los señala", d: "La regla de $Q_3 + 1{,}5\\,\\mathrm{IQR}$ es una convención para detectar, no una licencia para borrar. Un dato extremo puede ser un error de registro, y entonces se corrige, o puede ser una observación real e importante, y entonces excluirla es peor que el problema que causa. Lo que hay que hacer es averiguar de dónde sale." },
             { t: "Comparar desviaciones típicas de variables con escalas distintas", d: "Una desviación de 5.000 € significa cosas opuestas si la media es 20.000 o si es 500.000. Para comparar dispersiones hay que usar el coeficiente de variación, que es adimensional. Y ni siquiera él sirve si la media está próxima a cero o si la variable toma valores negativos." },
             { t: "Aplicar la regla del 68-95-99,7 a cualquier variable", d: "Esos porcentajes son propiedades de la distribución normal, no de la desviación típica. En una distribución asimétrica o de colas gruesas, el intervalo de más menos dos sigmas no contiene el 95 % de nada. Comprobar la forma antes de usar la regla es el paso que casi nadie da." },
             { t: "No tomar logaritmos cuando el fenómeno es multiplicativo", d: "Si una magnitud crece en porcentajes, su escala natural es logarítmica. Trabajar en niveles produce heterocedasticidad, sensibilidad extrema a la cola y coeficientes difíciles de interpretar. En logaritmos, además, los coeficientes de una regresión se leen directamente como elasticidades." },
@@ -206,6 +206,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "En una distribución salarial ocho de cada diez trabajadores cobran menos que la media. ¿Qué indica eso?",
+              opciones: [
+                "Que la media está mal calculada",
+                "Que la distribución tiene cola derecha larga y la media no describe al individuo típico",
+                "Que hay atípicos que habría que eliminar",
+                "Que la muestra no es representativa",
+              ],
+              correcta: 1,
+              porque: [
+                "La media puede estar perfectamente calculada y aun así no representar a nadie. Es un problema de elección de estadístico, no de aritmética.",
+                "En renta, salarios, patrimonio o facturación la media va arrastrada por la cola. La mediana responde mucho mejor a «cuánto cobra la gente».",
+                "Los salarios altos son datos reales que forman parte del coste laboral. Borrarlos es peor que el problema que causan.",
+                "Una muestra perfectamente representativa de una distribución asimétrica da exactamente este resultado.",
+              ],
+            },
+            {
+              q: "Un dato supera $Q_3 + 1{,}5\\,\\mathrm{IQR}$. ¿Qué hay que hacer con él?",
+              opciones: [
+                "Eliminarlo: el criterio lo identifica como atípico",
+                "Averiguar de dónde sale: puede ser un error de registro o una observación real e importante",
+                "Sustituirlo por la mediana",
+                "Nada: la regla solo se aplica a distribuciones normales",
+              ],
+              correcta: 1,
+              porque: [
+                "La regla es una convención para **detectar**, no una licencia para borrar. Eliminar lo que molesta produce análisis que confirman lo que ya se creía.",
+                "Si es un error de registro se corrige; si es un salario real, excluirlo distorsiona el coste laboral que se quería medir. La respuesta depende del origen, no del criterio.",
+                "Imputar la mediana inventa un dato y reduce artificialmente la dispersión, que es justo lo que se quería describir.",
+                "La regla se usa en cualquier distribución precisamente porque se basa en cuartiles y no en la normalidad.",
+              ],
+            },
+            {
+              q: "Se quiere comparar la dispersión de dos variables con medias de 20.000 € y 500.000 €. ¿Qué se usa?",
+              opciones: [
+                "La desviación típica de cada una",
+                "El coeficiente de variación, que es adimensional",
+                "El rango intercuartílico",
+                "La varianza, que penaliza más las desviaciones grandes",
+              ],
+              correcta: 1,
+              porque: [
+                "Una desviación de 5.000 € significa cosas opuestas según la media: es un 25 % en un caso y un 1 % en el otro.",
+                "$\\mathrm{CV} = s/\\bar x$ elimina las unidades y permite la comparación. Es la respuesta a «disperso respecto a qué».",
+                "El IQR sigue midiéndose en euros, así que arrastra el mismo problema de escala.",
+                "La varianza empeora la comparación: está en euros al cuadrado y amplifica la diferencia de escala.",
+              ],
+            },
+            {
+              q: "Un análisis aplica la regla del 68-95-99,7 a una distribución de patrimonios. ¿Qué falla?",
+              opciones: [
+                "Nada: son propiedades de la desviación típica",
+                "Que esos porcentajes son propiedades de la normal, y en una distribución asimétrica no se cumplen",
+                "Que habría que usar tres desviaciones en vez de dos",
+                "Que la desviación típica no está definida para patrimonios",
+              ],
+              correcta: 1,
+              porque: [
+                "La desviación típica se define para cualquier distribución con varianza finita; los porcentajes concretos no.",
+                "Con cola larga o colas gruesas, el intervalo de dos desviaciones puede contener muy poco o casi todo. Aplicar la regla a ciegas convierte una propiedad de la normal en una creencia sobre los datos.",
+                "Cambiar el número de desviaciones no arregla nada: el problema es que la forma no es normal.",
+                "Está perfectamente definida; lo que no vale es la interpretación probabilística.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

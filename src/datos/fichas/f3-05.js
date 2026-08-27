@@ -34,16 +34,16 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Función de inversión", sub: "El paso que faltaba en la ficha 3.04.", cols: ["I = I₀ − b · i"] },
-            { nom: "Curva IS", sub: "Equilibrio del mercado de bienes.", cols: ["Y = k · (C₀ + I₀ + G − b·i)"] },
+            { nom: "Función de inversión", sub: "El paso que faltaba en la ficha 3.04.", cols: ["$I = I_0 - b\\,i$"] },
+            { nom: "Curva IS", sub: "Equilibrio del mercado de bienes.", cols: ["$Y = k\\,(C_0 + I_0 + G - b\\,i)$"] },
             { nom: "Pendiente de la IS", sub: "Más plana si la inversión reacciona mucho.", cols: ["Negativa; depende de k y de b"] },
-            { nom: "Demanda de dinero", sub: "Motivo transacción y motivo especulación.", cols: ["L = k₁·Y − k₂·i"] },
-            { nom: "Curva LM", sub: "Equilibrio del mercado de dinero.", cols: ["M/P = k₁·Y − k₂·i"] },
-            { nom: "Desplazamiento de la IS", sub: "Política fiscal y gasto autónomo.", cols: ["ΔY = k · ΔG , a tipo constante"] },
-            { nom: "Desplazamiento de la LM", sub: "Política monetaria o cambio de precios.", cols: ["Δ(M/P) desplaza a la derecha"] },
-            { nom: "Efecto desplazamiento", sub: "Lo que el multiplicador simple ignora.", cols: ["Crowding out = k·ΔG − ΔY efectivo"] },
-            { nom: "Trampa de liquidez", sub: "La monetaria pierde tracción; la fiscal la gana.", cols: ["LM horizontal ⟹ ΔY = k · ΔG"] },
-            { nom: "Combinación de políticas", sub: "Elige la composición del gasto, no solo su nivel.", cols: ["Fiscal + monetaria ⟹ ΔY sin Δi"] },
+            { nom: "Demanda de dinero", sub: "Motivo transacción y motivo especulación.", cols: ["$L = k_1 Y - k_2 i$"] },
+            { nom: "Curva LM", sub: "Equilibrio del mercado de dinero.", cols: ["$M/P = k_1 Y - k_2 i$"] },
+            { nom: "Desplazamiento de la IS", sub: "Política fiscal y gasto autónomo.", cols: ["$\\Delta Y = k\\,\\Delta G$, a tipo constante"] },
+            { nom: "Desplazamiento de la LM", sub: "Política monetaria o cambio de precios.", cols: ["$\\Delta(M/P)$ desplaza a la derecha"] },
+            { nom: "Efecto desplazamiento", sub: "Lo que el multiplicador simple ignora.", cols: ["Crowding out $= k\\,\\Delta G - \\Delta Y$ efectivo"] },
+            { nom: "Trampa de liquidez", sub: "La monetaria pierde tracción; la fiscal la gana.", cols: ["LM horizontal $\\Rightarrow \\Delta Y = k\\,\\Delta G$"] },
+            { nom: "Combinación de políticas", sub: "Elige la composición del gasto, no solo su nivel.", cols: ["Fiscal + monetaria $\\Rightarrow \\Delta Y$ sin $\\Delta i$"] },
           ],
         },
       ],
@@ -54,7 +54,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "Seguimos con la economía de la ficha anterior —**C = 100 + 0,8·Y_d**, impuesto del 25 %, **G = 300**— pero ahora la inversión responde al tipo: **I = 320 − 20·i**. De ahí sale la curva **IS: Y = 1.800 − 50·i**. La demanda de dinero es **M/P = 0,5·Y − 50·i**, y con una oferta monetaria real de **750** resulta la curva **LM: Y = 1.500 + 100·i**. El cruce está en **i = 2 % y Y = 1.700**.",
+            "Seguimos con la economía de la ficha anterior —$C = 100 + 0{,}8\\,Y_d$, impuesto del 25 %, $G = 300$— pero ahora la inversión responde al tipo: $I = 320 - 20i$. De ahí sale la curva **IS**: $Y = 1.800 - 50i$. La demanda de dinero es $M/P = 0{,}5Y - 50i$, y con una oferta monetaria real de **750** resulta la curva **LM**: $Y = 1.500 + 100i$. El cruce está en $i = 2\\ \\%$ y $Y = 1.700$.",
           ],
         },
         {
@@ -79,8 +79,8 @@ export default {
           cabecera: ["Escenario", "Tipo de interés", "Renta", "Efecto sobre la inversión"],
           filas: [
             ["Situación inicial", "2,0 %", "1.700", "I = 280"],
-            ["Expansión fiscal: ΔG = 60", "3,0 %", "1.800", "I = 260 (cae 20)"],
-            ["Expansión monetaria: Δ(M/P) = 75", "1,0 %", "1.750", "I = 300 (sube 20)"],
+            ["Expansión fiscal: $\\Delta G = 60$", "3,0 %", "1.800", "I = 260 (cae 20)"],
+            ["Expansión monetaria: $\\Delta(M/P) = 75$", "1,0 %", "1.750", "I = 300 (sube 20)"],
             { celdas: ["Multiplicador simple, sin mercado de dinero", "2,0 % fijo", "1.850", "I = 280 (sin cambio)"], clase: "total" },
           ],
           nota: "Las tres primeras filas elevan la renta y **hacen cosas opuestas con la inversión**: la fiscal la reduce en 20, la monetaria la aumenta en 20. Producir lo mismo con más inversión o con más gasto público no es indiferente, porque **la inversión de hoy es la capacidad productiva de mañana**. La última fila es la predicción del modelo de la ficha 3.04, que ignora el mercado de dinero: **1.850 frente a 1.800 reales**. Ese exceso de 50 es exactamente lo que el multiplicador simple sobrestima por no dejar reaccionar al tipo de interés.",
@@ -162,6 +162,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Una expansión fiscal desplaza la IS 150 y la renta de equilibrio sube 100. ¿Por qué difieren?",
+              opciones: [
+                "Por un error de cálculo del multiplicador",
+                "Por el efecto desplazamiento: la subida del tipo de interés recorta parte de la inversión privada",
+                "Porque parte del gasto se filtra en importaciones",
+                "Porque el multiplicador tarda en desplegarse por completo",
+              ],
+              correcta: 1,
+              porque: [
+                "Ambas cifras son correctas y miden cosas distintas: el multiplicador simple da el desplazamiento horizontal de la IS, no el nuevo equilibrio.",
+                "Más renta eleva la demanda de dinero y con ella el tipo, y ese tipo mayor desanima inversión. La diferencia de 50 es exactamente lo que se pierde por esa vía.",
+                "Las importaciones ya están dentro del multiplicador que produce el desplazamiento de 150. La brecha restante viene del tipo de interés.",
+                "El modelo es estático y compara equilibrios: el tiempo de despliegue no entra en el cálculo.",
+              ],
+            },
+            {
+              q: "Con el tipo de interés en su límite inferior, ¿qué ocurre con la política monetaria?",
+              opciones: [
+                "Funciona igual: más liquidez siempre eleva la renta",
+                "Pierde eficacia: la LM es casi horizontal y las inyecciones apenas mueven la renta",
+                "Se vuelve más eficaz, porque el crédito es barato",
+                "Deja de existir, porque el banco central no puede actuar",
+              ],
+              correcta: 1,
+              porque: [
+                "La eficacia de cada instrumento depende del régimen, y suponerla constante es lo que lleva a insistir con la herramienta equivocada.",
+                "Si el tipo no puede bajar más, añadir liquidez no lo mueve y por tanto no estimula la inversión. Es el escenario en que la política fiscal recupera todo su multiplicador.",
+                "El crédito barato ya está descontado: el problema es que no puede abaratarse más.",
+                "El banco central puede actuar con instrumentos no convencionales, que es precisamente lo que se desarrolló para ese régimen.",
+              ],
+            },
+            {
+              q: "El banco central emite dinero y los precios acaban subiendo en la misma proporción. ¿Se desplaza la LM?",
+              opciones: [
+                "Sí: la oferta monetaria ha aumentado",
+                "No: la LM está en términos reales y $M/P$ no ha cambiado",
+                "Sí, pero solo temporalmente",
+                "No, porque la emisión no afecta a la demanda de dinero",
+              ],
+              correcta: 1,
+              porque: [
+                "Lo que desplaza la curva no es $M$ sino $M/P$. Fijarse solo en el numerador es olvidar la mitad de la expresión.",
+                "Es la neutralidad del dinero vista desde este modelo: si precios y cantidad se mueven a la par, los saldos reales quedan igual y el equilibrio no se mueve.",
+                "El desplazamiento temporal existiría si los precios tardaran en ajustarse, pero el enunciado dice que suben en la misma proporción.",
+                "La emisión sí afecta a la demanda de dinero por la vía del nivel de precios: es justo el mecanismo que anula el efecto.",
+              ],
+            },
+            {
+              q: "¿Es el efecto desplazamiento un argumento contra el gasto público?",
+              opciones: [
+                "Sí: demuestra que el gasto público expulsa a la inversión privada",
+                "No: es un resultado del modelo que mide cuánto se reduce el efecto, y varía entre cero y el total según la pendiente de la LM",
+                "Sí, salvo que la economía esté en recesión",
+                "No, porque en la práctica nunca se observa",
+              ],
+              correcta: 1,
+              porque: [
+                "Que reduzca el efecto expansivo no lo anula ni lo convierte en indeseable: eso depende de qué se compara y con qué objetivo.",
+                "Con LM horizontal el desplazamiento es nulo y el multiplicador actúa entero; con LM vertical se lo lleva todo. Es una magnitud a estimar, no un veredicto.",
+                "La recesión suele situar la economía en el tramo donde el desplazamiento es pequeño, pero eso es un caso del mismo resultado, no una excepción a él.",
+                "Sí se observa, y su tamaño es una cuestión empírica que depende del régimen monetario vigente.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

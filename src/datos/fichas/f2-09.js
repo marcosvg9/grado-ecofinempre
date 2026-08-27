@@ -17,7 +17,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "La demanda de trabajo es una **demanda derivada**: nadie contrata por contratar, sino porque el trabajo produce algo que se vende. De ahí sale su expresión exacta: contratar una hora más aporta a la empresa el producto que esa hora genera multiplicado por el precio al que se vende, es decir, el **valor del producto marginal**, y conviene contratar mientras eso supere al salario. En competencia perfecta en ambos mercados, la condición de óptimo es **w = P · PMg_L**. Como la productividad marginal es decreciente, la curva de demanda de trabajo tiene pendiente negativa, y como el precio del producto entra multiplicando, **la demanda de trabajo se desploma cuando cae la demanda del bien**, aunque la productividad no haya cambiado un ápice.",
+            "La demanda de trabajo es una **demanda derivada**: nadie contrata por contratar, sino porque el trabajo produce algo que se vende. De ahí sale su expresión exacta: contratar una hora más aporta a la empresa el producto que esa hora genera multiplicado por el precio al que se vende, es decir, el **valor del producto marginal**, y conviene contratar mientras eso supere al salario. En competencia perfecta en ambos mercados, la condición de óptimo es $w = P \\cdot \\mathrm{PMg}_L$. Como la productividad marginal es decreciente, la curva de demanda de trabajo tiene pendiente negativa, y como el precio del producto entra multiplicando, **la demanda de trabajo se desploma cuando cae la demanda del bien**, aunque la productividad no haya cambiado un ápice.",
             "La **oferta de trabajo** es un problema de elección entre consumo y ocio, y tiene una peculiaridad que conviene ver. Una subida del salario encarece el ocio y empuja a trabajar más —efecto sustitución— pero también hace más rica a la persona, y con más renta se desea más ocio —efecto renta—. Son los dos efectos de la ficha 2.03 aplicados aquí, y como **apuntan en direcciones opuestas**, la oferta individual de trabajo puede volverse hacia atrás a salarios altos. A escala agregada, además, buena parte del ajuste no ocurre en las horas de cada uno sino en **cuánta gente participa**, que es un margen distinto y mucho más sensible en algunos colectivos.",
             "Con esos dos lados, el modelo competitivo predice un salario igual al valor del producto marginal, y de ahí se derivan afirmaciones muy conocidas: que cada factor recibe lo que aporta, que un salario mínimo por encima del equilibrio destruye empleo, que las diferencias salariales reflejan diferencias de productividad. **Todas esas afirmaciones son correctas dentro del modelo**, y el resto de la ficha consiste en examinar qué pasa cuando sus supuestos no se cumplen, que es lo habitual.",
             "El primer supuesto que cae es el de que el empleador es precio-aceptante. En un **monopsonio** —un único comprador de trabajo, o más realistamente un empleador con poder de fijación de salarios por aislamiento geográfico, especialización o costes de movilidad— la empresa afronta una oferta de trabajo creciente: para contratar a uno más tiene que subir el salario, **y subírselo también a todos los que ya tenía**. El coste marginal de contratar excede por tanto al salario, exactamente igual que el ingreso marginal del monopolista quedaba por debajo del precio. El resultado es que **se emplea menos y se paga menos que en competencia**, y el salario queda por debajo del valor del producto marginal. De ahí sale la predicción más contraintuitiva de la ficha: en un mercado monopsonista, **un salario mínimo bien calibrado puede aumentar simultáneamente el salario y el empleo**. No es una anomalía empírica: es lo que el modelo predice.",
@@ -34,16 +34,16 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Valor del producto marginal", sub: "Lo que aporta a la empresa una unidad más de trabajo.", cols: ["VPMg_L = P · PMg_L"] },
-            { nom: "Óptimo en competencia", sub: "Vale para cualquier factor, no solo el trabajo.", cols: ["w = VPMg_L ; r = VPMg_K"] },
-            { nom: "Elasticidad de la demanda de trabajo", sub: "Mayor cuanto más sustituible sea el factor.", cols: ["Depende de σ y de la elasticidad de la demanda del bien"] },
-            { nom: "Coste marginal del trabajo en monopsonio", sub: "Subir el salario afecta a toda la plantilla.", cols: ["CMg_L = w + L · (dw/dL) > w"] },
-            { nom: "Óptimo del monopsonista", sub: "Emplea menos y paga menos que en competencia.", cols: ["VPMg_L = CMg_L , con w < VPMg_L"] },
-            { nom: "Tasa de explotación de Pigou", sub: "Mide la brecha en términos relativos.", cols: ["E = (VPMg_L − w) / VPMg_L"] },
-            { nom: "Inversión en capital humano", sub: "Se evalúa como cualquier proyecto de inversión.", cols: ["VAN = Σ prima_t /(1+r)^t − coste directo − renta perdida"] },
-            { nom: "Ecuación de salarios de Mincer", sub: "La especificación empírica estándar.", cols: ["ln w = α + β·estudios + γ·exp + δ·exp² + u"] },
+            { nom: "Valor del producto marginal", sub: "Lo que aporta a la empresa una unidad más de trabajo.", cols: ["$\\mathrm{VPMg}_L = P \\cdot \\mathrm{PMg}_L$"] },
+            { nom: "Óptimo en competencia", sub: "Vale para cualquier factor, no solo el trabajo.", cols: ["$w = \\mathrm{VPMg}_L$ · $r = \\mathrm{VPMg}_K$"] },
+            { nom: "Elasticidad de la demanda de trabajo", sub: "Mayor cuanto más sustituible sea el factor.", cols: ["Depende de $\\sigma$ y de la elasticidad de la demanda del bien"] },
+            { nom: "Coste marginal del trabajo en monopsonio", sub: "Subir el salario afecta a toda la plantilla.", cols: ["$\\mathrm{CMg}_L = w + L\\,\\dfrac{dw}{dL} > w$"] },
+            { nom: "Óptimo del monopsonista", sub: "Emplea menos y paga menos que en competencia.", cols: ["$\\mathrm{VPMg}_L = \\mathrm{CMg}_L$, con $w < \\mathrm{VPMg}_L$"] },
+            { nom: "Tasa de explotación de Pigou", sub: "Mide la brecha en términos relativos.", cols: ["$E = \\dfrac{\\mathrm{VPMg}_L - w}{\\mathrm{VPMg}_L}$"] },
+            { nom: "Inversión en capital humano", sub: "Se evalúa como cualquier proyecto de inversión.", cols: ["$\\mathrm{VAN} = \\sum_t \\dfrac{\\text{prima}_t}{(1+r)^t} - \\text{coste directo} - \\text{renta perdida}$"] },
+            { nom: "Ecuación de salarios de Mincer", sub: "La especificación empírica estándar.", cols: ["$\\ln w = \\alpha + \\beta\\,\\text{estudios} + \\gamma\\,\\text{exp} + \\delta\\,\\text{exp}^2 + u$"] },
             { nom: "Excedente del emparejamiento", sub: "Las fricciones crean una renta que hay que repartir.", cols: ["S = VPMg − valor de la mejor alternativa"] },
-            { nom: "Reparto negociado", sub: "β es el poder de negociación del trabajador.", cols: ["w = alternativa + β · S"] },
+            { nom: "Reparto negociado", sub: "$\\beta$ es el poder de negociación del trabajador.", cols: ["w = alternativa + $\\beta$ · S"] },
           ],
         },
       ],
@@ -198,6 +198,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Destruye empleo un salario mínimo?",
+              opciones: [
+                "Sí siempre: encarece el factor y reduce su demanda",
+                "Depende de la estructura del mercado: en monopsonio y por debajo de cierto umbral aumenta salario y empleo a la vez",
+                "No: la evidencia empírica lo ha descartado",
+                "Solo si supera el salario medio del sector",
+              ],
+              correcta: 1,
+              porque: [
+                "Es correcto en un mercado competitivo, y por eso la respuesta parece obvia. Pero el signo del efecto es una cuestión empírica que depende de qué supuesto se cumple.",
+                "Un monopsonista contrata por debajo del valor del producto marginal para no tener que subir el salario a toda la plantilla. Un mínimo bien situado rompe esa restricción y le hace contratar más.",
+                "La evidencia no ha descartado nada de forma general: encuentra efectos que varían con el nivel del mínimo y con el mercado concreto, que es justo lo que predice la teoría.",
+                "El salario medio no es la referencia relevante. Lo que importa es dónde queda el mínimo respecto al valor del producto marginal y al salario que el monopsonista pagaría.",
+              ],
+            },
+            {
+              q: "Estudiar un año cuesta 4.000 € de matrícula y supone dejar de ingresar 27.000 € de salario. ¿Qué error se comete al evaluar la inversión solo con la matrícula?",
+              opciones: [
+                "Ninguno: la matrícula es el desembolso real",
+                "Se ignora el coste de oportunidad, que aquí es casi siete veces mayor, e infla enormemente la rentabilidad aparente",
+                "Se ignora la inflación del período",
+                "Se ignora que el título tiene valor de reventa",
+              ],
+              correcta: 1,
+              porque: [
+                "El desembolso es solo una parte del coste. La renta no percibida es un coste tan real como la factura, aunque no aparezca en ningún recibo.",
+                "El coste total del año es 31.000 y no 4.000. Ignorar los 27.000 hace parecer rentabilísima cualquier formación, y es el error más frecuente de los cálculos divulgativos sobre estudios.",
+                "La inflación se corrige deflactando y afecta a todos los términos por igual: no es lo que falta aquí.",
+                "Un título no se revende. Lo que falta es la renta que se deja de ganar mientras se estudia.",
+              ],
+            },
+            {
+              q: "Los titulados universitarios ganan más. ¿Prueba eso que la universidad aumenta la productividad?",
+              opciones: [
+                "Sí: es una correlación robusta y persistente",
+                "No: la teoría de la señalización predice la misma correlación sin que la formación añada nada",
+                "Sí, siempre que se controle por el sector de actividad",
+                "No, porque la correlación desaparece al controlar por la renta familiar",
+              ],
+              correcta: 1,
+              porque: [
+                "La robustez de la correlación no distingue entre las dos explicaciones, porque ambas la predicen igual de bien.",
+                "Basta con que el título sea más barato de obtener para quien ya es más productivo: entonces sirve para separar candidatos aunque no enseñe nada. Distinguir ambas hipótesis exige diseños específicos, no más datos observacionales.",
+                "Controlar por sector no separa señalización de productividad: el mecanismo de la señal opera dentro de cada sector.",
+                "La renta familiar es otra variable de confusión que conviene controlar, pero la correlación no desaparece y el problema de identificación sigue en pie.",
+              ],
+            },
+            {
+              q: "¿Hace falta un único empleador para que haya monopsonio?",
+              opciones: [
+                "Sí, esa es la definición",
+                "No: basta con que el trabajador afronte costes de cambiar, como distancia, especialización o conciliación",
+                "No, pero sí que haya menos de tres empleadores en la zona",
+                "Sí, salvo que exista un convenio colectivo que fije el salario",
+              ],
+              correcta: 1,
+              porque: [
+                "La definición literal es el caso extremo. Lo que produce poder de monopsonio es que la oferta de trabajo que afronta la empresa tenga pendiente positiva, y eso ocurre mucho antes.",
+                "Cualquiera de esas fricciones hace que subir el salario sea necesario para atraer a un trabajador más, que es exactamente lo que genera la cuña entre salario y valor del producto marginal.",
+                "No hay un umbral de empresas. Con muchas empresas pero trabajadores poco móviles puede haber poder de monopsonio considerable.",
+                "Un convenio fija el salario y limita el margen del empleador, que es más bien lo contrario del monopsonio.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

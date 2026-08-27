@@ -35,15 +35,15 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Descomposición aditiva", sub: "Si la amplitud estacional no depende del nivel.", cols: ["Yₜ = Tₜ + Sₜ + Iₜ"] },
-            { nom: "Descomposición multiplicativa", sub: "Lo habitual en economía; log la convierte en aditiva.", cols: ["Yₜ = Tₜ · Sₜ · Iₜ"] },
-            { nom: "Media móvil centrada", sub: "Cubre un año exacto: cancela la estacionalidad.", cols: ["MA₄ = (½yₜ₋₂ + yₜ₋₁ + yₜ + yₜ₊₁ + ½yₜ₊₂) ÷ 4"] },
-            { nom: "Razón a la media móvil", sub: "Aísla estacional e irregular.", cols: ["rₜ = yₜ ÷ MAₜ"] },
-            { nom: "Normalización de factores", sub: "Para no alterar el nivel de la serie.", cols: ["ΣSⱼ = 4 (trimestral) · 12 (mensual)"] },
-            { nom: "Serie desestacionalizada", sub: "Tendencia-ciclo más irregular.", cols: ["yₜᵈᵉˢ = yₜ ÷ Sⱼ"] },
+            { nom: "Descomposición aditiva", sub: "Si la amplitud estacional no depende del nivel.", cols: ["$Y_t = T_t + S_t + I_t$"] },
+            { nom: "Descomposición multiplicativa", sub: "Lo habitual en economía; log la convierte en aditiva.", cols: ["$Y_t = T_t \\cdot S_t \\cdot I_t$"] },
+            { nom: "Media móvil centrada", sub: "Cubre un año exacto: cancela la estacionalidad.", cols: ["$\\mathrm{MA}_4 = \\dfrac{\\tfrac12 y_{t-2} + y_{t-1} + y_t + y_{t+1} + \\tfrac12 y_{t+2}}{4}$"] },
+            { nom: "Razón a la media móvil", sub: "Aísla estacional e irregular.", cols: ["$r_t = \\dfrac{y_t}{\\mathrm{MA}_t}$"] },
+            { nom: "Normalización de factores", sub: "Para no alterar el nivel de la serie.", cols: ["$\\sum_j S_j = 4$ (trimestral) · 12 (mensual)"] },
+            { nom: "Serie desestacionalizada", sub: "Tendencia-ciclo más irregular.", cols: ["$y_t^{\\mathrm{des}} = \\dfrac{y_t}{S_j}$"] },
             { nom: "Efectos de calendario", sub: "Corrección distinta de la estacional.", cols: ["días laborables · bisiesto · Semana Santa"] },
             { nom: "Problema del extremo", sub: "El dato más reciente es el menos fiable.", cols: ["se usan predicciones ARIMA a la derecha"] },
-            { nom: "No aditividad", sub: "Por eso el agregado se ajusta por separado.", cols: ["Σ componentes ajustados ≠ agregado ajustado"] },
+            { nom: "No aditividad", sub: "Por eso el agregado se ajusta por separado.", cols: ["$\\sum$ componentes ajustados $\\neq$ agregado ajustado"] },
             { nom: "Efecto Slutsky-Yule", sub: "El filtro puede crear el ciclo que se observa.", cols: ["una media móvil induce ciclos espurios"] },
           ],
         },
@@ -177,6 +177,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "El dato bruto del PIB pasa de caer un 4 % a subir un 27 % entre trimestres. ¿Qué informa eso?",
+              opciones: [
+                "Una recuperación muy intensa",
+                "Sobre todo el calendario: el patrón estacional puede superar con creces la señal económica",
+                "Un cambio de metodología estadística",
+                "Un error de medición del instituto",
+              ],
+              correcta: 1,
+              porque: [
+                "En el ejemplo la economía crece un 2 % constante cada trimestre y el dato bruto oscila así. La supuesta recuperación no existe.",
+                "Con turismo estacional muy marcado, comentar la variación de un dato bruto entre periodos consecutivos es comentar las vacaciones. Por eso se publican series ajustadas.",
+                "Los cambios metodológicos producen saltos de nivel, no oscilaciones que se repiten cada año.",
+                "No hay error: el dato bruto es correcto y lo que falla es su interpretación.",
+              ],
+            },
+            {
+              q: "¿Es la serie desestacionalizada el dato «verdadero»?",
+              opciones: [
+                "Sí: el bruto está contaminado y el ajustado está limpio",
+                "No: es el resultado de un modelo con supuestos sobre descomposición, atípicos, filtros y calendario",
+                "Sí, siempre que la haga un instituto oficial",
+                "No, porque siempre pierde información respecto al bruto",
+              ],
+              correcta: 1,
+              porque: [
+                "El bruto es el dato observado; el ajustado es una estimación. Llamarlo «limpio» oculta que se ha tomado media docena de decisiones para producirlo.",
+                "Dos programas —o el mismo con otras opciones— dan series distintas a partir del mismo bruto. Por eso los institutos documentan sus especificaciones.",
+                "La autoría no convierte una estimación en observación: los institutos son los primeros en publicar sus supuestos.",
+                "Pierde el componente estacional a propósito, que no es información sobre la coyuntura. El problema es otro: que la separación depende del modelo.",
+              ],
+            },
+            {
+              q: "¿Por qué el último dato desestacionalizado de una serie es el menos fiable?",
+              opciones: [
+                "Porque los institutos lo publican con menos verificación",
+                "Porque en el extremo no hay observaciones a la derecha y el filtro las sustituye por predicciones",
+                "Porque la estacionalidad del último periodo aún no se conoce",
+                "Porque el ajuste estacional necesita al menos cinco años de datos",
+              ],
+              correcta: 1,
+              porque: [
+                "La verificación es la misma; lo que cambia es la información disponible para el filtro en ese punto.",
+                "Los filtros son simétricos y necesitan datos a ambos lados. En el extremo se completan con previsiones del modelo, y por eso el dato más comentado es justo el que más se revisa después.",
+                "Los factores estacionales se estiman para todo el año, incluido el último trimestre. El problema es la asimetría del filtro, no la falta de factores.",
+                "La longitud de la serie afecta a la calidad general de la estimación, no específicamente al último punto.",
+              ],
+            },
+            {
+              q: "¿Se pueden sumar los componentes desestacionalizados para obtener el agregado ajustado?",
+              opciones: [
+                "Sí: el ajuste es una transformación lineal",
+                "No: cada componente tiene su propio patrón estacional y la suma de los ajustados no coincide con el agregado ajustado",
+                "Sí, si todos se ajustan con el mismo programa",
+                "No, salvo que la descomposición sea aditiva",
+              ],
+              correcta: 1,
+              porque: [
+                "El ajuste no es lineal: los factores estacionales se estiman por separado para cada serie y no se conservan al sumar.",
+                "Por eso los institutos publican el agregado ajustado directamente, y advierten de la discrepancia con la suma de sus partes.",
+                "Usar el mismo programa no basta: cada serie recibe su propio modelo, sus propios atípicos y sus propios filtros.",
+                "Ni siquiera con descomposición aditiva coinciden, porque los factores se estiman independientemente en cada serie.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

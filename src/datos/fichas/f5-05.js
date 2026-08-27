@@ -56,7 +56,7 @@ export default {
           modo: "dos",
           filas: [
             { nom: "Consumo del ejercicio", sub: "El coste de ventas, obtenido por diferencia.", cols: ["Consumo = Ei + Compras − Ef"] },
-            { nom: "Variación de existencias", sub: "Cuenta 610. Positiva es gasto, negativa reduce el gasto.", cols: ["Δ = Ei − Ef"] },
+            { nom: "Variación de existencias", sub: "Cuenta 610. Positiva es gasto, negativa reduce el gasto.", cols: ["$\\Delta$ = Ei − Ef"] },
             { nom: "Precio medio ponderado", sub: "Puede calcularse al cierre o recalcularse tras cada entrada.", cols: ["PMP = (valor Ei + valor compras) / (uds Ei + uds compradas)"] },
             { nom: "Valor neto realizable", sub: "El criterio de comparación al cierre.", cols: ["VNR = precio de venta estimado − costes de terminación y venta"] },
             { nom: "Deterioro", sub: "Solo si el VNR queda por debajo del coste. Es reversible.", cols: ["Deterioro = máx(0; coste − VNR)"] },

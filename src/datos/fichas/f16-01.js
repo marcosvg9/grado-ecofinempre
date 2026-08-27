@@ -40,8 +40,8 @@ export default {
             { nom: "Estructura agrupada", sub: "Criterios cruzados.", cols: ["Región × producto: retícula, no árbol"] },
             { nom: "Series hoja", sub: "El nivel más desagregado.", cols: ["Todo lo demás se obtiene sumándolas"] },
             { nom: "Previsiones base", sub: "El punto de partida.", cols: ["Cada serie prevista por separado: no cuadran entre sí"] },
-            { nom: "Incoherencia", sub: "El problema a resolver.", cols: ["La suma de las previsiones ≠ previsión de la suma"] },
-            { nom: "Ruido y agregación", sub: "Por qué el total se prevé mejor.", cols: ["El coeficiente de variación cae con 1 / √k"] },
+            { nom: "Incoherencia", sub: "El problema a resolver.", cols: ["La suma de las previsiones $\\neq$ previsión de la suma"] },
+            { nom: "Ruido y agregación", sub: "Por qué el total se prevé mejor.", cols: ["El coeficiente de variación cae con $1/\\sqrt k$"] },
             { nom: "Detalle y agregación", sub: "Por qué las hojas también importan.", cols: ["Un cambio de composición deja el total quieto"] },
             { nom: "Estructura declarada", sub: "Puede no ser la real.", cols: ["Choques comunes correlacionan ramas nominalmente separadas"] },
           ],
@@ -55,7 +55,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "Supóngase que las series hoja tienen todas la misma media y la misma variabilidad, y que sus movimientos idiosincrásicos son independientes. Al agregar **k** de ellas, la media se multiplica por k pero la desviación típica solo por **√k**, porque las desviaciones se cancelan parcialmente entre sí. El resultado es que el **coeficiente de variación** —la variabilidad relativa al nivel— cae con 1/√k.",
+            "Supóngase que las series hoja tienen todas la misma media y la misma variabilidad, y que sus movimientos idiosincrásicos son independientes. Al agregar **k** de ellas, la media se multiplica por $k$ pero la desviación típica solo por $\\sqrt k$, porque las desviaciones se cancelan parcialmente entre sí. El resultado es que el **coeficiente de variación** —la variabilidad relativa al nivel— cae con $1/\\sqrt k$.",
           ],
         },
         {
@@ -83,9 +83,9 @@ export default {
           tipo: "tabla",
           cabecera: ["Nivel", "Hojas que agrega", "Media", "Desviación típica", "Ruido relativo"],
           filas: [
-            ["Hoja", "1", "m", "σ", "100 %"],
-            ["Rama", "2", "2m", "1,414 σ", "70,7 %"],
-            { celdas: ["Total", "4", "4m", "2,000 σ", "50,0 %"], clase: "total" },
+            ["Hoja", "1", "m", "$\\sigma$", "100 %"],
+            ["Rama", "2", "2m", "1,414 $\\sigma$", "70,7 %"],
+            { celdas: ["Total", "4", "4m", "2,000 $\\sigma$", "50,0 %"], clase: "total" },
           ],
           nota: "La aritmética es la de siempre: la varianza de una suma de variables independientes es la suma de las varianzas, así que la desviación típica va con la raíz. Es el mismo mecanismo que sostiene la diversificación de carteras en la ficha 8.05 y la reducción de incertidumbre del nowcasting en la ficha 15.12. **Agregar es diversificar**, y por eso los agregados se comportan mejor.",
         },
@@ -168,7 +168,7 @@ export default {
             },
             {
               q: "Al agregar cuatro series hoja independientes, ¿cuánto cae el ruido relativo?",
-              a: "A la mitad. La media se multiplica por cuatro pero la desviación típica solo por √4 = 2, así que el coeficiente de variación pasa a ser la mitad. En general cae con 1/√k. Es el mismo mecanismo que la diversificación de carteras: agregar es diversificar, y por eso los agregados se comportan mejor que sus partes.",
+              a: "A la mitad. La media se multiplica por cuatro pero la desviación típica solo por $\\sqrt 4 = 2$, así que el coeficiente de variación pasa a ser la mitad. En general cae con $1/\\sqrt k$. Es el mismo mecanismo que la diversificación de carteras: agregar es diversificar, y por eso los agregados se comportan mejor que sus partes.",
             },
             {
               q: "Si la previsión del agregado es la más fiable, ¿por qué no usar solo esa?",

@@ -35,7 +35,7 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Enfoque de la producción", sub: "Suma de valores añadidos, sin doble cómputo.", cols: ["PIB = Σ VABᵢ + impuestos netos sobre productos"] },
+            { nom: "Enfoque de la producción", sub: "Suma de valores añadidos, sin doble cómputo.", cols: ["$\\mathrm{PIB} = \\sum_i \\mathrm{VAB}_i + \\text{impuestos netos sobre productos}$"] },
             { nom: "Enfoque del gasto", sub: "Se restan las importaciones porque ya están dentro.", cols: ["PIB = C + G + FBC + X − M"] },
             { nom: "Enfoque de las rentas", sub: "Muestra el reparto de lo producido.", cols: ["PIB = RA + EBE + renta mixta + impuestos netos"] },
             { nom: "Valor añadido", sub: "El concepto que evita contar dos veces.", cols: ["VAB = Producción − Consumos intermedios"] },

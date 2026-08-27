@@ -37,11 +37,11 @@ export default {
             { nom: "Enunciado positivo", sub: "Contrastable: puede ser falso.", cols: ["«Un tope de precios reduce la cantidad intercambiada»"] },
             { nom: "Enunciado normativo", sub: "Exige un criterio previo de valor.", cols: ["«No debe fijarse un tope de precios»"] },
             { nom: "Ley de Hume", sub: "El salto es legítimo si se declara.", cols: ["Del ser no se sigue el deber sin premisa valorativa"] },
-            { nom: "Función de bienestar social", sub: "Hace explícitas las ponderaciones.", cols: ["W = Σ w_i · U_i"] },
-            { nom: "Utilitarista", sub: "Todos los euros pesan igual: es un juicio, no un dato.", cols: ["w_i = 1 para todos"] },
-            { nom: "Rawlsiana", sub: "Solo cuenta la situación del peor situado.", cols: ["W = mín(U_i)"] },
-            { nom: "Coste marginal de los fondos públicos", sub: "Cuánto cuesta socialmente recaudar un euro.", cols: ["CMFP = (Recaudación + PIM) / Recaudación"] },
-            { nom: "Cubo agujereado de Okun", sub: "Parte de lo transferido se pierde por el camino.", cols: ["Fuga = 1 − (recibido / detraído)"] },
+            { nom: "Función de bienestar social", sub: "Hace explícitas las ponderaciones.", cols: ["$W = \\sum_i w_i U_i$"] },
+            { nom: "Utilitarista", sub: "Todos los euros pesan igual: es un juicio, no un dato.", cols: ["$w_i = 1$ para todos"] },
+            { nom: "Rawlsiana", sub: "Solo cuenta la situación del peor situado.", cols: ["$W = \\min(U_i)$"] },
+            { nom: "Coste marginal de los fondos públicos", sub: "Cuánto cuesta socialmente recaudar un euro.", cols: ["$\\mathrm{CMFP} = \\dfrac{\\text{Recaudación} + \\mathrm{PIM}}{\\text{Recaudación}}$"] },
+            { nom: "Cubo agujereado de Okun", sub: "Parte de lo transferido se pierde por el camino.", cols: ["Fuga $= 1 - \\dfrac{\\text{recibido}}{\\text{detraído}}$"] },
             { nom: "Peso umbral", sub: "Convierte el juicio en un número discutible.", cols: ["w* = coste social / cantidad entregada"] },
           ],
         },
@@ -164,6 +164,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un informe de coste-beneficio usa una tasa de descuento del 4 %. ¿Qué tipo de decisión es esa?",
+              opciones: [
+                "Técnica: se toma del tipo de interés observado en los mercados",
+                "En parte valorativa, porque fija cuánto pesa el bienestar de las generaciones futuras",
+                "Irrelevante, porque afecta por igual a costes y beneficios",
+                "Puramente convencional, ya que todos los organismos usan la misma",
+              ],
+              correcta: 1,
+              porque: [
+                "Los mercados dan un dato de partida, pero elegir cuál y cómo trasladarlo a un horizonte de cincuenta años ya no es un cálculo: es una postura sobre el futuro con apariencia metodológica.",
+                "Cuanto mayor sea la tasa, menos valen hoy los efectos lejanos. En un proyecto climático esa cifra decide casi el resultado, y es un juicio de valor viajando dentro de un parámetro.",
+                "No afecta por igual: los costes suelen ser inmediatos y los beneficios lejanos, o al revés. Descontar cambia el equilibrio entre ambos justo porque no ocurren a la vez.",
+                "No hay una tasa única y los organismos difieren, precisamente porque no es una constante física sino una elección que cada uno justifica.",
+              ],
+            },
+            {
+              q: "«Un tope de precios reduce la cantidad intercambiada» y «no debe fijarse un tope». ¿Qué separa ambas afirmaciones?",
+              opciones: [
+                "Nada: la segunda se deduce de la primera",
+                "La segunda añade una premisa sobre lo deseable que la primera no contiene",
+                "Que la primera es verificable y la segunda es una opinión sin fundamento",
+                "Que la segunda exige conocer también el efecto sobre la recaudación",
+              ],
+              correcta: 1,
+              porque: [
+                "Ningún conjunto de hechos implica por sí solo una recomendación. Hace falta al menos una premisa sobre qué es preferible, y el salto se da sin decirlo.",
+                "Reducir la cantidad es un hecho; que eso baste para descartar la medida requiere decidir cuánto pesa esa reducción frente a lo que el tope pretende conseguir. Esa premisa hay que ponerla sobre la mesa.",
+                "La economía normativa tiene teoremas y demostraciones: explicita criterios de valor y deriva sus consecuencias con precisión, que es lo contrario de opinar.",
+                "Más datos positivos no cierran el hueco: por muchos efectos que se midan, seguirá haciendo falta un criterio para ordenarlos.",
+              ],
+            },
+            {
+              q: "Dos economistas discrepan sobre una política. ¿Cómo saber si el desacuerdo puede resolverse con evidencia?",
+              opciones: [
+                "No puede: todo desacuerdo entre economistas es en el fondo ideológico",
+                "Viendo de cuál de las cuatro fuentes viene: mecanismo y parámetro sí se resuelven; criterio de valor y ámbito, no",
+                "Depende de si ambos usan el mismo modelo teórico",
+                "Se resuelve siempre con datos suficientes y de calidad",
+              ],
+              correcta: 1,
+              porque: [
+                "Es la atribución fácil y casi siempre falsa. Las dos fuentes más frecuentes —qué mecanismo domina y cuánto vale un parámetro— son empíricas y se zanjan con evidencia.",
+                "Distinguir la fuente es lo primero que conviene hacer, porque determina si tiene sentido buscar datos o si lo que hace falta es explicitar el criterio y discutirlo como tal.",
+                "Usar el mismo modelo no garantiza acuerdo: pueden diferir en los parámetros. Y usar modelos distintos no lo impide: pueden coincidir en la predicción relevante.",
+                "Los datos no deciden cuánto pesa la desigualdad ni cuánto vale un año de vida. Esas preguntas no tienen respuesta empírica por muchos datos que haya.",
+              ],
+            },
+            {
+              q: "¿Qué puede y qué no puede hacer un economista en un debate normativo?",
+              opciones: [
+                "Puede y debe recomendar la política óptima, que es su función técnica",
+                "Puede cuantificar efectos, intercambios, ganadores y perdedores; no establecer cuánto pesa la desigualdad",
+                "No debe intervenir, porque su análisis es solo positivo",
+                "Puede recomendar siempre que use el criterio de eficiencia, que es neutral",
+              ],
+              correcta: 1,
+              porque: [
+                "Pedirle que decida lo que no le corresponde produce recomendaciones con premisas ocultas, que es lo peor de los dos mundos: ni transparentes ni neutrales.",
+                "Y también señalar incoherencias, que es una aportación fuerte: detectar que un plan es aritméticamente imposible no exige ningún juicio de valor.",
+                "Puede intervenir y aportar mucho. Retirarse deja el terreno a quien no cuantifica nada.",
+                "Elegir la eficiencia como vara ya es un juicio: no ordena repartos y admite resultados extremadamente desiguales. Es útil por ser mínimo, pero no es la ausencia de criterio.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

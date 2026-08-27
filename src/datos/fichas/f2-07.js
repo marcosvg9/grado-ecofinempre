@@ -34,16 +34,16 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Ingreso marginal", sub: "El segundo término es la pérdida sobre las unidades previas.", cols: ["IMg = P + q · (dP/dq) < P"] },
-            { nom: "Ingreso marginal con demanda lineal", sub: "El doble de pendiente, misma ordenada en el origen.", cols: ["Si P = a − bq, entonces IMg = a − 2bq"] },
-            { nom: "Condición de óptimo", sub: "La misma que en competencia; lo que cambia es el IMg.", cols: ["IMg(q) = CMg(q)"] },
-            { nom: "Índice de Lerner", sub: "Mide el poder de mercado en el óptimo.", cols: ["L = (P − CMg) / P = 1 / |ε|"] },
-            { nom: "Regla del precio", sub: "El margen sobre coste sale de la elasticidad.", cols: ["P = CMg · |ε| / (|ε| − 1)"] },
-            { nom: "Corolario", sub: "Con demanda inelástica siempre conviene subir el precio.", cols: ["El monopolista nunca opera donde |ε| < 1"] },
-            { nom: "Pérdida irrecuperable", sub: "Las unidades que no se producen, con demanda y coste lineales.", cols: ["PIM = ½ · (P − CMg) · (q_comp − q_mon)"] },
-            { nom: "Discriminación de tercer grado", sub: "Un Lerner por mercado; más caro donde menos elástica.", cols: ["IMg_A = IMg_B = CMg"] },
-            { nom: "Monopolio natural", sub: "Una sola empresa produce más barato que cualquier reparto.", cols: ["CT(q₁ + q₂) < CT(q₁) + CT(q₂)"] },
-            { nom: "Regulación al coste medio", sub: "Viable sin subvención, no plenamente eficiente.", cols: ["P = CMe ⟹ beneficio económico nulo"] },
+            { nom: "Ingreso marginal", sub: "El segundo término es la pérdida sobre las unidades previas.", cols: ["$\\mathrm{IMg} = P + q\\,\\dfrac{dP}{dq} < P$"] },
+            { nom: "Ingreso marginal con demanda lineal", sub: "El doble de pendiente, misma ordenada en el origen.", cols: ["Si $P = a - bq$, entonces $\\mathrm{IMg} = a - 2bq$"] },
+            { nom: "Condición de óptimo", sub: "La misma que en competencia; lo que cambia es el IMg.", cols: ["$\\mathrm{IMg}(q) = \\mathrm{CMg}(q)$"] },
+            { nom: "Índice de Lerner", sub: "Mide el poder de mercado en el óptimo.", cols: ["$L = \\dfrac{P - \\mathrm{CMg}}{P} = \\dfrac{1}{|\\varepsilon|}$"] },
+            { nom: "Regla del precio", sub: "El margen sobre coste sale de la elasticidad.", cols: ["$P = \\mathrm{CMg}\\,\\dfrac{|\\varepsilon|}{|\\varepsilon| - 1}$"] },
+            { nom: "Corolario", sub: "Con demanda inelástica siempre conviene subir el precio.", cols: ["El monopolista nunca opera donde $|\\varepsilon| < 1$"] },
+            { nom: "Pérdida irrecuperable", sub: "Las unidades que no se producen, con demanda y coste lineales.", cols: ["$\\mathrm{PIM} = \\tfrac12 (P - \\mathrm{CMg})(q_{\\text{comp}} - q_{\\text{mon}})$"] },
+            { nom: "Discriminación de tercer grado", sub: "Un Lerner por mercado; más caro donde menos elástica.", cols: ["$\\mathrm{IMg}_A = \\mathrm{IMg}_B = \\mathrm{CMg}$"] },
+            { nom: "Monopolio natural", sub: "Una sola empresa produce más barato que cualquier reparto.", cols: ["$\\mathrm{CT}(q_1 + q_2) < \\mathrm{CT}(q_1) + \\mathrm{CT}(q_2)$"] },
+            { nom: "Regulación al coste medio", sub: "Viable sin subvención, no plenamente eficiente.", cols: ["$P = \\mathrm{CMe} \\Rightarrow$ beneficio económico nulo"] },
           ],
         },
       ],
@@ -93,7 +93,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "**Discriminación de tercer grado.** Supongamos ahora que el monopolista puede separar dos grupos que no pueden revenderse entre sí: uno con demanda **P = 100 − Q_A** y otro más sensible al precio, **P = 60 − 0,5·Q_B**. Igualando el ingreso marginal al coste en cada uno por separado, el resultado es 40 unidades en cada mercado, a **60** en el primero y a **40** en el segundo. Si se le obligara a un precio único, cobraría **46,67**.",
+            "**Discriminación de tercer grado.** Supongamos ahora que el monopolista puede separar dos grupos que no pueden revenderse entre sí: uno con demanda $P = 100 - Q_A$ y otro más sensible al precio, $P = 60 - 0{,}5\\,Q_B$. Igualando el ingreso marginal al coste en cada uno por separado, el resultado es 40 unidades en cada mercado, a **60** en el primero y a **40** en el segundo. Si se le obligara a un precio único, cobraría **46,67**.",
           ],
         },
         {
@@ -196,6 +196,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Puede un monopolista fijar el precio que quiera?",
+              opciones: [
+                "Sí: por eso es monopolista",
+                "No: elige un punto de la curva de demanda, y esta le impone la relación entre precio y cantidad",
+                "Sí, mientras cubra sus costes",
+                "No, porque la regulación se lo impide en la mayoría de sectores",
+              ],
+              correcta: 1,
+              porque: [
+                "Ser el único vendedor no elimina a los compradores. Un precio muy alto deja la cantidad en casi nada, y el beneficio con ella.",
+                "Puede elegir precio o cantidad, pero no ambos. Toda su libertad consiste en escoger sobre qué punto de la demanda se sitúa.",
+                "Cubrir costes es una condición de supervivencia, no el límite de lo que puede cobrar: la demanda le limita mucho antes que los costes.",
+                "La regulación existe en algunos sectores, pero la restricción de fondo es la demanda y opera esté o no regulado.",
+              ],
+            },
+            {
+              q: "Un monopolio reduce el excedente del consumidor en 2.400 y obtiene un beneficio de 1.600. ¿Cuánto cuesta en eficiencia?",
+              opciones: [
+                "2.400: todo lo que pierde el consumidor",
+                "800: lo que desaparece y no aparece como beneficio de nadie",
+                "4.000, sumando pérdida del consumidor y beneficio del monopolista",
+                "1.600, que es lo que se transfiere",
+              ],
+              correcta: 1,
+              porque: [
+                "De esos 2.400, la mayor parte cambia de manos en vez de destruirse. Contarlos todos infla el coste del monopolio.",
+                "La pérdida irrecuperable es la parte del excedente que no llega a nadie: intercambios que habrían beneficiado a ambas partes y ya no ocurren. Es lo único que justifica intervenir por razones de eficiencia.",
+                "Sumarlos cuenta doble: el beneficio del monopolista es parte de lo que pierde el consumidor, no algo adicional.",
+                "La transferencia es precisamente lo que no se pierde. Puede ser objetable por reparto, pero no por eficiencia.",
+              ],
+            },
+            {
+              q: "¿Por qué un monopolista nunca produce en el tramo inelástico de la demanda?",
+              opciones: [
+                "Porque ahí el beneficio sería negativo",
+                "Porque subir el precio aumentaría el ingreso y reduciría el coste a la vez",
+                "Porque en ese tramo la demanda es demasiado sensible al precio",
+                "Porque la regulación se lo prohíbe",
+              ],
+              correcta: 1,
+              porque: [
+                "El beneficio podría ser positivo en ese tramo; lo que ocurre es que sería mayor moviéndose fuera de él.",
+                "Con $|\\varepsilon| < 1$, subir el precio sube el ingreso total y a la vez baja la cantidad, y con ella el coste. Ninguna empresa deja pasar una mejora doble, así que el óptimo cae siempre en el tramo elástico.",
+                "En el tramo inelástico la demanda es poco sensible, no mucho. La confusión invierte la definición.",
+                "Es un resultado del modelo, no una norma. Sale de maximizar beneficio sin ninguna restricción legal.",
+              ],
+            },
+            {
+              q: "¿Debe trocearse un monopolio natural en varias empresas?",
+              opciones: [
+                "Sí: más empresas siempre significa más competencia",
+                "No: por definición una sola produce más barato, así que trocearlo eleva el coste de abastecer el mercado",
+                "Sí, si el sector es estratégico",
+                "No, porque las economías de escala desaparecerían y subiría el precio",
+              ],
+              correcta: 1,
+              porque: [
+                "Cuando hay economías de escala en todo el rango relevante, duplicar infraestructuras multiplica el coste sin añadir eficiencia.",
+                "El problema del monopolio natural no se resuelve con estructura sino con regulación del precio o con subastas por el mercado. Partirlo empeora lo que se quería mejorar.",
+                "El carácter estratégico puede justificar propiedad pública o regulación, pero no cambia la aritmética de los costes.",
+                "El razonamiento apunta en la dirección correcta pero confunde la conclusión: las economías de escala no desaparecen, simplemente dejan de aprovecharse.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

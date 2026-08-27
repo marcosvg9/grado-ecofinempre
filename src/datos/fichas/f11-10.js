@@ -35,8 +35,8 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Potencia del compuesto", sub: "Pequeñas diferencias de tasa, enormes de nivel.", cols: ["ratio = [(1+g₁) ÷ (1+g₂)]^t"] },
-            { nom: "Regla del 70", sub: "Aproximación mental suficiente.", cols: ["años para duplicar ≈ 70 ÷ g(%)"] },
+            { nom: "Potencia del compuesto", sub: "Pequeñas diferencias de tasa, enormes de nivel.", cols: ["$\\text{ratio} = \\left(\\dfrac{1+g_1}{1+g_2}\\right)^t$"] },
+            { nom: "Regla del 70", sub: "Aproximación mental suficiente.", cols: ["años para duplicar $\\approx \\dfrac{70}{g\\,(\\%)}$"] },
             { nom: "Convergencia absoluta", sub: "No se observa en el conjunto del mundo.", cols: ["todos los países hacia el mismo nivel"] },
             { nom: "Convergencia condicional", sub: "Sí se observa: cada uno hacia el suyo.", cols: ["cada país hacia su propio estado estacionario"] },
             { nom: "Hipótesis geográfica", sub: "Fuerte correlación, mal explica los cambios.", cols: ["clima · enfermedad · acceso al mar"] },

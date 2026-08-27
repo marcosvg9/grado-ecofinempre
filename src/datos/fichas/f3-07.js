@@ -37,13 +37,13 @@ export default {
             { nom: "Base monetaria", sub: "Lo único que el banco central controla directamente.", cols: ["B = Efectivo en circulación + Reservas"] },
             { nom: "Oferta monetaria", sub: "Mucho mayor que la base.", cols: ["M = Efectivo + Depósitos"] },
             { nom: "Agregados", sub: "Gradación por liquidez, no categorías estancas.", cols: ["M1 ⊂ M2 ⊂ M3"] },
-            { nom: "Coeficiente de reservas", sub: "Regulatorio y voluntario.", cols: ["r = Reservas / Depósitos"] },
-            { nom: "Preferencia por el efectivo", sub: "Conducta del público, no decisión bancaria.", cols: ["c = Efectivo / Depósitos"] },
-            { nom: "Multiplicador monetario", sub: "Identidad contable, no mecanismo.", cols: ["m = (1 + c) / (c + r)"] },
+            { nom: "Coeficiente de reservas", sub: "Regulatorio y voluntario.", cols: ["$r = \\dfrac{\\text{Reservas}}{\\text{Depósitos}}$"] },
+            { nom: "Preferencia por el efectivo", sub: "Conducta del público, no decisión bancaria.", cols: ["$c = \\dfrac{\\text{Efectivo}}{\\text{Depósitos}}$"] },
+            { nom: "Multiplicador monetario", sub: "Identidad contable, no mecanismo.", cols: ["$m = \\dfrac{1+c}{c+r}$"] },
             { nom: "Creación de dinero por crédito", sub: "El préstamo crea el depósito.", cols: ["Activo: préstamo · Pasivo: depósito"] },
-            { nom: "Ecuación cuantitativa", sub: "Identidad; teoría al fijar V e Y.", cols: ["M · V = P · Y"] },
-            { nom: "En tasas de variación", sub: "Válida a largo plazo y con V estable.", cols: ["g_M + g_V = π + g_Y"] },
-            { nom: "Velocidad de circulación", sub: "El supuesto que falla a corto plazo.", cols: ["V = P·Y / M"] },
+            { nom: "Ecuación cuantitativa", sub: "Identidad; teoría al fijar V e Y.", cols: ["$M \\cdot V = P \\cdot Y$"] },
+            { nom: "En tasas de variación", sub: "Válida a largo plazo y con V estable.", cols: ["$g_M + g_V = \\pi + g_Y$"] },
+            { nom: "Velocidad de circulación", sub: "El supuesto que falla a corto plazo.", cols: ["$V = \\dfrac{PY}{M}$"] },
           ],
         },
       ],
@@ -173,6 +173,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿De dónde sale el dinero que un banco presta?",
+              opciones: [
+                "De los depósitos que le han confiado sus clientes",
+                "El préstamo crea el depósito: el banco anota a la vez un activo y un pasivo",
+                "De las reservas que le entrega el banco central",
+                "Del capital aportado por sus accionistas",
+              ],
+              correcta: 1,
+              porque: [
+                "Es la imagen del banco como intermediario que guarda y presta lo ajeno, y no describe lo que ocurre en el balance cuando se concede un crédito.",
+                "El dinero aparece en ese momento. Lo que limita la capacidad de prestar no es el ahorro previo sino el capital regulatorio, la liquidez y, sobre todo, que haya demanda solvente.",
+                "Las reservas permiten liquidar pagos entre bancos, pero el banco central las suministra para sostener el tipo, no como materia prima del crédito.",
+                "El capital absorbe pérdidas y limita cuánto se puede prestar, pero no es el origen contable del depósito creado.",
+              ],
+            },
+            {
+              q: "¿Qué es el multiplicador monetario?",
+              opciones: [
+                "El mecanismo por el que el banco central inyecta reservas y los bancos las multiplican",
+                "Una identidad contable ex post entre dos agregados, no una secuencia causal",
+                "El límite legal de crédito que puede conceder un banco",
+                "La relación entre el tipo de intervención y el tipo del crédito",
+              ],
+              correcta: 1,
+              porque: [
+                "Esa lectura secuencial es la que enseñan muchos manuales y la que induce a esperar inflación en cuanto crece la base monetaria.",
+                "$m = (1+c)/(c+r)$ relaciona base y oferta monetaria después de que todo haya ocurrido. Tratarla como un mecanismo lleva a predicciones que no se cumplen.",
+                "Los límites al crédito los fijan el capital regulatorio y la liquidez, no esta expresión.",
+                "Esa es la transmisión de tipos, que es otro asunto distinto de la relación entre agregados.",
+              ],
+            },
+            {
+              q: "El banco central multiplica por cinco la base monetaria y la inflación no se mueve. ¿Cómo se explica?",
+              opciones: [
+                "Con retardo: la inflación llegará más tarde",
+                "Si las reservas se quedan depositadas en el banco central por falta de demanda solvente, no hay crédito nuevo ni gasto nuevo",
+                "Porque la velocidad de circulación es constante y compensa",
+                "Porque la base monetaria no forma parte de la oferta monetaria",
+              ],
+              correcta: 1,
+              porque: [
+                "El retardo existe, pero no explica una ausencia de efecto sostenida durante años, que es lo observado tras 2008.",
+                "La base solo se convierte en dinero cuando alimenta crédito. Si se queda parada en el balance del banco central, no llega a la economía real.",
+                "Es al contrario: la velocidad no es constante y precisamente cae en las crisis, lo que amortigua el efecto de la expansión.",
+                "La base sí forma parte de la oferta monetaria —el efectivo lo está— pero eso no es lo que explica la ausencia de inflación.",
+              ],
+            },
+            {
+              q: "Los hogares amortizan más préstamos de los que suscriben. ¿Qué le pasa a la cantidad de dinero?",
+              opciones: [
+                "No cambia: el dinero devuelto vuelve a prestarse",
+                "Se contrae: al devolver el crédito desaparece el depósito correspondiente",
+                "Aumenta, porque los bancos disponen de más fondos",
+                "Depende de lo que haga el banco central con la base monetaria",
+              ],
+              correcta: 1,
+              porque: [
+                "Volvería a prestarse si el banco fuera un intermediario de fondos ajenos. Pero la amortización cancela a la vez el activo y el pasivo.",
+                "El proceso es simétrico al de creación: si el crédito crea depósitos, devolverlo los destruye. Una economía desapalancándose ve contraerse su masa monetaria.",
+                "El banco no gana fondos: su balance encoge por los dos lados a la vez.",
+                "El banco central puede compensarlo, pero el efecto directo de la amortización es contractivo con independencia de lo que haga.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

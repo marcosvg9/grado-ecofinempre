@@ -37,12 +37,12 @@ export default {
             { nom: "Coste marginal social", sub: "El privado más el daño que soportan terceros.", cols: ["CMgS = CMgP + daño marginal externo"] },
             { nom: "Óptimo con externalidad", sub: "No implica actividad cero.", cols: ["Beneficio marginal = CMgS"] },
             { nom: "Impuesto pigouviano", sub: "Internaliza el daño en la decisión privada.", cols: ["t = daño marginal en el óptimo"] },
-            { nom: "Teorema de Coase", sub: "La asignación de derechos afecta al reparto, no a la eficiencia.", cols: ["Costes de transacción nulos ⟹ acuerdo eficiente"] },
-            { nom: "Bien privado: demanda agregada", sub: "Cada uno consume una cantidad distinta al mismo precio.", cols: ["Suma horizontal: Q = Σ q_i(p)"] },
-            { nom: "Bien público: demanda agregada", sub: "Todos consumen lo mismo; se suma cuánto vale.", cols: ["Suma vertical: P(Q) = Σ p_i(Q)"] },
-            { nom: "Condición de Samuelson", sub: "La regla de provisión eficiente de un bien público.", cols: ["Σ RMS_i = CMg de provisión"] },
+            { nom: "Teorema de Coase", sub: "La asignación de derechos afecta al reparto, no a la eficiencia.", cols: ["Costes de transacción nulos $\\Rightarrow$ acuerdo eficiente"] },
+            { nom: "Bien privado: demanda agregada", sub: "Cada uno consume una cantidad distinta al mismo precio.", cols: ["Suma horizontal: $Q = \\sum_i q_i(p)$"] },
+            { nom: "Bien público: demanda agregada", sub: "Todos consumen lo mismo; se suma cuánto vale.", cols: ["Suma vertical: $P(Q) = \\sum_i p_i(Q)$"] },
+            { nom: "Condición de Samuelson", sub: "La regla de provisión eficiente de un bien público.", cols: ["$\\sum_i \\mathrm{RMS}_i = \\mathrm{CMg}$ de provisión"] },
             { nom: "Selección adversa", sub: "Si se cumple, el tipo alto se retira del mercado.", cols: ["Valor medio ofrecido < valor de reserva del tipo alto"] },
-            { nom: "Franquicia que restaura el incentivo", sub: "El asegurado debe soportar la mejora que aporta prevenir.", cols: ["(p_alta − p_baja) · F ≥ coste de prevenir"] },
+            { nom: "Franquicia que restaura el incentivo", sub: "El asegurado debe soportar la mejora que aporta prevenir.", cols: ["$(p_{\\text{alta}} - p_{\\text{baja}})\\,F \\geq$ coste de prevenir"] },
             { nom: "Intercambio de la agencia", sub: "Más incentivo implica siempre más riesgo soportado.", cols: ["Incentivos ⟷ aseguramiento"] },
           ],
         },
@@ -142,7 +142,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "**Y el riesgo moral, en una línea de cálculo.** Un hogar afronta una pérdida posible de 5.000 con probabilidad del 10 %, reducible al 5 % con una precaución que cuesta 200. Sin seguro, prevenir sale a cuenta: 450 frente a 500. Con **cobertura total**, la precaución sigue costando 200 y ya no le ahorra nada, así que no la toma y la siniestralidad se dobla. Para que vuelva a interesarle prevenir, la **franquicia** debe cumplir que el ahorro esperado supere su coste: 0,05 · F ≥ 200, es decir **F ≥ 4.000**. Una franquicia de 2.000 no basta. Y ahí está el intercambio irreducible: la franquicia que restaura el incentivo es también la que deja al asegurado soportando un riesgo considerable. **No existe un contrato que asegure del todo y a la vez incentive del todo.**",
+            "**Y el riesgo moral, en una línea de cálculo.** Un hogar afronta una pérdida posible de 5.000 con probabilidad del 10 %, reducible al 5 % con una precaución que cuesta 200. Sin seguro, prevenir sale a cuenta: 450 frente a 500. Con **cobertura total**, la precaución sigue costando 200 y ya no le ahorra nada, así que no la toma y la siniestralidad se dobla. Para que vuelva a interesarle prevenir, la **franquicia** debe cumplir que el ahorro esperado supere su coste: $0{,}05 F \\geq 200$, es decir $F \\geq 4.000$. Una franquicia de 2.000 no basta. Y ahí está el intercambio irreducible: la franquicia que restaura el incentivo es también la que deja al asegurado soportando un riesgo considerable. **No existe un contrato que asegure del todo y a la vez incentive del todo.**",
           ],
         },
       ],
@@ -217,6 +217,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Qué es exactamente un fallo de mercado?",
+              opciones: [
+                "Un resultado socialmente indeseable o injusto",
+                "Que exista un intercambio mutuamente beneficioso que no llega a realizarse",
+                "Que el precio se aleje del coste de producción",
+                "Que el Estado tenga que intervenir para corregir el reparto",
+              ],
+              correcta: 1,
+              porque: [
+                "Que el resultado sea desigual no lo convierte en un fallo: el equilibrio competitivo puede ser eficientísimo y desigualísimo a la vez. Mezclarlo con el reparto vuelve el concepto inservible.",
+                "Es la definición operativa, y su virtud es que se puede comprobar: hay que señalar qué intercambio no ocurre y por qué. Sin eso, la etiqueta no dice nada.",
+                "El precio se aleja del coste marginal en el monopolio, que sí es un fallo, pero también en muchos casos que no lo son. La distancia al coste no es el criterio.",
+                "La intervención es una posible respuesta, no la definición. Y hay fallos de mercado para los que la mejor respuesta es no intervenir.",
+              ],
+            },
+            {
+              q: "Una fábrica genera una externalidad negativa. ¿Cuál es la producción eficiente?",
+              opciones: [
+                "Cero: la actividad debe eliminarse",
+                "Aquella donde el beneficio marginal iguala al coste marginal social, que sigue siendo positiva",
+                "La misma que sin externalidad, corrigiendo después con indemnizaciones",
+                "La que iguale el daño total al beneficio total",
+              ],
+              correcta: 1,
+              porque: [
+                "El óptimo casi nunca es cero. En el ejemplo la producción eficiente cae de 80 a 60 unidades: se reduce, no se suprime.",
+                "El daño se internaliza sumándolo al coste privado. La actividad sigue mereciendo la pena mientras lo que aporta supere lo que cuesta a la sociedad entera.",
+                "Indemnizar después redistribuye el daño pero no corrige el incentivo: la fábrica seguiría produciendo la cantidad que le conviene a ella.",
+                "Igualar totales en vez de marginales es el error de fondo: la decisión se toma en el margen, unidad a unidad.",
+              ],
+            },
+            {
+              q: "El daño externo de una actividad asciende a 1.600 y su pérdida de eficiencia a 200. ¿Por qué difieren tanto?",
+              opciones: [
+                "Porque parte del daño es difícil de valorar",
+                "Porque la mayor parte del daño corresponde a producción que sigue siendo eficiente hacer",
+                "Porque el daño se mide en términos brutos y la pérdida en netos",
+                "Porque la pérdida de eficiencia solo cuenta el daño no compensado",
+              ],
+              correcta: 1,
+              porque: [
+                "La dificultad de valoración afectaría a la cifra del daño, no a la relación entre ambas magnitudes.",
+                "Solo las 20 unidades que sobran generan daño sin beneficio compensatorio. Las 60 restantes causan daño y aportan más de lo que cuestan: eliminarlas empeoraría el resultado.",
+                "Ambas magnitudes se miden de forma homogénea. La diferencia es conceptual, no de convención contable.",
+                "La pérdida de eficiencia no depende de que haya compensación: mide intercambios que no deberían ocurrir y ocurren.",
+              ],
+            },
+            {
+              q: "¿En qué se diferencian selección adversa y riesgo moral?",
+              opciones: [
+                "En nada relevante: ambas son asimetrías de información",
+                "La selección adversa es información oculta antes de contratar; el riesgo moral, acción oculta después",
+                "La selección adversa afecta al vendedor y el riesgo moral al comprador",
+                "La selección adversa se corrige con franquicias y el riesgo moral con señales",
+              ],
+              correcta: 1,
+              porque: [
+                "Son asimetrías distintas y piden remedios distintos, así que confundirlas lleva a aplicar la solución equivocada.",
+                "No sé con quién estoy contratando frente a no observo lo que hace una vez contratado. La primera se combate con señales y filtros; la segunda, con franquicias e incentivos.",
+                "Cualquiera de las dos partes puede ser la informada en uno u otro caso: la asignación por rol no funciona.",
+                "Es la correspondencia invertida: las franquicias atacan el riesgo moral y las señales, la selección adversa.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

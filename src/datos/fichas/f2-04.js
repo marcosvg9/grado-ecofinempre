@@ -35,13 +35,13 @@ export default {
           modo: "dos",
           filas: [
             { nom: "Función de producción", sub: "Máximo producto técnicamente obtenible.", cols: ["Q = f(K, L)"] },
-            { nom: "Productividad marginal", sub: "Decreciente a partir de cierto punto.", cols: ["PMg_L = ∂Q/∂L"] },
-            { nom: "Relación marginal de sustitución técnica", sub: "Pendiente de la isocuanta.", cols: ["RMST = PMg_L / PMg_K"] },
-            { nom: "Rendimientos a escala", sub: "Comparar f(λK, λL) con λ·f(K, L).", cols: ["Constantes si f(λK,λL) = λ·f(K,L)"] },
-            { nom: "Cobb-Douglas", sub: "Los exponentes son elasticidades del producto.", cols: ["Q = A · K^α · L^β"] },
-            { nom: "Grado de homogeneidad", sub: "Determina los rendimientos a escala.", cols: ["α + β > 1 crecientes · = 1 constantes · < 1 decrecientes"] },
-            { nom: "Elasticidad de sustitución", sub: "Igual a 1 en Cobb-Douglas, libre en CES.", cols: ["σ = d ln(K/L) / d ln(RMST)"] },
-            { nom: "Teorema de Euler", sub: "Con rendimientos constantes, el producto se agota.", cols: ["Q = K·PMg_K + L·PMg_L"] },
+            { nom: "Productividad marginal", sub: "Decreciente a partir de cierto punto.", cols: ["$\\mathrm{PMg}_L = \\dfrac{\\partial Q}{\\partial L}$"] },
+            { nom: "Relación marginal de sustitución técnica", sub: "Pendiente de la isocuanta.", cols: ["$\\mathrm{RMST} = \\dfrac{\\mathrm{PMg}_L}{\\mathrm{PMg}_K}$"] },
+            { nom: "Rendimientos a escala", sub: "Comparar $f(\\lambda K, \\lambda L)$ con $\\lambda f(K, L)$.", cols: ["Constantes si $f(\\lambda K, \\lambda L) = \\lambda f(K, L)$"] },
+            { nom: "Cobb-Douglas", sub: "Los exponentes son elasticidades del producto.", cols: ["$Q = A K^{\\alpha} L^{\\beta}$"] },
+            { nom: "Grado de homogeneidad", sub: "Determina los rendimientos a escala.", cols: ["$\\alpha$ + $\\beta$ > 1 crecientes · = 1 constantes · < 1 decrecientes"] },
+            { nom: "Elasticidad de sustitución", sub: "Igual a 1 en Cobb-Douglas, libre en CES.", cols: ["$\\sigma$ = d ln(K/L) / d ln(RMST)"] },
+            { nom: "Teorema de Euler", sub: "Con rendimientos constantes, el producto se agota.", cols: ["$Q = K\\,\\mathrm{PMg}_K + L\\,\\mathrm{PMg}_L$"] },
           ],
           nota: "El **teorema de Euler** es el resultado que conecta la tecnología con la distribución: si hay rendimientos constantes a escala y cada factor se retribuye según su productividad marginal, la producción se reparte exactamente entre ambos sin sobrante ni déficit. Es el fundamento de la teoría neoclásica del reparto funcional de la renta.",
         },
@@ -53,7 +53,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "Sea **Q = 10 · K^0,3 · L^0,5**, con **K = 100** y **L = 25**.",
+            "Sea $Q = 10\\,K^{0{,}3} L^{0{,}5}$, con $K = 100$ y $L = 25$.",
           ],
         },
         {
@@ -99,19 +99,19 @@ export default {
             { x: 50, y: 200, etiqueta: "×2 factores", guias: false },
             { x: 75, y: 300, etiqueta: "×3 factores", guias: false },
           ],
-          nota: "Cada curva reúne las combinaciones de capital y trabajo que producen la misma cantidad, y su **pendiente es la relación marginal de sustitución técnica**: cuántas unidades de capital sustituyen a una de trabajo sin perder producto. Son convexas porque **cuanto más escaso se vuelve un factor, más caro resulta sustituirlo**. La recta punteada es la senda de escala, y sobre ella están los tres puntos de la tabla. Ahí se ve el resultado que importa: al **duplicar ambos factores** se pasa de 199 a 347, no a 398, y al triplicarlos se llega a 479 y no a 597. Las isocuantas se van **separando** al alejarse del origen, que es el aspecto visual de los **rendimientos decrecientes a escala** que impone α + β = 0,8 < 1.",
+          nota: "Cada curva reúne las combinaciones de capital y trabajo que producen la misma cantidad, y su **pendiente es la relación marginal de sustitución técnica**: cuántas unidades de capital sustituyen a una de trabajo sin perder producto. Son convexas porque **cuanto más escaso se vuelve un factor, más caro resulta sustituirlo**. La recta punteada es la senda de escala, y sobre ella están los tres puntos de la tabla. Ahí se ve el resultado que importa: al **duplicar ambos factores** se pasa de 199 a 347, no a 398, y al triplicarlos se llega a 479 y no a 597. Las isocuantas se van **separando** al alejarse del origen, que es el aspecto visual de los **rendimientos decrecientes a escala** que impone $\\alpha$ + $\\beta$ = 0,8 < 1.",
         },
         {
           tipo: "tabla",
           cabecera: ["Magnitud", "Desarrollo", "Valor"],
           filas: [
-            ["Producto", "10 · 100^0,3 · 25^0,5", "199,05"],
-            ["Productividad marginal del trabajo", "5 · K^0,3 · L^−0,5", "3,98"],
+            ["Producto", "$10 \\times 100^{0{,}3} \\times 25^{0{,}5}$", "199,05"],
+            ["Productividad marginal del trabajo", "$5 K^{0{,}3} L^{-0{,}5}$", "3,98"],
             ["Productividad media del trabajo", "199,05 / 25", "7,96"],
-            ["Productividad marginal del capital", "3 · K^−0,7 · L^0,5", "0,597"],
+            ["Productividad marginal del capital", "$3 K^{-0{,}7} L^{0{,}5}$", "0,597"],
             { celdas: ["RMST", "3,98 / 0,597", "6,67"], clase: "total" },
           ],
-          nota: "La RMST de 6,67 significa que, en ese punto, **una unidad adicional de trabajo sustituye a 6,67 unidades de capital** manteniendo la producción. Y observa que la productividad marginal del trabajo (3,98) es inferior a la media (7,96): es consecuencia directa de que el exponente sea menor que uno, ya que PMg = β · PMe.",
+          nota: "La RMST de 6,67 significa que, en ese punto, **una unidad adicional de trabajo sustituye a 6,67 unidades de capital** manteniendo la producción. Y observa que la productividad marginal del trabajo (3,98) es inferior a la media (7,96): es consecuencia directa de que el exponente sea menor que uno, ya que PMg = $\\beta$ · PMe.",
         },
         {
           tipo: "tabla",
@@ -122,12 +122,12 @@ export default {
             ["Triplicar ambos factores", "300", "75", "479,14", "×2,408"],
             { celdas: ["Duplicar solo el trabajo", "100", "50", "281,50", "×1,414"], clase: "total" },
           ],
-          nota: "Como α + β = 0,8 < 1, hay **rendimientos decrecientes a escala**: duplicar todos los factores multiplica el producto por 2^0,8 = 1,741, un 74 % más y no un 100 %. Y la última fila muestra el otro concepto: duplicar solo el trabajo multiplica el producto por 2^0,5 = 1,414, porque el capital permanece fijo. **Son dos fenómenos distintos y ambos aparecen en la misma función.**",
+          nota: "Como $\\alpha + \\beta = 0{,}8 < 1$, hay **rendimientos decrecientes a escala**: duplicar todos los factores multiplica el producto por $2^{0{,}8} = 1{,}741$, un 74 % más y no un 100 %. Y la última fila muestra el otro concepto: duplicar solo el trabajo multiplica el producto por $2^{0{,}5} = 1{,}414$, porque el capital permanece fijo. **Son dos fenómenos distintos y ambos aparecen en la misma función.**",
         },
         {
           tipo: "parrafos",
           items: [
-            "**Comprobación del teorema de Euler.** Con esta tecnología, K·PMg_K + L·PMg_L = 100 · 0,597 + 25 · 3,98 = 59,7 + 99,5 = **159,2**, frente a un producto de 199,05. Falta un 20 %, exactamente 1 − (α + β). Con rendimientos decrecientes, **retribuir a cada factor según su productividad marginal no agota la producción**: queda un excedente. Con rendimientos crecientes ocurriría lo contrario y la retribución marginal sería insostenible, lo que es una de las razones por las que la competencia perfecta y los rendimientos crecientes son incompatibles.",
+            "**Comprobación del teorema de Euler.** Con esta tecnología, $K\\,\\mathrm{PMg}_K + L\\,\\mathrm{PMg}_L = 100 \\times 0{,}597 + 25 \\times 3{,}98 = 59{,}7 + 99{,}5 = 159{,}2$, frente a un producto de 199,05. Falta un 20 %, exactamente $1 - (\\alpha + \\beta)$. Con rendimientos decrecientes, **retribuir a cada factor según su productividad marginal no agota la producción**: queda un excedente. Con rendimientos crecientes ocurriría lo contrario y la retribución marginal sería insostenible, lo que es una de las razones por las que la competencia perfecta y los rendimientos crecientes son incompatibles.",
           ],
         },
       ],
@@ -190,15 +190,91 @@ export default {
         {
           tipo: "preguntas",
           items: [
-            { q: "Q = 5·K^0,4·L^0,7. ¿Qué rendimientos a escala tiene?", a: "Crecientes: α + β = 1,1 > 1. Duplicar ambos factores multiplica el producto por 2^1,1 = 2,14, es decir un 114 % más. Y aun así cada factor por separado tiene productividad marginal decreciente." },
+            { q: "$Q = 5 K^{0{,}4} L^{0{,}7}$. ¿Qué rendimientos a escala tiene?", a: "Crecientes: $\\alpha + \\beta = 1{,}1 > 1$. Duplicar ambos factores multiplica el producto por $2^{1{,}1} = 2{,}14$, es decir un 114 % más. Y aun así cada factor por separado tiene productividad marginal decreciente." },
             { q: "¿Puede una tecnología tener productividad marginal decreciente y rendimientos crecientes a escala?", a: "Sí, y es el caso de la pregunta anterior. Son conceptos independientes: uno se refiere a aumentar un factor con los demás fijos y el otro, a aumentar todos a la vez." },
-            { q: "En Q = A·K^α·L^β con α + β = 1, ¿qué dice el teorema de Euler?", a: "Que K·PMg_K + L·PMg_L = Q exactamente: retribuir a cada factor según su productividad marginal agota la producción, sin sobrante ni déficit. Es el fundamento de la teoría neoclásica del reparto funcional." },
+            { q: "En $Q = A K^{\\alpha} L^{\\beta}$ con $\\alpha + \\beta = 1$, ¿qué dice el teorema de Euler?", a: "Que $K\\,\\mathrm{PMg}_K + L\\,\\mathrm{PMg}_L = Q$ exactamente: retribuir a cada factor según su productividad marginal agota la producción, sin sobrante ni déficit. Es el fundamento de la teoría neoclásica del reparto funcional." },
             { q: "¿Por qué la elasticidad de sustitución importa para la participación salarial?", a: "Porque determina cómo se reparte el valor añadido cuando cambian los precios relativos de los factores. Con elasticidad unitaria las participaciones son constantes por construcción, así que una Cobb-Douglas no puede explicar su evolución." },
             { q: "¿Qué problema plantea la renta mixta al calcular la participación salarial?", a: "Que retribuye conjuntamente el trabajo y el capital de los empresarios individuales sin separarlos. Hay que repartirla con algún criterio, y estimaciones que difieren solo en ese criterio dan participaciones salariales apreciablemente distintas." },
           ],
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿En qué se diferencian la productividad marginal decreciente y los rendimientos decrecientes a escala?",
+              opciones: [
+                "En nada: son dos nombres del mismo fenómeno",
+                "La primera es de corto plazo y aumenta un factor con los demás fijos; los segundos son de largo plazo y aumentan todos a la vez",
+                "La primera se refiere al trabajo y los segundos al capital",
+                "La primera es un supuesto y los segundos un resultado empírico",
+              ],
+              correcta: 1,
+              porque: [
+                "Pueden darse por separado: una función puede tener rendimientos crecientes a escala y a la vez productividad marginal decreciente en cada factor.",
+                "Son fenómenos distintos y ambos aparecen en la misma función. En $Q = 10 K^{0{,}3} L^{0{,}5}$ los exponentes suman 0,8 —decrecientes a escala— y cada factor por separado tiene productividad marginal decreciente.",
+                "Ambos conceptos se aplican a cualquier factor. No hay ninguna asignación de uno al trabajo y otro al capital.",
+                "Los dos son propiedades de la función de producción que se comprueban derivando, no una mezcla de supuesto y evidencia.",
+              ],
+            },
+            {
+              q: "Una empresa produce menos de lo que su función de producción indica para sus factores. ¿Qué mide esa diferencia?",
+              opciones: [
+                "Un error en la estimación de la función",
+                "La ineficiencia técnica: la función describe la frontera de lo posible, no lo que se obtiene",
+                "El efecto de los rendimientos decrecientes",
+                "La depreciación del capital no contabilizada",
+              ],
+              correcta: 1,
+              porque: [
+                "La función puede estar bien estimada y aun así la empresa quedar por debajo. Confundir ambas cosas impide ver que la distancia a la frontera es en sí misma un objeto de estudio.",
+                "Medir esa distancia es una rama entera de la economía aplicada, y la diferencia entre frontera y comportamiento es justamente lo que hace informativa la comparación.",
+                "Los rendimientos decrecientes describen la forma de la frontera, no la distancia a ella. Se puede estar sobre la frontera con cualquier tipo de rendimientos.",
+                "La depreciación afecta al stock de capital disponible, que es un dato de entrada, no la brecha entre lo posible y lo obtenido.",
+              ],
+            },
+            {
+              q: "Un estudio quiere analizar cómo ha evolucionado la participación salarial y usa una Cobb-Douglas. ¿Qué problema tiene?",
+              opciones: [
+                "Ninguno: es la especificación estándar para este tipo de análisis",
+                "Que impone participaciones factoriales constantes por construcción, que es justo lo que se quiere estudiar",
+                "Que no permite rendimientos crecientes a escala",
+                "Que exige suponer competencia perfecta en el mercado de productos",
+              ],
+              correcta: 1,
+              porque: [
+                "Es estándar para muchas cosas, pero no para esta. La elección de forma funcional decide el resultado antes de mirar un solo dato.",
+                "Su elasticidad de sustitución es unitaria, y de ahí se sigue que las participaciones no se mueven. Preguntarle a esa función si la participación salarial cae es preguntarle algo que su forma ya ha contestado que no.",
+                "Sí los permite: basta con que los exponentes sumen más de uno. La restricción está en la sustitución, no en la escala.",
+                "La competencia perfecta se necesita para identificar los exponentes con las participaciones observadas, pero el problema de fondo aquí es la sustitución unitaria.",
+              ],
+            },
+            {
+              q: "La contabilidad del crecimiento atribuye a la PTF el residuo no explicado por capital y trabajo. ¿Qué recoge esa magnitud?",
+              opciones: [
+                "El progreso técnico, ni más ni menos",
+                "El progreso técnico y también errores de medición, cambios de calidad y variaciones de utilización de la capacidad",
+                "Solo la mejora en la formación de los trabajadores",
+                "La inversión en investigación y desarrollo del período",
+              ],
+              correcta: 1,
+              porque: [
+                "Llamarla «progreso técnico» a secas convierte un residuo en una explicación. Se la ha llamado «la medida de nuestra ignorancia» con bastante justicia.",
+                "Todo lo que no se ha medido bien acaba dentro. Por eso una PTF que cae en una recesión no significa que se haya olvidado tecnología: significa que la capacidad está infrautilizada.",
+                "El capital humano suele tratarse aparte, ajustando el factor trabajo por calidad. Si no se hace, va al residuo, pero no es lo único que va.",
+                "El gasto en I+D es un insumo observable; la PTF es lo que queda sin explicar después de contar los insumos.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

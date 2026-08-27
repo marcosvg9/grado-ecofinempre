@@ -37,11 +37,11 @@ export default {
             { nom: "Coste de oportunidad", sub: "Lo mejor a lo que se renuncia, no lo que se paga.", cols: ["CO = valor de la mejor alternativa perdida"] },
             { nom: "Coste económico", sub: "Los implícitos son tan reales como los explícitos.", cols: ["Coste económico = explícitos + implícitos"] },
             { nom: "Beneficio económico", sub: "Siempre menor o igual que el contable.", cols: ["B económico = Ingresos − explícitos − implícitos"] },
-            { nom: "Coste hundido", sub: "No cambia con la decisión, luego se ignora.", cols: ["Irrecuperable ⟹ irrelevante"] },
+            { nom: "Coste hundido", sub: "No cambia con la decisión, luego se ignora.", cols: ["Irrecuperable $\\Rightarrow$ irrelevante"] },
             { nom: "Regla de decisión", sub: "El criterio que resume la ficha entera.", cols: ["Solo cuentan los flujos que cambian con la decisión"] },
-            { nom: "Pendiente de la frontera", sub: "Es el coste de oportunidad, punto a punto.", cols: ["|dY/dX| = coste de oportunidad de X en Y"] },
-            { nom: "Coste de oportunidad creciente", sub: "De ahí la concavidad de la frontera.", cols: ["d²Y/dX² < 0"] },
-            { nom: "Ventaja comparativa", sub: "Compara costes relativos, no productividades.", cols: ["CO_A(X) < CO_B(X) ⟹ A se especializa en X"] },
+            { nom: "Pendiente de la frontera", sub: "Es el coste de oportunidad, punto a punto.", cols: ["$\\left|\\dfrac{dY}{dX}\\right| =$ coste de oportunidad de $X$ en $Y$"] },
+            { nom: "Coste de oportunidad creciente", sub: "De ahí la concavidad de la frontera.", cols: ["$\\dfrac{d^2 Y}{dX^2} < 0$"] },
+            { nom: "Ventaja comparativa", sub: "Compara costes relativos, no productividades.", cols: ["$\\mathrm{CO}_A(X) < \\mathrm{CO}_B(X) \\Rightarrow A$ se especializa en $X$"] },
           ],
         },
       ],
@@ -52,7 +52,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "Una economía puede dedicar sus recursos a producir **alimentos** o **maquinaria**. Con todos los recursos en maquinaria obtiene 100 unidades y nada de alimento; según va trasladando recursos, las combinaciones alcanzables describen la curva **M = 100 − A²/100**.",
+            "Una economía puede dedicar sus recursos a producir **alimentos** o **maquinaria**. Con todos los recursos en maquinaria obtiene 100 unidades y nada de alimento; según va trasladando recursos, las combinaciones alcanzables describen la curva $M = 100 - A^2/100$.",
           ],
         },
         {
@@ -187,6 +187,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Qué es exactamente el coste de oportunidad de una decisión?",
+              opciones: [
+                "El dinero que efectivamente se desembolsa al tomarla",
+                "El valor de la mejor alternativa a la que se renuncia",
+                "La suma de los costes explícitos y los implícitos",
+                "Lo ya invertido que no se puede recuperar",
+              ],
+              correcta: 1,
+              porque: [
+                "Eso es el coste explícito, y la diferencia es justo lo que separa el razonamiento económico del contable. El coste de oportunidad puede existir sin desembolso alguno —usar un local propio no cuesta nada en la contabilidad y cuesta el alquiler que se deja de cobrar— y puede ser mayor o menor que la factura.",
+                "Es la definición, y de ella cuelga todo lo demás. Lo relevante nunca es lo que se paga, sino aquello a lo que se renuncia por pagarlo, tanto si aparece en una factura como si no.",
+                "Eso es el coste económico. El de oportunidad es lo que hay detrás de la parte implícita: el sueldo no cobrado, el alquiler no percibido, el tiempo empleado. Sumarlo a los explícitos da el coste económico, pero no es lo mismo que él.",
+                "Eso es el coste hundido, que es precisamente lo contrario: al ser irrecuperable no cambia con ninguna decisión futura, así que es irrelevante para decidir.",
+              ],
+            },
+            {
+              q: "¿Por qué un coste hundido no debe entrar en una decisión?",
+              opciones: [
+                "Porque contablemente ya está amortizado",
+                "Porque no cambia con ninguna de las alternativas que se comparan",
+                "Porque suele ser pequeño frente a lo que queda por gastar",
+                "Porque el dinero gastado hace tiempo vale menos por la inflación",
+              ],
+              correcta: 1,
+              porque: [
+                "La amortización contable es un reparto del gasto en el tiempo y no dice nada sobre si el coste es recuperable. Un activo sin amortizar puede ser irrecuperable, y uno amortizado del todo puede tener valor de reventa.",
+                "Solo cuentan los flujos que cambian con la decisión. Un coste ya incurrido e irrecuperable es idéntico se elija lo que se elija, de modo que no puede inclinar la balanza hacia ningún lado.",
+                "El tamaño no tiene nada que ver: un coste hundido enorme sigue siendo irrelevante y uno pequeño también. Pensar que los grandes sí cuentan es exactamente el sesgo del «ya llevamos mucho invertido», uno de los mejor documentados.",
+                "El descuento por inflación cambia cuánto vale una cifra pasada, pero no la convierte en recuperable. Aunque valiera hoy lo mismo que ayer, seguiría sin cambiar con la decisión.",
+              ],
+            },
+            {
+              q: "Una economía se sitúa en un punto interior de su frontera de posibilidades. ¿Qué indica eso?",
+              opciones: [
+                "Que la producción está mal repartida entre la población",
+                "Que produce menos de lo que podría con los recursos que ya tiene",
+                "Que le faltan recursos y necesita más para crecer",
+                "Que ha elegido una combinación de bienes poco conveniente",
+              ],
+              correcta: 1,
+              porque: [
+                "La frontera no dice nada sobre reparto: describe cuánto se puede producir, no quién se lo lleva. Confundir tamaño con distribución es el error más frecuente de este gráfico.",
+                "Hay paro, capacidad ociosa o mala asignación. Es un problema de tamaño y no de reparto, y por eso moverse hacia la frontera puede mejorar a todo el mundo a la vez sin quitarle nada a nadie.",
+                "Los recursos no faltan: están ahí sin usarse. Que falten recursos desplazaría la frontera hacia dentro, que es otra situación distinta de estar por debajo de ella.",
+                "Elegir mal la combinación mueve el punto a lo largo de la frontera, no por debajo. Estar dentro significa que se podría tener más de todo sin renunciar a nada.",
+              ],
+            },
+            {
+              q: "¿Desaparece la escasez en una economía lo bastante rica?",
+              opciones: [
+                "Sí, en cuanto la producción cubre todas las necesidades básicas",
+                "No: escasez significa que hay que elegir, y elegir sigue habiendo",
+                "Solo desaparece para los bienes públicos, que no se pagan al usarlos",
+                "Sí, porque con abundancia el coste de oportunidad tiende a cero",
+              ],
+              correcta: 1,
+              porque: [
+                "Escasez no es sinónimo de pobreza. Cubrir las necesidades básicas elimina la penuria, no la necesidad de elegir: una persona rica sigue teniendo que decidir en qué emplea su tiempo.",
+                "La escasez cambia de objeto, no desaparece. Cuanto más rico se es, más caro es el tiempo y más punzante el coste de oportunidad de emplearlo en una cosa u otra. Mientras haya que elegir hay escasez, por mucha abundancia que haya.",
+                "Que el usuario no pague en el punto de uso no significa que nadie pague. Los recursos empleados tienen usos alternativos y financiarlos exige impuestos: el coste social de un proyecto público supera a su presupuesto.",
+                "Ocurre lo contrario. Con más riqueza el tiempo se vuelve el recurso limitante y su coste de oportunidad sube, que es la razón de que la gente ocupada pague por ahorrarse tareas.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

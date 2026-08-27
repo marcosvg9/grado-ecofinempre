@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from "react";
 import { CODIGOS_CON_FICHA } from "../datos/fichas/index.js";
 import { TEMAS } from "../datos/temario.js";
+import { partir, aMathML, tieneFormula } from "../formula.js";
 
 /* Titulo de cada ficha, para el tooltip de las referencias cruzadas. */
 const TITULOS = Object.fromEntries(TEMAS.map((t) => [t.codigo, `${t.codigo} · ${t.t}`]));
@@ -35,14 +36,39 @@ function conEnlaces(texto, base) {
 }
 
 /* Formato en linea minimo: **negrita**, *cursiva* y referencias a fichas. */
-export function enLinea(texto) {
-  if (typeof texto !== "string") return texto;
+function marcas(texto) {
   const partes = texto.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g);
   return partes.map((p, i) => {
     if (p.startsWith("**") && p.endsWith("**")) return <b key={i}>{conEnlaces(p.slice(2, -2), i)}</b>;
     if (p.startsWith("*") && p.endsWith("*") && p.length > 2) return <i key={i}>{conEnlaces(p.slice(1, -1), i)}</i>;
     return <React.Fragment key={i}>{conEnlaces(p, i)}</React.Fragment>;
   });
+}
+
+/* El conversor devuelve MathML ya montado como cadena, así que se inyecta
+   en vez de reconstruirlo como elementos de React: al asignarlo por
+   innerHTML el analizador de HTML mete <math> en su espacio de nombres,
+   que es justo lo que hace falta para que el navegador lo componga. Es
+   seguro porque la cadena la genera formula.js, que escapa & < >, y nunca
+   viene de fuera.
+
+   Si una fórmula no compila se enseña su fuente marcada en rojo en lugar
+   de tumbar la página entera: el validador es quien tiene que impedir que
+   llegue hasta aquí, y así se ve dónde está sin perder el resto de la ficha. */
+function Formula({ latex, bloque }) {
+  const html = useMemo(() => {
+    try { return aMathML(latex, bloque); } catch (e) { return null; }
+  }, [latex, bloque]);
+  if (!html) return <code className="formulaRota" title="esta fórmula no compila">{latex}</code>;
+  return <span className={bloque ? "formulaBloque" : "formula"} dangerouslySetInnerHTML={{ __html: html }} />;
+}
+
+export function enLinea(texto) {
+  if (typeof texto !== "string") return texto;
+  if (!texto.includes("$")) return marcas(texto);
+  return partir(texto).map((t, i) =>
+    t.math ? <Formula latex={t.latex} bloque={t.bloque} key={i} /> : <React.Fragment key={i}>{marcas(t.texto)}</React.Fragment>
+  );
 }
 
 /* --- Parrafos --- */
@@ -71,20 +97,30 @@ function Rejilla({ cabecera, filas, modo = "tres", nota }) {
         {filas.map((f, i) => (
           <div className={`rejillaFila${modo === "dos" ? " dos" : ""}`} key={i}>
             <div className="rejillaNom">
-              {f.nom}
+              {enLinea(f.nom)}
               {f.sub && <span className="rejillaSub">{enLinea(f.sub)}</span>}
             </div>
             {f.cols.map((c, j) => (
               <div
                 key={j}
-                className={modo === "dos" ? "dato" : j === 0 ? "aumenta" : "disminuye"}
+                className={
+                  modo === "dos"
+                    ? `dato${tieneFormula(c) ? " conFormula" : ""}`
+                    : j === 0 ? "aumenta" : "disminuye"
+                }
                 style={
                   modo === "dos"
                     ? { fontSize: 15, display: "flex", alignItems: "center" }
                     : { textAlign: "right" }
                 }
               >
-                {c}
+                {/* El contenido va dentro de un solo span y no suelto: la
+                    celda es un contenedor flex, y ahí cada trozo de texto
+                    entre fórmulas se convierte en su propio ítem y pierde
+                    los espacios de los extremos — «de $y$ sobre» quedaba
+                    como «de𝑦sobre». Con un único hijo el espaciado vuelve
+                    a ser el normal de un párrafo. */}
+                <span>{enLinea(c)}</span>
               </div>
             ))}
           </div>
@@ -116,12 +152,17 @@ function Pasos({ items }) {
 function Tabla({ cabecera, filas, nota }) {
   return (
     <>
+      {/* La tabla se desplaza dentro de su propia caja. Sin esto, una con
+          muchas columnas —un cuadro de amortización, por ejemplo— empuja el
+          ancho del documento entero y el móvil acaba con scroll lateral en
+          toda la página, no solo en la tabla. */}
+      <div className="tablaCaja">
       <table className="tabla">
         {cabecera && (
           <thead>
             <tr>
               {cabecera.map((c, i) => (
-                <th key={i}>{c}</th>
+                <th key={i}>{enLinea(c)}</th>
               ))}
             </tr>
           </thead>
@@ -142,6 +183,7 @@ function Tabla({ cabecera, filas, nota }) {
           })}
         </tbody>
       </table>
+      </div>
       {nota && <p className="notaTabla">{enLinea(nota)}</p>}
     </>
   );

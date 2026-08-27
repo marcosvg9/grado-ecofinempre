@@ -49,7 +49,7 @@ export default {
             { nom: "Participación tras una ampliación", sub: "La dilución del socio que no acude.", cols: ["% final = % inicial × (Pre-money / Post-money)"] },
             { nom: "Valoración post-money", sub: "La referencia de cualquier ronda.", cols: ["Post = Pre + Importe invertido"] },
             { nom: "Porcentaje del nuevo inversor", sub: "Lo que compra su aportación.", cols: ["% nuevo = Inversión / Post-money"] },
-            { nom: "Dilución acumulada", sub: "Tras varias rondas sucesivas.", cols: ["% final = Π (Preᵢ / Postᵢ)"] },
+            { nom: "Dilución acumulada", sub: "Tras varias rondas sucesivas.", cols: ["$\\%$ final $= \\prod_i \\dfrac{\\text{Pre}_i}{\\text{Post}_i}$"] },
             { nom: "Coste de agencia", sub: "La pérdida de valor por intereses no alineados.", cols: ["CA = V(gestión óptima) − V(gestión real) + coste de los mecanismos de control"] },
             { nom: "Umbrales de control", sub: "En la ley de sociedades de capital.", cols: ["Mayoría simple · 2/3 para acuerdos reforzados · 25 % para minoría cualificada"] },
           ],
@@ -153,7 +153,7 @@ export default {
           tipo: "preguntas",
           items: [
             { q: "Un fundador con el 100 % capta una ronda de 1 M€ a valoración previa de 4 M€. ¿Qué porcentaje conserva?", a: "El 80 %. La valoración posterior es de 5 M€ y el inversor adquiere 1/5 del capital. Su participación vale ahora 4 M€, lo mismo que antes de la ronda." },
-            { q: "Tres rondas que diluyen un 25 % cada una. ¿Qué queda del 100 % inicial?", a: "0,75³ = 42,2 %. La dilución es multiplicativa, no aditiva: no se pierde el 75 % sino el 57,8 %." },
+            { q: "Tres rondas que diluyen un 25 % cada una. ¿Qué queda del 100 % inicial?", a: "$0{,}75^3 = 42{,}2\\ \\%$. La dilución es multiplicativa, no aditiva: no se pierde el 75 % sino el 57,8 %." },
             { q: "¿Protege siempre la sociedad limitada el patrimonio personal del socio?", a: "No. Los avales personales exigidos por las entidades financieras, la responsabilidad del administrador frente a Hacienda y la Seguridad Social y la derivada de no promover la disolución son excepciones frecuentes, especialmente en empresas pequeñas." },
             { q: "¿Cuál es el problema de agencia típico de una pyme española?", a: "No el de propiedad dispersa frente a gestión profesional, porque suelen coincidir. Es el conflicto entre socio mayoritario y minoritario, o el de la empresa familiar en sucesión entre socios que trabajan y socios que solo esperan dividendos." },
             { q: "¿En qué sector del SEC 2010 se clasifica un autónomo?", a: "En hogares (S.14), no en sociedades no financieras, porque no puede separarse su patrimonio personal del empresarial. Su excedente se registra como renta mixta (B.3), que retribuye conjuntamente su trabajo y su capital." },

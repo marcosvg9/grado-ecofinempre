@@ -42,7 +42,7 @@ export default {
             { nom: "Otros impuestos sobre la producción", sub: "Coste fijo de estar en el mercado.", cols: ["D.29 — IBI de locales, IAE, licencias, cánones"] },
             { nom: "Las subvenciones gemelas", sub: "Mismo criterio, signo contrario.", cols: ["D.31 a los productos · D.39 a la producción"] },
             { nom: "Dónde vive cada uno", sub: "La consecuencia que más se confunde.", cols: ["D.21 fuera de la explotación · D.29 dentro"] },
-            { nom: "El puente de valoración", sub: "Por eso el D.21 no está en ninguna cuenta de explotación.", cols: ["PIB pm = Σ B.1g pb + D.21 − D.31"] },
+            { nom: "El puente de valoración", sub: "Por eso el D.21 no está en ninguna cuenta de explotación.", cols: ["PIB pm $= \\sum$ B.1g pb $+$ D.21 $-$ D.31"] },
             { nom: "Derechos de emisión", sub: "No es la venta de un activo.", cols: ["D.29, devengado al emitir, no al cobrar"] },
           ],
         },

@@ -38,12 +38,12 @@ export default {
             { nom: "Tasa de paro", sub: "Depende de quién se cuenta como activo.", cols: ["u = Parados / Activos"] },
             { nom: "Tasa de actividad", sub: "Cuánta gente participa.", cols: ["Activos / Población de 16 y más"] },
             { nom: "Tasa de empleo", sub: "La más robusta: no depende de la frontera parado-inactivo.", cols: ["Ocupados / Población de 16 y más"] },
-            { nom: "Tasa natural o NAIRU", sub: "Friccional más estructural.", cols: ["u_n: la compatible con inflación estable"] },
-            { nom: "Curva de Phillips con expectativas", sub: "La sorpresa es lo que mueve el paro.", cols: ["π = π^e − α(u − u_n)"] },
-            { nom: "Expectativas adaptativas", sub: "Producen inflación acelerada, no solo alta.", cols: ["π^e_t = π_{t−1}"] },
-            { nom: "Curva de largo plazo", sub: "No hay menú permanente que elegir.", cols: ["π = π^e ⟹ u = u_n , vertical"] },
+            { nom: "Tasa natural o NAIRU", sub: "Friccional más estructural.", cols: ["$u_n$: la compatible con inflación estable"] },
+            { nom: "Curva de Phillips con expectativas", sub: "La sorpresa es lo que mueve el paro.", cols: ["$\\pi = \\pi^e - \\alpha(u - u_n)$"] },
+            { nom: "Expectativas adaptativas", sub: "Producen inflación acelerada, no solo alta.", cols: ["$\\pi^e_t = \\pi_{t-1}$"] },
+            { nom: "Curva de largo plazo", sub: "No hay menú permanente que elegir.", cols: ["$\\pi = \\pi^e \\Rightarrow u = u_n$, vertical"] },
             { nom: "Tasa de sacrificio", sub: "Lo que cuesta desinflar en empleo.", cols: ["Puntos de paro-año por punto de inflación"] },
-            { nom: "Histéresis", sub: "Borra la frontera entre cíclico y estructural.", cols: ["u alto persistente ⟹ ↑ u_n"] },
+            { nom: "Histéresis", sub: "Borra la frontera entre cíclico y estructural.", cols: ["$u$ alto persistente $\\Rightarrow$ ↑ $u_n$"] },
           ],
         },
       ],
@@ -69,7 +69,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "**Ahora la aceleración.** Sea una economía con tasa natural del **8 %** y una curva **π = π^e − 0,5·(u − u_n)**, con expectativas que simplemente repiten la inflación del año anterior. El gobierno decide mantener el paro en el **5 %**, tres puntos por debajo de la natural, y sostenerlo.",
+            "**Ahora la aceleración.** Sea una economía con tasa natural del **8 %** y una curva $\\pi = \\pi^e - 0{,}5(u - u_n)$, con expectativas que simplemente repiten la inflación del año anterior. El gobierno decide mantener el paro en el **5 %**, tres puntos por debajo de la natural, y sostenerlo.",
           ],
         },
         {
@@ -173,6 +173,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "La tasa de paro baja del 10,87 % al 8,89 % sin que se haya creado un solo empleo. ¿Cómo es posible?",
+              opciones: [
+                "Es imposible: la tasa solo baja si aumenta la ocupación",
+                "Por el efecto desánimo: quien deja de buscar sale de la población activa y desaparece del denominador",
+                "Porque han bajado los salarios y eso reduce el paro medido",
+                "Porque el paro registrado y el de la EPA se han acercado",
+              ],
+              correcta: 1,
+              porque: [
+                "La tasa es un cociente y puede bajar por el numerador o por el denominador. Suponer que solo se mueve por creación de empleo es leer mal la definición.",
+                "La tasa se calcula sobre los activos, y quien abandona la búsqueda deja de contar como parado y también como activo. Por eso conviene mirar la tasa de empleo junto a la de paro.",
+                "Los salarios no entran en el cálculo de la tasa de paro, que es puramente un recuento de personas.",
+                "Son dos estadísticas independientes con metodologías distintas; que converjan no altera el cálculo de ninguna de las dos.",
+              ],
+            },
+            {
+              q: "Un gobierno mantiene el paro tres puntos por debajo de la tasa natural durante años. ¿Qué ocurre con la inflación?",
+              opciones: [
+                "Se instala en un nivel más alto pero estable",
+                "Crece indefinidamente: cada periodo añade 1,5 puntos más",
+                "Sube al principio y vuelve sola a su nivel anterior",
+                "No cambia si el banco central mantiene su objetivo",
+              ],
+              correcta: 1,
+              porque: [
+                "Sería estable si las expectativas no se ajustaran. Como sí lo hacen —repiten la inflación del año anterior—, la curva de corto plazo se desplaza hacia arriba cada periodo.",
+                "Con $\\pi = \\pi^e - 0{,}5(u - u_n)$ y expectativas adaptativas, sostener la brecha suma el mismo incremento una y otra vez. No hay menú estable entre paro e inflación.",
+                "Volvería sola si el gobierno dejara que el paro regresara a su tasa natural. Mantenerlo por debajo es precisamente lo que impide ese retorno.",
+                "El objetivo declarado no basta: si la política efectiva sostiene el paro bajo, las expectativas siguen a la inflación observada, no al anuncio.",
+              ],
+            },
+            {
+              q: "¿Es la tasa natural de paro un dato que pueda consultarse?",
+              opciones: [
+                "Sí: la publican los institutos estadísticos",
+                "No: se estima con incertidumbre considerable y métodos que dan resultados distintos",
+                "Sí, y es estable en el tiempo para cada país",
+                "No, pero puede deducirse del paro observado en los años de expansión",
+              ],
+              correcta: 1,
+              porque: [
+                "No es una magnitud observable como la ocupación o los precios: es un concepto teórico que hay que inferir de los datos.",
+                "Y además puede moverse con las instituciones laborales y con la productividad, así que una estimación de hace diez años no sirve hoy sin revisarla.",
+                "Ni es estable ni es observable. La histéresis implica que un paro cíclico prolongado puede elevarla.",
+                "El paro de los años buenos mezcla componente cíclico y estructural, así que tomarlo como referencia arrastra el ciclo dentro de la estimación.",
+              ],
+            },
+            {
+              q: "¿Por qué se dice que la frontera entre paro cíclico y estructural no es fija?",
+              opciones: [
+                "Porque depende de qué definición estadística se adopte",
+                "Por la histéresis: un paro cíclico prolongado deteriora la empleabilidad y puede elevar la propia tasa natural",
+                "Porque el paro friccional se cuenta unas veces en un grupo y otras en otro",
+                "Porque los datos se revisan con frecuencia",
+              ],
+              correcta: 1,
+              porque: [
+                "La definición influye en la medición, pero el fenómeno es real e independiente de cómo se cuente: la duración del paro cambia lo que una persona puede hacer.",
+                "Y de ahí una consecuencia de política importante: dejar que el paro cíclico se prolongue no es neutral, porque lo vuelve estructural y ya no responde a la demanda.",
+                "El paro friccional es una categoría estable dentro del estructural; no es donde está la ambigüedad.",
+                "Las revisiones estadísticas afectan a las cifras, no a que una categoría pueda convertirse en la otra.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

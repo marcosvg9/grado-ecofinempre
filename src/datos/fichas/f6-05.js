@@ -48,9 +48,9 @@ export default {
           filas: [
             { nom: "Coste estándar de la producción real", sub: "El patrón de comparación correcto.", cols: ["CE = Q producida × consumo estándar × precio estándar"] },
             { nom: "Desviación total", sub: "Se descompone en las dos siguientes.", cols: ["DT = Coste real − CE"] },
-            { nom: "Desviación en precio", sub: "Valorada a la cantidad real.", cols: ["Dp = (pr − pe) × Qr"] },
-            { nom: "Desviación en cantidad", sub: "Valorada al precio estándar.", cols: ["Dc = (Qr − Qe) × pe"] },
-            { nom: "Comprobación", sub: "La suma debe cerrar exactamente.", cols: ["Dp + Dc = DT"] },
+            { nom: "Desviación en precio", sub: "Valorada a la cantidad real.", cols: ["$D_p = (p_r - p_e)\\,Q_r$"] },
+            { nom: "Desviación en cantidad", sub: "Valorada al precio estándar.", cols: ["$D_c = (Q_r - Q_e)\\,p_e$"] },
+            { nom: "Comprobación", sub: "La suma debe cerrar exactamente.", cols: ["$D_p + D_c = \\mathrm{DT}$"] },
             { nom: "Desviación en volumen de indirectos", sub: "Mide capacidad ociosa, no eficiencia.", cols: ["Dv = (Actividad presupuestada − Actividad real) × tasa fija"] },
           ],
           nota: "La asimetría de la valoración —el precio a cantidades reales, la cantidad a precios estándar— deja fuera un término cruzado, (pr − pe) × (Qr − Qe), que en el modelo de dos desviaciones queda absorbido dentro de la desviación de precio. Algunos textos lo aíslan como tercera desviación mixta.",

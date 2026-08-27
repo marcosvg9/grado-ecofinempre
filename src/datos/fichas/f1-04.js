@@ -34,15 +34,15 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Excedente del consumidor", sub: "Lo que habría pagado menos lo que paga.", cols: ["EC = ∫ (P_demanda − P*) dQ"] },
-            { nom: "Excedente del productor", sub: "Lo que cobra menos lo mínimo que aceptaría.", cols: ["EP = ∫ (P* − P_oferta) dQ"] },
-            { nom: "Con curvas lineales", sub: "Basta el área de un triángulo.", cols: ["EC = ½ · (P_máx − P*) · Q*"] },
+            { nom: "Excedente del consumidor", sub: "Lo que habría pagado menos lo que paga.", cols: ["$\\mathrm{EC} = \\int (P_{\\text{demanda}} - P^*)\\,dQ$"] },
+            { nom: "Excedente del productor", sub: "Lo que cobra menos lo mínimo que aceptaría.", cols: ["$\\mathrm{EP} = \\int (P^* - P_{\\text{oferta}})\\,dQ$"] },
+            { nom: "Con curvas lineales", sub: "Basta el área de un triángulo.", cols: ["$\\mathrm{EC} = \\tfrac12 (P_{\\max} - P^*)\\,Q^*$"] },
             { nom: "Excedente total", sub: "Se maximiza en el equilibrio competitivo.", cols: ["ET = EC + EP (+ recaudación)"] },
             { nom: "Eficiencia de Pareto", sub: "Criterio mínimo: no descarta ninguna desigualdad.", cols: ["No cabe mejorar a nadie sin empeorar a otro"] },
-            { nom: "Criterio de Kaldor-Hicks", sub: "La compensación ha de ser posible, no efectiva.", cols: ["ΔET > 0 ⟹ mejora potencial"] },
-            { nom: "Primer teorema del bienestar", sub: "Exige competencia, información y ausencia de externalidades.", cols: ["Equilibrio competitivo ⟹ óptimo de Pareto"] },
-            { nom: "Segundo teorema del bienestar", sub: "Separa eficiencia de distribución: la base de la política redistributiva.", cols: ["Redistribuir dotaciones + mercado ⟹ cualquier óptimo"] },
-            { nom: "Pérdida irrecuperable", sub: "El único componente que es argumento de eficiencia.", cols: ["PIM = ET_competitivo − ET_con la medida"] },
+            { nom: "Criterio de Kaldor-Hicks", sub: "La compensación ha de ser posible, no efectiva.", cols: ["$\\Delta \\mathrm{ET} > 0 \\Rightarrow$ mejora potencial"] },
+            { nom: "Primer teorema del bienestar", sub: "Exige competencia, información y ausencia de externalidades.", cols: ["Equilibrio competitivo $\\Rightarrow$ óptimo de Pareto"] },
+            { nom: "Segundo teorema del bienestar", sub: "Separa eficiencia de distribución: la base de la política redistributiva.", cols: ["Redistribuir dotaciones $+$ mercado $\\Rightarrow$ cualquier óptimo"] },
+            { nom: "Pérdida irrecuperable", sub: "El único componente que es argumento de eficiencia.", cols: ["$\\mathrm{PIM} = \\mathrm{ET}_{\\text{competitivo}} - \\mathrm{ET}_{\\text{con la medida}}$"] },
           ],
         },
       ],
@@ -53,7 +53,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "Mismo mercado de las dos fichas anteriores: **Q_d = 100 − 2P** y **Q_s = −20 + 3P**, con equilibrio en P = 24 y Q = 52. La demanda corta el eje de precios en 50 —nadie pagaría más— y la oferta en 6,67, que es el coste de la primera unidad.",
+            "Mismo mercado de las dos fichas anteriores: $Q_d = 100 - 2P$ y $Q_s = -20 + 3P$, con equilibrio en $P = 24$ y $Q = 52$. La demanda corta el eje de precios en 50 —nadie pagaría más— y la oferta en 6,67, que es el coste de la primera unidad.",
           ],
         },
         {
@@ -169,6 +169,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un impuesto reduce el excedente privado en 245 y el Estado recauda 230. ¿Cuál es el coste de eficiencia?",
+              opciones: [
+                "245, que es lo que pierden consumidores y productores",
+                "15: lo que desaparece y no aparece en ninguna otra parte",
+                "475, sumando la pérdida privada y la recaudación",
+                "230, que es lo que se transfiere al sector público",
+              ],
+              correcta: 1,
+              porque: [
+                "De esos 245, la mayor parte no se ha perdido: ha cambiado de manos. Contarlos todos como coste infla el precio de cualquier intervención y es el error de cuantificación más común de este análisis.",
+                "La transferencia y la pérdida son cosas distintas. Los 230 están en la caja del Estado y siguen existiendo; solo los 15 restantes son intercambios que ya no ocurren y que no benefician a nadie.",
+                "Sumar las dos magnitudes las cuenta doble: la recaudación es parte de lo que los privados dejan de tener, no algo que se pierda además de ello.",
+                "Justamente la recaudación es lo único que con seguridad no se ha destruido. Llamar coste de eficiencia a una transferencia equivale a decir que recaudar destruye valor por el mero hecho de recaudar.",
+              ],
+            },
+            {
+              q: "¿Puede una asignación ser eficiente en el sentido de Pareto y a la vez profundamente desigual?",
+              opciones: [
+                "No: una desigualdad extrema siempre puede mejorarse redistribuyendo",
+                "Sí: la eficiencia descarta desperdicios, no ordena repartos",
+                "No, porque la utilidad marginal decreciente lo impide",
+                "Sí, pero solo si hay externalidades o información asimétrica",
+              ],
+              correcta: 1,
+              porque: [
+                "Redistribuir mejora a unos empeorando a otros, que es exactamente lo que el criterio de Pareto no considera una mejora. Puede ser deseable por otras razones, pero no por eficiencia.",
+                "Una asignación en la que uno lo tiene todo puede ser eficiente, porque no cabe mejorar a nadie sin empeorar a otro. Todo criterio distributivo hay que añadirlo aparte y declararlo.",
+                "La utilidad marginal decreciente sugiere que redistribuir aumentaría la utilidad total, pero eso ya es un juicio agregado que compara personas: no es una conclusión de eficiencia.",
+                "Los fallos de mercado impiden alcanzar la eficiencia; no son lo que la hace compatible con la desigualdad. Sin ningún fallo, el resultado eficiente puede ser desigualísimo.",
+              ],
+            },
+            {
+              q: "Un informe declara una reforma «eficiente» según Kaldor-Hicks. ¿Qué exige exactamente ese criterio?",
+              opciones: [
+                "Que los ganadores compensen efectivamente a los perdedores",
+                "Que la ganancia sea suficiente para compensar, aunque no se compense",
+                "Que nadie quede peor que antes de la reforma",
+                "Que la ganancia agregada supere el coste de administrar la medida",
+              ],
+              correcta: 1,
+              porque: [
+                "Eso sería el criterio de Pareto aplicado tras la compensación, que es mucho más exigente. Kaldor-Hicks se conforma con la posibilidad, y por eso resulta utilizable donde Pareto no dice nada.",
+                "Solo exige que la compensación sea posible. Si no se articula, hay perdedores reales de una medida declarada eficiente, y su oposición no es irracional: confundir mejora potencial con mejora efectiva es lo que separa un buen informe de uno tramposo.",
+                "Eso es el criterio de Pareto. Bajo él casi ninguna reforma real sería aprobable, porque casi todas tienen algún perjudicado.",
+                "Los costes administrativos son un detalle práctico ajeno al criterio. Kaldor-Hicks habla de la relación entre lo que ganan unos y lo que pierden otros.",
+              ],
+            },
+            {
+              q: "¿Qué supuesto oculto tiene el cálculo estándar de la pérdida de eficiencia bajo un tope de precios?",
+              opciones: [
+                "Que la oferta es perfectamente inelástica a corto plazo",
+                "Que el bien acaba en manos de quien más lo valora",
+                "Que el tope se mantiene indefinidamente",
+                "Que no aparece mercado informal",
+              ],
+              correcta: 1,
+              porque: [
+                "La elasticidad de la oferta entra en el cálculo de forma explícita, no como supuesto oculto: se elija la que se elija, el resultado la incorpora.",
+                "Se llama racionamiento eficiente y casi nunca se cumple. Con colas, sorteos o contactos el bien acaba repartido por otros criterios, el excedente real es menor y la pérdida mayor: la cifra publicada suele ser un techo optimista.",
+                "La duración afecta a cuánto se acumula el efecto, pero no al reparto del bien entre quienes lo demandan, que es donde está el supuesto silencioso.",
+                "Un mercado informal es una de las formas en que falla el racionamiento eficiente, pero no es el supuesto: el supuesto es más general y lo abarca.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

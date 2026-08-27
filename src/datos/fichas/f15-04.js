@@ -38,10 +38,10 @@ export default {
           filas: [
             { nom: "Impulso (AO)", sub: "Afecta a un solo periodo.", cols: ["Perfil 1, 0, 0, 0, … · huelga de un día, error de registro"] },
             { nom: "Escalón (LS)", sub: "Desplaza el nivel para siempre.", cols: ["Perfil 1, 1, 1, 1, … · cierre de planta, cambio de perímetro"] },
-            { nom: "Cambio transitorio (TC)", sub: "Se absorbe gradualmente.", cols: ["Perfil 1, α, α², α³, … con α = 0,7 por convención"] },
+            { nom: "Cambio transitorio (TC)", sub: "Se absorbe gradualmente.", cols: ["Perfil $1, \\alpha, \\alpha^2, \\alpha^3, \\ldots$ con $\\alpha = 0{,}7$ por convención"] },
             { nom: "Atípico estacional (SO)", sub: "Menos frecuente, más traicionero.", cols: ["Cambia el patrón estacional de un periodo concreto"] },
             { nom: "Vida del cambio transitorio", sub: "Cuánto tarda en desvanecerse.", cols: ["Bajo el 10 % del impacto inicial en t+7"] },
-            { nom: "Efecto acumulado del TC", sub: "Suma geométrica.", cols: ["1 / (1 − α) = 3,33 veces el impacto inicial"] },
+            { nom: "Efecto acumulado del TC", sub: "Suma geométrica.", cols: ["1 / (1 − $\\alpha$) = 3,33 veces el impacto inicial"] },
             { nom: "Detección automática", sub: "Cómo los propone el programa.", cols: ["Estadístico t frente a un valor crítico según longitud de serie"] },
             { nom: "Zona de indistinción", sub: "Dónde falla el contraste.", cols: ["Al final de la serie, AO y LS no se distinguen"] },
             { nom: "Por qué importa retirarlos", sub: "El daño concreto que evitan.", cols: ["Un atípico sin tratar contamina el factor estacional de todos los años"] },
@@ -178,8 +178,8 @@ export default {
               a: "Porque los factores estacionales se estiman promediando cada periodo a lo largo de los años, y un promedio es sensible a los valores extremos. Un dato anómalo de un mayo concreto contamina el factor de mayo para todos los años de la serie, convirtiendo un episodio irrepetible en una característica permanente del calendario.",
             },
             {
-              q: "Un cambio transitorio con α = 0,7 tiene un impacto inicial de 10. ¿Cuánto queda en t+3 y cuál es su efecto acumulado?",
-              a: "En t+3 queda 10 · 0,7³ = 3,43, es decir un 34,3 % del impacto inicial; cae por debajo del 10 % en t+7. El efecto acumulado es la suma geométrica 1/(1 − 0,7) = 3,33 veces el impacto inicial, o sea 33,3. El escalón, en cambio, acumula sin límite: por eso elegir entre ambos no es afinar un decimal.",
+              q: "Un cambio transitorio con $\\alpha$ = 0,7 tiene un impacto inicial de 10. ¿Cuánto queda en t+3 y cuál es su efecto acumulado?",
+              a: "En $t+3$ queda $10 \\times 0{,}7^3 = 3{,}43$, es decir un 34,3 % del impacto inicial; cae por debajo del 10 % en t+7. El efecto acumulado es la suma geométrica 1/(1 − 0,7) = 3,33 veces el impacto inicial, o sea 33,3. El escalón, en cambio, acumula sin límite: por eso elegir entre ambos no es afinar un decimal.",
             },
             {
               q: "¿Por qué es tan difícil distinguir un impulso de un escalón al final de la serie?",

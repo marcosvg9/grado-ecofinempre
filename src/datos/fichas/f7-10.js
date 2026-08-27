@@ -35,9 +35,9 @@ export default {
           filas: [
             { nom: "Sinergia total", sub: "Lo que la combinación crea sobre la suma de las partes.", cols: ["S = V(A+B) − V(A) − V(B)"] },
             { nom: "Prima pagada", sub: "El exceso sobre el valor autónomo del objetivo.", cols: ["Prima = Precio − V(B)"] },
-            { nom: "Valor creado para el comprador", sub: "La única cifra que decide si la operación tiene sentido.", cols: ["VAN_A = S − Prima"] },
-            { nom: "Precio máximo racional", sub: "Por encima, se destruye valor.", cols: ["P_max = V(B) + S"] },
-            { nom: "Precio efectivo en pago con acciones", sub: "Crece con las sinergias: hay que resolverlo simultáneamente.", cols: ["P_efectivo = n_nuevas × V(A+B) / (n_A + n_nuevas)"] },
+            { nom: "Valor creado para el comprador", sub: "La única cifra que decide si la operación tiene sentido.", cols: ["$\\mathrm{VAN}_A = S - \\text{Prima}$"] },
+            { nom: "Precio máximo racional", sub: "Por encima, se destruye valor.", cols: ["$P_{\\max} = V(B) + S$"] },
+            { nom: "Precio efectivo en pago con acciones", sub: "Crece con las sinergias: hay que resolverlo simultáneamente.", cols: ["$P_{\\text{efectivo}} = \\dfrac{n_{\\text{nuevas}}\\,V(A{+}B)}{n_A + n_{\\text{nuevas}}}$"] },
             { nom: "Fondo de comercio generado", sub: "El rastro contable de la ficha 6.10.", cols: ["FC = Precio − % × PN de B a valor razonable"] },
           ],
           nota: "El **precio efectivo en pago con acciones** es la trampa técnica de esta ficha. Si se emiten acciones por un valor nominal de 240 millones y la operación crea sinergias, esas acciones valen más una vez anunciada la fusión, y el vendedor recibe más de lo que la cifra anunciada sugiere.",

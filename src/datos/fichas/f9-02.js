@@ -45,7 +45,7 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Índice de Herfindahl", sub: "La medida estándar de concentración.", cols: ["HHI = Σ (cuota de mercado en %)²"] },
+            { nom: "Índice de Herfindahl", sub: "La medida estándar de concentración.", cols: ["$\\mathrm{HHI} = \\sum (\\text{cuota de mercado en \\%})^2$"] },
             { nom: "Ratio de concentración", sub: "Más simple y menos informativo.", cols: ["CR4 = suma de las cuatro mayores cuotas"] },
             { nom: "Margen precio-coste (Lerner)", sub: "La medida directa de poder de mercado.", cols: ["L = (P − CMg) / P"] },
             { nom: "Dependencia de un cliente", sub: "Indicador operativo de poder de negociación.", cols: ["Concentración = ventas al mayor cliente / ventas totales"] },
@@ -67,7 +67,7 @@ export default {
         },
         {
           tipo: "tabla",
-          cabecera: ["Sector A: concentrado", "Cuota", "Cuota²"],
+          cabecera: ["Sector A: concentrado", "Cuota", "$\\text{Cuota}^2$"],
           filas: [
             ["Empresa 1", "30 %", "900"],
             ["Empresa 2", "25 %", "625"],
@@ -79,7 +79,7 @@ export default {
         },
         {
           tipo: "tabla",
-          cabecera: ["Sector B: fragmentado", "Cuota", "Cuota²"],
+          cabecera: ["Sector B: fragmentado", "Cuota", "$\\text{Cuota}^2$"],
           filas: [
             ["20 empresas iguales", "5 % cada una", "25 cada una"],
             { celdas: ["HHI", "CR4 = 20 %", "500"], clase: "total" },

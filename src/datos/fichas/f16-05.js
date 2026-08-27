@@ -37,7 +37,7 @@ export default {
           modo: "dos",
           filas: [
             { nom: "El problema de recuento", sub: "Por qué no se puede estimar.", cols: ["n(n+1)/2 parámetros frente a unas decenas de residuos"] },
-            { nom: "Singularidad", sub: "El límite duro.", cols: ["Con T ≤ n la matriz muestral no es invertible"] },
+            { nom: "Singularidad", sub: "El límite duro.", cols: ["Con $T \\leq n$ la matriz muestral no es invertible"] },
             { nom: "Identidad", sub: "No suponer nada.", cols: ["Equivale a la proyección ortogonal"] },
             { nom: "Diagonal por varianzas", sub: "Información real disponible.", cols: ["Varianza de los residuos de cada modelo"] },
             { nom: "Diagonal estructural", sub: "No exige estimar: solo contar.", cols: ["Varianza proporcional a las hojas que agrega la serie"] },
@@ -127,7 +127,7 @@ export default {
         {
           tipo: "acordeon",
           items: [
-            { t: "Intentar estimar la matriz completa en una jerarquía grande", d: "Con n series hacen falta n(n+1)/2 parámetros y con T observaciones la matriz muestral es singular en cuanto T ≤ n. Con diez años mensuales el límite exacto son quince series. Por encima, la inversa que el método necesita sencillamente no existe, y el programa fallará o devolverá basura numérica." },
+            { t: "Intentar estimar la matriz completa en una jerarquía grande", d: "Con $n$ series hacen falta $n(n+1)/2$ parámetros y con $T$ observaciones la matriz muestral es singular en cuanto $T \\leq n$. Con diez años mensuales el límite exacto son quince series. Por encima, la inversa que el método necesita sencillamente no existe, y el programa fallará o devolverá basura numérica." },
             { t: "Usar MinT sin decir con qué aproximación de la matriz", d: "El rendimiento del método depende tanto de la aproximación como de la idea. Un MinT con matriz mal estimada puede ser peor que una proyección ortogonal que no supone nada. Comparar «MinT contra bottom-up» sin especificar la aproximación no significa gran cosa." },
             { t: "Suponer que más sofisticación es mejor", d: "La ganancia de refinar la matriz es real pero modesta, y la pérdida por refinarla mal puede ser grande. La disciplina correcta es empezar por la proyección ortogonal y exigir a cada alternativa que demuestre mejora fuera de muestra antes de adoptarla." },
             { t: "Olvidar qué se pierde al diagonalizar", d: "La diagonal recoge cuánto se equivoca cada previsión; las covarianzas recogen cómo se equivocan juntas, que es la información más valiosa. Diagonalizar equivale a creerse el árbol declarado y renuncia a la única vía disponible para descubrir que no describe la dependencia real." },

@@ -34,16 +34,16 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Función de producción", sub: "Rendimientos constantes a escala, decrecientes en cada factor.", cols: ["Y = A · K^α · L^(1−α)"] },
-            { nom: "En términos por trabajador", sub: "Toda la dinámica cabe en una variable.", cols: ["y = A · k^α"] },
-            { nom: "Acumulación de capital", sub: "Ahorro menos reposición.", cols: ["Δk = s·y − (δ + n + g)·k"] },
-            { nom: "Estado estacionario", sub: "El capital por trabajador deja de crecer.", cols: ["s·y = (δ + n + g)·k"] },
-            { nom: "Capital de equilibrio", sub: "Crece con el ahorro y cae con depreciación y demografía.", cols: ["k* = [s / (δ + n + g)]^(1/(1−α))"] },
-            { nom: "Efecto nivel frente a efecto tasa", sub: "La distinción central de la ficha.", cols: ["↑s ⟹ ↑nivel de y*, no ↑ tasa de crecimiento"] },
-            { nom: "Crecimiento sostenido", sub: "Solo el progreso técnico lo mantiene.", cols: ["g_y = g_A a largo plazo"] },
-            { nom: "Regla de oro", sub: "Maximiza el consumo, no la producción.", cols: ["s = α"] },
-            { nom: "Contabilidad del crecimiento", sub: "La PTF es un residuo: lo no explicado.", cols: ["g_Y = g_A + α·g_K + (1−α)·g_L"] },
-            { nom: "Convergencia condicional", sub: "Cada país hacia su propio estado estacionario.", cols: ["Menor k ⟹ mayor crecimiento, igual s, n, δ, A"] },
+            { nom: "Función de producción", sub: "Rendimientos constantes a escala, decrecientes en cada factor.", cols: ["$Y = A K^{\\alpha} L^{1-\\alpha}$"] },
+            { nom: "En términos por trabajador", sub: "Toda la dinámica cabe en una variable.", cols: ["$y = A k^{\\alpha}$"] },
+            { nom: "Acumulación de capital", sub: "Ahorro menos reposición.", cols: ["$\\Delta k = s y - (\\delta + n + g)k$"] },
+            { nom: "Estado estacionario", sub: "El capital por trabajador deja de crecer.", cols: ["s·y = ($\\delta$ + n + g)·k"] },
+            { nom: "Capital de equilibrio", sub: "Crece con el ahorro y cae con depreciación y demografía.", cols: ["$k^* = \\left[\\dfrac{s}{\\delta + n + g}\\right]^{1/(1-\\alpha)}$"] },
+            { nom: "Efecto nivel frente a efecto tasa", sub: "La distinción central de la ficha.", cols: ["↑$s \\Rightarrow$ ↑ nivel de $y^*$, no ↑ tasa de crecimiento"] },
+            { nom: "Crecimiento sostenido", sub: "Solo el progreso técnico lo mantiene.", cols: ["$g_y = g_A$ a largo plazo"] },
+            { nom: "Regla de oro", sub: "Maximiza el consumo, no la producción.", cols: ["s = $\\alpha$"] },
+            { nom: "Contabilidad del crecimiento", sub: "La PTF es un residuo: lo no explicado.", cols: ["$g_Y = g_A + \\alpha\\,g_K + (1-\\alpha)g_L$"] },
+            { nom: "Convergencia condicional", sub: "Cada país hacia su propio estado estacionario.", cols: ["Menor $k \\Rightarrow$ mayor crecimiento, igual $s$, $n$, $\\delta$, $A$"] },
           ],
         },
       ],
@@ -54,7 +54,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "Sea una economía con **α = 1/3**, tasa de ahorro **s = 0,25**, depreciación **δ = 5 %**, crecimiento de la población **n = 1 %** y progreso técnico **g = 2 %**. El capital por trabajador de equilibrio es k* = (0,25 / 0,08)^1,5 = **5,52**, y la producción por trabajador, y* = k*^(1/3) = **1,77**.",
+            "Sea una economía con $\\alpha = 1/3$, tasa de ahorro $s = 0{,}25$, depreciación $\\delta = 5\\ \\%$, crecimiento de la población $n = 1\\ \\%$ y progreso técnico $g = 2\\ \\%$. El capital por trabajador de equilibrio es $k^* = (0{,}25/0{,}08)^{1{,}5} = 5{,}52$, y la producción por trabajador, $y^* = (k^*)^{1/3} = 1{,}77$.",
           ],
         },
         {
@@ -99,7 +99,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "**Y la contabilidad del crecimiento, que es la herramienta aplicada.** Supongamos que en un periodo la producción creció un **3 %**, el capital un **4 %** y el empleo un **1 %**, con α = 1/3. La aportación del capital es un tercio del 4 %, es decir 1,33 puntos; la del trabajo, dos tercios del 1 %, es decir 0,67 puntos. Lo que queda, **1,0 punto, es la productividad total de los factores**.",
+            "**Y la contabilidad del crecimiento, que es la herramienta aplicada.** Supongamos que en un periodo la producción creció un **3 %**, el capital un **4 %** y el empleo un **1 %**, con $\\alpha$ = 1/3. La aportación del capital es un tercio del 4 %, es decir 1,33 puntos; la del trabajo, dos tercios del 1 %, es decir 0,67 puntos. Lo que queda, **1,0 punto, es la productividad total de los factores**.",
           ],
         },
         {
@@ -159,7 +159,7 @@ export default {
           lista: [
             "El **stock de capital** no se observa: se estima por el **método del inventario permanente**, acumulando inversiones pasadas y descontando depreciación con hipótesis sobre vidas útiles. Es una construcción, no una medición, y su nivel condiciona directamente el residuo calculado.",
             "El **insumo de trabajo** debería medirse en horas efectivas y ajustado por cualificación, no en número de ocupados. Usar personas en lugar de horas mezcla cambios de jornada con cambios de empleo, y no ajustar por capital humano traslada al residuo lo que en realidad es mejora educativa.",
-            "La **elasticidad α** suele aproximarse por la participación de las rentas del capital en el valor añadido, lo que supone competencia perfecta y remuneración de los factores según su productividad marginal. Los problemas de la ficha 2.09 con la renta mixta afectan directamente a ese cálculo.",
+            "La **elasticidad** $\\alpha$ suele aproximarse por la participación de las rentas del capital en el valor añadido, lo que supone competencia perfecta y remuneración de los factores según su productividad marginal. Los problemas de la ficha 2.09 con la renta mixta afectan directamente a ese cálculo.",
             "La **PTF** que publican los organismos estadísticos y de investigación es por tanto **un residuo de residuos**, sensible a los tres supuestos anteriores. Las revisiones metodológicas —como capitalizar la investigación y el desarrollo, que el SEC 2010 trata como inversión y no como gasto corriente— cambian el reparto entre capital y residuo.",
             "Y la **productividad por hora** frente a la **productividad por ocupado** dan lecturas distintas cuando cambia la jornada media o el peso del empleo a tiempo parcial. Para comparaciones internacionales, la magnitud pertinente es casi siempre la primera, y es la que enlaza con el coste laboral unitario de la ficha 10.09.",
           ],
@@ -176,13 +176,89 @@ export default {
           items: [
             { q: "¿Por qué el capital por trabajador deja de crecer en el modelo de Solow?", a: "Porque la inversión es proporcional a una producción con rendimientos decrecientes —una curva cóncava— mientras que la reposición es proporcional al capital —una recta—. Una curva cóncava y una recta acaban cortándose siempre, y en ese punto la acumulación neta es cero." },
             { q: "Un país duplica su tasa de ahorro. ¿Crece más deprisa a largo plazo?", a: "No. Su renta por trabajador sube un 41 % en el ejemplo, pero la tasa de crecimiento de largo plazo sigue siendo la del progreso técnico, el 2 %. Es un efecto nivel: durante la transición sí se crece más, y esa transición puede durar décadas, lo que induce a confundirlo con un efecto tasa." },
-            { q: "El PIB crece un 3 %, el capital un 4 % y el empleo un 1 %, con α = 1/3. ¿Cuánto aporta la PTF?", a: "Un punto porcentual, un tercio del crecimiento. El capital aporta (1/3)×4 = 1,33 puntos y el trabajo (2/3)×1 = 0,67. El resto es residuo, y conviene recordar que ahí dentro caben también los errores de medición de los otros dos factores." },
+            { q: "El PIB crece un 3 %, el capital un 4 % y el empleo un 1 %, con $\\alpha$ = 1/3. ¿Cuánto aporta la PTF?", a: "Un punto porcentual, un tercio del crecimiento. El capital aporta (1/3)×4 = 1,33 puntos y el trabajo (2/3)×1 = 0,67. El resto es residuo, y conviene recordar que ahí dentro caben también los errores de medición de los otros dos factores." },
             { q: "¿Predice el modelo que los países pobres alcanzarán a los ricos?", a: "Solo condicionalmente: si comparten ahorro, demografía, tecnología e instituciones, el más pobre crece más deprisa por tener mayor rendimiento marginal del capital. Sin esos parámetros comunes, cada país converge hacia su propio estado estacionario, y la evidencia respalda esta versión." },
             { q: "¿Por qué puede caer la productividad media sin que empeore ninguna empresa?", a: "Por composición: si crece el peso de sectores o empresas menos productivos, la media agregada baja aunque cada unidad mantenga su nivel. Por eso hay que descomponer entre efecto intrasectorial y efecto composición antes de interpretar cualquier variación de la productividad agregada." },
           ],
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un país duplica su tasa de ahorro. ¿Qué le ocurre a su crecimiento a largo plazo?",
+              opciones: [
+                "Se duplica también",
+                "No cambia: sube el nivel de renta por trabajador —un 41 % en el ejemplo— pero no la tasa",
+                "Aumenta, aunque menos que proporcionalmente",
+                "Cae, porque se consume menos",
+              ],
+              correcta: 1,
+              porque: [
+                "Es el error más caro del modelo de Solow. La tasa de crecimiento de largo plazo la fija el progreso técnico, no la propensión a ahorrar.",
+                "Distinguir efecto nivel de efecto tasa es lo que separa entender Solow de repetirlo. Más ahorro lleva a un estado estacionario más alto, y una vez allí se crece igual que antes.",
+                "No aumenta en absoluto a largo plazo: durante la transición sí se crece más deprisa, pero la transición termina.",
+                "Consumir menos hoy es el precio de un nivel de renta mayor mañana, pero no reduce el crecimiento de largo plazo.",
+              ],
+            },
+            {
+              q: "¿Por qué no puede acumularse capital indefinidamente para crecer?",
+              opciones: [
+                "Porque el ahorro tiene un límite físico",
+                "Porque el capital tiene rendimientos decrecientes y la reposición acaba absorbiendo toda la inversión",
+                "Porque la población crece y diluye el capital disponible",
+                "Porque la tecnología se vuelve obsoleta",
+              ],
+              correcta: 1,
+              porque: [
+                "El límite no está en cuánto se puede ahorrar sino en lo que rinde cada unidad adicional de capital.",
+                "La curva de inversión se aplana y la recta de reposición $(\\delta + n + g)k$ no. Donde se cortan, todo lo que se invierte se va en mantener el capital existente.",
+                "El crecimiento de la población forma parte de la recta de reposición, pero no es lo que agota el mecanismo: lo hacen los rendimientos decrecientes.",
+                "La obsolescencia está recogida en la depreciación, que también entra en la reposición.",
+              ],
+            },
+            {
+              q: "Un país pobre no converge hacia la renta de los ricos. ¿Contradice eso el modelo de Solow?",
+              opciones: [
+                "Sí: el modelo predice convergencia",
+                "No: predice convergencia condicional, cada país hacia su propio estado estacionario",
+                "Sí, salvo que el país tenga conflictos armados",
+                "No, porque el modelo no dice nada sobre países distintos",
+              ],
+              correcta: 1,
+              porque: [
+                "La convergencia absoluta solo se seguiría si todos los países compartieran ahorro, demografía, tecnología e instituciones, que es un supuesto muy fuerte.",
+                "Cada estado estacionario depende de esos parámetros. Un país con baja tasa de ahorro e instituciones frágiles converge hacia un nivel bajo, y eso es lo que el modelo predice.",
+                "Los conflictos son una de las causas posibles de un estado estacionario bajo, no una excepción al modelo.",
+                "Sí dice: la convergencia condicional es precisamente una predicción sobre comparaciones entre países.",
+              ],
+            },
+            {
+              q: "La productividad media de un país cae. ¿Significa que sus empresas han empeorado?",
+              opciones: [
+                "Sí: la productividad media mide cómo lo hacen las empresas",
+                "No necesariamente: puede deberse a la composición, si crece el peso de sectores menos productivos",
+                "Sí, salvo que haya cambiado la definición estadística",
+                "No, porque la productividad media no tiene relación con la de las empresas",
+              ],
+              correcta: 1,
+              porque: [
+                "La media agrega, y una media puede caer sin que ninguno de sus componentes lo haga: basta con que cambien los pesos.",
+                "Por eso se descompone entre efecto «dentro» —cada sector mejora o empeora— y efecto «entre» —el empleo se desplaza—. Sin esa separación no se sabe qué ha pasado.",
+                "Los cambios de definición son otra causa posible, pero la composición actúa aunque la definición no se toque.",
+                "Sí la tiene: es su media ponderada. Lo que ocurre es que también depende de las ponderaciones.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

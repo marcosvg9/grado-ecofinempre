@@ -33,13 +33,13 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Rentabilidad esperada de la cartera", sub: "Sí es aditiva.", cols: ["E(Rp) = Σ wᵢ × E(Rᵢ)"] },
-            { nom: "Varianza de la cartera", sub: "No es aditiva: entran las covarianzas.", cols: ["σp² = Σ Σ wᵢ wⱼ σᵢⱼ"] },
-            { nom: "Caso de dos activos", sub: "La expresión que conviene saber de memoria.", cols: ["σp² = w₁²σ₁² + w₂²σ₂² + 2w₁w₂ρσ₁σ₂"] },
-            { nom: "Covarianza y correlación", sub: "La correlación es la covarianza normalizada.", cols: ["σᵢⱼ = ρᵢⱼ × σᵢ × σⱼ"] },
-            { nom: "Cartera de mínima varianza (dos activos)", sub: "Se obtiene derivando e igualando a cero.", cols: ["w₁ = (σ₂² − ρσ₁σ₂) / (σ₁² + σ₂² − 2ρσ₁σ₂)"] },
-            { nom: "Límite de la diversificación", sub: "Con n activos de igual peso.", cols: ["σp² = σ²media/n + (1 − 1/n) × covmedia"] },
-            { nom: "Ratio de Sharpe", sub: "Rentabilidad por unidad de riesgo total.", cols: ["S = (E(Rp) − Rf) / σp"] },
+            { nom: "Rentabilidad esperada de la cartera", sub: "Sí es aditiva.", cols: ["$E(R_p) = \\sum_i w_i E(R_i)$"] },
+            { nom: "Varianza de la cartera", sub: "No es aditiva: entran las covarianzas.", cols: ["$\\sigma_p^2 = \\sum_i \\sum_j w_i w_j \\sigma_{ij}$"] },
+            { nom: "Caso de dos activos", sub: "La expresión que conviene saber de memoria.", cols: ["$\\sigma_p^2 = w_1^2\\sigma_1^2 + w_2^2\\sigma_2^2 + 2w_1w_2\\rho\\sigma_1\\sigma_2$"] },
+            { nom: "Covarianza y correlación", sub: "La correlación es la covarianza normalizada.", cols: ["$\\sigma_{ij} = \\rho_{ij}\\,\\sigma_i\\,\\sigma_j$"] },
+            { nom: "Cartera de mínima varianza (dos activos)", sub: "Se obtiene derivando e igualando a cero.", cols: ["$w_1 = \\dfrac{\\sigma_2^2 - \\rho\\sigma_1\\sigma_2}{\\sigma_1^2 + \\sigma_2^2 - 2\\rho\\sigma_1\\sigma_2}$"] },
+            { nom: "Límite de la diversificación", sub: "Con n activos de igual peso.", cols: ["$\\sigma_p^2 = \\dfrac{\\bar\\sigma^2}{n} + \\left(1 - \\dfrac{1}{n}\\right)\\overline{\\mathrm{cov}}$"] },
+            { nom: "Ratio de Sharpe", sub: "Rentabilidad por unidad de riesgo total.", cols: ["$S = \\dfrac{E(R_p) - R_f}{\\sigma_p}$"] },
           ],
         },
       ],
@@ -90,7 +90,7 @@ export default {
             { x: 15, y: 8, etiqueta: "solo A", guias: false },
             { x: 25, y: 12, etiqueta: "solo B", guias: false },
           ],
-          nota: "Las tres líneas unen exactamente los mismos dos activos, y lo único que cambia entre ellas es **la correlación**. Con ρ = +1 la combinación es una recta: mezclar no aporta nada, porque los dos activos son el mismo riesgo con distinta etiqueta. Con ρ = +0,2 la línea **se comba hacia la izquierda**, y ese abombamiento es literalmente la diversificación: hay carteras con **menos riesgo que el activo menos volátil de los dos** y más rentabilidad que él. La de mínima varianza tiene un 78,6 % en A, rinde un 8,86 % y su volatilidad es del 13,89 %, por debajo del 15 % de A en solitario. Con ρ = −1 el pliegue llega hasta el eje: existe una mezcla con **riesgo cero** que rinde un 9,5 %. La lección es que **el riesgo de una cartera no es el promedio de los riesgos que contiene**, y toda la gestión de carteras vive en esa diferencia.",
+          nota: "Las tres líneas unen exactamente los mismos dos activos, y lo único que cambia entre ellas es **la correlación**. Con $\\rho = +1$ la combinación es una recta: mezclar no aporta nada, porque los dos activos son el mismo riesgo con distinta etiqueta. Con $\\rho = +0{,}2$ la línea **se comba hacia la izquierda**, y ese abombamiento es literalmente la diversificación: hay carteras con **menos riesgo que el activo menos volátil de los dos** y más rentabilidad que él. La de mínima varianza tiene un 78,6 % en A, rinde un 8,86 % y su volatilidad es del 13,89 %, por debajo del 15 % de A en solitario. Con $\\rho = -1$ el pliegue llega hasta el eje: existe una mezcla con **riesgo cero** que rinde un 9,5 %. La lección es que **el riesgo de una cartera no es el promedio de los riesgos que contiene**, y toda la gestión de carteras vive en esa diferencia.",
         },
         {
           tipo: "tabla",
@@ -113,17 +113,17 @@ export default {
           tipo: "tabla",
           cabecera: ["Correlación", "Volatilidad de la cartera", "Comentario"],
           filas: [
-            ["ρ = +1", "20,00 %", "Media ponderada: no hay diversificación"],
-            ["ρ = +0,2", "15,81 %", "El caso del ejemplo"],
-            ["ρ = 0", "14,58 %", "Activos independientes"],
-            { celdas: ["ρ = −1", "5,00 %", "Cobertura casi perfecta"], clase: "total" },
+            ["$\\rho = +1$", "20,00 %", "Media ponderada: no hay diversificación"],
+            ["$\\rho = +0{,}2$", "15,81 %", "El caso del ejemplo"],
+            ["$\\rho = 0$", "14,58 %", "Activos independientes"],
+            { celdas: ["$\\rho = -1$", "5,00 %", "Cobertura casi perfecta"], clase: "total" },
           ],
           nota: "Con correlación perfecta positiva, la volatilidad es exactamente la media ponderada y la diversificación no aporta nada. **Cualquier correlación inferior a uno genera beneficio**, y el beneficio crece a medida que la correlación baja. Con correlación perfecta negativa se podría construir una cartera de riesgo nulo, algo que no existe en la práctica pero que marca el límite teórico.",
         },
         {
           tipo: "parrafos",
           items: [
-            "**El límite del número de activos.** Supongamos activos con volatilidad individual del 30 % y correlación media del 0,3 entre ellos. La varianza de una cartera equiponderada tiende a la covarianza media, que es 0,3 × 0,30² = 0,027, es decir una volatilidad de **16,4 %**.",
+            "**El límite del número de activos.** Supongamos activos con volatilidad individual del 30 % y correlación media del 0,3 entre ellos. La varianza de una cartera equiponderada tiende a la covarianza media, que es $0{,}3 \\times 0{,}30^2 = 0{,}027$, es decir una volatilidad de **16,4 %**.",
           ],
         },
         {
@@ -199,7 +199,7 @@ export default {
         {
           tipo: "preguntas",
           items: [
-            { q: "Dos activos con volatilidad del 20 % cada uno y correlación 0,5, al 50 %. ¿Volatilidad de la cartera?", a: "σ² = 0,25×0,04 + 0,25×0,04 + 2×0,25×0,5×0,04 = 0,03. σ = 17,3 %, por debajo del 20 % de cada uno por separado." },
+            { q: "Dos activos con volatilidad del 20 % cada uno y correlación 0,5, al 50 %. ¿Volatilidad de la cartera?", a: "$\\sigma^2 = 0{,}25 \\times 0{,}04 + 0{,}25 \\times 0{,}04 + 2 \\times 0{,}25 \\times 0{,}5 \\times 0{,}04 = 0{,}03$. $\\sigma = 17{,}3\\ \\%$, por debajo del 20 % de cada uno por separado." },
             { q: "¿Por qué un activo muy volátil puede reducir el riesgo de una cartera?", a: "Porque lo que aporta al riesgo total es su covarianza con el resto, no su varianza. Si se mueve en sentido contrario a la cartera existente, compensa oscilaciones y reduce la volatilidad conjunta pese a ser individualmente volátil." },
             { q: "¿Cuántos activos hacen falta para diversificar?", a: "Con unos veinte se elimina en torno al 94 % del riesgo diversificable, y a partir de ahí el beneficio marginal es pequeño. Pero el número importa menos que la estructura: veinte valores del mismo sector diversifican mucho menos que quince repartidos entre mercados." },
             { q: "¿Qué parte del riesgo remunera el mercado?", a: "Solo la sistemática. El riesgo específico se elimina sin coste diversificando, y nadie paga prima por asumir un riesgo evitable. Esa distinción es la base del CAPM de la ficha siguiente." },

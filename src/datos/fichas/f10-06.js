@@ -42,7 +42,7 @@ export default {
             { nom: "Utilización de la renta", sub: "Saldo: ahorro.", cols: ["S = RND − Consumo final"] },
             { nom: "Cuenta de capital", sub: "Saldo: capacidad o necesidad de financiación.", cols: ["CF = S + transferencias de capital − FBC"] },
             { nom: "Identidad de saldos sectoriales", sub: "Aritmética, no teoría.", cols: ["CF hogares + empresas + AAPP = saldo exterior"] },
-            { nom: "Criterio de sectorización", sub: "Decide qué es deuda pública y qué no.", cols: ["productor de mercado si ventas ≥ 50 % de los costes"] },
+            { nom: "Criterio de sectorización", sub: "Decide qué es deuda pública y qué no.", cols: ["productor de mercado si ventas $\\geq 50\\ \\%$ de los costes"] },
             { nom: "Flujo frente a saldo vivo", sub: "El error clásico: déficit no es deuda.", cols: ["déficit = flujo anual · deuda = saldo acumulado"] },
           ],
         },

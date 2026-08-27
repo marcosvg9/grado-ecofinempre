@@ -36,7 +36,7 @@ export default {
           filas: [
             { nom: "Identidad fundamental", sub: "Tres medidas del mismo flujo.", cols: ["Producción = Renta = Gasto"] },
             { nom: "Valor añadido", sub: "Evita la doble contabilización.", cols: ["VAB = Producción − Consumos intermedios"] },
-            { nom: "Del VAB al PIB", sub: "Los impuestos netos no son valor añadido de nadie.", cols: ["PIB = Σ VAB + Impuestos netos sobre productos"] },
+            { nom: "Del VAB al PIB", sub: "Los impuestos netos no son valor añadido de nadie.", cols: ["$\\mathrm{PIB} = \\sum \\mathrm{VAB} + \\text{Impuestos netos sobre productos}$"] },
             { nom: "Enfoque de la renta", sub: "Cómo se reparte lo producido.", cols: ["PIB = Remuneración + EBE + Renta mixta + Imp. netos"] },
             { nom: "Enfoque del gasto", sub: "Quién se lleva lo producido; es una definición.", cols: ["PIB = C + I + G + (X − M)"] },
             { nom: "Filtraciones", sub: "Renta que sale del circuito interno.", cols: ["S + T + M"] },
@@ -181,6 +181,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "En una economía cerrada sin sector público, el ahorro iguala a la inversión. ¿Qué se puede concluir de eso?",
+              opciones: [
+                "Que ahorrar más provoca más inversión",
+                "Nada causal: es una identidad contable, cierta por construcción",
+                "Que invertir más obliga a los hogares a ahorrar más",
+                "Que el sistema financiero funciona correctamente",
+              ],
+              correcta: 1,
+              porque: [
+                "Es la lectura causal de una igualdad forzosa, y de ahí salen media docena de errores macroeconómicos populares. Ahorrar más puede reducir la renta y dejar la inversión igual o menor.",
+                "Se han definido de modo que su diferencia sea nula, así que la igualdad no informa de ninguna dirección de influencia. Las identidades organizan la información y detectan incoherencias; explicar exige un modelo.",
+                "Es el mismo error con la flecha invertida. La identidad se cumple igual sea cual sea el mecanismo que la haga cumplirse, y por eso no puede señalar ninguno.",
+                "La identidad se cumple ex post incluso en una crisis bancaria. Que se cumpla no dice nada sobre si la canalización del ahorro hacia la inversión funciona bien o mal.",
+              ],
+            },
+            {
+              q: "¿Por qué el PIB no es la suma de la producción de todas las empresas?",
+              opciones: [
+                "Porque hay empresas que no declaran toda su producción",
+                "Porque se contaría varias veces el mismo valor: el trigo dentro de la harina y la harina dentro del pan",
+                "Porque las empresas públicas se contabilizan aparte",
+                "Porque la producción se mide a precios de mercado y el PIB a precios básicos",
+              ],
+              correcta: 1,
+              porque: [
+                "La economía sumergida es un problema de medición distinto y afecta a cualquier agregado. Aunque todo se declarase, la suma de producciones seguiría sin ser el PIB.",
+                "Por eso se suma el valor añadido —producción menos consumos intermedios— y su total coincide exactamente con el valor de los bienes finales, que es lo que se quiere medir.",
+                "Las empresas públicas están dentro del PIB como cualquier otro productor. Su tratamiento es una cuestión de sectorización, no de doble cómputo.",
+                "La diferencia entre precios de mercado y básicos existe y se corrige con los impuestos netos sobre productos, pero es un ajuste de valoración: no es lo que impide sumar producciones.",
+              ],
+            },
+            {
+              q: "Un plan promete reducir el déficit público sin que el sector privado ahorre menos ni cambie el saldo exterior. ¿Es posible?",
+              opciones: [
+                "Sí, si el crecimiento económico aumenta la recaudación",
+                "No: la suma de los tres saldos es cero por construcción",
+                "Sí, si el ajuste se hace por el lado del gasto y no de los ingresos",
+                "Depende de si el déficit es estructural o cíclico",
+              ],
+              correcta: 1,
+              porque: [
+                "El crecimiento cambia el tamaño de todas las magnitudes, pero la identidad sigue cumpliéndose sobre las nuevas cifras. Si el saldo público mejora, alguno de los otros dos tiene que empeorar.",
+                "$(S-I) + (T-G) + (M-X) = 0$. Si uno mejora, otro empeora; detectar la imposibilidad no requiere ningún modelo, solo aritmética.",
+                "Por dónde se haga el ajuste cambia sus efectos y su reparto, pero no libera de la identidad: el saldo público es el saldo público venga de donde venga.",
+                "La distinción estructural/cíclico sirve para juzgar la política, no para escapar de una identidad contable que se cumple sobre los saldos observados.",
+              ],
+            },
+            {
+              q: "El INE publica que las tres estimaciones del PIB —producción, renta y gasto— difieren entre sí. ¿Qué indica eso?",
+              opciones: [
+                "Que hay un error en alguna de las tres y hay que corregirlo",
+                "Que coinciden por definición pero se calculan con fuentes distintas: la discrepancia se documenta y concilia",
+                "Que la identidad contable no se cumple en la práctica",
+                "Que se han usado deflactores distintos en cada enfoque",
+              ],
+              correcta: 1,
+              porque: [
+                "No hay un error localizable: cada enfoque usa encuestas, registros y declaraciones diferentes, y todos tienen margen. La conciliación reparte la diferencia, no señala a un culpable.",
+                "El tamaño de esa discrepancia estadística es de hecho uno de los indicadores de calidad de un sistema de cuentas nacionales, y se publica precisamente para que pueda juzgarse.",
+                "La identidad se cumple siempre en el marco contable. Lo que difiere son las tres *estimaciones* de una magnitud que por definición es única.",
+                "La discrepancia aparece igual en términos nominales, donde no hay deflactor ninguno. El problema es de fuentes, no de deflactación.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

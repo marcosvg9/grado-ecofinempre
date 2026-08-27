@@ -38,7 +38,7 @@ export default {
             { nom: "Las tres prohibiciones", sub: "El núcleo del derecho de la competencia.", cols: ["colusión · abuso de dominio · falseamiento desleal"] },
             { nom: "Lo que NO se prohíbe", sub: "Se puede llegar arriba compitiendo.", cols: ["ser dominante · solo se sanciona abusar"] },
             { nom: "Control de concentraciones", sub: "Preventivo, no sancionador.", cols: ["examina la operación antes de ejecutarla"] },
-            { nom: "Umbrales alternativos", sub: "Basta con superar uno.", cols: ["cuota ≥ 30 % · o 240 M€ con dos de 60 M€"] },
+            { nom: "Umbrales alternativos", sub: "Basta con superar uno.", cols: ["cuota $\\geq 30\\ \\%$ · o 240 M€ con dos de 60 M€"] },
             { nom: "Multa máxima por cártel", sub: "Sobre el negocio mundial, no el afectado.", cols: ["10 % del volumen de negocios total"] },
             { nom: "Programa de clemencia", sub: "Un dilema del prisionero permanente.", cols: ["exime a quien delata primero con pruebas"] },
             { nom: "Patente", sub: "Exclusiva a cambio de divulgación.", cols: ["20 años improrrogables"] },
@@ -64,7 +64,7 @@ export default {
           filas: [
             ["A", "300 M€ y 45 M€", "18 %", "No: B no llega a 60 M€", "No: 18 % < 30 %", "No"],
             ["B", "300 M€ y 70 M€", "18 %", "Sí: 370 M€ y ambos > 60 M€", "No", "Sí"],
-            { celdas: ["C", "120 M€ y 40 M€", "34 %", "No: B no llega a 60 M€", "Sí: 34 % ≥ 30 %", "Sí"], clase: "total" },
+            { celdas: ["C", "120 M€ y 40 M€", "34 %", "No: B no llega a 60 M€", "Sí: 34 % $\\geq$ 30 %", "Sí"], clase: "total" },
           ],
           nota: "Los tres casos muestran que **los umbrales son alternativos y capturan cosas distintas**. El de volumen atrapa operaciones grandes en términos absolutos aunque no concentren un mercado concreto —caso B, con solo un 18 % de cuota—. El de cuota atrapa operaciones pequeñas en euros que sí concentran un mercado, que es exactamente el caso C: 160 millones conjuntos y un tercio del mercado. Sin el segundo umbral se escaparían las concentraciones en mercados locales o de nicho, que son justo donde el poder de mercado hace más daño al consumidor.",
         },

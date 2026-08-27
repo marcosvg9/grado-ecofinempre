@@ -34,15 +34,15 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Elasticidad-precio de la demanda", sub: "Negativa salvo casos patológicos; suele citarse en valor absoluto.", cols: ["ε_d = (dQ/dP) · (P/Q)"] },
-            { nom: "Clasificación", sub: "El umbral es la unidad, no el cero.", cols: ["|ε| > 1 elástica · |ε| < 1 inelástica"] },
-            { nom: "Elasticidad arco", sub: "Para cambios grandes, evita que el resultado dependa del sentido.", cols: ["ε = (ΔQ / Q̄) / (ΔP / P̄)"] },
-            { nom: "Ingreso total", sub: "El ingreso se maximiza donde la elasticidad vale uno.", cols: ["dIT/dP = Q · (1 + ε_d)"] },
-            { nom: "Elasticidad-renta", sub: "Clasifica el bien.", cols: ["ε_R < 0 inferior · 0 a 1 normal · > 1 lujo"] },
-            { nom: "Elasticidad cruzada", sub: "Delimita el mercado relevante.", cols: ["ε_xy > 0 sustitutivos · < 0 complementarios"] },
-            { nom: "Elasticidad de la oferta", sub: "Crece con el horizonte temporal.", cols: ["ε_s = (dQ_s/dP) · (P/Q)"] },
-            { nom: "Reparto de un impuesto", sub: "Paga más quien menos puede escapar.", cols: ["Carga del comprador = ε_s / (ε_s + |ε_d|)"] },
-            { nom: "Pérdida de eficiencia", sub: "Crece con el cuadrado del tipo.", cols: ["PIM ≈ ½ · t · ΔQ"] },
+            { nom: "Elasticidad-precio de la demanda", sub: "Negativa salvo casos patológicos; suele citarse en valor absoluto.", cols: ["$\\varepsilon_d = \\dfrac{dQ}{dP} \\cdot \\dfrac{P}{Q}$"] },
+            { nom: "Clasificación", sub: "El umbral es la unidad, no el cero.", cols: ["$|\\varepsilon| > 1$ elástica · $|\\varepsilon| < 1$ inelástica"] },
+            { nom: "Elasticidad arco", sub: "Para cambios grandes, evita que el resultado dependa del sentido.", cols: ["$\\varepsilon = \\dfrac{\\Delta Q / \\bar Q}{\\Delta P / \\bar P}$"] },
+            { nom: "Ingreso total", sub: "El ingreso se maximiza donde la elasticidad vale uno.", cols: ["$\\dfrac{d\\mathrm{IT}}{dP} = Q(1 + \\varepsilon_d)$"] },
+            { nom: "Elasticidad-renta", sub: "Clasifica el bien.", cols: ["$\\varepsilon_R < 0$ inferior · 0 a 1 normal · $> 1$ lujo"] },
+            { nom: "Elasticidad cruzada", sub: "Delimita el mercado relevante.", cols: ["$\\varepsilon_{xy} > 0$ sustitutivos · $< 0$ complementarios"] },
+            { nom: "Elasticidad de la oferta", sub: "Crece con el horizonte temporal.", cols: ["$\\varepsilon_s = \\dfrac{dQ_s}{dP} \\cdot \\dfrac{P}{Q}$"] },
+            { nom: "Reparto de un impuesto", sub: "Paga más quien menos puede escapar.", cols: ["Carga del comprador $= \\dfrac{\\varepsilon_s}{\\varepsilon_s + |\\varepsilon_d|}$"] },
+            { nom: "Pérdida de eficiencia", sub: "Crece con el cuadrado del tipo.", cols: ["$\\mathrm{PIM} \\approx \\tfrac12 t\\,\\Delta Q$"] },
           ],
         },
       ],
@@ -53,7 +53,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "Seguimos con el mercado de la ficha anterior: **Q_d = 100 − 2P** y **Q_s = −20 + 3P**, con equilibrio en P = 24 y Q = 52. Lo primero que conviene ver es que **la elasticidad no es una propiedad de la curva sino de cada punto de ella**: la misma recta de demanda es elastiquísima arriba y rígida abajo.",
+            "Seguimos con el mercado de la ficha anterior: $Q_d = 100 - 2P$ y $Q_s = -20 + 3P$, con equilibrio en $P = 24$ y $Q = 52$. Lo primero que conviene ver es que **la elasticidad no es una propiedad de la curva sino de cada punto de ella**: la misma recta de demanda es elastiquísima arriba y rígida abajo.",
           ],
         },
         {
@@ -71,7 +71,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "**Ahora el impuesto.** Se establece un gravamen de **5 por unidad** y la ley obliga a ingresarlo al vendedor. La oferta pasa a ser Q_s = −20 + 3(P − 5) = −35 + 3P, y el nuevo equilibrio se sitúa en **P = 27 y Q = 46**: el comprador paga 27 y el vendedor se queda con 22.",
+            "**Ahora el impuesto.** Se establece un gravamen de **5 por unidad** y la ley obliga a ingresarlo al vendedor. La oferta pasa a ser $Q_s = -20 + 3(P-5) = -35 + 3P$, y el nuevo equilibrio se sitúa en $P = 27$ y $Q = 46$: el comprador paga 27 y el vendedor se queda con 22.",
           ],
         },
         {
@@ -181,6 +181,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿En qué se diferencian la pendiente de una curva de demanda y su elasticidad?",
+              opciones: [
+                "En nada: la elasticidad es otro nombre para la pendiente",
+                "La pendiente depende de las unidades de medida y la elasticidad no, porque trabaja con porcentajes",
+                "La pendiente se mide en un punto y la elasticidad sobre toda la curva",
+                "La elasticidad solo existe si la demanda es una recta",
+              ],
+              correcta: 1,
+              porque: [
+                "Son magnitudes distintas y de hecho se comportan al revés: una recta de demanda tiene pendiente constante y elasticidad que varía de casi cero a infinito según por dónde se mire.",
+                "Cambiar de litros a hectolitros cambia la pendiente y deja la elasticidad intacta, y por eso la elasticidad permite comparar bienes que se miden en unidades incomparables.",
+                "Es justo al contrario: la elasticidad es una propiedad del punto y no de la curva. Preguntar si un bien es elástico sin decir a qué precio está mal planteado.",
+                "Se define para cualquier curva de demanda, recta o no. La recta es solo el caso donde resulta más visible que pendiente y elasticidad no son lo mismo.",
+              ],
+            },
+            {
+              q: "La demanda de un bien tiene elasticidad $-0{,}4$ y la oferta $+1{,}6$. Se aprueba un impuesto que ingresa el vendedor. ¿Quién soporta la mayor parte?",
+              opciones: [
+                "El vendedor, porque es quien lo ingresa en Hacienda",
+                "El comprador, porque su demanda es la parte más rígida",
+                "Se reparte a medias, ya que el impuesto es único",
+                "El vendedor, porque su oferta reacciona más y absorbe el ajuste",
+              ],
+              correcta: 1,
+              porque: [
+                "La ley determina el trámite administrativo, no la incidencia económica. Quién ingresa el impuesto y quién lo paga son dos preguntas distintas, y la segunda no la contesta el boletín oficial.",
+                "Soporta más la parte con menos alternativas. Aquí la carga del comprador es $\\varepsilon_s/(\\varepsilon_s + |\\varepsilon_d|) = 1{,}6/2{,}0 = 80\\ \\%$: la demanda apenas puede escapar y por eso carga con casi todo.",
+                "El reparto a medias sería casualidad, no regla: solo ocurre cuando ambas elasticidades coinciden en magnitud. Aquí difieren en un factor de cuatro.",
+                "Reaccionar más es justo lo que permite escapar de la carga. La parte elástica se retira del mercado ante el impuesto y traslada el peso a la que no puede hacerlo.",
+              ],
+            },
+            {
+              q: "¿Por qué duplicar el tipo de un impuesto no duplica su coste de eficiencia?",
+              opciones: [
+                "Porque lo multiplica aproximadamente por cuatro: crece con el cuadrado del tipo",
+                "Porque el coste de eficiencia no depende del tipo sino de la recaudación",
+                "Porque lo multiplica por menos de dos, ya que la base se estrecha",
+                "Porque el coste de eficiencia es una transferencia y no desaparece",
+              ],
+              correcta: 0,
+              porque: [
+                "La pérdida es aproximadamente $\\tfrac12 t\\,\\Delta Q$ y $\\Delta Q$ crece a su vez con $t$, de modo que el producto va con el cuadrado. De ahí se sigue la recomendación de gravar poco muchas bases en vez de mucho unas pocas.",
+                "La recaudación es consecuencia del tipo, no una magnitud independiente. Y de hecho puede caer mientras el coste de eficiencia sigue subiendo, que es el caso incómodo de un tipo excesivo.",
+                "El estrechamiento de la base no amortigua el coste: lo agrava. Cada unidad que deja de intercambiarse es exactamente una ganancia del comercio que se pierde.",
+                "Es la confusión que más infla —o desinfla— los cálculos. La transferencia va a la caja del Estado y sigue existiendo; la pérdida de eficiencia es lo que desaparece para todos.",
+              ],
+            },
+            {
+              q: "Un informe evalúa un impuesto sobre el tabaco con los datos del primer año y concluye que apenas afecta al consumo. ¿Qué falla en esa lectura?",
+              opciones: [
+                "Nada: si el consumo no cae, la demanda es inelástica y punto",
+                "Que las elasticidades crecen con el tiempo, así que un solo año subestima el efecto",
+                "Que la elasticidad debería medirse sobre el ingreso y no sobre la cantidad",
+                "Que un año es demasiado tiempo y habría que mirar el primer trimestre",
+              ],
+              correcta: 1,
+              porque: [
+                "Lo es a corto plazo, y esa es toda la trampa. Concluir de ahí que lo es siempre confunde una respuesta transitoria con una propiedad estable del bien.",
+                "Adaptarse lleva tiempo: dejar de fumar, cambiar de marca, comprar fuera o buscar el mercado informal no ocurren de un mes para otro. Evaluar solo el primer año subestima sistemáticamente la caída de la cantidad.",
+                "El ingreso es útil para otras preguntas, pero la elasticidad-precio se define sobre la cantidad. Cambiar de magnitud no arregla el problema del horizonte, que es el que hay aquí.",
+                "Acortar el plazo agrava el sesgo en vez de corregirlo: cuanto menos tiempo se deja para adaptarse, más inelástica parece la demanda.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

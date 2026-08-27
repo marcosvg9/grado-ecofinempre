@@ -36,12 +36,12 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Valor liquidativo", sub: "El precio de una participación.", cols: ["VL = patrimonio del fondo ÷ participaciones en circulación"] },
+            { nom: "Valor liquidativo", sub: "El precio de una participación.", cols: ["$\\mathrm{VL} = \\dfrac{\\text{patrimonio del fondo}}{\\text{participaciones en circulación}}$"] },
             { nom: "Neutralidad de los flujos", sub: "Por qué el partícipe antiguo no se diluye.", cols: ["Suscribir crea participaciones al VL vigente: el VL no cambia"] },
             { nom: "Gestora y depositaria", sub: "La separación que protege el patrimonio.", cols: ["El activo no está en el balance de la gestora"] },
             { nom: "Comisión de gestión", sub: "Sobre patrimonio, no sobre ganancia.", cols: ["Se detrae del VL: nunca aparece como cargo al partícipe"] },
             { nom: "Rentabilidad neta", sub: "Lo único que llega al bolsillo.", cols: ["Rentabilidad bruta − gastos corrientes totales"] },
-            { nom: "Capital final", sub: "La comisión se compone igual que la rentabilidad.", cols: ["C · (1 + r − c)^n"] },
+            { nom: "Capital final", sub: "La comisión se compone igual que la rentabilidad.", cols: ["$C(1 + r - c)^n$"] },
             { nom: "Gestión activa frente a indexada", sub: "El argumento agregado, no el individual.", cols: ["Los activos en conjunto son el mercado, con más costes"] },
             { nom: "Traspaso", sub: "Particularidad fiscal española.", cols: ["Entre fondos no tributa: la plusvalía se difiere al reembolso"] },
           ],
@@ -172,11 +172,11 @@ export default {
           items: [
             {
               q: "Un fondo tiene 48.600.000 € de patrimonio y 3.240.000 participaciones. Entran 1.500.000 € de suscripciones. ¿Cuál es el valor liquidativo antes y después?",
-              a: "15,00 € en los dos momentos. Antes: 48.600.000 ÷ 3.240.000 = 15,00. La suscripción emite 1.500.000 ÷ 15 = 100.000 participaciones nuevas, así que el patrimonio pasa a 50.100.000 € y las participaciones a 3.340.000, cuyo cociente vuelve a ser 15,00. Las entradas y salidas de dinero no mueven el valor liquidativo: solo lo mueven los activos de la cartera.",
+              a: "15,00 € en los dos momentos. Antes: $48.600.000 / 3.240.000 = 15{,}00$. La suscripción emite $1.500.000 / 15 = 100.000$ participaciones nuevas, así que el patrimonio pasa a 50.100.000 € y las participaciones a 3.340.000, cuyo cociente vuelve a ser 15,00. Las entradas y salidas de dinero no mueven el valor liquidativo: solo lo mueven los activos de la cartera.",
             },
             {
               q: "Con 10.000 € al 7 % bruto durante 30 años, ¿cuánto cuesta pasar de una comisión del 0,30 % a una del 1,80 %?",
-              a: "24.215 €. El indexado termina en 10.000 · 1,067³⁰ = 69.973 € y el activo en 10.000 · 1,052³⁰ = 45.759 €. El fondo barato acaba con un 52,9 % más de capital. Visto sobre la referencia sin comisiones (76.123 €), el punto y medio de diferencia se lleva el 31,8 % del resultado.",
+              a: "24.215 €. El indexado termina en $10.000 \\times 1{,}067^{30} = 69.973$ € y el activo en $10.000 \\times 1{,}052^{30} = 45.759$ €. El fondo barato acaba con un 52,9 % más de capital. Visto sobre la referencia sin comisiones (76.123 €), el punto y medio de diferencia se lleva el 31,8 % del resultado.",
             },
             {
               q: "¿Por qué el conjunto de los gestores activos no puede batir al mercado?",

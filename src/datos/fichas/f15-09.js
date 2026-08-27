@@ -38,9 +38,9 @@ export default {
           filas: [
             { nom: "El problema", sub: "Dos estadísticas del mismo año.", cols: ["La suma de los trimestres no coincide con el dato anual"] },
             { nom: "Reparto de papeles", sub: "Cada fuente aporta lo suyo.", cols: ["Indicador: el perfil · referencia: el nivel"] },
-            { nom: "Restricción", sub: "Lo que hay que cumplir.", cols: ["Σ de los trimestres del año = total anual"] },
-            { nom: "Reparto ingenuo", sub: "Lo que no hay que hacer.", cols: ["Discrepancia ÷ 4: crea escalones en el salto de año"] },
-            { nom: "Denton aditivo", sub: "Suaviza los cambios de la corrección.", cols: ["min Σ (dt − dt₋₁)² sujeto a la restricción anual"] },
+            { nom: "Restricción", sub: "Lo que hay que cumplir.", cols: ["$\\sum$ de los trimestres del año $=$ total anual"] },
+            { nom: "Reparto ingenuo", sub: "Lo que no hay que hacer.", cols: ["Discrepancia $/\\,4$: crea escalones en el salto de año"] },
+            { nom: "Denton aditivo", sub: "Suaviza los cambios de la corrección.", cols: ["$\\min \\sum_t (d_t - d_{t-1})^2$ sujeto a la restricción anual"] },
             { nom: "Denton proporcional", sub: "Preferible con tendencia acusada.", cols: ["Suaviza las diferencias de la corrección relativa"] },
             { nom: "Cholette-Dagum", sub: "La generalización.", cols: ["Admite sesgo del indicador y error en la referencia"] },
             { nom: "Vinculante o no", sub: "Cuánta autoridad tiene el dato anual.", cols: ["Vinculante: cuadra exacto · no vinculante: pondera fiabilidad"] },

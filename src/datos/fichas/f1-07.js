@@ -34,15 +34,15 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Índice simple", sub: "La base vale 100 por convención.", cols: ["I_t = (X_t / X_0) × 100"] },
-            { nom: "Índice de Laspeyres", sub: "Cantidades del periodo base; sesgo al alza.", cols: ["L = Σ p_t q_0 / Σ p_0 q_0"] },
-            { nom: "Índice de Paasche", sub: "Cantidades del periodo actual; sesgo a la baja.", cols: ["P = Σ p_t q_t / Σ p_0 q_t"] },
-            { nom: "Índice de Fisher", sub: "Media geométrica; corrige buena parte del sesgo.", cols: ["F = √(L × P)"] },
+            { nom: "Índice simple", sub: "La base vale 100 por convención.", cols: ["$I_t = \\dfrac{X_t}{X_0} \\times 100$"] },
+            { nom: "Índice de Laspeyres", sub: "Cantidades del periodo base; sesgo al alza.", cols: ["$L = \\dfrac{\\sum p_t q_0}{\\sum p_0 q_0}$"] },
+            { nom: "Índice de Paasche", sub: "Cantidades del periodo actual; sesgo a la baja.", cols: ["$P = \\dfrac{\\sum p_t q_t}{\\sum p_0 q_t}$"] },
+            { nom: "Índice de Fisher", sub: "Media geométrica; corrige buena parte del sesgo.", cols: ["$F = \\sqrt{L \\times P}$"] },
             { nom: "Deflactación", sub: "Separa precio de volumen.", cols: ["Real = (Nominal / Índice) × 100"] },
             { nom: "Deflactor implícito", sub: "No se calcula: se deduce como cociente.", cols: ["Deflactor = (Nominal / Real) × 100"] },
-            { nom: "Tasa de variación", sub: "Cociente menos uno, en porcentaje.", cols: ["g = (X_t / X_{t−1} − 1) × 100"] },
-            { nom: "Encadenamiento de tasas", sub: "Las tasas no se suman.", cols: ["(1 + g_total) = (1 + g_1)(1 + g_2)"] },
-            { nom: "Contribución al crecimiento", sub: "Sustituye a la suma cuando no hay aditividad.", cols: ["c_i = peso_i × g_i"] },
+            { nom: "Tasa de variación", sub: "Cociente menos uno, en porcentaje.", cols: ["$g = \\left(\\dfrac{X_t}{X_{t-1}} - 1\\right) \\times 100$"] },
+            { nom: "Encadenamiento de tasas", sub: "Las tasas no se suman.", cols: ["$(1 + g_{\\text{total}}) = (1 + g_1)(1 + g_2)$"] },
+            { nom: "Contribución al crecimiento", sub: "Sustituye a la suma cuando no hay aditividad.", cols: ["$c_i = \\text{peso}_i \\times g_i$"] },
             { nom: "Punto porcentual", sub: "Distingue la variación absoluta de la relativa.", cols: ["De 4 % a 5 %: +1 p.p. = +25 %"] },
           ],
         },
@@ -63,7 +63,7 @@ export default {
           filas: [
             ["Laspeyres", "(1,5×100 + 2,2×50) / 200", "130,0", "Coste hoy de la cesta de antes"],
             ["Paasche", "(1,5×80 + 2,2×60) / (1×80 + 2×60)", "126,0", "Coste de la cesta de hoy, ayer y hoy"],
-            { celdas: ["Fisher", "√(130 × 126)", "128,0", "Media geométrica de ambos"], clase: "total" },
+            { celdas: ["Fisher", "$\\sqrt{130 \\times 126}$", "128,0", "Media geométrica de ambos"], clase: "total" },
           ],
           nota: "Los tres son correctos y difieren en **cuatro puntos**, que no es poco. Laspeyres da más porque valora una cesta con mucho pan, justo el bien que más se ha encarecido y del que la gente ha comprado menos: **ignora la sustitución y por eso sobrestima**. Paasche usa la cesta ya adaptada y subestima por el motivo simétrico. La diferencia entre 130 y 126 es exactamente la magnitud del **sesgo de sustitución**, y es la razón de que el IPC —un Laspeyres— y el deflactor del PIB —un Paasche— nunca coincidan.",
         },
@@ -102,7 +102,7 @@ export default {
             ["Dos años consecutivos al 3 %", "6,00 %", "6,09 %", "0,09 p.p."],
             ["Bajar 50 % y luego subir 50 %", "0 %", "−25 %", "25 p.p."],
             ["Pasar de un paro del 4 % al 5 %", "«sube un 1 %»", "+1 p.p. = +25 %", "—"],
-            { celdas: ["Sumar componentes en volumen encadenado", "Total = Σ partes", "Usar contribuciones", "No aditivo"], clase: "total" },
+            { celdas: ["Sumar componentes en volumen encadenado", "Total $= \\sum$ partes", "Usar contribuciones", "No aditivo"], clase: "total" },
           ],
           nota: "Las cuatro filas son errores que aparecen en prensa con regularidad. El tercero es especialmente traicionero: **un punto porcentual y un uno por ciento no son lo mismo**, y confundirlos permite presentar la misma variación como pequeña o enorme según convenga. El cuarto es el que más desconcierta a quien empieza: en los índices encadenados modernos, **las partes ya no suman el total**, y por eso las estadísticas oficiales publican contribuciones al crecimiento.",
         },
@@ -177,6 +177,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "El IPC de un país vale 128 y el de otro 112. ¿Cuál es más caro?",
+              opciones: [
+                "El primero, porque su índice es más alto",
+                "No se puede saber: un índice mide variación desde su propia base, no nivel",
+                "El segundo, si su base es más reciente",
+                "El primero, salvo que las cestas de consumo sean muy distintas",
+              ],
+              correcta: 1,
+              porque: [
+                "El nivel del índice solo dice cuánto han subido los precios desde la base de ese país, que puede ser un año distinto. No es una medida del nivel de precios.",
+                "Para comparar niveles hacen falta paridades de poder adquisitivo, que es otra construcción distinta. Comparar índices con bases diferentes es como comparar dos cronómetros puestos en marcha en momentos distintos.",
+                "La base afecta a la interpretación de cada índice por separado, pero conocerla no convierte dos índices en comparables en niveles: seguirían midiendo variación, no precio.",
+                "La composición de la cesta es un problema añadido, pero aunque las cestas fueran idénticas el número seguiría sin medir nivel.",
+              ],
+            },
+            {
+              q: "Una acción cae un 50 % y al año siguiente sube un 50 %. ¿Cómo ha quedado?",
+              opciones: [
+                "Igual que al principio: las dos variaciones se cancelan",
+                "Un 25 % por debajo, porque las tasas se encadenan multiplicando",
+                "Un 25 % por encima, por el efecto de la base menor",
+                "Depende del orden en que se produzcan las dos variaciones",
+              ],
+              correcta: 1,
+              porque: [
+                "Sumar tasas es el atajo que falla justo cuando son grandes. Aquí la suma daría cero y la realidad es una pérdida de la cuarta parte.",
+                "$(1 - 0{,}5)(1 + 0{,}5) = 0{,}75$. La subida se aplica sobre una base ya reducida a la mitad, así que recupera menos de lo que se perdió.",
+                "La base menor es justo lo que impide recuperar: la subida rinde menos en euros que la bajada, no más.",
+                "El producto es conmutativo, así que el resultado final es el mismo en cualquier orden. Lo que cambia es el camino, no el destino.",
+              ],
+            },
+            {
+              q: "La tasa de paro pasa del 4 % al 5 %. ¿Cómo se describe correctamente esa variación?",
+              opciones: [
+                "Ha subido un 1 %",
+                "Ha subido un punto porcentual, que equivale a un aumento del 25 %",
+                "Ha subido un 20 %, que es la diferencia relativa sobre el 5 %",
+                "Ha subido 100 puntos básicos, equivalentes a un 1 %",
+              ],
+              correcta: 1,
+              porque: [
+                "Es la confusión que permite presentar la misma variación como trivial o como alarmante según convenga. Un 1 % de 4 sería 0,04 puntos, no uno entero.",
+                "Ambas cifras son correctas y describen lo mismo desde ángulos distintos: la diferencia absoluta en puntos y la variación relativa. Decir cuál se usa evita la ambigüedad.",
+                "El aumento relativo se calcula sobre el valor de partida, que es 4, no sobre el de llegada. $1/4 = 25\\ \\%$.",
+                "Cien puntos básicos sí son un punto porcentual, pero equipararlos a «un 1 %» reintroduce exactamente la ambigüedad que se trataba de evitar.",
+              ],
+            },
+            {
+              q: "Una empresa industrial quiere saber si su facturación ha crecido en términos reales. ¿Con qué la deflacta?",
+              opciones: [
+                "Con el IPC, que es el índice de precios de referencia",
+                "Con un índice de precios industriales, el que corresponde a lo que ella produce",
+                "Con el deflactor del PIB, que cubre toda la economía",
+                "Con la inflación subyacente, que excluye los componentes volátiles",
+              ],
+              correcta: 1,
+              porque: [
+                "El IPC mide la cesta de consumo de los hogares e incluye importaciones y servicios que esta empresa ni vende ni compra. Deflactar con él mezcla dos poblaciones de precios distintas.",
+                "Cada magnitud tiene su deflactor: el IPC para el consumo de los hogares, los índices industriales para la producción, el deflactor del PIB para los agregados. Usar el que corresponde a lo que se mide es toda la regla.",
+                "El deflactor del PIB es un agregado de toda la producción interior. Sirve para magnitudes agregadas, no para la facturación de una empresa concreta.",
+                "La subyacente es una variante del IPC pensada para leer la tendencia de la inflación al consumo. Sigue siendo el índice equivocado para una facturación industrial.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

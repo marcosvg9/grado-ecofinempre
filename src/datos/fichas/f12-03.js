@@ -42,7 +42,7 @@ export default {
             { nom: "Impuestos de esta cuenta", sub: "Los de productos ya salieron en la valoración.", cols: ["D.29 sobre la producción, no D.21 sobre productos"] },
             { nom: "Excedente de explotación", sub: "Remunera al capital.", cols: ["B.2 — sociedades y alquiler imputado de hogares"] },
             { nom: "Renta mixta", sub: "Trabajo y capital del titular, inseparables.", cols: ["B.3 — hogares con negocio propio"] },
-            { nom: "Participación salarial", sub: "Infravalora el trabajo si no se corrige.", cols: ["D.1 ÷ PIB, sin el trabajo de los autónomos"] },
+            { nom: "Participación salarial", sub: "Infravalora el trabajo si no se corrige.", cols: ["D.1 / PIB, sin el trabajo de los autónomos"] },
             { nom: "Corrección habitual", sub: "Mueve el resultado varios puntos.", cols: ["imputar a cada autónomo la remuneración media"] },
           ],
         },

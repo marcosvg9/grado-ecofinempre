@@ -34,11 +34,11 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Demanda agregada", sub: "Su pendiente no es la de una demanda ordinaria.", cols: ["Y^d = f(P), decreciente"] },
-            { nom: "Efecto saldos reales", sub: "Menos precios, más riqueza real, más gasto.", cols: ["↓P ⟹ ↑M/P ⟹ ↑C"] },
-            { nom: "Efecto tipo de interés", sub: "Es la LM de la ficha 3.05 operando.", cols: ["↓P ⟹ ↓i ⟹ ↑I"] },
-            { nom: "Efecto comercio exterior", sub: "Precios relativos frente al exterior.", cols: ["↓P ⟹ ↑X − M"] },
-            { nom: "Oferta agregada a corto plazo", sub: "Depende de la sorpresa, no del nivel.", cols: ["Y = Y* + α(P − P^e)"] },
+            { nom: "Demanda agregada", sub: "Su pendiente no es la de una demanda ordinaria.", cols: ["$Y^d = f(P)$, decreciente"] },
+            { nom: "Efecto saldos reales", sub: "Menos precios, más riqueza real, más gasto.", cols: ["↓$P \\Rightarrow$ ↑$M/P \\Rightarrow$ ↑$C$"] },
+            { nom: "Efecto tipo de interés", sub: "Es la LM de la ficha 3.05 operando.", cols: ["↓$P \\Rightarrow$ ↓$i \\Rightarrow$ ↑$I$"] },
+            { nom: "Efecto comercio exterior", sub: "Precios relativos frente al exterior.", cols: ["↓$P \\Rightarrow$ ↑$(X - M)$"] },
+            { nom: "Oferta agregada a corto plazo", sub: "Depende de la sorpresa, no del nivel.", cols: ["$Y = Y^* + \\alpha(P - P^e)$"] },
             { nom: "Oferta agregada a largo plazo", sub: "El nivel de precios no fija la capacidad.", cols: ["Y = Y*, vertical"] },
             { nom: "Producto potencial", sub: "El análogo agregado de la frontera de la ficha 1.01.", cols: ["Y* = F(K, L, A)"] },
             { nom: "Brecha de producción", sub: "Positiva por encima del potencial.", cols: ["(Y − Y*) / Y*"] },
@@ -165,6 +165,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Por qué cae la demanda agregada cuando sube el nivel de precios?",
+              opciones: [
+                "Porque los bienes se encarecen frente a otros, como en cualquier demanda de mercado",
+                "Por tres mecanismos distintos: saldos reales, tipo de interés y comercio exterior",
+                "Porque la renta nominal de los hogares no se ajusta",
+                "Porque las empresas producen menos al subir sus costes",
+              ],
+              correcta: 1,
+              porque: [
+                "En la demanda agregada suben todos los precios a la vez, así que no hay ningún bien que se encarezca «frente a otros». El mecanismo tiene que ser otro.",
+                "Menos saldos reales reducen el consumo; más demanda de dinero eleva el tipo y recorta la inversión; y los precios internos altos empeoran las exportaciones netas. Son tres canales, ninguno de sustitución.",
+                "El ajuste de la renta nominal es parte del proceso, pero no es lo que define la pendiente de la curva.",
+                "Eso describiría un desplazamiento de la oferta agregada, que es la otra curva del gráfico.",
+              ],
+            },
+            {
+              q: "Un impulso de demanda eleva la producción por encima del potencial. ¿Qué pasa a largo plazo?",
+              opciones: [
+                "La producción se queda en el nuevo nivel superior",
+                "Al revisarse salarios y expectativas, la producción vuelve al potencial y solo quedan precios más altos",
+                "La producción cae por debajo del potencial por sobrerreacción",
+                "El potencial sube hasta alcanzar el nuevo nivel de producción",
+              ],
+              correcta: 1,
+              porque: [
+                "Se quedaría ahí si la sorpresa durase indefinidamente. Como los contratos se renegocian y las expectativas se ajustan, la ventaja se agota.",
+                "La oferta de corto plazo se desplaza hacia arriba y la economía regresa a su capacidad. A largo plazo la oferta agregada es vertical: la capacidad la fijan capital, trabajo y productividad.",
+                "No hay sobrerreacción en el modelo estándar: la economía converge al potencial, no lo cruza.",
+                "El potencial puede moverse por histéresis o por inversión, pero no lo hace automáticamente por un impulso de demanda.",
+              ],
+            },
+            {
+              q: "Suben a la vez los precios y cae la producción. ¿De qué tipo de choque se trata?",
+              opciones: [
+                "De demanda: los precios señalan exceso de gasto",
+                "De oferta: si fuera de demanda, precios y producción se moverían en el mismo sentido",
+                "De demanda negativa, que reduce producción y precios",
+                "No se puede saber sin conocer el tipo de interés",
+              ],
+              correcta: 1,
+              porque: [
+                "Un choque de demanda positivo sube ambas magnitudes y uno negativo baja ambas. En ningún caso las separa.",
+                "La pista es la producción, no la inflación: un mismo nivel de precios es compatible con una expansión y con una estanflación, y lo que las distingue es hacia dónde va el producto.",
+                "Un choque de demanda negativo bajaría también los precios, no los subiría.",
+                "El tipo de interés ayuda a afinar, pero el diagnóstico básico ya está en el signo conjunto de precios y producción.",
+              ],
+            },
+            {
+              q: "Ante un choque de oferta adverso, ¿qué puede conseguir la política de demanda?",
+              opciones: [
+                "Devolver producción y precios a su punto de partida",
+                "Elegir entre sostener el empleo o contener la inflación, pero no ambas cosas",
+                "Nada: la política de demanda es inoperante en ese caso",
+                "Corregirlo por completo si actúa con rapidez suficiente",
+              ],
+              correcta: 1,
+              porque: [
+                "Ninguna política de demanda lo consigue: mueve ambas variables en el mismo sentido, y el choque las ha separado.",
+                "Expandir sostiene el empleo y agrava la inflación; contraer hace lo contrario. Ese intercambio forzoso es lo que hace incómodos los choques de oferta.",
+                "Sí es operante: puede mejorar una de las dos variables. Lo que no puede es mejorar las dos.",
+                "La rapidez no cambia la naturaleza del problema, que es de dirección y no de retraso.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

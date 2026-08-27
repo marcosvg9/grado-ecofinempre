@@ -35,14 +35,14 @@ export default {
           modo: "dos",
           filas: [
             { nom: "Demanda que afronta la empresa", sub: "Horizontal: elasticidad infinita al precio de mercado.", cols: ["P = P* para cualquier q"] },
-            { nom: "Ingreso marginal", sub: "Solo en competencia coincide con el precio.", cols: ["IMg = d(P·q)/dq = P"] },
+            { nom: "Ingreso marginal", sub: "Solo en competencia coincide con el precio.", cols: ["$\\mathrm{IMg} = \\dfrac{d(Pq)}{dq} = P$"] },
             { nom: "Condición de óptimo de la empresa", sub: "Con el coste marginal en su tramo creciente.", cols: ["P = CMg(q)"] },
-            { nom: "Curva de oferta de la empresa", sub: "El coste marginal truncado por la condición de cierre.", cols: ["q(P) tal que P = CMg, si P ≥ mín CVMe"] },
-            { nom: "Oferta de la industria a corto plazo", sub: "Suma horizontal con n dado.", cols: ["Q(P) = n · q(P)"] },
-            { nom: "Beneficio económico", sub: "Distancia vertical entre precio y coste medio.", cols: ["B = (P − CMe) · q"] },
+            { nom: "Curva de oferta de la empresa", sub: "El coste marginal truncado por la condición de cierre.", cols: ["$q(P)$ tal que $P = \\mathrm{CMg}$, si $P \\geq \\min \\mathrm{CVMe}$"] },
+            { nom: "Oferta de la industria a corto plazo", sub: "Suma horizontal con n dado.", cols: ["$Q(P) = n\\,q(P)$"] },
+            { nom: "Beneficio económico", sub: "Distancia vertical entre precio y coste medio.", cols: ["$B = (P - \\mathrm{CMe})\\,q$"] },
             { nom: "Equilibrio de largo plazo", sub: "La entrada libre lo impone; nadie lo decide.", cols: ["P = CMg = mín CMe"] },
             { nom: "Escala eficiente", sub: "Se deduce de la línea anterior.", cols: ["q* donde CMg(q*) = CMe(q*)"] },
-            { nom: "Número de empresas a largo plazo", sub: "El ajuste se produce aquí, no en el precio.", cols: ["n* = Q_demandada(P*) / q*"] },
+            { nom: "Número de empresas a largo plazo", sub: "El ajuste se produce aquí, no en el precio.", cols: ["$n^* = \\dfrac{Q_{\\text{demandada}}(P^*)}{q^*}$"] },
             { nom: "Oferta de largo plazo, costes constantes", sub: "La demanda fija cuántas empresas caben, no a qué precio.", cols: ["Horizontal en P* = mín CMe"] },
           ],
         },
@@ -54,7 +54,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "Retomamos la función de costes de la ficha anterior, **CT(q) = 100 + 2q + 0,05q²**, y suponemos que todas las empresas del sector son idénticas. De ahí, **CMg = 2 + 0,1q**, y despejando se obtiene la oferta individual: **q = 10 · (P − 2)**. El coste medio alcanza su mínimo de **6,47** en **q = 44,72**, como se calculó en la ficha 2.05.",
+            "Retomamos la función de costes de la ficha anterior, $\\mathrm{CT}(q) = 100 + 2q + 0{,}05q^2$, y suponemos que todas las empresas del sector son idénticas. De ahí, $\\mathrm{CMg} = 2 + 0{,}1q$, y despejando se obtiene la oferta individual: $q = 10(P - 2)$. El coste medio alcanza su mínimo de **6,47** en $q = 44{,}72$, como se calculó en la ficha 2.05.",
           ],
         },
         {
@@ -201,7 +201,7 @@ export default {
           tipo: "preguntas",
           items: [
             { q: "¿Por qué el ingreso marginal de la empresa competitiva es igual al precio?", a: "Porque la demanda que afronta es horizontal: puede vender cualquier cantidad al precio de mercado sin moverlo. El ingreso total es P·q con P constante, y su derivada respecto de q es P. En monopolio, vender más exige bajar el precio de todas las unidades y por eso el ingreso marginal cae por debajo del precio." },
-            { q: "Con CT(q) = 100 + 2q + 0,05q², ¿cuál es el precio de equilibrio a largo plazo y cuánto produce cada empresa?", a: "El precio es el mínimo del coste medio, 6,47, y cada empresa produce 44,72, que es donde el coste marginal y el medio se cortan. La demanda no interviene en estos dos números: solo determina cuántas empresas caben." },
+            { q: "Con $\\mathrm{CT}(q) = 100 + 2q + 0{,}05q^2$, ¿cuál es el precio de equilibrio a largo plazo y cuánto produce cada empresa?", a: "El precio es el mínimo del coste medio, 6,47, y cada empresa produce 44,72, que es donde el coste marginal y el medio se cortan. La demanda no interviene en estos dos números: solo determina cuántas empresas caben." },
             { q: "La demanda de un sector competitivo aumenta de forma permanente. ¿Qué pasa con el precio a largo plazo?", a: "Si es una industria de costes constantes, vuelve exactamente al mínimo del coste medio. La subida inicial es transitoria y la entrada de nuevas empresas la deshace. Lo que queda modificado de forma permanente es el número de empresas del sector." },
             { q: "Una empresa del sector gana un 40 % sobre ventas. ¿Es señal de poder de mercado?", a: "No basta con el margen para saberlo. Puede ser la renta transitoria de una escasez de capacidad, que en el modelo competitivo aparece siempre que la demanda se mueve antes que la entrada. Lo que distingue ambos casos es si la entrada es libre y cuánto tarda en materializarse." },
             { q: "¿Por qué la dispersión de rentabilidad entre empresas del mismo sector contradice el modelo?", a: "Porque con producto homogéneo, información completa y entrada libre todas las empresas deberían converger a la misma tecnología eficiente y al mismo beneficio económico nulo. La dispersión persistente que muestran la Central de Balances y la estadística estructural indica heterogeneidad real de productividad y barreras a la imitación, que son justamente lo que el modelo supone ausente." },
@@ -209,6 +209,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Qué exige realmente la competencia perfecta?",
+              opciones: [
+                "Que las empresas sean pequeñas y numerosas",
+                "Que la demanda residual de cada empresa sea horizontal y que la entrada sea libre",
+                "Que ninguna empresa supere el 10 % de cuota de mercado",
+                "Que el producto sea homogéneo y el precio esté regulado",
+              ],
+              correcta: 1,
+              porque: [
+                "El tamaño es un síntoma habitual, no el requisito. Un mercado con pocas empresas grandes pero entrada realmente libre puede comportarse de forma competitiva.",
+                "De la demanda horizontal se sigue que el ingreso marginal es el precio, y de la entrada libre que el beneficio económico tiende a cero. Todo el modelo descansa en esas dos cosas.",
+                "Cualquier umbral concreto es arbitrario. La concentración informa, pero no es lo que define el comportamiento competitivo.",
+                "La homogeneidad ayuda a que la demanda sea horizontal, pero la regulación del precio es justo lo contrario de competencia: aquí el precio sale del mercado.",
+              ],
+            },
+            {
+              q: "¿Qué parte de la curva de coste marginal es la curva de oferta de la empresa?",
+              opciones: [
+                "Toda ella",
+                "Solo el tramo creciente por encima del mínimo del coste variable medio",
+                "Solo el tramo por encima del mínimo del coste medio total",
+                "El tramo decreciente, donde aún hay economías de escala",
+              ],
+              correcta: 1,
+              porque: [
+                "Por debajo del mínimo del coste variable medio la cantidad ofrecida es cero, no la que iguala precio y coste marginal: producir empeoraría la pérdida.",
+                "El tramo decreciente no puede ser óptimo, y por debajo del CVMe conviene parar. Lo que queda es exactamente la curva de oferta a corto plazo.",
+                "Ese es el criterio de permanencia a largo plazo. A corto, con los costes fijos ya comprometidos, el umbral es más bajo.",
+                "En el tramo decreciente del coste marginal la condición de segundo orden falla: ahí producir más siempre mejora.",
+              ],
+            },
+            {
+              q: "Sube permanentemente la demanda en una industria de costes constantes. ¿Qué queda alterado a largo plazo?",
+              opciones: [
+                "El precio, que se instala en un nivel superior",
+                "El número de empresas: el precio vuelve al mínimo del coste medio",
+                "El tamaño de cada empresa, que produce más",
+                "Nada: la industria vuelve exactamente a la situación anterior",
+              ],
+              correcta: 1,
+              porque: [
+                "El precio sube a corto plazo y aparecen beneficios, pero eso atrae entrada y la entrada devuelve el precio a su nivel. Solo permanecería con costes crecientes.",
+                "Cada empresa vuelve a producir en el mínimo de su coste medio, que es el mismo de antes. Lo único que ha cambiado es cuántas empresas hay.",
+                "El tamaño óptimo lo fija la forma de la curva de costes, que no ha cambiado. La empresa vuelve a $q^*$.",
+                "Sí cambia algo: la cantidad total intercambiada es mayor, repartida entre más empresas del mismo tamaño.",
+              ],
+            },
+            {
+              q: "Una empresa presenta un margen sobre costes muy alto. ¿Prueba eso poder de mercado?",
+              opciones: [
+                "Sí: en competencia el margen tiende a cero",
+                "No necesariamente: puede ser la renta transitoria de una escasez de capacidad, que es justo la señal que atrae la entrada",
+                "Sí, si se mantiene más de un ejercicio",
+                "No, porque el margen contable nunca refleja el poder de mercado",
+              ],
+              correcta: 1,
+              porque: [
+                "El margen tiende a cero en el equilibrio de largo plazo, no en cada momento. El camino hasta ahí pasa precisamente por márgenes altos.",
+                "Un beneficio extraordinario es el mecanismo del modelo, no su anomalía: sin él nadie entraría y la oferta no se ajustaría. Lo que delata poder de mercado es que persista pese a haber entrada posible.",
+                "La duración es un indicio útil, pero un ejercicio no basta y el criterio real es si la entrada está impedida por algo.",
+                "El margen sí informa —el índice de Lerner se construye con él— pero requiere interpretarlo junto a las condiciones de entrada.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

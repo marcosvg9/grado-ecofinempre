@@ -34,15 +34,15 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Tasa de inflación", sub: "Variación del nivel general de precios.", cols: ["π = (P_t / P_{t−1} − 1) × 100"] },
+            { nom: "Tasa de inflación", sub: "Variación del nivel general de precios.", cols: ["$\\pi = \\left(\\dfrac{P_t}{P_{t-1}} - 1\\right) \\times 100$"] },
             { nom: "IPC", sub: "Cesta de consumo de los hogares; tipo Laspeyres.", cols: ["Incluye importados, excluye exportaciones"] },
             { nom: "Deflactor del PIB", sub: "Toda la producción interior; tipo Paasche.", cols: ["Deflactor = (PIB nominal / PIB real) × 100"] },
             { nom: "Inflación subyacente", sub: "Aproxima la parte persistente.", cols: ["General sin energía ni alimentos frescos"] },
-            { nom: "Ecuación de Fisher", sub: "La versión exacta, no la aproximada.", cols: ["(1 + i) = (1 + r)(1 + π)"] },
-            { nom: "Aproximación de Fisher", sub: "Válida solo con tasas pequeñas.", cols: ["r ≈ i − π"] },
-            { nom: "Teoría cuantitativa", sub: "Identidad; se vuelve teoría al fijar V y Y.", cols: ["M · V = P · Y"] },
-            { nom: "Impuesto inflacionario", sub: "Lo paga quien mantiene saldos nominales.", cols: ["Base = saldos monetarios · tipo = π"] },
-            { nom: "Progresividad en frío", sub: "Sube el tipo medio sin subir la renta real.", cols: ["Tramos no deflactados ⟹ ↑ tipo efectivo"] },
+            { nom: "Ecuación de Fisher", sub: "La versión exacta, no la aproximada.", cols: ["(1 + i) = (1 + r)(1 + $\\pi$)"] },
+            { nom: "Aproximación de Fisher", sub: "Válida solo con tasas pequeñas.", cols: ["$r \\approx i - \\pi$"] },
+            { nom: "Teoría cuantitativa", sub: "Identidad; se vuelve teoría al fijar V y Y.", cols: ["$M \\cdot V = P \\cdot Y$"] },
+            { nom: "Impuesto inflacionario", sub: "Lo paga quien mantiene saldos nominales.", cols: ["Base = saldos monetarios · tipo = $\\pi$"] },
+            { nom: "Progresividad en frío", sub: "Sube el tipo medio sin subir la renta real.", cols: ["Tramos no deflactados $\\Rightarrow$ ↑ tipo efectivo"] },
             { nom: "Relación real de intercambio", sub: "El diferencial IPC-deflactor la aproxima.", cols: ["Precios de exportación / precios de importación"] },
           ],
         },
@@ -158,7 +158,7 @@ export default {
           tipo: "preguntas",
           items: [
             { q: "¿Por qué el IPC puede subir un 12 % mientras el deflactor del PIB sube un 5 %?", a: "Porque miden cestas distintas. El IPC cubre lo que consumen los hogares, incluidos los bienes importados; el deflactor cubre lo que produce el país, incluidas las exportaciones y excluidas las importaciones. Si el encarecimiento viene de un bien importado, pesa en el primero y no en el segundo." },
-            { q: "Tipo nominal del 5 % e inflación del 3 %. ¿Cuál es el tipo real?", a: "1,942 %. La relación de Fisher es multiplicativa: (1+i) = (1+r)(1+π), así que r = 1,05/1,03 − 1. La resta simple da 2 % y es una aproximación aceptable solo con tasas pequeñas; con inflación alta el error se vuelve relevante." },
+            { q: "Tipo nominal del 5 % e inflación del 3 %. ¿Cuál es el tipo real?", a: "1,942 %. La relación de Fisher es multiplicativa: $(1+i) = (1+r)(1+\\pi)$, así que $r = 1{,}05/1{,}03 - 1$. La resta simple da 2 % y es una aproximación aceptable solo con tasas pequeñas; con inflación alta el error se vuelve relevante." },
             { q: "La inflación general baja y la subyacente sube. ¿Es contradictorio?", a: "No, y es un patrón habitual tras un choque externo. La general cae porque la energía deja de subir, mientras que la subyacente refleja el traslado del choque al resto de precios y salarios, que llega con retraso. Contestan preguntas distintas: cuánto ha subido la cesta y hacia dónde tiende el proceso." },
             { q: "¿Quién gana con una inflación superior a la esperada?", a: "Los deudores a tipo fijo, incluido el Estado: un préstamo al 3 % con inflación del 6 % tiene un tipo real de −2,83 %. Pierden los acreedores y quienes tienen rentas nominales no indexadas. Si la inflación estuviera anticipada, el tipo nominal ya la incorporaría y no habría redistribución." },
             { q: "¿Qué es la progresividad en frío?", a: "La subida automática del tipo efectivo cuando los tramos del impuesto no se actualizan con los precios. Alguien cuya renta sube igual que la inflación pasa a un tipo medio superior y pierde poder adquisitivo neto: en el ejemplo, un 0,63 % pese a no haber ganado nada real. Es una subida de impuestos que nadie ha aprobado." },
@@ -166,6 +166,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Sube un 30 % el precio del aceite de oliva. ¿Es eso inflación?",
+              opciones: [
+                "Sí: los precios han subido",
+                "No: es un cambio de precios relativos; inflación es la subida sostenida y generalizada del nivel de precios",
+                "Sí, si el aceite pesa lo suficiente en la cesta del IPC",
+                "No, salvo que se traslade a otros productos",
+              ],
+              correcta: 1,
+              porque: [
+                "Que suba un producto es la señal con la que funciona el mercado: dice que escasea y llama a producir más. Llamarlo inflación confunde el mecanismo con la enfermedad.",
+                "La distinción importa porque las respuestas de política son opuestas: contra un cambio de precios relativos no se hace política monetaria.",
+                "Su peso determina cuánto contribuye a la tasa general, pero no convierte una subida aislada en un fenómeno generalizado.",
+                "El traslado a otros precios sería un efecto de segunda ronda, que sí puede acabar en inflación. Pero eso es un proceso posterior, no la subida inicial.",
+              ],
+            },
+            {
+              q: "En un año el IPC sube un 3,2 % y el deflactor del PIB un 2,4 %. ¿Qué indica esa diferencia?",
+              opciones: [
+                "Que uno de los dos está mal calculado",
+                "Que miden cestas distintas: el IPC incluye importaciones y el deflactor, exportaciones",
+                "Que la inflación real está entre ambas cifras",
+                "Que el IPC usa Paasche y el deflactor Laspeyres",
+              ],
+              correcta: 1,
+              porque: [
+                "Ambos están bien calculados y divergen de forma sistemática y por motivos conocidos. Buscar un error es buscar donde no hay nada.",
+                "El IPC cubre el consumo de los hogares e incluye lo importado; el deflactor cubre la producción interior e incluye lo exportado. Una subida del petróleo empuja al IPC y no al deflactor.",
+                "No hay una «inflación real» oculta: hay dos preguntas distintas con dos respuestas correctas cada una.",
+                "Es al revés: el IPC es un Laspeyres de cesta fija y el deflactor un Paasche implícito.",
+              ],
+            },
+            {
+              q: "El tipo de interés nominal es del 5 % y la inflación del 3 %. ¿Cuál es el tipo real?",
+              opciones: [
+                "2 %, restando la inflación",
+                "1,942 %: la relación de Fisher es multiplicativa",
+                "8 %, sumando ambos",
+                "1,67 %, dividiendo el nominal entre la inflación",
+              ],
+              correcta: 1,
+              porque: [
+                "La resta es la aproximación de Fisher y funciona con tasas pequeñas. Aquí el error es de seis centésimas; con inflación alta deja de ser aceptable.",
+                "$(1+i) = (1+r)(1+\\pi)$, así que $r = 1{,}05/1{,}03 - 1 = 1{,}942\\ \\%$. Es el mismo encadenamiento que rige cualquier composición de tasas.",
+                "Sumar invierte el sentido: la inflación erosiona el rendimiento nominal, no lo amplía.",
+                "Dividir las tasas sin los unos no corresponde a ninguna relación: hay que dividir los factores $(1+i)$ y $(1+\\pi)$.",
+              ],
+            },
+            {
+              q: "Los tramos del IRPF no se actualizan y los salarios suben igual que los precios. ¿Qué ocurre?",
+              opciones: [
+                "Nada: el poder adquisitivo se mantiene",
+                "El tipo medio sube y se pierde poder adquisitivo neto: es la progresividad en frío",
+                "Baja la recaudación, porque las rentas reales no crecen",
+                "Sube la recaudación, pero el contribuyente queda igual",
+              ],
+              correcta: 1,
+              porque: [
+                "El salario bruto sí sigue a los precios, pero el neto no: al pasar a un tramo superior, el impuesto se lleva una proporción mayor de la misma renta real.",
+                "Es una subida de impuestos que nadie ha aprobado y que ocurre por omisión. Actualizar los tramos con la inflación es lo que la evita.",
+                "La recaudación sube, no baja: es exactamente el efecto que hace atractivo no actualizar los tramos.",
+                "El contribuyente no queda igual: paga un tipo medio mayor sobre la misma capacidad de compra.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

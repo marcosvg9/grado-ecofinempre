@@ -39,7 +39,7 @@ export default {
             { nom: "Desglose de la producción", sub: "Los tres tipos del SEC.", cols: ["P.1 = P.11 + P.12 + P.13"] },
             { nom: "Producción de no mercado", sub: "Pagos parciales y entrega gratuita.", cols: ["P.13 = P.131 + P.132"] },
             { nom: "Valoración", sub: "No coinciden, y de ahí la cuña.", cols: ["P.1 a precios básicos · P.2 a precios de adquisición"] },
-            { nom: "Del VAB al PIB", sub: "Los impuestos sobre productos van aparte.", cols: ["PIB pm = Σ VAB pb + D.21 − D.31"] },
+            { nom: "Del VAB al PIB", sub: "Los impuestos sobre productos van aparte.", cols: ["PIB pm $= \\sum$ VAB pb $+$ D.21 $-$ D.31"] },
             { nom: "No mercado: suma de costes", sub: "La convención que define el bloque.", cols: ["P.1 = D.1 + P.2 + (D.29 − D.39) + P.51c"] },
             { nom: "Consecuencia inmediata", sub: "Identidad, no resultado empírico.", cols: ["excedente neto de explotación = 0"] },
             { nom: "Excedente bruto del no mercado", sub: "Coincide con la amortización.", cols: ["B.2g = P.51c"] },

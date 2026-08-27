@@ -36,10 +36,10 @@ export default {
           modo: "dos",
           filas: [
             { nom: "Definición de la paridad", sub: "De ahí salen los tipos de cambio fijos.", cols: ["1 unidad monetaria = x gramos de oro"] },
-            { nom: "Tipo de cambio implícito", sub: "Fijo mientras se mantenga la convertibilidad.", cols: ["e = contenido de oro de A ÷ contenido de oro de B"] },
-            { nom: "Flujo de metálico y precios", sub: "El ajuste automático de Hume.", cols: ["déficit ⟹ ↓oro ⟹ ↓M ⟹ ↓P ⟹ ↑exportaciones"] },
-            { nom: "Teoría cuantitativa", sub: "La correa de transmisión del mecanismo.", cols: ["M · V = P · Y"] },
-            { nom: "Trilema, versión decimonónica", sub: "Se renuncia a la política monetaria.", cols: ["tipo fijo + capital libre ⟹ sin autonomía monetaria"] },
+            { nom: "Tipo de cambio implícito", sub: "Fijo mientras se mantenga la convertibilidad.", cols: ["$e = \\dfrac{\\text{contenido de oro de A}}{\\text{contenido de oro de B}}$"] },
+            { nom: "Flujo de metálico y precios", sub: "El ajuste automático de Hume.", cols: ["déficit $\\Rightarrow$ ↓oro $\\Rightarrow$ ↓$M \\Rightarrow$ ↓$P \\Rightarrow$ ↑exportaciones"] },
+            { nom: "Teoría cuantitativa", sub: "La correa de transmisión del mecanismo.", cols: ["$M \\cdot V = P \\cdot Y$"] },
+            { nom: "Trilema, versión decimonónica", sub: "Se renuncia a la política monetaria.", cols: ["tipo fijo $+$ capital libre $\\Rightarrow$ sin autonomía monetaria"] },
             { nom: "Asimetría del ajuste", sub: "Solo el deficitario está obligado.", cols: ["el superavitario puede esterilizar la entrada de oro"] },
             { nom: "Puntos del oro", sub: "Banda estrecha por el coste de enviar metal.", cols: ["el tipo fluctúa dentro del coste de transporte del oro"] },
             { nom: "Condición política", sub: "La razón de que fuera creíble.", cols: ["nadie responde ante el electorado por el paro"] },
@@ -53,7 +53,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "Dos países bajo patrón oro. En el primero, la masa monetaria es **100** unidades de oro, la velocidad de circulación **5** y la producción real **250**, de modo que el nivel de precios es 100 × 5 ÷ 250 = **2,00**. El segundo parte de la misma situación. Ahora el primero incurre en un déficit exterior de **10**, que se liquida enviando oro al segundo.",
+            "Dos países bajo patrón oro. En el primero, la masa monetaria es **100** unidades de oro, la velocidad de circulación **5** y la producción real **250**, de modo que el nivel de precios es $100 \\times 5 / 250 = 2{,}00$. El segundo parte de la misma situación. Ahora el primero incurre en un déficit exterior de **10**, que se liquida enviando oro al segundo.",
           ],
         },
         {

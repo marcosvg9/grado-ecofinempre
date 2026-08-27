@@ -38,9 +38,9 @@ export default {
           filas: [
             { nom: "Coherencia probabilística", sub: "La definición.", cols: ["Probabilidad cero fuera del subespacio coherente"] },
             { nom: "Lo que no basta", sub: "El error de partida.", cols: ["Reconciliar los puntos solo coloca la media"] },
-            { nom: "Varianza de una suma", sub: "La aritmética que se olvida.", cols: ["Var(ΣX) = ΣVar + 2·Σ covarianzas"] },
+            { nom: "Varianza de una suma", sub: "La aritmética que se olvida.", cols: ["$\\mathrm{Var}\\left(\\sum X\\right) = \\sum \\mathrm{Var} + 2\\sum \\text{covarianzas}$"] },
             { nom: "Suma de intervalos", sub: "Cuándo es correcta.", cols: ["Solo con correlación perfecta entre las partes"] },
-            { nom: "Caso independiente", sub: "El otro extremo.", cols: ["La anchura crece con √n, no con n"] },
+            { nom: "Caso independiente", sub: "El otro extremo.", cols: ["La anchura crece con $\\sqrt n$, no con $n$"] },
             { nom: "Método paramétrico", sub: "Rápido y con supuesto.", cols: ["La proyección de una normal es normal"] },
             { nom: "Método no paramétrico", sub: "Costoso y general.", cols: ["Simular trayectorias y proyectar cada una"] },
             { nom: "Ventaja de simular", sub: "Lo que ningún intervalo marginal da.", cols: ["Preserva dependencia entre series y entre horizontes"] },
@@ -56,7 +56,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "Cuatro series hoja, cada una con la misma incertidumbre y un intervalo del 90 % de anchura **±1,645 σ**, que es el que corresponde a una normal. La pregunta es cuál debe ser el intervalo del total, y la respuesta depende enteramente de **cómo se correlacionen los errores** de las cuatro.",
+            "Cuatro series hoja, cada una con la misma incertidumbre y un intervalo del 90 % de anchura $\\pm 1{,}645\\,\\sigma$, que es el que corresponde a una normal. La pregunta es cuál debe ser el intervalo del total, y la respuesta depende enteramente de **cómo se correlacionen los errores** de las cuatro.",
           ],
         },
         {
@@ -80,18 +80,18 @@ export default {
               puntos: [[0, 3.29], [0.2, 4.162], [0.4, 4.879], [0.6, 5.506], [0.8, 6.066], [1, 6.58]],
             },
           ],
-          nota: "Las dos líneas **solo se tocan en el extremo derecho**, cuando la correlación es perfecta. Con errores independientes, el intervalo correcto es **±3,29 σ** y la suma ingenua da **±6,58 σ**: exactamente el doble. Sumar los intervalos equivale a afirmar que las cuatro hojas se equivocarán siempre a la vez y en el mismo sentido, que es la hipótesis más pesimista posible y casi nunca la cierta.",
+          nota: "Las dos líneas **solo se tocan en el extremo derecho**, cuando la correlación es perfecta. Con errores independientes, el intervalo correcto es $\\pm 3{,}29\\,\\sigma$ y la suma ingenua da $\\pm 6{,}58\\,\\sigma$: exactamente el doble. Sumar los intervalos equivale a afirmar que las cuatro hojas se equivocarán siempre a la vez y en el mismo sentido, que es la hipótesis más pesimista posible y casi nunca la cierta.",
         },
         {
           tipo: "tabla",
           cabecera: ["Correlación entre errores", "Varianza de la suma", "Desviación típica", "Intervalo al 90 %"],
           filas: [
-            ["0 · independientes", "4 σ²", "2,000 σ", "±3,290 σ"],
-            ["0,3", "7,6 σ²", "2,757 σ", "±4,535 σ"],
-            ["0,6", "11,2 σ²", "3,347 σ", "±5,505 σ"],
-            { celdas: ["1 · perfecta", "16 σ²", "4,000 σ", "±6,580 σ"], clase: "total" },
+            ["0 · independientes", "$4\\sigma^2$", "2,000 $\\sigma$", "$\\pm 3{,}290\\,\\sigma$"],
+            ["0,3", "$7{,}6\\,\\sigma^2$", "2,757 $\\sigma$", "$\\pm 4{,}535\\,\\sigma$"],
+            ["0,6", "$11{,}2\\,\\sigma^2$", "3,347 $\\sigma$", "$\\pm 5{,}505\\,\\sigma$"],
+            { celdas: ["1 · perfecta", "$16\\sigma^2$", "4,000 $\\sigma$", "$\\pm 6{,}580\\,\\sigma$"], clase: "total" },
           ],
-          nota: "La varianza de la suma es **4 σ² más doce veces la covarianza**: cuatro términos de varianza y doce pares. Por eso pasar de correlación 0 a 1 cuadruplica la varianza y solo duplica la anchura del intervalo. La consecuencia práctica es que **la correlación entre errores importa más para los intervalos que para los puntos**: en el punto reconciliado influye modestamente, en la anchura del intervalo puede multiplicarla por dos.",
+          nota: "La varianza de la suma es $4\\sigma^2$ **más doce veces la covarianza**: cuatro términos de varianza y doce pares. Por eso pasar de correlación 0 a 1 cuadruplica la varianza y solo duplica la anchura del intervalo. La consecuencia práctica es que **la correlación entre errores importa más para los intervalos que para los puntos**: en el punto reconciliado influye modestamente, en la anchura del intervalo puede multiplicarla por dos.",
         },
         {
           tipo: "parrafos",
@@ -126,7 +126,7 @@ export default {
         {
           tipo: "acordeon",
           items: [
-            { t: "Sumar los intervalos de las partes para obtener el del total", d: "Solo es correcto con correlación perfecta entre los errores. Con errores independientes, la anchura correcta es la mitad: ±3,29 σ frente a ±6,58 σ en el ejemplo de cuatro hojas. Sumar anchuras equivale a suponer el peor caso posible de dependencia, que casi nunca es el real." },
+            { t: "Sumar los intervalos de las partes para obtener el del total", d: "Solo es correcto con correlación perfecta entre los errores. Con errores independientes, la anchura correcta es la mitad: $\\pm 3{,}29\\,\\sigma$ frente a $\\pm 6{,}58\\,\\sigma$ en el ejemplo de cuatro hojas. Sumar anchuras equivale a suponer el peor caso posible de dependencia, que casi nunca es el real." },
             { t: "Creer que reconciliar los puntos basta", d: "Reconciliar coloca la media dentro del subespacio coherente, pero la distribución puede seguir asignando probabilidad a combinaciones imposibles. Un conjunto de previsiones puntuales que cuadra perfectamente puede venir acompañado de intervalos mutuamente incompatibles." },
             { t: "Diagonalizar la matriz al construir intervalos", d: "En la reconciliación puntual diagonalizar da un resultado algo peor y razonable; en la probabilística equivale a afirmar independencia, y si los errores están correlacionados, los intervalos del agregado saldrán sistemáticamente demasiado estrechos. Un intervalo estrecho de más transmite una confianza injustificada." },
             { t: "Remuestrear residuos serie a serie", d: "Destruye la correlación entre series, que es justo lo que hace falta conservar. Hay que remuestrear vectores completos de residuos, todas las series del mismo periodo a la vez, y así la dependencia queda incorporada sin haber estimado ninguna matriz." },
@@ -167,8 +167,8 @@ export default {
           tipo: "preguntas",
           items: [
             {
-              q: "Cuatro hojas tienen cada una un intervalo del 90 % de ±1,645 σ. ¿Cuál es el del total si los errores son independientes?",
-              a: "±3,290 σ, la mitad de lo que da sumar los cuatro intervalos. La varianza de la suma de cuatro variables independientes es 4 σ², así que su desviación típica es 2 σ y el intervalo, ±1,645 · 2 σ. Sumar las anchuras daría ±6,580 σ, que solo sería correcto si las cuatro se equivocaran siempre a la vez y en el mismo sentido.",
+              q: "Cuatro hojas tienen cada una un intervalo del 90 % de $\\pm 1{,}645\\,\\sigma$. ¿Cuál es el del total si los errores son independientes?",
+              a: "$\\pm 3{,}290\\,\\sigma$, la mitad de lo que da sumar los cuatro intervalos. La varianza de la suma de cuatro variables independientes es $4\\sigma^2$, así que su desviación típica es $2\\sigma$ y el intervalo, $\\pm 1{,}645 \\times 2\\sigma$. Sumar las anchuras daría $\\pm 6{,}580\\,\\sigma$, que solo sería correcto si las cuatro se equivocaran siempre a la vez y en el mismo sentido.",
             },
             {
               q: "¿Qué significa que una previsión probabilística de una jerarquía sea coherente?",

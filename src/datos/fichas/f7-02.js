@@ -33,13 +33,13 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Valor actual de una renta pospagable", sub: "n flujos iguales de importe C.", cols: ["VA = C × [1 − (1 + i)⁻ⁿ] / i"] },
-            { nom: "Valor final de una renta", sub: "El capital acumulado al final del plazo.", cols: ["VF = C × [(1 + i)ⁿ − 1] / i"] },
-            { nom: "Renta perpetua", sub: "El caso límite cuando n tiende a infinito.", cols: ["VA = C / i"] },
-            { nom: "Renta perpetua creciente (Gordon)", sub: "Solo válida si g < i.", cols: ["VA = C₁ / (i − g)"] },
-            { nom: "Cuota del sistema francés", sub: "Se despeja de la ecuación de equivalencia.", cols: ["a = P × i / [1 − (1 + i)⁻ⁿ]"] },
-            { nom: "Capital pendiente tras k períodos", sub: "Valor actual de las cuotas que faltan.", cols: ["Pₖ = a × [1 − (1 + i)^−(n−k)] / i"] },
-            { nom: "Cuota del sistema italiano", sub: "Amortización constante, cuota decreciente.", cols: ["aₖ = P/n + Pₖ₋₁ × i"] },
+            { nom: "Valor actual de una renta pospagable", sub: "n flujos iguales de importe C.", cols: ["$\\mathrm{VA} = C\\,\\dfrac{1 - (1+i)^{-n}}{i}$"] },
+            { nom: "Valor final de una renta", sub: "El capital acumulado al final del plazo.", cols: ["$\\mathrm{VF} = C\\,\\dfrac{(1+i)^n - 1}{i}$"] },
+            { nom: "Renta perpetua", sub: "El caso límite cuando n tiende a infinito.", cols: ["$\\mathrm{VA} = \\dfrac{C}{i}$"] },
+            { nom: "Renta perpetua creciente (Gordon)", sub: "Solo válida si g < i.", cols: ["$\\mathrm{VA} = \\dfrac{C_1}{i - g}$"] },
+            { nom: "Cuota del sistema francés", sub: "Se despeja de la ecuación de equivalencia.", cols: ["$a = \\dfrac{P i}{1 - (1+i)^{-n}}$"] },
+            { nom: "Capital pendiente tras k períodos", sub: "Valor actual de las cuotas que faltan.", cols: ["$P_k = a\\,\\dfrac{1 - (1+i)^{-(n-k)}}{i}$"] },
+            { nom: "Cuota del sistema italiano", sub: "Amortización constante, cuota decreciente.", cols: ["$a_k = \\dfrac{P}{n} + P_{k-1} i$"] },
           ],
           nota: "La condición **g < i** en la fórmula de Gordon no es un tecnicismo: si el flujo creciera indefinidamente por encima del tipo de descuento, el valor actual sería infinito. Es la restricción que impide poner tasas de crecimiento perpetuo optimistas en un valor terminal.",
         },
@@ -58,7 +58,7 @@ export default {
           tipo: "tabla",
           cabecera: ["Concepto", "Cálculo", "Resultado"],
           filas: [
-            ["Cuota anual", "200.000 × 0,03 / [1 − 1,03⁻²⁰]", "13.443,20 €"],
+            ["Cuota anual", "$\\dfrac{200.000 \\times 0{,}03}{1 - 1{,}03^{-20}}$", "13.443,20 €"],
             ["Total pagado en 20 años", "13.443,20 × 20", "268.864 €"],
             { celdas: ["Intereses totales", "268.864 − 200.000", "68.864 €"], clase: "total" },
           ],
@@ -145,7 +145,7 @@ export default {
         {
           tipo: "preguntas",
           items: [
-            { q: "¿Cuál es el valor actual de 5.000 € anuales durante 12 años al 4 %?", a: "5.000 × [1 − 1,04⁻¹²] / 0,04 = 46.925 €. El total nominal cobrado sería 60.000 €; la diferencia es el efecto del descuento." },
+            { q: "¿Cuál es el valor actual de 5.000 € anuales durante 12 años al 4 %?", a: "$5.000 \\times \\dfrac{1 - 1{,}04^{-12}}{0{,}04} = 46.925$ €. El total nominal cobrado sería 60.000 €; la diferencia es el efecto del descuento." },
             { q: "Un activo rinde 3.000 € anuales a perpetuidad y la tasa exigida es del 6 %. ¿Cuánto vale?", a: "50.000 €, es decir 3.000 / 0,06. Si además el flujo creciera un 2 % anual, valdría 3.000 / (0,06 − 0,02) = 75.000 €." },
             { q: "En un préstamo francés a 20 años, ¿qué proporción del capital queda pendiente a mitad de plazo?", a: "Más de la mitad: en el ejemplo, un 57 %. Es consecuencia de que la cuota constante dedica al principio la mayor parte a intereses, porque el capital vivo es grande." },
             { q: "¿Por qué el sistema italiano paga menos intereses totales que el francés?", a: "Porque amortiza principal más deprisa, y el capital vivo sobre el que se calculan los intereses se reduce antes. El precio es una cuota inicial más alta." },

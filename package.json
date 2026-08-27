@@ -6,6 +6,7 @@
   "scripts": {
     "indices": "node herramientas/indice-preguntas.mjs && node herramientas/indice-busqueda.mjs && node herramientas/indice-grafo.mjs",
     "check": "node herramientas/validar.mjs",
+    "test": "node --test \"pruebas/*.test.mjs\"",
     "dev": "npm run indices && vite",
     "build": "npm run indices && vite build",
     "preview": "vite preview"

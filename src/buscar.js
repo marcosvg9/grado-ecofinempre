@@ -5,6 +5,9 @@
    viven solo las funciones puras, que son las mismas que usa el generador
    para trocear las fichas. */
 
+import { legible } from "./formula.js";
+import { lematizar } from "./lematizar.js";
+
 /* Palabras demasiado frecuentes para discriminar. Sin ellas el indice baja
    casi a la mitad y los resultados no empeoran. */
 const VACIAS = new Set(
@@ -29,10 +32,17 @@ export function normalizar(s) {
     .replace(/[^a-z0-9ñ. ]+/g, " ");
 }
 
+/* Devuelve los lemas, no las palabras: «bonos» y «bono» tienen que dar el
+   mismo término o el índice los guarda por separado y una consulta falla
+   según qué flexión use el texto. Se lematiza aquí, en el único sitio por
+   el que pasan tanto el indexador como el buscador, para que no puedan
+   desincronizarse. Como el lema es siempre prefijo de la palabra, el
+   resaltado de los extractos sigue funcionando sin tocar nada. */
 export function trocear(s) {
   return normalizar(s)
     .split(/[\s.]+/)
-    .filter((t) => t.length >= 3 && t.length <= 24 && !VACIAS.has(t) && !/^\d+$/.test(t));
+    .filter((t) => t.length >= 3 && t.length <= 24 && !VACIAS.has(t) && !/^\d+$/.test(t))
+    .map(lematizar);
 }
 
 /* Recorre una ficha y devuelve sus textos. Es deliberadamente generico:
@@ -43,6 +53,10 @@ export function textosDeFicha(ficha) {
 
   const meter = (v, seccion, esDestacado) => {
     if (typeof v === "string") {
+      // Las fórmulas se guardan como se leen, no como se escriben: si no,
+      // el índice acaba lleno de «dfrac» y «mathrm» y los extractos de
+      // resultados enseñan el LaTeX en crudo.
+      v = legible(v);
       if (v.length < 3) return;
       if (esDestacado) destacado.push(v);
       else if (v.length >= 40) fragmentos.push({ seccion, texto: v });

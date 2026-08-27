@@ -34,15 +34,15 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Magnitud marginal", sub: "El efecto de una unidad más; en continuo, una derivada.", cols: ["Mg(x) = ΔTotal / Δx"] },
-            { nom: "Magnitud media", sub: "Reparte el total entre las unidades; mezcla pasado y presente.", cols: ["Me(x) = Total(x) / x"] },
+            { nom: "Magnitud marginal", sub: "El efecto de una unidad más; en continuo, una derivada.", cols: ["$\\mathrm{Mg}(x) = \\dfrac{\\Delta \\text{Total}}{\\Delta x}$"] },
+            { nom: "Magnitud media", sub: "Reparte el total entre las unidades; mezcla pasado y presente.", cols: ["$\\mathrm{Me}(x) = \\dfrac{\\mathrm{Total}(x)}{x}$"] },
             { nom: "Regla de decisión marginal", sub: "Vale para consumo, producción e inversión.", cols: ["Ampliar mientras BMg > CMg; parar en BMg = CMg"] },
-            { nom: "Utilidad marginal decreciente", sub: "Resuelve la paradoja del valor.", cols: ["dU/dx > 0 , d²U/dx² < 0"] },
-            { nom: "Regla de igualación", sub: "Cómo repartir un presupuesto entre varios usos.", cols: ["UMg_A / p_A = UMg_B / p_B"] },
-            { nom: "Productividad marginal decreciente", sub: "Con los demás factores fijos.", cols: ["PMg_L = dQ/dL , decreciente"] },
-            { nom: "Relación marginal-media", sub: "El marginal arrastra a la media.", cols: ["dMe/dx = (Mg − Me) / x"] },
-            { nom: "Corolario", sub: "El marginal corta a la media en su extremo.", cols: ["Me es mínima ⟺ Mg = Me"] },
-            { nom: "Ley de Goodhart", sub: "Por qué los indicadores se degradan al usarse como meta.", cols: ["Indicador ⟶ objetivo ⟹ deja de medir"] },
+            { nom: "Utilidad marginal decreciente", sub: "Resuelve la paradoja del valor.", cols: ["$\\dfrac{dU}{dx} > 0$, $\\dfrac{d^2U}{dx^2} < 0$"] },
+            { nom: "Regla de igualación", sub: "Cómo repartir un presupuesto entre varios usos.", cols: ["$\\dfrac{\\mathrm{UMg}_A}{p_A} = \\dfrac{\\mathrm{UMg}_B}{p_B}$"] },
+            { nom: "Productividad marginal decreciente", sub: "Con los demás factores fijos.", cols: ["$\\mathrm{PMg}_L = \\dfrac{dQ}{dL}$, decreciente"] },
+            { nom: "Relación marginal-media", sub: "El marginal arrastra a la media.", cols: ["$\\dfrac{d\\mathrm{Me}}{dx} = \\dfrac{\\mathrm{Mg} - \\mathrm{Me}}{x}$"] },
+            { nom: "Corolario", sub: "El marginal corta a la media en su extremo.", cols: ["Me es mínima $\\Leftrightarrow$ Mg $=$ Me"] },
+            { nom: "Ley de Goodhart", sub: "Por qué los indicadores se degradan al usarse como meta.", cols: ["Indicador $\\longrightarrow$ objetivo $\\Rightarrow$ deja de medir"] },
           ],
         },
       ],
@@ -163,6 +163,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un vuelo con asientos libres tiene un coste medio por pasajero de 132 € y un coste marginal de 12 €. Aparece un cliente dispuesto a pagar 60 €. ¿Conviene venderle el asiento?",
+              opciones: [
+                "No: 60 € no cubren los 132 € que cuesta llevar a un pasajero",
+                "Sí: el asiento va a volar de todos modos y esos 60 € cubren de sobra los 12 € que añade",
+                "No, porque vender por debajo del coste medio hunde la tarifa del resto",
+                "Solo si se venden bastantes asientos como para llegar al coste medio",
+              ],
+              correcta: 1,
+              porque: [
+                "El coste medio incluye el avión, la tripulación y el combustible base, que ya están comprometidos y no cambian porque suba un pasajero más. Decidir con la media en vez de con el margen cuesta aquí 48 € por cada asiento rechazado.",
+                "En el margen la decisión es entre 60 € y 12 €. Todo lo demás ya está decidido y es idéntico se venda o no se venda ese asiento.",
+                "Es un argumento comercial legítimo sobre otra cuestión —la política de precios— pero no cambia la aritmética de este asiento concreto. Y si se aplicara sin matices, los aviones volarían medio vacíos.",
+                "Es la media disfrazada de umbral. El coste medio baja precisamente al vender más asientos, así que exigir cubrirlo por adelantado impide la operación que lo haría bajar.",
+              ],
+            },
+            {
+              q: "¿Qué relación hay entre una magnitud marginal y su media?",
+              opciones: [
+                "La media siempre es mayor que la marginal",
+                "La media baja cuando la marginal está por debajo y sube cuando está por encima",
+                "Cuando la marginal es mínima, la media también lo es",
+                "Ambas alcanzan su mínimo en la misma cantidad producida",
+              ],
+              correcta: 1,
+              porque: [
+                "Depende del tramo: con rendimientos crecientes la marginal está por debajo y con decrecientes por encima. No hay un orden fijo entre ellas.",
+                "Es lo que dice $d\\mathrm{Me}/dx = (\\mathrm{Mg} - \\mathrm{Me})/x$: el signo del cambio de la media lo pone la diferencia entre ambas. Añadir algo peor que el promedio lo baja, y algo mejor lo sube.",
+                "El mínimo de la marginal llega antes. Mientras la marginal siga por debajo de la media, la media sigue bajando aunque la marginal ya haya empezado a subir.",
+                "La media es mínima donde la marginal la corta, es decir, donde $\\mathrm{Mg} = \\mathrm{Me}$, y ese punto no coincide con el mínimo de la marginal.",
+              ],
+            },
+            {
+              q: "Un hospital empieza a medir a sus servicios por el número de altas y en un año la cifra mejora mucho sin que la salud de los pacientes cambie. ¿Qué ha pasado?",
+              opciones: [
+                "Que el indicador estaba mal elegido desde el principio",
+                "Que al convertirse en objetivo dejó de medir lo que medía",
+                "Que la mejora es real pero tardará en verse en la salud",
+                "Que hace falta un indicador complementario para corregirlo",
+              ],
+              correcta: 1,
+              porque: [
+                "Podía ser un indicador razonable mientras solo se observaba. El problema no está en su elección sino en haberlo convertido en objetivo, que es lo que cambia la conducta de quien es medido.",
+                "Es la ley de Goodhart: un indicador presionado se optimiza por la vía más barata —dar altas antes, seleccionar casos leves— y deja de ser un reflejo de lo que pretendía capturar.",
+                "El retraso explicaría una mejora pequeña, no un salto grande sin ningún cambio clínico. Y no explica por qué el salto coincide justo con el momento en que se empezó a medir.",
+                "Añadir indicadores desplaza el problema en vez de resolverlo: cada nuevo objetivo se optimiza a su vez. Es una mitigación, no una corrección.",
+              ],
+            },
+            {
+              q: "Alguien reparte su gasto entre dos bienes de precios distintos. ¿Cuándo ha optimizado?",
+              opciones: [
+                "Cuando gasta lo mismo en cada uno",
+                "Cuando la utilidad que le da el último euro es la misma en los dos",
+                "Cuando la utilidad marginal de ambos bienes coincide",
+                "Cuando compra más del bien con mayor utilidad marginal",
+              ],
+              correcta: 1,
+              porque: [
+                "Repartir el gasto por igual no tiene ninguna justificación: depende de los precios y de cuánto valore cada bien, y no hay razón para que salga mitad y mitad.",
+                "Es la regla de igualación $\\mathrm{UMg}_A/p_A = \\mathrm{UMg}_B/p_B$. Si un euro rindiera más en un bien que en otro, movería gasto hacia él y mejoraría, luego no estaría en el óptimo.",
+                "Igualar las utilidades marginales sin dividir por el precio ignora que un bien puede costar diez veces más que el otro. Lo que hay que igualar es la utilidad *por euro*.",
+                "Eso describe hacia dónde moverse, no dónde parar. Y como la utilidad marginal decrece, comprar más de ese bien la va reduciendo hasta que se igualan los rendimientos por euro.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

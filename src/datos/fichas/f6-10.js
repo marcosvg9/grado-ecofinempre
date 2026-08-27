@@ -46,7 +46,7 @@ export default {
           filas: [
             { nom: "Fondo de comercio de consolidación", sub: "Lo pagado por encima del valor razonable de lo adquirido.", cols: ["FC = Coste de la participación − % × PN de la dependiente a valor razonable"] },
             { nom: "Socios externos", sub: "La parte del patrimonio que no pertenece al grupo.", cols: ["SE = (1 − %) × PN de la dependiente a valor razonable"] },
-            { nom: "Resultado atribuido a la dominante", sub: "El que figura como resultado del grupo.", cols: ["R_dominante = R_consolidado − R atribuido a socios externos"] },
+            { nom: "Resultado atribuido a la dominante", sub: "El que figura como resultado del grupo.", cols: ["$R_{\\text{dominante}} = R_{\\text{consolidado}} - R$ atribuido a socios externos"] },
             { nom: "Resultado interno a eliminar", sub: "Solo la parte que sigue dentro del grupo.", cols: ["RI = Margen de la operación interna × % no vendido a terceros"] },
             { nom: "Puesta en equivalencia", sub: "No se agrega nada: se ajusta la participación.", cols: ["Valor = Coste + % × (Resultados acumulados − Dividendos)"] },
           ],

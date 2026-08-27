@@ -39,11 +39,11 @@ export default {
             { nom: "Renta de mercado", sub: "Antes de la intervención pública.", cols: ["Salarios + rentas de la propiedad + beneficios"] },
             { nom: "Renta disponible", sub: "La que se puede gastar.", cols: ["De mercado + prestaciones − impuestos directos − cotizaciones"] },
             { nom: "Renta disponible ajustada", sub: "Incluye lo que se recibe sin pagarlo.", cols: ["Disponible + transferencias sociales en especie (D.63)"] },
-            { nom: "Escala de equivalencia", sub: "Reconoce economías de escala en el hogar.", cols: ["Renta equivalente = renta del hogar ÷ tamaño equivalente"] },
+            { nom: "Escala de equivalencia", sub: "Reconoce economías de escala en el hogar.", cols: ["Renta equivalente $= \\dfrac{\\text{renta del hogar}}{\\text{tamaño equivalente}}$"] },
             { nom: "Curva de Lorenz", sub: "La representación completa.", cols: ["% acumulado de renta frente a % acumulado de población"] },
             { nom: "Índice de Gini", sub: "Resumen escalar de la curva.", cols: ["Doble del área entre la diagonal y la curva · entre 0 y 1"] },
-            { nom: "Cálculo por trapecios", sub: "Con datos agrupados en tramos.", cols: ["G = 1 − Σ (Xᵢ − Xᵢ₋₁)(Yᵢ + Yᵢ₋₁)"] },
-            { nom: "Ratio S80/S20", sub: "Sensible a las colas, que es donde el Gini falla.", cols: ["Renta del quintil superior ÷ renta del quintil inferior"] },
+            { nom: "Cálculo por trapecios", sub: "Con datos agrupados en tramos.", cols: ["$G = 1 - \\sum_i (X_i - X_{i-1})(Y_i + Y_{i-1})$"] },
+            { nom: "Ratio S80/S20", sub: "Sensible a las colas, que es donde el Gini falla.", cols: ["$\\dfrac{\\text{Renta del quintil superior}}{\\text{renta del quintil inferior}}$"] },
             { nom: "Capacidad redistributiva", sub: "Lo que hace el Estado, medido.", cols: ["Gini de mercado − Gini disponible"] },
           ],
         },
@@ -85,7 +85,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "El cálculo por trapecios es directo con datos agrupados. Para la renta de mercado, los porcentajes acumulados de renta son 3, 11, 25, 48 y 100, y cada tramo de población vale 0,20. La suma Σ (Xᵢ − Xᵢ₋₁)(Yᵢ + Yᵢ₋₁) da 0,2 · (0,03 + 0,14 + 0,36 + 0,73 + 1,48) = 0,548, y el Gini es 1 − 0,548 = **0,452**. Con la renta disponible, la suma es 0,2 · 3,24 = 0,648 y el Gini **0,352**.",
+            "El cálculo por trapecios es directo con datos agrupados. Para la renta de mercado, los porcentajes acumulados de renta son 3, 11, 25, 48 y 100, y cada tramo de población vale 0,20. La suma $\\sum_i (X_i - X_{i-1})(Y_i + Y_{i-1})$ da $0{,}2 \\times (0{,}03 + 0{,}14 + 0{,}36 + 0{,}73 + 1{,}48) = 0{,}548$, y el Gini es $1 - 0{,}548 = 0{,}452$. Con la renta disponible, la suma es $0{,}2 \\times 3{,}24 = 0{,}648$ y el Gini **0,352**.",
             "Una advertencia sobre el uso de datos agrupados: **los quintiles subestiman la desigualdad real**, porque suponen que dentro de cada tramo el reparto es uniforme. El Gini calculado sobre microdatos individuales siempre sale algo mayor que el calculado sobre cinco tramos, y la diferencia crece cuanto más gruesa sea la agrupación. Comparar un Gini de quintiles con otro de microdatos produce una brecha que no existe en la realidad.",
             "Y una limitación mayor: esta medición **no ve la parte alta de la distribución**. Los datos proceden de encuestas de hogares, donde las rentas muy altas están infrarrepresentadas porque quienes las perciben responden menos y declaran peor, y donde las rentas del capital se captan mal. Por eso la investigación reciente combina encuestas con **datos fiscales**, que sí registran la cúspide. Cuando se hace, la participación del 1 % superior sube apreciablemente respecto a lo que sugieren las encuestas, y con ella el Gini.",
           ],
@@ -157,7 +157,7 @@ export default {
           items: [
             {
               q: "Los quintiles reciben el 3, 8, 14, 23 y 52 % de la renta. Calcula el Gini por trapecios.",
-              a: "0,452. Los porcentajes acumulados son 0,03 / 0,11 / 0,25 / 0,48 / 1,00 y cada tramo de población vale 0,20. La suma Σ (Xᵢ − Xᵢ₋₁)(Yᵢ + Yᵢ₋₁) = 0,2 · (0,03 + 0,14 + 0,36 + 0,73 + 1,48) = 0,548, y el Gini es 1 − 0,548 = 0,452.",
+              a: "0,452. Los porcentajes acumulados son 0,03 / 0,11 / 0,25 / 0,48 / 1,00 y cada tramo de población vale 0,20. La suma $\\sum_i (X_i - X_{i-1})(Y_i + Y_{i-1}) = 0{,}2 \\times (0{,}03 + 0{,}14 + 0{,}36 + 0{,}73 + 1{,}48) = 0{,}548$, y el Gini es $1 - 0{,}548 = 0{,}452$.",
             },
             {
               q: "Tras impuestos y prestaciones, los quintiles reciben 6, 11, 16, 23 y 44 %. ¿Cuánto redistribuye el sistema?",

@@ -36,14 +36,14 @@ export default {
           filas: [
             { nom: "Objetivo del BCE", sub: "Simétrico y a medio plazo.", cols: ["Inflación del IPCA en el 2 %"] },
             { nom: "Los tres tipos oficiales", sub: "Definen el corredor del interbancario.", cols: ["Depósito < Operaciones principales < Crédito marginal"] },
-            { nom: "Tipo real", sub: "Lo relevante para consumir e invertir.", cols: ["r ≈ i − π^e (versión exacta en la ficha 3.02)"] },
-            { nom: "Tipo natural o de equilibrio", sub: "No se observa; se estima con gran incertidumbre.", cols: ["r*: compatible con Y = Y* y π estable"] },
+            { nom: "Tipo real", sub: "Lo relevante para consumir e invertir.", cols: ["$r \\approx i - \\pi^e$ (versión exacta en la ficha 3.02)"] },
+            { nom: "Tipo natural o de equilibrio", sub: "No se observa; se estima con gran incertidumbre.", cols: ["r*: compatible con Y = Y* y $\\pi$ estable"] },
             { nom: "Orientación de la política", sub: "El signo depende del tipo real, no del nominal.", cols: ["r < r* expansiva · r > r* restrictiva"] },
-            { nom: "Regla de Taylor", sub: "Referencia para explicar desviaciones, no mandato.", cols: ["i = r* + π + a(π − π*) + b·brecha"] },
+            { nom: "Regla de Taylor", sub: "Referencia para explicar desviaciones, no mandato.", cols: ["$i = r^* + \\pi + a(\\pi - \\pi^*) + b\\,\\text{brecha}$"] },
             { nom: "Canales de transmisión", sub: "Actúan a la vez y con intensidades distintas.", cols: ["Tipos · crédito · activos · tipo de cambio · expectativas"] },
-            { nom: "Retardo de transmisión", sub: "Obliga a decidir sobre previsiones.", cols: ["Efecto pleno sobre π: 12 a 24 meses"] },
-            { nom: "Límite inferior efectivo", sub: "Donde la política convencional se agota.", cols: ["i ≈ 0 ⟹ instrumentos no convencionales"] },
-            { nom: "Independencia y credibilidad", sub: "Reducen el coste de desinflar de la ficha 3.03.", cols: ["Expectativas ancladas ⟹ menor tasa de sacrificio"] },
+            { nom: "Retardo de transmisión", sub: "Obliga a decidir sobre previsiones.", cols: ["Efecto pleno sobre $\\pi$: 12 a 24 meses"] },
+            { nom: "Límite inferior efectivo", sub: "Donde la política convencional se agota.", cols: ["$i \\approx 0 \\Rightarrow$ instrumentos no convencionales"] },
+            { nom: "Independencia y credibilidad", sub: "Reducen el coste de desinflar de la ficha 3.03.", cols: ["Expectativas ancladas $\\Rightarrow$ menor tasa de sacrificio"] },
           ],
         },
       ],
@@ -54,7 +54,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "Apliquemos una regla de Taylor con **tipo real de equilibrio del 0,5 %**, objetivo de inflación del **2 %** y coeficientes de 0,5 tanto para la desviación de inflación como para la brecha de producción. La fórmula queda **i = 0,5 + π + 0,5·(π − 2) + 0,5·brecha**.",
+            "Apliquemos una regla de Taylor con **tipo real de equilibrio del 0,5 %**, objetivo de inflación del **2 %** y coeficientes de 0,5 tanto para la desviación de inflación como para la brecha de producción. La fórmula queda **i = 0,5 + $\\pi$ + 0,5·($\\pi$ − 2) + 0,5·brecha**.",
           ],
         },
         {
@@ -169,6 +169,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "El tipo oficial está al 4 % y las expectativas de inflación al 6 %. ¿Es una política restrictiva?",
+              opciones: [
+                "Sí: un 4 % es un tipo alto",
+                "No: el tipo real es negativo, así que la orientación es expansiva",
+                "Sí, porque supera el objetivo del 2 %",
+                "No se puede saber sin conocer la brecha de producción",
+              ],
+              correcta: 1,
+              porque: [
+                "Juzgar la orientación por el tipo nominal es el error de fondo: el mismo 4 % es expansivo con inflación esperada del 6 % y contractivo con el 1 %.",
+                "Lo relevante es el tipo real comparado con el de equilibrio. Con $r \\approx 4 - 6 = -2\\ \\%$, endeudarse sale a cuenta y la política estimula.",
+                "El objetivo de inflación no es el punto de comparación del tipo: lo es el tipo real de equilibrio.",
+                "La brecha afina el diagnóstico, pero el signo del tipo real ya lo decide en este caso.",
+              ],
+            },
+            {
+              q: "El banco central sube tipos y tres meses después la inflación sigue igual. ¿Qué se concluye?",
+              opciones: [
+                "Que la subida ha sido insuficiente y hay que subir más",
+                "Nada aún: el efecto pleno tarda entre uno y dos años, con dispersión considerable",
+                "Que la transmisión está rota",
+                "Que la inflación no es de demanda",
+              ],
+              correcta: 1,
+              porque: [
+                "Reaccionar al último dato lleva a sobrerreaccionar, porque el efecto de lo ya hecho todavía está en camino.",
+                "Por eso la decisión se toma sobre previsiones y no sobre el dato publicado, y por eso los retardos obligan a actuar antes de tener la confirmación.",
+                "Una transmisión rota es un diagnóstico distinto —el tipo oficial no llega a hogares y empresas— y exige comprobarlo mirando los tipos del crédito, no la inflación.",
+                "El origen del choque es otra cuestión, y tres meses tampoco bastan para pronunciarse sobre ella.",
+              ],
+            },
+            {
+              q: "¿Es el objetivo del 2 % un techo que no debe superarse?",
+              opciones: [
+                "Sí: por encima empieza el problema",
+                "No: es simétrico, y quedarse por debajo de forma persistente es igual de indeseable",
+                "Sí, pero con tolerancia para desviaciones transitorias",
+                "No: es un suelo, porque la deflación es lo verdaderamente peligroso",
+              ],
+              correcta: 1,
+              porque: [
+                "Un objetivo como techo sesga la política hacia la restricción y arrastra la inflación esperada por debajo del objetivo.",
+                "La deflación eleva el tipo real justo cuando conviene bajarlo y aumenta el peso real de las deudas. Por eso el BCE lo formuló explícitamente como simétrico.",
+                "La tolerancia a desviaciones existe, pero no convierte un objetivo simétrico en un techo.",
+                "Tampoco es un suelo: la simetría significa que ambas desviaciones importan igual.",
+              ],
+            },
+            {
+              q: "¿Controla el banco central la cantidad de dinero de la economía?",
+              opciones: [
+                "Sí: la fija mediante la base monetaria",
+                "No: controla el tipo a muy corto plazo y suministra las reservas necesarias para sostenerlo",
+                "Sí, a través del coeficiente de reservas",
+                "No, pero sí controla el crédito mediante los requisitos de capital",
+              ],
+              correcta: 1,
+              porque: [
+                "Fijar la base y dejar que el tipo flote es un régimen posible, pero no es el que practica ningún banco central importante hoy.",
+                "El dinero lo crea el crédito bancario, y la reserva se acomoda a la demanda. Confundir el instrumento con el objetivo lleva a esperar control sobre lo que no se controla.",
+                "El coeficiente de reservas es hoy un instrumento menor y no determina la cantidad de dinero.",
+                "Los requisitos de capital los fija la supervisión prudencial, que suele ser una función distinta de la política monetaria.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

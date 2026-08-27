@@ -55,7 +55,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "Considérese una tabla cuadrada con **n productos y n ramas**, que debe cuadrar por filas y por columnas. Hay **n² celdas** y **2n restricciones**, una por fila y una por columna, de las cuales una es redundante porque el total general se cuenta dos veces: quedan **2n − 1** restricciones efectivas y **(n − 1)²** grados de libertad.",
+            "Considérese una tabla cuadrada con **n productos y n ramas**, que debe cuadrar por filas y por columnas. Hay $n^2$ **celdas** y $2n$ **restricciones**, una por fila y una por columna, de las cuales una es redundante porque el total general se cuenta dos veces: quedan $2n - 1$ restricciones efectivas y $(n-1)^2$ grados de libertad.",
           ],
         },
         {
@@ -90,7 +90,7 @@ export default {
             ["50 × 50", "2.500", "99", "2.401", "4,0 %"],
             { celdas: ["100 × 100", "10.000", "199", "9.801", "2,0 %"], clase: "total" },
           ],
-          nota: "Los grados de libertad son exactamente **(n − 1)²**, y la comprobación cuadra en las cuatro filas. La lectura es importante y algo incómoda: **cuadrar una tabla grande es una restricción débil**. Que un cuadro de origen y destino cierre no garantiza que sus celdas estén bien estimadas; solo que no se contradicen en las márgenes, que es una condición mucho más floja de lo que su apariencia de rigor sugiere.",
+          nota: "Los grados de libertad son exactamente $(n-1)^2$, y la comprobación cuadra en las cuatro filas. La lectura es importante y algo incómoda: **cuadrar una tabla grande es una restricción débil**. Que un cuadro de origen y destino cierre no garantiza que sus celdas estén bien estimadas; solo que no se contradicen en las márgenes, que es una condición mucho más floja de lo que su apariencia de rigor sugiere.",
         },
         {
           tipo: "parrafos",
@@ -167,7 +167,7 @@ export default {
           items: [
             {
               q: "Una tabla de origen y destino de 50 × 50 debe cuadrar por filas y columnas. ¿Cuántos grados de libertad tiene?",
-              a: "2.401, que es (50 − 1)². Hay 2.500 celdas y 2n = 100 restricciones, de las cuales una es redundante porque el total general se cuenta dos veces: quedan 99 efectivas. Contar las 100 como independientes sobrestima cuánto atan y produce sistemas mal planteados al implementar la reconciliación.",
+              a: "2.401, que es $(50-1)^2$. Hay 2.500 celdas y $2n = 100$ restricciones, de las cuales una es redundante porque el total general se cuenta dos veces: quedan 99 efectivas. Contar las 100 como independientes sobrestima cuánto atan y produce sistemas mal planteados al implementar la reconciliación.",
             },
             {
               q: "¿Por qué se dice que cuadrar una tabla grande es una restricción débil?",

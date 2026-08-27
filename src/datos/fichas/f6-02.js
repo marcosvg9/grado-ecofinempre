@@ -45,7 +45,7 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Coste de una orden", sub: "Acumulación directa más indirectos aplicados.", cols: ["C_orden = MP + MOD + (tasa aplicación × base de la orden)"] },
+            { nom: "Coste de una orden", sub: "Acumulación directa más indirectos aplicados.", cols: ["$C_{\\text{orden}} = \\mathrm{MP} + \\mathrm{MOD} + (\\text{tasa aplicación} \\times \\text{base de la orden})$"] },
             { nom: "Tasa de aplicación de indirectos", sub: "Se fija a priori con datos presupuestados.", cols: ["t = Indirectos presupuestados / Base presupuestada"] },
             { nom: "Sobre o infraaplicación", sub: "Se regulariza al cierre.", cols: ["Desviación = Indirectos aplicados − Indirectos reales"] },
             { nom: "Unidades equivalentes", sub: "Se calculan por separado para materiales y conversión.", cols: ["UE = Terminadas + (En curso × % de avance)"] },

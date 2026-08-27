@@ -38,7 +38,7 @@ export default {
             { nom: "Primer desagrupamiento", sub: "Cae el coste de mover mercancías.", cols: ["se separan producción y consumo"] },
             { nom: "Segundo desagrupamiento", sub: "Cae el coste de coordinar a distancia.", cols: ["se separan las fases de un mismo proceso"] },
             { nom: "Unidad de comercio", sub: "El cambio conceptual de la ficha.", cols: ["ya no productos, sino tareas"] },
-            { nom: "Comercio bruto frente a valor añadido", sub: "El bruto cuenta varias veces lo mismo.", cols: ["exportación bruta ≠ valor añadido nacional exportado"] },
+            { nom: "Comercio bruto frente a valor añadido", sub: "El bruto cuenta varias veces lo mismo.", cols: ["exportación bruta $\\neq$ valor añadido nacional exportado"] },
             { nom: "Curva de la sonrisa", sub: "El valor está en los extremos, no en el centro.", cols: ["diseño y marca alto · ensamblaje bajo"] },
             { nom: "Ganancia difusa, pérdida concentrada", sub: "Explica la asimetría política.", cols: ["muchos ganan poco · pocos pierden mucho"] },
             { nom: "Teorema de Stolper-Samuelson", sub: "El comercio redistribuye entre factores.", cols: ["gana el factor abundante, pierde el escaso"] },

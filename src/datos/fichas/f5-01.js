@@ -48,7 +48,7 @@ export default {
             { nom: "Patrimonio neto como residuo", sub: "Se obtiene por diferencia, nunca por medición directa.", cols: ["PN = A − P"] },
             { nom: "Fondo de maniobra", sub: "Parte del activo corriente financiada con recursos permanentes.", cols: ["FM = AC − PC"] },
             { nom: "Lectura equivalente del fondo de maniobra", sub: "Da el mismo número desde el otro lado del balance.", cols: ["FM = (PN + PNC) − ANC"] },
-            { nom: "Ratio de endeudamiento", sub: "Cuánto del activo está financiado por terceros.", cols: ["e = P / (P + PN)"] },
+            { nom: "Ratio de endeudamiento", sub: "Cuánto del activo está financiado por terceros.", cols: ["$e = \\dfrac{P}{P + \\mathrm{PN}}$"] },
           ],
         },
         {

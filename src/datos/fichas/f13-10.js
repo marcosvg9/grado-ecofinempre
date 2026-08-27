@@ -44,7 +44,7 @@ export default {
             { nom: "Consumo de capital fijo", sub: "Ni amortización contable ni fiscal.", cols: ["K.1 — desgaste real a precio de reposición"] },
             { nom: "Su papel", sub: "Del orden de un quinto del PIB.", cols: ["separa toda magnitud bruta de la neta"] },
             { nom: "Los ocho activos financieros", sub: "De oro monetario a otras cuentas.", cols: ["AF.1 a AF.8"] },
-            { nom: "La doble estimación del saldo", sub: "Su diferencia mide la calidad del sistema.", cols: ["B.9 no financiero ≈ B.9F financiero"] },
+            { nom: "La doble estimación del saldo", sub: "Su diferencia mide la calidad del sistema.", cols: ["B.9 no financiero $\\approx$ B.9F financiero"] },
           ],
         },
       ],

@@ -44,7 +44,7 @@ export default {
             { nom: "Cotizaciones imputadas", sub: "Ningún flujo real las respalda.", cols: ["D.122 = D.622 por construcción"] },
             { nom: "Su caso mayor en España", sub: "Régimen sin fondo constituido.", cols: ["pensiones de clases pasivas"] },
             { nom: "A quién no cubre el D.1", sub: "Trabajo y capital inseparables.", cols: ["autónomos → renta mixta B.3"] },
-            { nom: "Consecuencia", sub: "Corregir imputando la remuneración media.", cols: ["D.1 ÷ PIB infravalora el peso del trabajo"] },
+            { nom: "Consecuencia", sub: "Corregir imputando la remuneración media.", cols: ["D.1 / PIB infravalora el peso del trabajo"] },
           ],
         },
       ],

@@ -92,14 +92,14 @@ export default {
             ["Conserva rectas", "sí", "sí"],
             { celdas: ["Conserva cúbicas", "no", "sí"], clase: "total" },
           ],
-          nota: "Que **conserve polinomios de tercer grado** es la propiedad de diseño del Henderson: aplicado a una serie que siga exactamente una cúbica, devuelve la cúbica sin deformarla. Comprobado numéricamente sobre un polinomio cúbico, la diferencia entre el valor real y el filtrado es de **3,5 · 10⁻⁵**, atribuible al redondeo de los pesos publicados, que por eso suman 1,00002 y no exactamente 1.",
+          nota: "Que **conserve polinomios de tercer grado** es la propiedad de diseño del Henderson: aplicado a una serie que siga exactamente una cúbica, devuelve la cúbica sin deformarla. Comprobado numéricamente sobre un polinomio cúbico, la diferencia entre el valor real y el filtrado es de $3{,}5 \\times 10^{-5}$, atribuible al redondeo de los pesos publicados, que por eso suman 1,00002 y no exactamente 1.",
         },
         {
           tipo: "parrafos",
           items: [
             "Los filtros estacionales siguen la misma lógica de composición. Un filtro **3×3** es una media móvil de tres términos aplicada dos veces, lo que da los pesos 0,111 · 0,222 · 0,333 · 0,222 · 0,111 sobre cinco años del mismo trimestre. Un **3×5** extiende a siete años con pesos 0,067 · 0,133 · 0,200 · 0,200 · 0,200 · 0,133 · 0,067. Ambos suman uno.",
             "La elección entre ellos es un compromiso explícito. El **3×3 pesa cinco años** y reacciona deprisa a un cambio del patrón estacional, a costa de recoger también el ruido. El **3×9 pesa once años** y da factores muy estables, a costa de tardar en reconocer que la estacionalidad ha cambiado de verdad. X-11 elige automáticamente comparando la variabilidad del irregular con la del estacional —la llamada razón I/S—, pero la elección se puede fijar a mano, y en series con estacionalidad cambiante conviene revisarla.",
-            "SEATS no tiene este catálogo. Su filtro sale de la factorización del ARIMA, así que **su longitud efectiva depende de los parámetros estimados**: un modelo con Θ próximo a uno produce un filtro estacional muy estable, y uno con Θ pequeño, un filtro que se adapta rápido. La decisión sigue existiendo, pero se ha trasladado del catálogo de filtros a la especificación del modelo, que es lo que se decidió en la ficha 15.02.",
+            "SEATS no tiene este catálogo. Su filtro sale de la factorización del ARIMA, así que **su longitud efectiva depende de los parámetros estimados**: un modelo con $\\Theta$ próximo a uno produce un filtro estacional muy estable, y uno con $\\Theta$ pequeño, un filtro que se adapta rápido. La decisión sigue existiendo, pero se ha trasladado del catálogo de filtros a la especificación del modelo, que es lo que se decidió en la ficha 15.02.",
           ],
         },
       ],

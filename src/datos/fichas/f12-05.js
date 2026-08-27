@@ -36,8 +36,8 @@ export default {
           modo: "dos",
           filas: [
             { nom: "Tipo de referencia", sub: "El que acordarían sin intermediario.", cols: ["r* — en la práctica, el interbancario"] },
-            { nom: "SIFMI de préstamos", sub: "Lo que paga el prestatario.", cols: ["(r_préstamo − r*) × saldo de préstamos"] },
-            { nom: "SIFMI de depósitos", sub: "Lo que paga el depositante.", cols: ["(r* − r_depósito) × saldo de depósitos"] },
+            { nom: "SIFMI de préstamos", sub: "Lo que paga el prestatario.", cols: ["$(r_{\\text{préstamo}} - r^*) \\times$ saldo de préstamos"] },
+            { nom: "SIFMI de depósitos", sub: "Lo que paga el depositante.", cols: ["$(r^* - r_{\\text{depósito}}) \\times$ saldo de depósitos"] },
             { nom: "SIFMI total", sub: "La suma de las dos tarifas implícitas.", cols: ["SIFMI = SIFMI préstamos + SIFMI depósitos"] },
             { nom: "Perímetro", sub: "Ni bonos, ni acciones, ni derivados.", cols: ["solo préstamos y depósitos, solo banca"] },
             { nom: "Destino", sub: "Depende de en qué condición actúa el hogar.", cols: ["P.2 si es actividad productiva · P.3 si es consumo"] },

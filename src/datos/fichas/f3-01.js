@@ -35,7 +35,7 @@ export default {
           modo: "dos",
           filas: [
             { nom: "PIB por el gasto", sub: "Definición, no teoría.", cols: ["PIB = C + I + G + (X − M)"] },
-            { nom: "PIB por la producción", sub: "Suma de valores añadidos.", cols: ["PIB = Σ VAB + Impuestos netos sobre productos"] },
+            { nom: "PIB por la producción", sub: "Suma de valores añadidos.", cols: ["$\\mathrm{PIB} = \\sum \\mathrm{VAB} + \\text{Impuestos netos sobre productos}$"] },
             { nom: "PIB por la renta", sub: "Cómo se reparte lo producido.", cols: ["PIB = D.1 + EBE + B.3 + Imp. netos"] },
             { nom: "Del PIB a la renta nacional bruta", sub: "De criterio territorial a criterio de propiedad.", cols: ["RNB = PIB + Rentas primarias netas del exterior"] },
             { nom: "Renta nacional disponible", sub: "Incorpora remesas y transferencias.", cols: ["RND = RNB + Transferencias corrientes netas"] },
@@ -182,6 +182,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Una economía crece un 6 % nominal con un deflactor del 3 %. ¿Cuánto ha crecido en términos reales?",
+              opciones: [
+                "Un 3 %, restando la inflación del crecimiento nominal",
+                "Un 2,91 %: las tasas se encadenan, no se restan",
+                "Un 6 %, porque el deflactor ya está incorporado",
+                "Un 9 %, sumando ambos efectos",
+              ],
+              correcta: 1,
+              porque: [
+                "La resta es una aproximación que pasa con tasas pequeñas y falla en cuanto crecen. Aquí el error es de nueve centésimas; con inflación de dos dígitos se vuelve sustancial.",
+                "$1{,}06/1{,}03 - 1 = 2{,}91\\ \\%$. Es el mismo encadenamiento multiplicativo que rige cualquier composición de tasas.",
+                "El crecimiento nominal mezcla producción y precios por construcción; deflactar es precisamente separarlos.",
+                "Sumar va en la dirección contraria: la inflación se descuenta del crecimiento nominal, no se añade.",
+              ],
+            },
+            {
+              q: "Un particular vende su vivienda por 300.000 €. ¿Cuánto suma eso al PIB?",
+              opciones: [
+                "300.000 €, que es el valor de la transacción",
+                "Solo la comisión del agente y los servicios asociados: la casa ya existía",
+                "Nada, porque las operaciones entre particulares no se registran",
+                "El margen entre el precio de compra y el de venta",
+              ],
+              correcta: 1,
+              porque: [
+                "El PIB mide producción nueva del período. Una casa construida hace veinte años ya se contabilizó entonces; volver a contarla sería doble cómputo.",
+                "Lo que sí es producción del año es el servicio de intermediación: la comisión del agente, la notaría, la gestoría. Ocurre igual con la compraventa de acciones.",
+                "Sí se registran, y de hecho la parte que es producción —los servicios— entra en las cuentas.",
+                "La plusvalía es una revalorización del activo, no producción. Va al balance, no a la cuenta de producción.",
+              ],
+            },
+            {
+              q: "Un terremoto destruye viviendas y la reconstrucción posterior eleva el PIB. ¿Es eso una paradoja de la contabilidad?",
+              opciones: [
+                "Sí: demuestra que el PIB está mal construido",
+                "No: el PIB mide producción del período, y la pérdida de patrimonio va a los balances, no al flujo",
+                "Sí, y por eso las catástrofes se descuentan del PIB",
+                "No, porque la reconstrucción se financia con seguros y no computa",
+              ],
+              correcta: 1,
+              porque: [
+                "No es un defecto corregible sino una consecuencia de qué mide el agregado. Pedirle que recoja la destrucción de patrimonio es pedirle que sea otra cosa.",
+                "Es la misma distinción entre cuenta de resultados y balance: el flujo anual y el fondo acumulado son magnitudes distintas y ambas hacen falta.",
+                "No se descuentan: el sistema de cuentas registra la pérdida en la cuenta de otras variaciones de activos, que es donde corresponde.",
+                "La financiación no cambia el registro: la actividad constructora es producción del año se pague como se pague.",
+              ],
+            },
+            {
+              q: "Un informe compara el PIB per cápita de España y de la India usando el tipo de cambio de mercado. ¿Qué problema tiene?",
+              opciones: [
+                "Ninguno: es la conversión estándar",
+                "Que los bienes no comerciables tienen precios muy distintos y el tipo de cambio no los recoge, exagerando la diferencia",
+                "Que el PIB per cápita no es comparable entre países de distinto tamaño",
+                "Que habría que usar el PIB nominal en vez del real",
+              ],
+              correcta: 1,
+              porque: [
+                "Es una conversión válida para flujos que efectivamente cruzan la frontera, no para comparar niveles de vida.",
+                "Un corte de pelo o un alquiler cuestan mucho menos en la India y el tipo de cambio no lo refleja. Por eso se usan paridades de poder adquisitivo, que corrigen justo eso.",
+                "El per cápita ya normaliza por población: el tamaño no es el problema.",
+                "Nominal o real es otra dimensión: el problema de la conversión persiste con cualquiera de los dos.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

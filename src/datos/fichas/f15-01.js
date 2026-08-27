@@ -42,7 +42,7 @@ export default {
             { nom: "Etapa 2 · descomposición", sub: "Separa los componentes.", cols: ["X-11 (promedios móviles) o SEATS (basado en modelo)"] },
             { nom: "Etapa 3 · diagnóstico", sub: "Comprueba que el resultado vale.", cols: ["Estacionalidad residual, estabilidad, revisiones"] },
             { nom: "Etapa 4 · conciliación", sub: "Cuadra con totales y agregados.", cols: ["Benchmarking anual y coherencia entre componentes"] },
-            { nom: "Serie ajustada", sub: "Lo que se publica.", cols: ["Ajustada = bruta ÷ factor estacional (caso multiplicativo)"] },
+            { nom: "Serie ajustada", sub: "Lo que se publica.", cols: ["Ajustada $= \\dfrac{\\text{bruta}}{\\text{factor estacional}}$ (caso multiplicativo)"] },
             { nom: "Normalización de factores", sub: "Condición que deben cumplir.", cols: ["Los factores de un año promedian 1 (o suman 0 si es aditiva)"] },
           ],
         },

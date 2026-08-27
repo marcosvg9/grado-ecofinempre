@@ -46,8 +46,8 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Valoración de la provisión", sub: "Mejor estimación, descontada si el efecto del tiempo es significativo.", cols: ["P₀ = E[coste] / (1 + i)ⁿ"] },
-            { nom: "Actualización financiera anual", sub: "Va a gasto financiero, no a explotación.", cols: ["Δ_t = P_(t−1) × i"] },
+            { nom: "Valoración de la provisión", sub: "Mejor estimación, descontada si el efecto del tiempo es significativo.", cols: ["$P_0 = \\dfrac{E[\\text{coste}]}{(1+i)^n}$"] },
+            { nom: "Actualización financiera anual", sub: "Va a gasto financiero, no a explotación.", cols: ["$\\Delta_t = P_{t-1}\\,i$"] },
             { nom: "Gasto anticipado", sub: "Parte de un pago que corresponde al ejercicio siguiente.", cols: ["GA = Pago × (días posteriores al cierre / días cubiertos)"] },
             { nom: "Ingreso anticipado", sub: "Cobro que remunera un servicio aún no prestado.", cols: ["IA = Cobro × (días posteriores al cierre / días cubiertos)"] },
             { nom: "Provisión por contrato oneroso", sub: "Cuando cumplir el contrato cuesta más que incumplirlo.", cols: ["P = mín(coste de cumplir ; indemnización por incumplir)"] },
@@ -86,7 +86,7 @@ export default {
           tipo: "tabla",
           cabecera: ["Momento", "Cálculo", "Importe"],
           filas: [
-            ["Valor actual de la obligación", "200.000 / 1,04¹⁰", "135.113 €"],
+            ["Valor actual de la obligación", "$200.000 / 1{,}04^{10}$", "135.113 €"],
             ["Se capitaliza en el inmovilizado", "mayor valor de la planta", "135.113 €"],
             ["Provisión reconocida en el pasivo", "misma cuantía", "135.113 €"],
             ["Actualización financiera del año 1", "135.113 × 4 %", "5.405 €"],

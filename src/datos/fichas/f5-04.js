@@ -54,7 +54,7 @@ export default {
             { nom: "Valor razonable", sub: "Referencia a mercado activo; si no lo hay, técnicas de valoración.", cols: ["Importe por el que se intercambiaría entre partes informadas"] },
             { nom: "Valor neto realizable", sub: "Propio de las existencias.", cols: ["Precio estimado de venta − costes de terminación y venta"] },
             { nom: "Valor en uso", sub: "Requiere estimar flujos y elegir una tasa de descuento.", cols: ["Valor actual de los flujos futuros esperados del activo"] },
-            { nom: "Coste amortizado", sub: "Propio de los instrumentos financieros.", cols: ["Valoración inicial ± amortización del tipo de interés efectivo − deterioro"] },
+            { nom: "Coste amortizado", sub: "Propio de los instrumentos financieros.", cols: ["Valoración inicial $\\pm$ amortización del tipo de interés efectivo $-$ deterioro"] },
             { nom: "Valor contable", sub: "No es un criterio de medición, es el saldo resultante.", cols: ["Importe neto por el que el elemento figura en el balance"] },
           ],
         },

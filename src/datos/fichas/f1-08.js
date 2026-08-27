@@ -36,7 +36,7 @@ export default {
           filas: [
             { nom: "Modelo", sub: "Su valor está en lo que omite.", cols: ["Simplificación que aísla un mecanismo"] },
             { nom: "Ceteris paribus", sub: "Sustituye al laboratorio, y de forma imperfecta.", cols: ["Aislar un efecto manteniendo lo demás fijo"] },
-            { nom: "Variable omitida", sub: "La causa común que explica ambas cosas.", cols: ["Z → X y Z → Y produce corr(X,Y) ≠ 0"] },
+            { nom: "Variable omitida", sub: "La causa común que explica ambas cosas.", cols: ["$Z \\to X$ y $Z \\to Y$ produce $\\mathrm{corr}(X,Y) \\neq 0$"] },
             { nom: "Causalidad inversa", sub: "El efecto tomado por causa.", cols: ["Y → X en lugar de X → Y"] },
             { nom: "Sesgo de selección", sub: "La muestra observada no representa a la población.", cols: ["Observar solo casos no aleatorios"] },
             { nom: "Sesgo de supervivencia", sub: "Estudiar solo a los que quedan.", cols: ["Los fracasos no están en la muestra"] },
@@ -169,6 +169,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un estudio observa que las empresas con más formación interna crecen más. ¿Qué impide concluir que la formación causa el crecimiento?",
+              opciones: [
+                "Que la muestra podría ser pequeña",
+                "Que puede haber una variable omitida: las empresas que ya van bien se permiten formar más",
+                "Que la correlación es solo estadística y nunca implica nada",
+                "Que faltaría comprobar que el coeficiente es significativo",
+              ],
+              correcta: 1,
+              porque: [
+                "El tamaño afecta a la precisión de la estimación, no a su interpretación. Con un millón de empresas el problema seguiría exactamente igual.",
+                "Es el caso de manual: un tercer factor —la buena marcha— empuja a la vez la formación y el crecimiento. Y a su lado están la causalidad inversa y el sesgo de selección, que ninguna cantidad de datos descarta por sí sola.",
+                "Las correlaciones sí informan; lo que no hacen es identificar el mecanismo por sí solas. Descartarlas por principio es tan poco útil como aceptarlas sin más.",
+                "La significación dice que el patrón difícilmente es fruto del azar muestral. Una relación espuria puede estimarse con enorme precisión y ser significativísima.",
+              ],
+            },
+            {
+              q: "Se evalúa un plan de empleo comparando el paro antes y después de aplicarlo. ¿Qué falla en ese diseño?",
+              opciones: [
+                "Nada, si el periodo comparado es suficientemente largo",
+                "Que entre ambos momentos cambia todo lo demás, así que mezcla el plan con el ciclo",
+                "Que habría que comparar con la media histórica en vez de con el año anterior",
+                "Que el paro no es la variable adecuada para medir un plan de empleo",
+              ],
+              correcta: 1,
+              porque: [
+                "Alargar el periodo empeora el problema: cuanto más tiempo pasa, más cosas han cambiado además del plan.",
+                "Hace falta un grupo de comparación creíble que diga qué habría pasado sin el plan. Un «antes» no es un contrafactual, porque el antes y el después no se diferencian solo en el plan.",
+                "La media histórica sigue siendo un antes, solo que más largo. El problema no es qué periodo se elige como referencia, sino que no hay grupo de comparación.",
+                "La variable es razonable. El defecto está en la comparación, y persistiría con cualquier indicador que se eligiera.",
+              ],
+            },
+            {
+              q: "Un estudio busca qué tienen en común las empresas que llevan más de treinta años funcionando. ¿Qué problema tiene?",
+              opciones: [
+                "Que treinta años es un umbral arbitrario",
+                "Sesgo de supervivencia: los rasgos hallados pueden estar también en las que quebraron",
+                "Que las empresas antiguas usan tecnologías obsoletas y no son comparables",
+                "Que la muestra estará dominada por sectores maduros",
+              ],
+              correcta: 1,
+              porque: [
+                "Cualquier umbral sería arbitrario, y con otro distinto el problema seguiría intacto. Lo que falla no es dónde se corta sino a quién se deja fuera.",
+                "Los ausentes contienen la mitad de la información. Si las quebradas compartían esos mismos rasgos, lo hallado no explica la supervivencia: solo describe a las empresas en general.",
+                "La comparabilidad tecnológica es una dificultad práctica que se puede controlar. El sesgo de supervivencia no se controla: hay que ir a buscar a los que faltan.",
+                "La composición sectorial se puede corregir ponderando. El problema de fondo es que la muestra excluye sistemáticamente los fracasos, y eso no se arregla ponderando.",
+              ],
+            },
+            {
+              q: "Una teoría lleva veinte años sobreviviendo a los contrastes gracias a añadir un caso especial cada vez que falla. ¿Cómo debe valorarse?",
+              opciones: [
+                "Bien: sobrevivir a los contrastes es exactamente lo que se le pide a una teoría",
+                "Mal: una teoría compatible con cualquier resultado ya no predice nada",
+                "Bien, mientras cada excepción tenga justificación teórica",
+                "Depende de si las excepciones son pocas o muchas",
+              ],
+              correcta: 1,
+              porque: [
+                "Lo que se le pide es sobrevivir a contrastes que *podría* haber fallado. Si se rescata cada vez ampliando la lista de casos especiales, no ha corrido ningún riesgo real.",
+                "Una teoría informa en la medida en que prohíbe resultados. Si ninguno la refutaría, deja de ser falsable y su supervivencia no es evidencia de nada.",
+                "Una justificación construida después del fallo no es una predicción: es una descripción del fallo. La prueba está en si la excepción se anunció antes o después.",
+                "El recuento no es lo decisivo. Una sola excepción ad hoc bien colocada puede blindar una teoría por completo.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

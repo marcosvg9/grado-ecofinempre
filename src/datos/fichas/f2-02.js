@@ -34,14 +34,14 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Problema del consumidor", sub: "Con solución interior y preferencias convexas.", cols: ["máx U(x₁,x₂) s.a. p₁x₁ + p₂x₂ = m"] },
-            { nom: "Condición de primer orden", sub: "Utilidad marginal por euro igualada.", cols: ["UMg₁ / p₁ = UMg₂ / p₂ = λ"] },
-            { nom: "Demanda marshalliana", sub: "Renta constante. Es la observable.", cols: ["xᵢ = xᵢ(p₁, p₂, m)"] },
-            { nom: "Demanda hicksiana", sub: "Utilidad constante. No observable.", cols: ["xᵢʰ = xᵢʰ(p₁, p₂, U)"] },
-            { nom: "Elasticidad precio", sub: "Adimensional, negativa salvo caso Giffen.", cols: ["ε = (∂x/∂p) × (p/x)"] },
-            { nom: "Elasticidad renta", sub: "Clasifica el bien.", cols: ["η = (∂x/∂m) × (m/x)"] },
-            { nom: "Agregación de Engel", sub: "Restricción de coherencia sobre las elasticidades renta.", cols: ["Σ wᵢ · ηᵢ = 1"] },
-            { nom: "Homogeneidad", sub: "Restricción derivada del grado cero.", cols: ["εᵢᵢ + Σ εᵢⱼ + ηᵢ = 0"] },
+            { nom: "Problema del consumidor", sub: "Con solución interior y preferencias convexas.", cols: ["$\\max U(x_1, x_2)$ s. a. $p_1 x_1 + p_2 x_2 = m$"] },
+            { nom: "Condición de primer orden", sub: "Utilidad marginal por euro igualada.", cols: ["$\\dfrac{\\mathrm{UMg}_1}{p_1} = \\dfrac{\\mathrm{UMg}_2}{p_2} = \\lambda$"] },
+            { nom: "Demanda marshalliana", sub: "Renta constante. Es la observable.", cols: ["$x_i = x_i(p_1, p_2, m)$"] },
+            { nom: "Demanda hicksiana", sub: "Utilidad constante. No observable.", cols: ["$x_i^h = x_i^h(p_1, p_2, U)$"] },
+            { nom: "Elasticidad precio", sub: "Adimensional, negativa salvo caso Giffen.", cols: ["$\\varepsilon = \\dfrac{\\partial x}{\\partial p} \\cdot \\dfrac{p}{x}$"] },
+            { nom: "Elasticidad renta", sub: "Clasifica el bien.", cols: ["$\\eta = \\dfrac{\\partial x}{\\partial m} \\cdot \\dfrac{m}{x}$"] },
+            { nom: "Agregación de Engel", sub: "Restricción de coherencia sobre las elasticidades renta.", cols: ["$\\sum_i w_i \\eta_i = 1$"] },
+            { nom: "Homogeneidad", sub: "Restricción derivada del grado cero.", cols: ["$\\varepsilon_{ii} + \\sum_j \\varepsilon_{ij} + \\eta_i = 0$"] },
           ],
         },
       ],
@@ -52,7 +52,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "Sea **U(x, y) = x^0,4 · y^0,6** con renta **m = 200**. Las proporciones de gasto son 0,4 y 0,6, de modo que las demandas son x = 0,4·m/pₓ e y = 0,6·m/p_y. Con esa renta, **x = 80/pₓ**.",
+            "Sea $U(x,y) = x^{0{,}4} y^{0{,}6}$ con renta $m = 200$. Las proporciones de gasto son 0,4 y 0,6, de modo que las demandas son $x = 0{,}4\\,m/p_x$ e $y = 0{,}6\\,m/p_y$. Con esa renta, $x = 80/p_x$.",
           ],
         },
         {
@@ -86,7 +86,7 @@ export default {
         },
         {
           tipo: "tabla",
-          cabecera: ["Precio pₓ", "Cantidad x", "Gasto en x", "Proporción del presupuesto"],
+          cabecera: ["Precio $p_x$", "Cantidad x", "Gasto en x", "Proporción del presupuesto"],
           filas: [
             ["2 €", "40,0", "80 €", "40 %"],
             ["4 €", "20,0", "80 €", "40 %"],
@@ -94,15 +94,15 @@ export default {
             ["8 €", "10,0", "80 €", "40 %"],
             { celdas: ["16 €", "5,0", "80 €", "40 %"], clase: "total" },
           ],
-          nota: "La demanda es una **hipérbola**: x·pₓ es constante e igual a 80. Eso significa elasticidad precio exactamente **−1** en todo el recorrido, propiedad característica de las Cobb-Douglas. El gasto en el bien no varía con su precio, algo que rara vez se cumple en datos reales y que conviene recordar como limitación de esta familia de preferencias.",
+          nota: "La demanda es una **hipérbola**: $x \\cdot p_x$ es constante e igual a 80. Eso significa elasticidad precio exactamente **−1** en todo el recorrido, propiedad característica de las Cobb-Douglas. El gasto en el bien no varía con su precio, algo que rara vez se cumple en datos reales y que conviene recordar como limitación de esta familia de preferencias.",
         },
         {
           tipo: "tabla",
           cabecera: ["Elasticidad", "Valor en Cobb-Douglas", "Comprobación"],
           filas: [
-            ["Precio propia de x", "−1", "x = 80/pₓ ⟹ ε = −1"],
-            ["Cruzada respecto a p_y", "0", "x no depende de p_y"],
-            ["Renta", "+1", "x proporcional a m"],
+            ["Precio propia de x", "−1", "$x = 80/p_x \\Rightarrow \\varepsilon = -1$"],
+            ["Cruzada respecto a $p_y$", "0", "$x$ no depende de $p_y$"],
+            ["Renta", "+1", "$x$ proporcional a $m$"],
             { celdas: ["Suma (homogeneidad)", "−1 + 0 + 1 = 0", "se cumple ✓"], clase: "total" },
             ["Agregación de Engel", "0,4·1 + 0,6·1 = 1", "se cumple ✓"],
           ],
@@ -111,7 +111,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "**Un caso con solución de esquina.** Sea ahora **U(x, y) = x + 2y** —sustitutivos perfectos—, con pₓ = 1, p_y = 3 y m = 60. La relación marginal de sustitución es constante e igual a 1/2, mientras que el precio relativo es pₓ/p_y = 1/3. Como **la RMS supera al precio relativo**, el consumidor gasta todo en x: x = 60, y = 0, con utilidad 60. La alternativa de gastarlo todo en y daría y = 20 y utilidad 40. La condición de tangencia no aplica aquí, porque las curvas de indiferencia son rectas y no hay punto de tangencia interior.",
+            "**Un caso con solución de esquina.** Sea ahora $U(x,y) = x + 2y$ —sustitutivos perfectos—, con $p_x = 1$, $p_y = 3$ y $m = 60$. La relación marginal de sustitución es constante e igual a $1/2$, mientras que el precio relativo es $p_x/p_y = 1/3$. Como **la RMS supera al precio relativo**, el consumidor gasta todo en $x$: $x = 60$, $y = 0$, con utilidad 60. La alternativa de gastarlo todo en $y$ daría $y = 20$ y utilidad 40. La condición de tangencia no aplica aquí, porque las curvas de indiferencia son rectas y no hay punto de tangencia interior.",
           ],
         },
       ],
@@ -174,7 +174,7 @@ export default {
         {
           tipo: "preguntas",
           items: [
-            { q: "U = x^0,25·y^0,75, m = 400, pₓ = 5. ¿Cuánto x se demanda?", a: "El 25 % de la renta va a x, es decir 100 €, de modo que x = 20. Y esa demanda es independiente de p_y, propiedad característica de las Cobb-Douglas." },
+            { q: "$U = x^{0{,}25} y^{0{,}75}$, $m = 400$, $p_x = 5$. ¿Cuánto $x$ se demanda?", a: "El 25 % de la renta va a $x$, es decir 100 €, de modo que $x = 20$. Y esa demanda es independiente de $p_y$, propiedad característica de las Cobb-Douglas." },
             { q: "¿Por qué la elasticidad precio de una Cobb-Douglas es siempre −1?", a: "Porque el gasto en el bien es una proporción fija de la renta, así que x·p es constante. Un aumento porcentual del precio implica una caída porcentual idéntica de la cantidad." },
             { q: "Un bien tiene elasticidad renta de 1,8. ¿Qué implica para los demás?", a: "Que al menos otro debe tener elasticidad renta inferior a uno, por la agregación de Engel: la media ponderada por proporciones de gasto es exactamente uno. No todos los bienes pueden ser de lujo." },
             { q: "¿Qué diferencia hay entre demanda marshalliana e hicksiana?", a: "La marshalliana mantiene constante la renta monetaria y es la observable; la hicksiana mantiene constante la utilidad, compensando el cambio de precio. La segunda es la relevante para bienestar y para la teoría de índices." },
@@ -183,6 +183,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Por qué la curva de demanda tiene normalmente pendiente negativa?",
+              opciones: [
+                "Es un supuesto básico de la teoría del consumidor",
+                "Es un resultado que se deduce de resolver el óptimo a distintos precios, y admite una excepción teórica",
+                "Es una regularidad empírica sin fundamento teórico",
+                "Se sigue directamente de la utilidad marginal decreciente",
+              ],
+              correcta: 1,
+              porque: [
+                "Presentarlo como axioma oculta el mecanismo: la demanda es el rastro que deja el consumidor óptimo cuando se varía el precio y se vuelve a resolver.",
+                "Se deduce, y la excepción son los bienes Giffen, donde el efecto renta es negativo y supera al de sustitución. Que exista esa excepción confirma que es un resultado y no un supuesto.",
+                "Tiene fundamento teórico completo: sale de la descomposición en efecto sustitución —siempre negativo— y efecto renta, cuyo signo depende del tipo de bien.",
+                "La utilidad marginal decreciente ni siquiera es invariante ante transformaciones monótonas, así que no puede sostener por sí sola un resultado observable.",
+              ],
+            },
+            {
+              q: "Una demanda Cobb-Douglas tiene elasticidad-precio exactamente $-1$. ¿Qué se sigue de ahí?",
+              opciones: [
+                "Que la mayoría de bienes tienen elasticidad cercana a $-1$",
+                "Nada general: es una propiedad de esa familia concreta, no de la teoría",
+                "Que el gasto en el bien crece con su precio",
+                "Que las Cobb-Douglas son el caso más realista",
+              ],
+              correcta: 1,
+              porque: [
+                "Es una propiedad muy fuerte y rara vez se observa en datos reales. Generalizarla es tomar la comodidad matemática de una familia por un hecho del mundo.",
+                "Sus proporciones de gasto constantes y su elasticidad unitaria vienen de la forma funcional elegida. Sirven para hacer cuentas limpias, no para describir consumidores.",
+                "Con elasticidad unitaria el gasto es constante: ni crece ni decrece con el precio. Es justamente la propiedad característica.",
+                "Son las más manejables, que no es lo mismo. Su realismo es precisamente lo que hay que poner en duda.",
+              ],
+            },
+            {
+              q: "¿En qué se diferencian la demanda marshalliana y la hicksiana?",
+              opciones: [
+                "En nada sustantivo: son dos nombres para la misma curva",
+                "La marshalliana mantiene la renta constante y es la observable; la hicksiana mantiene la utilidad y es la que sirve para bienestar",
+                "La hicksiana incluye el efecto renta y la marshalliana no",
+                "La marshalliana se usa a corto plazo y la hicksiana a largo",
+              ],
+              correcta: 1,
+              porque: [
+                "Coinciden solo cuando el efecto renta es nulo, que es un caso particular. En general son curvas distintas y con pendientes distintas.",
+                "Es justo la distinción que hace falta para el análisis de bienestar: medir la variación compensatoria exige mantener constante la utilidad, no la renta.",
+                "Es al revés: la marshalliana recoge sustitución y renta juntas, y la hicksiana aísla solo la sustitución.",
+                "El horizonte temporal no tiene nada que ver. La diferencia está en qué magnitud se mantiene fija al variar el precio.",
+              ],
+            },
+            {
+              q: "Un sistema de demanda estimado da elasticidades que no cumplen la agregación de Engel. ¿Qué indica eso?",
+              opciones: [
+                "Que las preferencias no son Cobb-Douglas",
+                "Que hay un error de especificación o de datos: son restricciones que cualquier sistema coherente debe cumplir",
+                "Que el consumidor no se comporta racionalmente",
+                "Que falta incluir algún bien en el sistema",
+              ],
+              correcta: 1,
+              porque: [
+                "La agregación de Engel vale para cualquier preferencia, no solo para las Cobb-Douglas. Incumplirla no informa sobre la familia funcional.",
+                "$\\sum_i w_i \\eta_i = 1$ y la homogeneidad acotan qué conjuntos de elasticidades son posibles. Son una comprobación de errores gratuita y muy útil.",
+                "La irracionalidad del consumidor sería una conclusión desmesurada a partir de un fallo de estimación. Lo primero que hay que revisar es el modelo, no al sujeto.",
+                "Puede ser una de las causas concretas, pero el diagnóstico general es que algo falla en la especificación o en los datos.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

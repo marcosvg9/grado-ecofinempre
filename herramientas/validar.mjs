@@ -10,6 +10,7 @@
      · título, nivel y bloque coinciden exactamente con el temario
      · el nombre del archivo corresponde al código (f14-09.js ↔ "14.09")
      · está registrada en index.js (si no, existe pero no se puede abrir)
+     · toda fórmula $…$ compila a MathML
      · están las cuatro secciones obligatorias y los cuatro campos de cabecera
      · los códigos citados en «requiere» y «abre» existen en el temario
      · no hay tipos de bloque desconocidos
@@ -37,6 +38,8 @@ for (const b of BLOQUES) {
   });
 }
 
+import { partir, revisar } from "../src/formula.js";
+
 const TIPOS = new Set([
   "parrafos", "rejilla", "pasos", "tabla", "acordeon",
   "preguntas", "destacado", "fuentes", "diario", "grafico", "test",
@@ -55,6 +58,7 @@ const prerreq = {};
 let incidencias = 0;
 let graficos = 0;
 let testItems = 0;
+let formulas = 0;
 const porBloque = {};
 
 for (const archivo of archivos) {
@@ -69,6 +73,12 @@ for (const archivo of archivos) {
   if (archivo !== "f" + f.codigo.replace(".", "-") + ".js") err("nombre de archivo ≠ código");
   if (!indice.includes(`"${f.codigo}":`)) err("no registrada en index.js");
 
+  /* Los títulos —el de la ficha y el de cada sección— se pintan tal cual,
+     sin pasar por el formateador: una fórmula ahí sale con los dólares
+     puestos. En un encabezado el Unicode basta y sobra. */
+  for (const [donde, txt] of [["el título de la ficha", f.titulo], ...f.secciones.map((s) => [`la sección «${s.titulo}»`, s.titulo])])
+    if (partir(txt || "").some((x) => x.math)) err(`fórmula en ${donde}: los títulos no la renderizan`);
+
   const titulos = f.secciones.map((s) => s.titulo);
   for (const req of SECCIONES) if (!titulos.includes(req)) err(`falta sección «${req}»`);
   for (const k of CAMPOS) if (!f[k]) err(`falta campo ${k}`);
@@ -80,6 +90,29 @@ for (const archivo of archivos) {
     }
   }
   prerreq[f.codigo] = referencias(f.requiere).filter((c) => temas[c] && c !== f.codigo);
+
+  /* Una fórmula rota no se ve: el render enseña su fuente en rojo y hay
+     que tropezarse con ella leyendo. Se recorre la ficha entera —no solo
+     los bloques— porque el título, el núcleo y las notas también admiten
+     fórmula. */
+  const revisarTextos = (v, ruta) => {
+    if (typeof v === "string") {
+      if (!v.includes("$")) return;
+      for (const t of partir(v)) {
+        if (!t.math) {
+          const suelto = t.texto.replace(/\\\$/g, "").includes("$");
+          if (suelto && !/\d\s*\$/.test(t.texto))
+            err(`«$» suelto en ${ruta} — ¿fórmula sin cerrar?\n     ${t.texto.slice(0, 90)}`);
+          continue;
+        }
+        formulas++;
+        const e = revisar(t.latex);
+        if (e) err(`fórmula inválida en ${ruta}\n     ${e.split("\n")[0]}\n     ${t.latex}`);
+      }
+    } else if (Array.isArray(v)) v.forEach((x, i) => revisarTextos(x, `${ruta}[${i}]`));
+    else if (v && typeof v === "object") for (const k of Object.keys(v)) revisarTextos(v[k], `${ruta}.${k}`);
+  };
+  revisarTextos(f, f.codigo);
 
   for (const s of f.secciones) {
     for (const b of s.contenido) {
@@ -106,6 +139,22 @@ for (const archivo of archivos) {
 
       if (b.tipo !== "grafico") continue;
       graficos++;
+
+      /* Los rótulos del gráfico se pintan como <text> de SVG, que no pasa
+         por el formateador ni admite MathML: una fórmula ahí se imprime en
+         crudo, con los dólares a la vista. En un gráfico el Unicode es lo
+         correcto. */
+      const sinLatex = (v, donde) => {
+        if (typeof v === "string") {
+          if (partir(v).some((x) => x.math)) err(`fórmula en ${donde}: los rótulos de gráfico van a SVG y no la renderizan`);
+        } else if (Array.isArray(v)) v.forEach((x, i) => sinLatex(x, `${donde}[${i}]`));
+        else if (v && typeof v === "object") for (const k of Object.keys(v)) sinLatex(v[k], `${donde}.${k}`);
+      };
+      // «nota» es la leyenda de debajo, que sí es HTML y sí pasa por enLinea.
+      for (const campo of ["ejes", "notas"]) sinLatex(b[campo], `gráfico.${campo}`);
+      (b.series || []).forEach((s3, i) => sinLatex(s3.nombre, `gráfico.series[${i}].nombre`));
+      (b.puntos || []).forEach((p2, i) => sinLatex(p2.etiqueta, `gráfico.puntos[${i}].etiqueta`));
+      (b.areas || []).forEach((a2, i) => sinLatex(a2.nombre, `gráfico.areas[${i}].nombre`));
       const chk = (pts, donde) => (pts || []).forEach((p) => {
         if (!Array.isArray(p) || p.length !== 2 || !p.every((v) => Number.isFinite(v)))
           err(`punto inválido en ${donde}: ${JSON.stringify(p)}`);
@@ -124,7 +173,7 @@ for (const archivo of archivos) {
 
 console.log(
   incidencias === 0
-    ? `\nSin incidencias en las ${archivos.length} fichas. Gráficos: ${graficos}. Preguntas de test: ${testItems}`
+    ? `\nSin incidencias en las ${archivos.length} fichas. Gráficos: ${graficos}. Test: ${testItems}. Fórmulas: ${formulas}`
     : `\n${incidencias} incidencias.`
 );
 console.log("Progreso:", archivos.length, "/", Object.keys(temas).length);

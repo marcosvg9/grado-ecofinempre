@@ -67,7 +67,7 @@ export default {
             ["Especulativa", "1.667", "100", "0", "Paga intereses, refinancia el principal"],
             { celdas: ["Ponzi", "2.000", "120", "−20", "Se endeuda para pagar intereses"], clase: "total" },
           ],
-          nota: "El umbral que separa la segunda de la tercera es exacto: con un flujo de 100 y un tipo del 6 %, la deuda que absorbe justo todo el flujo en intereses es **100 ÷ 0,06 = 1.666,7**. Por debajo se amortiza; por encima, la deuda crece sola. Lo decisivo es que **ninguna de las tres empresas ha hecho nada distinto**: la postura la determina el balance, y el balance lo va cambiando el propio ciclo.",
+          nota: "El umbral que separa la segunda de la tercera es exacto: con un flujo de 100 y un tipo del 6 %, la deuda que absorbe justo todo el flujo en intereses es $100/0{,}06 = 1.666{,}7$. Por debajo se amortiza; por encima, la deuda crece sola. Lo decisivo es que **ninguna de las tres empresas ha hecho nada distinto**: la postura la determina el balance, y el balance lo va cambiando el propio ciclo.",
         },
         {
           tipo: "grafico",
@@ -173,7 +173,7 @@ export default {
           items: [
             {
               q: "Una empresa tiene un flujo de caja de 100 y paga un 6 % de interés. ¿A partir de qué nivel de deuda entra en postura Ponzi?",
-              a: "A partir de 1.666,7, que es 100 ÷ 0,06. En ese punto los intereses absorben exactamente todo el flujo de caja y no queda nada para amortizar: es la frontera de la postura especulativa. Por encima, los intereses superan al flujo y la empresa debe endeudarse para pagarlos, de modo que la deuda crece sin que ocurra nada externo.",
+              a: "A partir de 1.666,7, que es $100/0{,}06$. En ese punto los intereses absorben exactamente todo el flujo de caja y no queda nada para amortizar: es la frontera de la postura especulativa. Por encima, los intereses superan al flujo y la empresa debe endeudarse para pagarlos, de modo que la deuda crece sin que ocurra nada externo.",
             },
             {
               q: "¿Por qué dice Minsky que la estabilidad es desestabilizadora?",
@@ -192,6 +192,82 @@ export default {
               a: "Como minoración del patrimonio, no como proceso productivo. La obsolescencia previsible entra en el consumo de capital fijo (K.1) y la imprevisible en las otras variaciones del volumen de activos (B.10.2). Es un buen ejemplo de que el sistema no es neutral: el mecanismo que una tradición considera el motor del crecimiento aparece contabilizado como una pérdida de valor.",
             },
           ],
+        },
+      ],
+    },
+
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Es «la heterodoxia» un bloque con una posición común?",
+              opciones: [
+                "Sí: comparten el rechazo al equilibrio y a la formalización",
+                "No: sus miembros discrepan entre sí más que con la corriente principal",
+                "Sí, en lo esencial, aunque difieran en los detalles",
+                "Solo desde los años setenta, cuando se articularon como alternativa",
+              ],
+              correcta: 1,
+              porque: [
+                "Agruparlas por lo que rechazan oculta que proponen cosas incompatibles. El rechazo compartido no construye una posición compartida.",
+                "La escuela austriaca y la marxista sostienen tesis opuestas casi en todo, y ninguna aceptaría el marco de la otra. Cada una se organiza alrededor de un fenómeno distinto que el modelo de equilibrio trata mal.",
+                "La discrepancia no está en los detalles sino en el núcleo: qué determina el valor, qué papel tiene el Estado, qué causa las crisis.",
+                "Nunca se articularon como bloque; la etiqueta la puso el contraste con la corriente principal, no un programa común.",
+              ],
+            },
+            {
+              q: "Una empresa se endeuda para pagar los intereses de su deuda. ¿En qué postura de Minsky está?",
+              opciones: [
+                "Cubierta: sigue atendiendo sus compromisos",
+                "Ponzi: la deuda crece sola sin que ocurra nada externo",
+                "Especulativa: puede pagar intereses pero refinancia el principal",
+                "Depende de si el acreedor acepta la refinanciación",
+              ],
+              correcta: 1,
+              porque: [
+                "Cubierta significa que el flujo de caja da para intereses y amortización a la vez. Aquí no da ni para los intereses.",
+                "Es la definición: al no cubrir siquiera los intereses, el saldo se agranda por su propia dinámica. No hace falta ninguna sacudida exterior para que la situación empeore.",
+                "Esa es la postura intermedia: el flujo cubre los intereses pero no el principal, que hay que refinanciar al vencimiento. Aquí ni eso.",
+                "La disposición del acreedor determina cuánto dura la situación, no en qué postura está la empresa, que se define por la relación entre su flujo y sus compromisos.",
+              ],
+            },
+            {
+              q: "¿Necesita la hipótesis de inestabilidad financiera de Minsky que los agentes sean irracionales?",
+              opciones: [
+                "Sí: el exceso de confianza es su motor",
+                "No: basta con que la percepción del riesgo dependa de la experiencia reciente",
+                "Sí, pero solo por parte de los prestamistas",
+                "No, porque supone agentes con expectativas racionales completas",
+              ],
+              correcta: 1,
+              porque: [
+                "El exceso de confianza sería una explicación psicológica, y la tesis es más incómoda que eso porque no la necesita.",
+                "Ajustar el riesgo percibido a lo que se ha vivido es individualmente sensato. La fragilidad emerge del comportamiento agregado de agentes que se comportan con sensatez, y por eso es difícil de prevenir con supervisión individual.",
+                "Prestamistas y prestatarios hacen lo mismo, y ninguno de los dos necesita equivocarse para que el sistema se desplace.",
+                "Tampoco supone expectativas racionales completas: supone algo intermedio y bastante realista, que es aprender de lo reciente.",
+              ],
+            },
+            {
+              q: "¿Terminan siempre en tragedia los recursos de propiedad común?",
+              opciones: [
+                "Sí: sin propiedad privada, el incentivo a sobreexplotar es inevitable",
+                "No: Ostrom documentó sistemas comunales duraderos e identificó qué condiciones los sostienen",
+                "Solo si el recurso es renovable",
+                "Sí, salvo que intervenga el Estado regulando el acceso",
+              ],
+              correcta: 1,
+              porque: [
+                "El resultado clásico supone ausencia de comunicación y de reglas locales. Con ese supuesto la conclusión se sigue; sin él, no.",
+                "Aguas de riego, pastos y pesquerías gestionadas comunalmente durante siglos. La tragedia es un caso particular, no el destino de todo bien común, y las condiciones que lo evitan son observables.",
+                "La renovabilidad afecta a la dinámica del recurso, no a si la comunidad puede darse reglas eficaces para gestionarlo.",
+                "Privatizar o estatalizar son dos salidas, pero la aportación de Ostrom es precisamente que existe una tercera y que funciona bajo condiciones identificables.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
         },
       ],
     },

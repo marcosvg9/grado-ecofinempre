@@ -38,7 +38,7 @@ export default {
           filas: [
             { nom: "Ventaja absoluta", sub: "Compara entre países. Puede acumularse.", cols: ["Producir un bien con menos recursos que el otro país"] },
             { nom: "Ventaja comparativa", sub: "Compara dentro de cada país. Nunca se acumula.", cols: ["Producir un bien renunciando a menos cantidad del otro"] },
-            { nom: "Coste de oportunidad", sub: "La magnitud que ordena el comercio.", cols: ["CO de 1 software = horas por software ÷ horas por textil"] },
+            { nom: "Coste de oportunidad", sub: "La magnitud que ordena el comercio.", cols: ["CO de 1 software $= \\dfrac{\\text{horas por software}}{\\text{horas por textil}}$"] },
             { nom: "Reciprocidad", sub: "Por qué la ventaja comparativa siempre está repartida.", cols: ["Si CO(A) es bajo en un bien, es alto en el otro por construcción"] },
             { nom: "Relación real de intercambio", sub: "El precio internacional relativo.", cols: ["Unidades de textil que se obtienen por 1 de software"] },
             { nom: "Condición de ganancia mutua", sub: "Fuera de este rango, un país no comercia.", cols: ["CO del exportador < relación de intercambio < CO del importador"] },
@@ -199,6 +199,82 @@ export default {
               a: "Porque «el país gana» significa que los ganadores podrían compensar a los perdedores, no que lo hagan. Con dos factores, Stolper-Samuelson predice que el factor escaso —el trabajo poco cualificado en una economía avanzada— pierde retribución real de forma permanente. Además la ganancia es difusa y pequeña por persona, mientras que la pérdida es concentrada y grande, lo que hace que solo un lado tenga incentivos para organizarse.",
             },
           ],
+        },
+      ],
+    },
+
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Norte tarda 2 h en un software y 4 h en un textil; Sur tarda 8 h y 6 h. ¿Cómo se decide quién exporta qué?",
+              opciones: [
+                "Norte exporta ambos, porque es más rápido en los dos",
+                "Comparando dentro de cada país: para Norte un software cuesta medio textil; para Sur, 1,33",
+                "Sur exporta ambos, porque su trabajo es más barato",
+                "No hay comercio posible: Norte no gana nada intercambiando",
+              ],
+              correcta: 1,
+              porque: [
+                "La ventaja absoluta determina el nivel de vida, no el patrón de especialización. Es el error original de esta materia y el más persistente.",
+                "La pregunta correcta es interna: qué deja de producir cada país por hacer una unidad más. Norte renuncia a menos textil por software, así que se especializa en software y Sur en textil.",
+                "Los salarios se ajustan precisamente para reflejar las productividades. Si Sur exportara todo, su salario subiría hasta que dejara de convenir.",
+                "Norte gana: con la especialización se producen la misma tela y 50 unidades más de vino sin que nadie trabaje una hora más.",
+              ],
+            },
+            {
+              q: "Un país muy poco productivo se especializa correctamente y comercia. ¿Qué consigue?",
+              opciones: [
+                "Alcanzar el nivel de vida de sus socios comerciales",
+                "Consumir más que en autarquía, aunque siga siendo más pobre que ellos",
+                "Nada, porque su productividad no ha cambiado",
+                "Empeorar, porque compite en desventaja",
+              ],
+              correcta: 1,
+              porque: [
+                "El comercio mejora la posición respecto a la autarquía, no respecto a los demás. Confundir ambas comparaciones lleva a esperar del comercio lo que no promete.",
+                "Es exactamente lo que dice el modelo: cada país mejora sobre sí mismo. Su nivel de vida sigue dependiendo de su productividad absoluta.",
+                "La productividad no cambia, pero la asignación de su trabajo sí: dedicarlo a lo que hace con menor coste de oportunidad libera recursos.",
+                "La desventaja absoluta no impide ganar. Mientras los costes de oportunidad difieran, hay margen para el intercambio.",
+              ],
+            },
+            {
+              q: "Un tratado comercial aumenta el PIB del país. ¿Se sigue que todos ganan?",
+              opciones: [
+                "Sí, si el efecto agregado es positivo",
+                "No: significa que los ganadores podrían compensar a los perdedores, no que lo hagan",
+                "Sí, porque los precios bajan para todos los consumidores",
+                "No, pero las pérdidas son siempre transitorias",
+              ],
+              correcta: 1,
+              porque: [
+                "El agregado positivo es una suma, y una suma puede ser positiva con sumandos negativos dentro.",
+                "Con más de un factor, Stolper-Samuelson predice que el factor escaso en el país pierde en términos reales. La oposición de los perjudicados no es irracional.",
+                "Los precios bajan, pero quien pierde el empleo o ve caer su salario puede perder más de lo que gana como consumidor.",
+                "La evidencia sobre choques comerciales concretos muestra ajustes lentos, con efectos que persisten años en las comarcas afectadas.",
+              ],
+            },
+            {
+              q: "¿Es la ventaja comparativa una característica fija de cada país?",
+              opciones: [
+                "Sí: depende de su geografía y sus recursos naturales",
+                "No: depende de tecnología, capital humano y dotación de factores, y las tres cambian",
+                "Sí, salvo que cambie la población",
+                "No, pero solo cambia con acuerdos comerciales",
+              ],
+              correcta: 1,
+              porque: [
+                "No es un dato geológico. Países que exportaban materias primas exportan hoy manufacturas y servicios sin que su geografía se haya movido.",
+                "Y de ahí que la política de formación e innovación tenga efectos comerciales: no se limita a explotar una ventaja dada, la construye.",
+                "La población es una parte de la dotación, pero también cambian la tecnología y la cualificación, que suelen pesar más.",
+                "Los acuerdos cambian las condiciones de acceso, no la ventaja comparativa, que depende de los costes internos relativos.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
         },
       ],
     },

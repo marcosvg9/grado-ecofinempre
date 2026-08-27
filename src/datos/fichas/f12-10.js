@@ -106,8 +106,8 @@ export default {
           cabecera: ["SEC 2010", "Manual de Balanza de Pagos", "Equivalencia"],
           filas: [
             ["Cuenta V.I — bienes y servicios (B.11)", "Balanza de bienes y servicios", "Directa"],
-            ["Cuenta V.II — rentas y transferencias (B.12)", "Cuenta corriente completa", "B.12 ≈ saldo por cuenta corriente"],
-            ["Cuenta V.III.1.1 — transferencias de capital", "Cuenta de capital", "D.9 ≈ cuenta de capital"],
+            ["Cuenta V.II — rentas y transferencias (B.12)", "Cuenta corriente completa", "B.12 $\\approx$ saldo por cuenta corriente"],
+            ["Cuenta V.III.1.1 — transferencias de capital", "Cuenta de capital", "D.9 $\\approx$ cuenta de capital"],
             { celdas: ["B.9 capacidad de financiación", "Cuenta corriente + cuenta de capital", "Coinciden con signo invertido"], clase: "total" },
             ["Compila el instituto de estadística", "Compila el banco central", "Su coherencia es una prueba de calidad"],
           ],

@@ -36,7 +36,7 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "El hecho de partida", sub: "De aquí viene todo lo demás.", cols: ["El ajuste no es lineal: ajustar(A+B) ≠ ajustar(A) + ajustar(B)"] },
+            { nom: "El hecho de partida", sub: "De aquí viene todo lo demás.", cols: ["El ajuste no es lineal: $\\text{ajustar}(A{+}B) \\neq \\text{ajustar}(A) + \\text{ajustar}(B)$"] },
             { nom: "Ajuste directo", sub: "El agregado como una serie más.", cols: ["Se ajusta el total; las partes no suman"] },
             { nom: "Ajuste indirecto", sub: "Componente a componente.", cols: ["Se ajusta cada parte y se suman los resultados"] },
             { nom: "A favor del directo", sub: "Mejor relación señal-ruido.", cols: ["Los irregulares se compensan al agregar"] },

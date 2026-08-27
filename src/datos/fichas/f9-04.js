@@ -45,9 +45,9 @@ export default {
           filas: [
             { nom: "Beneficio de un negocio", sub: "Descompone la elección estratégica.", cols: ["B = (P − C) × Q"] },
             { nom: "Prueba de la diversificación", sub: "La condición que debe cumplirse.", cols: ["V(A + B) > V(A) + V(B)"] },
-            { nom: "Descuento de conglomerado", sub: "Lo que se observa cuando no se cumple.", cols: ["D = 1 − Valor del grupo / Σ Valor de las partes"] },
+            { nom: "Descuento de conglomerado", sub: "Lo que se observa cuando no se cumple.", cols: ["$D = 1 - \\dfrac{\\text{Valor del grupo}}{\\sum \\text{Valor de las partes}}$"] },
             { nom: "Decisión de integrar verticalmente", sub: "Costes de transacción frente a costes de organización.", cols: ["Integrar si coste de mercado > coste interno de coordinar"] },
-            { nom: "Prima que sostiene la diferenciación", sub: "Debe superar al sobrecoste que genera.", cols: ["ΔP > ΔC"] },
+            { nom: "Prima que sostiene la diferenciación", sub: "Debe superar al sobrecoste que genera.", cols: ["$\\Delta P > \\Delta C$"] },
             { nom: "Rentabilidad de la estrategia", sub: "La comprobación final, común a todas.", cols: ["ROIC − WACC > 0 de forma sostenida"] },
           ],
         },

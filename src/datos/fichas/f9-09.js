@@ -35,9 +35,9 @@ export default {
           modo: "dos",
           filas: [
             { nom: "Ley de Little", sub: "Relación universal entre inventario, flujo y tiempo.", cols: ["Inventario = Tasa de flujo × Tiempo de ciclo"] },
-            { nom: "Lote económico", sub: "Minimiza coste de pedido más coste de posesión.", cols: ["Q* = √(2 × D × S / H)"] },
-            { nom: "Coste total del lote óptimo", sub: "Ambos costes se igualan en el óptimo.", cols: ["CT = √(2 × D × S × H)"] },
-            { nom: "Stock de seguridad", sub: "Depende del nivel de servicio y de la incertidumbre.", cols: ["SS = z × σ_demanda × √(plazo de entrega)"] },
+            { nom: "Lote económico", sub: "Minimiza coste de pedido más coste de posesión.", cols: ["$Q^* = \\sqrt{\\dfrac{2 D S}{H}}$"] },
+            { nom: "Coste total del lote óptimo", sub: "Ambos costes se igualan en el óptimo.", cols: ["$\\mathrm{CT} = \\sqrt{2 D S H}$"] },
+            { nom: "Stock de seguridad", sub: "Depende del nivel de servicio y de la incertidumbre.", cols: ["$\\mathrm{SS} = z\\,\\sigma_{\\text{demanda}} \\sqrt{\\text{plazo de entrega}}$"] },
             { nom: "Punto de pedido", sub: "Cuándo lanzar la orden.", cols: ["PP = Demanda media × Plazo + SS"] },
             { nom: "Rotación de inventario", sub: "El puente con la ficha 6.06.", cols: ["Rotación = Coste de ventas / Inventario medio"] },
             { nom: "Capacidad del sistema", sub: "La restricción manda.", cols: ["Capacidad = capacidad del cuello de botella"] },
@@ -59,12 +59,12 @@ export default {
           tipo: "tabla",
           cabecera: ["Concepto", "Cálculo", "Resultado"],
           filas: [
-            ["Lote económico", "√(2 × 10.000 × 100 / 5)", "632 unidades"],
+            ["Lote económico", "$\\sqrt{2 \\times 10.000 \\times 100 / 5}$", "632 unidades"],
             ["Número de pedidos al año", "10.000 / 632", "15,8"],
             ["Inventario medio", "632 / 2", "316 unidades"],
             ["Coste anual de pedido", "15,8 × 100", "1.581 €"],
             ["Coste anual de posesión", "316 × 5", "1.581 €"],
-            { celdas: ["Coste total", "√(2 × 10.000 × 100 × 5)", "3.162 €"], clase: "total" },
+            { celdas: ["Coste total", "$\\sqrt{2 \\times 10.000 \\times 100 \\times 5}$", "3.162 €"], clase: "total" },
           ],
           nota: "En el óptimo ambos costes **se igualan**, y esa es la comprobación del cálculo. Además la función es muy plana en el entorno del óptimo: pedir 500 o 750 unidades en lugar de 632 eleva el coste total menos de un 3 %. **Afinar el lote hasta la unidad no compensa**; equivocarse en un factor de dos, sí.",
         },
@@ -153,7 +153,7 @@ export default {
         {
           tipo: "preguntas",
           items: [
-            { q: "Demanda anual 5.000 uds, coste de pedido 80 €, coste de posesión 4 €/ud/año. ¿Lote económico?", a: "√(2 × 5.000 × 80 / 4) = √200.000 = 447 unidades, con unos 11 pedidos al año. En el óptimo, coste de pedido y de posesión se igualan en unos 894 € cada uno." },
+            { q: "Demanda anual 5.000 uds, coste de pedido 80 €, coste de posesión 4 €/ud/año. ¿Lote económico?", a: "$\\sqrt{2 \\times 5.000 \\times 80/4} = \\sqrt{200.000} = 447$ unidades, con unos 11 pedidos al año. En el óptimo, coste de pedido y de posesión se igualan en unos 894 € cada uno." },
             { q: "Un taller tiene 60 expedientes en curso y resuelve 12 al día. ¿Tiempo medio de tramitación?", a: "Cinco días, por la ley de Little. Para bajarlo a tres hay que reducir el trabajo en curso a 36 o aumentar la capacidad a 20 diarios. No hay tercera vía." },
             { q: "¿Por qué mejorar una máquina que no es cuello de botella no aumenta la producción?", a: "Porque la capacidad del sistema la fija la restricción. Producir más antes del cuello solo acumula inventario en curso, que consume caja y alarga el tiempo de ciclo sin aumentar la salida." },
             { q: "¿Cuánto cuesta pasar de un 95 % a un 99 % de nivel de servicio?", a: "Un 42 % más de stock de seguridad, porque el multiplicador z pasa de 1,64 a 2,33. El coste de protegerse crece muy deprisa en la cola de la distribución." },

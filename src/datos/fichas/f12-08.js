@@ -44,7 +44,7 @@ export default {
             { nom: "Identidad agregada", sub: "Solo cambia el reparto entre sectores.", cols: ["P.3 total = P.4 total"] },
             { nom: "Renta disponible ajustada", sub: "La comparable con el consumo efectivo.", cols: ["B.7 = B.6 + D.63"] },
             { nom: "Consumo efectivo de las AA. PP.", sub: "Lo individual se transfiere entero.", cols: ["P.4 = P.32, solo el colectivo"] },
-            { nom: "Tasa de ahorro de los hogares", sub: "El denominador incorpora el ajuste.", cols: ["B.8 ÷ (P.3 + D.8)"] },
+            { nom: "Tasa de ahorro de los hogares", sub: "El denominador incorpora el ajuste.", cols: ["$\\dfrac{\\text{B.8}}{\\text{P.3} + \\text{D.8}}$"] },
           ],
         },
       ],

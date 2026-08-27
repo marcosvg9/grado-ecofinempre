@@ -63,7 +63,7 @@ export default [
   "bloque": 1,
   "nivel": 1,
   "titulo": "Oferta, demanda y equilibrio de mercado",
-  "q": "Con Q_d = 100 − 2P y Q_s = −20 + 3P, ¿cuál es el equilibrio y qué pasa a un precio de 30?",
+  "q": "Con $Q_d = 100 - 2P$ y $Q_s = -20 + 3P$, ¿cuál es el equilibrio y qué pasa a un precio de 30?",
   "a": "El equilibrio es P = 24 y Q = 52. A un precio de 30 los compradores quieren 40 unidades y los vendedores ofrecen 70: sobran 30, algunos vendedores no colocan su producto y el precio tiende a bajar hasta 24."
  },
  {
@@ -460,7 +460,7 @@ export default [
   "nivel": 3,
   "titulo": "Escuelas heterodoxas y enfoques alternativos",
   "q": "Una empresa tiene un flujo de caja de 100 y paga un 6 % de interés. ¿A partir de qué nivel de deuda entra en postura Ponzi?",
-  "a": "A partir de 1.666,7, que es 100 ÷ 0,06. En ese punto los intereses absorben exactamente todo el flujo de caja y no queda nada para amortizar: es la frontera de la postura especulativa. Por encima, los intereses superan al flujo y la empresa debe endeudarse para pagarlos, de modo que la deuda crece sin que ocurra nada externo."
+  "a": "A partir de 1.666,7, que es $100/0{,}06$. En ese punto los intereses absorben exactamente todo el flujo de caja y no queda nada para amortizar: es la frontera de la postura especulativa. Por encima, los intereses superan al flujo y la empresa debe endeudarse para pagarlos, de modo que la deuda crece sin que ocurra nada externo."
  },
  {
   "id": "1.11#1",
@@ -1045,7 +1045,7 @@ export default [
   "nivel": 3,
   "titulo": "Distribución de la renta y desigualdad",
   "q": "Los quintiles reciben el 3, 8, 14, 23 y 52 % de la renta. Calcula el Gini por trapecios.",
-  "a": "0,452. Los porcentajes acumulados son 0,03 / 0,11 / 0,25 / 0,48 / 1,00 y cada tramo de población vale 0,20. La suma Σ (Xᵢ − Xᵢ₋₁)(Yᵢ + Yᵢ₋₁) = 0,2 · (0,03 + 0,14 + 0,36 + 0,73 + 1,48) = 0,548, y el Gini es 1 − 0,548 = 0,452."
+  "a": "0,452. Los porcentajes acumulados son 0,03 / 0,11 / 0,25 / 0,48 / 1,00 y cada tramo de población vale 0,20. La suma $\\sum_i (X_i - X_{i-1})(Y_i + Y_{i-1}) = 0{,}2 \\times (0{,}03 + 0{,}14 + 0{,}36 + 0{,}73 + 1{,}48) = 0{,}548$, y el Gini es $1 - 0{,}548 = 0{,}452$."
  },
  {
   "id": "10.11#1",
@@ -3295,7 +3295,7 @@ export default [
   "nivel": 4,
   "titulo": "Pre-ajuste: modelos RegARIMA y elección de la transformación",
   "q": "¿Cuántas observaciones efectivas quedan al aplicar un modelo aerolínea a una serie trimestral de cinco años?",
-  "a": "Quince. Cinco años trimestrales son veinte observaciones, y las diferencias (1 − B)(1 − B⁴) consumen 1 + 4 = 5. Con tres años quedarían solo siete, y con dos, tres. Ese coste fijo es la razón de que las directrices europeas pidan cinco años de datos y consideren tres el mínimo publicable."
+  "a": "Quince. Cinco años trimestrales son veinte observaciones, y las diferencias $(1-B)(1-B^4)$ consumen $1 + 4 = 5$. Con tres años quedarían solo siete, y con dos, tres. Ese coste fijo es la razón de que las directrices europeas pidan cinco años de datos y consideren tres el mínimo publicable."
  },
  {
   "id": "15.02#1",
@@ -3331,7 +3331,7 @@ export default [
   "nivel": 4,
   "titulo": "Pre-ajuste: modelos RegARIMA y elección de la transformación",
   "q": "El dato bruto de un trimestre no se ha revisado, pero el ajustado ha cambiado. ¿Es posible?",
-  "a": "Sí, y es lo habitual. Al añadirse un trimestre nuevo, la predicción que sostenía el extremo se sustituye por el dato real, el modelo se reestima y cambian θ y Θ, y los factores estacionales se recalculan afectando también al pasado. Las tres cosas modifican la serie ajustada sin que ningún dato bruto se haya tocado."
+  "a": "Sí, y es lo habitual. Al añadirse un trimestre nuevo, la predicción que sostenía el extremo se sustituye por el dato real, el modelo se reestima y cambian $\\theta$ y $\\Theta$, y los factores estacionales se recalculan afectando también al pasado. Las tres cosas modifican la serie ajustada sin que ningún dato bruto se haya tocado."
  },
  {
   "id": "15.03#0",
@@ -3393,8 +3393,8 @@ export default [
   "bloque": 15,
   "nivel": 3,
   "titulo": "Valores atípicos: escalón, impulso y cambio transitorio",
-  "q": "Un cambio transitorio con α = 0,7 tiene un impacto inicial de 10. ¿Cuánto queda en t+3 y cuál es su efecto acumulado?",
-  "a": "En t+3 queda 10 · 0,7³ = 3,43, es decir un 34,3 % del impacto inicial; cae por debajo del 10 % en t+7. El efecto acumulado es la suma geométrica 1/(1 − 0,7) = 3,33 veces el impacto inicial, o sea 33,3. El escalón, en cambio, acumula sin límite: por eso elegir entre ambos no es afinar un decimal."
+  "q": "Un cambio transitorio con $\\alpha$ = 0,7 tiene un impacto inicial de 10. ¿Cuánto queda en t+3 y cuál es su efecto acumulado?",
+  "a": "En $t+3$ queda $10 \\times 0{,}7^3 = 3{,}43$, es decir un 34,3 % del impacto inicial; cae por debajo del 10 % en t+7. El efecto acumulado es la suma geométrica 1/(1 − 0,7) = 3,33 veces el impacto inicial, o sea 33,3. El escalón, en cambio, acumula sin límite: por eso elegir entre ambos no es afinar un decimal."
  },
  {
   "id": "15.04#2",
@@ -3745,7 +3745,7 @@ export default [
   "nivel": 4,
   "titulo": "Predicción, retropredicción y nowcasting",
   "q": "Un trimestre es la suma de tres meses independientes de igual varianza. Al cerrar el primero, ¿cuánto baja la incertidumbre?",
-  "a": "Un 18,4 %, no un 33 %. Queda por conocer dos tercios de la varianza, pero la incertidumbre se mide en desviaciones típicas, que son su raíz: se pasa de 1,732 σ a 1,414 σ. Al cerrar el segundo mes la reducción acumulada es del 42,3 %, y el tercer mes aporta el 58 % restante. La información llega de forma acelerada."
+  "a": "Un 18,4 %, no un 33 %. Queda por conocer dos tercios de la varianza, pero la incertidumbre se mide en desviaciones típicas, que son su raíz: se pasa de 1,732 $\\sigma$ a 1,414 $\\sigma$. Al cerrar el segundo mes la reducción acumulada es del 42,3 %, y el tercer mes aporta el 58 % restante. La información llega de forma acelerada."
  },
  {
   "id": "15.12#1",
@@ -3754,7 +3754,7 @@ export default [
   "nivel": 4,
   "titulo": "Predicción, retropredicción y nowcasting",
   "q": "Un indicador tiene correlación 0,8 con la variable objetivo. ¿Cuánta incertidumbre queda al terminar el trimestre?",
-  "a": "El 60 % de la inicial. La reducción de varianza que aporta un indicador es proporcional al cuadrado de su correlación, así que con ρ = 0,8 se elimina el 64 % de la varianza de cada mes y queda el 36 %. Acumulado sobre los tres meses, la desviación típica final es el 60 % de la de partida. Un indicador acota el rango de lo que se publicará; no sustituye al dato."
+  "a": "El 60 % de la inicial. La reducción de varianza que aporta un indicador es proporcional al cuadrado de su correlación, así que con $\\rho$ = 0,8 se elimina el 64 % de la varianza de cada mes y queda el 36 %. Acumulado sobre los tres meses, la desviación típica final es el 60 % de la de partida. Un indicador acota el rango de lo que se publicará; no sustituye al dato."
  },
  {
   "id": "15.12#2",
@@ -3799,7 +3799,7 @@ export default [
   "nivel": 3,
   "titulo": "Estructuras jerárquicas y agrupadas",
   "q": "Al agregar cuatro series hoja independientes, ¿cuánto cae el ruido relativo?",
-  "a": "A la mitad. La media se multiplica por cuatro pero la desviación típica solo por √4 = 2, así que el coeficiente de variación pasa a ser la mitad. En general cae con 1/√k. Es el mismo mecanismo que la diversificación de carteras: agregar es diversificar, y por eso los agregados se comportan mejor que sus partes."
+  "a": "A la mitad. La media se multiplica por cuatro pero la desviación típica solo por $\\sqrt 4 = 2$, así que el coeficiente de variación pasa a ser la mitad. En general cae con $1/\\sqrt k$. Es el mismo mecanismo que la diversificación de carteras: agregar es diversificar, y por eso los agregados se comportan mejor que sus partes."
  },
  {
   "id": "16.01#2",
@@ -4059,8 +4059,8 @@ export default [
   "bloque": 16,
   "nivel": 4,
   "titulo": "Reconciliación probabilística",
-  "q": "Cuatro hojas tienen cada una un intervalo del 90 % de ±1,645 σ. ¿Cuál es el del total si los errores son independientes?",
-  "a": "±3,290 σ, la mitad de lo que da sumar los cuatro intervalos. La varianza de la suma de cuatro variables independientes es 4 σ², así que su desviación típica es 2 σ y el intervalo, ±1,645 · 2 σ. Sumar las anchuras daría ±6,580 σ, que solo sería correcto si las cuatro se equivocaran siempre a la vez y en el mismo sentido."
+  "q": "Cuatro hojas tienen cada una un intervalo del 90 % de $\\pm 1{,}645\\,\\sigma$. ¿Cuál es el del total si los errores son independientes?",
+  "a": "$\\pm 3{,}290\\,\\sigma$, la mitad de lo que da sumar los cuatro intervalos. La varianza de la suma de cuatro variables independientes es $4\\sigma^2$, así que su desviación típica es $2\\sigma$ y el intervalo, $\\pm 1{,}645 \\times 2\\sigma$. Sumar las anchuras daría $\\pm 6{,}580\\,\\sigma$, que solo sería correcto si las cuatro se equivocaran siempre a la vez y en el mismo sentido."
  },
  {
   "id": "16.07#1",
@@ -4150,7 +4150,7 @@ export default [
   "nivel": 4,
   "titulo": "Aplicación a cuentas nacionales y estadística oficial",
   "q": "Una tabla de origen y destino de 50 × 50 debe cuadrar por filas y columnas. ¿Cuántos grados de libertad tiene?",
-  "a": "2.401, que es (50 − 1)². Hay 2.500 celdas y 2n = 100 restricciones, de las cuales una es redundante porque el total general se cuenta dos veces: quedan 99 efectivas. Contar las 100 como independientes sobrestima cuánto atan y produce sistemas mal planteados al implementar la reconciliación."
+  "a": "2.401, que es $(50-1)^2$. Hay 2.500 celdas y $2n = 100$ restricciones, de las cuales una es redundante porque el total general se cuenta dos veces: quedan 99 efectivas. Contar las 100 como independientes sobrestima cuánto atan y produce sistemas mal planteados al implementar la reconciliación."
  },
  {
   "id": "16.09#1",
@@ -4248,7 +4248,7 @@ export default [
   "bloque": 2,
   "nivel": 1,
   "titulo": "Preferencias, utilidad y restricción presupuestaria",
-  "q": "U = x^0,3·y^0,7, m = 500, pₓ = 5, p_y = 10. ¿Cesta óptima?",
+  "q": "$U = x^{0{,}3} y^{0{,}7}$, $m = 500$, $p_x = 5$, $p_y = 10$. ¿Cesta óptima?",
   "a": "En Cobb-Douglas los exponentes son las proporciones de gasto: 150 € en x y 350 € en y. Por tanto x = 30 e y = 35."
  },
  {
@@ -4284,8 +4284,8 @@ export default [
   "bloque": 2,
   "nivel": 2,
   "titulo": "Elección del consumidor y derivación de la demanda",
-  "q": "U = x^0,25·y^0,75, m = 400, pₓ = 5. ¿Cuánto x se demanda?",
-  "a": "El 25 % de la renta va a x, es decir 100 €, de modo que x = 20. Y esa demanda es independiente de p_y, propiedad característica de las Cobb-Douglas."
+  "q": "$U = x^{0{,}25} y^{0{,}75}$, $m = 400$, $p_x = 5$. ¿Cuánto $x$ se demanda?",
+  "a": "El 25 % de la renta va a $x$, es decir 100 €, de modo que $x = 20$. Y esa demanda es independiente de $p_y$, propiedad característica de las Cobb-Douglas."
  },
  {
   "id": "2.02#1",
@@ -4374,8 +4374,8 @@ export default [
   "bloque": 2,
   "nivel": 2,
   "titulo": "Tecnología, función de producción y rendimientos a escala",
-  "q": "Q = 5·K^0,4·L^0,7. ¿Qué rendimientos a escala tiene?",
-  "a": "Crecientes: α + β = 1,1 > 1. Duplicar ambos factores multiplica el producto por 2^1,1 = 2,14, es decir un 114 % más. Y aun así cada factor por separado tiene productividad marginal decreciente."
+  "q": "$Q = 5 K^{0{,}4} L^{0{,}7}$. ¿Qué rendimientos a escala tiene?",
+  "a": "Crecientes: $\\alpha + \\beta = 1{,}1 > 1$. Duplicar ambos factores multiplica el producto por $2^{1{,}1} = 2{,}14$, es decir un 114 % más. Y aun así cada factor por separado tiene productividad marginal decreciente."
  },
  {
   "id": "2.04#1",
@@ -4392,8 +4392,8 @@ export default [
   "bloque": 2,
   "nivel": 2,
   "titulo": "Tecnología, función de producción y rendimientos a escala",
-  "q": "En Q = A·K^α·L^β con α + β = 1, ¿qué dice el teorema de Euler?",
-  "a": "Que K·PMg_K + L·PMg_L = Q exactamente: retribuir a cada factor según su productividad marginal agota la producción, sin sobrante ni déficit. Es el fundamento de la teoría neoclásica del reparto funcional."
+  "q": "En $Q = A K^{\\alpha} L^{\\beta}$ con $\\alpha + \\beta = 1$, ¿qué dice el teorema de Euler?",
+  "a": "Que $K\\,\\mathrm{PMg}_K + L\\,\\mathrm{PMg}_L = Q$ exactamente: retribuir a cada factor según su productividad marginal agota la producción, sin sobrante ni déficit. Es el fundamento de la teoría neoclásica del reparto funcional."
  },
  {
   "id": "2.04#3",
@@ -4419,8 +4419,8 @@ export default [
   "bloque": 2,
   "nivel": 2,
   "titulo": "Costes: fijos, variables, marginales y de largo plazo",
-  "q": "CT(q) = 200 + 4q + 0,1q². ¿Dónde está el mínimo del coste medio?",
-  "a": "Se resuelve −200/q² + 0,1 = 0, de donde q = √2.000 = 44,7. En ese punto el coste medio vale 4 + 2·0,1·44,7 ≈ 12,94, y coincide con el coste marginal."
+  "q": "$\\mathrm{CT}(q) = 200 + 4q + 0{,}1q^2$. ¿Dónde está el mínimo del coste medio?",
+  "a": "Se resuelve $-200/q^2 + 0{,}1 = 0$, de donde $q = \\sqrt{2.000} = 44{,}7$. En ese punto el coste medio vale $4 + 2 \\times 0{,}1 \\times 44{,}7 \\approx 12{,}94$, y coincide con el coste marginal."
  },
  {
   "id": "2.05#1",
@@ -4473,7 +4473,7 @@ export default [
   "bloque": 2,
   "nivel": 2,
   "titulo": "Competencia perfecta y equilibrio de la industria",
-  "q": "Con CT(q) = 100 + 2q + 0,05q², ¿cuál es el precio de equilibrio a largo plazo y cuánto produce cada empresa?",
+  "q": "Con $\\mathrm{CT}(q) = 100 + 2q + 0{,}05q^2$, ¿cuál es el precio de equilibrio a largo plazo y cuánto produce cada empresa?",
   "a": "El precio es el mínimo del coste medio, 6,47, y cada empresa produce 44,72, que es donde el coste marginal y el medio se cortan. La demanda no interviene en estos dos números: solo determina cuántas empresas caben."
  },
  {
@@ -4572,7 +4572,7 @@ export default [
   "bloque": 2,
   "nivel": 3,
   "titulo": "Oligopolio y teoría de juegos",
-  "q": "En el ejemplo, un cártel se sostiene si δ ≥ 0,53. ¿Qué significa exactamente ese número?",
+  "q": "En el ejemplo, un cártel se sostiene si $\\delta \\geq 0{,}53$. ¿Qué significa exactamente ese número?",
   "a": "Que las empresas deben valorar el futuro al menos con ese peso relativo para que el flujo de beneficios colusorios compense la ganancia inmediata de desviarse. Incorpora el tipo de interés y la probabilidad de que la interacción continúe, así que un sector con salidas frecuentes o vidas cortas no sostiene la colusión aunque los tipos sean nulos."
  },
  {
@@ -4834,7 +4834,7 @@ export default [
   "nivel": 1,
   "titulo": "Inflación, IPC y deflactor del PIB",
   "q": "Tipo nominal del 5 % e inflación del 3 %. ¿Cuál es el tipo real?",
-  "a": "1,942 %. La relación de Fisher es multiplicativa: (1+i) = (1+r)(1+π), así que r = 1,05/1,03 − 1. La resta simple da 2 % y es una aproximación aceptable solo con tasas pequeñas; con inflación alta el error se vuelve relevante."
+  "a": "1,942 %. La relación de Fisher es multiplicativa: $(1+i) = (1+r)(1+\\pi)$, así que $r = 1{,}05/1{,}03 - 1$. La resta simple da 2 % y es una aproximación aceptable solo con tasas pequeñas; con inflación alta el error se vuelve relevante."
  },
  {
   "id": "3.02#2",
@@ -5157,7 +5157,7 @@ export default [
   "bloque": 3,
   "nivel": 3,
   "titulo": "Crecimiento económico: Solow, capital humano y productividad",
-  "q": "El PIB crece un 3 %, el capital un 4 % y el empleo un 1 %, con α = 1/3. ¿Cuánto aporta la PTF?",
+  "q": "El PIB crece un 3 %, el capital un 4 % y el empleo un 1 %, con $\\alpha$ = 1/3. ¿Cuánto aporta la PTF?",
   "a": "Un punto porcentual, un tercio del crecimiento. El capital aporta (1/3)×4 = 1,33 puntos y el trabajo (2/3)×1 = 0,67. El resto es residuo, y conviene recordar que ahí dentro caben también los errores de medición de los otros dos factores."
  },
  {
@@ -5275,7 +5275,7 @@ export default [
   "nivel": 2,
   "titulo": "Álgebra lineal y optimización aplicadas a la economía",
   "q": "¿Qué mide exactamente el multiplicador de Lagrange y cómo se comprueba?",
-  "a": "Mide la variación del valor óptimo del objetivo ante una relajación unitaria de la restricción: el precio sombra. Se comprueba resolviendo el problema con la restricción aumentada en una unidad y viendo la diferencia. En el ejemplo, λ = 0,1768 y la utilidad pasa de 21,2132 con 120 € a 21,3900 con 121 €, una diferencia de 0,1768."
+  "a": "Mide la variación del valor óptimo del objetivo ante una relajación unitaria de la restricción: el precio sombra. Se comprueba resolviendo el problema con la restricción aumentada en una unidad y viendo la diferencia. En el ejemplo, $\\lambda = 0{,}1768$ y la utilidad pasa de 21,2132 con 120 € a 21,3900 con 121 €, una diferencia de 0,1768."
  },
  {
   "id": "4.01#1",
@@ -5391,8 +5391,8 @@ export default [
   "bloque": 4,
   "nivel": 2,
   "titulo": "Probabilidad e inferencia: estimación e intervalos",
-  "q": "Una encuesta de 1.000 personas da un margen de ±2 puntos. ¿Cuántas hacen falta para bajarlo a ±1?",
-  "a": "Cuatro mil, porque el error decrece con la raíz de n: para dividir el margen entre dos hay que multiplicar la muestra por cuatro. Bajarlo a ±0,2 puntos exigiría 100.000 entrevistas. Esa aritmética es la que fija el tamaño y el coste de cualquier encuesta oficial."
+  "q": "Una encuesta de 1.000 personas da un margen de $\\pm 2$ puntos. ¿Cuántas hacen falta para bajarlo a $\\pm 1$?",
+  "a": "Cuatro mil, porque el error decrece con la raíz de n: para dividir el margen entre dos hay que multiplicar la muestra por cuatro. Bajarlo a $\\pm 0{,}2$ puntos exigiría 100.000 entrevistas. Esa aritmética es la que fija el tamaño y el coste de cualquier encuesta oficial."
  },
  {
   "id": "4.03#2",
@@ -5401,7 +5401,7 @@ export default [
   "nivel": 2,
   "titulo": "Probabilidad e inferencia: estimación e intervalos",
   "q": "La tasa de paro pasa del 12,3 % al 12,2 %. ¿Ha bajado el paro?",
-  "a": "No se puede afirmar. Con una muestra de escala EPA el margen es de unas ±0,25 puntos, así que una décima está muy dentro del ruido muestral. La conclusión correcta es que no se aprecia un cambio significativo, y eso antes de contar los errores no muestrales, que no entran en la fórmula y suelen ser mayores."
+  "a": "No se puede afirmar. Con una muestra de escala EPA el margen es de unas $\\pm 0{,}25$ puntos, así que una décima está muy dentro del ruido muestral. La conclusión correcta es que no se aprecia un cambio significativo, y eso antes de contar los errores no muestrales, que no entran en la fórmula y suelen ser mayores."
  },
  {
   "id": "4.03#3",
@@ -5454,7 +5454,7 @@ export default [
   "bloque": 4,
   "nivel": 2,
   "titulo": "Contraste de hipótesis y errores de tipo I y II",
-  "q": "¿Por qué bajar α de 0,05 a 0,01 no es gratis?",
+  "q": "¿Por qué bajar $\\alpha$ de 0,05 a 0,01 no es gratis?",
   "a": "Porque sube el listón para rechazar y por tanto aumenta el error de tipo II: se detectan menos efectos reales. Los dos errores están en conflicto, y desplazar el umbral solo redistribuye el riesgo entre ellos. Lo único que reduce ambos a la vez es estrechar la distribución del estimador, es decir, más datos o un diseño más eficiente."
  },
  {
@@ -5526,8 +5526,8 @@ export default [
   "bloque": 4,
   "nivel": 2,
   "titulo": "Regresión lineal simple y múltiple por MCO",
-  "q": "El R² es 0,80. ¿Es un buen modelo?",
-  "a": "Dice que la recta explica el 80 % de la variación salarial de la muestra, algo excepcional en datos reales, donde las ecuaciones de salarios suelen quedarse entre 0,2 y 0,4. Pero el R² no informa sobre causalidad ni sobre especificación: sube al añadir cualquier variable, y un modelo con variables omitidas puede tener un R² excelente y coeficientes sesgados."
+  "q": "El $R^2$ es 0,80. ¿Es un buen modelo?",
+  "a": "Dice que la recta explica el 80 % de la variación salarial de la muestra, algo excepcional en datos reales, donde las ecuaciones de salarios suelen quedarse entre 0,2 y 0,4. Pero el $R^2$ no informa sobre causalidad ni sobre especificación: sube al añadir cualquier variable, y un modelo con variables omitidas puede tener un $R^2$ excelente y coeficientes sesgados."
  },
  {
   "id": "4.05#5",
@@ -5571,8 +5571,8 @@ export default [
   "bloque": 4,
   "nivel": 3,
   "titulo": "Diagnóstico: heterocedasticidad, autocorrelación, multicolinealidad",
-  "q": "Con ρ = 0,85, ¿cuánto se equivocan los errores estándar clásicos?",
-  "a": "Los subestiman por un factor de aproximadamente 3,5, según √((1+ρ)/(1−ρ)). Un t aparente de 4 sería en realidad de 1,1, es decir, no significativo. El motivo es que las observaciones no aportan información independiente: la muestra efectiva es mucho menor que la nominal."
+  "q": "Con $\\rho$ = 0,85, ¿cuánto se equivocan los errores estándar clásicos?",
+  "a": "Los subestiman por un factor de aproximadamente 3,5, según $\\sqrt{(1+\\rho)/(1-\\rho)}$. Un t aparente de 4 sería en realidad de 1,1, es decir, no significativo. El motivo es que las observaciones no aportan información independiente: la muestra efectiva es mucho menor que la nominal."
  },
  {
   "id": "4.06#4",
@@ -5706,7 +5706,7 @@ export default [
   "bloque": 4,
   "nivel": 4,
   "titulo": "Series temporales: estacionariedad, ARIMA y cointegración",
-  "q": "R² de 0,86 y t de 19 entre dos series. ¿Qué hay que comprobar antes de celebrarlo?",
+  "q": "$R^2$ de 0,86 y $t$ de 19 entre dos series. ¿Qué hay que comprobar antes de celebrarlo?",
   "a": "Si las series son estacionarias. En el ejemplo esos números salen de dos paseos aleatorios generados de forma independiente, sin ninguna relación entre ellos. Repitiendo el experimento, el coeficiente resulta significativo el 79,5 % de las veces en lugar del 5 %. Con series macroeconómicas, un resultado espectacular en niveles es sospechoso por defecto."
  },
  {
@@ -5877,7 +5877,7 @@ export default [
   "bloque": 5,
   "nivel": 1,
   "titulo": "La partida doble y el ciclo contable",
-  "q": "Σ Debe = Σ Haber se cumple siempre. ¿Qué garantiza exactamente?",
+  "q": "$\\sum \\text{Debe} = \\sum \\text{Haber}$ se cumple siempre. ¿Qué garantiza exactamente?",
   "a": "Solo que cada anotación tiene su contrapartida por el mismo importe. No garantiza que la cuenta elegida sea la correcta, ni que el importe sea el correcto, ni que el hecho corresponda a este ejercicio."
  },
  {
@@ -6724,7 +6724,7 @@ export default [
   "nivel": 1,
   "titulo": "Valor temporal del dinero: capitalización y descuento",
   "q": "Un depósito ofrece un 6 % nominal capitalizable trimestralmente. ¿Cuál es su TAE?",
-  "a": "(1 + 0,06/4)⁴ − 1 = 6,136 %. La diferencia respecto al 6 % es la que genera capitalizar cuatro veces al año en lugar de una."
+  "a": "$(1 + 0{,}06/4)^4 - 1 = 6{,}136\\ \\%$. La diferencia respecto al 6 % es la que genera capitalizar cuatro veces al año en lugar de una."
  },
  {
   "id": "7.01#2",
@@ -6760,7 +6760,7 @@ export default [
   "nivel": 1,
   "titulo": "Rentas, préstamos y cuadros de amortización",
   "q": "¿Cuál es el valor actual de 5.000 € anuales durante 12 años al 4 %?",
-  "a": "5.000 × [1 − 1,04⁻¹²] / 0,04 = 46.925 €. El total nominal cobrado sería 60.000 €; la diferencia es el efecto del descuento."
+  "a": "$5.000 \\times \\dfrac{1 - 1{,}04^{-12}}{0{,}04} = 46.925$ €. El total nominal cobrado sería 60.000 €; la diferencia es el efecto del descuento."
  },
  {
   "id": "7.02#1",
@@ -6805,7 +6805,7 @@ export default [
   "nivel": 2,
   "titulo": "Criterios de inversión: VAN, TIR y sus trampas",
   "q": "Un proyecto exige 50.000 € y genera 20.000 € anuales durante 4 años. Al 8 %, ¿cuál es su VAN?",
-  "a": "20.000 × [1 − 1,08⁻⁴] / 0,08 = 66.243 €. VAN = 66.243 − 50.000 = 16.243 €. Positivo: crea valor y debe aceptarse."
+  "a": "$20.000 \\times \\dfrac{1 - 1{,}08^{-4}}{0{,}08} = 66.243$ €. VAN $= 66.243 - 50.000 = 16.243$ €. Positivo: crea valor y debe aceptarse."
  },
  {
   "id": "7.03#1",
@@ -6948,7 +6948,7 @@ export default [
   "bloque": 7,
   "nivel": 3,
   "titulo": "Estructura de capital: Modigliani-Miller e impuestos",
-  "q": "V_U = 800.000 €, deuda 400.000 €, tipo impositivo 25 %. ¿Valor apalancado?",
+  "q": "$V_U = 800.000$ €, deuda 400.000 €, tipo impositivo 25 %. ¿Valor apalancado?",
   "a": "800.000 + 0,25 × 400.000 = 900.000 €. El escudo fiscal aporta 100.000 €, que es valor trasladado del Estado a la empresa, no valor creado por el negocio."
  },
  {
@@ -7255,7 +7255,7 @@ export default [
   "nivel": 3,
   "titulo": "Estructura temporal de tipos y curva de rendimientos",
   "q": "El tipo a un año es 2 % y a dos años 3 %. ¿Cuál es el forward implícito del segundo año?",
-  "a": "1,03² / 1,02 − 1 = 4,01 %. El tipo al contado sube un punto y el forward sube dos: el largo es un promedio que suaviza el perfil de los tipos esperados."
+  "a": "$1{,}03^2 / 1{,}02 - 1 = 4{,}01\\ \\%$. El tipo al contado sube un punto y el forward sube dos: el largo es un promedio que suaviza el perfil de los tipos esperados."
  },
  {
   "id": "8.03#1",
@@ -7345,7 +7345,7 @@ export default [
   "nivel": 3,
   "titulo": "Riesgo, rentabilidad y diversificación",
   "q": "Dos activos con volatilidad del 20 % cada uno y correlación 0,5, al 50 %. ¿Volatilidad de la cartera?",
-  "a": "σ² = 0,25×0,04 + 0,25×0,04 + 2×0,25×0,5×0,04 = 0,03. σ = 17,3 %, por debajo del 20 % de cada uno por separado."
+  "a": "$\\sigma^2 = 0{,}25 \\times 0{,}04 + 0{,}25 \\times 0{,}04 + 2 \\times 0{,}25 \\times 0{,}5 \\times 0{,}04 = 0{,}03$. $\\sigma = 17{,}3\\ \\%$, por debajo del 20 % de cada uno por separado."
  },
  {
   "id": "8.05#1",
@@ -7398,7 +7398,7 @@ export default [
   "bloque": 8,
   "nivel": 3,
   "titulo": "CAPM, beta y modelos multifactor",
-  "q": "Una acción tiene volatilidad del 40 % y un R² del 20 %. ¿Cuánto de su riesgo se remunera?",
+  "q": "Una acción tiene volatilidad del 40 % y un $R^2$ del 20 %. ¿Cuánto de su riesgo se remunera?",
   "a": "Solo el 20 % de su varianza es sistemática; el 80 % restante desaparece al diversificar. Su volatilidad individual, muy alta, dice poco sobre la rentabilidad que exigirá el mercado."
  },
  {
@@ -7498,7 +7498,7 @@ export default [
   "nivel": 4,
   "titulo": "Derivados I: futuros y forwards",
   "q": "Se cubren 20.000 unidades con una correlación de 0,7 y volatilidades del 15 % y del 12 %. ¿Ratio y cobertura?",
-  "a": "h = 0,7 × 0,15 / 0,12 = 0,875. Equivale a cubrir 17.500 unidades. Y solo se elimina el 49 % de la varianza, porque la reducción es ρ²."
+  "a": "$h = 0{,}7 \\times 0{,}15 / 0{,}12 = 0{,}875$. Equivale a cubrir 17.500 unidades. Y solo se elimina el 49 % de la varianza, porque la reducción es $\\rho^2$."
  },
  {
   "id": "8.08#3",
@@ -7552,7 +7552,7 @@ export default [
   "nivel": 4,
   "titulo": "Derivados II: opciones y Black-Scholes",
   "q": "C = 8 €, S = 100 €, K = 95 €, valor actual del ejercicio 92 €. ¿Cuánto vale la opción de venta?",
-  "a": "Por paridad: P = C − S + K·e^(−rT) = 8 − 100 + 92 = 0 €. Un resultado nulo indica que los datos son inconsistentes o que la opción de venta está en el límite; la paridad es una relación de arbitraje que no depende de ningún modelo."
+  "a": "Por paridad: $P = C - S + K e^{-rT} = 8 - 100 + 92 = 0$ €. Un resultado nulo indica que los datos son inconsistentes o que la opción de venta está en el límite; la paridad es una relación de arbitraje que no depende de ningún modelo."
  },
  {
   "id": "8.09#4",
@@ -7588,7 +7588,7 @@ export default [
   "nivel": 4,
   "titulo": "Gestión de riesgos: VaR, cobertura y regulación bancaria",
   "q": "Cartera de 5 M€, volatilidad diaria del 1,5 %. ¿VaR diario al 99 %?",
-  "a": "2,326 × 1,5 % × 5.000.000 = 174.450 €. A diez días, multiplicando por √10, unos 551.700 €, siempre que las rentabilidades sean independientes."
+  "a": "$2{,}326 \\times 1{,}5\\ \\% \\times 5.000.000 = 174.450$ €. A diez días, multiplicando por $\\sqrt{10}$, unos 551.700 €, siempre que las rentabilidades sean independientes."
  },
  {
   "id": "8.10#3",
@@ -7615,7 +7615,7 @@ export default [
   "nivel": 2,
   "titulo": "Fondos de inversión e inversión colectiva",
   "q": "Un fondo tiene 48.600.000 € de patrimonio y 3.240.000 participaciones. Entran 1.500.000 € de suscripciones. ¿Cuál es el valor liquidativo antes y después?",
-  "a": "15,00 € en los dos momentos. Antes: 48.600.000 ÷ 3.240.000 = 15,00. La suscripción emite 1.500.000 ÷ 15 = 100.000 participaciones nuevas, así que el patrimonio pasa a 50.100.000 € y las participaciones a 3.340.000, cuyo cociente vuelve a ser 15,00. Las entradas y salidas de dinero no mueven el valor liquidativo: solo lo mueven los activos de la cartera."
+  "a": "15,00 € en los dos momentos. Antes: $48.600.000 / 3.240.000 = 15{,}00$. La suscripción emite $1.500.000 / 15 = 100.000$ participaciones nuevas, así que el patrimonio pasa a 50.100.000 € y las participaciones a 3.340.000, cuyo cociente vuelve a ser 15,00. Las entradas y salidas de dinero no mueven el valor liquidativo: solo lo mueven los activos de la cartera."
  },
  {
   "id": "8.11#1",
@@ -7624,7 +7624,7 @@ export default [
   "nivel": 2,
   "titulo": "Fondos de inversión e inversión colectiva",
   "q": "Con 10.000 € al 7 % bruto durante 30 años, ¿cuánto cuesta pasar de una comisión del 0,30 % a una del 1,80 %?",
-  "a": "24.215 €. El indexado termina en 10.000 · 1,067³⁰ = 69.973 € y el activo en 10.000 · 1,052³⁰ = 45.759 €. El fondo barato acaba con un 52,9 % más de capital. Visto sobre la referencia sin comisiones (76.123 €), el punto y medio de diferencia se lleva el 31,8 % del resultado."
+  "a": "24.215 €. El indexado termina en $10.000 \\times 1{,}067^{30} = 69.973$ € y el activo en $10.000 \\times 1{,}052^{30} = 45.759$ €. El fondo barato acaba con un 52,9 % más de capital. Visto sobre la referencia sin comisiones (76.123 €), el punto y medio de diferencia se lleva el 31,8 % del resultado."
  },
  {
   "id": "8.11#2",
@@ -7669,7 +7669,7 @@ export default [
   "nivel": 1,
   "titulo": "La empresa: formas jurídicas y gobierno corporativo",
   "q": "Tres rondas que diluyen un 25 % cada una. ¿Qué queda del 100 % inicial?",
-  "a": "0,75³ = 42,2 %. La dilución es multiplicativa, no aditiva: no se pierde el 75 % sino el 57,8 %."
+  "a": "$0{,}75^3 = 42{,}2\\ \\%$. La dilución es multiplicativa, no aditiva: no se pierde el 75 % sino el 57,8 %."
  },
  {
   "id": "9.01#2",
@@ -8020,7 +8020,7 @@ export default [
   "nivel": 3,
   "titulo": "Operaciones y cadena de suministro",
   "q": "Demanda anual 5.000 uds, coste de pedido 80 €, coste de posesión 4 €/ud/año. ¿Lote económico?",
-  "a": "√(2 × 5.000 × 80 / 4) = √200.000 = 447 unidades, con unos 11 pedidos al año. En el óptimo, coste de pedido y de posesión se igualan en unos 894 € cada uno."
+  "a": "$\\sqrt{2 \\times 5.000 \\times 80/4} = \\sqrt{200.000} = 447$ unidades, con unos 11 pedidos al año. En el óptimo, coste de pedido y de posesión se igualan en unos 894 € cada uno."
  },
  {
   "id": "9.09#1",

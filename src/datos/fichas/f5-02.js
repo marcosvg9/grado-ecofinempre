@@ -90,10 +90,10 @@ export default {
           modo: "dos",
           filas: [
             { nom: "Ecuación patrimonial", sub: "El invariante. Se cumple en todo momento, no solo al cierre.", cols: ["Activo = Pasivo + Patrimonio neto"] },
-            { nom: "Invariante de la partida doble", sub: "Se cumple asiento a asiento y, por tanto, también en el acumulado.", cols: ["Σ Debe = Σ Haber"] },
+            { nom: "Invariante de la partida doble", sub: "Se cumple asiento a asiento y, por tanto, también en el acumulado.", cols: ["$\\sum \\text{Debe} = \\sum \\text{Haber}$"] },
             { nom: "Resultado del ejercicio", sub: "Grupo 7 menos grupo 6. Aún no está en el balance hasta la regularización.", cols: ["Resultado = Ingresos − Gastos"] },
-            { nom: "Variación del neto", sub: "El resultado explica el neto solo si no ha habido movimientos con los socios.", cols: ["ΔPN = Resultado + Aportaciones − Distribuciones"] },
-            { nom: "Saldo de una cuenta", sub: "Positivo se llama deudor; negativo, acreedor.", cols: ["Saldo = Σ cargos − Σ abonos"] },
+            { nom: "Variación del neto", sub: "El resultado explica el neto solo si no ha habido movimientos con los socios.", cols: ["$\\Delta\\mathrm{PN} = \\text{Resultado} + \\text{Aportaciones} - \\text{Distribuciones}$"] },
+            { nom: "Saldo de una cuenta", sub: "Positivo se llama deudor; negativo, acreedor.", cols: ["Saldo $= \\sum \\text{cargos} - \\sum \\text{abonos}$"] },
           ],
         },
         {
@@ -179,7 +179,7 @@ export default {
           items: [
             { q: "Una empresa cobra hoy 5.000 € de una venta que hizo el trimestre pasado. ¿Cuánto varía su resultado?", a: "Cero. El ingreso ya se reconoció al vender. Hoy solo se sustituye un activo (Clientes) por otro (Bancos). Es el caso más limpio de devengo frente a caja." },
             { q: "¿Puede aumentar el activo sin que varíe el patrimonio neto?", a: "Sí, siempre que aumente el pasivo en la misma cuantía. Pedir un préstamo es el ejemplo canónico: activo y deuda crecen a la vez y la riqueza propia no se mueve." },
-            { q: "Σ Debe = Σ Haber se cumple siempre. ¿Qué garantiza exactamente?", a: "Solo que cada anotación tiene su contrapartida por el mismo importe. No garantiza que la cuenta elegida sea la correcta, ni que el importe sea el correcto, ni que el hecho corresponda a este ejercicio." },
+            { q: "$\\sum \\text{Debe} = \\sum \\text{Haber}$ se cumple siempre. ¿Qué garantiza exactamente?", a: "Solo que cada anotación tiene su contrapartida por el mismo importe. No garantiza que la cuenta elegida sea la correcta, ni que el importe sea el correcto, ni que el hecho corresponda a este ejercicio." },
             { q: "Si la amortización no supone pago, ¿por qué reduce el beneficio?", a: "Porque el beneficio mide el consumo de recursos del período, no los movimientos de tesorería. La máquina se está gastando aunque se pagara hace años." },
             { q: "En el ejemplo, el resultado es 1.000 € y la caja ha crecido 45.000 €. ¿Cómo se concilia?", a: "La caja recoge los 60.000 € de aportación y los 20.000 € de préstamo, que no son ingresos, y no recoge los 18.000 € pendientes de cobro ni los 12.000 € pendientes de pago. Resultado y tesorería miden cosas distintas." },
           ],

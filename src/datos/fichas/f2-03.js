@@ -34,13 +34,13 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Ecuación de Slutsky", sub: "El primer término es el efecto sustitución.", cols: ["∂x/∂p = ∂xʰ/∂p − x · (∂x/∂m)"] },
-            { nom: "Signo del efecto sustitución", sub: "Es un teorema, no una regularidad empírica.", cols: ["∂xʰ/∂p ≤ 0 siempre"] },
-            { nom: "Compensación de Slutsky", sub: "Renta que permite comprar la cesta original.", cols: ["m′ = p′ · x₀"] },
-            { nom: "Compensación de Hicks", sub: "Renta que permite alcanzar la utilidad original.", cols: ["m′ = e(p′, U₀)"] },
-            { nom: "En elasticidades", sub: "w es la proporción de gasto en el bien.", cols: ["ε = εˢ − w · η"] },
-            { nom: "Condición de bien Giffen", sub: "Inferior y con peso presupuestario alto.", cols: ["η < 0 y |w·η| > |εˢ|"] },
-            { nom: "Función de gasto", sub: "Gasto mínimo para alcanzar U a los precios p.", cols: ["e(p, U) = mín { p·x : U(x) ≥ U }"] },
+            { nom: "Ecuación de Slutsky", sub: "El primer término es el efecto sustitución.", cols: ["$\\dfrac{\\partial x}{\\partial p} = \\dfrac{\\partial x^h}{\\partial p} - x\\,\\dfrac{\\partial x}{\\partial m}$"] },
+            { nom: "Signo del efecto sustitución", sub: "Es un teorema, no una regularidad empírica.", cols: ["$\\dfrac{\\partial x^h}{\\partial p} \\leq 0$ siempre"] },
+            { nom: "Compensación de Slutsky", sub: "Renta que permite comprar la cesta original.", cols: ["$m' = p' x_0$"] },
+            { nom: "Compensación de Hicks", sub: "Renta que permite alcanzar la utilidad original.", cols: ["$m' = e(p', U_0)$"] },
+            { nom: "En elasticidades", sub: "w es la proporción de gasto en el bien.", cols: ["$\\varepsilon = \\varepsilon^s - w\\,\\eta$"] },
+            { nom: "Condición de bien Giffen", sub: "Inferior y con peso presupuestario alto.", cols: ["$\\eta < 0$ y $|w\\eta| > |\\varepsilon^s|$"] },
+            { nom: "Función de gasto", sub: "Gasto mínimo para alcanzar U a los precios p.", cols: ["$e(p, U) = \\min\\{\\,p x : U(x) \\geq U\\,\\}$"] },
           ],
           nota: "El término de renta va ponderado por **x**, la cantidad consumida. Por eso un bien que absorbe una fracción minúscula del presupuesto tiene efecto renta despreciable aunque sea inferior, y por eso los candidatos a bien Giffen son alimentos básicos en poblaciones de renta muy baja.",
         },
@@ -52,7 +52,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "Retomamos el consumidor de la ficha 2.01: **U = x^0,5·y^0,5**, renta **m = 120**, precios iniciales **pₓ = 4** y **p_y = 6**, con cesta óptima (15, 10) y utilidad 12,247. El precio de x sube a **6**.",
+            "Retomamos el consumidor de la ficha 2.01: $U = x^{0{,}5} y^{0{,}5}$, renta $m = 120$, precios iniciales $p_x = 4$ y $p_y = 6$, con cesta óptima (15, 10) y utilidad 12,247. El precio de $x$ sube a **6**.",
           ],
         },
         {
@@ -108,14 +108,14 @@ export default {
             { x: 12.247, y: 12.247, etiqueta: "D  Hicks", guias: false },
             { x: 10, y: 10, etiqueta: "B  final", guias: false },
           ],
-          nota: "El recorrido **A → C → B** es la descomposición completa. La subida de pₓ de 4 a 6 gira la recta presupuestaria hacia dentro, de la curva azul a la naranja, y el consumidor pasa de A a B: **cinco unidades menos de X**. Para separar los dos motivos se traza la **recta compensada** —punteada, con la nueva pendiente pero con renta suficiente para volver a comprar la cesta original— y el punto C que elige sobre ella. De A a C hay **sustitución pura**: mismo poder adquisitivo, X relativamente más caro, y por eso 2,5 unidades menos. De C a B hay **efecto renta puro**: mismos precios y menos renta, y otras 2,5 menos. El punto **D es la versión de Hicks**, que compensa hasta la utilidad original en vez de hasta la cesta original, y por eso cae justo sobre la curva de indiferencia de partida. **C queda ligeramente por encima de esa curva**: la compensación de Slutsky es algo más generosa, y de ahí los 2,753 frente a 2,50 de las dos tablas.",
+          nota: "El recorrido **A → C → B** es la descomposición completa. La subida de $p_x$ de 4 a 6 gira la recta presupuestaria hacia dentro, de la curva azul a la naranja, y el consumidor pasa de A a B: **cinco unidades menos de X**. Para separar los dos motivos se traza la **recta compensada** —punteada, con la nueva pendiente pero con renta suficiente para volver a comprar la cesta original— y el punto C que elige sobre ella. De A a C hay **sustitución pura**: mismo poder adquisitivo, X relativamente más caro, y por eso 2,5 unidades menos. De C a B hay **efecto renta puro**: mismos precios y menos renta, y otras 2,5 menos. El punto **D es la versión de Hicks**, que compensa hasta la utilidad original en vez de hasta la cesta original, y por eso cae justo sobre la curva de indiferencia de partida. **C queda ligeramente por encima de esa curva**: la compensación de Slutsky es algo más generosa, y de ahí los 2,753 frente a 2,50 de las dos tablas.",
         },
         {
           tipo: "tabla",
           cabecera: ["Situación", "x", "y", "Utilidad"],
           filas: [
-            ["Inicial (pₓ = 4)", "15,00", "10,00", "12,247"],
-            ["Final (pₓ = 6)", "10,00", "10,00", "10,000"],
+            ["Inicial ($p_x = 4$)", "15,00", "10,00", "12,247"],
+            ["Final ($p_x = 6$)", "10,00", "10,00", "10,000"],
             { celdas: ["Efecto total sobre x", "−5,00", "—", "—"], clase: "total" },
           ],
         },
@@ -137,7 +137,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "**Descomposición de Hicks.** Ahora se ajusta la renta para mantener la utilidad original de 12,247. Para estas preferencias la función de gasto es e(p, U) = 2·U·√(pₓ·p_y) = 2 · 12,247 · 6 = **146,97**, y la demanda compensada resulta xʰ = U·√(p_y/pₓ) = 12,247 · 1 = **12,247**.",
+            "**Descomposición de Hicks.** Ahora se ajusta la renta para mantener la utilidad original de 12,247. Para estas preferencias la función de gasto es $e(p,U) = 2U\\sqrt{p_x p_y} = 2 \\times 12{,}247 \\times 6 = 146{,}97$, y la demanda compensada resulta $x^h = U\\sqrt{p_y/p_x} = 12{,}247 \\times 1 = 12{,}247$.",
           ],
         },
         {
@@ -225,6 +225,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un cálculo de descomposición de Slutsky arroja un efecto sustitución positivo. ¿Qué significa?",
+              opciones: [
+                "Que el bien es Giffen",
+                "Que hay un error: el efecto sustitución es negativo siempre, por teorema",
+                "Que el bien es inferior y el efecto renta domina",
+                "Que la compensación se ha hecho a la manera de Hicks en vez de Slutsky",
+              ],
+              correcta: 1,
+              porque: [
+                "Los bienes Giffen tienen efecto sustitución negativo como todos; lo que los define es un efecto renta positivo y lo bastante grande para vencerlo.",
+                "Es un resultado demostrado, no una regularidad empírica: manteniendo el poder adquisitivo, encarecer un bien nunca aumenta su demanda compensada. Un signo positivo delata un fallo de cálculo.",
+                "Que domine el efecto renta cambia el signo del efecto *total*, no el del de sustitución, que sigue siendo negativo por separado.",
+                "Las dos compensaciones reparten distinto entre ambos efectos, pero ninguna puede volver positivo el de sustitución.",
+              ],
+            },
+            {
+              q: "¿Qué le falta a un bien inferior para ser Giffen?",
+              opciones: [
+                "Nada: todo bien inferior es Giffen",
+                "Que absorba una proporción muy grande del presupuesto, para que el efecto renta venza al de sustitución",
+                "Que no tenga sustitutivos cercanos",
+                "Que su elasticidad-renta sea inferior a $-1$",
+              ],
+              correcta: 1,
+              porque: [
+                "Todos los Giffen son inferiores, pero casi ningún inferior es Giffen. La implicación va en un solo sentido.",
+                "El término de renta va ponderado por el peso del bien en el gasto. Un bien que supone el 0,5 % del presupuesto tiene efecto renta irrelevante por muy inferior que sea, y por eso los casos documentados son alimentos básicos de poblaciones muy pobres.",
+                "La falta de sustitutivos hace la demanda inelástica, que es otra cosa. Un bien sin sustitutivos puede tener pendiente negativa perfectamente.",
+                "La magnitud de la elasticidad-renta ayuda, pero sin peso presupuestario grande sigue sin bastar: es el producto de ambas cosas lo que decide.",
+              ],
+            },
+            {
+              q: "¿Por qué el IPC tiene sesgo de sustitución?",
+              opciones: [
+                "Porque el INE tarda en actualizar la cesta y podría hacerlo antes",
+                "Porque fijar ponderaciones ignora que la gente se desplaza hacia lo que se abarata",
+                "Porque incluye bienes importados cuyo precio no controla",
+                "Porque usa la fórmula de Paasche en vez de la de Laspeyres",
+              ],
+              correcta: 1,
+              porque: [
+                "Encadenar y actualizar la cesta lo atenúa, pero no lo elimina: mientras haya un periodo con ponderaciones fijas, el sesgo aparece dentro de él.",
+                "Es consecuencia inevitable de la construcción tipo Laspeyres. Al mantener las cantidades del año base se sobrevalora lo que ha subido, porque la gente ya no compra tanto de eso.",
+                "La composición de la cesta afecta a qué mide el índice, no a por qué se sesga al fijar ponderaciones.",
+                "Es al revés: el IPC es un Laspeyres, y es Laspeyres quien tiende a sobrestimar. Paasche tiende a lo contrario.",
+              ],
+            },
+            {
+              q: "Con complementarios perfectos —café y azúcar en proporción fija—, sube el precio del café. ¿Cómo se reparte el efecto?",
+              opciones: [
+                "Mitad sustitución, mitad renta",
+                "Todo es efecto renta: el efecto sustitución es nulo por construcción",
+                "Todo es efecto sustitución, porque el consumidor cambia de bien",
+                "No cabe descomponer: la demanda no está definida",
+              ],
+              correcta: 1,
+              porque: [
+                "El reparto a medias no tiene ninguna base: depende por completo de la estructura de preferencias, y aquí esa estructura es extrema.",
+                "Si los bienes se consumen en proporción rígida, no hay sustitución posible por definición. Todo el cambio viene de que el consumidor es más pobre en términos reales.",
+                "La sustitución es justo lo que estas preferencias impiden: cambiar de proporción destruiría la complementariedad.",
+                "La demanda está perfectamente definida; lo que ocurre es que uno de los dos efectos vale cero.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

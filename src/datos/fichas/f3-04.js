@@ -34,16 +34,16 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Función de consumo", sub: "c es la propensión marginal, no la media.", cols: ["C = C₀ + c · Y_d"] },
-            { nom: "Renta disponible", sub: "Con impuesto proporcional a la renta.", cols: ["Y_d = Y − T = Y(1 − t)"] },
+            { nom: "Función de consumo", sub: "c es la propensión marginal, no la media.", cols: ["$C = C_0 + c\\,Y_d$"] },
+            { nom: "Renta disponible", sub: "Con impuesto proporcional a la renta.", cols: ["$Y_d = Y - T = Y(1-t)$"] },
             { nom: "Demanda agregada planeada", sub: "Todo el gasto previsto al nivel de renta Y.", cols: ["DA = C + I + G + X − M"] },
             { nom: "Condición de equilibrio", sub: "Producción igual a demanda planeada.", cols: ["Y = DA"] },
-            { nom: "Multiplicador simple", sub: "Sin impuestos ni sector exterior.", cols: ["k = 1 / (1 − c)"] },
-            { nom: "Multiplicador con impuestos", sub: "El impuesto proporcional lo reduce.", cols: ["k = 1 / [1 − c(1 − t)]"] },
-            { nom: "Multiplicador en economía abierta", sub: "Las importaciones filtran renta al exterior.", cols: ["k = 1 / [1 − c(1 − t) + m]"] },
-            { nom: "Multiplicador de los impuestos", sub: "Menor en valor absoluto y de signo contrario.", cols: ["k_T = −c / [1 − c(1 − t)]"] },
-            { nom: "Presupuesto equilibrado", sub: "Subir gasto e impuestos por igual no es neutral.", cols: ["ΔY = (k + k_T) · ΔG > 0"] },
-            { nom: "Paradoja del ahorro", sub: "Falacia de composición, válida con capacidad ociosa.", cols: ["↑ propensión a ahorrar ⟹ ↓ Y, S igual o menor"] },
+            { nom: "Multiplicador simple", sub: "Sin impuestos ni sector exterior.", cols: ["$k = \\dfrac{1}{1-c}$"] },
+            { nom: "Multiplicador con impuestos", sub: "El impuesto proporcional lo reduce.", cols: ["$k = \\dfrac{1}{1 - c(1-t)}$"] },
+            { nom: "Multiplicador en economía abierta", sub: "Las importaciones filtran renta al exterior.", cols: ["$k = \\dfrac{1}{1 - c(1-t) + m}$"] },
+            { nom: "Multiplicador de los impuestos", sub: "Menor en valor absoluto y de signo contrario.", cols: ["$k_T = \\dfrac{-c}{1 - c(1-t)}$"] },
+            { nom: "Presupuesto equilibrado", sub: "Subir gasto e impuestos por igual no es neutral.", cols: ["$\\Delta Y = (k + k_T)\\,\\Delta G > 0$"] },
+            { nom: "Paradoja del ahorro", sub: "Falacia de composición, válida con capacidad ociosa.", cols: ["↑ propensión a ahorrar $\\Rightarrow$ ↓ $Y$, $S$ igual o menor"] },
           ],
         },
       ],
@@ -54,7 +54,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "Una economía se describe con **C = 100 + 0,8·Y_d**, un impuesto proporcional del **25 %**, inversión autónoma de **200** y gasto público de **300**. Sustituyendo, la demanda agregada es 600 + 0,6·Y, y la condición de equilibrio Y = DA da **Y = 1.500**. El multiplicador es 1 / (1 − 0,6) = **2,5**.",
+            "Una economía se describe con $C = 100 + 0{,}8\\,Y_d$, un impuesto proporcional del **25 %**, inversión autónoma de **200** y gasto público de **300**. Sustituyendo, la demanda agregada es $600 + 0{,}6\\,Y$, y la condición de equilibrio $Y = \\mathrm{DA}$ da $Y = 1.500$. El multiplicador es $1/(1 - 0{,}6) = 2{,}5$.",
           ],
         },
         {
@@ -170,6 +170,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Qué supuesto hace falta para que el multiplicador keynesiano funcione como describe el modelo?",
+              opciones: [
+                "Que el banco central mantenga el tipo de interés fijo",
+                "Que haya capacidad ociosa: la respuesta a más demanda es más producción y no más precios",
+                "Que la economía sea cerrada",
+                "Que el gobierno financie el gasto con deuda y no con impuestos",
+              ],
+              correcta: 1,
+              porque: [
+                "El tipo de interés fijo afecta al tamaño del efecto —es el caso del IS-LM de la ficha siguiente— pero no es el supuesto que sostiene el mecanismo básico.",
+                "Sin recursos parados, un impulso de demanda se traduce en inflación y no en renta. Todo el modelo descansa en que hay factores sin emplear dispuestos a ponerse a producir.",
+                "La apertura reduce el multiplicador por la filtración de importaciones, pero el mecanismo sigue existiendo en una economía abierta.",
+                "La financiación cambia el tamaño del efecto, no su existencia: hasta un presupuesto equilibrado tiene multiplicador positivo.",
+              ],
+            },
+            {
+              q: "En una economía con $C = 100 + 0{,}8\\,Y_d$ y un impuesto proporcional del 25 %, ¿cuánto vale el multiplicador?",
+              opciones: [
+                "5, que es $1/(1-0{,}8)$",
+                "2,5: el impuesto filtra parte de cada euro antes de que se gaste",
+                "1,25, porque el impuesto se lleva la mayor parte",
+                "0,8, que es la propensión marginal a consumir",
+              ],
+              correcta: 1,
+              porque: [
+                "Ese sería el multiplicador sin impuestos. Al ignorar la filtración fiscal se duplica el efecto estimado.",
+                "$k = 1/[1 - c(1-t)] = 1/[1 - 0{,}8 \\times 0{,}75] = 1/0{,}4 = 2{,}5$. Cada euro de renta adicional deja el 25 % en Hacienda antes de llegar al consumo.",
+                "El impuesto reduce el multiplicador a la mitad, no a la cuarta parte. Conviene hacer la cuenta antes que estimar a ojo.",
+                "La propensión marginal a consumir es un ingrediente del multiplicador, no el multiplicador.",
+              ],
+            },
+            {
+              q: "Un gobierno puede gastar 100 o rebajar impuestos en 100. ¿Producen el mismo efecto sobre la renta?",
+              opciones: [
+                "Sí: los 100 llegan igual a la economía",
+                "No: el gasto entra íntegro en la demanda, mientras que de la rebaja se ahorra una parte antes de empezar la cadena",
+                "No: la rebaja fiscal tiene mayor efecto porque los hogares deciden mejor",
+                "Sí, salvo que el gasto sea en inversión",
+              ],
+              correcta: 1,
+              porque: [
+                "Los 100 llegan, pero por caminos distintos. El gasto público es demanda directa; la rebaja pasa antes por la decisión de consumir o ahorrar del hogar.",
+                "Por eso $|k_T| < k$: la primera ronda de la rebaja solo aporta $c \\times 100$ y no 100. Es un resultado del mecanismo, no una preferencia por una política u otra.",
+                "Quién decide mejor es una cuestión distinta y ajena al modelo. Aquí solo se compara el tamaño del impulso inicial.",
+                "El tipo de gasto no cambia el argumento: cualquier gasto público entra entero, sea corriente o de inversión.",
+              ],
+            },
+            {
+              q: "¿Es la paradoja del ahorro una ley general de la economía?",
+              opciones: [
+                "Sí: ahorrar más siempre reduce la renta agregada",
+                "No: opera con capacidad ociosa; con pleno empleo, más ahorro financia más inversión",
+                "Sí, aunque su efecto es pequeño",
+                "No: es un resultado que la evidencia ha refutado",
+              ],
+              correcta: 1,
+              porque: [
+                "Generalizarla la convierte en un argumento contra el ahorro en cualquier circunstancia, que es justo lo que el modelo no dice.",
+                "Con recursos parados, el gasto de uno es la renta de otro y ahorrar más deprime ambos. En pleno empleo el mecanismo se invierte y el ahorro eleva el crecimiento a largo plazo.",
+                "El efecto puede ser considerable en una recesión profunda. Lo que falla no es la magnitud sino la pretensión de universalidad.",
+                "No está refutada: está acotada. Se cumple en las condiciones que el modelo describe y no fuera de ellas.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

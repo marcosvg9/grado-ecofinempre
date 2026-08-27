@@ -35,8 +35,8 @@ export default {
           modo: "dos",
           filas: [
             { nom: "Contribución mensual por cliente", sub: "Ingreso recurrente por el margen bruto.", cols: ["c = ARPU × margen bruto"] },
-            { nom: "Vida media del cliente", sub: "Con tasa de abandono mensual constante.", cols: ["Vida = 1 / tasa de abandono"] },
-            { nom: "Valor del cliente", sub: "Versión simplificada sin descuento.", cols: ["LTV = c / tasa de abandono"] },
+            { nom: "Vida media del cliente", sub: "Con tasa de abandono mensual constante.", cols: ["Vida $= \\dfrac{1}{\\text{tasa de abandono}}$"] },
+            { nom: "Valor del cliente", sub: "Versión simplificada sin descuento.", cols: ["$\\mathrm{LTV} = \\dfrac{c}{\\text{tasa de abandono}}$"] },
             { nom: "Ratio de viabilidad", sub: "Umbral habitual en modelos de suscripción.", cols: ["LTV / CAC > 3"] },
             { nom: "Recuperación del coste de captación", sub: "Determina la caja que consume crecer.", cols: ["Meses = CAC / c"] },
             { nom: "Caja consumida por el crecimiento", sub: "Por qué crecer deprisa exige financiación.", cols: ["Consumo = Clientes nuevos × CAC − Contribución de la base"] },

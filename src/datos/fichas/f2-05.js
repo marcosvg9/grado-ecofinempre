@@ -35,13 +35,13 @@ export default {
           modo: "dos",
           filas: [
             { nom: "Coste total a corto plazo", sub: "El fijo no depende de la cantidad.", cols: ["CT(q) = CF + CV(q)"] },
-            { nom: "Coste marginal", sub: "Derivada del coste total: solo depende del variable.", cols: ["CMg = dCT/dq = dCV/dq"] },
-            { nom: "Costes medios", sub: "Tres curvas que conviene no mezclar.", cols: ["CMe = CT/q · CVMe = CV/q · CFMe = CF/q"] },
-            { nom: "Relación marginal-medio", sub: "Propiedad de cualquier promedio.", cols: ["dCMe/dq = (CMg − CMe) / q"] },
-            { nom: "Mínimo del coste medio", sub: "Se deduce de la línea anterior.", cols: ["CMe mínimo ⟺ CMg = CMe"] },
-            { nom: "Condición de cierre a corto plazo", sub: "Los costes fijos ya están comprometidos.", cols: ["Producir si P ≥ mín CVMe"] },
-            { nom: "Condición de salida a largo plazo", sub: "Todo es ajustable.", cols: ["Permanecer si P ≥ mín CMe"] },
-            { nom: "Minimización del coste", sub: "El análogo de la tangencia del consumidor.", cols: ["PMg_L / w = PMg_K / r"] },
+            { nom: "Coste marginal", sub: "Derivada del coste total: solo depende del variable.", cols: ["$\\mathrm{CMg} = \\dfrac{d\\mathrm{CT}}{dq} = \\dfrac{d\\mathrm{CV}}{dq}$"] },
+            { nom: "Costes medios", sub: "Tres curvas que conviene no mezclar.", cols: ["$\\mathrm{CMe} = \\mathrm{CT}/q$ · $\\mathrm{CVMe} = \\mathrm{CV}/q$ · $\\mathrm{CFMe} = \\mathrm{CF}/q$"] },
+            { nom: "Relación marginal-medio", sub: "Propiedad de cualquier promedio.", cols: ["$\\dfrac{d\\mathrm{CMe}}{dq} = \\dfrac{\\mathrm{CMg} - \\mathrm{CMe}}{q}$"] },
+            { nom: "Mínimo del coste medio", sub: "Se deduce de la línea anterior.", cols: ["$\\mathrm{CMe}$ mínimo $\\Leftrightarrow \\mathrm{CMg} = \\mathrm{CMe}$"] },
+            { nom: "Condición de cierre a corto plazo", sub: "Los costes fijos ya están comprometidos.", cols: ["Producir si $P \\geq \\min \\mathrm{CVMe}$"] },
+            { nom: "Condición de salida a largo plazo", sub: "Todo es ajustable.", cols: ["Permanecer si $P \\geq \\min \\mathrm{CMe}$"] },
+            { nom: "Minimización del coste", sub: "El análogo de la tangencia del consumidor.", cols: ["$\\dfrac{\\mathrm{PMg}_L}{w} = \\dfrac{\\mathrm{PMg}_K}{r}$"] },
           ],
         },
       ],
@@ -52,7 +52,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "Sea **CT(q) = 100 + 2q + 0,05q²**. Los costes fijos son 100 y el coste variable, 2q + 0,05q². De ahí se derivan directamente el coste marginal y los medios.",
+            "Sea $\\mathrm{CT}(q) = 100 + 2q + 0{,}05q^2$. Los costes fijos son 100 y el coste variable, $2q + 0{,}05q^2$. De ahí se derivan directamente el coste marginal y los medios.",
           ],
         },
         {
@@ -102,7 +102,7 @@ export default {
             ["60", "400,0", "6,67", "5,00", "8,00"],
             ["80", "580,0", "7,25", "7,00", "10,00"],
           ],
-          nota: "En **q = 44,72** el coste medio alcanza su mínimo de 6,47 y **el coste marginal vale exactamente lo mismo**. No es coincidencia: se obtiene resolviendo dCMe/dq = 0, es decir −100/q² + 0,05 = 0, de donde q = √2.000 = 44,72. Para cantidades menores el marginal está por debajo del medio y este desciende; para mayores, por encima y asciende.",
+          nota: "En **q = 44,72** el coste medio alcanza su mínimo de 6,47 y **el coste marginal vale exactamente lo mismo**. No es coincidencia: se obtiene resolviendo $d\\mathrm{CMe}/dq = 0$, es decir $-100/q^2 + 0{,}05 = 0$, de donde $q = \\sqrt{2.000} = 44{,}72$. Para cantidades menores el marginal está por debajo del medio y este desciende; para mayores, por encima y asciende.",
         },
         {
           tipo: "parrafos",
@@ -189,7 +189,7 @@ export default {
         {
           tipo: "preguntas",
           items: [
-            { q: "CT(q) = 200 + 4q + 0,1q². ¿Dónde está el mínimo del coste medio?", a: "Se resuelve −200/q² + 0,1 = 0, de donde q = √2.000 = 44,7. En ese punto el coste medio vale 4 + 2·0,1·44,7 ≈ 12,94, y coincide con el coste marginal." },
+            { q: "$\\mathrm{CT}(q) = 200 + 4q + 0{,}1q^2$. ¿Dónde está el mínimo del coste medio?", a: "Se resuelve $-200/q^2 + 0{,}1 = 0$, de donde $q = \\sqrt{2.000} = 44{,}7$. En ese punto el coste medio vale $4 + 2 \\times 0{,}1 \\times 44{,}7 \\approx 12{,}94$, y coincide con el coste marginal." },
             { q: "¿Por qué el coste marginal corta al coste medio en su mínimo?", a: "Por una propiedad de cualquier promedio: si el siguiente valor está por debajo de la media, la media baja; si está por encima, sube. El punto de corte es aquel en que deja de bajar y empieza a subir." },
             { q: "El precio cubre el coste variable medio pero no el total. ¿Qué conviene hacer?", a: "Producir a corto plazo y no reponer a largo. Produciendo se contribuye a cubrir unos costes fijos que se pagan igual, así que la pérdida es menor que cerrando." },
             { q: "¿Qué significa un beneficio económico nulo?", a: "Que la empresa obtiene exactamente la retribución normal de su capital, porque el coste de oportunidad de los fondos propios está incluido en la función de costes. Es el equivalente microeconómico de ROIC igual a WACC." },
@@ -198,6 +198,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Qué distingue el corto plazo del largo plazo en la teoría de costes?",
+              opciones: [
+                "El corto plazo es menos de un año y el largo, más",
+                "Qué factores están fijos: en el largo plazo no hay ninguno, y por tanto no hay costes fijos",
+                "El corto plazo se refiere a decisiones de producción y el largo a decisiones de inversión",
+                "En el corto plazo los precios están dados y en el largo pueden variar",
+              ],
+              correcta: 1,
+              porque: [
+                "No se define por meses ni años. En un taller el largo plazo puede ser un semestre; en una central eléctrica, una década.",
+                "Es la definición operativa, y de ella cuelga la regla de cierre: a corto se produce si el precio cubre el coste variable medio; a largo se permanece si cubre el coste medio total.",
+                "Las decisiones de inversión son consecuencia de poder variar todos los factores, no la definición del plazo.",
+                "La variabilidad de los precios es otra dimensión distinta y no es lo que separa ambos horizontes en este análisis.",
+              ],
+            },
+            {
+              q: "Con $\\mathrm{CT}(q) = 100 + 2q + 0{,}05q^2$ y $q = 60$: el coste marginal es 8 y el coste medio 6,67. ¿Cómo puede ser mayor el marginal?",
+              opciones: [
+                "Es un error: el marginal nunca supera al medio",
+                "Es normal: el marginal es la derivada del coste total, no el promedio del último lote",
+                "Significa que la empresa está produciendo por encima de su capacidad",
+                "Significa que hay deseconomías de escala",
+              ],
+              correcta: 1,
+              porque: [
+                "El marginal supera al medio siempre que el medio esté subiendo, que es lo que ocurre a partir de $q = 44{,}72$ en esta función.",
+                "Son magnitudes de naturaleza distinta: una es el coste de la unidad siguiente y la otra reparte todo el coste —incluidos los 100 fijos— entre las unidades producidas.",
+                "No hay ninguna capacidad máxima en esta función de costes: es una expresión continua definida para cualquier $q$.",
+                "Las deseconomías de escala son un fenómeno de largo plazo sobre el tamaño de planta. Aquí estamos en el corto plazo con un coste fijo de 100.",
+              ],
+            },
+            {
+              q: "Una empresa tiene beneficio contable positivo y beneficio económico nulo. ¿Qué significa?",
+              opciones: [
+                "Que está perdiendo dinero en términos reales",
+                "Que obtiene exactamente la retribución normal del capital, ni más ni menos",
+                "Que su contabilidad tiene un error",
+                "Que debería cerrar, porque no gana nada por encima de sus costes",
+              ],
+              correcta: 1,
+              porque: [
+                "No pierde nada: el beneficio económico descuenta el coste de oportunidad del capital propio y del trabajo del empresario, que son costes reales aunque no aparezcan en la factura.",
+                "Es el equivalente microeconómico de que la rentabilidad del capital invertido iguale a su coste. Un resultado perfectamente sano y el que cabe esperar en competencia.",
+                "Ambas cifras son correctas y miden cosas distintas. La contable no incluye los costes implícitos; la económica sí.",
+                "Cerrar solo mejoraría si existiera una alternativa mejor, y por definición no la hay: el coste de oportunidad ya está descontado y sale cero.",
+              ],
+            },
+            {
+              q: "El precio cae por debajo del coste medio total pero sigue por encima del coste variable medio. ¿Qué debe hacer la empresa a corto plazo?",
+              opciones: [
+                "Cerrar, porque no cubre sus costes",
+                "Seguir produciendo: cubre lo evitable y contribuye a pagar lo que ya está comprometido",
+                "Subir el precio hasta cubrir el coste medio",
+                "Reducir la producción hasta que el precio vuelva a cubrir el coste medio",
+              ],
+              correcta: 1,
+              porque: [
+                "Aplicar el criterio de largo plazo en el corto lleva a cerrar plantas que estaban aportando margen. Los costes fijos se pagan igual se produzca o no.",
+                "Mientras $P \\geq$ mín CVMe, cada unidad vendida deja un excedente que reduce la pérdida. Cerrar dejaría la pérdida entera de los costes fijos.",
+                "En competencia perfecta la empresa no fija el precio: lo toma del mercado y solo decide cantidad.",
+                "Reducir la producción no sube el precio de mercado, y además la cantidad óptima ya viene dada por $P = \\mathrm{CMg}$.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

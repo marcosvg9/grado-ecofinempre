@@ -36,10 +36,10 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Modelo RegARIMA", sub: "Regresión con residuos ARIMA.", cols: ["yt = Σ βi · xit + zt, donde zt sigue un ARIMA"] },
+            { nom: "Modelo RegARIMA", sub: "Regresión con residuos ARIMA.", cols: ["$y_t = \\sum_i \\beta_i x_{it} + z_t$, donde $z_t$ sigue un ARIMA"] },
             { nom: "Regresores habituales", sub: "Lo observable que se retira.", cols: ["Días laborables · Semana Santa · bisiesto · atípicos"] },
             { nom: "Notación ARIMA estacional", sub: "Parte regular y parte estacional.", cols: ["(p,d,q)(P,D,Q)s con s = 4 trimestral, 12 mensual"] },
-            { nom: "Modelo aerolínea", sub: "La especificación por defecto.", cols: ["(0,1,1)(0,1,1)s: dos parámetros, θ y Θ"] },
+            { nom: "Modelo aerolínea", sub: "La especificación por defecto.", cols: ["(0,1,1)(0,1,1)s: dos parámetros, $\\theta$ y $\\Theta$"] },
             { nom: "Coste de las diferencias", sub: "Por qué la serie corta no sirve.", cols: ["(1−B)(1−Bs) consume 1 + s observaciones"] },
             { nom: "Elección de transformación", sub: "Multiplicativa o aditiva.", cols: ["Logaritmo si la amplitud crece con el nivel"] },
             { nom: "Criterio de selección", sub: "Cómo se decide, no a ojo.", cols: ["Comparación por criterio de información entre ambas versiones"] },
@@ -65,9 +65,9 @@ export default {
           filas: [
             ["Observaciones de partida", "12", "36", "Tres años en ambos casos"],
             ["Consume (1 − B)", "1", "1", "Diferencia regular"],
-            ["Consume (1 − Bˢ)", "4", "12", "Diferencia estacional"],
+            ["Consume $(1 - B^s)$", "4", "12", "Diferencia estacional"],
             ["Quedan efectivas", "7", "23", "Para estimar todo lo demás"],
-            { celdas: ["Parámetros por estimar", "2 + regresores", "2 + regresores", "θ, Θ, calendario y atípicos"], clase: "total" },
+            { celdas: ["Parámetros por estimar", "2 + regresores", "2 + regresores", "$\\theta$, $\\Theta$, calendario y atípicos"], clase: "total" },
           ],
           nota: "Con tres años de datos trimestrales quedan **siete observaciones efectivas**. Añádase un regresor de días laborables y un atípico y se está estimando cuatro parámetros con siete datos. El ajuste será inestable y cambiará mucho con cada trimestre nuevo. **Con cinco años los números pasan a 20 − 5 = 15 efectivas**, y con siete a 23: por eso las directrices piden esa longitud, y no por prudencia genérica.",
         },
@@ -112,7 +112,7 @@ export default {
           items: [
             "La queja recurrente de quien sigue la coyuntura es que el dato del último trimestre se revisa más que ningún otro. La ficha 10.10 lo atribuía a la llegada de información nueva, y eso es cierto, pero solo explica una parte. **La otra procede del propio procedimiento de ajuste**, y se entiende exactamente aquí.",
             "Un filtro de promedios móviles simétrico necesita observaciones a los dos lados del punto que está suavizando. En mitad de la serie las tiene. En el último trimestre no existen, así que hay dos opciones: usar un filtro asimétrico, que emplea solo el pasado y produce estimaciones sesgadas, o **inventar el futuro con el modelo** y aplicar el filtro simétrico sobre esa extensión. El procedimiento estándar hace lo segundo, que es mejor, pero tiene una consecuencia inevitable: el dato ajustado del último trimestre depende de una predicción que aún no se ha confirmado.",
-            "Cuando llega el trimestre siguiente ocurren tres cosas a la vez. La predicción se sustituye por el dato real, con lo que el valor ajustado anterior cambia. El modelo se reestima con una observación más, lo que altera θ y Θ y por tanto todas las predicciones. Y los factores estacionales se recalculan, lo que modifica el pasado ya publicado. **Ninguna de las tres tiene que ver con que el dato bruto se haya corregido.** La serie ajustada se revisa incluso cuando la bruta no se toca.",
+            "Cuando llega el trimestre siguiente ocurren tres cosas a la vez. La predicción se sustituye por el dato real, con lo que el valor ajustado anterior cambia. El modelo se reestima con una observación más, lo que altera $\\theta$ y $\\Theta$ y por tanto todas las predicciones. Y los factores estacionales se recalculan, lo que modifica el pasado ya publicado. **Ninguna de las tres tiene que ver con que el dato bruto se haya corregido.** La serie ajustada se revisa incluso cuando la bruta no se toca.",
             "La magnitud de este efecto no es despreciable y tiene un patrón conocido: las revisiones son mayores en los extremos de la serie, decrecen hacia el centro y se estabilizan al cabo de dos o tres años. También son mayores en los puntos de giro del ciclo, que es justamente cuando más interesa acertar: cuando la economía cambia de dirección, el modelo todavía está prediciendo la dirección anterior, y el dato del último trimestre tiende a suavizar el giro. **El procedimiento reacciona tarde a los cambios de tendencia por construcción**, y no hay forma de evitarlo sin empeorar todo lo demás.",
             "De ahí una regla operativa que conviene interiorizar: **el último dato de una serie ajustada no es una observación, es la punta de una estimación**. Quien analiza coyuntura serio mira la revisión histórica de esa serie para saber cuánto suele moverse el primer dato, y trata la última cifra con la incertidumbre correspondiente. Los diagnósticos de la ficha 15.07 incluyen precisamente medidas del tamaño típico de esas revisiones, y la ficha 15.08 discute las políticas para contenerlas.",
           ],
@@ -168,7 +168,7 @@ export default {
           items: [
             {
               q: "¿Cuántas observaciones efectivas quedan al aplicar un modelo aerolínea a una serie trimestral de cinco años?",
-              a: "Quince. Cinco años trimestrales son veinte observaciones, y las diferencias (1 − B)(1 − B⁴) consumen 1 + 4 = 5. Con tres años quedarían solo siete, y con dos, tres. Ese coste fijo es la razón de que las directrices europeas pidan cinco años de datos y consideren tres el mínimo publicable.",
+              a: "Quince. Cinco años trimestrales son veinte observaciones, y las diferencias $(1-B)(1-B^4)$ consumen $1 + 4 = 5$. Con tres años quedarían solo siete, y con dos, tres. Ese coste fijo es la razón de que las directrices europeas pidan cinco años de datos y consideren tres el mínimo publicable.",
             },
             {
               q: "¿Por qué se extiende la serie con predicciones antes de aplicar los filtros?",
@@ -184,7 +184,7 @@ export default {
             },
             {
               q: "El dato bruto de un trimestre no se ha revisado, pero el ajustado ha cambiado. ¿Es posible?",
-              a: "Sí, y es lo habitual. Al añadirse un trimestre nuevo, la predicción que sostenía el extremo se sustituye por el dato real, el modelo se reestima y cambian θ y Θ, y los factores estacionales se recalculan afectando también al pasado. Las tres cosas modifican la serie ajustada sin que ningún dato bruto se haya tocado.",
+              a: "Sí, y es lo habitual. Al añadirse un trimestre nuevo, la predicción que sostenía el extremo se sustituye por el dato real, el modelo se reestima y cambian $\\theta$ y $\\Theta$, y los factores estacionales se recalculan afectando también al pasado. Las tres cosas modifican la serie ajustada sin que ningún dato bruto se haya tocado.",
             },
           ],
         },

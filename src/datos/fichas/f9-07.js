@@ -34,11 +34,11 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Valor del ciclo de vida del cliente", sub: "Con retención constante y descuento.", cols: ["CLV = m × r / (1 + d − r)"] },
+            { nom: "Valor del ciclo de vida del cliente", sub: "Con retención constante y descuento.", cols: ["$\\mathrm{CLV} = \\dfrac{m\\,r}{1 + d - r}$"] },
             { nom: "Coste de adquisición", sub: "Todo el gasto comercial, no solo la publicidad.", cols: ["CAC = Gasto de captación / Clientes nuevos"] },
             { nom: "Regla de viabilidad", sub: "El umbral que se usa habitualmente.", cols: ["CLV / CAC > 3"] },
             { nom: "Plazo de recuperación del CAC", sub: "Determina la caja que consume crecer.", cols: ["Meses = CAC / margen mensual por cliente"] },
-            { nom: "Vida media del cliente", sub: "Con tasa de abandono constante.", cols: ["Vida = 1 / tasa de abandono"] },
+            { nom: "Vida media del cliente", sub: "Con tasa de abandono constante.", cols: ["Vida $= \\dfrac{1}{\\text{tasa de abandono}}$"] },
             { nom: "Potencial de un segmento", sub: "Antes de decidir si atenderlo.", cols: ["Potencial = Nº de clientes × CLV medio × cuota alcanzable"] },
           ],
           nota: "En la fórmula del CLV, **m** es el margen anual por cliente, **r** la tasa de retención anual y **d** la tasa de descuento. La expresión es una perpetuidad con abandono: la ficha 7.02 aplicada a una relación comercial.",

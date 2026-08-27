@@ -35,9 +35,9 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Cambio de perspectiva", sub: "De productor a perceptor de renta.", cols: ["quién genera ≠ quién percibe"] },
+            { nom: "Cambio de perspectiva", sub: "De productor a perceptor de renta.", cols: ["quién genera $\\neq$ quién percibe"] },
             { nom: "Saldo de rentas primarias", sub: "El saldo de esta cuenta.", cols: ["B.5 = B.2/B.3 + D.1r + D.4r − D.4p"] },
-            { nom: "Renta nacional bruta", sub: "No es un agregado aparte: es una suma sectorial.", cols: ["RNB = Σ B.5g de los sectores residentes"] },
+            { nom: "Renta nacional bruta", sub: "No es un agregado aparte: es una suma sectorial.", cols: ["RNB $= \\sum$ B.5g de los sectores residentes"] },
             { nom: "Intereses", sub: "Ajustados por SIFMI, no los efectivos.", cols: ["D.41"] },
             { nom: "Rentas distribuidas", sub: "Dividendos y retiradas de cuasisociedades.", cols: ["D.42 = D.421 + D.422"] },
             { nom: "Beneficios reinvertidos", sub: "Se imputan aunque no se paguen.", cols: ["D.43 — inversión extranjera directa"] },

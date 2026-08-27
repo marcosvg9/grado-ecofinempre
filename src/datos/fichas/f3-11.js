@@ -35,13 +35,13 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Dinámica de la deuda", sub: "La identidad de la que sale todo lo demás.", cols: ["Δb = [(r − g) / (1 + g)] · b₋₁ − sp"] },
+            { nom: "Dinámica de la deuda", sub: "La identidad de la que sale todo lo demás.", cols: ["$\\Delta b = \\dfrac{r - g}{1 + g}\\,b_{-1} - sp$"] },
             { nom: "b", sub: "Deuda bruta sobre PIB, en tanto por ciento.", cols: ["Deuda de Maastricht: bruta, consolidada y a valor nominal"] },
-            { nom: "r", sub: "No es el tipo de mercado de hoy.", cols: ["Tipo implícito medio: intereses del año ÷ deuda viva del anterior"] },
-            { nom: "g", sub: "Nominal, porque el denominador va a precios corrientes.", cols: ["g ≈ crecimiento real + deflactor del PIB (ficha 3.02)"] },
+            { nom: "r", sub: "No es el tipo de mercado de hoy.", cols: ["Tipo implícito medio: $\\dfrac{\\text{intereses del año}}{\\text{deuda viva del anterior}}$"] },
+            { nom: "g", sub: "Nominal, porque el denominador va a precios corrientes.", cols: ["$g \\approx$ crecimiento real $+$ deflactor del PIB (ficha 3.02)"] },
             { nom: "sp", sub: "Saldo primario: el saldo público sin intereses.", cols: ["sp = ingresos − gastos excluidos los intereses"] },
-            { nom: "Efecto bola de nieve", sub: "El término que decide la pendiente.", cols: ["(r − g) / (1 + g) · b₋₁"] },
-            { nom: "Saldo primario que estabiliza", sub: "El que deja Δb = 0.", cols: ["sp* = b₋₁ · (r − g) / (1 + g)"] },
+            { nom: "Efecto bola de nieve", sub: "El término que decide la pendiente.", cols: ["$\\dfrac{r - g}{1 + g}\\,b_{-1}$"] },
+            { nom: "Saldo primario que estabiliza", sub: "El que deja $\\Delta b = 0$.", cols: ["$sp^* = b_{-1}\\,\\dfrac{r - g}{1 + g}$"] },
             { nom: "Signo de sp*", sub: "La asimetría clave del tema.", cols: ["r > g → superávit · r = g → cero · r < g → cabe déficit"] },
           ],
         },
@@ -189,6 +189,82 @@ export default {
               a: "El ajuste déficit-deuda, de 1,2 puntos. Las causas habituales son adquisiciones netas de activos financieros —endeudarse para prestar o para recapitalizar una entidad aumenta la deuda sin generar déficit—, las diferencias entre el registro en devengo del déficit y los flujos de caja, y los efectos de valoración o de tipo de cambio. No es un residuo estadístico: es una magnitud que debe poder desglosarse.",
             },
           ],
+        },
+      ],
+    },
+
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un país tiene una deuda del 105 % del PIB que baja y otro del 60 % que sube tres puntos al año. ¿Cuál está en mejor posición?",
+              opciones: [
+                "El del 60 %, porque el nivel es lo que cuenta",
+                "El del 105 %, porque lo que ordena es la trayectoria y no el nivel",
+                "Ambos igual: 60 % es el umbral y ambos lo rebasarán",
+                "No se puede comparar sin conocer el saldo primario",
+              ],
+              correcta: 1,
+              porque: [
+                "Ningún umbral separa lo sostenible de lo que no lo es. El 60 % es una referencia de tratado, no un resultado analítico.",
+                "La sostenibilidad es una propiedad de la senda: hacia dónde va la ratio y con qué esfuerzo puede estabilizarse. Un nivel alto que decrece es una posición mejor que uno bajo que se dispara.",
+                "El del 60 % lo rebasará y el del 105 % no vuelve a él pronto, pero eso no cambia que uno mejora y el otro empeora.",
+                "El saldo primario ayuda a explicar por qué se mueve cada una, pero el sentido de las dos trayectorias ya está en el enunciado.",
+              ],
+            },
+            {
+              q: "El bono a diez años de un país cotiza al 4 %. ¿Qué tipo hay que usar en la ecuación de la deuda?",
+              opciones: [
+                "El 4 %, que es el coste de financiarse hoy",
+                "El tipo implícito medio de toda la deuda viva, que suele ser bastante distinto",
+                "El tipo de las nuevas emisiones ponderado por su volumen",
+                "El tipo real, restando la inflación al 4 %",
+              ],
+              correcta: 1,
+              porque: [
+                "El 4 % es lo que cuesta el dinero nuevo. La deuda viva se emitió a lo largo de años y paga lo que pactó entonces.",
+                "Se calcula como intereses del año divididos entre la deuda del anterior, y es lo que efectivamente drena recursos. Con deuda de vencimiento largo, tarda años en reflejar los tipos de mercado.",
+                "Las nuevas emisiones son una fracción del total; ponderarlas entre sí sigue dejando fuera todo el saldo antiguo.",
+                "Trabajar en reales o en nominales es una elección legítima, pero hay que hacerlo de forma consistente con el crecimiento, y sigue sin resolver qué tipo tomar.",
+              ],
+            },
+            {
+              q: "En la ecuación $\\Delta b = \\dfrac{r-g}{1+g}b_{-1} - sp$, ¿qué exige la coherencia entre $r$ y $g$?",
+              opciones: [
+                "Nada: son magnitudes independientes",
+                "Que ambas sean nominales o ambas reales; emparejarlas mal es el error de signo más frecuente",
+                "Que $r$ sea nominal y $g$ real, porque la deuda se emite en nominal",
+                "Que $g$ incluya el deflactor y $r$ no",
+              ],
+              correcta: 1,
+              porque: [
+                "Su diferencia es justo lo que determina si la deuda se dispara o se apaga, así que medirlas en unidades distintas invalida el resultado.",
+                "Un tipo nominal del 3 % con un crecimiento real del 2 % da la impresión de que $r > g$ cuando en nominales puede ocurrir lo contrario. El signo se invierte y con él el diagnóstico.",
+                "Mezclar unidades es exactamente el error que hay que evitar, aunque la deuda se emita en términos nominales.",
+                "Es la misma mezcla descrita al revés: la coherencia exige tratar ambas igual.",
+              ],
+            },
+            {
+              q: "Con $r > g$, ¿qué hace falta para que la ratio de deuda no crezca?",
+              opciones: [
+                "Que el déficit total sea cero",
+                "Un superávit primario de al menos $b_{-1}\\,\\dfrac{r-g}{1+g}$",
+                "Que el banco central compre deuda",
+                "Reducir el gasto público en la misma cuantía que los intereses",
+              ],
+              correcta: 1,
+              porque: [
+                "Un déficit total nulo ya incluye los intereses, así que es una condición distinta y en general más exigente que la necesaria.",
+                "Es el saldo primario que estabiliza: el que deja $\\Delta b = 0$. Con $r > g$ la deuda tiende a crecer sola, y hace falta un superávit antes de intereses para compensarlo.",
+                "Las compras del banco central abaratan la financiación y bajan $r$, pero no sustituyen a la condición aritmética.",
+                "Recortar en la cuantía de los intereses es una regla arbitraria que no se corresponde con la condición de estabilización.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
         },
       ],
     },

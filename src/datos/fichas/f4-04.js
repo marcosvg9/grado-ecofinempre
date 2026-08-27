@@ -18,12 +18,12 @@ export default {
           tipo: "parrafos",
           items: [
             "Un contraste de hipótesis es un procedimiento de decisión bajo incertidumbre, y su estructura es deliberadamente asimétrica. Se formula una **hipótesis nula** —normalmente que el efecto es cero, que dos grupos son iguales, que un coeficiente no importa— y se pregunta **qué probabilidad habría de observar unos datos al menos tan extremos como los obtenidos si esa hipótesis fuera cierta**. Si esa probabilidad es muy baja, se rechaza la nula. Nunca se «acepta»: no rechazar significa que los datos son compatibles con ella, no que sea verdadera, del mismo modo que no encontrar huellas no demuestra que nadie estuviera allí.",
-            "**Esa asimetría no es un capricho, es el diseño.** El marco protege ante todo contra afirmar un efecto que no existe —el **error de tipo I**, cuya probabilidad es el nivel de significación α que fijamos nosotros— y solo secundariamente contra no detectar uno que sí existe, el **error de tipo II**, de probabilidad β. Su complemento, **1 − β, es la potencia**: la capacidad del contraste para encontrar un efecto real cuando lo hay. La elección de α = 0,05 es una convención sin fundamento teórico, heredada de Fisher, y **debería depender del coste relativo de cada error**. En un ensayo clínico un falso positivo es gravísimo; en un cribado de seguridad, un falso negativo lo es más.",
-            "**Los dos errores están en conflicto y solo hay una forma de mejorar ambos.** Bajar α —exigir más evidencia para rechazar— reduce los falsos positivos y aumenta los falsos negativos, porque hace el listón más alto para todos. Lo único que reduce ambos a la vez es **más información**: más muestra, menos varianza en los datos, un diseño más eficiente. Por eso el cálculo de potencia debería hacerse **antes** de recoger los datos: sirve para saber qué tamaño de efecto se podría detectar, y por tanto si el estudio merece la pena. Un estudio con potencia del 30 % dejará pasar el efecto dos veces de cada tres aunque exista, y su resultado no informativo se atribuirá erróneamente a que el efecto no existe.",
+            "**Esa asimetría no es un capricho, es el diseño.** El marco protege ante todo contra afirmar un efecto que no existe —el **error de tipo I**, cuya probabilidad es el nivel de significación $\\alpha$ que fijamos nosotros— y solo secundariamente contra no detectar uno que sí existe, el **error de tipo II**, de probabilidad $\\beta$. Su complemento, **1 − $\\beta$, es la potencia**: la capacidad del contraste para encontrar un efecto real cuando lo hay. La elección de $\\alpha$ = 0,05 es una convención sin fundamento teórico, heredada de Fisher, y **debería depender del coste relativo de cada error**. En un ensayo clínico un falso positivo es gravísimo; en un cribado de seguridad, un falso negativo lo es más.",
+            "**Los dos errores están en conflicto y solo hay una forma de mejorar ambos.** Bajar $\\alpha$ —exigir más evidencia para rechazar— reduce los falsos positivos y aumenta los falsos negativos, porque hace el listón más alto para todos. Lo único que reduce ambos a la vez es **más información**: más muestra, menos varianza en los datos, un diseño más eficiente. Por eso el cálculo de potencia debería hacerse **antes** de recoger los datos: sirve para saber qué tamaño de efecto se podría detectar, y por tanto si el estudio merece la pena. Un estudio con potencia del 30 % dejará pasar el efecto dos veces de cada tres aunque exista, y su resultado no informativo se atribuirá erróneamente a que el efecto no existe.",
             "**Ahora el punto central de la ficha: qué es y qué no es un p-valor.** Es la probabilidad de los datos —o de datos más extremos— **suponiendo cierta la nula**. No es la probabilidad de que la nula sea cierta, que es una cantidad distinta y que además el marco frecuentista no calcula. Invertir una probabilidad condicional exige el teorema de Bayes y por tanto una probabilidad a priori, que aquí no se ha declarado. La consecuencia práctica es contundente: **cuando se contrastan hipótesis poco plausibles a priori, la mayoría de los resultados significativos son falsos positivos**, aunque cada contraste esté bien hecho. Un p de 0,04 es evidencia mucho más débil de lo que su aura sugiere.",
             "**El segundo malentendido es confundir significación con importancia.** Un p-valor mide si se puede descartar el cero, y depende tanto del tamaño del efecto como del tamaño de la muestra. Con datos administrativos de millones de observaciones **cualquier diferencia se vuelve significativa**, incluida una completamente irrelevante para cualquier decisión. La pregunta económica no es si un efecto es distinto de cero, sino **si es lo bastante grande para importar**, y eso se responde mirando la magnitud del coeficiente y su intervalo de confianza, no la estrella junto al número.",
-            "**El tercer problema, y hoy el más grave, es de multiplicidad.** Si se contrastan veinte hipótesis independientes con α = 0,05 y todas las nulas son ciertas, la probabilidad de obtener al menos un resultado significativo es del 64 %. Un falso positivo no es una anomalía: es lo esperable. Y en la práctica investigadora la multiplicidad rara vez es explícita: aparece como **grados de libertad del analista** —probar especificaciones, submuestras, definiciones de variable, criterios de exclusión— hasta dar con la combinación que cruza el umbral. Es el «**jardín de senderos que se bifurcan**», y produce resultados irreproducibles sin que nadie haya hecho trampa consciente.",
-            "**Las correcciones y los remedios existen, con sus costes.** **Bonferroni** divide α por el número de contrastes y es simple y muy conservador; controlar la **tasa de falsos descubrimientos** es menos estricto y suele ser más razonable cuando se exploran muchas hipótesis. Pero los remedios de fondo son institucionales: **preregistro** del plan de análisis antes de ver los datos, publicación de resultados nulos para atajar el sesgo de publicación, replicación, y presentar **intervalos de confianza y tamaños de efecto** en lugar de asteriscos. La discusión que llevó a proponer bajar el umbral a 0,005 o a abandonar la palabra «significativo» viene de aquí, y conviene conocerla antes de leer literatura empírica.",
+            "**El tercer problema, y hoy el más grave, es de multiplicidad.** Si se contrastan veinte hipótesis independientes con $\\alpha$ = 0,05 y todas las nulas son ciertas, la probabilidad de obtener al menos un resultado significativo es del 64 %. Un falso positivo no es una anomalía: es lo esperable. Y en la práctica investigadora la multiplicidad rara vez es explícita: aparece como **grados de libertad del analista** —probar especificaciones, submuestras, definiciones de variable, criterios de exclusión— hasta dar con la combinación que cruza el umbral. Es el «**jardín de senderos que se bifurcan**», y produce resultados irreproducibles sin que nadie haya hecho trampa consciente.",
+            "**Las correcciones y los remedios existen, con sus costes.** **Bonferroni** divide $\\alpha$ por el número de contrastes y es simple y muy conservador; controlar la **tasa de falsos descubrimientos** es menos estricto y suele ser más razonable cuando se exploran muchas hipótesis. Pero los remedios de fondo son institucionales: **preregistro** del plan de análisis antes de ver los datos, publicación de resultados nulos para atajar el sesgo de publicación, replicación, y presentar **intervalos de confianza y tamaños de efecto** en lugar de asteriscos. La discusión que llevó a proponer bajar el umbral a 0,005 o a abandonar la palabra «significativo» viene de aquí, y conviene conocerla antes de leer literatura empírica.",
           ],
         },
       ],
@@ -35,16 +35,16 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Hipótesis nula", sub: "Lo que se intenta rechazar, no lo que se cree.", cols: ["H₀: β = 0"] },
-            { nom: "Error de tipo I", sub: "Afirmar un efecto que no existe. Lo fijamos nosotros.", cols: ["α = P(rechazar H₀ | H₀ cierta)"] },
-            { nom: "Error de tipo II", sub: "No detectar un efecto que sí existe.", cols: ["β = P(no rechazar H₀ | H₁ cierta)"] },
-            { nom: "Potencia", sub: "Lo que se calcula antes de recoger datos.", cols: ["Potencia = 1 − β"] },
-            { nom: "Estadístico t", sub: "Distancia al valor nulo en errores estándar.", cols: ["t = (β̂ − β₀) ÷ EE(β̂)"] },
-            { nom: "p-valor", sub: "Probabilidad de los datos dada H₀, no al revés.", cols: ["p = P(|T| ≥ |t| | H₀)"] },
-            { nom: "Regla de decisión", sub: "Equivalente a que el IC excluya el valor nulo.", cols: ["rechazar si p < α"] },
-            { nom: "Multiplicidad", sub: "Con 20 contrastes, un falso positivo es lo normal.", cols: ["P(≥1 falso positivo) = 1 − (1 − α)^k"] },
-            { nom: "Bonferroni", sub: "Simple y conservador; sacrifica potencia.", cols: ["α* = α ÷ k"] },
-            { nom: "Efecto mínimo detectable", sub: "Lo que el diseño puede ver, decidido de antemano.", cols: ["EMD ≈ 2,8 · EE(β̂) para potencia del 80 %"] },
+            { nom: "Hipótesis nula", sub: "Lo que se intenta rechazar, no lo que se cree.", cols: ["$H_0: \\beta = 0$"] },
+            { nom: "Error de tipo I", sub: "Afirmar un efecto que no existe. Lo fijamos nosotros.", cols: ["$\\alpha = P(\\text{rechazar } H_0 \\mid H_0 \\text{ cierta})$"] },
+            { nom: "Error de tipo II", sub: "No detectar un efecto que sí existe.", cols: ["$\\beta = P(\\text{no rechazar } H_0 \\mid H_1 \\text{ cierta})$"] },
+            { nom: "Potencia", sub: "Lo que se calcula antes de recoger datos.", cols: ["Potencia = 1 − $\\beta$"] },
+            { nom: "Estadístico t", sub: "Distancia al valor nulo en errores estándar.", cols: ["$t = \\dfrac{\\hat\\beta - \\beta_0}{\\mathrm{EE}(\\hat\\beta)}$"] },
+            { nom: "p-valor", sub: "Probabilidad de los datos dada $H_0$, no al revés.", cols: ["$p = P(|T| \\geq |t| \\mid H_0)$"] },
+            { nom: "Regla de decisión", sub: "Equivalente a que el IC excluya el valor nulo.", cols: ["rechazar si p < $\\alpha$"] },
+            { nom: "Multiplicidad", sub: "Con 20 contrastes, un falso positivo es lo normal.", cols: ["$P(\\geq 1 \\text{ falso positivo}) = 1 - (1-\\alpha)^k$"] },
+            { nom: "Bonferroni", sub: "Simple y conservador; sacrifica potencia.", cols: ["$\\alpha^* = \\dfrac{\\alpha}{k}$"] },
+            { nom: "Efecto mínimo detectable", sub: "Lo que el diseño puede ver, decidido de antemano.", cols: ["$\\mathrm{EMD} \\approx 2{,}8\\,\\mathrm{EE}(\\hat\\beta)$ para potencia del 80 %"] },
           ],
         },
       ],
@@ -55,8 +55,8 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "Anticipamos el resultado de la ficha 4.05 para tener algo concreto que contrastar. En una muestra de diez trabajadores, la regresión del salario sobre los años de educación da un coeficiente de **2,00** —dos mil euros por año de estudio— con un **error estándar de 0,3536**. La hipótesis nula interesante es que la educación no influye: **H₀: β = 0**.",
-            "El estadístico es t = 2,00 ÷ 0,3536 = **5,657**. Con 8 grados de libertad, el valor crítico al 5 % es 2,306 y al 1 % es 3,355, así que se rechaza holgadamente; el p-valor bilateral es **0,00048**. La lectura correcta de ese número es: *si la educación no tuviera ningún efecto, sería extraordinariamente improbable observar una relación tan fuerte en una muestra de diez personas*. La lectura incorrecta —y habitual— sería decir que hay un 99,95 % de probabilidad de que la educación importe. Eso **no se ha calculado ni se puede calcular** dentro de este marco.",
+            "Anticipamos el resultado de la ficha 4.05 para tener algo concreto que contrastar. En una muestra de diez trabajadores, la regresión del salario sobre los años de educación da un coeficiente de **2,00** —dos mil euros por año de estudio— con un **error estándar de 0,3536**. La hipótesis nula interesante es que la educación no influye: $H_0: \\beta = 0$.",
+            "El estadístico es $t = 2{,}00 / 0{,}3536 = 5{,}657$. Con 8 grados de libertad, el valor crítico al 5 % es 2,306 y al 1 % es 3,355, así que se rechaza holgadamente; el p-valor bilateral es **0,00048**. La lectura correcta de ese número es: *si la educación no tuviera ningún efecto, sería extraordinariamente improbable observar una relación tan fuerte en una muestra de diez personas*. La lectura incorrecta —y habitual— sería decir que hay un 99,95 % de probabilidad de que la educación importe. Eso **no se ha calculado ni se puede calcular** dentro de este marco.",
           ],
         },
         {
@@ -100,7 +100,7 @@ export default {
               puntos: [[0.69, 0], [0.69, 1180]],
             },
           ],
-          nota: "Las dos campanas son la **misma distribución del estimador** bajo dos supuestos sobre la verdad. La línea vertical es el umbral de rechazo al 5 %, en 0,69. La zona **naranja** es el error de tipo I: la parte de la curva de β = 0 que cae más allá del umbral, y **somos nosotros quienes fijamos su tamaño** al elegir α. La zona **azulada** es el error de tipo II: la parte de la curva de β = 1 que se queda por debajo del umbral y por tanto no se detecta, y es una consecuencia del diseño que rara vez se calcula. La imagen deja ver el conflicto: **desplazar el umbral a la derecha encoge la naranja y agranda la azulada**. Lo único que reduce las dos a la vez es estrechar las campanas, es decir, más datos.",
+          nota: "Las dos campanas son la **misma distribución del estimador** bajo dos supuestos sobre la verdad. La línea vertical es el umbral de rechazo al 5 %, en 0,69. La zona **naranja** es el error de tipo I: la parte de la curva de $\\beta$ = 0 que cae más allá del umbral, y **somos nosotros quienes fijamos su tamaño** al elegir $\\alpha$. La zona **azulada** es el error de tipo II: la parte de la curva de $\\beta$ = 1 que se queda por debajo del umbral y por tanto no se detecta, y es una consecuencia del diseño que rara vez se calcula. La imagen deja ver el conflicto: **desplazar el umbral a la derecha encoge la naranja y agranda la azulada**. Lo único que reduce las dos a la vez es estrechar las campanas, es decir, más datos.",
         },
         {
           tipo: "tabla",
@@ -109,9 +109,9 @@ export default {
             ["0,50", "1,41", "29,3 %", "70,7 %", "Se pasaría por alto dos de cada tres veces"],
             ["1,00", "2,83", "80,7 %", "19,3 %", "Convención habitual de diseño"],
             ["1,50", "4,24", "98,9 %", "1,1 %", "Prácticamente seguro de detectarse"],
-            { celdas: ["2,00", "5,66", "≈ 100 %", "≈ 0 %", "El efecto estimado en la muestra"], clase: "total" },
+            { celdas: ["2,00", "5,66", "$\\approx 100\\ \\%$", "$\\approx 0\\ \\%$", "El efecto estimado en la muestra"], clase: "total" },
           ],
-          nota: "Con el error estándar de 0,3536 y α = 0,05. La primera fila es la que hay que interiorizar: **este diseño no sirve para detectar efectos moderados**. Si el verdadero retorno de un año de estudios fuera de 500 € y no de 2.000, la muestra de diez personas lo dejaría escapar el 71 % de las veces, y el resultado no significativo se contaría como prueba de que la educación no importa. Ese es el error de tipo II, y no aparece en ninguna salida de ningún programa: **hay que calcularlo a propósito, y antes de recoger los datos**.",
+          nota: "Con el error estándar de 0,3536 y $\\alpha$ = 0,05. La primera fila es la que hay que interiorizar: **este diseño no sirve para detectar efectos moderados**. Si el verdadero retorno de un año de estudios fuera de 500 € y no de 2.000, la muestra de diez personas lo dejaría escapar el 71 % de las veces, y el resultado no significativo se contaría como prueba de que la educación no importa. Ese es el error de tipo II, y no aparece en ninguna salida de ningún programa: **hay que calcularlo a propósito, y antes de recoger los datos**.",
         },
         {
           tipo: "tabla",
@@ -155,7 +155,7 @@ export default {
         {
           tipo: "acordeon",
           items: [
-            { t: "Leer el p-valor como la probabilidad de que H₀ sea cierta", d: "Es la probabilidad de los datos suponiendo H₀ cierta, que es la condicional inversa. Invertirla exige el teorema de Bayes y una probabilidad a priori que no se ha declarado. La consecuencia práctica es que, si la hipótesis era poco plausible de antemano, un resultado significativo es muy probablemente un falso positivo." },
+            { t: "Leer el p-valor como la probabilidad de que $H_0$ sea cierta", d: "Es la probabilidad de los datos suponiendo $H_0$ cierta, que es la condicional inversa. Invertirla exige el teorema de Bayes y una probabilidad a priori que no se ha declarado. La consecuencia práctica es que, si la hipótesis era poco plausible de antemano, un resultado significativo es muy probablemente un falso positivo." },
             { t: "Decir que se ha aceptado la hipótesis nula", d: "No rechazar significa que los datos son compatibles con la nula, no que sea cierta. Puede ocurrir porque el efecto no existe o porque el estudio no tenía potencia para verlo. Sin un cálculo de potencia, un resultado no significativo no distingue entre ambas cosas y no autoriza a concluir nada." },
             { t: "Confundir significación estadística con relevancia económica", d: "Con muestras grandes cualquier diferencia se vuelve significativa: con 100.000 observaciones el efecto mínimo detectable en el ejemplo baja a siete euros al año. La pregunta económica es si la magnitud importa para alguna decisión, y se responde mirando el coeficiente y su intervalo, no la estrella." },
             { t: "No calcular la potencia antes de recoger los datos", d: "La potencia decide qué tamaño de efecto puede detectar un estudio, y por tanto si tiene sentido hacerlo. Con la muestra del ejemplo, un efecto de 500 € pasaría desapercibido el 71 % de las veces. Calcularla después de ver los resultados —potencia observada— no aporta información nueva y es un error frecuente." },
@@ -195,7 +195,7 @@ export default {
           items: [
             { q: "El p-valor del coeficiente es 0,00048. ¿Qué significa exactamente?", a: "Que si la educación no tuviera ningún efecto sobre el salario, la probabilidad de observar una relación al menos tan fuerte como la de estos diez trabajadores sería de 48 entre 100.000. No significa que haya un 99,95 % de probabilidad de que el efecto exista: esa es la condicional inversa, y calcularla exigiría una probabilidad a priori que el marco frecuentista no proporciona." },
             { q: "Un estudio no encuentra efecto significativo. ¿Puede concluirse que la política no funciona?", a: "No, sin conocer la potencia. Con el diseño del ejemplo, un efecto real de 500 € pasaría desapercibido el 71 % de las veces. Un resultado no significativo es compatible con que el efecto no exista y con que el estudio fuera incapaz de detectarlo, y solo el cálculo de potencia distingue ambos casos." },
-            { q: "¿Por qué bajar α de 0,05 a 0,01 no es gratis?", a: "Porque sube el listón para rechazar y por tanto aumenta el error de tipo II: se detectan menos efectos reales. Los dos errores están en conflicto, y desplazar el umbral solo redistribuye el riesgo entre ellos. Lo único que reduce ambos a la vez es estrechar la distribución del estimador, es decir, más datos o un diseño más eficiente." },
+            { q: "¿Por qué bajar $\\alpha$ de 0,05 a 0,01 no es gratis?", a: "Porque sube el listón para rechazar y por tanto aumenta el error de tipo II: se detectan menos efectos reales. Los dos errores están en conflicto, y desplazar el umbral solo redistribuye el riesgo entre ellos. Lo único que reduce ambos a la vez es estrechar la distribución del estimador, es decir, más datos o un diseño más eficiente." },
             { q: "Un investigador prueba veinte especificaciones y publica la significativa. ¿Qué probabilidad había de encontrar una por azar?", a: "El 64,2 %, si todas las hipótesis nulas fueran ciertas. Encontrar un resultado significativo es lo esperable, no lo excepcional. Bonferroni exigiría p < 0,0025, pero la solución de fondo es procedimental: fijar la especificación antes de ver los datos y publicar todas las que se probaron." },
             { q: "¿Por qué los efectos publicados en estudios con poca potencia suelen ser demasiado grandes?", a: "Porque con poca potencia solo superan el umbral las estimaciones que el azar ha empujado hacia arriba. La condición de haber sido publicado selecciona los valores extremos, de modo que la magnitud estimada está sesgada al alza aunque el efecto sea real. Al replicar con muestras mayores, el efecto se encoge." },
             { q: "Con un millón de observaciones, un efecto de 7 € anuales resulta significativo. ¿Qué se hace con eso?", a: "Se ignora, económicamente hablando. La significación solo dice que puede descartarse el cero, y con muestras enormes eso ocurre con cualquier diferencia. La pregunta relevante es si la magnitud cambia alguna decisión, y para responderla hay que mirar el coeficiente y su intervalo de confianza frente a un umbral de relevancia fijado de antemano." },
@@ -203,6 +203,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un contraste da un p-valor de 0,03. ¿Qué significa exactamente?",
+              opciones: [
+                "Que hay un 3 % de probabilidad de que la hipótesis nula sea cierta",
+                "Que si la nula fuera cierta, habría un 3 % de probabilidad de observar datos al menos tan extremos",
+                "Que hay un 97 % de probabilidad de que el efecto exista",
+                "Que el efecto estimado es correcto con un 97 % de confianza",
+              ],
+              correcta: 1,
+              porque: [
+                "Es la condicional invertida. Pasar de una a otra exige el teorema de Bayes y una probabilidad a priori que no se ha declarado.",
+                "Es la definición, y la dirección del condicionamiento es todo. La consecuencia práctica: si la hipótesis era poco plausible de antemano, un resultado significativo es muy probablemente un falso positivo.",
+                "El complementario de un p-valor no es la probabilidad de que el efecto exista; es simplemente otra probabilidad sobre los datos.",
+                "El p-valor no dice nada sobre si la estimación puntual es correcta.",
+              ],
+            },
+            {
+              q: "Un estudio no rechaza la hipótesis nula. ¿Qué se concluye?",
+              opciones: [
+                "Que la nula es cierta: no hay efecto",
+                "Que los datos son compatibles con ella, lo que puede deberse a que no hay efecto o a que faltó potencia",
+                "Que hay que repetir el estudio con otra muestra",
+                "Que el efecto es menor que el umbral de significación",
+              ],
+              correcta: 1,
+              porque: [
+                "No rechazar no es aceptar. Un estudio con muestra insuficiente no rechaza casi nunca, y de ahí no se sigue que nada exista.",
+                "Y por eso conviene mirar el intervalo de confianza: si es ancho, el estudio no ha descartado efectos grandes y decir «no hay efecto» es engañoso.",
+                "Repetir puede ayudar, pero antes hay que saber si el diseño original tenía potencia para detectar el efecto que interesaba.",
+                "El umbral de significación se aplica al p-valor, no al tamaño del efecto: son escalas distintas.",
+              ],
+            },
+            {
+              q: "Con 100.000 observaciones, un estudio detecta como significativo un efecto de siete euros al mes. ¿Qué hay que decir?",
+              opciones: [
+                "Que el efecto es sólido y debe tenerse en cuenta",
+                "Que la significación estadística no implica relevancia económica: con muestras grandes cualquier diferencia se vuelve significativa",
+                "Que la muestra es demasiado grande y hay que reducirla",
+                "Que hace falta un p-valor más exigente",
+              ],
+              correcta: 1,
+              porque: [
+                "Sólido en el sentido de difícilmente atribuible al azar, sí. Pero eso no lo hace importante para ninguna decisión.",
+                "Son dos preguntas distintas: si el efecto existe y si merece la pena. Siete euros al mes puede ser indiscutiblemente real y a la vez irrelevante para cualquier política.",
+                "Una muestra grande es una ventaja, no un defecto. Lo que hay que hacer es informar del tamaño del efecto además de su significación.",
+                "Endurecer el umbral desplaza el problema: seguiría sin decir nada sobre la magnitud.",
+              ],
+            },
+            {
+              q: "Se realizan veinte contrastes y todas las hipótesis nulas son ciertas. ¿Qué probabilidad hay de al menos un falso positivo al 5 %?",
+              opciones: [
+                "5 %, el nivel de significación elegido",
+                "64 %: $1 - 0{,}95^{20}$",
+                "100 %, porque el error se acumula",
+                "1 %, porque los contrastes son independientes",
+              ],
+              correcta: 1,
+              porque: [
+                "El 5 % es la probabilidad **por contraste**. Con veinte oportunidades de equivocarse, la probabilidad de que ninguna salga mal es mucho menor.",
+                "$1 - 0{,}95^{20} = 0{,}64$. Y veinte contrastes se alcanzan sin querer, combinando definiciones de variable, submuestras y especificaciones.",
+                "No llega al 100 %: hay un 36 % de probabilidad de que ninguno dé falso positivo.",
+                "La independencia es justo lo que permite multiplicar, y multiplicar da 0,36 de no fallar, no 0,99.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

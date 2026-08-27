@@ -44,9 +44,9 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Niveles jerárquicos necesarios", sub: "Para una plantilla dada y un ámbito de control s.", cols: ["Niveles ≈ log_s(N)"] },
-            { nom: "Posiciones de mando", sub: "Suma de la pirámide por encima de la base.", cols: ["M ≈ N / (s − 1)"] },
-            { nom: "Canales de comunicación en un equipo", sub: "Crece con el cuadrado del tamaño.", cols: ["C = n × (n − 1) / 2"] },
+            { nom: "Niveles jerárquicos necesarios", sub: "Para una plantilla dada y un ámbito de control s.", cols: ["Niveles $\\approx \\log_s(N)$"] },
+            { nom: "Posiciones de mando", sub: "Suma de la pirámide por encima de la base.", cols: ["$M \\approx \\dfrac{N}{s-1}$"] },
+            { nom: "Canales de comunicación en un equipo", sub: "Crece con el cuadrado del tamaño.", cols: ["$C = \\dfrac{n(n-1)}{2}$"] },
             { nom: "Coste de coordinación", sub: "Por qué los equipos grandes se ralentizan.", cols: ["Crece más que proporcionalmente con n"] },
             { nom: "Grado de centralización", sub: "Medida operativa habitual.", cols: ["Proporción de decisiones que requieren aprobación superior"] },
             { nom: "Ratio de estructura", sub: "Indicador de peso de la organización indirecta.", cols: ["Personal indirecto / personal total"] },

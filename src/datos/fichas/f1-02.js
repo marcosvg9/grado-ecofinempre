@@ -34,15 +34,15 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Función de demanda", sub: "Todo lo demás constante.", cols: ["Q_d = D(P; renta, otros precios, gustos)"] },
-            { nom: "Función de oferta", sub: "Refleja el coste marginal de producir.", cols: ["Q_s = S(P; costes, tecnología, impuestos)"] },
-            { nom: "Condición de equilibrio", sub: "Los dos planes son compatibles.", cols: ["Q_d(P*) = Q_s(P*)"] },
-            { nom: "Exceso de oferta", sub: "Presiona el precio a la baja.", cols: ["P > P* ⟹ Q_s > Q_d"] },
-            { nom: "Exceso de demanda", sub: "Presiona el precio al alza.", cols: ["P < P* ⟹ Q_d > Q_s"] },
-            { nom: "Movimiento a lo largo de la curva", sub: "Solo lo provoca el precio del propio bien.", cols: ["ΔP ⟹ ΔQ sobre la misma curva"] },
-            { nom: "Desplazamiento de la curva", sub: "Lo provoca cualquier otra cosa.", cols: ["Δ(otro factor) ⟹ nueva curva"] },
-            { nom: "Precio máximo efectivo", sub: "Solo actúa si está por debajo del equilibrio.", cols: ["P̄ < P* ⟹ escasez = Q_d − Q_s"] },
-            { nom: "Precio mínimo efectivo", sub: "El caso del salario mínimo en competencia.", cols: ["P̲ > P* ⟹ excedente = Q_s − Q_d"] },
+            { nom: "Función de demanda", sub: "Todo lo demás constante.", cols: ["$Q_d = D(P;\\ \\text{renta, otros precios, gustos})$"] },
+            { nom: "Función de oferta", sub: "Refleja el coste marginal de producir.", cols: ["$Q_s = S(P;\\ \\text{costes, tecnología, impuestos})$"] },
+            { nom: "Condición de equilibrio", sub: "Los dos planes son compatibles.", cols: ["$Q_d(P^*) = Q_s(P^*)$"] },
+            { nom: "Exceso de oferta", sub: "Presiona el precio a la baja.", cols: ["$P > P^* \\Rightarrow Q_s > Q_d$"] },
+            { nom: "Exceso de demanda", sub: "Presiona el precio al alza.", cols: ["$P < P^* \\Rightarrow Q_d > Q_s$"] },
+            { nom: "Movimiento a lo largo de la curva", sub: "Solo lo provoca el precio del propio bien.", cols: ["$\\Delta P \\Rightarrow \\Delta Q$ sobre la misma curva"] },
+            { nom: "Desplazamiento de la curva", sub: "Lo provoca cualquier otra cosa.", cols: ["$\\Delta(\\text{otro factor}) \\Rightarrow$ nueva curva"] },
+            { nom: "Precio máximo efectivo", sub: "Solo actúa si está por debajo del equilibrio.", cols: ["$\\bar P < P^* \\Rightarrow$ escasez $= Q_d - Q_s$"] },
+            { nom: "Precio mínimo efectivo", sub: "El caso del salario mínimo en competencia.", cols: ["$\\underline{P} > P^* \\Rightarrow$ excedente $= Q_s - Q_d$"] },
           ],
         },
       ],
@@ -53,7 +53,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "Tomemos un mercado con demanda **Q_d = 100 − 2P** y oferta **Q_s = −20 + 3P**. Igualando ambas, 100 − 2P = −20 + 3P, se obtiene **P = 24** y **Q = 52**. Es el único precio al que los dos planes encajan.",
+            "Tomemos un mercado con demanda $Q_d = 100 - 2P$ y oferta $Q_s = -20 + 3P$. Igualando ambas, $100 - 2P = -20 + 3P$, se obtiene $P = 24$ y $Q = 52$. Es el único precio al que los dos planes encajan.",
           ],
         },
         {
@@ -71,7 +71,7 @@ export default {
             { x: 52, y: 24, etiqueta: "E  inicial" },
             { x: 70, y: 30, etiqueta: "E'  tras el aumento" },
           ],
-          nota: "El equilibrio inicial está en **52 unidades a un precio de 24**. Cuando la demanda aumenta —la curva discontinua, que corresponde a **Q_d = 130 − 2P**— el nuevo cruce se sitúa en **70 unidades a 30**. Obsérvese que la curva de oferta **no se ha movido**: lo que ha habido es un movimiento a lo largo de ella, de 52 a 70. Confundir ese desplazamiento con un cambio de la oferta es el error más frecuente de toda la ficha.",
+          nota: "El equilibrio inicial está en **52 unidades a un precio de 24**. Cuando la demanda aumenta —la curva discontinua, que corresponde a $Q_d = 130 - 2P$— el nuevo cruce se sitúa en **70 unidades a 30**. Obsérvese que la curva de oferta **no se ha movido**: lo que ha habido es un movimiento a lo largo de ella, de 52 a 70. Confundir ese desplazamiento con un cambio de la oferta es el error más frecuente de toda la ficha.",
         },
         {
           tipo: "tabla",
@@ -164,7 +164,7 @@ export default {
           tipo: "preguntas",
           items: [
             { q: "Sube el precio del bien y se compra menos. ¿Ha bajado la demanda?", a: "No. Ha bajado la cantidad demandada, moviéndose a lo largo de la misma curva. La demanda es la relación completa entre precio y cantidad, y solo cambia si se mueve algo distinto del precio del propio bien: renta, gustos, precios de otros bienes o número de compradores." },
-            { q: "Con Q_d = 100 − 2P y Q_s = −20 + 3P, ¿cuál es el equilibrio y qué pasa a un precio de 30?", a: "El equilibrio es P = 24 y Q = 52. A un precio de 30 los compradores quieren 40 unidades y los vendedores ofrecen 70: sobran 30, algunos vendedores no colocan su producto y el precio tiende a bajar hasta 24." },
+            { q: "Con $Q_d = 100 - 2P$ y $Q_s = -20 + 3P$, ¿cuál es el equilibrio y qué pasa a un precio de 30?", a: "El equilibrio es P = 24 y Q = 52. A un precio de 30 los compradores quieren 40 unidades y los vendedores ofrecen 70: sobran 30, algunos vendedores no colocan su producto y el precio tiende a bajar hasta 24." },
             { q: "Se encarece un insumo de producción. ¿Qué ocurre con precio y cantidad?", a: "Se desplaza la oferta hacia la izquierda, no la demanda. El precio de equilibrio sube y la cantidad baja. A lo largo de la curva de demanda hay un movimiento, pero la demanda como tal no se ha movido en absoluto." },
             { q: "Un tope de precios efectivo, ¿elimina la escasez?", a: "No: la crea o la agrava, porque aumenta la cantidad demandada y reduce la ofrecida. En el ejemplo, la cantidad intercambiada cae de 52 a 40 unidades. Lo que desaparece es el racionamiento por precio, sustituido por colas, selección de clientes, peor calidad o mercado informal." },
             { q: "Suben a la vez la demanda y la oferta. ¿Qué pasa con el precio?", a: "No se puede saber sin conocer la magnitud relativa de ambos desplazamientos. La cantidad aumenta con seguridad, pero el precio puede subir, bajar o quedarse igual. Reconocer esa indeterminación es la respuesta correcta, no un fallo del análisis." },
@@ -172,6 +172,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Sube el precio del café y se compra menos. ¿Qué ha ocurrido con la demanda?",
+              opciones: [
+                "Ha bajado la demanda",
+                "Ha bajado la cantidad demandada, sobre la misma curva de demanda",
+                "Se ha desplazado la curva de demanda hacia la izquierda",
+                "Han bajado a la vez la demanda y la oferta",
+              ],
+              correcta: 1,
+              porque: [
+                "Es la formulación imprecisa que arrastra todo lo demás. La demanda es la curva entera —la relación entre precio y cantidad— y no se mueve porque cambie el precio del propio bien.",
+                "Solo el precio del propio bien produce un movimiento a lo largo de la curva. La curva sigue exactamente donde estaba; lo que ha cambiado es el punto en el que nos situamos sobre ella.",
+                "La curva se desplaza cuando cambia cualquier factor que no sea el precio del bien: la renta, los gustos, el precio de un sustitutivo. Aquí no ha cambiado ninguno de esos.",
+                "No hay nada en el enunciado que indique un cambio en la oferta. Atribuir a las dos curvas lo que explica una sola impide predecir qué pasará después.",
+              ],
+            },
+            {
+              q: "Un ayuntamiento fija un alquiler máximo por debajo del precio de equilibrio. ¿Qué efecto tiene?",
+              opciones: [
+                "Abarata la vivienda para todos los que la buscan",
+                "Abarata para quien consigue alquilar y deja fuera al resto, porque cae la cantidad intercambiada",
+                "Elimina la escasez, que era lo que causaba el precio alto",
+                "No tiene efecto mientras el tope siga por encima del coste del propietario",
+              ],
+              correcta: 1,
+              porque: [
+                "Solo la abarata para quien logra contrato. Al precio topado se quiere alquilar más de lo que se ofrece, así que alguien se queda fuera necesariamente: el conjunto de los que buscan no sale ganando en bloque.",
+                "El precio deja de racionar y raciona otra cosa: colas, listas de espera, contactos, peor mantenimiento. Casi siempre de forma más arbitraria que el precio, y con menos viviendas alquiladas que antes.",
+                "Al revés: la escasez es la diferencia entre lo que se quiere comprar y lo que hay, y prohibir el precio alto elimina la señal, no el desajuste. El exceso de demanda es justamente $Q_d - Q_s$ al precio topado.",
+                "Un tope solo es efectivo si queda por debajo del equilibrio, y entonces sí tiene efecto. Por encima del equilibrio es el tope el que no hace nada, no al revés.",
+              ],
+            },
+            {
+              q: "Suben a la vez la demanda y la oferta de un bien. ¿Qué se puede afirmar del nuevo equilibrio?",
+              opciones: [
+                "Que suben el precio y la cantidad",
+                "Que sube la cantidad, pero el precio depende de cuál de los dos desplazamientos sea mayor",
+                "Que el precio no cambia porque los dos efectos se compensan",
+                "Que sube el precio y la cantidad queda indeterminada",
+              ],
+              correcta: 1,
+              porque: [
+                "Más demanda empuja el precio hacia arriba y más oferta lo empuja hacia abajo. Quedarse con uno solo de los dos efectos es decidir el resultado por adelantado.",
+                "Los dos desplazamientos actúan en el mismo sentido sobre la cantidad y en sentidos opuestos sobre el precio. La cantidad sube con seguridad; el precio solo se sabe si se conoce la magnitud relativa de cada movimiento.",
+                "Se compensarían solo si los dos desplazamientos fueran de igual tamaño, que es un caso particular y no la regla. Suponerlo equivale a inventarse un dato.",
+                "Es el diagnóstico invertido: lo indeterminado es el precio y lo seguro es la cantidad. Conviene fijarse en qué variable recibe los dos efectos en el mismo sentido.",
+              ],
+            },
+            {
+              q: "En un mercado con $Q_d = 100 - 2P$ y $Q_s = -20 + 3P$, ¿qué ocurre a un precio de 30?",
+              opciones: [
+                "Hay exceso de demanda y el precio tenderá a subir",
+                "Hay exceso de oferta de 30 unidades y el precio tenderá a bajar",
+                "El mercado está en equilibrio",
+                "Hay exceso de oferta, pero el precio no puede bajar porque ya cubre costes",
+              ],
+              correcta: 1,
+              porque: [
+                "Es el diagnóstico contrario. A 30 se demandan 40 unidades y se ofrecen 70: sobra producto, no falta. El exceso de demanda aparece por debajo del equilibrio, no por encima.",
+                "A ese precio $Q_d = 100 - 60 = 40$ y $Q_s = -20 + 90 = 70$, de modo que sobran 30 unidades. Con $P > P^*$ siempre hay exceso de oferta, y los vendedores que no colocan su producto presionan el precio a la baja.",
+                "El equilibrio está en $P = 24$ y $Q = 52$, que es donde ambas expresiones coinciden. A 30 no se cruzan.",
+                "Que un precio cubra costes no impide que baje: mientras sobre producto habrá vendedores dispuestos a rebajar antes que quedarse sin vender, y eso sigue hasta el equilibrio.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

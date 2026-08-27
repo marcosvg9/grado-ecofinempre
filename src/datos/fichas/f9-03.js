@@ -46,8 +46,8 @@ export default {
           filas: [
             { nom: "Ventaja competitiva", sub: "Definición económica, no descriptiva.", cols: ["Diferencial = ROIC − WACC > 0"] },
             { nom: "Beneficio económico anual", sub: "El EVA de la ficha 7.05.", cols: ["BE = (ROIC − WACC) × Capital invertido"] },
-            { nom: "Valor de la ventaja", sub: "Lo que vale que el diferencial persista n años.", cols: ["V = BE × [1 − (1 + WACC)⁻ⁿ] / WACC"] },
-            { nom: "Erosión del diferencial", sub: "La competencia lo reduce a tasa constante.", cols: ["Diferencialₜ = Diferencial₀ × (1 − δ)ᵗ"] },
+            { nom: "Valor de la ventaja", sub: "Lo que vale que el diferencial persista n años.", cols: ["$V = \\mathrm{BE}\\,\\dfrac{1 - (1+\\mathrm{WACC})^{-n}}{\\mathrm{WACC}}$"] },
+            { nom: "Erosión del diferencial", sub: "La competencia lo reduce a tasa constante.", cols: ["$\\text{Diferencial}_t = \\text{Diferencial}_0 (1-\\delta)^t$"] },
             { nom: "Período de ventaja competitiva", sub: "Lo que el mercado descuenta implícitamente.", cols: ["El n que hace que el valor calculado iguale al valor de mercado"] },
             { nom: "Rentabilidad sobre el capital invertido", sub: "Se compara siempre contra el WACC, no contra cero.", cols: ["ROIC = NOPAT / (Fondos propios + Deuda con coste)"] },
           ],

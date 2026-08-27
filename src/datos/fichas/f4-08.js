@@ -35,14 +35,14 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Modelo de panel", sub: "αᵢ recoge todo lo constante de la unidad.", cols: ["yᵢₜ = αᵢ + β·xᵢₜ + uᵢₜ"] },
-            { nom: "Estimador agrupado", sub: "Ignora αᵢ: sesgado si αᵢ se relaciona con x.", cols: ["MCO sobre todas las observaciones"] },
-            { nom: "Transformación intragrupo", sub: "αᵢ desaparece por ser constante.", cols: ["(yᵢₜ − ȳᵢ) = β·(xᵢₜ − x̄ᵢ) + (uᵢₜ − ūᵢ)"] },
+            { nom: "Modelo de panel", sub: "$\\alpha_i$ recoge todo lo constante de la unidad.", cols: ["$y_{it} = \\alpha_i + \\beta x_{it} + u_{it}$"] },
+            { nom: "Estimador agrupado", sub: "Ignora $\\alpha_i$: sesgado si $\\alpha_i$ se relaciona con $x$.", cols: ["MCO sobre todas las observaciones"] },
+            { nom: "Transformación intragrupo", sub: "$\\alpha_i$ desaparece por ser constante.", cols: ["$(y_{it} - \\bar y_i) = \\beta(x_{it} - \\bar x_i) + (u_{it} - \\bar u_i)$"] },
             { nom: "Equivalencia con ficticias", sub: "Frisch-Waugh otra vez.", cols: ["intragrupo ≡ una constante por unidad"] },
-            { nom: "Estimador entre grupos", sub: "Usa solo las medias: todo el sesgo, ningún remedio.", cols: ["regresión de ȳᵢ sobre x̄ᵢ"] },
-            { nom: "Efectos aleatorios", sub: "Más eficiente, pero exige el supuesto fuerte.", cols: ["requiere Cov(αᵢ, xᵢₜ) = 0"] },
-            { nom: "Contraste de Hausman", sub: "No rechazar no valida: puede faltar potencia.", cols: ["H = (β̂ᶠᵉ − β̂ʳᵉ)′ V⁻¹ (β̂ᶠᵉ − β̂ʳᵉ)"] },
-            { nom: "Efectos fijos dobles", sub: "Absorben también los choques comunes.", cols: ["yᵢₜ = αᵢ + λₜ + β·xᵢₜ + uᵢₜ"] },
+            { nom: "Estimador entre grupos", sub: "Usa solo las medias: todo el sesgo, ningún remedio.", cols: ["regresión de $\\bar y_i$ sobre $\\bar x_i$"] },
+            { nom: "Efectos aleatorios", sub: "Más eficiente, pero exige el supuesto fuerte.", cols: ["requiere $\\mathrm{Cov}(\\alpha_i, x_{it}) = 0$"] },
+            { nom: "Contraste de Hausman", sub: "No rechazar no valida: puede faltar potencia.", cols: ["$H = (\\hat\\beta_{\\mathrm{EF}} - \\hat\\beta_{\\mathrm{EA}})' V^{-1} (\\hat\\beta_{\\mathrm{EF}} - \\hat\\beta_{\\mathrm{EA}})$"] },
+            { nom: "Efectos fijos dobles", sub: "Absorben también los choques comunes.", cols: ["$y_{it} = \\alpha_i + \\lambda_t + \\beta x_{it} + u_{it}$"] },
             { nom: "Límite del método", sub: "Lo constante desaparece con el sesgo.", cols: ["no identifica variables invariantes en el tiempo"] },
             { nom: "Errores agrupados", sub: "Omitirlo infravalora la incertidumbre masivamente.", cols: ["agrupar por unidad i"] },
           ],
@@ -102,7 +102,7 @@ export default {
             ["Agrupado (MCO)", "Toda, mezclada", "−1,00", "«Formar reduce la productividad»"],
             ["Entre grupos", "Solo las medias de empresa", "−1,33", "Todo el sesgo, sin ningún remedio"],
             { celdas: ["Intragrupo (efectos fijos)", "Solo la temporal, dentro de cada empresa", "+2,00", "«Formar aumenta la productividad»"], clase: "total" },
-            ["Efectos fijos estimados", "α_A = 8 · α_B = −2 · α_C = −12", "—", "La heterogeneidad que causaba el sesgo"],
+            ["Efectos fijos estimados", "$\\alpha_A = 8$ · $\\alpha_B = -2$ · $\\alpha_C = -12$", "—", "La heterogeneidad que causaba el sesgo"],
           ],
           nota: "Los tres números salen de los mismos nueve datos y **ninguno está mal calculado**. La diferencia está en qué comparación hace cada uno. El agrupado y el de entre grupos comparan empresas distintas, y por tanto arrastran todo lo que las distingue. El intragrupo compara cada empresa consigo misma, y por eso recupera el **+2** que está literalmente en los datos. Los efectos fijos estimados —8, −2 y −12— son la medida de esa heterogeneidad no observada: nadie ha tenido que saber qué la causa, basta con que sea **constante en el tiempo** para que la transformación la elimine.",
         },
@@ -184,6 +184,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Qué elimina exactamente un estimador de efectos fijos?",
+              opciones: [
+                "Toda la endogeneidad del modelo",
+                "Solo la heterogeneidad no observada que sea constante en el tiempo dentro de cada unidad",
+                "El sesgo de selección de la muestra",
+                "La correlación entre observaciones de la misma unidad",
+              ],
+              correcta: 1,
+              porque: [
+                "Es la sobrevaloración más frecuente del método. Si la gestión de una empresa mejora a la vez que aumenta su formación, los efectos fijos no lo tocan.",
+                "Compara cada unidad consigo misma, así que todo lo que no varía —cultura de empresa, capacidad individual, geografía— desaparece. Lo que varía a la vez que la explicativa sigue contaminando.",
+                "La selección de qué unidades están en el panel es un problema distinto y los efectos fijos no lo resuelven.",
+                "Esa correlación exige agrupar los errores estándar por unidad, que es una corrección aparte y también necesaria.",
+              ],
+            },
+            {
+              q: "Se quiere estimar con efectos fijos el efecto del sistema legal de un país sobre su crecimiento. ¿Qué ocurre?",
+              opciones: [
+                "Se obtiene una estimación más limpia que sin efectos fijos",
+                "No se puede: una variable que no varía en el tiempo desaparece con la transformación intragrupo",
+                "Hay que usar efectos aleatorios y contrastar con Hausman",
+                "El coeficiente sale, pero con un error estándar muy grande",
+              ],
+              correcta: 1,
+              porque: [
+                "No hay estimación posible: la variable se anula igual que el efecto individual que se quería eliminar.",
+                "La transformación resta a cada observación la media de su unidad, y una variable constante dentro de la unidad se convierte en cero. Es el precio de eliminar la heterogeneidad fija.",
+                "Efectos aleatorios sí permitiría estimarla, pero al coste de suponer que la heterogeneidad individual no se correlaciona con las explicativas, que es justo lo dudoso.",
+                "No sale con error grande: no sale en absoluto.",
+              ],
+            },
+            {
+              q: "Un contraste de Hausman no rechaza. ¿Se pueden usar efectos aleatorios?",
+              opciones: [
+                "Sí: el contraste acredita que su supuesto se cumple",
+                "Con cautela: no rechazar puede significar que el supuesto se cumple o que el contraste no tiene potencia",
+                "No: Hausman solo sirve para elegir entre modelos anidados",
+                "Sí, y además son más eficientes, así que siempre son preferibles",
+              ],
+              correcta: 1,
+              porque: [
+                "Ningún contraste acredita una hipótesis nula: como mucho no la rechaza, que es una afirmación mucho más débil.",
+                "Con pocas unidades la falta de potencia es habitual, y entonces el no rechazo no informa. Conviene sostener la elección con el argumento sustantivo, no solo con el contraste.",
+                "Hausman sí compara estos dos estimadores; el problema es cómo se interpreta su resultado.",
+                "Son más eficientes precisamente porque usan también la variación entre unidades, que es la contaminada. La eficiencia sin insesgadez no vale de nada.",
+              ],
+            },
+            {
+              q: "Un panel de empresas cubre 2007-2012 sin efectos fijos temporales. ¿Qué se arriesga?",
+              opciones: [
+                "Nada, si los efectos fijos individuales están incluidos",
+                "Que la crisis, común a todas las unidades, se atribuya a la variable explicativa",
+                "Perder eficiencia por sobreparametrizar",
+                "Que los errores estándar queden infravalorados",
+              ],
+              correcta: 1,
+              porque: [
+                "Los efectos individuales controlan lo que distingue a cada empresa, no lo que les pasa a todas a la vez.",
+                "Sin una constante por periodo, cualquier tendencia común —una recesión, una reforma estatal, un cambio de precios internacionales— acaba dentro del coeficiente de interés.",
+                "Añadir constantes temporales cuesta pocos grados de libertad y evita un sesgo grande: el intercambio es claramente favorable.",
+                "La infravaloración de errores estándar viene de no agrupar por unidad, que es otro problema.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

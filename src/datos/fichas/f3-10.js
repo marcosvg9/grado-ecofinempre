@@ -36,13 +36,13 @@ export default {
           filas: [
             { nom: "Identidad de la balanza de pagos", sub: "Cierta por construcción.", cols: ["CC + CK − CF + Errores = 0"] },
             { nom: "Cuenta corriente y ahorro", sub: "Versión simplificada, sin cuenta de capital.", cols: ["CC = S − I"] },
-            { nom: "Con desglose sectorial", sub: "Enlaza con los saldos de la ficha 1.06.", cols: ["CC = (S_priv − I) + (T − G)"] },
-            { nom: "Tipo de cambio real", sub: "Lo que mide competitividad.", cols: ["q = e · P* / P"] },
-            { nom: "En variaciones", sub: "Aproximación válida con tasas pequeñas.", cols: ["Δq ≈ Δe + π* − π"] },
-            { nom: "Paridad de poder adquisitivo", sub: "Razonable a largo plazo, mala a corto.", cols: ["Δe ≈ π − π*"] },
+            { nom: "Con desglose sectorial", sub: "Enlaza con los saldos de la ficha 1.06.", cols: ["$\\mathrm{CC} = (S_{\\text{priv}} - I) + (T - G)$"] },
+            { nom: "Tipo de cambio real", sub: "Lo que mide competitividad.", cols: ["$q = \\dfrac{e P^*}{P}$"] },
+            { nom: "En variaciones", sub: "Aproximación válida con tasas pequeñas.", cols: ["$\\Delta q \\approx \\Delta e + \\pi^* - \\pi$"] },
+            { nom: "Paridad de poder adquisitivo", sub: "Razonable a largo plazo, mala a corto.", cols: ["$\\Delta e \\approx \\pi - \\pi^*$"] },
             { nom: "Paridad descubierta de tipos", sub: "Su incumplimiento es un rompecabezas abierto.", cols: ["i = i* + depreciación esperada"] },
             { nom: "Posición de inversión internacional", sub: "El fondo que acumulan los flujos corrientes.", cols: ["PII = Activos − Pasivos frente al exterior"] },
-            { nom: "Condición de Marshall-Lerner", sub: "Por qué una devaluación puede no funcionar al principio.", cols: ["|ε_X| + |ε_M| > 1"] },
+            { nom: "Condición de Marshall-Lerner", sub: "Por qué una devaluación puede no funcionar al principio.", cols: ["$|\\varepsilon_X| + |\\varepsilon_M| > 1$"] },
             { nom: "Triángulo imposible", sub: "Restricción lógica, no dificultad práctica.", cols: ["Tipo fijo · movilidad · autonomía: elegir dos"] },
           ],
         },
@@ -179,6 +179,82 @@ export default {
         },
       ],
     },
+    {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un país tiene déficit por cuenta corriente. ¿Qué significa eso necesariamente?",
+              opciones: [
+                "Que sus exportaciones son poco competitivas",
+                "Que su inversión supera a su ahorro: es una identidad, y su lectura depende de la causa",
+                "Que está perdiendo reservas",
+                "Que su moneda está sobrevalorada",
+              ],
+              correcta: 1,
+              porque: [
+                "Puede haber déficit con exportaciones florecientes si la inversión crece más deprisa. El saldo no mide capacidad exportadora por sí solo.",
+                "$\\mathrm{CC} = S - I$. Un déficit puede reflejar una economía atractiva que recibe inversión productiva o una que consume por encima de sus posibilidades, y distinguirlo exige mirar en qué se invierte.",
+                "Con tipo flexible no se pierden reservas: el ajuste va por el tipo de cambio. Y con entradas de capital el déficit se financia sin tocarlas.",
+                "La sobrevaloración es una causa posible entre varias, no el significado del saldo.",
+              ],
+            },
+            {
+              q: "Un país devalúa su moneda y en los meses siguientes su saldo comercial empeora. ¿Qué ha pasado?",
+              opciones: [
+                "La devaluación ha fallado",
+                "Es la curva en jota: las elasticidades son bajas a corto plazo y el efecto precio domina al de cantidad",
+                "Los socios comerciales han devaluado también",
+                "Se ha medido el saldo en moneda extranjera en vez de nacional",
+              ],
+              correcta: 1,
+              porque: [
+                "Concluir el fracaso a los pocos meses es leer el tramo descendente de una trayectoria que se espera que suba después.",
+                "Al principio las importaciones cuestan más y su volumen apenas cae, así que la factura sube. Solo cuando las cantidades reaccionan mejora el saldo, y para que llegue a mejorar hace falta la condición de Marshall-Lerner.",
+                "Una devaluación competitiva de los socios anularía el efecto, pero eso sería otro escenario y no explica el patrón temporal característico.",
+                "La unidad de medida cambia las cifras, no el perfil temporal en forma de jota.",
+              ],
+            },
+            {
+              q: "¿Puede un país tener tipo de cambio fijo, libre movilidad de capital y política monetaria propia?",
+              opciones: [
+                "Sí, con controles parciales bien diseñados",
+                "No: es una restricción lógica y solo caben dos de las tres",
+                "Sí, si su banco central tiene reservas suficientes",
+                "Sí, mientras la inflación sea baja",
+              ],
+              correcta: 1,
+              porque: [
+                "Los controles parciales son precisamente renunciar a la libre movilidad: eligen dos de las tres, no las tres.",
+                "Con tipo fijo y capital libre, el tipo de interés lo determina el exterior por arbitraje. Querer fijarlo a la vez es querer dos valores distintos para la misma variable.",
+                "Las reservas permiten aguantar más tiempo, no escapar de la restricción: la presión reaparece en cuanto se agotan.",
+                "La inflación baja facilita mantener el tipo fijo, pero no libera de la disyuntiva.",
+              ],
+            },
+            {
+              q: "Con tipo de cambio flexible y capital móvil, ¿qué le ocurre a una expansión fiscal?",
+              opciones: [
+                "Se amplifica, porque la moneda se deprecia y las exportaciones crecen",
+                "Se neutraliza en buena parte: el tipo sube, entra capital, la moneda se aprecia y las exportaciones caen",
+                "Funciona igual que en economía cerrada",
+                "Depende del signo del saldo por cuenta corriente",
+              ],
+              correcta: 1,
+              porque: [
+                "La moneda se aprecia, no se deprecia: el mayor tipo de interés atrae capital extranjero.",
+                "Es el resultado de Mundell-Fleming, y su reverso es que la política monetaria se amplifica en ese mismo régimen. Aplicar recetas de un régimen en el otro invierte las conclusiones.",
+                "En economía cerrada no hay canal cambiario, que es precisamente el que aquí neutraliza el efecto.",
+                "El saldo de partida no cambia el mecanismo, que opera a través del tipo de interés y del tipo de cambio.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
     {
       titulo: "Para profundizar",
       contenido: [

@@ -48,7 +48,7 @@ export default {
             { nom: "Margen de contribución unitario", sub: "El concepto clave del coste variable.", cols: ["mc = p − cv"] },
             { nom: "Resultado por coste completo", sub: "Solo lo vendido lleva coste fijo incorporado.", cols: ["R = Ventas − (Q vendida × cc) − Gastos de estructura"] },
             { nom: "Resultado por coste variable", sub: "Todos los fijos se restan del período.", cols: ["R = Q vendida × mc − CF producción − Gastos de estructura"] },
-            { nom: "Diferencia entre ambos", sub: "La identidad que hay que poder escribir de memoria.", cols: ["Δ = (Q producida − Q vendida) × CF unitario"] },
+            { nom: "Diferencia entre ambos", sub: "La identidad que hay que poder escribir de memoria.", cols: ["$\\Delta$ = (Q producida − Q vendida) × CF unitario"] },
             { nom: "Coste de subactividad", sub: "No se activa: va directo a resultados.", cols: ["Subactividad = CF × (1 − Actividad real / Actividad normal)"] },
           ],
         },

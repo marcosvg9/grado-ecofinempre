@@ -45,11 +45,11 @@ export default {
           tipo: "rejilla",
           modo: "dos",
           filas: [
-            { nom: "Valor actual neto", sub: "Aceptar si es positivo. Elegir el mayor si son excluyentes.", cols: ["VAN = −I₀ + Σ FCₜ / (1 + k)ᵗ"] },
-            { nom: "Tasa interna de rentabilidad", sub: "Se resuelve numéricamente: no hay fórmula cerrada.", cols: ["VAN(TIR) = 0"] },
-            { nom: "Índice de rentabilidad", sub: "Valor creado por euro invertido.", cols: ["IR = VA de los flujos / I₀"] },
-            { nom: "TIR modificada", sub: "Corrige el supuesto de reinversión.", cols: ["TIRM = (VF de entradas a k / VA de salidas a k)^(1/n) − 1"] },
-            { nom: "Anualidad equivalente", sub: "Para comparar proyectos de distinta duración.", cols: ["AE = VAN × i / [1 − (1 + i)⁻ⁿ]"] },
+            { nom: "Valor actual neto", sub: "Aceptar si es positivo. Elegir el mayor si son excluyentes.", cols: ["$\\mathrm{VAN} = -I_0 + \\sum_t \\dfrac{FC_t}{(1+k)^t}$"] },
+            { nom: "Tasa interna de rentabilidad", sub: "Se resuelve numéricamente: no hay fórmula cerrada.", cols: ["$\\mathrm{VAN}(\\mathrm{TIR}) = 0$"] },
+            { nom: "Índice de rentabilidad", sub: "Valor creado por euro invertido.", cols: ["$\\mathrm{IR} = \\dfrac{\\text{VA de los flujos}}{I_0}$"] },
+            { nom: "TIR modificada", sub: "Corrige el supuesto de reinversión.", cols: ["$\\mathrm{TIRM} = \\left(\\dfrac{\\text{VF de entradas a } k}{\\text{VA de salidas a } k}\\right)^{1/n} - 1$"] },
+            { nom: "Anualidad equivalente", sub: "Para comparar proyectos de distinta duración.", cols: ["$\\mathrm{AE} = \\dfrac{\\mathrm{VAN} \\cdot i}{1 - (1+i)^{-n}}$"] },
             { nom: "Tasa de corte entre dos proyectos", sub: "El tipo al que ambos VAN coinciden.", cols: ["TIR de la corriente diferencial (B − A)"] },
           ],
         },
@@ -188,7 +188,7 @@ export default {
         {
           tipo: "preguntas",
           items: [
-            { q: "Un proyecto exige 50.000 € y genera 20.000 € anuales durante 4 años. Al 8 %, ¿cuál es su VAN?", a: "20.000 × [1 − 1,08⁻⁴] / 0,08 = 66.243 €. VAN = 66.243 − 50.000 = 16.243 €. Positivo: crea valor y debe aceptarse." },
+            { q: "Un proyecto exige 50.000 € y genera 20.000 € anuales durante 4 años. Al 8 %, ¿cuál es su VAN?", a: "$20.000 \\times \\dfrac{1 - 1{,}08^{-4}}{0{,}08} = 66.243$ €. VAN $= 66.243 - 50.000 = 16.243$ €. Positivo: crea valor y debe aceptarse." },
             { q: "El proyecto X tiene TIR del 30 % y VAN de 12.000 €; el Y, TIR del 18 % y VAN de 40.000 €. Son excluyentes. ¿Cuál eliges?", a: "Y. El VAN mide el valor creado en euros y es el criterio correcto entre proyectos excluyentes. La TIR ignora la escala de la inversión." },
             { q: "¿Qué supuesto de reinversión lleva implícito cada criterio?", a: "La TIR supone que los flujos intermedios se reinvierten a la propia TIR; el VAN, que se reinvierten al coste de capital. El segundo supuesto es más realista, sobre todo en proyectos de TIR elevada." },
             { q: "Flujos: −100, +250, −150. ¿Cuál es la TIR?", a: "Hay dos: 0 % y 50 %, ambas anulan el VAN. Con flujos que cambian de signo más de una vez la TIR deja de ser única y la regla de decisión es inaplicable. Hay que usar el VAN." },

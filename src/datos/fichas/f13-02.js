@@ -43,7 +43,7 @@ export default {
             { nom: "Precio de adquisición", sub: "Lo que paga el comprador.", cols: ["+ impuestos no deducibles + márgenes"] },
             { nom: "Los márgenes", sub: "Producción de la rama comercial.", cols: ["se reparten por producto, no suman al total"] },
             { nom: "Valor añadido", sub: "El residuo de la identidad.", cols: ["B.1g = P.1 − P.2"] },
-            { nom: "PIB a precios de mercado", sub: "El puente entre las dos valoraciones.", cols: ["PIB = Σ B.1g pb + D.21 − D.31"] },
+            { nom: "PIB a precios de mercado", sub: "El puente entre las dos valoraciones.", cols: ["PIB $= \\sum$ B.1g pb $+$ D.21 $-$ D.31"] },
           ],
         },
       ],

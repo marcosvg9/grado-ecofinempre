@@ -64,9 +64,9 @@ export default {
           tipo: "tabla",
           cabecera: ["Meses conocidos", "Varianza restante", "Desviación típica", "% de la incertidumbre inicial", "Reducción acumulada"],
           filas: [
-            ["0", "3 σ²", "1,732 σ", "100,0 %", "—"],
-            ["1", "2 σ²", "1,414 σ", "81,6 %", "18,4 %"],
-            ["2", "1 σ²", "1,000 σ", "57,7 %", "42,3 %"],
+            ["0", "$3\\sigma^2$", "1,732 $\\sigma$", "100,0 %", "—"],
+            ["1", "$2\\sigma^2$", "1,414 $\\sigma$", "81,6 %", "18,4 %"],
+            ["2", "$1\\sigma^2$", "1,000 $\\sigma$", "57,7 %", "42,3 %"],
             { celdas: ["3", "0", "0", "0,0 %", "100 %"], clase: "total" },
           ],
           nota: "La reducción es **acelerada, no constante**: el primer mes aporta 18 puntos, el segundo 24 y el tercero los 58 restantes. Dicho de otro modo, **la mitad de la información del trimestre llega en su último tercio**. Es una razón de peso para no sobrevalorar los nowcasts publicados a principios de trimestre, y para revisarlos con cada dato nuevo en lugar de fijarlos.",
@@ -103,7 +103,7 @@ export default {
         {
           tipo: "parrafos",
           items: [
-            "Esa es la lección central del gráfico y conviene enunciarla sin rodeos: **un indicador, por bueno que sea, no sustituye al dato**. La reducción de varianza que aporta observar un indicador correlacionado es proporcional al cuadrado de su correlación, así que con ρ = 0,8 se elimina el 64 % de la varianza de cada mes y queda el 36 %. Acumulado sobre los tres meses, la desviación típica final es el 60 % de la inicial. El nowcast mejora mucho respecto a no saber nada, y sigue siendo una estimación con error apreciable cuando la estadística oficial va a publicarse.",
+            "Esa es la lección central del gráfico y conviene enunciarla sin rodeos: **un indicador, por bueno que sea, no sustituye al dato**. La reducción de varianza que aporta observar un indicador correlacionado es proporcional al cuadrado de su correlación, así que con $\\rho$ = 0,8 se elimina el 64 % de la varianza de cada mes y queda el 36 %. Acumulado sobre los tres meses, la desviación típica final es el 60 % de la inicial. El nowcast mejora mucho respecto a no saber nada, y sigue siendo una estimación con error apreciable cuando la estadística oficial va a publicarse.",
             "De ahí se sigue la forma correcta de usarlos. Un nowcast es útil para **acotar el rango** de lo que va a publicarse y para detectar giros antes que la estadística oficial, no para anunciar una cifra. Los bancos centrales y los servicios de estudios que los publican suelen acompañarlos de intervalos, y esa es la práctica sensata: el número puntual sin su incertidumbre da una falsa impresión de precisión que el propio método desmiente.",
             "Sobre la evaluación, el nowcasting tiene una ventaja metodológica sobre la predicción a largo plazo: **se puede validar deprisa y sin ambigüedad**, comparando con la primera estimación oficial pocas semanas después. Eso permite acumular historial y calibrar honestamente cuánto vale cada modelo, algo que con previsiones a dos años es prácticamente imposible. La comparación debe hacerse siempre contra la **primera** estimación publicada y no contra la serie revisada, por la misma razón que la ficha 15.08 daba: evaluar con datos que no existían es juzgar por información que no se tenía.",
           ],
@@ -134,7 +134,7 @@ export default {
           tipo: "acordeon",
           items: [
             { t: "Suponer que cerrar un mes elimina un tercio de la incertidumbre", d: "Elimina un tercio de la varianza, no de la incertidumbre. Como esta se mide en desviaciones típicas, que son la raíz de la varianza, la reducción real es del 18,4 %. La información llega de forma acelerada: la mitad del trimestre se resuelve en su último tercio, y por eso los nowcasts de principios de trimestre valen bastante menos de lo que sugiere el calendario." },
-            { t: "Tratar un indicador como si fuera el dato", d: "La reducción de varianza que aporta un indicador es proporcional al cuadrado de su correlación. Con ρ = 0,8, alta para coyuntura, al cerrar el trimestre queda todavía el 60 % de la incertidumbre inicial. Un indicador acota el rango de lo que se publicará; no lo determina." },
+            { t: "Tratar un indicador como si fuera el dato", d: "La reducción de varianza que aporta un indicador es proporcional al cuadrado de su correlación. Con $\\rho$ = 0,8, alta para coyuntura, al cerrar el trimestre queda todavía el 60 % de la incertidumbre inicial. Un indicador acota el rango de lo que se publicará; no lo determina." },
             { t: "Publicar un nowcast sin intervalo", d: "El número puntual da una impresión de precisión que el propio método desmiente. La práctica sensata, y la que siguen los bancos centrales que los publican, es acompañarlo de un intervalo, porque el uso legítimo es acotar el rango y detectar giros, no anunciar una cifra." },
             { t: "Evaluar el nowcast contra la serie revisada", d: "Debe compararse con la primera estimación oficial publicada, que es lo que el nowcast intentaba anticipar. Evaluarlo contra la serie revisada años después es juzgarlo por información que no existía cuando se hizo, el mismo error que la política de revisiones advierte al valorar decisiones pasadas." },
             { t: "Ignorar que el dato ajustado ya contiene predicciones", d: "El valor ajustado del último trimestre se calcula aplicando filtros sobre una serie extendida con previsiones del modelo. No es un artificio del analista: está dentro del procedimiento oficial, y es la principal razón de que ese dato se revise cuando llegan observaciones reales." },
@@ -175,11 +175,11 @@ export default {
           items: [
             {
               q: "Un trimestre es la suma de tres meses independientes de igual varianza. Al cerrar el primero, ¿cuánto baja la incertidumbre?",
-              a: "Un 18,4 %, no un 33 %. Queda por conocer dos tercios de la varianza, pero la incertidumbre se mide en desviaciones típicas, que son su raíz: se pasa de 1,732 σ a 1,414 σ. Al cerrar el segundo mes la reducción acumulada es del 42,3 %, y el tercer mes aporta el 58 % restante. La información llega de forma acelerada.",
+              a: "Un 18,4 %, no un 33 %. Queda por conocer dos tercios de la varianza, pero la incertidumbre se mide en desviaciones típicas, que son su raíz: se pasa de 1,732 $\\sigma$ a 1,414 $\\sigma$. Al cerrar el segundo mes la reducción acumulada es del 42,3 %, y el tercer mes aporta el 58 % restante. La información llega de forma acelerada.",
             },
             {
               q: "Un indicador tiene correlación 0,8 con la variable objetivo. ¿Cuánta incertidumbre queda al terminar el trimestre?",
-              a: "El 60 % de la inicial. La reducción de varianza que aporta un indicador es proporcional al cuadrado de su correlación, así que con ρ = 0,8 se elimina el 64 % de la varianza de cada mes y queda el 36 %. Acumulado sobre los tres meses, la desviación típica final es el 60 % de la de partida. Un indicador acota el rango de lo que se publicará; no sustituye al dato.",
+              a: "El 60 % de la inicial. La reducción de varianza que aporta un indicador es proporcional al cuadrado de su correlación, así que con $\\rho$ = 0,8 se elimina el 64 % de la varianza de cada mes y queda el 36 %. Acumulado sobre los tres meses, la desviación típica final es el 60 % de la de partida. Un indicador acota el rango de lo que se publicará; no sustituye al dato.",
             },
             {
               q: "¿Por qué el dato ajustado del último trimestre incorpora una predicción?",
