@@ -153,6 +153,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Una acción reparte un dividendo del 5 % sobre su cotización. ¿Es un rendimiento que se añade al del precio?",
+              opciones: [
+                "Sí: el accionista cobra el dividendo y conserva la acción",
+                "No: el precio cae aproximadamente en el importe repartido el día que la acción cotiza sin derecho a él",
+                "Sí, siempre que la empresa mantenga el beneficio",
+                "No, porque el dividendo tributa y reduce la rentabilidad neta",
+              ],
+              correcta: 1,
+              porque: [
+                "Conserva la acción, pero una acción que vale menos: el dinero ha salido de la empresa y ya no respalda su precio.",
+                "El dividendo transforma valor de acción en efectivo, no lo crea. Es el mismo bolsillo con el dinero cambiado de sitio.",
+                "El nivel de beneficio no altera el mecanismo: el día del descuento el precio se ajusta igualmente.",
+                "La fiscalidad reduce la rentabilidad neta, sí, pero el problema de fondo es anterior y no depende de los impuestos.",
+              ],
+            },
+            {
+              q: "¿Sobre qué magnitud conviene evaluar si un dividendo es sostenible?",
+              opciones: [
+                "Sobre el beneficio, mediante el pay-out",
+                "Sobre la caja: el beneficio incorpora amortizaciones y estimaciones, y el dividendo se paga con efectivo",
+                "Sobre el patrimonio neto, para no descapitalizar la empresa",
+                "Sobre la cifra de ventas, que es la magnitud menos manipulable",
+              ],
+              correcta: 1,
+              porque: [
+                "Un pay-out del 50 % sobre beneficio parece prudente y puede estar financiándose con deuda si la caja no acompaña.",
+                "La pregunta relevante es de dónde sale el dinero: si el flujo de explotación menos la inversión de mantenimiento no cubre el reparto, el dividendo lo paga alguien más.",
+                "El neto es un saldo acumulado, no una capacidad de pago: hay empresas con neto abultado y sin caja.",
+                "Las ventas no miden capacidad de reparto: una empresa puede vender mucho y consumir toda su caja en circulante.",
+              ],
+            },
+            {
+              q: "Una acción presenta una rentabilidad por dividendo muy superior a la de su sector. ¿Es buena señal?",
+              opciones: [
+                "Sí: indica una política de retribución generosa",
+                "A menudo no: suele venir de un precio que ha caído, y anticipa un recorte del dividendo",
+                "Sí, si la empresa lleva años sin recortar el reparto",
+                "Es indiferente: la rentabilidad por dividendo no aporta información",
+              ],
+              correcta: 1,
+              porque: [
+                "La generosidad no se lee en el ratio: el numerador puede estar intacto y el denominador desplomado.",
+                "El mercado ha vendido la acción por algo, y ese algo suele ser la sospecha de que el dividendo no se sostiene. La rentabilidad alta es entonces un síntoma, no un premio.",
+                "El historial de reparto es un dato útil, pero no impide que un deterioro reciente fuerce el recorte que el precio ya anticipa.",
+                "Sí aporta: lo que no hace es medir por sí sola la calidad del reparto.",
+              ],
+            },
+            {
+              q: "Una empresa tiene proyectos con VAN positivo sin financiar y decide repartir dividendo. ¿Qué ocurre?",
+              opciones: [
+                "Nada relevante: el accionista decide qué hacer con su dinero",
+                "Es el único caso en que la decisión de dividendo destruye valor de forma inequívoca",
+                "Se crea valor, porque el reparto disciplina a los directivos",
+                "Depende de si el dividendo es en efectivo o en acciones",
+              ],
+              correcta: 1,
+              porque: [
+                "Podría serlo si el accionista pudiera acceder a la misma oportunidad, pero no puede: el proyecto es de la empresa.",
+                "La prioridad es invertir en lo que rinde por encima del coste de capital; el residuo es lo que se reparte. Repartir antes de invertir renuncia a valor que estaba disponible.",
+                "El efecto disciplinante existe cuando sobra caja sin destino. Aquí hay destino, y con rentabilidad superior al coste de capital.",
+                "La forma del reparto cambia la fiscalidad y la dilución, pero no que se esté renunciando a un proyecto que crea valor.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

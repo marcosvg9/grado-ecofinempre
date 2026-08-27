@@ -228,15 +228,36 @@ function Preguntas({ items }) {
    que uno comete es más informativo que la respuesta correcta. */
 const LETRAS = "abcdefgh";
 
-function Test({ items = [], nota }) {
+/* En las primeras siete materias, cada vez que se abre un test se barajan
+   sus opciones. Opciones y explicaciones viajan siempre juntas. */
+function aleatorizarTest(items, codigo) {
+  const bloque = Number(codigo?.split(".")[0]);
+  if (!Number.isInteger(bloque) || bloque > 7) return items;
+
+  return items.map((p) => {
+    const n = p.opciones.length;
+    if (!n || !Number.isInteger(p.correcta)) return p;
+    const orden = p.opciones.map((_, i) => i);
+    for (let i = n - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [orden[i], orden[j]] = [orden[j], orden[i]];
+    }
+    const ordenar = (lista) => orden.map((i) => lista[i]);
+    const correcta = orden.indexOf(p.correcta);
+    return { ...p, opciones: ordenar(p.opciones), porque: ordenar(p.porque), correcta };
+  });
+}
+
+function Test({ items = [], nota, codigo }) {
+  const preguntas = useMemo(() => aleatorizarTest(items, codigo), [items, codigo]);
   const [elegidas, setElegidas] = useState({});
   const respondidas = Object.keys(elegidas).length;
-  const aciertos = items.reduce((n, p, i) => n + (elegidas[i] === p.correcta ? 1 : 0), 0);
-  const completo = items.length > 0 && respondidas === items.length;
+  const aciertos = preguntas.reduce((n, p, i) => n + (elegidas[i] === p.correcta ? 1 : 0), 0);
+  const completo = preguntas.length > 0 && respondidas === preguntas.length;
 
   return (
     <>
-      {items.map((p, i) => {
+      {preguntas.map((p, i) => {
         const elegida = elegidas[i];
         const hecha = elegida !== undefined;
         const acertada = elegida === p.correcta;
@@ -669,9 +690,9 @@ const REGISTRO = {
   diario: Diario,
 };
 
-export default function BloqueContenido({ bloque }) {
+export default function BloqueContenido({ bloque, codigo }) {
   const Comp = REGISTRO[bloque.tipo];
   if (!Comp) return <p className="vacio">Tipo de bloque desconocido: {bloque.tipo}</p>;
   const { tipo, ...props } = bloque;
-  return <Comp {...props} />;
+  return <Comp {...props} codigo={codigo} />;
 }

@@ -161,6 +161,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Los fondos propios no devengan intereses ni aparecen en la cuenta de resultados. ¿Tienen coste?",
+              opciones: [
+                "No: por eso financiarse con capital propio es la opción más barata",
+                "Sí: tienen coste de oportunidad, el rendimiento que el accionista exige por asumir ese riesgo",
+                "No, salvo que se repartan dividendos",
+                "Sí, pero solo en sociedades cotizadas, donde hay precio de mercado",
+              ],
+              correcta: 1,
+              porque: [
+                "Es el error conceptual del que derivan casi todos los demás de esta ficha: confundir «no aparece en la contabilidad» con «no cuesta».",
+                "El accionista podría invertir en otra cosa de riesgo parecido. Si la empresa no le da al menos eso, está destruyendo valor aunque presente beneficios.",
+                "El dividendo es una forma de retribución, no la medida del coste: una empresa que no reparte nada sigue debiendo rentabilidad a sus accionistas.",
+                "El coste de oportunidad existe igual en una empresa familiar sin cotización; lo que cambia es la dificultad de estimarlo.",
+              ],
+            },
+            {
+              q: "Una empresa cotizada tiene una capitalización que triplica su patrimonio neto contable. ¿Con qué valores debe ponderar el WACC?",
+              opciones: [
+                "Con valores contables, que son los auditados y verificables",
+                "Con valores de mercado: lo que se pondera es el capital realmente en juego",
+                "Con la media de ambos, para moderar la volatilidad bursátil",
+                "Con valores contables corregidos por el fondo de comercio",
+              ],
+              correcta: 1,
+              porque: [
+                "Ser verificables no los hace pertinentes: el valor contable de los fondos propios refleja aportaciones y resultados pasados, no lo que hoy está invertido.",
+                "Usar contables infrapondera enormemente el peso de los recursos propios y devuelve un WACC artificialmente bajo, que hace parecer aceptables proyectos que no lo son.",
+                "Promediar dos magnitudes, una de las cuales no mide lo que se busca, no produce una mejor.",
+                "El fondo de comercio solo aflora en combinaciones de negocios y no cierra la brecha con el valor de mercado.",
+              ],
+            },
+            {
+              q: "¿Qué coste de la deuda hay que usar en el WACC?",
+              opciones: [
+                "El histórico: el tipo medio que la empresa está pagando por su deuda viva",
+                "El actual: el tipo al que la empresa se financiaría hoy",
+                "El tipo legal del dinero, por ser una referencia objetiva",
+                "El menor de los dos, por prudencia",
+              ],
+              correcta: 1,
+              porque: [
+                "Lo que se pagó por deuda contratada hace años, en otro entorno de tipos, no dice a qué coste se obtendrían hoy recursos adicionales.",
+                "El coste de capital es una magnitud prospectiva: sirve para descontar flujos futuros, así que se construye con condiciones actuales.",
+                "El tipo legal es una referencia normativa sin relación con el riesgo crediticio de la empresa.",
+                "Elegir el menor no es prudencia: rebaja la tasa de descuento y hace aceptables proyectos que no crean valor.",
+              ],
+            },
+            {
+              q: "El WACC ya incorpora el coste de la deuda después de impuestos. ¿Debe además sumarse el escudo fiscal a los flujos?",
+              opciones: [
+                "Sí: el ahorro fiscal es un flujo real que hay que recoger",
+                "No: ya está en la tasa, y contarlo dos veces infla el valor",
+                "Sí, si el proyecto se financia mayoritariamente con deuda",
+                "No, porque el escudo fiscal solo se aplica en la valoración de empresas, no de proyectos",
+              ],
+              correcta: 1,
+              porque: [
+                "Es real, y precisamente por eso hay que recogerlo una vez y solo una: el método WACC lo recoge en el denominador.",
+                "Es el error simétrico al de restar los intereses del flujo, y en la misma valoración pueden aparecer los dos, cada uno empujando en sentido contrario.",
+                "El peso de la deuda cambia la magnitud del escudo, no dónde se contabiliza.",
+                "Se aplica a ambas cosas. La cuestión es de método: o va en la tasa (WACC) o va en los flujos (APV), pero nunca en los dos.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

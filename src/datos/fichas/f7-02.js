@@ -155,6 +155,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un préstamo a treinta años tiene un total de cuotas pagadas mayor que otro a quince. ¿Es más caro?",
+              opciones: [
+                "Sí: se paga más dinero en total, luego cuesta más",
+                "No necesariamente: sumar cuotas de fechas distintas no es válido, y puede ser más barato en valor actual",
+                "Sí, porque el plazo largo siempre lleva un tipo superior",
+                "No: a mayor plazo, menor coste, por el efecto de la inflación",
+              ],
+              correcta: 1,
+              porque: [
+                "Es exactamente el error de fondo de la ficha 7.01: cantidades situadas en momentos diferentes no son homogéneas y no admiten suma directa.",
+                "La comparación correcta se hace descontando ambos flujos a una misma tasa. El total nominal solo mide cuánto dinero cambia de manos, no cuánto vale.",
+                "Suele llevarlo, pero eso es una regularidad del mercado, no la razón por la que la suma de cuotas no sirve para comparar.",
+                "La inflación ayuda al deudor, pero afirmar que a más plazo menos coste es tan mecánico como la respuesta contraria.",
+              ],
+            },
+            {
+              q: "En un préstamo francés, la primera cuota es casi toda intereses. ¿Significa que el banco los cobra por adelantado?",
+              opciones: [
+                "Sí: se cobra primero el interés y al final el capital",
+                "No: los cobra sobre el capital vivo, que al principio es casi todo el préstamo",
+                "Sí, y por eso la amortización anticipada resulta poco ventajosa al inicio",
+                "No: la proporción alta se debe a la comisión de apertura repartida en las primeras cuotas",
+              ],
+              correcta: 1,
+              porque: [
+                "No hay anticipo: cada cuota liquida los intereses devengados en ese período y nada más.",
+                "Si aún se debe casi todo, el interés de ese período es alto en términos absolutos. La proporción cambia sola a medida que baja la deuda pendiente.",
+                "La amortización anticipada es más eficaz al principio, precisamente porque reduce el capital sobre el que se calculan todos los intereses futuros.",
+                "La comisión de apertura es un coste aparte, y no explica el perfil de la cuota.",
+              ],
+            },
+            {
+              q: "Al aplicar la fórmula de Gordon, la tasa de crecimiento g resulta igual o superior al tipo de descuento i. ¿Qué se hace?",
+              opciones: [
+                "Se acepta el resultado: indica un activo de valor muy elevado",
+                "Se revisa el supuesto: el resultado es negativo o infinito, es decir, un sinsentido",
+                "Se sustituye i por g para evitar la división por cero",
+                "Se aplica la fórmula solo a los primeros diez años",
+              ],
+              correcta: 1,
+              porque: [
+                "Un valor infinito no es un valor alto: es la señal de que la fórmula se ha aplicado fuera de su dominio.",
+                "Un crecimiento perpetuo superior al tipo de descuento implicaría que el flujo acaba superando a cualquier magnitud finita, incluida la economía entera. Es imposible por construcción.",
+                "Intercambiar los términos no arregla nada: el problema está en el supuesto de crecimiento, no en la aritmética.",
+                "Truncar el horizonte es una alternativa razonable de valoración, pero no salva la fórmula de Gordon: exige otro modelo.",
+              ],
+            },
+            {
+              q: "Dos préstamos ofrecen el mismo tipo nominal. ¿Basta para concluir que cuestan lo mismo?",
+              opciones: [
+                "Sí: el tipo nominal determina los intereses de cada período",
+                "No: comisión de apertura, tasación, seguros vinculados y gastos de formalización elevan el tipo efectivo por encima del nominal",
+                "Sí, siempre que el plazo también coincida",
+                "No, pero la diferencia es siempre marginal",
+              ],
+              correcta: 1,
+              porque: [
+                "Determina los intereses, sí, pero no todo lo que se paga por obtener el dinero.",
+                "Es el mismo mecanismo del coste efectivo: hay que meter en el cálculo todos los flujos asociados a la operación, no solo los intereses.",
+                "Con el mismo plazo y el mismo nominal, dos préstamos pueden diferir notablemente en TAE según sus gastos asociados.",
+                "Un seguro vinculado o una comisión de apertura elevada pueden mover el coste efectivo en varios puntos porcentuales.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

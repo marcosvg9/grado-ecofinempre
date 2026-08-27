@@ -198,6 +198,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Hay que elegir un proyecto y solo uno. El A tiene una TIR del 40 % sobre 10.000 € y el B del 15 % sobre 500.000 €. ¿Cuál se elige?",
+              opciones: [
+                "El A, porque su rentabilidad es mucho mayor",
+                "El B: crea 75.000 € de valor frente a los 4.000 € del A, y en proyectos excluyentes manda el VAN",
+                "El A, salvo que la empresa no pueda colocar los 490.000 € restantes",
+                "Es indiferente: ambos superan cualquier coste de capital razonable",
+              ],
+              correcta: 1,
+              porque: [
+                "La TIR ignora la escala: es un porcentaje, y un porcentaje alto sobre poco dinero crea poco valor.",
+                "El criterio correcto cuando hay que elegir uno y solo uno es siempre el VAN, porque mide creación de valor en euros y no en tanto por ciento.",
+                "El destino del resto del dinero es una cuestión real, pero no rescata a la TIR como criterio de elección entre excluyentes.",
+                "Superar el coste de capital basta para aceptar un proyecto aislado; no basta para ordenar dos que se excluyen.",
+              ],
+            },
+            {
+              q: "Los flujos de un proyecto cambian de signo más de una vez. ¿Puede aplicarse la regla «aceptar si la TIR supera al coste de capital»?",
+              opciones: [
+                "Sí: la TIR está definida para cualquier serie de flujos",
+                "No: puede haber varias TIR o ninguna, y la regla pierde entonces todo sentido",
+                "Sí, tomando la mayor de las TIR obtenidas",
+                "No, salvo que el cambio de signo se produzca en el último período",
+              ],
+              correcta: 1,
+              porque: [
+                "La TIR es una raíz de un polinomio: con varios cambios de signo puede haber varias raíces reales, o ninguna.",
+                "Hay que recurrir al VAN, que está bien definido para cualquier serie de flujos y no depende de cuántas veces cambien de signo.",
+                "Quedarse con la mayor es arbitrario: ninguna de las raíces tiene mejor derecho que las otras a llamarse la rentabilidad del proyecto.",
+                "El problema aparece con cualquier cambio de signo intermedio, incluido uno al final —un desmantelamiento costoso, por ejemplo.",
+              ],
+            },
+            {
+              q: "Se comparan dos proyectos por su VAN: uno dura diez años y otro cinco. ¿Es una comparación válida tal cual?",
+              opciones: [
+                "Sí: el VAN ya incorpora el momento de cada flujo",
+                "No: el proyecto largo tiene más ocasiones de generar valor, y hay que igualar horizontes o usar la anualidad equivalente",
+                "Sí, si ambos se descuentan a la misma tasa",
+                "No, pero basta con dividir cada VAN entre los años de vida del proyecto",
+              ],
+              correcta: 1,
+              porque: [
+                "Incorpora el momento de cada flujo, pero no corrige que uno acumule el doble de períodos generando valor.",
+                "La anualidad equivalente traduce cada VAN a un flujo anual constante, que sí es comparable porque se expresa en la misma unidad temporal.",
+                "La misma tasa es necesaria pero no suficiente: el sesgo a favor del proyecto largo persiste.",
+                "Dividir por los años no es lo mismo que anualizar: ignora el descuento y da una cifra que no corresponde a ningún flujo real.",
+              ],
+            },
+            {
+              q: "¿Qué papel debe tener el plazo de recuperación en la decisión de inversión?",
+              opciones: [
+                "Ser el criterio principal, por su sencillez y su prudencia",
+                "Servir como filtro de liquidez o de riesgo político, nunca como criterio principal",
+                "Sustituir al VAN cuando los flujos son difíciles de estimar",
+                "Descartarse por completo: no aporta información útil",
+              ],
+              correcta: 1,
+              porque: [
+                "Ignora todo lo que ocurre después de recuperar la inversión y, en su versión simple, ni siquiera descuenta. Su sencillez es el problema, no la virtud.",
+                "Como filtro es razonable: en un país con riesgo de expropiación, recuperar la inversión en tres años en lugar de doce cambia de verdad la exposición.",
+                "Si los flujos son difíciles de estimar, el plazo de recuperación se calcula sobre esas mismas estimaciones dudosas y encima usa menos información.",
+                "Sí aporta: responde a una pregunta legítima sobre exposición temporal. Lo que no puede es responder a la pregunta de si el proyecto crea valor.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

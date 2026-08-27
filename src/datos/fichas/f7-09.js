@@ -173,6 +173,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Se descuentan los flujos de caja libres al WACC y se obtienen 50 millones. ¿Cuánto valen los fondos propios?",
+              opciones: [
+                "50 millones: es el valor que arroja el descuento",
+                "50 millones menos la deuda neta: el descuento al WACC da el valor del negocio, no el de los accionistas",
+                "50 millones más la tesorería disponible",
+                "50 millones menos el patrimonio neto contable",
+              ],
+              correcta: 1,
+              porque: [
+                "El flujo de caja libre remunera a acreedores y accionistas, y el WACC es la media de lo que exigen ambos: el resultado pertenece a los dos.",
+                "Confundirlos sobrevalora la participación en el importe íntegro de la deuda, que en empresas apalancadas puede ser la mitad del valor.",
+                "La tesorería forma parte de la deuda neta y ya interviene en ese ajuste; sumarla aparte la contaría dos veces.",
+                "El patrimonio neto contable no interviene en el puente entre valor de empresa y valor de los fondos propios.",
+              ],
+            },
+            {
+              q: "¿Cuál de estos múltiplos está mal construido?",
+              opciones: [
+                "EV / EBITDA",
+                "EV / beneficio neto",
+                "PER, es decir, precio / beneficio neto",
+                "EV / ventas",
+              ],
+              correcta: 1,
+              porque: [
+                "El EBITDA es anterior a intereses, así que corresponde a todos los proveedores de fondos, igual que el valor de empresa. Es coherente.",
+                "El numerador incluye a los acreedores y el denominador es una magnitud que ya ha pagado los intereses: se compara el valor de todos con el resultado de unos pocos.",
+                "El PER es coherente por el otro lado: precio de las acciones sobre resultado del accionista.",
+                "Las ventas son anteriores a cualquier remuneración financiera, así que casan con el valor de empresa.",
+              ],
+            },
+            {
+              q: "¿Cuál es la comprobación más barata para detectar errores en un descuento de flujos?",
+              opciones: [
+                "Recalcular el WACC con datos de mercado actualizados",
+                "Mirar qué múltiplo sobre EBITDA implica el valor terminal y compararlo con lo que se paga en el sector",
+                "Repetir la proyección con un año más de horizonte explícito",
+                "Contrastar el resultado con el patrimonio neto contable",
+              ],
+              correcta: 1,
+              porque: [
+                "Recalcular el WACC es útil, pero no revela si la g supuesta ha producido un valor terminal disparatado.",
+                "Es la verificación que más errores detecta: si el terminal implica un múltiplo muy por encima del que se paga en el sector, el modelo está diciendo algo que el mercado no respalda.",
+                "Alargar el horizonte no comprueba nada: traslada el problema a unos supuestos aún más frágiles.",
+                "El valor contable no es referencia de valoración: omite marca, cartera de clientes y equipo humano, que suelen ser lo que se compra.",
+              ],
+            },
+            {
+              q: "¿Cómo se eligen las empresas comparables para una valoración por múltiplos?",
+              opciones: [
+                "Por epígrafe de actividad, para asegurar que operan en el mismo sector",
+                "Porque compartan los determinantes del valor: crecimiento, margen, intensidad de capital y riesgo",
+                "Por tamaño similar en cifra de negocio",
+                "Por cotizar en el mismo mercado y con liquidez parecida",
+              ],
+              correcta: 1,
+              porque: [
+                "El sector es un indicio grueso: dos empresas del mismo epígrafe con márgenes del 4 % y del 25 % no admiten el mismo múltiplo.",
+                "El múltiplo resume esos cuatro factores en un número. Si difieren, el múltiplo no es trasladable por mucho que coincida la actividad.",
+                "El tamaño influye en la liquidez y en algunas primas, pero no es lo que determina el múltiplo.",
+                "El mercado de cotización afecta a la comparabilidad del dato, no a que el negocio subyacente sea equiparable.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

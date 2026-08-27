@@ -156,6 +156,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Qué distingue a las necesidades operativas de fondos del fondo de maniobra?",
+              opciones: [
+                "Nada: son dos nombres de la misma magnitud, calculada de distinta forma",
+                "Las NOF son lo que el negocio necesita; el fondo de maniobra, lo que la estructura financiera proporciona",
+                "Las NOF se calculan a coste y el fondo de maniobra a precio de venta",
+                "Las NOF son a corto plazo y el fondo de maniobra a largo",
+              ],
+              correcta: 1,
+              porque: [
+                "Se calculan con partidas parecidas, y de ahí viene la confusión, pero significan cosas opuestas.",
+                "Si las NOF superan al fondo de maniobra, la diferencia hay que financiarla con recursos negociados: ese hueco es el problema de tesorería que hay que ver venir.",
+                "La valoración de las partidas es la misma en ambos casos; la diferencia es conceptual, no de criterio de medida.",
+                "Ambas se construyen sobre partidas corrientes. Lo que las separa es que una mide necesidad y la otra cobertura.",
+              ],
+            },
+            {
+              q: "Contablemente las NOF son activo corriente. ¿Cómo deben tratarse desde el punto de vista financiero?",
+              opciones: [
+                "Como activo a corto plazo: cada partida rota en pocos meses",
+                "Como inversión permanente: el nivel agregado no baja mientras el negocio funcione, aunque cada partida concreta rote",
+                "Como un gasto del ejercicio, ya que se renuevan continuamente",
+                "Como pasivo, porque su financiación exige recursos ajenos",
+              ],
+              correcta: 1,
+              porque: [
+                "Cada factura de cliente se cobra, sí, pero la sustituye otra: lo que rota son las partidas individuales, no el saldo.",
+                "Por eso financiarlas con recursos a corto es un desajuste estructural: se está cubriendo una inversión permanente con dinero que puede desaparecer.",
+                "No son gasto: son dinero inmovilizado que sigue perteneciendo a la empresa y que vuelve al liquidar el negocio.",
+                "Son una inversión, no una fuente. Que haya que financiarlas no las convierte en pasivo.",
+              ],
+            },
+            {
+              q: "Un proveedor ofrece un 2 % de descuento por pagar a 10 días en lugar de a 60. ¿Conviene aceptarlo?",
+              opciones: [
+                "No: renunciar a 50 días de financiación gratuita por un 2 % no compensa",
+                "Sí casi siempre: equivale a un coste anual en torno al 15,7 %, más caro que casi cualquier financiación disponible",
+                "Es indiferente: un 2 % es una cifra marginal",
+                "Solo si la empresa tiene exceso de tesorería sin remunerar",
+              ],
+              correcta: 1,
+              porque: [
+                "La financiación no es gratuita: el precio con aplazamiento lleva el coste dentro, solo que no figura como gasto financiero.",
+                "Un 2 % durante 50 días, capitalizado al año, da alrededor del 15,7 %. Rechazar el descuento es contratar crédito a ese tipo sin darse cuenta.",
+                "El 2 % es marginal como porcentaje sobre la compra y enorme como tipo anual: lo que engaña es no anualizarlo.",
+                "Conviene aunque haya que pedir prestado para pagar antes, porque el crédito bancario será casi con seguridad más barato que ese 15,7 %.",
+              ],
+            },
+            {
+              q: "Un plan de negocio proyecta duplicar las ventas en tres años. ¿Qué es lo que más se olvida?",
+              opciones: [
+                "Ajustar los precios por inflación",
+                "Proyectar las NOF, que crecen con las ventas y absorben caja en la misma proporción",
+                "Revisar la amortización del inmovilizado existente",
+                "Incorporar el efecto fiscal del mayor beneficio",
+              ],
+              correcta: 1,
+              porque: [
+                "La inflación suele contemplarse; lo que se omite es una salida de caja mucho mayor.",
+                "Es el error más caro de los planes de negocio: crecer vendiendo a crédito y con más almacén consume dinero, y el plan enseña beneficios mientras la tesorería se agota.",
+                "La amortización no mueve caja, así que su revisión no cambia la necesidad de financiación del crecimiento.",
+                "El impuesto se calcula casi siempre; lo que no aparece es el circulante que hay que financiar antes de cobrar nada.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

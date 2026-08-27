@@ -165,6 +165,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Una empresa ha gastado 200.000 € en un estudio de viabilidad. ¿Deben incluirse en los flujos del proyecto?",
+              opciones: [
+                "Sí: son un desembolso real atribuible al proyecto",
+                "No: son coste hundido, irrecuperable y ajeno a la decisión de acometer o no el proyecto",
+                "Sí, repartidos a lo largo de la vida del proyecto",
+                "No, salvo que el estudio pueda venderse a un tercero",
+              ],
+              correcta: 1,
+              porque: [
+                "Son reales y ya están gastados: no cambian por decidir en un sentido o en otro, y los flujos relevantes son los incrementales.",
+                "Incluirlo lleva tanto a rechazar proyectos buenos —porque el estudio los hace parecer caros— como a persistir en malos para «no perder lo invertido».",
+                "Repartirlo no lo convierte en incremental: sigue siendo dinero que ya salió pase lo que pase.",
+                "Ese es justamente el matiz correcto: si el estudio tiene valor de venta, ese valor es un coste de oportunidad de usarlo, no el importe gastado.",
+              ],
+            },
+            {
+              q: "El proyecto usará una nave que la empresa ya tiene vacía y en propiedad. ¿Qué coste se imputa?",
+              opciones: [
+                "Ninguno: la nave ya es de la empresa y no supone desembolso",
+                "El coste de oportunidad: lo que la nave rendiría en su mejor uso alternativo, por ejemplo alquilada",
+                "Su valor contable neto, repartido entre los años del proyecto",
+                "Su precio de adquisición actualizado por inflación",
+              ],
+              correcta: 1,
+              porque: [
+                "Usar un activo propio no es gratis: el proyecto consume una capacidad que podría destinarse a otra cosa.",
+                "Y no solo con naves: terrenos, marcas y tiempo de directivos son los casos habituales, y todos se olvidan por la misma razón, que no generan factura.",
+                "El valor contable es un dato histórico que no dice nada sobre lo que la nave puede rendir hoy.",
+                "El precio de compra actualizado tampoco mide el rendimiento alternativo, que es lo único relevante.",
+              ],
+            },
+            {
+              q: "¿Por qué no deben restarse los intereses de los flujos de caja del proyecto?",
+              opciones: [
+                "Porque los intereses no son un gasto deducible del proyecto",
+                "Porque el coste de la financiación ya está en la tasa de descuento, y restarlo también del numerador lo cuenta dos veces",
+                "Porque los intereses corresponden a la empresa y no al proyecto",
+                "Porque su importe es imposible de estimar antes de contratar la financiación",
+              ],
+              correcta: 1,
+              porque: [
+                "Son deducibles fiscalmente, y ese efecto se recoge por otra vía: en la tasa, mediante el WACC después de impuestos.",
+                "Descontar es precisamente la operación que penaliza el flujo por el coste del dinero. Hacerlo dos veces hunde el VAN de forma artificial.",
+                "El proyecto se financia como el resto de la empresa; el motivo de excluirlos no es de atribución sino de doble cómputo.",
+                "Suelen ser perfectamente estimables. El problema no es medirlos sino dónde colocarlos.",
+              ],
+            },
+            {
+              q: "En una valoración, el valor residual supone dos tercios del total. ¿Qué conviene hacer?",
+              opciones: [
+                "Nada: es habitual en negocios en crecimiento y confirma su potencial",
+                "Comprobar los supuestos: la valoración no descansa en los flujos proyectados sino en dos parámetros de una fórmula",
+                "Eliminar el valor residual y quedarse solo con el período explícito",
+                "Alargar el período explícito hasta que el residual baje del 10 %",
+              ],
+              correcta: 1,
+              porque: [
+                "Es habitual, y precisamente por eso conviene mirarlo: lo frecuente no es lo mismo que lo fundado.",
+                "Todo el peso recae sobre la g de crecimiento perpetuo y la tasa de descuento. Con una g superior al crecimiento nominal de la economía, el negocio acabaría siendo mayor que el PIB.",
+                "Eliminarlo infravalora el negocio: un proyecto no deja de generar flujos al terminar el horizonte de proyección.",
+                "Alargar el período explícito solo traslada el problema: los años lejanos se proyectan con supuestos aún más frágiles.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

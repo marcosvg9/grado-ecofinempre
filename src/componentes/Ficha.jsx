@@ -40,7 +40,7 @@ export default function Ficha({ ficha, estudiado, alternar, volver, siguiente, i
             <h2 className="seccionTit">{sec.titulo}</h2>
           </div>
           {sec.contenido.map((bl, j) => (
-            <BloqueContenido bloque={bl} key={j} />
+            <BloqueContenido bloque={bl} codigo={ficha.codigo} key={j} />
           ))}
         </section>
       ))}
