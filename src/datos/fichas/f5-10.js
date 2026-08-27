@@ -175,6 +175,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Qué rango tiene la memoria dentro de las cuentas anuales?",
+              opciones: [
+                "Es un anexo explicativo de carácter voluntario",
+                "Es una cuenta anual con el mismo rango que el balance",
+                "Es obligatoria solo para empresas auditadas",
+                "Es un documento de gestión, no contable",
+              ],
+              correcta: 1,
+              porque: [
+                "Tratarla como prescindible deja fuera la mitad de la información: contiene las políticas contables, los cambios de criterio, las contingencias y la conciliación fiscal.",
+                "Sin ella no se sabe con qué criterios se han elaborado las cifras, así que el balance por sí solo no es interpretable.",
+                "Es obligatoria para todas las que formulan cuentas anuales, auditadas o no.",
+                "Es una cuenta anual, con la misma exigencia formal que el resto.",
+              ],
+            },
+            {
+              q: "Una empresa presenta beneficio y a la vez consume caja. ¿Es contradictorio?",
+              opciones: [
+                "Sí: si gana dinero, tiene que entrar dinero",
+                "No: el resultado se calcula por devengo y el flujo de efectivo mide cobros y pagos",
+                "Sí, salvo que haya repartido dividendos",
+                "No, pero indica que la contabilidad está mal llevada",
+              ],
+              correcta: 1,
+              porque: [
+                "Ganar y cobrar son cosas distintas: una empresa que crece rápido factura mucho, cobra tarde y paga a sus proveedores antes.",
+                "El resultado incluye amortizaciones, deterioros y provisiones que no son caja, y excluye movimientos de circulante que sí lo son. Por eso hacen falta los dos estados.",
+                "El dividendo es una salida de caja, pero la divergencia existe también sin repartir nada.",
+                "Es la situación normal de muchas empresas sanas, y no indica ningún error.",
+              ],
+            },
+            {
+              q: "El resultado del ejercicio es positivo. ¿Basta ese dato?",
+              opciones: [
+                "Sí: es la cifra que resume el desempeño",
+                "No: puede esconder una explotación en pérdidas compensada por una venta de inmovilizado",
+                "Sí, si además el flujo de explotación es positivo",
+                "No, pero solo importa si la empresa cotiza",
+              ],
+              correcta: 1,
+              porque: [
+                "Es una cifra final que agrega cosas de naturaleza muy distinta y con muy distinta capacidad de repetirse.",
+                "Por eso la cuenta de resultados se lee en cascada: resultado de explotación, financiero y antes de impuestos. Lo recurrente y lo extraordinario no valen igual.",
+                "El flujo de explotación positivo es una buena señal adicional, pero no sustituye a leer la composición del resultado.",
+                "La cotización no cambia nada: la cascada informa igual en cualquier empresa.",
+              ],
+            },
+            {
+              q: "¿Para qué sirve el estado de cambios en el patrimonio neto?",
+              opciones: [
+                "Para detallar el reparto del dividendo",
+                "Para recoger los ingresos y gastos que van directamente a patrimonio neto sin pasar por la cuenta de resultados",
+                "Para conciliar el resultado contable con la base imponible",
+                "Para desglosar las reservas por su origen legal",
+              ],
+              correcta: 1,
+              porque: [
+                "El reparto es una de las partidas que muestra, pero no su razón de ser.",
+                "Determinados ajustes de valoración, subvenciones y coberturas no aparecen en la cuenta de resultados. Sin el ECPN se pierde una parte del rendimiento del ejercicio.",
+                "Esa conciliación está en la memoria, no en el ECPN.",
+                "El desglose de reservas figura en el balance y en la memoria.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

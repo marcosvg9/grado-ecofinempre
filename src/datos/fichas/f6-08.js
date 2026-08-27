@@ -178,6 +178,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Es correcto calcular el flujo de explotación como beneficio más amortización?",
+              opciones: [
+                "Sí: es el llamado cash flow, de uso general",
+                "No: ignora la variación del capital corriente, que puede cambiar la cifra por completo",
+                "Sí, siempre que no haya deterioros ni provisiones",
+                "No, porque además hay que sumar los intereses pagados",
+              ],
+              correcta: 1,
+              porque: [
+                "Su difusión no lo hace correcto: es una aproximación que omite justamente lo que suele explicar los apuros de tesorería.",
+                "En Arlanza ese cálculo daría 100.000 € frente a los 40.000 € reales: la diferencia está en clientes y existencias, que absorbieron caja sin pasar por el resultado.",
+                "Aunque no haya deterioros, el capital corriente sigue moviéndose: crecer vendiendo a crédito consume caja aunque el beneficio suba.",
+                "Los intereses ya están dentro del beneficio; lo que falta es la variación del circulante.",
+              ],
+            },
+            {
+              q: "Una empresa presenta flujo de inversión negativo. ¿Qué indica?",
+              opciones: [
+                "Que está perdiendo dinero en sus inversiones financieras",
+                "Que está invirtiendo, lo normal en un negocio vivo; la señal preocupante sería la contraria",
+                "Que ha tenido que vender activos para cubrir pérdidas",
+                "Que su inmovilizado se ha deteriorado durante el ejercicio",
+              ],
+              correcta: 1,
+              porque: [
+                "El signo del flujo de inversión no mide rendimiento, sino dirección: negativo significa salida de caja para comprar activos.",
+                "Un flujo de inversión positivo sostenido significa que la empresa está vendiendo su inmovilizado, y eso sí merece explicación.",
+                "Vender activos daría flujo de inversión positivo, precisamente el caso opuesto.",
+                "El deterioro no mueve caja: es un ajuste que se elimina al calcular el flujo de explotación.",
+              ],
+            },
+            {
+              q: "¿Por qué hay que mirar el signo conjunto de los tres flujos y no solo el de explotación?",
+              opciones: [
+                "Porque los tres deben sumar cero en un estado bien confeccionado",
+                "Porque el patrón de signos identifica la fase del negocio de un vistazo: dice también qué se está haciendo con la caja generada o de dónde sale la que falta",
+                "Porque el flujo de explotación es el menos fiable de los tres",
+                "Porque así se detectan errores de imputación entre epígrafes",
+              ],
+              correcta: 1,
+              porque: [
+                "No suman cero: suman la variación neta de tesorería del ejercicio.",
+                "Explotación positiva con inversión negativa y financiación negativa describe una empresa madura que se autofinancia y devuelve deuda; los tres positivos, una que se financia sin generar caja.",
+                "Es el más fiable de los tres en cuanto a lo que revela del negocio; lo que ocurre es que por sí solo no cuenta la historia completa.",
+                "Puede ayudar, pero esa no es la razón de leerlos juntos: la razón es diagnóstica.",
+              ],
+            },
+            {
+              q: "¿Puede tomarse el EBITDA como medida del flujo de caja?",
+              opciones: [
+                "Sí: excluye las partidas que no suponen movimiento de efectivo",
+                "No: además de excluir intereses e impuestos, ignora la inversión necesaria para mantener la capacidad y la variación del circulante",
+                "Sí, en empresas sin deuda financiera",
+                "No, salvo que se le reste la amortización del ejercicio",
+              ],
+              correcta: 1,
+              porque: [
+                "Excluye la amortización, sí, pero también excluye salidas de caja muy reales como los impuestos y los intereses.",
+                "Que la amortización no sea salida de caja no significa que la reposición del activo sea gratis. Un negocio intensivo en capital puede tener EBITDA alto y caja libre nula.",
+                "Incluso sin deuda quedan fuera los impuestos, la inversión de reposición y el circulante.",
+                "Restarle la amortización lo devuelve hacia el resultado operativo, que tampoco es caja: sigue faltando el circulante.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

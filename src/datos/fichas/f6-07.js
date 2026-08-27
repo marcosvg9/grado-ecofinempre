@@ -156,6 +156,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Qué resultado debe ir en el numerador del ROA?",
+              opciones: [
+                "El resultado neto, que es el que finalmente queda",
+                "El BAII, para que la rentabilidad del activo no quede contaminada por la estructura financiera",
+                "El resultado antes de impuestos, para neutralizar el efecto fiscal",
+                "El EBITDA, por ser el más comparable entre empresas",
+              ],
+              correcta: 1,
+              porque: [
+                "El resultado neto ya está después de intereses, así que mezcla lo que rinde el activo con cómo se ha financiado.",
+                "El ROA responde a «qué rinde lo invertido, sea de quien sea el dinero». Solo con el BAII puede después compararse con el coste de la deuda y aislar el efecto del apalancamiento.",
+                "Sigue estando después de intereses: el problema no es el impuesto sino el gasto financiero.",
+                "El EBITDA ignora la amortización, que es consumo real del activo cuya rentabilidad se quiere medir.",
+              ],
+            },
+            {
+              q: "El ROE de una empresa ha subido tres años seguidos. ¿Basta para concluir que va mejor?",
+              opciones: [
+                "Sí: el ROE es la medida sintética de la rentabilidad del accionista",
+                "No: hay que descomponerlo, porque puede venir de más deuda o de un neto reducido por recompras o pérdidas acumuladas",
+                "Sí, si además el sector no ha crecido",
+                "No, salvo que se compare con el ROE de los competidores",
+              ],
+              correcta: 1,
+              porque: [
+                "Es sintética, y por eso opaca: el mismo número puede proceder de vender caro, de vender mucho o de endeudarse.",
+                "Solo las dos primeras vías —margen y rotación— son mejora operativa. Subir por el multiplicador es asumir más riesgo, y un neto que encoge sube el ratio sin que nada mejore.",
+                "El comportamiento del sector no sustituye a la descomposición: el ROE puede subir por apalancamiento en un sector plano o en uno pujante.",
+                "La comparación con competidores ayuda, pero sin descomponer se comparan números igual de opacos.",
+              ],
+            },
+            {
+              q: "Para calcular el coste de la deuda, ¿debe incluirse el saldo de proveedores en el denominador?",
+              opciones: [
+                "Sí: es pasivo exigible como cualquier otro",
+                "No: el crédito comercial no devenga interés explícito, e incluirlo da un coste artificialmente bajo que exagera el diferencial apalancado",
+                "Sí, ponderado por su plazo medio de pago",
+                "No, porque los proveedores forman parte del patrimonio neto",
+              ],
+              correcta: 1,
+              porque: [
+                "Es exigible, pero no genera los gastos financieros que están en el numerador: el cociente perdería coherencia.",
+                "El coste de la deuda se calcula sobre la deuda que devenga intereses. Con proveedores dentro, el diferencial (ROA − coste de la deuda) parece mucho mayor de lo que es.",
+                "Ninguna ponderación arregla que ese pasivo no aporte gasto financiero explícito al numerador.",
+                "Los proveedores son pasivo corriente, no patrimonio neto. El motivo de excluirlos es otro: no llevan interés.",
+              ],
+            },
+            {
+              q: "Una empresa tiene ROE del 20 % con ROA del 10 % gracias al apalancamiento. Si el ROA cae al 2 %, ¿qué ocurre?",
+              opciones: [
+                "El ROE baja proporcionalmente, hasta el 4 %",
+                "El ROE puede volverse muy negativo: el multiplicador amplifica en ambas direcciones",
+                "El ROE se mantiene, porque la deuda ya estaba contratada",
+                "El ROE baja al 10 %, el nivel que tendría sin deuda",
+              ],
+              correcta: 1,
+              porque: [
+                "No es proporcional: el coste de la deuda es fijo y no baja con el ROA, así que se come una porción creciente del resultado.",
+                "Cuando el ROA cae por debajo del coste de la deuda, el diferencial se vuelve negativo y el multiplicador lo agranda. La misma palanca que daba el 20 % es la que hunde.",
+                "Que esté contratada es precisamente el problema: los intereses hay que pagarlos igual con un ROA del 2 %.",
+                "Sin deuda el ROE sería aproximadamente el ROA, es decir, el 2 %, no el 10 %.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

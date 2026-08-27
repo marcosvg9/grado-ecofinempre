@@ -165,6 +165,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Una empresa tiene 225.000 € de patrimonio neto. ¿Cuánto dinero puede repartir hoy?",
+              opciones: [
+                "225.000 €, que es lo que pertenece a los socios",
+                "Depende de la tesorería: el neto es un residuo algebraico, no un saldo bancario",
+                "La mitad, por prudencia",
+                "Nada hasta que cierre el ejercicio",
+              ],
+              correcta: 1,
+              porque: [
+                "Pertenece a los socios en sentido patrimonial, pero está invertido en naves, existencias y créditos a clientes, no aguardando en una cuenta.",
+                "En el ejemplo, esos 225.000 € de neto conviven con 12.000 € en el banco. Confundir ambas cosas produce decisiones de reparto imposibles de ejecutar.",
+                "La mitad es una cifra arbitraria: lo que limita el reparto es la liquidez disponible y las restricciones legales, no una proporción.",
+                "El cierre determina el resultado del ejercicio, pero también pueden repartirse reservas de años anteriores.",
+              ],
+            },
+            {
+              q: "¿Mide el balance el valor de la empresa?",
+              opciones: [
+                "Sí: recoge todos sus activos y pasivos",
+                "No: registra coste histórico corregido y deja fuera marca, cartera de clientes y conocimiento generados internamente",
+                "Sí, si se aplica el valor razonable a todas las partidas",
+                "No, pero se aproxima bastante en empresas industriales",
+              ],
+              correcta: 1,
+              porque: [
+                "Recoge los que cumplen los criterios de reconocimiento, que dejan fuera precisamente los intangibles autogenerados.",
+                "Por eso la diferencia entre valor contable y valor de mercado puede ser enorme, y por eso el fondo de comercio solo aflora cuando alguien compra la empresa.",
+                "El valor razonable se aplica a algunas partidas, pero no hace aparecer los activos que nunca se reconocieron.",
+                "En industriales la brecha suele ser menor, pero el problema conceptual es el mismo.",
+              ],
+            },
+            {
+              q: "¿Dónde se coloca la amortización acumulada en el balance?",
+              opciones: [
+                "En el pasivo, porque representa una obligación futura de reposición",
+                "En el activo con signo negativo: es una cuenta correctora que minora la partida a la que acompaña",
+                "En el patrimonio neto, como reserva",
+                "Fuera del balance, en la memoria",
+              ],
+              correcta: 1,
+              porque: [
+                "No hay ninguna obligación con nadie: la amortización no genera deuda ni exige desembolso.",
+                "Aparece a la izquierda restando del inmovilizado, de modo que la diferencia es el valor neto contable. Colocarla a la derecha descuadra el balance y desdibuja qué queda por amortizar.",
+                "Una reserva es un beneficio no repartido; la amortización es un reparto de coste.",
+                "Sí figura en el balance, y además la memoria detalla su movimiento.",
+              ],
+            },
+            {
+              q: "Una cadena de supermercados tiene fondo de maniobra negativo. ¿Es señal de alarma?",
+              opciones: [
+                "Sí: no puede atender sus deudas a corto plazo",
+                "No necesariamente: en distribución alimentaria es estructural y sano, porque se cobra antes de pagar",
+                "Sí, salvo que tenga líneas de crédito disponibles",
+                "No, porque el fondo de maniobra no mide liquidez",
+              ],
+              correcta: 1,
+              porque: [
+                "Un fondo de maniobra negativo no impide atender pagos si el ciclo de caja es favorable: el dinero entra antes de que venzan las facturas.",
+                "Cobra al contado y paga a proveedores a sesenta días, así que financia su actividad con dinero ajeno sin coste. Interpretar el signo sin mirar el ciclo lleva a diagnósticos falsos.",
+                "Las líneas de crédito son un colchón adicional, pero el fondo negativo es sano aquí por el ciclo, no por el respaldo bancario.",
+                "Sí mide algo sobre liquidez estructural; lo que ocurre es que su lectura depende del sector.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

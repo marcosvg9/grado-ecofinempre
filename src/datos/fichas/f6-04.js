@@ -194,6 +194,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Con qué margen se calcula el punto muerto?",
+              opciones: [
+                "Con el margen bruto, que es el que figura en la cuenta de resultados",
+                "Con el margen de contribución, que descuenta solo los costes variables",
+                "Con el margen neto, ya descontados todos los gastos",
+                "Con cualquiera de los tres, según la información disponible",
+              ],
+              correcta: 1,
+              porque: [
+                "El margen bruto ya lleva incorporados costes fijos de producción imputados a las unidades vendidas, así que los descontaría dos veces.",
+                "El punto muerto pregunta cuántas unidades hacen falta para cubrir los fijos, y para eso el numerador tiene que estar limpio de fijos.",
+                "El margen neto descuenta todo, incluidos los fijos que precisamente se quieren cubrir: el cálculo no tendría sentido.",
+                "No son intercambiables: solo uno separa correctamente lo que varía de lo que no.",
+              ],
+            },
+            {
+              q: "El grado de apalancamiento operativo de una empresa se calculó en un año de ventas altas. ¿Sirve para predecir el comportamiento en un año flojo?",
+              opciones: [
+                "Sí: el GAO es una característica estructural de la empresa",
+                "No: depende del nivel de actividad y crece al acercarse al punto muerto",
+                "Sí, corrigiéndolo por la inflación del período",
+                "No, salvo que la estructura de costes fijos no haya cambiado",
+              ],
+              correcta: 1,
+              porque: [
+                "La estructura de costes sí es estructural; el GAO no, porque es un cociente que depende de dónde estén las ventas respecto del punto muerto.",
+                "Cerca del punto muerto el beneficio es pequeño y cualquier variación de ventas lo mueve en porcentajes enormes: el mismo negocio tiene un GAO distinto cada año.",
+                "La inflación no interviene en el cálculo. Lo que varía es el volumen respecto del umbral de rentabilidad.",
+                "Aunque los costes fijos sean idénticos, el GAO cambia solo con el nivel de ventas. Esa es justamente la trampa.",
+              ],
+            },
+            {
+              q: "Una empresa multiproducto quiere su punto muerto. ¿Cómo debe calcularlo?",
+              opciones: [
+                "En unidades, sumando las de todos los productos",
+                "En euros de venta, con el ratio de margen de contribución medio ponderado por la mezcla",
+                "Producto a producto, repartiendo los fijos por partes iguales",
+                "En unidades del producto más vendido, tomándolo como referencia",
+              ],
+              correcta: 1,
+              porque: [
+                "Una unidad de un producto y una de otro no cubren lo mismo: sumarlas es sumar magnitudes distintas.",
+                "Y con una advertencia incorporada: el resultado vale para esa mezcla. Si cambia el peso de cada producto, cambia el punto muerto sin que se haya movido ningún coste.",
+                "El reparto por partes iguales es arbitrario y hace depender el punto muerto de cuántos productos haya en el catálogo.",
+                "Tomar un producto como referencia supone implícitamente que la mezcla no varía, y además ignora los márgenes del resto.",
+              ],
+            },
+            {
+              q: "Un apalancamiento operativo alto, ¿qué indica sobre la empresa?",
+              opciones: [
+                "Que está bien gestionada: aprovecha mejor cada euro de venta adicional",
+                "Que está expuesta al ciclo: amplifica tanto las subidas como las caídas de ventas",
+                "Que tiene poca deuda, ya que el apalancamiento operativo y el financiero son excluyentes",
+                "Que su punto muerto es bajo",
+              ],
+              correcta: 1,
+              porque: [
+                "En expansión parece brillante, sí. Pero es la misma empresa que en recesión parecerá pésima: la cifra no mide calidad de gestión.",
+                "Es una medida de sensibilidad, no de mérito. La lectura correcta es «cuánto se mueve mi beneficio si las ventas se mueven un 1 %».",
+                "Son cosas distintas y acumulables: el operativo viene de los costes fijos y el financiero de los intereses. Una empresa puede tener los dos altos.",
+                "Al contrario: un GAO alto viene de un peso elevado de costes fijos, que empuja el punto muerto hacia arriba, no hacia abajo.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

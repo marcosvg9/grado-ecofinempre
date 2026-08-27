@@ -161,6 +161,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "La producción real ha sido distinta de la presupuestada. ¿Contra qué presupuesto hay que comparar los costes reales?",
+              opciones: [
+                "Contra el presupuesto original, que es el que se aprobó",
+                "Contra el presupuesto flexibilizado al nivel de actividad real",
+                "Contra la media de los tres últimos ejercicios",
+                "Contra el presupuesto original corregido por inflación",
+              ],
+              correcta: 1,
+              porque: [
+                "Comparar con el rígido mezcla el efecto del volumen con el de la eficiencia: no se sabe si se gastó de más o simplemente se produjo de más.",
+                "Flexibilizar responde a la pregunta correcta: dado lo que realmente se produjo, ¿cuánto debería haber costado? Solo entonces la diferencia mide gestión.",
+                "La media histórica arrastra las ineficiencias del pasado y no es un estándar.",
+                "La inflación es una de las causas posibles de la desviación en precio, no un ajuste previo a la comparación.",
+              ],
+            },
+            {
+              q: "La desviación total en consumo de materiales es de apenas 200 €. ¿Puede darse por buena?",
+              opciones: [
+                "Sí: una desviación tan pequeña no merece análisis",
+                "No: las componentes se compensan, y puede esconder un ahorro grande en precio junto a un derroche grande en cantidad",
+                "Sí, si está dentro del margen de tolerancia habitual del 5 %",
+                "No, pero solo si la empresa audita sus estándares",
+              ],
+              correcta: 1,
+              porque: [
+                "Es precisamente el caso más peligroso: el agregado tranquiliza mientras las componentes, mucho mayores, se anulan entre sí.",
+                "Comprar materia prima barata y de mala calidad da desviación favorable en precio y desfavorable en cantidad, con total próximo a cero. Sin descomponer, no se ve.",
+                "El umbral de tolerancia se aplica a las componentes, no al agregado, justo por el efecto de compensación.",
+                "La auditoría de estándares es otra cuestión: la descomposición hace falta siempre.",
+              ],
+            },
+            {
+              q: "¿A qué precio debe valorarse la desviación en cantidad de materiales?",
+              opciones: [
+                "Al precio real de compra, que es el desembolso efectivo",
+                "Al precio estándar, para aislar la responsabilidad de producción de las condiciones de compra",
+                "Al precio medio del mercado en el período",
+                "Al precio estándar del ejercicio anterior, para dar continuidad a la serie",
+              ],
+              correcta: 1,
+              porque: [
+                "Al precio real, la desviación de producción quedaría contaminada por decisiones de compra sobre las que el taller no decide.",
+                "Toda la lógica del sistema es esa: cada desviación debe quedar en manos de quien puede actuar sobre ella. Por eso cantidad va a precio estándar.",
+                "El precio de mercado no es la referencia del sistema; el estándar sí, porque es el compromiso contra el que se mide.",
+                "Mezclaría el estándar de dos ejercicios y haría irreconciliable la suma de desviaciones con la diferencia total.",
+              ],
+            },
+            {
+              q: "El informe muestra una desviación favorable en mantenimiento. ¿Cómo debe interpretarse?",
+              opciones: [
+                "Como una buena noticia: se ha gastado menos de lo previsto",
+                "Como una etiqueta aritmética que hay que investigar: puede significar que el mantenimiento previsto simplemente no se hizo",
+                "Como un error de imputación, ya que el mantenimiento no admite estándar",
+                "Como un indicio de que el estándar estaba mal calculado",
+              ],
+              correcta: 1,
+              porque: [
+                "«Favorable» solo dice que el importe real fue menor que el estándar. Nada más.",
+                "Y la factura llega después, en averías. Lo mismo ocurre con formación o I+D: ahorrar en ellas se anota como favorable y se paga más tarde.",
+                "El mantenimiento admite estándar perfectamente; el problema es leer el signo como juicio de valor.",
+                "Puede serlo, pero es una hipótesis entre varias: lo que exige la desviación es investigar la causa, no aceptar el signo.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

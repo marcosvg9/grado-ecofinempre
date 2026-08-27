@@ -162,6 +162,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Qué significa el principio de prudencia?",
+              opciones: [
+                "Elegir siempre la cifra más baja del activo y la más alta del pasivo",
+                "Reconocer las pérdidas conocidas aunque no se hayan materializado, sin autorizar a infravalorar sistemáticamente",
+                "Dotar provisiones por cualquier riesgo imaginable",
+                "Aplazar el reconocimiento de ingresos hasta el cobro",
+              ],
+              correcta: 1,
+              porque: [
+                "Infravalorar de forma sistemática crea reservas ocultas, y eso es tan incorrecto como inflar el activo: distorsiona igual, solo que en la otra dirección.",
+                "La asimetría es deliberada —los riesgos se reconocen antes que las ganancias— pero está acotada: no es una licencia para reducir el resultado a voluntad.",
+                "Los riesgos remotos no se provisionan; hacerlo sería precisamente la infravaloración sistemática que la prudencia no ampara.",
+                "Eso contradiría el devengo, que es otro principio y no queda derogado por la prudencia.",
+              ],
+            },
+            {
+              q: "¿Qué es el valor razonable de un activo?",
+              opciones: [
+                "El valor de tasación que emita un experto independiente",
+                "El precio cotizado en mercado activo y, en su defecto, transacciones comparables y solo al final técnicas de valoración",
+                "El coste de adquisición actualizado por la inflación",
+                "El importe que la empresa espera obtener al venderlo algún día",
+              ],
+              correcta: 1,
+              porque: [
+                "La tasación es una técnica de valoración, que es el último recurso de la jerarquía y no el primero.",
+                "El orden importa mucho: cuanto más se baja en la jerarquía, más discrecional es la cifra y más explicación exige la memoria.",
+                "La actualización por inflación es otra convención distinta y no está entre los criterios del PGC.",
+                "Una expectativa propia no es un valor razonable: hace falta la referencia de un mercado o de transacciones reales.",
+              ],
+            },
+            {
+              q: "Una empresa es a la vez cliente y proveedor de otra. ¿Puede presentar el saldo neto?",
+              opciones: [
+                "Sí: refleja mejor la posición real entre ambas",
+                "No: figuran en bruto a uno y otro lado del balance, salvo derecho legal de compensación",
+                "Sí, si ambos saldos vencen en el mismo plazo",
+                "Sí, si la diferencia es pequeña",
+              ],
+              correcta: 1,
+              porque: [
+                "Compensar oculta el tamaño real del crédito concedido y de la deuda asumida, que son informaciones distintas para quien lee las cuentas.",
+                "El principio de no compensación protege esa información. Solo cede cuando existe un derecho legal exigible a liquidar por el neto.",
+                "La coincidencia de vencimientos no crea por sí sola el derecho de compensación.",
+                "La importancia relativa no ampara ocultar la estructura de una relación comercial.",
+              ],
+            },
+            {
+              q: "Un test de deterioro se resuelve con el valor en uso. ¿Qué exige especial cuidado?",
+              opciones: [
+                "Estimar bien la vida útil restante del activo",
+                "Justificar la tasa de descuento: un punto de diferencia cambia el resultado del test",
+                "Usar el mismo criterio que el ejercicio anterior",
+                "Contar con una tasación externa",
+              ],
+              correcta: 1,
+              porque: [
+                "La vida útil influye, pero el valor en uso es sobre todo sensible al descuento de los flujos futuros.",
+                "Es el criterio más manipulable de todos: debe reflejar el riesgo específico del activo y no la conveniencia del resultado, y la memoria tiene que explicarlo.",
+                "La uniformidad es exigible, pero por sí sola no impide que una tasa mal elegida se repita cada año.",
+                "Una tasación externa serviría para el valor razonable menos costes de venta, que es el otro término de la comparación.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

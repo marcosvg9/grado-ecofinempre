@@ -170,6 +170,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Qué determina la obligación de consolidar?",
+              opciones: [
+                "Superar el 50 % del capital de otra sociedad",
+                "El control efectivo, que puede existir con el 40 % si el resto está disperso o hay pactos parasociales",
+                "Que las sociedades operen en el mismo sector",
+                "Que la matriz y la filial compartan domicilio fiscal",
+              ],
+              correcta: 1,
+              porque: [
+                "El porcentaje es un indicio, no el criterio: la mayoría del capital suele dar control, pero ni es imprescindible ni siempre lo garantiza.",
+                "Y a la inversa: se puede tener más de la mitad sin controlar, si existen restricciones estatutarias o derechos de veto de terceros.",
+                "El sector es irrelevante: se consolida por control, aunque las actividades no tengan nada que ver.",
+                "El domicilio fiscal no interviene; de hecho, se consolidan filiales extranjeras.",
+              ],
+            },
+            {
+              q: "De las eliminaciones básicas de consolidación, ¿cuál es la que altera el resultado del grupo?",
+              opciones: [
+                "La eliminación de saldos recíprocos entre sociedades del grupo",
+                "La eliminación de los resultados internos no realizados",
+                "La eliminación de la inversión-fondos propios",
+                "Ninguna: las eliminaciones nunca tocan el resultado",
+              ],
+              correcta: 1,
+              porque: [
+                "Los saldos recíprocos afectan al balance —desaparecen un crédito y una deuda por el mismo importe— pero no al resultado.",
+                "Es la que más se descuida. Sin ella, un grupo puede inflar su beneficio moviendo existencias entre sociedades sin haber vendido nada fuera.",
+                "Elimina la participación contra los fondos propios de la filial y hace aflorar el fondo de comercio; es una operación de balance.",
+                "Esta sí lo toca, y por eso importa: el beneficio del grupo es solo el realizado frente a terceros.",
+              ],
+            },
+            {
+              q: "¿Dónde figuran los socios externos en el balance consolidado?",
+              opciones: [
+                "En el pasivo no corriente, como deuda a largo plazo con terceros",
+                "En el patrimonio neto, en una línea separada: son propietarios de una parte del grupo, no acreedores",
+                "En el activo, como menor valor de la participación",
+                "Fuera del balance, solo mencionados en la memoria",
+              ],
+              correcta: 1,
+              porque: [
+                "No son acreedores: no tienen derecho a cobrar un importe cierto, sino participación en el neto de la filial.",
+                "Colocarlos en el pasivo distorsiona el endeudamiento del grupo y todos los ratios que se construyen sobre él.",
+                "La participación se elimina en la consolidación; los externos aparecen en el neto, no minorando un activo.",
+                "Figuran en el propio balance, en el patrimonio neto, con la denominación de participaciones no dominantes.",
+              ],
+            },
+            {
+              q: "Un grupo tiene una asociada muy endeudada, integrada por puesta en equivalencia. ¿Qué muestran las cuentas consolidadas?",
+              opciones: [
+                "Los activos y deudas de la asociada, en proporción al porcentaje de participación",
+                "Solo el valor neto de la participación: los activos y las deudas de la asociada no aparecen",
+                "Los activos y deudas de la asociada al 100 %, con socios externos por el resto",
+                "Nada de la asociada, que queda fuera del perímetro",
+              ],
+              correcta: 1,
+              porque: [
+                "Ese es el método de integración proporcional, que no es el que se aplica a las asociadas.",
+                "Por eso un grupo puede presentar un endeudamiento aparente muy inferior al real: la deuda vive en asociadas que solo figuran por una cifra neta.",
+                "La integración global al 100 % con socios externos se reserva a las sociedades dependientes, es decir, a las controladas.",
+                "Sí entra en el perímetro, pero por el método de puesta en equivalencia, no ignorada.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

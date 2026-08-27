@@ -175,6 +175,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un bono a coste amortizado paga un cupón de 5.000 €. ¿Cuál es el ingreso financiero del ejercicio?",
+              opciones: [
+                "5.000 €, que es lo cobrado",
+                "El coste amortizado inicial multiplicado por el tipo de interés efectivo, que rara vez coincide con el cupón",
+                "La diferencia entre el valor razonable de cierre y el de apertura",
+                "El cupón más la amortización de la prima",
+              ],
+              correcta: 1,
+              porque: [
+                "El cupón es un flujo de caja, no el ingreso devengado. Coinciden solo si el bono se compró exactamente a la par y sin costes de transacción.",
+                "$\\text{Ingreso}_t = \\mathrm{CA}_{t-1} \\times \\mathrm{TIE}$. La diferencia entre ingreso y cupón es precisamente lo que ajusta el coste amortizado cada periodo.",
+                "Ese sería el criterio de un activo valorado a valor razonable, que es otra cartera distinta.",
+                "Va en la dirección correcta pero desordenada: el ingreso se calcula directamente con el tipo efectivo, y de ahí sale por diferencia el ajuste del valor contable.",
+              ],
+            },
+            {
+              q: "¿Van siempre a gasto los costes de transacción de una compra de activos financieros?",
+              opciones: [
+                "Sí: son gastos del ejercicio en que se incurren",
+                "No: depende de la cartera; a coste amortizado y a valor razonable con cambios en patrimonio neto se incorporan al valor inicial",
+                "No: siempre se capitalizan",
+                "Sí, salvo que superen el 5 % del importe de la operación",
+              ],
+              correcta: 1,
+              porque: [
+                "Es cierto solo en la cartera de valor razonable con cambios en resultados, donde llevarlos al activo no tendría sentido porque se revaloraría al instante.",
+                "En las demás carteras forman parte del precio de adquisición, y en las de coste amortizado entran además en el cálculo del tipo de interés efectivo.",
+                "Capitalizarlos siempre es el error simétrico: en la cartera de valor razonable con cambios en resultados no procede.",
+                "No hay ningún umbral de ese tipo: el criterio es la cartera, no la magnitud.",
+              ],
+            },
+            {
+              q: "¿Cómo se clasifica hoy un activo financiero en el PGC?",
+              opciones: [
+                "Por la intención de la dirección al adquirirlo",
+                "Por el modelo de negocio con que se gestiona y las características de sus flujos contractuales",
+                "Por su plazo de vencimiento",
+                "Por si cotiza o no en un mercado organizado",
+              ],
+              correcta: 1,
+              porque: [
+                "Es el criterio anterior a la reforma de 2021, y sigue apareciendo en manuales en circulación. Dependía de una declaración de intenciones difícil de verificar.",
+                "Los dos filtros son objetivos: cómo se gestiona el conjunto de activos y si los flujos son solo principal e intereses. Eso decide coste amortizado o valor razonable.",
+                "El plazo influye en la presentación como corriente o no corriente, no en la cartera de valoración.",
+                "La cotización facilita determinar el valor razonable, pero no determina la clasificación.",
+              ],
+            },
+            {
+              q: "Se calcula el deterioro de un préstamo. ¿A qué tipo se descuentan los flujos esperados?",
+              opciones: [
+                "Al tipo de mercado vigente hoy",
+                "Al tipo de interés efectivo original de la operación",
+                "Al tipo libre de riesgo del plazo correspondiente",
+                "Al tipo medio de la cartera de préstamos",
+              ],
+              correcta: 1,
+              porque: [
+                "Emplear el tipo actual mezclaría el deterioro por riesgo de crédito con el efecto de los movimientos generales de tipos, que son fenómenos distintos.",
+                "El tipo efectivo original aísla lo que se quiere medir: cuánto menos se espera cobrar de este deudor concreto.",
+                "El tipo libre de riesgo no recoge el perfil de la operación ni su tipo pactado.",
+                "Un tipo medio de cartera diluye las condiciones específicas del préstamo deteriorado.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

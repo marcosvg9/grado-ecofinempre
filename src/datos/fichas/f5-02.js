@@ -187,6 +187,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "En contabilidad, ¿qué significan «debe» y «haber»?",
+              opciones: [
+                "Que la empresa debe dinero o lo tiene",
+                "Son nombres de posición: la izquierda y la derecha de una cuenta, sin ninguna valoración",
+                "Debe son los gastos y haber los ingresos",
+                "Debe es lo negativo y haber lo positivo",
+              ],
+              correcta: 1,
+              porque: [
+                "Es herencia del latín «debet» y «habet» de las cuentas personales del siglo XV, y ya no significa eso.",
+                "La caja aumenta por el debe y una deuda aumenta por el haber: ninguna de las dos cosas es buena ni mala por estar donde está.",
+                "Los gastos van al debe y los ingresos al haber, pero también van al debe los aumentos de activo, que no son gastos.",
+                "Es la lectura moral que más confunde: un aumento de deuda va al haber y no tiene nada de positivo.",
+              ],
+            },
+            {
+              q: "Un asiento registra la compra de una máquina como gasto de suministros, y cuadra. ¿Está bien?",
+              opciones: [
+                "Sí: si cuadra, el registro es correcto",
+                "No: el cuadre solo prueba consistencia aritmética, no que las cuentas elegidas sean las correctas",
+                "Sí, si el importe es pequeño",
+                "No, pero se corrige solo al cerrar el ejercicio",
+              ],
+              correcta: 1,
+              porque: [
+                "El sistema no puede descuadrar por construcción, así que el cuadre no distingue un asiento bueno de uno malo.",
+                "Deforma el resultado del ejercicio —imputa entero lo que debía repartirse en varios años— y hace desaparecer un activo del balance. Ambos estados quedan mal y ninguno lo delata.",
+                "El principio de importancia relativa permite simplificar importes pequeños, pero eso es una excepción declarada, no la regla.",
+                "El cierre regulariza y traslada saldos; no detecta cuentas mal elegidas.",
+              ],
+            },
+            {
+              q: "Una empresa vende en diciembre y cobra en marzo. ¿Cuándo se reconoce el ingreso?",
+              opciones: [
+                "En marzo, cuando entra el dinero",
+                "En diciembre: el devengo imputa según la corriente real de bienes y servicios",
+                "Repartido entre ambos meses",
+                "En marzo, salvo que se emita factura en diciembre",
+              ],
+              correcta: 1,
+              porque: [
+                "Confundir cobro con ingreso es el error de fondo más caro de la contabilidad, y el que hace que resultado y tesorería se comporten de forma distinta.",
+                "El ingreso nace cuando se entrega el bien; el cobro solo cancela el derecho que quedó registrado como cliente. Por eso una empresa puede tener beneficios y quedarse sin caja.",
+                "El reparto entre periodos se aplica a servicios que se prestan a lo largo del tiempo, no a una entrega puntual.",
+                "La factura documenta la operación, pero lo que fija el momento es la entrega, no el papel.",
+              ],
+            },
+            {
+              q: "¿Es la amortización una salida de dinero?",
+              opciones: [
+                "Sí: refleja el desgaste que habrá que reponer",
+                "No: es un reparto contable de un desembolso ya realizado, sin pago asociado",
+                "Sí, si se dota un fondo de reposición",
+                "Depende del método de amortización elegido",
+              ],
+              correcta: 1,
+              porque: [
+                "El desgaste es real, pero la reposición futura es otra operación distinta que ocurrirá cuando ocurra.",
+                "Por eso el estado de flujos de efectivo la suma de vuelta al partir del resultado: se restó del beneficio sin haber salido de la caja.",
+                "Dotar un fondo sería una decisión financiera aparte; la amortización contable no mueve tesorería por sí misma.",
+                "El método cambia el reparto en el tiempo, no el hecho de que no haya pago.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

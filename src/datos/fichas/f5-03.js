@@ -159,6 +159,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Son obligatorios los números de cuenta del PGC?",
+              opciones: [
+                "Sí: usar otra codificación invalida la contabilidad",
+                "No: lo obligatorio son los criterios de registro y valoración y los modelos oficiales de cuentas anuales",
+                "Sí, para sociedades; no, para empresarios individuales",
+                "Sí, salvo autorización del ICAC",
+              ],
+              correcta: 1,
+              porque: [
+                "El cuadro de cuentas es precisamente la parte menos vinculante del Plan, y muchos grupos usan planes internos propios.",
+                "Una empresa puede llamar a sus cuentas como quiera mientras aplique bien los criterios y presente el balance, la cuenta de pérdidas y ganancias, el estado de cambios en el patrimonio neto, el de flujos de efectivo y la memoria en los modelos previstos.",
+                "La forma jurídica no cambia el carácter no vinculante del cuadro de cuentas.",
+                "No hace falta autorización para algo que no es obligatorio.",
+              ],
+            },
+            {
+              q: "¿Por dónde conviene empezar a estudiar el PGC?",
+              opciones: [
+                "Por el cuadro de cuentas, que es la parte práctica",
+                "Por el marco conceptual: fija por qué se contabiliza y de él se derivan las normas de registro y valoración",
+                "Por las definiciones y relaciones contables, que explican cada cuenta",
+                "Por los modelos de cuentas anuales, que es lo que hay que presentar",
+              ],
+              correcta: 1,
+              porque: [
+                "Es el orden inverso al útil: es la parte menos vinculante y la más fácil de consultar cuando hace falta.",
+                "Sin el marco conceptual, cada operación nueva exige buscar un asiento en vez de razonarlo. Con él, las normas de registro y valoración se siguen casi solas.",
+                "Las definiciones ayudan a mecanizar, pero no explican por qué una operación se reconoce y otra no.",
+                "Los modelos son el resultado del proceso, no su fundamento.",
+              ],
+            },
+            {
+              q: "Una empresa lleva un ejercicio por debajo de los límites del PGC de Pymes. ¿Puede aplicarlo?",
+              opciones: [
+                "Sí: los límites se comprueban cada ejercicio",
+                "No: hay que cumplirlos durante dos ejercicios consecutivos",
+                "Sí, si además lo aprueba la junta general",
+                "Depende de si audita sus cuentas",
+              ],
+              correcta: 1,
+              porque: [
+                "Un solo ejercicio no basta, y el criterio es cuantitativo: no vale «ser pequeña» en sentido intuitivo.",
+                "La regla de los dos ejercicios evita que una empresa entre y salga del régimen simplificado según fluctúe su actividad. Y algunas operaciones quedan fuera del PGC de Pymes en todo caso.",
+                "La junta no decide qué plan contable aplica: lo determina la norma según los límites.",
+                "La obligación de auditar depende de otros umbrales y no determina el plan aplicable.",
+              ],
+            },
+            {
+              q: "¿Qué relación hay entre el PGC y el Impuesto sobre Sociedades?",
+              opciones: [
+                "Son el mismo cuerpo normativo con dos nombres",
+                "El resultado contable es el punto de partida de la base imponible, que se obtiene aplicando ajustes fiscales",
+                "El PGC se aplica solo a efectos fiscales",
+                "La norma fiscal prevalece sobre el PGC en caso de conflicto",
+              ],
+              correcta: 1,
+              porque: [
+                "Son dos cuerpos distintos con finalidades distintas: uno informa a terceros y el otro determina cuánto se paga.",
+                "De ahí las diferencias permanentes y temporarias, y de ahí que existan los impuestos diferidos que estudia la ficha 5.09.",
+                "El PGC tiene finalidad informativa mercantil; su uso fiscal es derivado.",
+                "En el registro contable prevalece el PGC; la norma fiscal opera después, mediante ajustes extracontables.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

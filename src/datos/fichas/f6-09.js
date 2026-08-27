@@ -160,6 +160,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿En qué se diferencia la contabilidad creativa del fraude contable?",
+              opciones: [
+                "En nada de fondo: ambas falsean la imagen de la empresa",
+                "La creativa opera dentro de la norma explotando el margen de estimación que esta concede; el fraude registra hechos falsos",
+                "En la cuantía: se llama fraude cuando supera el umbral de materialidad",
+                "En la intención: la creativa es involuntaria y el fraude deliberado",
+              ],
+              correcta: 1,
+              porque: [
+                "El efecto sobre la imagen puede parecerse, pero tratar todo como fraude lleva a acusaciones que no se sostienen y a no reconocer el problema real.",
+                "Por eso la creativa es más difícil de detectar y más frecuente: no hay norma que romper, solo estimaciones que estirar hasta el borde de lo defendible.",
+                "La materialidad afecta a la relevancia del dato, no a si los hechos registrados son ciertos.",
+                "La contabilidad creativa es perfectamente deliberada. Lo que la distingue es que se mantiene dentro del marco normativo.",
+              ],
+            },
+            {
+              q: "Una empresa presenta devengos altos en el ejercicio. ¿Es prueba de manipulación?",
+              opciones: [
+                "Sí: los devengos altos son el indicador más fiable de manipulación",
+                "No: son normales en empresas que crecen deprisa; lo que informa es el patrón sostenido, no un dato aislado",
+                "Sí, si además el auditor ha emitido salvedades",
+                "No, porque los devengos no guardan relación con la calidad del resultado",
+              ],
+              correcta: 1,
+              porque: [
+                "Ningún indicador aislado prueba nada: un año con ratio de caja sobre beneficio por debajo de 1 puede deberse a un cobro que cruzó el cierre.",
+                "Y hay que ajustar además por sector y fase: una constructora con obra plurianual o un negocio estacional presentan devengos altos por razones estructurales.",
+                "Las salvedades son relevantes, pero eso convierte al indicador en una pieza de un conjunto, que es justamente lo que se defiende aquí.",
+                "Sí la guardan, y mucha: por eso son un indicador útil. Lo que no son es una prueba por sí solos.",
+              ],
+            },
+            {
+              q: "El informe de auditoría es limpio, sin salvedades. ¿Descarta la contabilidad creativa?",
+              opciones: [
+                "Sí: es la función del auditor detectar precisamente eso",
+                "No: el auditor verifica el cumplimiento del marco normativo, y la contabilidad creativa por definición lo cumple",
+                "Sí, si el auditor es una de las grandes firmas",
+                "No, porque el auditor no revisa las estimaciones contables",
+              ],
+              correcta: 1,
+              porque: [
+                "El auditor detecta incumplimientos y errores materiales, no estimaciones agresivas que sigan siendo defendibles.",
+                "Una opinión sin salvedades no certifica que las estimaciones sean prudentes, solo que están dentro de lo aceptable. El margen entre «prudente» y «aceptable» es donde ocurre todo.",
+                "El tamaño de la firma no cambia el objeto de la auditoría, que es el cumplimiento del marco.",
+                "Sí las revisa, y valora si son razonables; el problema es que «razonable» admite un rango amplio.",
+              ],
+            },
+            {
+              q: "¿Puede haber interés en manipular el resultado a la baja?",
+              opciones: [
+                "No: manipular a la baja perjudica a la propia empresa",
+                "Sí: para pagar menos impuestos, negociar con la plantilla, preparar una exclusión de cotización o crear reservas latentes",
+                "No, salvo en empresas públicas",
+                "Sí, pero solo mediante fraude, no con contabilidad creativa",
+              ],
+              correcta: 1,
+              porque: [
+                "Buscar solo manipulación al alza deja fuera la mitad de los casos, y suele ser la mitad que pasa desapercibida.",
+                "Un resultado deprimido hoy también prepara un resultado holgado mañana, porque la manipulación siempre se revierte: lo diferido acaba apareciendo.",
+                "El incentivo fiscal o negociador existe en cualquier empresa, pública o privada.",
+                "Los mismos márgenes de estimación sirven en ambas direcciones: dotar deterioros generosos o alargar provisiones no exige salirse de la norma.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

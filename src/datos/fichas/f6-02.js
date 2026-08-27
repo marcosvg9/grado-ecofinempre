@@ -161,6 +161,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Qué determina si una empresa debe usar coste por órdenes o coste por procesos?",
+              opciones: [
+                "El tamaño de la empresa y sus recursos administrativos",
+                "La estructura física de la producción: si el producto es identificable y singular, por órdenes; si es homogéneo y continuo, por procesos",
+                "El sector en que opera, según la clasificación del PGC",
+                "La preferencia del director financiero, ya que ambos son admisibles",
+              ],
+              correcta: 1,
+              porque: [
+                "No es cuestión de sofisticación: una cementera pequeña necesita coste por procesos y un astillero grande necesita coste por órdenes.",
+                "El sistema de costes debe copiar la producción que pretende medir. Si no la copia, reparte coste con un criterio que la realidad no respalda.",
+                "El PGC no impone sistema de costes internos; la contabilidad de gestión no está normalizada.",
+                "No son intercambiables: aplicar el equivocado produce costes unitarios que no describen nada.",
+              ],
+            },
+            {
+              q: "Se aplica coste por procesos a una producción heterogénea, con unidades que consumen recursos muy distintos. ¿Qué ocurre?",
+              opciones: [
+                "El coste medio aproxima razonablemente el coste de cada unidad",
+                "El medio subvenciona sistemáticamente a las unidades caras a costa de las baratas, y el error no se compensa",
+                "Se obtiene un coste conservador, útil para fijar precios mínimos",
+                "El resultado global sale mal, pero los costes unitarios siguen siendo válidos",
+              ],
+              correcta: 1,
+              porque: [
+                "Un promedio solo aproxima cuando la dispersión es pequeña: la homogeneidad es la condición que hace legítimo el promedio, no un detalle.",
+                "Cada unidad barata carga con coste ajeno y cada cara aparece más rentable de lo que es, con lo que las decisiones de precio y de mezcla se toman al revés.",
+                "No es conservador: para unas unidades sobreestima y para otras subestima, así que no acota nada por ningún lado.",
+                "Es al revés: el coste total agregado es correcto; lo que queda inservible es su reparto entre unidades.",
+              ],
+            },
+            {
+              q: "Al calcular unidades equivalentes, ¿por qué no basta con un único porcentaje de avance?",
+              opciones: [
+                "Sí basta, siempre que se aplique de forma coherente todo el ejercicio",
+                "Porque materiales y costes de conversión avanzan a ritmos distintos, y un solo porcentaje produce un reparto que no agota el coste",
+                "Porque el porcentaje debe recalcularse cada mes por la inflación",
+                "Porque las unidades equivalentes solo se aplican a los materiales",
+              ],
+              correcta: 1,
+              porque: [
+                "La coherencia no arregla un supuesto falso: si los materiales entran al inicio y la conversión se incorpora poco a poco, un porcentaje único es incorrecto desde el primer día.",
+                "Lo habitual es que los materiales se incorporen al comienzo del proceso y la conversión de forma gradual, así que hacen falta dos columnas de unidades equivalentes.",
+                "La inflación no interviene: el porcentaje mide grado de avance físico, no precios.",
+                "Se aplican a ambos conceptos; precisamente por eso hay que separarlos.",
+              ],
+            },
+            {
+              q: "La tasa de aplicación de indirectos se fijó con datos presupuestados y al cierre no coincide con los indirectos reales. ¿Qué hay que hacer?",
+              opciones: [
+                "Nada: la tasa presupuestada es la que vale, y la diferencia se ignora",
+                "Regularizar la sobre o infraaplicación al cierre, imputándola al coste de las ventas o repartiéndola si es significativa",
+                "Recalcular hacia atrás todos los costes del ejercicio con la tasa real",
+                "Trasladar la diferencia al ejercicio siguiente como mayor o menor tasa",
+              ],
+              correcta: 1,
+              porque: [
+                "Ignorarla deja existencias y resultado valorados con una tasa que la realidad ya ha desmentido.",
+                "Es el paso que casi nunca coincide y casi siempre se olvida: la tasa se fija con datos previstos y la diferencia tiene que aterrizar en algún sitio antes de cerrar.",
+                "Rehacer todo el ejercicio anularía la utilidad de trabajar con tasas predeterminadas, que existen para poder valorar durante el año.",
+                "Arrastrarla al año siguiente traslada a un ejercicio un coste que pertenece a otro.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

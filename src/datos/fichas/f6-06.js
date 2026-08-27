@@ -165,6 +165,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Cuál es el valor «correcto» del ratio de circulante?",
+              opciones: [
+                "Entre 1,5 y 2, según la regla clásica",
+                "No hay uno: depende del ciclo del negocio, y un supermercado sano puede tener 0,6 y una constructora sana 2,5",
+                "Mayor que 1 en cualquier sector, por definición de solvencia a corto",
+                "El que iguale al del líder del sector",
+              ],
+              correcta: 1,
+              porque: [
+                "El 1,5 o el 2 no tienen fundamento analítico: se repiten por tradición y no resisten la comparación entre sectores.",
+                "Los ratios comparan contra el propio sector y contra la propia historia, nunca contra una cifra universal.",
+                "Un minorista cobra al contado y paga a 60 días: opera con circulante por debajo de 1 de forma perfectamente sana y sostenida.",
+                "Copiar al líder ignora que las diferencias de modelo de negocio dentro de un mismo sector pueden ser grandes.",
+              ],
+            },
+            {
+              q: "El fondo de maniobra de una empresa crece año tras año. ¿Es una buena señal?",
+              opciones: [
+                "Sí: significa que el activo corriente cubre cada vez mejor las deudas a corto",
+                "No necesariamente: puede deberse a un almacén que se llena de producto invendible y a facturas de clientes que no se cobran",
+                "Sí, siempre que se mantenga por encima del 20 % del activo total",
+                "No: un fondo de maniobra creciente es siempre síntoma de exceso de financiación a largo",
+              ],
+              correcta: 1,
+              porque: [
+                "Cubre en apariencia. El signo positivo no dice nada sobre la calidad de lo que hay dentro.",
+                "Hay que mirar la composición: existencias que rotan cada vez más despacio y saldos de clientes envejecidos engordan el fondo de maniobra mientras la liquidez empeora.",
+                "No existe ese umbral, y aunque existiera seguiría sin decir nada sobre la calidad de las partidas.",
+                "También puede serlo, pero afirmarlo siempre es tan mecánico como celebrarlo siempre. Hay que ver de qué está hecho.",
+              ],
+            },
+            {
+              q: "¿Sobre qué base se calculan los días de almacén?",
+              opciones: [
+                "Sobre las ventas del período",
+                "Sobre el coste de las ventas, porque el almacén está valorado a coste y las ventas incluyen margen",
+                "Sobre el activo corriente medio",
+                "Sobre la producción del período a precio de venta",
+              ],
+              correcta: 1,
+              porque: [
+                "Mezcla dos unidades distintas —existencias a coste frente a ventas con margen— y subestima sistemáticamente los días.",
+                "Numerador y denominador tienen que estar en la misma moneda: coste con coste. Cuanto mayor sea el margen, mayor el error de usar ventas.",
+                "El activo corriente incluye clientes y tesorería, que no tienen nada que ver con la rotación del almacén.",
+                "Vuelve a introducir el margen en el denominador y reproduce el mismo error.",
+              ],
+            },
+            {
+              q: "Una empresa presenta un ciclo de caja negativo. ¿Qué significa?",
+              opciones: [
+                "Que tiene un problema de liquidez y necesita financiación urgente",
+                "Que cobra antes de pagar: sus proveedores financian su actividad, posición excelente y típica de la distribución minorista",
+                "Que ha cometido un error de cálculo, porque el ciclo de caja no puede ser negativo",
+                "Que está vendiendo por debajo de coste",
+              ],
+              correcta: 1,
+              porque: [
+                "Es justo lo contrario: la empresa dispone del dinero de las ventas antes de tener que pagar las compras.",
+                "El crecimiento genera caja en lugar de consumirla, que es la razón de que estos modelos puedan expandirse sin financiación bancaria.",
+                "Puede serlo perfectamente: basta con que el plazo de pago a proveedores supere a la suma de los días de almacén y de cobro a clientes.",
+                "El ciclo de caja mide plazos, no márgenes. Son dimensiones independientes.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

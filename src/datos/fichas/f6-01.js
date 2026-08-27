@@ -163,6 +163,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Sobra capacidad en la fábrica. Llega un pedido especial a 15 € la unidad, y el coste completo unitario es de 18 €. ¿Conviene aceptarlo?",
+              opciones: [
+                "No: se vendería por debajo de coste y cada unidad daría 3 € de pérdida",
+                "Sí, si el coste variable unitario es menor de 15 €: los fijos ya están comprometidos y cada unidad aporta contribución",
+                "No, salvo que se pueda subir el precio hasta los 18 €",
+                "Sí, porque un pedido especial nunca afecta al resultado",
+              ],
+              correcta: 1,
+              porque: [
+                "Ese es exactamente el error: el coste completo mezcla el consumo real de la unidad adicional con un reparto de fijos que se producirían igualmente.",
+                "Si el variable es, por ejemplo, 12 €, cada unidad deja 3 € de margen de contribución que antes no existían. Rechazarla destruye ese margen sin ahorrar ningún fijo.",
+                "El precio de 18 € no es la referencia: la referencia es el coste que cambia si se acepta, y ese es el variable.",
+                "Sí afecta: lo mejora en la contribución total. Lo que no cambia son los costes fijos, y por eso la decisión se toma sobre el variable.",
+              ],
+            },
+            {
+              q: "¿Qué diferencia hay entre margen bruto y margen de contribución?",
+              opciones: [
+                "Ninguna: son dos nombres del mismo concepto",
+                "El bruto descuenta el coste completo de lo vendido (fijos incluidos); el de contribución descuenta solo el coste variable",
+                "El bruto se calcula antes de impuestos y el de contribución después",
+                "El bruto es por producto y el de contribución es de toda la empresa",
+              ],
+              correcta: 1,
+              porque: [
+                "Coinciden solo si no hay costes fijos de producción, que es un caso irreal.",
+                "De ahí que solo el margen de contribución sirva para el punto muerto o el apalancamiento operativo: son las magnitudes que exigen separar lo que varía de lo que no.",
+                "Ambos son magnitudes antes de impuestos; la diferencia está en qué costes descuentan, no en el momento del cálculo.",
+                "Los dos pueden calcularse por producto o en conjunto. El criterio que los separa es qué costes incorporan.",
+              ],
+            },
+            {
+              q: "La fábrica trabaja muy por debajo de su capacidad normal. ¿Qué se hace con los costes fijos correspondientes a la capacidad ociosa?",
+              opciones: [
+                "Se incorporan a las existencias, como el resto de los fijos de producción",
+                "Se llevan a gasto del ejercicio: son coste de subactividad y no pueden activarse",
+                "Se difieren hasta el ejercicio en que se recupere la actividad normal",
+                "Se reparten entre las unidades vendidas, no entre las producidas",
+              ],
+              correcta: 1,
+              porque: [
+                "Activarlos infla el almacén con un coste que no añade valor a las unidades: la ineficiencia de no producir no vale más existencias.",
+                "El PGC lo dice expresamente. La fórmula es CF × (1 − Actividad real / Actividad normal), y esa porción va directa a resultados.",
+                "Diferir la subactividad es justamente lo que se prohíbe: el período que sufre la ociosidad es el que soporta el coste.",
+                "El reparto entre vendidas o producidas es otra cuestión; la subactividad no entra en ningún reparto porque no se activa.",
+              ],
+            },
+            {
+              q: "Un ejercicio en que la producción supera a la venta arroja más beneficio por coste completo que por coste variable. ¿Qué ocurre después?",
+              opciones: [
+                "Nada: el coste completo genera beneficio adicional de forma permanente",
+                "Se invierte: el año en que se vacíe ese almacén, el coste completo dará un resultado deprimido en la misma cuantía",
+                "La diferencia se consolida como reserva",
+                "Se corrige sola al cierre mediante un ajuste por periodificación",
+              ],
+              correcta: 1,
+              porque: [
+                "El coste completo no crea beneficio, lo desplaza en el tiempo activando fijos en existencias no vendidas.",
+                "Por eso la diferencia entre ambos métodos es siempre (Q producida − Q vendida) × CF unitario, con el signo que corresponda: acumular almacén adelanta resultado y vaciarlo lo devuelve.",
+                "No hay ninguna reserva: la diferencia vive en la valoración de las existencias y se deshace cuando se venden.",
+                "No existe tal ajuste. La reversión ocurre por la vía natural de vender lo almacenado.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

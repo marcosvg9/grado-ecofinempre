@@ -164,6 +164,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿En qué se diferencian una provisión y un deterioro?",
+              opciones: [
+                "En nada: ambos reducen el resultado por un riesgo",
+                "El deterioro corrige a la baja un activo y figura minorándolo; la provisión es un pasivo y va a la derecha del balance",
+                "La provisión es fiscalmente deducible y el deterioro no",
+                "El deterioro es reversible y la provisión no",
+              ],
+              correcta: 1,
+              porque: [
+                "Ambos reducen el resultado, sí, pero se colocan en lados opuestos del balance y responden a hechos distintos.",
+                "Uno dice «este activo vale menos de lo que pone»; la otra dice «debo algo cuyo importe o vencimiento no sé con certeza». Confundirlos descoloca el balance entero.",
+                "La deducibilidad depende de cada figura concreta y no es lo que las distingue conceptualmente.",
+                "Ambas pueden revertir si desaparecen las circunstancias que las motivaron.",
+              ],
+            },
+            {
+              q: "Una empresa planea renovar su flota el año que viene por 2 millones. ¿Debe dotar provisión?",
+              opciones: [
+                "Sí: el gasto es previsible y cuantificable",
+                "No: no existe obligación presente, porque la empresa puede decidir no hacerlo",
+                "Sí, repartida entre este ejercicio y el siguiente",
+                "Solo si ya ha firmado el contrato de compra",
+              ],
+              correcta: 1,
+              porque: [
+                "Previsible y cuantificable no basta: falta la condición esencial, que es tener ya una obligación frente a un tercero.",
+                "Las tres condiciones son obligación presente, salida probable de recursos e importe estimable con fiabilidad. Aquí falla la primera, y por eso los gastos futuros previstos no se provisionan.",
+                "Repartir un gasto que aún no es obligación no lo convierte en provisión.",
+                "Con el contrato firmado sí habría obligación, pero entonces se registraría como compromiso de compra y no como provisión por gasto futuro.",
+              ],
+            },
+            {
+              q: "Una provisión a largo plazo aumenta cada año por el efecto del descuento. ¿Dónde va ese incremento?",
+              opciones: [
+                "A gastos de explotación, junto con la dotación original",
+                "A gastos financieros: es el paso del tiempo, no la actividad",
+                "Directamente contra reservas",
+                "No se registra hasta que la obligación venza",
+              ],
+              correcta: 1,
+              porque: [
+                "Llevarlo a explotación empeora artificialmente el resultado operativo y desdibuja la comparación con ejercicios anteriores.",
+                "$\\Delta_t = P_{t-1} \\times i$ es exactamente un coste financiero: lo que cuesta que la obligación esté un año más cerca.",
+                "Los movimientos contra reservas se reservan para cambios de criterio y errores de ejercicios anteriores.",
+                "Se registra cada ejercicio: si no, la provisión quedaría infravalorada hasta el final.",
+              ],
+            },
+            {
+              q: "Una empresa cobra en enero 12.000 € por un servicio de mantenimiento anual concentrado en verano. ¿Cómo periodifica?",
+              opciones: [
+                "1.000 € al mes, siguiendo el año natural de la factura",
+                "Según el servicio efectivamente prestado, aunque no sea uniforme",
+                "Todo en enero, cuando se cobra",
+                "Todo en diciembre, al completarse el servicio",
+              ],
+              correcta: 1,
+              porque: [
+                "Que la factura cubra el año natural no significa que el servicio se preste uniformemente: periodificar por criterio de facturación es cómodo y a veces incorrecto.",
+                "El devengo imputa según la corriente real de servicios. Si el grueso del trabajo es en verano, ahí es donde debe reconocerse el ingreso.",
+                "Cobrar no es devengar: en enero nace un pasivo por anticipo de clientes, no un ingreso.",
+                "Esperar al final concentra todo el ingreso en un mes y deja once ejercicios mensuales sin reflejar la actividad realizada.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

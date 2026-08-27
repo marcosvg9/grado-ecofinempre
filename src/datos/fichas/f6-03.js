@@ -170,6 +170,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Una empresa implanta un sistema ABC. ¿Qué efecto tiene sobre el coste total?",
+              opciones: [
+                "Lo reduce, porque elimina repartos ineficientes",
+                "Ninguno: no cambia el coste agregado ni un céntimo, solo cambia su atribución entre productos",
+                "Lo aumenta, por el coste de mantener el sistema",
+                "Lo reduce solo si los indirectos superan el 50 % del total",
+              ],
+              correcta: 1,
+              porque: [
+                "Un reparto no gasta recursos: distribuye una cifra que ya está gastada. Cambiar el criterio no devuelve dinero.",
+                "Lo que reduce el coste son las decisiones que se toman después, cuando por fin se ve dónde se consume de verdad. El sistema informa; ahorrar es una decisión posterior.",
+                "El mantenimiento tiene coste, pero esa no es la confusión que interesa: el error corriente es esperar que el ABC baje el coste de los productos por sí solo.",
+                "El peso de los indirectos determina cuánto distorsiona el reparto tradicional, no si el total cambia.",
+              ],
+            },
+            {
+              q: "¿Cuál es el criterio correcto para elegir un inductor de coste?",
+              opciones: [
+                "Que el dato ya se esté midiendo, para no añadir trabajo administrativo",
+                "Que explique por qué la actividad consume recursos",
+                "Que sea proporcional a las unidades producidas, para mantener la comparabilidad",
+                "Que reparta el coste de forma uniforme entre los productos",
+              ],
+              correcta: 1,
+              porque: [
+                "Elegir por disponibilidad del dato es cómodo y devuelve el sistema al punto de partida: se acaba repartiendo por volumen con otro nombre.",
+                "Si la actividad es «preparación de máquinas», el inductor es el número de preparaciones, no las unidades: una serie corta consume una preparación entera igual que una larga.",
+                "Usar unidades producidas para una actividad que no depende del volumen reproduce exactamente la subvención cruzada que el ABC pretende corregir.",
+                "La uniformidad no es un objetivo: si un producto consume más actividad, debe cargar más.",
+              ],
+            },
+            {
+              q: "El ABC atribuye a un producto un coste superior a su precio de venta. ¿Basta para retirarlo del catálogo?",
+              opciones: [
+                "Sí: vender por debajo de coste destruye valor de forma demostrada",
+                "No: los indirectos no se evaporan al retirarlo, se redistribuyen sobre los que quedan salvo que la capacidad se elimine o se reutilice",
+                "Sí, siempre que el sistema ABC esté correctamente implantado",
+                "No, porque el ABC no sirve para decisiones sobre la cartera de productos",
+              ],
+              correcta: 1,
+              porque: [
+                "El coste ABC es una atribución, no un desembolso evitable. Lo que se ahorra al retirar el producto es solo lo que deja de gastarse de verdad.",
+                "Una decisión de eliminación exige preguntarse qué costes desaparecen realmente. Si la nave, los supervisores y el sistema siguen ahí, el problema se traslada a los productos restantes.",
+                "La calidad de la implantación no cambia la naturaleza del dato: sigue siendo un reparto de costes en su mayoría comprometidos.",
+                "Sí sirve, y muy bien, para señalar dónde mirar. Lo que no puede es sustituir el análisis de costes evitables.",
+              ],
+            },
+            {
+              q: "¿Por qué no conviene repartir los costes de estructura —dirección general, jurídico, sede— entre los productos?",
+              opciones: [
+                "Porque el PGC lo prohíbe expresamente",
+                "Porque no tienen inductor razonable respecto de los productos, y forzar el reparto reintroduce la arbitrariedad que el ABC venía a eliminar",
+                "Porque son costes variables y no pertenecen al sistema de costes",
+                "Porque su importe es siempre pequeño y no altera el resultado",
+              ],
+              correcta: 1,
+              porque: [
+                "El PGC regula las cuentas anuales, no el diseño del sistema interno de gestión.",
+                "Dejarlos sin repartir y presentarlos como lo que son —coste de existir de la empresa— es más informativo que inventar una clave de reparto.",
+                "Son costes fijos de estructura, no variables. El problema no es su comportamiento sino la ausencia de relación causal con cada producto.",
+                "Suelen ser importes considerables, y repartidos arbitrariamente pueden dar la vuelta a la rentabilidad aparente de una línea.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {
