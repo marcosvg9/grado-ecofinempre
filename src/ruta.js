@@ -22,8 +22,34 @@ export const num = (codigo) => {
 };
 
 /* Orden topológico completo. Devuelve también qué aristas hubo que ablandar
-   y el mapa de prerrequisitos efectivo, que es el que usa todo lo demás. */
+   y el mapa de prerrequisitos efectivo, que es el que usa todo lo demás.
+
+   Se recorre DOS veces, y la razón es la posición de las fichas del ciclo.
+   La primera pasada solo descubre qué aristas hay que ceder, porque los
+   ciclos únicamente se detectan al atascarse; para entonces ya se ha
+   colocado todo lo demás que era colocable, y las fichas del ciclo caen al
+   final arrastrando a cuanto cuelga de ellas. Con el grafo real eso mandaba
+   IS-LM a la posición 107 de 168 —después de Black-Scholes y de la
+   reconciliación jerárquica— pese a que solo necesita 3.04, que está en la
+   19. La segunda pasada parte del grafo ya podado, así que esas fichas están
+   libres desde el primer paso y aterrizan donde les toca. */
 export function ordenTopologico(prerrequisitos) {
+  const primera = recorrer(prerrequisitos);
+  if (!primera.blandas.length) return primera;
+
+  const cedidas = new Set(primera.blandas.map(([n, p]) => `${n}>${p}`));
+  const podado = {};
+  for (const [n, reqs] of Object.entries(prerrequisitos)) {
+    podado[n] = reqs.filter((p) => !cedidas.has(`${n}>${p}`));
+  }
+
+  /* Las aristas cedidas son las de la primera pasada: sobre el grafo podado
+     ya no hay ciclos, así que la segunda no descubre ninguna nueva. */
+  const segunda = recorrer(podado);
+  return { ...segunda, blandas: primera.blandas };
+}
+
+function recorrer(prerrequisitos) {
   const nodos = Object.keys(prerrequisitos).sort((a, b) => num(a) - num(b));
   const pendientes = new Map(nodos.map((n) => [n, new Set(prerrequisitos[n])]));
   const orden = [];

@@ -106,6 +106,67 @@ describe("el grafo real del temario", () => {
   test("es determinista", () => {
     assert.deepEqual(ordenTopologico(PRERREQUISITOS).orden, r.orden);
   });
+
+  /* Lo que sigue es la regresión del fallo que tenía la ruta: los ciclos
+     solo se detectan al atascarse, así que en una única pasada las fichas
+     implicadas y todo lo que cuelga de ellas caían al final. IS-LM acababa
+     en la posición 107 de 168, después de Black-Scholes y de la
+     reconciliación jerárquica, pese a necesitar solo 3.04.
+
+     El invariante de arriba —nadie antes que sus prerrequisitos— se cumplía
+     igual, y por eso no lo detectaba ninguna prueba: colocar una ficha
+     demasiado tarde nunca lo viola. Hay que mirar la posición. */
+  test("una ficha aparece en cuanto sus prerrequisitos están hechos", () => {
+    const posicion = new Map(r.orden.map((c, i) => [c, i]));
+    const tarde = [];
+    for (const codigo of r.orden) {
+      const reqs = r.efectivo[codigo];
+      // primer momento en que la ficha ya podría estudiarse
+      const listaEn = reqs.length ? Math.max(...reqs.map((p) => posicion.get(p))) + 1 : 0;
+      // cuántas fichas se colocan entre ese momento y su posición real
+      // teniendo un código menor: esas sí le ganan la vez legítimamente
+      const colada = r.orden
+        .slice(listaEn, posicion.get(codigo))
+        .filter((otra) => num(otra) > num(codigo));
+      if (colada.length > 8) tarde.push(`${codigo} espera tras ${colada.length} fichas posteriores`);
+    }
+    assert.deepEqual(tarde, [], "alguna ficha se coloca mucho después de estar disponible");
+  });
+
+  test("la macroeconomía no se estudia después de los bloques avanzados", () => {
+    /* Comprobación concreta del caso que falló, en términos de temario y no
+       de grafo: es la que se entiende sin haber leído el algoritmo. */
+    const posicion = new Map(r.orden.map((c, i) => [c, i]));
+    for (const macro of ["3.05", "3.06", "3.07", "3.08", "3.09", "3.10", "3.11"]) {
+      for (const avanzado of ["8.09", "15.01", "16.04"]) {
+        assert.ok(
+          posicion.get(macro) < posicion.get(avanzado),
+          `${macro} se estudia después de ${avanzado}`
+        );
+      }
+    }
+  });
+
+  test("el orden de estudio se parece al del temario", () => {
+    /* Si la ruta se aleja mucho de la numeración, o el grafo tiene un
+       «requiere» equivocado o el temario está mal ordenado. Con el fallo
+       eran 32,7 posiciones de media; sanas son menos de 4. */
+    const posicion = new Map(r.orden.map((c, i) => [c, i]));
+    const porTemario = [...posicion.keys()].sort((a, b) => num(a) - num(b));
+    const media =
+      porTemario.reduce((t, c, i) => t + Math.abs(posicion.get(c) - i), 0) / porTemario.length;
+    assert.ok(media < 8, `desplazamiento medio de ${media.toFixed(1)} posiciones`);
+  });
+
+  test("las fichas del ciclo no quedan relegadas al final", () => {
+    const posicion = new Map(r.orden.map((c, i) => [c, i]));
+    for (const [n] of r.blandas) {
+      assert.ok(
+        posicion.get(n) < r.orden.length / 2,
+        `${n} participa en un ciclo y cae en la posición ${posicion.get(n)} de ${r.orden.length}`
+      );
+    }
+  });
 });
 
 describe("descendientes: cuántas fichas abre cada una", () => {
