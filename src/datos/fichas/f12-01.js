@@ -193,6 +193,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Una eléctrica participada mayoritariamente por el Estado cubre el 92 % de sus costes con ventas. ¿En qué sector la clasifica el SEC?",
+              opciones: [
+                "Depende de si cotiza en bolsa",
+                "En un sector mixto, en proporción a la participación pública",
+                "En sociedades no financieras (S.11): el criterio es el comportamiento, no la propiedad",
+                "En administraciones públicas (S.13), por ser de propiedad pública",
+              ],
+              correcta: 2,
+              porque: [
+                "La cotización no interviene en el criterio de sectorización.",
+                "El SEC no reparte una unidad entre sectores: la asigna entera a uno.",
+                "Lo que decide es si cubre con ventas al menos la mitad de sus costes de producción. Con el 92 %, es claramente productor de mercado.",
+                "La propiedad no clasifica: una asociación privada financiada con subvenciones puede ser administración pública, y una empresa pública que vende a precios significativos no lo es.",
+              ],
+            },
+            {
+              q: "La filial española de una multinacional alemana produce en Valladolid. ¿Entra su producción en el PIB español?",
+              opciones: [
+                "Sí: es una unidad residente en España, y la residencia no es la nacionalidad del capital",
+                "No: el beneficio revierte a la matriz alemana",
+                "Solo si más de la mitad de su plantilla es española",
+                "Sí, en la parte correspondiente al capital español",
+              ],
+              correcta: 0,
+              porque: [
+                "El criterio es el centro de interés económico predominante. A la inversa, una empresa de capital español que produce en Marruecos no aporta al PIB español.",
+                "El destino del beneficio se registra después, como renta de la propiedad pagada al exterior; no afecta a dónde se produjo.",
+                "La nacionalidad de la plantilla es irrelevante para la residencia de la unidad.",
+                "El PIB no se reparte por origen del capital: se atribuye al territorio donde tiene lugar la producción.",
+              ],
+            },
+            {
+              q: "Al aplicar la regla del 50 %, ¿cómo se tratan las aportaciones presupuestarias que recibe una entidad?",
+              opciones: [
+                "Como ventas, ya que financian la actividad",
+                "Se excluyen del cálculo por completo",
+                "Como ventas, pero ponderadas al 50 %",
+                "Van al denominador, con los costes: una transferencia pública no es una venta",
+              ],
+              correcta: 3,
+              porque: [
+                "Contarlas como ventas invertiría el sentido de la regla, que pretende distinguir a quien se financia vendiendo de quien se financia con presupuesto.",
+                "No se excluyen: forman parte de los recursos con que se cubren los costes.",
+                "No hay ninguna ponderación intermedia en la regla.",
+                "Por eso inyectar dinero público en una entidad no mejora su ratio: lo empeora, y puede acabar sacándola del sector de sociedades y metiendo su deuda en la pública.",
+              ],
+            },
+            {
+              q: "Una empresa pública de transporte ingresa 120 millones en billetes y tiene 400 de costes. ¿Es productor de mercado?",
+              opciones: [
+                "Depende de si la tarifa la fija la empresa o el regulador",
+                "No: cubre el 30 % de sus costes, así que sigue siendo administración pública",
+                "Sí, si los billetes se venden a través de canales comerciales",
+                "Sí: cobra por sus servicios, luego vende",
+              ],
+              correcta: 1,
+              porque: [
+                "Quién fija la tarifa es un indicio y no la prueba: la prueba es el porcentaje de costes cubierto de forma continuada.",
+                "El billete no es un precio económicamente significativo cuando deja tres cuartas partes del coste sin cubrir. Su déficit y su deuda computan como públicos.",
+                "El canal de venta no interviene en el criterio.",
+                "Facturar no convierte a una entidad en productor de mercado: lo que importa es si el precio cubre razonablemente el coste.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

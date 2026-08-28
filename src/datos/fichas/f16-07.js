@@ -192,6 +192,82 @@ export default {
     },
 
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Cuatro hojas tienen intervalos del 90 % de la misma anchura. ¿Cuál es el intervalo del total?",
+              opciones: [
+                "La media de los cuatro",
+                "La suma de los cuatro, en cualquier caso",
+                "La suma de los cuatro, si los errores están perfectamente correlacionados",
+                "El mayor de los cuatro",
+              ],
+              correcta: 2,
+              porque: [
+                "La media no corresponde a ningún supuesto sobre la dependencia.",
+                "Es el error más común y siempre exagera: la varianza de una suma incorpora las covarianzas, y con independencia estas son cero.",
+                "Sumarlos supone implícitamente correlación perfecta: que las cuatro se equivoquen a la vez y en el mismo sentido. Con errores independientes la anchura correcta es la mitad.",
+                "El mayor infravalora: hay cuatro fuentes de error, no una.",
+              ],
+            },
+            {
+              q: "Se reconcilian los puntos de una jerarquía. ¿Basta para tener previsiones probabilísticas coherentes?",
+              opciones: [
+                "Sí, si además los intervalos se recalculan con la varianza reconciliada",
+                "Sí: si las medias cuadran, la distribución conjunta también",
+                "No, salvo que las previsiones base sean normales",
+                "No: reconciliar coloca la media dentro del subespacio, pero la distribución puede seguir asignando probabilidad a combinaciones imposibles",
+              ],
+              correcta: 3,
+              porque: [
+                "Recalcular las varianzas marginales tampoco garantiza que la conjunta no asigne masa a combinaciones que no pueden ocurrir.",
+                "La media es un punto de la distribución: que ese punto esté bien colocado no dice nada del resto.",
+                "La normalidad facilita el cálculo y no convierte una reconciliación puntual en probabilística.",
+                "La coherencia probabilística exige probabilidad cero fuera del subespacio coherente, y eso es bastante más que colocar la media.",
+              ],
+            },
+            {
+              q: "¿Por qué es más grave diagonalizar la matriz de covarianzas al construir intervalos que al reconciliar puntos?",
+              opciones: [
+                "Porque diagonalizar cambia la media de la distribución",
+                "Porque los intervalos se calculan sobre la serie ajustada y los puntos sobre la bruta",
+                "Porque los intervalos exigen invertir la matriz y los puntos no",
+                "Porque en la construcción de intervalos equivale a afirmar independencia entre los errores, y si no la hay las anchuras salen mal",
+              ],
+              correcta: 3,
+              porque: [
+                "La media no cambia por diagonalizar: lo que cambia es la dispersión estimada.",
+                "Ambos se calculan sobre las mismas series.",
+                "Ambos procedimientos operan con la misma matriz; la diferencia está en qué se pierde al simplificarla.",
+                "En la reconciliación puntual diagonalizar da un resultado algo peor y razonable; aquí introduce un supuesto fuerte que determina directamente la anchura publicada.",
+              ],
+            },
+            {
+              q: "Se simulan trayectorias para obtener previsiones probabilísticas. ¿Cómo hay que remuestrear los residuos?",
+              opciones: [
+                "Serie a serie, para que cada una conserve su propia distribución",
+                "Por vectores completos: todas las series de la misma fecha juntas, para conservar la correlación entre ellas",
+                "Solo los residuos de las series hoja, y agregar después",
+                "Aleatoriamente sobre el conjunto de todos los residuos de todas las series",
+              ],
+              correcta: 1,
+              porque: [
+                "Remuestrear serie a serie destruye la correlación entre series, que es justo lo que hace falta conservar.",
+                "Y conviene además preservar la dependencia entre horizontes: los intervalos marginales por horizonte la ignoran y no permiten responder preguntas conjuntas.",
+                "Limitarse a las hojas es bottom-up con otro nombre, y desaprovecha las previsiones de los niveles agregados.",
+                "Mezclar residuos de series distintas rompe tanto la correlación como las distribuciones marginales.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

@@ -178,6 +178,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "El futuro del petróleo a seis meses cotiza por debajo del precio de contado. ¿Espera el mercado que baje?",
+              opciones: [
+                "Sí: el futuro es la previsión del mercado sobre el precio futuro",
+                "No necesariamente: el precio del futuro sale del arbitraje, y puede reflejar simplemente que el activo paga rendimientos por poseerlo",
+                "Sí, y la diferencia mide la caída esperada en porcentaje",
+                "No: el futuro siempre cotiza por debajo del contado",
+              ],
+              correcta: 1,
+              porque: [
+                "El futuro no se forma por votación de expectativas, sino por la imposibilidad de ganar dinero sin riesgo entre comprar hoy y comprar a plazo.",
+                "Entre el contado y el futuro median el coste de financiación, el de almacenamiento y el rendimiento por conveniencia de tener el activo físico.",
+                "La diferencia mide el coste neto de mantener la posición hasta el vencimiento, no una previsión.",
+                "Puede cotizar por encima o por debajo según dominen los costes de mantenerlo o los beneficios de poseerlo.",
+              ],
+            },
+            {
+              q: "Una empresa cubre su exposición con futuros y la cobertura funciona. ¿Puede aun así tener un problema?",
+              opciones: [
+                "No: si la cobertura funciona, el riesgo queda neutralizado",
+                "Sí: la liquidación diaria puede exigir garantías antes de que llegue la compensación de la partida cubierta",
+                "Sí, pero solo si el mercado es poco líquido",
+                "No, salvo que haya errado el número de contratos",
+              ],
+              correcta: 1,
+              porque: [
+                "Queda neutralizado el riesgo de precio, que no es el único que hay en juego.",
+                "La cobertura puede ser correcta y aun así generar salidas de caja masivas: hay que cuantificar la garantía exigible en el escenario adverso antes de montarla.",
+                "La liquidez del mercado agrava el problema pero no lo crea: la liquidación diaria opera igual en mercados profundos.",
+                "El número de contratos afecta a la calidad de la cobertura, no a la mecánica de las garantías diarias.",
+              ],
+            },
+            {
+              q: "Se quiere cubrir una posición cuyo subyacente no coincide exactamente con el del futuro disponible. ¿Cuántos contratos hay que usar?",
+              opciones: [
+                "Los que igualen el nominal, uno por uno",
+                "Los que resulten de aplicar la correlación por el cociente de volatilidades",
+                "Los que igualen la duración de ambas posiciones",
+                "El doble del nominal, para cubrir también el riesgo de base",
+              ],
+              correcta: 1,
+              porque: [
+                "Cubrir uno a uno es el ajuste por defecto y deja más riesgo del que se cree cuando los dos activos no se mueven a la par.",
+                "Es el ratio de cobertura de mínima varianza: recoge cuánto se mueven juntos y cuánto se mueve cada uno.",
+                "Igualar duraciones es el criterio en coberturas de renta fija, no la regla general cuando el subyacente difiere.",
+                "Sobrecubrir no elimina el riesgo de base: crea una posición especulativa en sentido contrario.",
+              ],
+            },
+            {
+              q: "Una empresa vende futuros sobre un activo que no produce ni posee. ¿Es una cobertura?",
+              opciones: [
+                "Sí, si la intención declarada es reducir riesgo",
+                "Sí: vender futuros es siempre una posición defensiva",
+                "Depende de si la operación se registra en la cartera de negociación",
+                "No: sin exposición previa que compensar, es tomar una posición direccional",
+              ],
+              correcta: 3,
+              porque: [
+                "La intención no basta: lo que define la cobertura es la existencia de una exposición previa de signo contrario.",
+                "Vender futuros es defensivo solo si se posee el activo; sin él es apostar a la baja.",
+                "La clasificación contable sigue a la realidad económica, no la determina.",
+                "La distinción es exactamente esa. Sin exposición previa no hay nada que compensar, y lo que parece prudencia es especulación.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

@@ -189,6 +189,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Alguien pide a la vez menos déficit público, más ahorro de las familias y el mismo saldo exterior. ¿Es posible?",
+              opciones: [
+                "Sí, si las empresas mantienen su posición financiera",
+                "No: los saldos sectoriales suman el saldo frente al resto del mundo por identidad contable, así que fijar tres determina el cuarto",
+                "No, salvo que aumente la inversión pública",
+                "Sí, siempre que el crecimiento del PIB lo permita",
+              ],
+              correcta: 1,
+              porque: [
+                "Si las empresas mantienen su posición, precisamente entonces el sistema queda sobredeterminado y la petición es imposible.",
+                "No es una cuestión de voluntad política ni de coyuntura: es aritmética de las cuentas nacionales. Alguien tiene que acabar endeudándose.",
+                "La inversión pública forma parte del saldo de las administraciones y no libera la restricción.",
+                "El crecimiento cambia el nivel de las magnitudes, no la identidad que las liga.",
+              ],
+            },
+            {
+              q: "Las administraciones tienen un desahorro de 60 y una necesidad de financiación de 90. ¿A qué corresponde la diferencia?",
+              opciones: [
+                "A transferencias de capital recibidas de la Unión Europea",
+                "A los intereses de la deuda pendientes de pago",
+                "A la inversión pública: 30",
+                "A un ajuste estadístico entre la cuenta de capital y la financiera",
+              ],
+              correcta: 2,
+              porque: [
+                "Las transferencias de capital reducirían la necesidad de financiación, no la aumentarían.",
+                "Los intereses son gasto corriente y ya están dentro del desahorro.",
+                "El desahorro es el saldo de la cuenta corriente y la necesidad de financiación incorpora además la cuenta de capital, donde está la inversión. Distinguirlos es lo que permite discutir si el déficit financia gasto corriente o formación de capital.",
+                "El ajuste entre ambas cuentas existe y es de otra naturaleza: aquí la diferencia tiene un contenido económico identificable.",
+              ],
+            },
+            {
+              q: "Una administración retrasa el pago a sus proveedores hasta el ejercicio siguiente. ¿Reduce el déficit del año?",
+              opciones: [
+                "Sí, si el retraso se documenta con la conformidad del proveedor",
+                "No: el SEC registra en devengo, así que la obligación se contabiliza cuando se genera",
+                "Sí: no ha salido dinero de la caja",
+                "Solo en la contabilidad presupuestaria, no en la nacional",
+              ],
+              correcta: 1,
+              porque: [
+                "La conformidad del proveedor no cambia cuándo se generó la obligación.",
+                "Retrasar el pago convierte gasto en deuda comercial sin alterar el déficit registrado: cambia la forma de la deuda, no su existencia.",
+                "La caja no es el criterio del SEC, precisamente para que este tipo de maniobra no altere la cifra.",
+                "En contabilidad presupuestaria de caja podría aparecer el efecto, y la cifra que se compara en Europa es la nacional.",
+              ],
+            },
+            {
+              q: "¿Cómo clasifica el SEC a una empresa pública que no cubre la mitad de sus costes con ventas?",
+              opciones: [
+                "Depende del porcentaje de capital en manos públicas",
+                "Como sociedad no financiera, por su actividad productiva",
+                "Como institución sin fines de lucro al servicio de los hogares",
+                "Dentro del sector administraciones públicas",
+              ],
+              correcta: 3,
+              porque: [
+                "La propiedad importa para el control, pero la frontera la marca el criterio del 50 % de cobertura con ventas.",
+                "El criterio del SEC no es lo que la unidad hace, sino su naturaleza y el origen de sus recursos.",
+                "Ese sector agrupa a entidades sin ánimo de lucro que sirven a los hogares, no a empresas públicas.",
+                "Si no cubre con ventas al menos la mitad de sus costes, no es productor de mercado, y su déficit y su deuda computan como públicos.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

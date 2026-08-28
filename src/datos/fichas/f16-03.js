@@ -195,6 +195,82 @@ export default {
     },
 
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Es bottom-up la opción más prudente por partir del máximo detalle?",
+              opciones: [
+                "No: bottom-up no garantiza la coherencia entre niveles",
+                "Sí, salvo en jerarquías con más de tres niveles",
+                "Sí: usar toda la información disponible en las hojas es lo más seguro",
+                "No: descarta las previsiones de los niveles agregados, que se apoyan en las series con mejor relación señal-ruido",
+              ],
+              correcta: 3,
+              porque: [
+                "Sí la garantiza: los agregados se obtienen sumando, así que cuadran por construcción.",
+                "El número de niveles agrava el problema, no lo crea.",
+                "No usa toda la información: usa la de las hojas y tira la de todos los demás niveles.",
+                "En jerarquías profundas las hojas pueden tener tan poca señal que sumar ruido produzca un agregado peor que preverlo directamente.",
+              ],
+            },
+            {
+              q: "¿De dónde procede el sesgo del top-down?",
+              opciones: [
+                "De errores de implementación al calcular las proporciones",
+                "De que el modelo del agregado suele estar mal especificado",
+                "De que el método incumple la condición de invariancia: modificaría incluso unas previsiones base ya coherentes",
+                "De que las proporciones históricas se estiman con pocos años",
+              ],
+              correcta: 2,
+              porque: [
+                "No es un fallo de ejecución: el sesgo aparece aunque todo se calcule correctamente.",
+                "El sesgo aparece con independencia de lo bien especificado que esté el modelo del total.",
+                "Por eso sesga aun partiendo de previsiones base insesgadas: es una propiedad estructural del reparto proporcional.",
+                "La longitud de la muestra afecta a la precisión de las proporciones, no a esta propiedad del método.",
+              ],
+            },
+            {
+              q: "Se comparan bottom-up y top-down midiendo el error solo en el nivel agregado. ¿Qué problema tiene esa evaluación?",
+              opciones: [
+                "Que faltaría corregir por el número de series de cada nivel",
+                "Que el error del agregado siempre es menor que el de las hojas",
+                "Que no se pueden comparar métodos que reparten de forma distinta",
+                "Que top-down acierta por construcción en el total, así que el resultado está decidido de antemano",
+              ],
+              correcta: 3,
+              porque: [
+                "La corrección por número de series no arregla que la comparación esté sesgada por diseño.",
+                "El error relativo del agregado suele ser menor, y eso no es lo que invalida la comparación.",
+                "Sí se pueden comparar, y precisamente por eso hay que hacerlo en todos los niveles a la vez.",
+                "Bottom-up acierta por construcción en las hojas y top-down en el total: evaluar en un solo nivel garantiza que gane el que lo respeta.",
+              ],
+            },
+            {
+              q: "Las proporciones estimadas por separado para cada hoja suman 1,03. ¿Qué hay que hacer?",
+              opciones: [
+                "Aceptarlas: la desviación es pequeña",
+                "Volver a estimar el modelo del agregado",
+                "Normalizarlas para que sumen uno, o el reparto no reproducirá el total",
+                "Descartar la hoja con la proporción más alta",
+              ],
+              correcta: 2,
+              porque: [
+                "Parece obvio y ocurre con frecuencia: si no se normaliza, el resultado deja de ser coherente, que era lo único que el método garantizaba.",
+                "El modelo del agregado no interviene en el problema de que las proporciones no sumen uno.",
+                "Estimar cada proporción por su cuenta rara vez da una suma exacta de uno, y la normalización es el paso que se olvida.",
+                "Descartar una hoja cambia la estructura y no resuelve la suma.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

@@ -192,6 +192,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Puede buscarse la contrapartida de un B.2g en otro sector?",
+              opciones: [
+                "Sí: toda anotación del sistema tiene contrapartida por partida doble",
+                "No: los saldos B no son operaciones, son lo que queda al cerrar una cuenta",
+                "No, salvo en las cuentas del resto del mundo",
+                "Sí, en el sector que recibe el excedente",
+              ],
+              correcta: 1,
+              porque: [
+                "La partida doble se aplica a las operaciones, y un saldo no lo es.",
+                "Nadie paga ni cobra un B.2g. Buscar su contrapartida lleva a un callejón sin salida y suele ser el primer síntoma de no haber entendido la gramática del sistema.",
+                "Tampoco allí: los saldos del S.2 son igualmente saldos.",
+                "El excedente no se transfiere a nadie: es la diferencia que resulta de restar unas partidas a otras.",
+              ],
+            },
+            {
+              q: "Un banco concede un préstamo y después cobra los intereses. ¿A qué familias de códigos pertenece cada cosa?",
+              opciones: [
+                "El préstamo es D y los intereses F",
+                "Ambas a la familia D, porque las dos distribuyen renta",
+                "El préstamo es F (operación financiera) y los intereses D (operación de distribución)",
+                "Ambas a la familia F, por tratarse de operaciones bancarias",
+              ],
+              correcta: 2,
+              porque: [
+                "Es exactamente el cruce contrario al correcto.",
+                "El préstamo no distribuye renta: cambia la composición del balance de las dos partes.",
+                "Conceder un préstamo intercambia un activo financiero por dinero y no reparte renta; cobrar intereses sí reparte renta y no crea ningún activo nuevo.",
+                "Que las realice un banco no las mete en la misma familia: lo que decide es la naturaleza de la operación.",
+              ],
+            },
+            {
+              q: "Sin consultar el reglamento, ¿qué se puede deducir del código D.42?",
+              opciones: [
+                "Que es una renta de la propiedad, y por tanto vive en la cuenta de asignación de renta primaria",
+                "Que es un activo no financiero, por el 4 inicial",
+                "Que es un saldo contable de la cuarta cuenta de la secuencia",
+                "Que es un impuesto, porque la familia D agrupa la imposición",
+              ],
+              correcta: 0,
+              porque: [
+                "La letra sitúa la familia y el dígito estrecha: D.4 son rentas de la propiedad, así que D.42 tiene que ser una de ellas. La gramática ahorra memorizar miles de partidas.",
+                "Los activos no financieros llevan el prefijo AN, no D.",
+                "Los saldos llevan la letra B.",
+                "La D agrupa las operaciones de distribución, de las que los impuestos son solo una parte.",
+              ],
+            },
+            {
+              q: "¿Qué relación hay entre el saldo de una cuenta y la cuenta siguiente?",
+              opciones: [
+                "El saldo de una cuenta debe coincidir con el de la siguiente",
+                "El saldo de una cuenta es la primera entrada de la siguiente, y por eso cualquier reclasificación arrastra todo lo que hay por debajo",
+                "Las cuentas se encadenan solo dentro de cada sector, no en el agregado",
+                "Ninguna: cada cuenta se calcula de forma independiente y luego se concilian",
+              ],
+              correcta: 1,
+              porque: [
+                "No coinciden: el saldo entra en la siguiente cuenta y allí se le suman y restan otras partidas.",
+                "Por eso el sistema es una cadena y no una lista: mover una partida arriba mueve todos los saldos posteriores.",
+                "El encadenamiento opera igual en el agregado nacional.",
+                "Se calculan encadenadas por construcción, no de forma independiente.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

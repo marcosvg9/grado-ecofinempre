@@ -287,6 +287,15 @@ p.parrafo, .errorD, .respuesta, .fuente, .destacado .lista li {
 .tarjeta { border: 1px solid var(--linea); border-radius: 3px; background: var(--papel2); padding: 24px 26px 26px; }
 .tarjetaEtiq { font-family: var(--mono); font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--tinta2); margin: 0 0 14px; }
 .tarjetaQ { font-family: var(--serif); font-size: clamp(18px, 2.6vw, 22px); line-height: 1.45; margin: 0 0 22px; }
+/* Opciones de una tarjeta de test en el repaso. A diferencia de las de la
+   ficha no son botones: aquí quien califica es el que estudia, y mezclar dos
+   formas de responder en la misma sesión confundiría. Neutras hasta revelar. */
+.tarjetaOpciones { list-style: none; margin: 0 0 22px; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.tarjetaOpciones li { display: flex; gap: 10px; align-items: baseline; font-size: 15px; line-height: 1.5; border: 1px solid var(--linea); border-radius: 3px; padding: 9px 12px; }
+.tarjetaOpciones li[data-correcta="true"] { border-color: var(--acento); background: #E4EEEB; }
+.tarjetaOpciones li[data-correcta="true"] .tarjetaLetra { color: var(--acento); }
+.tarjetaOpciones[data-revelado="true"] li:not([data-correcta="true"]) { opacity: .5; }
+.tarjetaLetra { font-family: var(--mono); font-size: 12.5px; color: var(--tinta2); flex: none; }
 .tarjetaA { font-size: 15.5px; line-height: 1.65; margin: 0 0 16px; padding-top: 16px; border-top: 1px solid var(--linea); }
 .tarjetaOrigen { font-size: 12.5px; color: var(--tinta2); margin: 0 0 20px; }
 .enlaceFicha { font: inherit; color: var(--acento); background: none; border: none; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
@@ -310,8 +319,11 @@ b .refFicha:hover, i .refFicha:hover { color: var(--acento); }
 .buscadorVacio { padding-top: 6px; }
 .buscadorVacio .buscadorAviso { font-family: var(--sans); font-size: 14px; letter-spacing: 0; line-height: 1.6; max-width: 62ch; }
 .buscadorEjemplos { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 0; }
-.chip { font-family: var(--mono); font-size: 12px; color: var(--tinta2); background: var(--papel2); border: 1px solid var(--linea); border-radius: 999px; padding: 5px 13px; cursor: pointer; }
-.chip:hover { border-color: var(--acento); color: var(--acento); }
+/* Consultas de ejemplo del buscador. Tuvo el nombre «.chip» y pisaba en
+   silencio a los filtros del plan y de la ruta, que quedaban en monoespaciada
+   sin que nadie lo notara: el resultado seguía siendo presentable. */
+.chipEjemplo { font-family: var(--mono); font-size: 12px; color: var(--tinta2); background: var(--papel2); border: 1px solid var(--linea); border-radius: 999px; padding: 5px 13px; cursor: pointer; }
+.chipEjemplo:hover { border-color: var(--acento); color: var(--acento); }
 .buscadorLista { list-style: none; margin: 6px 0 0; padding: 0; }
 .buscadorItem { display: flex; gap: 16px; width: 100%; text-align: left; font: inherit; color: inherit; background: none; border: none; border-top: 1px solid var(--linea); padding: 15px 10px 15px 4px; cursor: pointer; border-radius: 3px; }
 .buscadorItem[data-foco="true"] { background: var(--papel2); }

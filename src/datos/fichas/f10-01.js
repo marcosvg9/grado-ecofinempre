@@ -180,6 +180,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Dos países tienen empresas igual de productivas en cada tramo de tamaño. ¿Pueden tener productividades agregadas distintas?",
+              opciones: [
+                "Sí: la agregada es una media ponderada por empleo, y basta con que la gente se distribuya distinto entre tramos",
+                "No: si las empresas son idénticas, la agregada es idéntica",
+                "Solo si uno de ellos mide la productividad por hora y el otro por persona",
+                "Sí, si sus tipos impositivos difieren",
+              ],
+              correcta: 0,
+              porque: [
+                "Dos países con empresas idénticas tramo a tramo pueden diferir un 10 % en productividad agregada solo por cómo se reparte el empleo entre esos tramos.",
+                "La agregada no es la media de lo buenas que son las empresas: es esa media ponderada por cuánta gente trabaja en cada una.",
+                "La unidad de medida es otra fuente de discrepancia distinta de la que plantea la pregunta.",
+                "La fiscalidad puede influir en la distribución del empleo, pero no es lo que rompe la equivalencia en el enunciado.",
+              ],
+            },
+            {
+              q: "«España es una economía de servicios.» ¿Qué falta en esa afirmación?",
+              opciones: [
+                "Nada: describe correctamente la estructura productiva",
+                "Añadir que la industria conserva un peso mayor que en el resto de la UE",
+                "Distinguir cuáles: consultoría, informática e ingeniería son intensivas en conocimiento y exportables; hostelería y comercio minorista, no",
+                "Precisar si se mide por empleo o por valor añadido",
+              ],
+              correcta: 2,
+              porque: [
+                "Describe un agregado que contiene realidades opuestas, y por eso no explica nada.",
+                "La industria española pesa menos que la media de la UE, no más.",
+                "Meter en la misma categoría servicios de productividad creciente y exportables con otros que no lo son borra justamente la información relevante.",
+                "La distinción entre empleo y valor añadido es pertinente, pero el problema de fondo es agregar servicios muy distintos.",
+              ],
+            },
+            {
+              q: "La productividad agregada crece poco mientras el empleo se desplaza hacia servicios de mejora lenta. ¿A qué se debe?",
+              opciones: [
+                "A la temporalidad del mercado de trabajo",
+                "A un error de medición en la contabilidad nacional",
+                "A la mala gestión de las empresas, que no invierten en tecnología",
+                "En parte al efecto Baumol, que descuenta crecimiento agregado de forma mecánica al cambiar la composición del empleo",
+              ],
+              correcta: 3,
+              porque: [
+                "La temporalidad afecta a la formación y a la inversión específica, pero no es el mecanismo composicional que describe Baumol.",
+                "No hay error de medición: el efecto es real y previsible.",
+                "La gestión influye, y atribuirle todo el estancamiento ignora un efecto puramente composicional que opera sin que nadie gestione mal.",
+                "En el ejemplo de la ficha son 0,61 puntos anuales que se pierden sin que ninguna empresa haya empeorado: solo ha cambiado dónde trabaja la gente.",
+              ],
+            },
+            {
+              q: "España invirtió intensamente entre 1999 y 2007 y su productividad total de los factores se estancó. ¿Cómo se explica?",
+              opciones: [
+                "El capital fue a construcción e inmobiliario: lo decisivo no es cuánto se invierte sino en qué",
+                "La productividad total de los factores no guarda relación con la inversión",
+                "La inversión tarda unos quince años en trasladarse a la productividad",
+                "La estadística de PTF no captura la inversión en vivienda",
+              ],
+              correcta: 0,
+              porque: [
+                "Invertir mucho no garantiza crecer en productividad. La composición de la inversión es lo que decide, y ahí fue a activos que no la elevan.",
+                "Sí la guarda, y estrecha: el problema del período no fue la cantidad invertida sino su destino.",
+                "Quince años es un desfase inventado: parte de la inversión productiva rinde mucho antes.",
+                "Sí la captura, y precisamente por eso se ve que el capital acumulado no elevó la productividad.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

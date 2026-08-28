@@ -209,6 +209,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un activo es muy volátil por sí solo. ¿Aumenta necesariamente el riesgo de la cartera al incorporarlo?",
+              opciones: [
+                "Sí: la volatilidad de la cartera es la media ponderada de las individuales",
+                "No: si está poco correlacionado con el resto, puede reducir el riesgo total",
+                "Sí, salvo que se le dé un peso inferior al 5 %",
+                "Depende únicamente de su rentabilidad esperada",
+              ],
+              correcta: 1,
+              porque: [
+                "La volatilidad de una cartera no es una media ponderada: incorpora las covarianzas, y ahí está todo el asunto.",
+                "Dentro de una cartera lo relevante es la covarianza con el resto, no la volatilidad individual. Juzgar cada activo por separado lleva a rechazar precisamente lo que más diversifica.",
+                "El peso modula la magnitud del efecto, pero no cambia su signo: un activo poco correlacionado sigue reduciendo el riesgo.",
+                "La rentabilidad esperada decide si compensa, no cómo afecta al riesgo.",
+              ],
+            },
+            {
+              q: "Una cartera tiene treinta valores, todos del mercado español y del sector bancario. ¿Está bien diversificada?",
+              opciones: [
+                "Sí: treinta posiciones superan de sobra el umbral habitual",
+                "Sí, siempre que ninguna pese más del 10 %",
+                "No: lo que importa es la estructura de correlaciones, y esos treinta valores se mueven casi juntos",
+                "No se puede saber sin conocer la rentabilidad esperada de cada valor",
+              ],
+              correcta: 2,
+              porque: [
+                "El recuento de posiciones es un sustituto cómodo y engañoso de la diversificación real.",
+                "Repartir bien los pesos entre activos que suben y bajan a la vez no reduce apenas el riesgo.",
+                "Treinta valores altamente correlacionados se comportan casi como uno solo. La diversificación la da la correlación, no el número.",
+                "La rentabilidad esperada no interviene en el diagnóstico de diversificación, que es una cuestión de covarianzas.",
+              ],
+            },
+            {
+              q: "¿Hasta dónde puede reducirse el riesgo añadiendo activos a una cartera?",
+              opciones: [
+                "Hasta cero, si se añaden suficientes activos",
+                "Hasta el riesgo sistemático, que la diversificación no elimina",
+                "Hasta la mitad del riesgo del activo menos volátil",
+                "No hay límite teórico, solo costes de transacción",
+              ],
+              correcta: 1,
+              porque: [
+                "La diversificación elimina el riesgo específico, no el que afecta a todos los activos a la vez.",
+                "En el ejemplo de la ficha la volatilidad no baja del 16,4 % por muchos activos que se añadan. Esa parte irreducible es justamente la que el mercado remunera.",
+                "No hay ninguna relación de ese tipo: el suelo lo marca el componente común, no el activo más tranquilo.",
+                "El límite es conceptual y anterior a los costes: existe un riesgo que ninguna combinación de activos hace desaparecer.",
+              ],
+            },
+            {
+              q: "Una cartera se optimiza con correlaciones estimadas en un período de calma. ¿Qué riesgo se corre?",
+              opciones: [
+                "Ninguno: son los datos más limpios, sin episodios atípicos",
+                "Sobrestimar la rentabilidad esperada de los activos defensivos",
+                "Que la cartera esté menos diversificada de lo que aparenta, porque las correlaciones aumentan en las crisis",
+                "Que la optimización no converja numéricamente",
+              ],
+              correcta: 2,
+              porque: [
+                "Precisamente por limpios describen mal el momento en que la diversificación tendría que trabajar.",
+                "El problema no está en las rentabilidades esperadas sino en la matriz de correlaciones sobre la que se optimiza.",
+                "Las correlaciones se disparan justo cuando se necesita la protección, así que la cobertura desaparece en el único escenario en que hacía falta.",
+                "La optimización converge sin problema: devuelve una cartera perfectamente calculada sobre supuestos que fallan cuando importa.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

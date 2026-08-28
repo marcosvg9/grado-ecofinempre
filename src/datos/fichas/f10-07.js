@@ -185,6 +185,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "En la identidad del gasto, las importaciones se restan. ¿Significa que importar reduce el PIB?",
+              opciones: [
+                "No: se restan porque ya están incluidas dentro del consumo, la inversión y las exportaciones",
+                "No: se restan por convención estadística, sin contenido económico",
+                "Sí, pero solo si se trata de bienes finales",
+                "Sí: cada euro importado es un euro que no se produce dentro",
+              ],
+              correcta: 0,
+              porque: [
+                "Es una corrección para no contar como producción interior algo producido fuera. La resta deshace una suma anterior, no penaliza nada.",
+                "Sí tiene contenido: evita atribuir a la producción nacional un valor generado en el extranjero.",
+                "El mecanismo es el mismo con bienes intermedios, que entran en el consumo intermedio de las empresas.",
+                "Un país puede importar mucho y producir mucho: son cosas independientes.",
+              ],
+            },
+            {
+              q: "Para medir el peso de un sector en la economía, ¿sirve sumar la facturación de sus empresas?",
+              opciones: [
+                "Sí, si se excluye a las empresas con menos de diez empleados",
+                "Sí: la facturación es la medida natural del tamaño de un sector",
+                "No: incluye consumos intermedios y cuenta muchas veces el mismo valor; hay que usar el valor añadido",
+                "Sí, siempre que se descuente el IVA repercutido",
+              ],
+              correcta: 2,
+              porque: [
+                "El tamaño de las empresas no tiene nada que ver con la duplicación del valor intermedio.",
+                "Es la medida natural del tamaño de una empresa y no del de un sector, porque al sumar se duplica lo que unas se compran a otras.",
+                "En el ejemplo de la ficha, una producción de 1.900 genera un PIB de 1.000: la diferencia son consumos intermedios contados repetidamente.",
+                "El IVA es un ajuste menor y no resuelve el problema de fondo, que es contar varias veces el mismo valor.",
+              ],
+            },
+            {
+              q: "Los tres enfoques de cálculo del PIB dan exactamente la misma cifra. ¿Qué prueba eso?",
+              opciones: [
+                "Que la economía sumergida es de tamaño despreciable",
+                "Que las estimaciones son de alta calidad",
+                "Nada por sí solo: la coincidencia es una identidad contable impuesta en la conciliación, no un hallazgo",
+                "Que las fuentes estadísticas están bien integradas",
+              ],
+              correcta: 2,
+              porque: [
+                "La economía no observada se estima e imputa, y su tamaño no se deduce de que los tres enfoques cuadren.",
+                "La calidad se juzga por las fuentes y los métodos, no por una coincidencia que se impone al final del proceso.",
+                "Se estiman con fuentes independientes y la diferencia se reparte con criterios explícitos. Leer la coincidencia como comprobación es tomar el resultado del procedimiento por una validación externa.",
+                "La integración ayuda, y aun con fuentes excelentes los tres enfoques en bruto no coinciden nunca.",
+              ],
+            },
+            {
+              q: "¿Por qué se dice que el PIB es bruto?",
+              opciones: [
+                "Porque se calcula antes de impuestos",
+                "Porque no descuenta el consumo de capital fijo: una economía que solo repone su capital depreciado aparece produciendo",
+                "Porque se mide a precios de mercado y no a precios básicos",
+                "Porque incluye la producción de las administraciones públicas",
+              ],
+              correcta: 1,
+              porque: [
+                "El PIB a precios de mercado incorpora los impuestos sobre productos: lo de «bruto» no se refiere a eso.",
+                "El producto neto es conceptualmente superior como medida de lo que un país puede consumir sin empobrecerse, y se usa menos porque la depreciación es difícil de estimar.",
+                "La distinción entre precios de mercado y básicos es otra, y también existe para el producto neto.",
+                "La producción pública forma parte del PIB y no es lo que explica el adjetivo.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

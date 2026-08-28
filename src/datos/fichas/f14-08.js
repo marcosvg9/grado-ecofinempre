@@ -160,6 +160,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Es el despido objetivo una salida barata y sin riesgo para la empresa?",
+              opciones: [
+                "No, porque su indemnización es idéntica a la del improcedente",
+                "Sí, si se pacta con el trabajador antes de comunicarlo",
+                "No: exige causa acreditada, carta con los hechos, preaviso e indemnización a disposición en el mismo acto, y cualquier fallo lo convierte en improcedente",
+                "Sí: veinte días por año es la indemnización más baja del sistema",
+              ],
+              correcta: 2,
+              porque: [
+                "No son idénticas: veinte días frente a treinta y tres, con topes distintos.",
+                "Un acuerdo previo cambia la naturaleza de la extinción: ya no es un despido objetivo.",
+                "Si la causa no se prueba o hay defectos formales, se declara improcedente y la indemnización pasa de veinte a treinta y tres días por año.",
+                "El importe es menor y el riesgo de que no se sostenga es lo que decide el coste esperado.",
+              ],
+            },
+            {
+              q: "Tras la reforma de 2021 la tasa de temporalidad cayó con fuerza. ¿Fue todo cambio real?",
+              opciones: [
+                "Sí, y el efecto se concentró en el sector público",
+                "No: parte fue recomposición, al pasar a contarse como indefinidos fijo-discontinuos relaciones antes contadas como temporales",
+                "Sí: los contratos temporales se convirtieron masivamente en indefinidos",
+                "No: la caída se debió a la destrucción de empleo temporal durante la pandemia",
+              ],
+              correcta: 1,
+              porque: [
+                "El efecto se dio en todos los sectores, y el público tiene su propia dinámica de estabilización.",
+                "El fijo-discontinuo es indefinido a efectos estadísticos y su relación con la empresa sigue siendo intermitente: la etiqueta cambió más que la situación.",
+                "Hubo conversiones reales, y no explican por sí solas la magnitud del descenso.",
+                "La caída se produjo con el empleo creciendo, no destruyéndose.",
+              ],
+            },
+            {
+              q: "¿Cuál es la regla general sobre la duración del contrato de trabajo desde 2021?",
+              opciones: [
+                "La libertad de las partes para elegir entre temporal e indefinido",
+                "Indefinido por defecto, salvo en empresas de menos de cincuenta trabajadores",
+                "Temporal por defecto, con conversión automática a los dos años",
+                "Indefinido por defecto: la temporalidad exige una causa tasada, circunstancias de la producción o sustitución",
+              ],
+              correcta: 3,
+              porque: [
+                "La duración no está a disposición de las partes: si no concurre causa, el contrato es indefinido aunque se firme como temporal.",
+                "La regla no depende del tamaño de la empresa.",
+                "Es exactamente la inversión de la regla vigente.",
+                "El cambio consistió en invertir la presunción: antes había que justificar la conversión y ahora hay que justificar la temporalidad.",
+              ],
+            },
+            {
+              q: "El convenio de sector fija un salario mínimo y el contrato individual pacta uno inferior. ¿Qué se aplica?",
+              opciones: [
+                "El del contrato, si el trabajador lo firmó libremente y con información suficiente",
+                "El del contrato, porque es la voluntad concreta de las partes",
+                "El promedio de ambos, por aplicación del principio de equidad",
+                "El del convenio: cada nivel puede mejorar al anterior, nunca empeorarlo",
+              ],
+              correcta: 3,
+              porque: [
+                "La libertad al firmar no valida una cláusula que la ley considera nula por empeorar el mínimo aplicable.",
+                "La voluntad individual no puede rebajar lo que una norma de rango superior garantiza.",
+                "No hay promedio: la cláusula peyorativa es nula y se sustituye por el mínimo del convenio.",
+                "Es el principio de norma mínima: convenio de sector, convenio de empresa y contrato se ordenan en cascada y cada escalón solo puede mejorar el anterior.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

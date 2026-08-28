@@ -190,6 +190,82 @@ export default {
     },
 
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "La discrepancia anual se concentra en un solo año por un cambio de perímetro. ¿Debe repartirse con Denton?",
+              opciones: [
+                "No, salvo que el cambio de perímetro afecte a más de un ejercicio",
+                "Sí, aplicando la variante proporcional en lugar de la aditiva",
+                "Sí: el método está diseñado para repartir cualquier discrepancia",
+                "No: repartirlo por toda la serie disuelve un problema que tiene una causa identificada y debe tratarse como tal",
+              ],
+              correcta: 3,
+              porque: [
+                "La duración del cambio no altera que su causa sea conocida.",
+                "La variante no cambia el problema de fondo: se estaría repartiendo algo que no es una discrepancia estadística.",
+                "Está diseñado para discrepancias sin causa conocida, procedentes de que indicador y referencia miden con fuentes distintas.",
+                "Suavizar un salto real lo esconde en lugar de documentarlo, y deja una serie que no describe ni lo de antes ni lo de después.",
+              ],
+            },
+            {
+              q: "¿Por qué la variante aditiva de Denton es problemática en series con tendencia fuerte?",
+              opciones: [
+                "Porque exige que la serie sea estacionaria",
+                "Porque no garantiza que se cumpla la restricción anual",
+                "Porque genera correcciones negativas al principio de la serie",
+                "Porque reparte la misma cantidad absoluta con independencia del nivel, y pesa relativamente más donde la serie vale menos",
+              ],
+              correcta: 3,
+              porque: [
+                "Ninguna de las dos variantes exige estacionariedad.",
+                "La restricción se cumple en ambas variantes: es lo que las define.",
+                "El signo de las correcciones depende de la discrepancia, no de la variante.",
+                "En una magnitud que se ha multiplicado por tres a lo largo de la serie, la misma corrección absoluta es un porcentaje muy distinto al principio que al final.",
+              ],
+            },
+            {
+              q: "Llega el dato anual definitivo y cambian trimestres ya publicados cuyo dato bruto no se ha tocado. ¿Qué ha pasado?",
+              opciones: [
+                "Que se ha reestimado el modelo ARIMA con el dato nuevo",
+                "Que el benchmarking es una revisión: ha cambiado el ancla, no el dato ni el ajuste",
+                "Un error en la publicación anterior",
+                "Un cambio en el método de ajuste estacional",
+              ],
+              correcta: 1,
+              porque: [
+                "La reestimación del ARIMA es otra fuente de revisión, distinta de esta.",
+                "Es una revisión de naturaleza contable, y conviene distinguirla de las que proceden del ajuste estacional o de los datos brutos.",
+                "No hay error: el procedimiento funciona exactamente como está previsto.",
+                "El método no ha cambiado; lo que ha cambiado es la referencia anual con la que hay que cuadrar.",
+              ],
+            },
+            {
+              q: "Una serie conciliada tiene buen aspecto. ¿Cómo se verifica que el benchmarking se ha hecho bien?",
+              opciones: [
+                "Comprobando que la serie no presenta saltos visibles entre ejercicios",
+                "Comparando con la serie sin conciliar",
+                "Comprobando aritméticamente que la suma de los cuatro trimestres da el total anual",
+                "Contrastando la estacionalidad residual",
+              ],
+              correcta: 2,
+              porque: [
+                "Una serie conciliada tiene siempre buen aspecto, porque el procedimiento suaviza por construcción.",
+                "La comparación es informativa y no prueba que se haya cumplido la restricción.",
+                "Es la verificación imprescindible y la única que no admite discusión: o cuadra o no cuadra.",
+                "La estacionalidad residual diagnostica el ajuste estacional, no la conciliación.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

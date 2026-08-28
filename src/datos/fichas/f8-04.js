@@ -160,6 +160,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Una utility cotiza a PER 12 y una tecnológica a PER 35. ¿Está la primera más barata?",
+              opciones: [
+                "Sí: paga menos veces el beneficio",
+                "No se puede concluir: el múltiplo depende del crecimiento, del riesgo y de la política de reparto, que difieren estructuralmente entre sectores",
+                "Sí, si ambas tienen el mismo ROE",
+                "No: un PER alto indica siempre mejor calidad de negocio",
+              ],
+              correcta: 1,
+              porque: [
+                "Pagar menos veces el beneficio solo es barato si se compra lo mismo, y no es el caso: se compran perfiles de crecimiento y riesgo distintos.",
+                "Comparar PER entre sectores es como comparar precios sin mirar qué se compra. La comparación válida es dentro del mismo sector y con negocios equiparables.",
+                "El ROE es uno de los determinantes, pero igualarlo no iguala el crecimiento esperado ni el riesgo.",
+                "Un PER alto puede indicar crecimiento esperado, riesgo bajo... o simplemente un beneficio deprimido en el denominador.",
+              ],
+            },
+            {
+              q: "Una empresa cíclica está en el pico del ciclo y su PER es muy bajo. ¿Qué significa?",
+              opciones: [
+                "Que el mercado la está infravalorando claramente",
+                "Que su beneficio es máximo y el PER parece bajo justo cuando la acción está cara",
+                "Que el mercado espera un crecimiento muy alto",
+                "Que su riesgo percibido ha caído",
+              ],
+              correcta: 1,
+              porque: [
+                "Es la lectura ingenua y la trampa clásica: el indicador funciona al revés de lo que sugiere la intuición en las cíclicas.",
+                "Por eso hay que normalizar el beneficio, promediándolo a lo largo del ciclo, antes de calcular el múltiplo.",
+                "Un crecimiento alto esperado empujaría el PER hacia arriba, no hacia abajo.",
+                "Un riesgo percibido menor también elevaría el múltiplo. Lo que lo hunde aquí es el denominador inflado.",
+              ],
+            },
+            {
+              q: "Una empresa con ROE del 6 % y coste de los fondos propios del 10 % decide retener todo el beneficio para crecer. ¿Crea valor?",
+              opciones: [
+                "Sí: retener beneficio siempre financia crecimiento futuro",
+                "Depende del sector en que reinvierta",
+                "No: con un ROE inferior al coste de los fondos propios, cada euro retenido vale menos de un euro",
+                "Sí, porque evita el coste fiscal del reparto de dividendos",
+              ],
+              correcta: 2,
+              porque: [
+                "Crecer no es lo mismo que crear valor: se puede crecer destruyendo valor en cada euro invertido.",
+                "El sector importa para estimar el ROE alcanzable, pero el criterio ya está aplicado: el ROE es del 6 % y la exigencia del 10 %.",
+                "La empresa debería repartir. Es la misma idea que en la política de dividendos: solo se retiene lo que rinde por encima de lo que exige el accionista.",
+                "El ahorro fiscal existe, pero no compensa una destrucción de cuatro puntos de rentabilidad sobre todo lo retenido.",
+              ],
+            },
+            {
+              q: "Una acción cotiza con un P/VC de 0,7. ¿Es señal de infravaloración?",
+              opciones: [
+                "Sí: se compra por 70 céntimos un euro de patrimonio contable",
+                "Suele indicar lo contrario: que el mercado espera un ROE por debajo del coste de los fondos propios",
+                "Sí, siempre que la empresa no tenga deuda",
+                "No aporta información: el valor contable es un dato histórico",
+              ],
+              correcta: 1,
+              porque: [
+                "El patrimonio contable no es dinero disponible: es el coste histórico de unos activos que quizá no rinden lo suficiente.",
+                "La relación P/VC = (ROE − g)/(k − g) lo hace explícito. Solo hay oportunidad si uno cree que ese ROE esperado es demasiado pesimista.",
+                "La ausencia de deuda no cambia el diagnóstico: lo que descuenta el mercado es la rentabilidad de los recursos propios.",
+                "Sí aporta, y mucha, precisamente cuando se lee junto al ROE en lugar de por sí solo.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

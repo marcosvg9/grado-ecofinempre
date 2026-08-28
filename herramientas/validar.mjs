@@ -60,6 +60,11 @@ let graficos = 0;
 let testItems = 0;
 let formulas = 0;
 const porBloque = {};
+/* Dónde cae la respuesta correcta. Se llegó a tener 297 de 300 preguntas
+   con la correcta en la b: cada test individual era válido y el conjunto
+   enseñaba a marcar la segunda opción sin leerla. Ninguna comprobación por
+   ficha puede ver eso, porque el defecto solo existe en el agregado. */
+const posiciones = {};
 
 for (const archivo of archivos) {
   const { default: f } = await import(path.join(dir, archivo));
@@ -124,6 +129,7 @@ for (const archivo of archivos) {
       if (b.tipo === "test") {
         (b.items || []).forEach((p, i) => {
           testItems++;
+          posiciones[p.correcta] = (posiciones[p.correcta] || 0) + 1;
           const donde = `test #${i + 1}`;
           const n = (p.opciones || []).length;
           if (n < 3) err(`${donde}: ${n} opciones, hacen falta al menos 3`);
@@ -171,11 +177,30 @@ for (const archivo of archivos) {
   porBloque[bl] = (porBloque[bl] || 0) + 1;
 }
 
+/* El sesgo de posición no se ve ficha a ficha, así que se mide al final.
+   El umbral es holgado a propósito —con 300 preguntas repartidas al azar en
+   cuatro posiciones lo esperable es un 25 % con una desviación típica de
+   unos 2,5 puntos, de modo que un 40 % está muy lejos del ruido— y lo que
+   pretende es cazar el caso grosero, no perseguir la uniformidad exacta. */
+if (testItems > 20) {
+  const reparto = [0, 1, 2, 3].map((k) => posiciones[k] || 0);
+  const tope = Math.max(...reparto);
+  const cual = "abcd"[reparto.indexOf(tope)];
+  if (tope / testItems > 0.4) {
+    console.log(`  ✗ sesgo de posición: la correcta cae en la «${cual}» en ${tope} de ` +
+      `${testItems} preguntas (${Math.round((tope / testItems) * 100)} %). ` +
+      `El test se puede aprobar por posición sin leer las opciones.`);
+    incidencias++;
+  }
+}
+
 console.log(
   incidencias === 0
     ? `\nSin incidencias en las ${archivos.length} fichas. Gráficos: ${graficos}. Test: ${testItems}. Fórmulas: ${formulas}`
     : `\n${incidencias} incidencias.`
 );
+if (testItems)
+  console.log("Correcta en:", [0, 1, 2, 3].map((k) => `${"abcd"[k]} ${posiciones[k] || 0}`).join("  "));
 console.log("Progreso:", archivos.length, "/", Object.keys(temas).length);
 
 /* Los ciclos no son un error: el WACC necesita la beta y la beta necesita el

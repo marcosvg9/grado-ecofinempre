@@ -169,6 +169,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Una empresa tiene un servicio de atención al cliente excelente. ¿Es una ventaja competitiva?",
+              opciones: [
+                "Solo si es mejor que el de sus competidores, difícil de imitar y se traduce en más margen o más volumen",
+                "Sí: es claramente una fortaleza de la empresa",
+                "Sí, si los clientes lo valoran en las encuestas",
+                "No: la atención al cliente nunca es fuente de ventaja",
+              ],
+              correcta: 0,
+              porque: [
+                "Una fortaleza es algo que se hace bien; una ventaja competitiva es algo que se hace mejor que los demás y que además se sostiene y se cobra.",
+                "Que sea una fortaleza es justamente lo que no basta: si todos los competidores atienden igual de bien, no diferencia nada.",
+                "La valoración de los clientes es necesaria pero no suficiente: falta que los competidores no puedan igualarla y que se traduzca en resultados.",
+                "Puede serlo perfectamente, si cumple las condiciones. Lo que no vale es darla por ventaja sin comprobarlas.",
+              ],
+            },
+            {
+              q: "¿Por qué los recursos que se compran rara vez dan ventaja duradera?",
+              opciones: [
+                "Porque se amortizan y pierden valor con el tiempo",
+                "Porque si están en venta, los competidores también pueden adquirirlos",
+                "Porque exigen financiación y elevan el coste de capital",
+                "Porque el mercado los valora siempre por encima de su utilidad",
+              ],
+              correcta: 1,
+              porque: [
+                "La amortización es contable y no impide que el recurso siga siendo útil ni que otro lo compre igual.",
+                "Las capacidades, en cambio, se construyen con el tiempo y por eso son difíciles de replicar: no hay dónde comprarlas.",
+                "El coste de financiación afecta a la rentabilidad de la compra, no a su carácter imitable.",
+                "El precio de mercado puede ser justo y el recurso seguir sin dar ventaja, porque cualquiera lo paga y lo tiene.",
+              ],
+            },
+            {
+              q: "Una empresa posee una tecnología valiosa, rara e inimitable, y sin embargo no obtiene rentabilidad superior. ¿Qué puede fallar?",
+              opciones: [
+                "Que la tecnología no esté patentada",
+                "Que el sector no sea rentable en su conjunto",
+                "La organización: no está estructurada para explotarla",
+                "Que la tecnología sea demasiado nueva y el mercado no la entienda",
+              ],
+              correcta: 2,
+              porque: [
+                "La patente ayuda a la inimitabilidad, que el enunciado ya da por satisfecha.",
+                "Un sector malo deprime la media, pero la pregunta es por qué esta empresa no se separa de ella teniendo el recurso.",
+                "Es la cuarta condición del VRIO, la que más se olvida: hay empresas con tecnología excepcional y estructuras incapaces de convertirla en producto.",
+                "La novedad puede retrasar la adopción, pero el enunciado ya dice que el recurso es valioso, es decir, que el mercado lo aprecia.",
+              ],
+            },
+            {
+              q: "¿Dónde suelen estar los recursos más difíciles de imitar?",
+              opciones: [
+                "En los activos tecnológicos protegidos por patentes",
+                "En la escala productiva, difícil de replicar por su coste",
+                "En la marca, que exige años de inversión publicitaria",
+                "En lo menos visible: rutinas, relaciones, cultura y conocimiento tácito",
+              ],
+              correcta: 3,
+              porque: [
+                "Las patentes protegen, y a la vez publican: describen exactamente lo que hay que rodear para imitarlo.",
+                "La escala es replicable con capital, y hay competidores dispuestos a ponerlo.",
+                "La marca es valiosa y también visible y comprable: se han construido marcas fuertes a base de dinero.",
+                "Lo que se ve se copia. Si un competidor puede describir exactamente en qué consiste tu ventaja, probablemente pueda reproducirla.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

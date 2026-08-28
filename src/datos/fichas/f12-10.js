@@ -185,6 +185,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "El saldo B.11 del sector resto del mundo es negativo. ¿Qué significa para España?",
+              opciones: [
+                "Que el resto del mundo ha reducido su inversión en España",
+                "Que España tiene superávit comercial: las cuentas del S.2 se llevan desde su punto de vista",
+                "Que España tiene déficit comercial",
+                "Que las importaciones españolas han caído",
+              ],
+              correcta: 1,
+              porque: [
+                "El B.11 es el saldo de bienes y servicios, no una medida de inversión extranjera.",
+                "Lo que para el resto del mundo es un empleo, para la economía nacional es un recurso. Es la regla del espejo aplicada a los saldos.",
+                "Leerlo en directo es el error clásico: todo el S.2 aparece con el signo cambiado respecto a la intuición nacional.",
+                "El signo del saldo no dice nada por sí solo sobre el nivel de las importaciones.",
+              ],
+            },
+            {
+              q: "¿Es el resto del mundo (S.2) un sector institucional más?",
+              opciones: [
+                "Sí, aunque con una secuencia de cuentas reducida",
+                "No: agrupa unidades no residentes muy heterogéneas y solo recoge las operaciones que tienen contrapartida residente",
+                "Sí: es el quinto sector del sistema, junto a los cuatro residentes",
+                "No: es un subsector de las sociedades no financieras",
+              ],
+              correcta: 1,
+              porque: [
+                "Tiene una secuencia reducida, y esa no es la razón de fondo: lo decisivo es que no agrupa unidades por su naturaleza sino operaciones por su contrapartida.",
+                "No interesa lo que un no residente haga con otro no residente: solo entra lo que toca a la economía nacional.",
+                "No forma parte de la economía nacional: es la pieza que cierra el sistema, no una parte de él.",
+                "No tiene nada que ver con las sociedades no financieras.",
+              ],
+            },
+            {
+              q: "Las estadísticas de aduanas valoran las exportaciones FOB y las importaciones CIF. ¿Qué exige el SEC?",
+              opciones: [
+                "Valorar ambas al tipo de cambio medio del periodo",
+                "Valorar ambas CIF, para incluir el coste real de la operación",
+                "Valorar ambas FOB, reasignando fletes y seguros a la partida de servicios",
+                "Mantener ambos criterios, porque reflejan realidades distintas",
+              ],
+              correcta: 2,
+              porque: [
+                "El tipo de cambio es un problema distinto del criterio de valoración en frontera.",
+                "Valorar todo CIF inflaría las importaciones con fletes y seguros que a menudo presta un residente.",
+                "Esos servicios son eso, servicios, y tienen que registrarse como tales para que el saldo de bienes mida solo bienes.",
+                "Mantener criterios distintos hace que el saldo comercial mezcle mercancías con servicios de transporte y seguro.",
+              ],
+            },
+            {
+              q: "Un país encadena varios años de capacidad de financiación positiva. ¿Deja de ser deudor frente al exterior?",
+              opciones: [
+                "No necesariamente: el saldo anual reduce la posición deudora, pero la posición de inversión internacional es un stock construido a lo largo de décadas",
+                "Sí: un saldo positivo cancela la deuda externa acumulada",
+                "Sí, si el superávit supera el 2 % del PIB",
+                "No: la posición exterior no depende de los saldos anuales",
+              ],
+              correcta: 0,
+              porque: [
+                "Y esa posición condiciona los pagos de rentas al exterior durante mucho tiempo, que es lo que mantiene el saldo corriente por debajo del comercial.",
+                "Un flujo positivo mejora el stock; no lo borra.",
+                "Ningún umbral convierte un flujo anual en la cancelación de un stock acumulado.",
+                "Sí depende: cada año de capacidad de financiación la mejora. Lo que no hace es liquidarla de golpe.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

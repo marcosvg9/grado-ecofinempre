@@ -178,6 +178,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Dos empresas quieren fusionarse y su cuota conjunta no llega al 30 %. ¿Basta con eso para no notificar la operación?",
+              opciones: [
+                "Sí, si además ninguna es dominante en su mercado",
+                "Sí: el umbral de cuota es el criterio determinante",
+                "No: toda concentración debe notificarse con independencia de su tamaño",
+                "No: los umbrales son alternativos, y también hay que comprobar el de volumen de negocios",
+              ],
+              correcta: 3,
+              porque: [
+                "La posición dominante previa no es lo que activa la obligación de notificar.",
+                "Comprobar solo uno de los dos es un error frecuente y caro: ejecutar sin notificar es infracción por sí sola.",
+                "Existen umbrales precisamente para no someter a control operaciones sin relevancia.",
+                "Basta superar uno. El de volumen atrapa operaciones grandes en euros aunque no concentren un mercado; el de cuota atrapa operaciones pequeñas en mercados estrechos.",
+              ],
+            },
+            {
+              q: "¿Sobre qué se calcula el techo de la multa por participar en un cártel?",
+              opciones: [
+                "Sobre el volumen de negocios en España",
+                "Sobre el volumen de negocios del mercado afectado",
+                "Sobre el volumen de negocios total del infractor",
+                "Sobre el beneficio obtenido con la conducta",
+              ],
+              correcta: 2,
+              porque: [
+                "Limitarlo al negocio español dejaría fuera la capacidad económica real de las multinacionales.",
+                "Calcularlo sobre el mercado afectado permitiría a un grupo enorme cartelizar un producto pequeño con un riesgo irrelevante.",
+                "Es deliberado: la sanción tiene que doler a quien la recibe, y para eso debe medirse sobre su tamaño real.",
+                "El beneficio del cártel es difícil de probar y suele quedar muy por debajo del daño causado.",
+              ],
+            },
+            {
+              q: "¿Protege una marca la idea que hay detrás de un producto?",
+              opciones: [
+                "No: identifica el origen del producto, y no impide a nadie fabricar lo mismo, solo hacerlo pasar por el de otro",
+                "Sí, durante los diez años de vigencia del registro",
+                "Sí: impide a terceros comercializar productos equivalentes",
+                "No, salvo que se registre además como marca tridimensional",
+              ],
+              correcta: 0,
+              porque: [
+                "Y por eso puede durar indefinidamente sin coste social: renovarla no priva a nadie de fabricar nada.",
+                "La duración no cambia el alcance de lo protegido: el signo, no la técnica.",
+                "Esa es la función de la patente, que por eso mismo tiene una duración limitada a veinte años.",
+                "La modalidad de marca amplía qué signo se protege, no convierte el signo en una idea.",
+              ],
+            },
+            {
+              q: "¿Cuál es el eje del régimen de protección de datos?",
+              opciones: [
+                "Cifrar los datos personales almacenados",
+                "Notificar todo tratamiento a la autoridad de control antes de iniciarlo",
+                "Obtener el consentimiento del interesado para cualquier tratamiento",
+                "La responsabilidad proactiva: no basta con cumplir, hay que poder demostrarlo",
+              ],
+              correcta: 3,
+              porque: [
+                "El cifrado es una medida técnica concreta, no el principio que ordena el régimen.",
+                "El régimen sustituyó precisamente la notificación previa por este modelo de responsabilidad demostrable.",
+                "El consentimiento es una de las bases legítimas posibles, y no la única ni siempre la más adecuada.",
+                "De ahí el registro de actividades, las evaluaciones de impacto y la documentación de las decisiones: invierte la carga y obliga a construir prueba de lo que se hace.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

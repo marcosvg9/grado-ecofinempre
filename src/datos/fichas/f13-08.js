@@ -184,6 +184,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Una empresa compra un solar por 900.000 € y paga 60.000 € de gastos de notaría, registro e impuestos de transmisión. ¿Qué parte es formación de capital?",
+              opciones: [
+                "Los 960.000 €: es una inversión en toda regla",
+                "Solo los 60.000 € de costes de transmisión: el terreno no lo ha producido nadie",
+                "Nada: la compra de terrenos no es formación de capital en ningún caso",
+                "Los 900.000 € del solar; los gastos son consumo intermedio",
+              ],
+              correcta: 1,
+              porque: [
+                "El terreno es un activo no producido y va al NP, no al P.5.",
+                "El criterio de la formación de capital es que exista un activo producido. El suelo estaba ahí antes que nadie; los servicios jurídicos y registrales, no.",
+                "Los costes de transmisión sí lo son, porque retribuyen servicios que alguien ha producido.",
+                "Es exactamente el reparto contrario al correcto.",
+              ],
+            },
+            {
+              q: "¿Se deprecia un cuadro registrado como objeto valioso?",
+              opciones: [
+                "Sí, si está expuesto en las oficinas de la empresa",
+                "Depende de si su valor de mercado sube o baja",
+                "Sí, con una vida útil larga fijada por convención",
+                "No: se adquiere como depósito de valor, no presta servicios productivos y no genera consumo de capital fijo",
+              ],
+              correcta: 3,
+              porque: [
+                "La ubicación no lo convierte en un activo que se consuma produciendo.",
+                "Las variaciones de precio son ganancias o pérdidas por tenencia (K.7), no consumo de capital fijo.",
+                "No hay ninguna convención de vida útil: la depreciación presupone un desgaste por uso productivo que aquí no existe.",
+                "Un cuadro comprado hace treinta años sigue valiendo lo mismo en las cuentas que el día que se adquirió, corregido por revalorizaciones, que van por otra vía.",
+              ],
+            },
+            {
+              q: "La variación de existencias explica buena parte del crecimiento de un trimestre. ¿Qué conviene tener en cuenta antes de construir un relato?",
+              opciones: [
+                "Que las administraciones públicas no tienen existencias",
+                "Que solo recoge existencias de productos terminados",
+                "Que es la partida más revisada del sistema y a menudo actúa como cierre residual del equilibrio entre oferta y empleos",
+                "Que se mide a precios del año anterior y no es comparable con el resto",
+              ],
+              correcta: 2,
+              porque: [
+                "Sí las tienen, y en todo caso eso no es lo que aconseja prudencia.",
+                "Incluye también materias primas y producción en curso.",
+                "Una parte de lo que se atribuye a las existencias en la primera estimación es sencillamente lo que no ha cuadrado por otro sitio, y suele desaparecer en revisiones posteriores.",
+                "Se mide con el mismo criterio de valoración que el resto de la demanda.",
+              ],
+            },
+            {
+              q: "¿Qué diferencia hay entre la formación bruta de capital fijo (P.51g) y la neta (P.51n)?",
+              opciones: [
+                "La neta descuenta el consumo de capital fijo, es decir, lo que se ha desgastado durante el ejercicio",
+                "La neta excluye la inversión financiada con subvenciones",
+                "La bruta se mide a precios de adquisición y la neta a precios básicos",
+                "La bruta incluye los objetos valiosos y la neta no",
+              ],
+              correcta: 0,
+              porque: [
+                "La neta dice cuánto crece de verdad el stock de capital: si una economía invierte justo lo que se le desgasta, su inversión neta es cero aunque la bruta sea enorme.",
+                "El origen de la financiación no interviene en la distinción entre bruto y neto.",
+                "El criterio de valoración es el mismo en ambas.",
+                "Los objetos valiosos son el P.53, una partida distinta de la formación de capital fijo.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

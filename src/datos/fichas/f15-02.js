@@ -192,6 +192,82 @@ export default {
     },
 
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Por qué el pre-ajuste no es un trámite previo que pueda corregirse después?",
+              opciones: [
+                "Porque en el enfoque basado en modelos la descomposición se deriva del ARIMA estimado en esta fase",
+                "Porque los regresores de calendario son obligatorios por reglamento europeo",
+                "Porque una vez publicado el dato no se puede volver atrás",
+                "Porque el pre-ajuste consume observaciones que ya no se recuperan",
+              ],
+              correcta: 0,
+              porque: [
+                "Un pre-ajuste mal especificado no se arregla en las etapas siguientes: se propaga a todos los componentes, porque de ese modelo salen.",
+                "La obligatoriedad normativa no explica por qué un error aquí contamina todo lo que viene después.",
+                "Los datos se revisan continuamente: la irreversibilidad no es el problema.",
+                "El consumo de observaciones por las diferencias es un problema distinto, de longitud de la serie.",
+              ],
+            },
+            {
+              q: "¿Por qué el modelo RegARIMA estima conjuntamente los efectos de calendario y la parte ARIMA?",
+              opciones: [
+                "Porque el reglamento europeo exige un único modelo",
+                "Porque estimar el calendario primero por regresión ordinaria sobre residuos autocorrelacionados da errores estándar mal calculados",
+                "Porque así se reduce el tiempo de cálculo",
+                "Porque de otro modo no se podrían incluir atípicos",
+              ],
+              correcta: 1,
+              porque: [
+                "El reglamento recoge la buena práctica; la razón de fondo es estadística.",
+                "Los residuos de una serie económica están autocorrelacionados, y la regresión ordinaria supone lo contrario: los contrastes sobre la significación de los regresores dejan de ser fiables.",
+                "El coste de cálculo es irrelevante frente a la calidad de la estimación.",
+                "Los atípicos pueden incluirse en ambos planteamientos: el problema es la fiabilidad de la estimación conjunta.",
+              ],
+            },
+            {
+              q: "¿Qué es el modelo aerolínea y qué estatus tiene?",
+              opciones: [
+                "Un modelo (0,1,1)(0,1,1) con dos parámetros, y un buen punto de partida empírico, no un resultado teórico",
+                "Un modelo específico para series del sector del transporte aéreo",
+                "Un modelo sin parámetros libres, que por eso se aplica automáticamente",
+                "El modelo que la teoría demuestra óptimo para series económicas estacionales",
+              ],
+              correcta: 0,
+              porque: [
+                "Ajusta razonablemente muchas series económicas y por eso se usa por defecto, pero hay series para las que no es el mejor y darlo por bueno sin comprobarlo produce ajustes pobres.",
+                "Debe su nombre a la serie de pasajeros aéreos con la que se popularizó, y se aplica a series de cualquier ámbito.",
+                "Tiene dos parámetros que hay que estimar, uno regular y otro estacional.",
+                "No hay ningún teorema que lo respalde: su prestigio es empírico.",
+              ],
+            },
+            {
+              q: "¿Cuándo conviene desconfiar de la identificación automática del modelo?",
+              opciones: [
+                "Cuando la serie se expresa en logaritmos",
+                "En series cortas, muy irregulares o con cambios de nivel, donde conviene revisar la especificación elegida",
+                "Solo cuando la serie tiene menos de tres años",
+                "Siempre: la identificación automática no es aceptable en producción estadística",
+              ],
+              correcta: 1,
+              porque: [
+                "La transformación logarítmica es una decisión previa y no afecta a la fiabilidad de la identificación.",
+                "En esos casos el criterio de información puede elegir una especificación que ajusta bien la muestra y describe mal el proceso.",
+                "Por debajo de tres años la serie no es publicable en absoluto, así que la cuestión ni se plantea.",
+                "Funciona bien en la mayoría de las series: rechazarla por sistema sería desaprovechar una herramienta buena.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

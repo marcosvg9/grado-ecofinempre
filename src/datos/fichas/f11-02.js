@@ -179,6 +179,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Es la globalización una tendencia irreversible de la historia?",
+              opciones: [
+                "Sí: el comercio mundial ha crecido de forma sostenida desde el siglo XIX",
+                "No, pero los retrocesos nunca han durado más de una década",
+                "No: la apertura comercial de 1913 no se recuperó hasta los años setenta, tras sesenta años de desintegración",
+                "Sí, salvo interrupciones breves durante las guerras",
+              ],
+              correcta: 2,
+              porque: [
+                "El crecimiento sostenido describe algunos tramos y no el conjunto del periodo.",
+                "El retroceso de entreguerras y posguerra duró seis décadas.",
+                "Es un régimen político sostenido por decisiones, no una ley natural. Se puede desmontar, y se desmontó durante dos generaciones.",
+                "Sesenta años no son una interrupción breve: son la vida laboral entera de dos generaciones.",
+              ],
+            },
+            {
+              q: "El patrón oro se asocia a la estabilidad de precios. ¿Qué matiza esa idea?",
+              opciones: [
+                "Que la estabilidad se medía con índices poco fiables",
+                "Que los precios estables se lograron solo después de 1890",
+                "Que los precios eran estables a largo plazo y muy volátiles a corto, con deflaciones prolongadas y crisis bancarias frecuentes",
+                "Que la estabilidad de precios era un objetivo declarado y nunca conseguido",
+              ],
+              correcta: 2,
+              porque: [
+                "Los índices tienen limitaciones y no son lo que desmiente la imagen idealizada.",
+                "La volatilidad de corto plazo acompañó a todo el periodo.",
+                "Y esa estabilidad de largo plazo se compraba renunciando a la política monetaria: el tipo de cambio mandaba sobre el empleo.",
+                "Sí se consiguió a largo plazo. Lo que se pasa por alto es a qué precio y con qué volatilidad por el camino.",
+              ],
+            },
+            {
+              q: "El mecanismo de Hume predice que un país con déficit exterior pierde oro, sus precios bajan y recupera competitividad. ¿Qué falla?",
+              opciones: [
+                "Que ajustar por precios exige que salarios y contratos nominales caigan de verdad, y como no caen el ajuste se produce vía producción y empleo",
+                "Que la cantidad de oro no determina el nivel de precios",
+                "Que el comercio no responde a los precios relativos",
+                "Que los flujos de oro eran demasiado pequeños para mover nada",
+              ],
+              correcta: 0,
+              porque: [
+                "Es el mismo problema que reaparece en cualquier devaluación interna: sin rigidez nominal el ajuste sería indoloro, y con ella lo paga el empleo.",
+                "La relación entre oro y precios es el supuesto del mecanismo y no es lo que se rompe.",
+                "El comercio sí responde a los precios relativos; el problema es cómo se llega a ese cambio de precios.",
+                "Los flujos eran suficientes; el obstáculo estaba en la rigidez de precios y salarios.",
+              ],
+            },
+            {
+              q: "¿Era simétrico el ajuste bajo el patrón oro entre países con déficit y con superávit?",
+              opciones: [
+                "No: los países con superávit ajustaban más rápido por presión inflacionista",
+                "Sí: ambos tenían el mismo incentivo a restablecer el equilibrio",
+                "Sí, porque las reglas del sistema obligaban a ambos por igual",
+                "No: el que pierde oro está obligado a ajustar porque agota reservas; el que lo gana puede esterilizar la entrada y no hacer nada",
+              ],
+              correcta: 3,
+              porque: [
+                "La presión inflacionista podía neutralizarse esterilizando, y es lo que se hizo.",
+                "El incentivo no es el mismo: quedarse sin reservas es una urgencia, acumularlas no lo es.",
+                "Las reglas no obligaban al acreedor, que es precisamente el hueco del sistema.",
+                "En la práctica varios grandes acreedores esterilizaron durante años, y todo el peso del ajuste recayó sobre los deficitarios. Es la asimetría que reaparece en cualquier unión monetaria.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

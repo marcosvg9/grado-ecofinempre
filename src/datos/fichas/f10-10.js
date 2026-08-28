@@ -187,6 +187,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Se publica el avance del PIB del trimestre con un crecimiento del 0,7 %. ¿Qué fiabilidad tiene?",
+              opciones: [
+                "Alta para la tasa trimestral, baja para la interanual",
+                "Alta: el INE no publica hasta tener la información completa",
+                "Limitada: se elabora con una fracción de la información final, y en el ejemplo ese 0,7 % acabó siendo un 0,3 %",
+                "Depende del trimestre: los de verano son menos fiables por la estacionalidad",
+              ],
+              correcta: 2,
+              porque: [
+                "Ambas se revisan; no hay tal asimetría.",
+                "Se publica pronto precisamente porque la utilidad de un dato decae con el tiempo, y eso obliga a estimar con lo que hay.",
+                "La revisión absoluta media es de unas dos décimas, así que la diferencia entre un 0,4 % y un 0,5 % no es información.",
+                "La estacionalidad se corrige y no es la fuente principal de las revisiones.",
+              ],
+            },
+            {
+              q: "Para juzgar si un banco central acertó con una decisión de hace cinco años, ¿qué datos hay que usar?",
+              opciones: [
+                "Los que tenía disponibles entonces, no la serie revisada",
+                "Los datos revisados, corregidos por el error medio de revisión",
+                "La media de ambas, para equilibrar los dos puntos de vista",
+                "La serie revisada, que es la que refleja lo que realmente ocurrió",
+              ],
+              correcta: 0,
+              porque: [
+                "Un banco central que veía una brecha de producción del −1,27 % actuaba de forma coherente aunque la brecha revisada resulte otra. Juzgarlo con datos posteriores le atribuye información que no tenía.",
+                "Corregir por el error medio no devuelve la información que había sobre la mesa aquel día.",
+                "Promediar dos cosas conceptualmente distintas no produce el criterio correcto.",
+                "Refleja lo que ocurrió y no lo que era observable al decidir, que es lo que se está evaluando.",
+              ],
+            },
+            {
+              q: "¿Son las revisiones de las cuentas nacionales ruido aleatorio?",
+              opciones: [
+                "Sí: por eso su media tiende a cero a largo plazo",
+                "Sí, salvo en los años de cambio metodológico",
+                "No, pero el sesgo es tan pequeño que puede ignorarse",
+                "No: tienen patrones sistemáticos, al alza en expansiones y a la baja en recesiones",
+              ],
+              correcta: 3,
+              porque: [
+                "Si fueran aleatorias su media tendería a cero, y no es lo que se observa.",
+                "Los cambios metodológicos son un caso aparte y el patrón cíclico existe también entre ellos.",
+                "No es despreciable: agrava precisamente los errores de política en los momentos críticos.",
+                "Las fuentes tardías capturan mejor la actividad de las empresas que nacen y mueren, y esa creación y destrucción es cíclica. El sesgo va justo en la dirección que agrava el error de diagnóstico en tiempo real.",
+              ],
+            },
+            {
+              q: "¿Qué diferencia hay entre nowcasting y predicción?",
+              opciones: [
+                "La predicción se refiere a variables reales y el nowcasting a variables nominales",
+                "El nowcasting estima el trimestre en curso, que ya ha ocurrido pero aún no se ha medido; no dice nada sobre el futuro",
+                "El nowcasting es más fiable porque usa modelos más complejos",
+                "Ninguna: el nowcasting es predicción a muy corto plazo",
+              ],
+              correcta: 1,
+              porque: [
+                "Ambos pueden referirse a cualquier tipo de variable.",
+                "Combina indicadores de frecuencia alta para adelantar una medición pendiente. Confundirlo con predecir atribuye a la técnica una capacidad que no tiene.",
+                "Su mayor fiabilidad no viene de la sofisticación del modelo sino de que el periodo estimado ya ocurrió.",
+                "El objeto es distinto: uno estima algo que ya pasó, el otro algo que no ha pasado.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

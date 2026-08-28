@@ -192,6 +192,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Una empresa rescinde el contrato de su agente comercial, que durante años le ha creado una cartera de clientes. ¿Le debe algo por ello?",
+              opciones: [
+                "Sí, pero únicamente si la rescisión carece de causa",
+                "Sí: la indemnización por clientela, propia del contrato de agencia",
+                "Solo si el contrato la había pactado expresamente",
+                "No: la rescisión con preaviso extingue la relación sin más consecuencias",
+              ],
+              correcta: 1,
+              porque: [
+                "Puede haber causa justificada y seguir debiéndose, porque lo que compensa es el valor aportado, no la forma de terminar.",
+                "Es el rasgo característico de la agencia: el agente ha construido una clientela que sigue produciendo ingresos a quien le encargó promoverla.",
+                "No hace falta pacto: es un efecto legal del tipo contractual, que además es de difícil renuncia anticipada.",
+                "El preaviso evita el incumplimiento y no compensa el valor que queda en manos del principal.",
+              ],
+            },
+            {
+              q: "¿Qué diferencia hay entre una fianza y un aval a primer requerimiento?",
+              opciones: [
+                "La fianza es una garantía real y el aval una personal",
+                "La fianza es siempre bancaria y el aval puede darlo un particular",
+                "El aval a primer requerimiento solo cubre el principal, y la fianza también los intereses",
+                "El aval a primer requerimiento obliga a pagar sin poder oponer las excepciones del contrato garantizado",
+              ],
+              correcta: 3,
+              porque: [
+                "Las dos son garantías personales: añaden un patrimonio, no un bien afecto.",
+                "Ambas pueden prestarlas entidades o particulares.",
+                "La extensión de la cobertura la fija el contrato en ambos casos.",
+                "El fiador puede discutir si la deuda existe o si el acreedor cumplió; el avalista a primer requerimiento paga y discute después. La diferencia práctica es enorme para quien firma.",
+              ],
+            },
+            {
+              q: "Una empresa activa en su balance la máquina que tiene en leasing. ¿Puede venderla?",
+              opciones: [
+                "Sí, si ya ha pagado más de la mitad de las cuotas",
+                "Sí, comunicándolo previamente al arrendador",
+                "No: jurídicamente el propietario sigue siendo el arrendador hasta que se ejercita la opción de compra",
+                "Sí: si figura en su balance, es suya a todos los efectos",
+              ],
+              correcta: 2,
+              porque: [
+                "El porcentaje pagado no transfiere la propiedad jurídica antes de ejercitar la opción.",
+                "La comunicación no suple la falta de título: no se puede transmitir lo que no se tiene.",
+                "Es el error simétrico al de no activar el bien: el arrendador puede recuperarlo si no se paga, y en un concurso separarlo de la masa.",
+                "El balance refleja la propiedad económica —quién asume riesgos y ventajas—, y esa no es la que faculta para vender.",
+              ],
+            },
+            {
+              q: "¿En qué dirección se especializa el derecho mercantil respecto del civil en materia de contratos?",
+              opciones: [
+                "Hacia una mayor exigencia de forma escrita y solemne",
+                "Hacia más protección del contratante débil, como en el derecho de consumo",
+                "Hacia plazos de prescripción más largos, para dar seguridad",
+                "Hacia más rapidez y certeza en el tráfico, y menos tutela del deudor",
+              ],
+              correcta: 3,
+              porque: [
+                "El derecho mercantil tiende a la libertad de forma precisamente para no entorpecer el tráfico.",
+                "La protección del contratante débil es la lógica del derecho de consumo, que actúa en sentido contrario y sobre otro supuesto.",
+                "Los plazos mercantiles suelen ser más breves, no más largos, por la misma razón de certeza.",
+                "Presume profesionalidad en ambas partes: quien contrata en el tráfico de empresa sabe lo que hace, y por eso el sistema prima la agilidad.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

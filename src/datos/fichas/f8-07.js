@@ -143,6 +143,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un mercado es eficiente. ¿Significa que sus precios son correctos?",
+              opciones: [
+                "Sí: eficiencia y precio justo son lo mismo",
+                "No: significa que reflejan la información disponible, no que acierten",
+                "Sí, salvo en los mercados poco líquidos",
+                "No: significa que nadie puede perder dinero invirtiendo a largo plazo",
+              ],
+              correcta: 1,
+              porque: [
+                "El precio justo exigiría conocer el futuro, y ninguna definición de eficiencia pide tanto.",
+                "Un precio puede incorporar toda la información pública y resultar equivocado después, sencillamente porque el futuro trajo algo que nadie sabía.",
+                "La liquidez afecta a la velocidad con que se incorpora la información, no a la definición.",
+                "La eficiencia no promete rentabilidad: promete que no hay dinero fácil sobre la mesa a partir de información ya conocida.",
+              ],
+            },
+            {
+              q: "Un gestor lleva ocho años seguidos batiendo a su índice. ¿Es prueba de habilidad?",
+              opciones: [
+                "Sí: ocho años es una serie suficientemente larga",
+                "Sí, si además el fondo tiene un patrimonio elevado",
+                "No: en una población de miles de gestores, algunos acumularán rachas largas por puro azar",
+                "No: batir al índice ocho años seguidos es estadísticamente imposible",
+              ],
+              correcta: 2,
+              porque: [
+                "Ocho años parecen muchos hasta que se cuenta cuántos gestores compiten: con miles de participantes, las rachas largas son esperables.",
+                "El patrimonio mide el éxito comercial del fondo, que suele venir después de la racha y no la valida.",
+                "Distinguir habilidad de suerte exige series muy largas y control por exposición a factores, porque parte del exceso puede ser prima de riesgo disfrazada.",
+                "No solo es posible: es lo que cabe esperar que le ocurra a alguien en una población grande.",
+              ],
+            },
+            {
+              q: "Una estadística muestra que los fondos de renta variable han rendido de media un 9 % anual en veinte años. ¿Qué falta comprobar?",
+              opciones: [
+                "Si la cifra es nominal o real",
+                "Si incluye a los fondos que cerraron: los que lo hicieron mal desaparecen y solo quedan los supervivientes",
+                "Si el período incluye alguna recesión",
+                "Si la media es aritmética o geométrica",
+              ],
+              correcta: 1,
+              porque: [
+                "Es una precisión pertinente, pero no la que puede estar inflando sistemáticamente la cifra.",
+                "El sesgo de supervivencia infla cualquier estadística sobre la industria construida solo con los fondos que siguen vivos.",
+                "Veinte años difícilmente excluyen una recesión, y en todo caso el sesgo actuaría igual.",
+                "La diferencia entre medias importa, pero es un efecto menor comparado con excluir del cómputo a los que fracasaron.",
+              ],
+            },
+            {
+              q: "Si los mercados fueran perfectamente eficientes, ¿tendría sentido analizar empresas?",
+              opciones: [
+                "No: sería un gasto sin contrapartida",
+                "Sí, pero solo para inversores institucionales",
+                "No: bastaría con comprar el índice y olvidarse",
+                "La paradoja de Grossman y Stiglitz señala que no: si nadie analizara, los precios dejarían de ser informativos",
+              ],
+              correcta: 3,
+              porque: [
+                "Sería un gasto sin contrapartida en ese mundo, y justamente por eso ese mundo no puede sostenerse.",
+                "El tipo de inversor no resuelve la paradoja: el argumento vale para cualquiera que analice.",
+                "Comprar el índice es una conclusión práctica razonable, pero no responde a por qué los precios contienen información.",
+                "El equilibrio exige ineficiencia suficiente para pagar el análisis que hace eficientes los precios. La eficiencia perfecta se destruiría a sí misma.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

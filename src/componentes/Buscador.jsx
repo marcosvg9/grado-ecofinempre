@@ -90,7 +90,7 @@ export default function Buscador({ indiceBusqueda, irAFicha, inicial = "" }) {
           </p>
           <p className="buscadorEjemplos">
             {EJEMPLOS.map((e) => (
-              <button className="chip" key={e} onClick={() => setTexto(e)}>{e}</button>
+              <button className="chipEjemplo" key={e} onClick={() => setTexto(e)}>{e}</button>
             ))}
           </p>
         </div>

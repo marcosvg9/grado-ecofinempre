@@ -176,6 +176,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un autónomo contrae deudas con proveedores de su negocio. ¿Con qué responde?",
+              opciones: [
+                "Hasta el límite del capital que declaró al darse de alta",
+                "Con su patrimonio personal solo si actuó con negligencia",
+                "Con todo su patrimonio, presente y futuro, incluida su vivienda",
+                "Solo con los bienes afectos a la actividad",
+              ],
+              correcta: 2,
+              porque: [
+                "El empresario individual no tiene capital declarado que limite nada.",
+                "La negligencia agrava la responsabilidad de un administrador social; el autónomo responde con todo desde el primer día.",
+                "Es la diferencia de fondo con la sociedad, y pesa mucho más que cualquier cálculo fiscal. La elección real es entre ser la empresa o participar en otra persona distinta de uno.",
+                "No existe separación entre patrimonio empresarial y personal: el empresario individual es la empresa.",
+              ],
+            },
+            {
+              q: "¿Qué diferencia hay entre las participaciones de una limitada y las acciones de una anónima?",
+              opciones: [
+                "Las participaciones exigen escritura pública y las acciones no",
+                "Las participaciones dan derecho a voto y las acciones solo a dividendo",
+                "Las participaciones no son libremente transmisibles y las acciones sí",
+                "Ninguna sustancial: son dos nombres para la parte alícuota del capital",
+              ],
+              correcta: 2,
+              porque: [
+                "La transmisión de participaciones sí exige documento público, y esa formalidad es consecuencia de lo anterior, no la diferencia de fondo.",
+                "Ambas dan voto salvo que se emitan clases especiales, y eso es posible en los dos tipos.",
+                "La limitada es una sociedad cerrada: la ley presume que a los socios les importa con quién comparten empresa. La anónima nació para reunir capital de desconocidos.",
+                "La diferencia es central y explica para qué sirve cada tipo social.",
+              ],
+            },
+            {
+              q: "¿Cuánto capital hay que desembolsar para constituir una sociedad anónima?",
+              opciones: [
+                "3.000 €, igual que la limitada antes de la reforma",
+                "15.000 €: el 25 % del capital mínimo de 60.000 €",
+                "Un euro, como en la limitada",
+                "Los 60.000 € íntegros en el momento de la constitución",
+              ],
+              correcta: 1,
+              porque: [
+                "Los 3.000 € eran el mínimo de la limitada, que además ya no rige.",
+                "Suscribir y desembolsar son cosas distintas: el socio se compromete por el total y aporta de entrada una parte.",
+                "El capital de un euro es una posibilidad de la limitada; la anónima conserva su mínimo elevado.",
+                "La ley exige suscribir todo el capital y desembolsar al menos la cuarta parte; el resto queda como dividendos pasivos exigibles.",
+              ],
+            },
+            {
+              q: "¿Cómo se reparte el excedente en una cooperativa?",
+              opciones: [
+                "Según la actividad que cada socio haya realizado con la cooperativa",
+                "A partes iguales entre todos los socios",
+                "Se reinvierte íntegramente: las cooperativas no reparten",
+                "En proporción al capital aportado, como en cualquier sociedad",
+              ],
+              correcta: 0,
+              porque: [
+                "Se es socio por participar en la actividad, no por poner dinero, y el reparto sigue esa misma lógica. Verla como una sociedad con ventajas fiscales pierde de vista lo esencial.",
+                "El reparto igualitario correspondería al voto —un socio, un voto—, no al excedente.",
+                "Sí reparten, y lo hacen con un criterio distinto del de las sociedades de capital.",
+                "Ese es el criterio de las sociedades de capital, y la cooperativa es una sociedad de personas.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

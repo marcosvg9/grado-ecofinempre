@@ -161,6 +161,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un proyecto describe con detalle el problema que resuelve y cómo lo entrega, pero despacha en una línea de dónde saldrá el dinero. ¿Qué le falta?",
+              opciones: [
+                "La captura de valor: crear y entregar no basta si no se retiene una parte",
+                "Un análisis de la competencia",
+                "Una previsión de tesorería a tres años",
+                "La definición del público objetivo",
+              ],
+              correcta: 0,
+              porque: [
+                "Un modelo de negocio son las tres partes o ninguna: hay innovaciones que crean muchísimo valor y no capturan casi nada.",
+                "El análisis competitivo es útil, pero el hueco señalado en el enunciado es otro.",
+                "La previsión es una consecuencia del modelo, no la pieza que falta en su diseño.",
+                "El enunciado ya supone identificado a quién sirve: lo que no dice es cómo cobra.",
+              ],
+            },
+            {
+              q: "¿Qué caracteriza a una innovación disruptiva en sentido preciso?",
+              opciones: [
+                "Que introduce un cambio tecnológico radical",
+                "Que desplaza al líder del mercado en pocos años",
+                "Que empieza sirviendo peor a los clientes principales, a menudo desde un segmento marginal, y mejora hasta desplazarlos",
+                "Que se apoya en un modelo de negocio digital",
+              ],
+              correcta: 2,
+              porque: [
+                "Una innovación puede ser radical y no disruptiva: muchas mejoran el producto para los clientes que ya lo compran.",
+                "El desplazamiento es el resultado, no el rasgo que define el mecanismo.",
+                "Por eso el líder la ignora racionalmente al principio: sus mejores clientes no la quieren, y cuando la quieren ya es tarde.",
+                "Lo digital es un contexto frecuente, no parte de la definición.",
+              ],
+            },
+            {
+              q: "Una empresa innovadora crea un mercado nuevo y acaba capturando una parte mínima del valor. ¿Por qué puede ocurrir?",
+              opciones: [
+                "Porque no reinvirtió lo suficiente en I+D",
+                "Porque entró demasiado pronto, antes de que hubiera demanda",
+                "Porque no registró una marca reconocible",
+                "Por protección débil de la innovación y control ajeno de los activos complementarios, como la distribución",
+              ],
+              correcta: 3,
+              porque: [
+                "Más I+D genera más innovación, no más capacidad de retener su valor.",
+                "El momento de entrada influye, pero el reparto del valor lo decide quién controla lo que hace falta para llegar al cliente.",
+                "La marca ayuda, y es solo uno de los activos complementarios en juego.",
+                "Con protección débil y distribución en manos ajenas, el innovador crea el mercado y se lo queda otro. Es un resultado frecuente y previsible.",
+              ],
+            },
+            {
+              q: "El número total de clientes crece mes a mes. ¿Basta para concluir que el negocio va bien?",
+              opciones: [
+                "Sí: el crecimiento de la base es el indicador principal",
+                "No: hay que mirar por cohortes, porque el agregado puede ocultar que cada cohorte se comporta peor que la anterior",
+                "Sí, si además crece la facturación",
+                "No, salvo que el coste de captación se mantenga estable",
+              ],
+              correcta: 1,
+              porque: [
+                "La cifra agregada crece mientras entren clientes nuevos, incluso si cada nueva remesa retiene peor y gasta menos.",
+                "El análisis por cohorte de captación revela deterioros que las métricas agregadas tardan meses en enseñar, cuando ya son caros de corregir.",
+                "La facturación agregada tiene el mismo problema: la sostienen los clientes antiguos mientras los nuevos empeoran.",
+                "El coste de captación es una pieza, y sin cohortes no se ve si lo que se compra con él vale cada vez menos.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

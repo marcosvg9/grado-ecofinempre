@@ -181,6 +181,82 @@ export default {
     },
 
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un estudio da un Gini de 0,49 para España y otro de 0,33. ¿Se contradicen?",
+              opciones: [
+                "Sí, salvo que se refieran a años distintos",
+                "No: el Gini admite un margen de error de esa magnitud",
+                "Sí: uno de los dos está mal calculado",
+                "No necesariamente: un Gini de renta de mercado y otro de renta disponible difieren en unos diez puntos en la misma economía",
+              ],
+              correcta: 3,
+              porque: [
+                "El año importa poco al lado de la definición de renta empleada.",
+                "El Gini no tiene un margen de error de dieciséis puntos: la discrepancia es conceptual, no estadística.",
+                "Ambos pueden estar bien: miden cosas distintas.",
+                "La diferencia son impuestos y transferencias. Comparar países, años o estudios sin comprobar qué renta se está midiendo es la fuente de confusión más común del tema.",
+              ],
+            },
+            {
+              q: "¿Por qué el Gini de la riqueza es mucho mayor que el de la renta?",
+              opciones: [
+                "Porque acumula décadas de diferencias de renta más las herencias",
+                "Porque la riqueza incluye la vivienda habitual, que distorsiona el reparto",
+                "Porque la riqueza se mide con encuestas menos fiables",
+                "Porque el Gini no es aplicable a magnitudes de stock",
+              ],
+              correcta: 0,
+              porque: [
+                "Donde la renta da 0,35, la riqueza puede dar 0,70. Un flujo anual y un saldo acumulado durante generaciones no pueden repartirse igual.",
+                "La vivienda es en realidad el activo que más iguala el reparto de la riqueza en España.",
+                "La medición es más difícil, y esa no es la razón de la brecha.",
+                "Se aplica perfectamente a stocks; lo que cambia es el nivel del resultado.",
+              ],
+            },
+            {
+              q: "Al medir la desigualdad se ignoran la sanidad y la educación públicas. ¿Qué efecto tiene?",
+              opciones: [
+                "Ninguno: no son renta monetaria del hogar",
+                "Exagera la desigualdad: son renta real que el hogar no cobra pero disfruta, y su reparto es más igualitario que el monetario",
+                "La subestima, porque los hogares de renta alta usan más la sanidad privada",
+                "Depende del método de imputación empleado",
+              ],
+              correcta: 1,
+              porque: [
+                "No son monetarias y sí son renta: el hogar recibe un servicio que de otro modo tendría que pagar.",
+                "Al repartirse de forma más igualitaria que el dinero, incluirlas comprime la distribución. Dejarlas fuera hace parecer más desigual de lo que es a la economía.",
+                "El uso de la privada por parte de las rentas altas no invierte el signo del efecto.",
+                "El método afecta a la magnitud del ajuste, no a su dirección.",
+              ],
+            },
+            {
+              q: "El Gini de un país baja durante una recesión. ¿Ha mejorado el bienestar?",
+              opciones: [
+                "Sí, aunque el efecto sea transitorio",
+                "No se sigue: el Gini baja tanto si suben las rentas bajas como si caen las altas",
+                "No: el Gini no es comparable entre fases del ciclo",
+                "Sí: una distribución más igualitaria es siempre preferible",
+              ],
+              correcta: 1,
+              porque: [
+                "La duración no cambia que la mejora del índice pueda proceder de un empobrecimiento generalizado.",
+                "Una recesión que golpee sobre todo a las rentas del capital reduce la desigualdad y empobrece al país. Las dos cosas no son equivalentes y el índice no las distingue.",
+                "Sí es comparable; lo que hace falta es mirar también qué ha pasado con los niveles.",
+                "El indicador mide dispersión, no nivel: puede mejorar mientras todo el mundo empeora.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

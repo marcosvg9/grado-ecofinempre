@@ -201,6 +201,82 @@ export default {
     },
 
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Garantiza la reconciliación MinT que mejore la previsión de cada serie individual?",
+              opciones: [
+                "No: lo que se reduce es el error del conjunto, y una serie concreta puede empeorar",
+                "Sí, salvo en las series hoja",
+                "Sí: por eso se llama óptima",
+                "No, pero sí que ninguna empeore respecto a su previsión base",
+              ],
+              correcta: 0,
+              porque: [
+                "En el ejemplo, energía pasa de 22,0 a 21,45 y puede que 22,0 fuera lo acertado. Se gana en agregado y se puede perder en un punto.",
+                "Las hojas también pueden empeorar: la proyección las mueve como a todas las demás.",
+                "La optimalidad es del conjunto: minimiza la traza de la covarianza de los errores reconciliados, no cada término por separado.",
+                "Alguna puede empeorar: esa es exactamente la advertencia.",
+              ],
+            },
+            {
+              q: "¿Es la proyección ponderada siempre preferible a la ortogonal?",
+              opciones: [
+                "No: la ortogonal es preferible por ser insesgada",
+                "Sí, siempre que se disponga de al menos veinte observaciones",
+                "Sí: incorporar información sobre la fiabilidad de cada previsión nunca puede empeorar el resultado",
+                "Con la matriz de covarianzas correcta domina; con una mal estimada puede ser peor que la ortogonal, que no supone nada",
+              ],
+              correcta: 3,
+              porque: [
+                "Ambas preservan la insesgadez si las previsiones base lo son: la invariancia se cumple en las dos.",
+                "El tamaño muestral ayuda a estimar mejor la matriz, y no convierte la ponderación en incondicionalmente superior.",
+                "Puede empeorarlo: la ponderación es una apuesta sobre la estructura de los errores, y una apuesta equivocada cuesta.",
+                "La matriz hay que estimarla, y ahí está el problema práctico de todo el método.",
+              ],
+            },
+            {
+              q: "¿Se puede confundir la proyección ortogonal con bottom-up por ser ambas sencillas y coherentes?",
+              opciones: [
+                "No: la ortogonal usa todas las previsiones y las mueve todas; bottom-up usa solo las hojas y las deja intactas",
+                "Son equivalentes cuando la jerarquía tiene un solo nivel",
+                "Sí: ambas ignoran la matriz de covarianzas y dan el mismo resultado",
+                "No: bottom-up no es una proyección sobre el subespacio coherente",
+              ],
+              correcta: 0,
+              porque: [
+                "En el ejemplo, bottom-up deja el total en 133,50 y la ortogonal en 132,64. Son dos conjuntos coherentes distintos, y esa es la lección de fondo: la coherencia no determina el resultado.",
+                "Ni siquiera entonces: con una sola serie no hay jerarquía que reconciliar.",
+                "Ambas prescinden de la matriz y llegan a puntos distintos del subespacio coherente.",
+                "Bottom-up también puede escribirse como una proyección, con una matriz concreta: lo que las separa es cuánta información usan.",
+              ],
+            },
+            {
+              q: "Las previsiones base están muy lejos de cuadrar entre niveles. ¿Qué conviene hacer antes de reconciliar?",
+              opciones: [
+                "Aplicar bottom-up, que siempre cuadra",
+                "Revisar los modelos: una incoherencia grande es también una señal de que alguno está mal especificado",
+                "Aumentar la ponderación del nivel agregado",
+                "Nada: cuanto mayor sea la incoherencia, más gana la reconciliación",
+              ],
+              correcta: 1,
+              porque: [
+                "Cuadrar por construcción no arregla un modelo mal especificado: lo esconde.",
+                "La magnitud de la incoherencia es información sobre la calidad de los modelos base, y conviene leerla antes de hacerla desaparecer.",
+                "Manipular las ponderaciones para tapar el síntoma agrava el problema.",
+                "Gana mucho, sí, y eso puede ocultar el diagnóstico: la reconciliación repartirá elegantemente un error que tiene causa identificable.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

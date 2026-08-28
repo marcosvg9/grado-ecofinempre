@@ -191,6 +191,82 @@ export default {
     },
 
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "El factor estacional del agregado es 0,87 mientras el turismo tiene 1,66 y la industria 0,51. ¿Qué indica el 0,87?",
+              opciones: [
+                "Que el agregado tiene estacionalidad débil",
+                "Que hay un error en el cálculo de los factores",
+                "Que el agregado debe ajustarse con un filtro más corto",
+                "Que dos patrones fuertes y opuestos se están cancelando parcialmente en el total",
+              ],
+              correcta: 3,
+              porque: [
+                "Leer la suavidad del agregado como estacionalidad débil oculta precisamente lo que está pasando debajo.",
+                "No hay error: la cancelación es un resultado aritmético normal al sumar componentes con patrones opuestos.",
+                "El filtro no resuelve un problema de heterogeneidad entre componentes.",
+                "Ajustar directamente un agregado así estimaría un patrón promedio que no describe bien a ninguna de las partes.",
+              ],
+            },
+            {
+              q: "Un instituto ajusta unas partidas directamente y otras por agregación, según cuál dé mejor resultado en cada caso. ¿Es aceptable?",
+              opciones: [
+                "No: es peor que cualquiera de las dos opciones, porque las discrepancias dejan de tener un patrón interpretable",
+                "No, salvo en cuadros con menos de diez partidas",
+                "Sí, si documenta la elección partida por partida",
+                "Sí: aprovecha lo mejor de cada enfoque",
+              ],
+              correcta: 0,
+              porque: [
+                "La exigencia europea es elegir un criterio, aplicarlo a todo y documentarlo. Mezclar según convenga hace imposible saber de dónde viene cada descuadre.",
+                "El número de partidas no cambia el argumento.",
+                "Documentarlo hace transparente una práctica que sigue siendo indefendible.",
+                "No hay nada que aprovechar: lo que se gana en cada partida se pierde en la coherencia del conjunto.",
+              ],
+            },
+            {
+              q: "¿En qué se diferencian la no aditividad de los volúmenes encadenados y la del ajuste estacional?",
+              opciones: [
+                "La del encadenamiento es corregible y la del ajuste no",
+                "La del ajuste solo afecta a series trimestrales",
+                "Son dos fuentes independientes de discrepancia: los encadenados ya no son aditivos antes de ajustar, y el ajuste añade su propia no linealidad",
+                "Son la misma cosa vista desde dos ángulos",
+              ],
+              correcta: 2,
+              porque: [
+                "Ninguna se corrige: ambas se gestionan colocando la discrepancia con un criterio publicado.",
+                "El ajuste introduce no linealidad en cualquier frecuencia.",
+                "Confundirlas lleva a creer que corrigiendo una desaparece la otra, y a atribuir toda la discrepancia a una sola causa.",
+                "Tienen orígenes distintos: una viene de las ponderaciones cambiantes y la otra de que el ajuste no conmuta con la suma.",
+              ],
+            },
+            {
+              q: "Un cuadro de cuentas trimestrales ajustado cuadra perfectamente. ¿Significa que no hubo discrepancia?",
+              opciones: [
+                "No, pero la discrepancia es siempre despreciable",
+                "Sí, si se ha usado ajuste indirecto",
+                "No: la discrepancia se ha colocado en alguna partida o repartido con un criterio, y conviene saber cuál",
+                "Sí: si cuadra, las series ajustadas son aditivas",
+              ],
+              correcta: 2,
+              porque: [
+                "Puede ser considerable, hasta cambiar el signo del crecimiento de un trimestre.",
+                "El indirecto garantiza que las partes sumen el total ajustado que se publica, y la discrepancia con el ajuste directo sigue existiendo.",
+                "Un cuadro que cuadra sin explicar dónde fue la diferencia esconde información sobre la calidad de sus propias estimaciones.",
+                "La aditividad no se recupera: se impone por conciliación después del ajuste.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

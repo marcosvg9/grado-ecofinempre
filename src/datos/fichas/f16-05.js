@@ -201,17 +201,17 @@ export default {
             {
               q: "Una jerarquía se estima con diez años de datos mensuales. ¿Cuántas series admite como máximo una matriz de covarianzas completa?",
               opciones: [
-                "Diez, una por cada año de historia disponible",
-                "Quince, porque 15 · 16 / 2 = 120 y hay 120 observaciones",
-                "Ciento veinte, una por cada observación de la muestra",
                 "No hay límite: basta con esperar a acumular más historia",
+                "Quince, porque 15 · 16 / 2 = 120 y hay 120 observaciones",
+                "Diez, una por cada año de historia disponible",
+                "Ciento veinte, una por cada observación de la muestra",
               ],
               correcta: 1,
               porque: [
-                "Los años de historia no acotan nada por sí solos: lo que cuenta son las observaciones totales, 120 en diez años mensuales, frente a los parámetros que hay que estimar.",
-                "Una matriz de n series tiene n(n+1)/2 entradas distintas. Con n = 15 salen 120, exactamente las observaciones disponibles; a partir de ahí hay más parámetros que datos y la matriz muestral deja de ser invertible.",
-                "Confunde el número de observaciones con el número de series. Con 120 series harían falta 7.260 parámetros y solo habría 120 datos.",
                 "Los parámetros crecen con el cuadrado del número de series y las observaciones solo linealmente con el tiempo, así que esperar no cierra la brecha: la agranda si la jerarquía crece a la vez.",
+                "Una matriz de n series tiene n(n+1)/2 entradas distintas. Con n = 15 salen 120, exactamente las observaciones disponibles; a partir de ahí hay más parámetros que datos y la matriz muestral deja de ser invertible.",
+                "Los años de historia no acotan nada por sí solos: lo que cuenta son las observaciones totales, 120 en diez años mensuales, frente a los parámetros que hay que estimar.",
+                "Confunde el número de observaciones con el número de series. Con 120 series harían falta 7.260 parámetros y solo habría 120 datos.",
               ],
             },
             {
@@ -233,31 +233,31 @@ export default {
             {
               q: "Al construir la matriz, ¿sobre qué hay que calcular las covarianzas?",
               opciones: [
-                "Sobre las series de la jerarquía, que es lo que se está prediciendo",
                 "Sobre los errores de previsión de cada serie",
+                "Sobre las series de la jerarquía, que es lo que se está prediciendo",
                 "Sobre las series ya reconciliadas, para incorporar la coherencia",
               ],
-              correcta: 1,
+              correcta: 0,
               porque: [
-                "Es el error más frecuente. Las series de una jerarquía están correlacionadísimas por construcción, porque unas son literalmente sumas de otras; esa correlación es aritmética, no informativa, y no dice nada sobre la fiabilidad relativa de cada previsión.",
                 "El método pondera según cuánto y cómo se equivoca cada previsión, así que la materia prima son los errores, no los niveles. Es lo único que distingue una rama bien modelada de otra que no lo está.",
+                "Es el error más frecuente. Las series de una jerarquía están correlacionadísimas por construcción, porque unas son literalmente sumas de otras; esa correlación es aritmética, no informativa, y no dice nada sobre la fiabilidad relativa de cada previsión.",
                 "Usar las series reconciliadas mete la conclusión en la premisa: la coherencia ya la impone la proyección, y calcular sobre ellas solo reproduce la estructura que se acaba de imponer.",
               ],
             },
             {
               q: "¿Cuál es la disciplina razonable al elegir aproximación de la matriz?",
               opciones: [
-                "Empezar por la matriz completa y simplificarla solo si el cálculo falla",
-                "Escoger la aproximación más sofisticada que los datos permitan estimar",
                 "Partir de la proyección ortogonal y exigir a cada alternativa mejora fuera de muestra",
                 "Quedarse con la que produzca las cifras más coherentes entre niveles",
+                "Empezar por la matriz completa y simplificarla solo si el cálculo falla",
+                "Escoger la aproximación más sofisticada que los datos permitan estimar",
               ],
-              correcta: 2,
+              correcta: 0,
               porque: [
-                "La matriz completa casi nunca es estimable, y esperar a que «el cálculo falle» es peligroso: una matriz casi singular no falla, devuelve números de aspecto razonable que son ruido amplificado.",
-                "La ganancia de refinar la matriz es real pero modesta, mientras que la pérdida por refinarla mal puede ser grande. La sofisticación no es gratis.",
                 "La proyección ortogonal no supone nada y por eso es el punto de partida honesto. Cualquier refinamiento añade hipótesis, así que le corresponde a él demostrar que compensa, y la única prueba válida es la evaluación fuera de muestra por niveles.",
                 "Toda reconciliación produce cifras coherentes por construcción: la coherencia es el requisito que todas cumplen, no un criterio que distinga entre ellas.",
+                "La matriz completa casi nunca es estimable, y esperar a que «el cálculo falle» es peligroso: una matriz casi singular no falla, devuelve números de aspecto razonable que son ruido amplificado.",
+                "La ganancia de refinar la matriz es real pero modesta, mientras que la pérdida por refinarla mal puede ser grande. La sofisticación no es gratis.",
               ],
             },
           ],

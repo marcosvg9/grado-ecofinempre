@@ -1,5 +1,5 @@
 /* GENERADO POR herramientas/indice-preguntas.mjs — no editar a mano.
-   900 preguntas extraídas de 168 fichas.
+   1572 preguntas de 168 fichas: 900 abiertas y 672 de test.
    Para regenerar: node herramientas/indice-preguntas.mjs */
 
 export default [
@@ -49,6 +49,70 @@ export default [
   "a": "Porque los recursos empleados tienen usos alternativos y porque recaudar los fondos exige impuestos que distorsionan decisiones y generan una pérdida de eficiencia adicional. A eso se suman costes implícitos que no aparecen en ninguna partida, como el tiempo que la tramitación impone a los ciudadanos."
  },
  {
+  "id": "1.01#t0",
+  "codigo": "1.01",
+  "bloque": 1,
+  "nivel": 1,
+  "titulo": "Escasez, coste de oportunidad y frontera de posibilidades",
+  "q": "¿Qué es exactamente el coste de oportunidad de una decisión?",
+  "a": "**El valor de la mejor alternativa a la que se renuncia.** Es la definición, y de ella cuelga todo lo demás. Lo relevante nunca es lo que se paga, sino aquello a lo que se renuncia por pagarlo, tanto si aparece en una factura como si no.",
+  "opciones": [
+   "La suma de los costes explícitos y los implícitos",
+   "Lo ya invertido que no se puede recuperar",
+   "El valor de la mejor alternativa a la que se renuncia",
+   "El dinero que efectivamente se desembolsa al tomarla"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "1.01#t1",
+  "codigo": "1.01",
+  "bloque": 1,
+  "nivel": 1,
+  "titulo": "Escasez, coste de oportunidad y frontera de posibilidades",
+  "q": "¿Por qué un coste hundido no debe entrar en una decisión?",
+  "a": "**Porque no cambia con ninguna de las alternativas que se comparan.** Solo cuentan los flujos que cambian con la decisión. Un coste ya incurrido e irrecuperable es idéntico se elija lo que se elija, de modo que no puede inclinar la balanza hacia ningún lado.",
+  "opciones": [
+   "Porque contablemente ya está amortizado",
+   "Porque el dinero gastado hace tiempo vale menos por la inflación",
+   "Porque no cambia con ninguna de las alternativas que se comparan",
+   "Porque suele ser pequeño frente a lo que queda por gastar"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "1.01#t2",
+  "codigo": "1.01",
+  "bloque": 1,
+  "nivel": 1,
+  "titulo": "Escasez, coste de oportunidad y frontera de posibilidades",
+  "q": "Una economía se sitúa en un punto interior de su frontera de posibilidades. ¿Qué indica eso?",
+  "a": "**Que produce menos de lo que podría con los recursos que ya tiene.** Hay paro, capacidad ociosa o mala asignación. Es un problema de tamaño y no de reparto, y por eso moverse hacia la frontera puede mejorar a todo el mundo a la vez sin quitarle nada a nadie.",
+  "opciones": [
+   "Que produce menos de lo que podría con los recursos que ya tiene",
+   "Que ha elegido una combinación de bienes poco conveniente",
+   "Que la producción está mal repartida entre la población",
+   "Que le faltan recursos y necesita más para crecer"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "1.01#t3",
+  "codigo": "1.01",
+  "bloque": 1,
+  "nivel": 1,
+  "titulo": "Escasez, coste de oportunidad y frontera de posibilidades",
+  "q": "¿Desaparece la escasez en una economía lo bastante rica?",
+  "a": "**No: escasez significa que hay que elegir, y elegir sigue habiendo.** La escasez cambia de objeto, no desaparece. Cuanto más rico se es, más caro es el tiempo y más punzante el coste de oportunidad de emplearlo en una cosa u otra. Mientras haya que elegir hay escasez, por mucha abundancia que haya.",
+  "opciones": [
+   "Sí, en cuanto la producción cubre todas las necesidades básicas",
+   "Solo desaparece para los bienes públicos, que no se pagan al usarlos",
+   "No: escasez significa que hay que elegir, y elegir sigue habiendo",
+   "Sí, porque con abundancia el coste de oportunidad tiende a cero"
+  ],
+  "correcta": 2
+ },
+ {
   "id": "1.02#0",
   "codigo": "1.02",
   "bloque": 1,
@@ -92,6 +156,70 @@ export default [
   "titulo": "Oferta, demanda y equilibrio de mercado",
   "q": "Suben a la vez la demanda y la oferta. ¿Qué pasa con el precio?",
   "a": "No se puede saber sin conocer la magnitud relativa de ambos desplazamientos. La cantidad aumenta con seguridad, pero el precio puede subir, bajar o quedarse igual. Reconocer esa indeterminación es la respuesta correcta, no un fallo del análisis."
+ },
+ {
+  "id": "1.02#t0",
+  "codigo": "1.02",
+  "bloque": 1,
+  "nivel": 1,
+  "titulo": "Oferta, demanda y equilibrio de mercado",
+  "q": "Sube el precio del café y se compra menos. ¿Qué ha ocurrido con la demanda?",
+  "a": "**Ha bajado la cantidad demandada, sobre la misma curva de demanda.** Solo el precio del propio bien produce un movimiento a lo largo de la curva. La curva sigue exactamente donde estaba; lo que ha cambiado es el punto en el que nos situamos sobre ella.",
+  "opciones": [
+   "Se ha desplazado la curva de demanda hacia la izquierda",
+   "Han bajado a la vez la demanda y la oferta",
+   "Ha bajado la cantidad demandada, sobre la misma curva de demanda",
+   "Ha bajado la demanda"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "1.02#t1",
+  "codigo": "1.02",
+  "bloque": 1,
+  "nivel": 1,
+  "titulo": "Oferta, demanda y equilibrio de mercado",
+  "q": "Un ayuntamiento fija un alquiler máximo por debajo del precio de equilibrio. ¿Qué efecto tiene?",
+  "a": "**Abarata para quien consigue alquilar y deja fuera al resto, porque cae la cantidad intercambiada.** El precio deja de racionar y raciona otra cosa: colas, listas de espera, contactos, peor mantenimiento. Casi siempre de forma más arbitraria que el precio, y con menos viviendas alquiladas que antes.",
+  "opciones": [
+   "Abarata la vivienda para todos los que la buscan",
+   "No tiene efecto mientras el tope siga por encima del coste del propietario",
+   "Abarata para quien consigue alquilar y deja fuera al resto, porque cae la cantidad intercambiada",
+   "Elimina la escasez, que era lo que causaba el precio alto"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "1.02#t2",
+  "codigo": "1.02",
+  "bloque": 1,
+  "nivel": 1,
+  "titulo": "Oferta, demanda y equilibrio de mercado",
+  "q": "Suben a la vez la demanda y la oferta de un bien. ¿Qué se puede afirmar del nuevo equilibrio?",
+  "a": "**Que sube la cantidad, pero el precio depende de cuál de los dos desplazamientos sea mayor.** Los dos desplazamientos actúan en el mismo sentido sobre la cantidad y en sentidos opuestos sobre el precio. La cantidad sube con seguridad; el precio solo se sabe si se conoce la magnitud relativa de cada movimiento.",
+  "opciones": [
+   "Que el precio no cambia porque los dos efectos se compensan",
+   "Que sube la cantidad, pero el precio depende de cuál de los dos desplazamientos sea mayor",
+   "Que sube el precio y la cantidad queda indeterminada",
+   "Que suben el precio y la cantidad"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "1.02#t3",
+  "codigo": "1.02",
+  "bloque": 1,
+  "nivel": 1,
+  "titulo": "Oferta, demanda y equilibrio de mercado",
+  "q": "En un mercado con $Q_d = 100 - 2P$ y $Q_s = -20 + 3P$, ¿qué ocurre a un precio de 30?",
+  "a": "**Hay exceso de oferta de 30 unidades y el precio tenderá a bajar.** A ese precio $Q_d = 100 - 60 = 40$ y $Q_s = -20 + 90 = 70$, de modo que sobran 30 unidades. Con $P > P^*$ siempre hay exceso de oferta, y los vendedores que no colocan su producto presionan el precio a la baja.",
+  "opciones": [
+   "Hay exceso de oferta, pero el precio no puede bajar porque ya cubre costes",
+   "El mercado está en equilibrio",
+   "Hay exceso de demanda y el precio tenderá a subir",
+   "Hay exceso de oferta de 30 unidades y el precio tenderá a bajar"
+  ],
+  "correcta": 3
  },
  {
   "id": "1.03#0",
@@ -139,6 +267,70 @@ export default [
   "a": "Porque la pérdida de eficiencia crece aproximadamente con el cuadrado del tipo: duplicar un impuesto cuadruplica su coste de eficiencia. Repartir la misma recaudación entre más bases con tipos bajos reduce el coste total, que es el resultado que la ficha 10.05 formaliza como imposición óptima."
  },
  {
+  "id": "1.03#t0",
+  "codigo": "1.03",
+  "bloque": 1,
+  "nivel": 1,
+  "titulo": "Elasticidades y sus aplicaciones",
+  "q": "¿En qué se diferencian la pendiente de una curva de demanda y su elasticidad?",
+  "a": "**La pendiente depende de las unidades de medida y la elasticidad no, porque trabaja con porcentajes.** Cambiar de litros a hectolitros cambia la pendiente y deja la elasticidad intacta, y por eso la elasticidad permite comparar bienes que se miden en unidades incomparables.",
+  "opciones": [
+   "La pendiente se mide en un punto y la elasticidad sobre toda la curva",
+   "La pendiente depende de las unidades de medida y la elasticidad no, porque trabaja con porcentajes",
+   "En nada: la elasticidad es otro nombre para la pendiente",
+   "La elasticidad solo existe si la demanda es una recta"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "1.03#t1",
+  "codigo": "1.03",
+  "bloque": 1,
+  "nivel": 1,
+  "titulo": "Elasticidades y sus aplicaciones",
+  "q": "La demanda de un bien tiene elasticidad $-0{,}4$ y la oferta $+1{,}6$. Se aprueba un impuesto que ingresa el vendedor. ¿Quién soporta la mayor parte?",
+  "a": "**El comprador, porque su demanda es la parte más rígida.** Soporta más la parte con menos alternativas. Aquí la carga del comprador es $\\varepsilon_s/(\\varepsilon_s + |\\varepsilon_d|) = 1{,}6/2{,}0 = 80\\ \\%$: la demanda apenas puede escapar y por eso carga con casi todo.",
+  "opciones": [
+   "El comprador, porque su demanda es la parte más rígida",
+   "El vendedor, porque su oferta reacciona más y absorbe el ajuste",
+   "El vendedor, porque es quien lo ingresa en Hacienda",
+   "Se reparte a medias, ya que el impuesto es único"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "1.03#t2",
+  "codigo": "1.03",
+  "bloque": 1,
+  "nivel": 1,
+  "titulo": "Elasticidades y sus aplicaciones",
+  "q": "¿Por qué duplicar el tipo de un impuesto no duplica su coste de eficiencia?",
+  "a": "**Porque lo multiplica aproximadamente por cuatro: crece con el cuadrado del tipo.** La pérdida es aproximadamente $\\tfrac12 t\\,\\Delta Q$ y $\\Delta Q$ crece a su vez con $t$, de modo que el producto va con el cuadrado. De ahí se sigue la recomendación de gravar poco muchas bases en vez de mucho unas pocas.",
+  "opciones": [
+   "Porque el coste de eficiencia no depende del tipo sino de la recaudación",
+   "Porque el coste de eficiencia es una transferencia y no desaparece",
+   "Porque lo multiplica por menos de dos, ya que la base se estrecha",
+   "Porque lo multiplica aproximadamente por cuatro: crece con el cuadrado del tipo"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "1.03#t3",
+  "codigo": "1.03",
+  "bloque": 1,
+  "nivel": 1,
+  "titulo": "Elasticidades y sus aplicaciones",
+  "q": "Un informe evalúa un impuesto sobre el tabaco con los datos del primer año y concluye que apenas afecta al consumo. ¿Qué falla en esa lectura?",
+  "a": "**Que las elasticidades crecen con el tiempo, así que un solo año subestima el efecto.** Adaptarse lleva tiempo: dejar de fumar, cambiar de marca, comprar fuera o buscar el mercado informal no ocurren de un mes para otro. Evaluar solo el primer año subestima sistemáticamente la caída de la cantidad.",
+  "opciones": [
+   "Que las elasticidades crecen con el tiempo, así que un solo año subestima el efecto",
+   "Nada: si el consumo no cae, la demanda es inelástica y punto",
+   "Que un año es demasiado tiempo y habría que mirar el primer trimestre",
+   "Que la elasticidad debería medirse sobre el ingreso y no sobre la cantidad"
+  ],
+  "correcta": 0
+ },
+ {
   "id": "1.04#0",
   "codigo": "1.04",
   "bloque": 1,
@@ -182,6 +374,70 @@ export default [
   "titulo": "Excedente, eficiencia y análisis de bienestar",
   "q": "En el ejemplo, el tope de precios es la medida menos eficiente y la que más favorece al consumidor. ¿Cómo se decide?",
   "a": "No se decide con estas cifras. La eficiencia dice que se pierden 60 y la distribución dice que el consumidor pasa de 676 a 800. Elegir entre ambas exige un juicio sobre cuánto pesa cada grupo, que es externo al análisis. Lo que sí aporta el análisis es cuantificar exactamente el intercambio."
+ },
+ {
+  "id": "1.04#t0",
+  "codigo": "1.04",
+  "bloque": 1,
+  "nivel": 2,
+  "titulo": "Excedente, eficiencia y análisis de bienestar",
+  "q": "Un impuesto reduce el excedente privado en 245 y el Estado recauda 230. ¿Cuál es el coste de eficiencia?",
+  "a": "**15: lo que desaparece y no aparece en ninguna otra parte.** La transferencia y la pérdida son cosas distintas. Los 230 están en la caja del Estado y siguen existiendo; solo los 15 restantes son intercambios que ya no ocurren y que no benefician a nadie.",
+  "opciones": [
+   "475, sumando la pérdida privada y la recaudación",
+   "245, que es lo que pierden consumidores y productores",
+   "15: lo que desaparece y no aparece en ninguna otra parte",
+   "230, que es lo que se transfiere al sector público"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "1.04#t1",
+  "codigo": "1.04",
+  "bloque": 1,
+  "nivel": 2,
+  "titulo": "Excedente, eficiencia y análisis de bienestar",
+  "q": "¿Puede una asignación ser eficiente en el sentido de Pareto y a la vez profundamente desigual?",
+  "a": "**Sí: la eficiencia descarta desperdicios, no ordena repartos.** Una asignación en la que uno lo tiene todo puede ser eficiente, porque no cabe mejorar a nadie sin empeorar a otro. Todo criterio distributivo hay que añadirlo aparte y declararlo.",
+  "opciones": [
+   "No, porque la utilidad marginal decreciente lo impide",
+   "Sí, pero solo si hay externalidades o información asimétrica",
+   "No: una desigualdad extrema siempre puede mejorarse redistribuyendo",
+   "Sí: la eficiencia descarta desperdicios, no ordena repartos"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "1.04#t2",
+  "codigo": "1.04",
+  "bloque": 1,
+  "nivel": 2,
+  "titulo": "Excedente, eficiencia y análisis de bienestar",
+  "q": "Un informe declara una reforma «eficiente» según Kaldor-Hicks. ¿Qué exige exactamente ese criterio?",
+  "a": "**Que la ganancia sea suficiente para compensar, aunque no se compense.** Solo exige que la compensación sea posible. Si no se articula, hay perdedores reales de una medida declarada eficiente, y su oposición no es irracional: confundir mejora potencial con mejora efectiva es lo que separa un buen informe de uno tramposo.",
+  "opciones": [
+   "Que la ganancia agregada supere el coste de administrar la medida",
+   "Que los ganadores compensen efectivamente a los perdedores",
+   "Que la ganancia sea suficiente para compensar, aunque no se compense",
+   "Que nadie quede peor que antes de la reforma"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "1.04#t3",
+  "codigo": "1.04",
+  "bloque": 1,
+  "nivel": 2,
+  "titulo": "Excedente, eficiencia y análisis de bienestar",
+  "q": "¿Qué supuesto oculto tiene el cálculo estándar de la pérdida de eficiencia bajo un tope de precios?",
+  "a": "**Que el bien acaba en manos de quien más lo valora.** Se llama racionamiento eficiente y casi nunca se cumple. Con colas, sorteos o contactos el bien acaba repartido por otros criterios, el excedente real es menor y la pérdida mayor: la cifra publicada suele ser un techo optimista.",
+  "opciones": [
+   "Que el bien acaba en manos de quien más lo valora",
+   "Que no aparece mercado informal",
+   "Que el tope se mantiene indefinidamente",
+   "Que la oferta es perfectamente inelástica a corto plazo"
+  ],
+  "correcta": 0
  },
  {
   "id": "1.05#0",
@@ -229,6 +485,70 @@ export default [
   "a": "Porque quien es evaluado por él tiene incentivo a mover el indicador, y casi siempre hay una forma de moverlo más barata que mejorar la realidad subyacente: reordenar listas, bajar la exigencia, reclasificar casos. Es la ley de Goodhart, y la defensa consiste en usar varios indicadores y anticipar cuál será el atajo."
  },
  {
+  "id": "1.05#t0",
+  "codigo": "1.05",
+  "bloque": 1,
+  "nivel": 1,
+  "titulo": "Pensamiento marginal e incentivos",
+  "q": "Un vuelo con asientos libres tiene un coste medio por pasajero de 132 € y un coste marginal de 12 €. Aparece un cliente dispuesto a pagar 60 €. ¿Conviene venderle el asiento?",
+  "a": "**Sí: el asiento va a volar de todos modos y esos 60 € cubren de sobra los 12 € que añade.** En el margen la decisión es entre 60 € y 12 €. Todo lo demás ya está decidido y es idéntico se venda o no se venda ese asiento.",
+  "opciones": [
+   "Sí: el asiento va a volar de todos modos y esos 60 € cubren de sobra los 12 € que añade",
+   "No: 60 € no cubren los 132 € que cuesta llevar a un pasajero",
+   "No, porque vender por debajo del coste medio hunde la tarifa del resto",
+   "Solo si se venden bastantes asientos como para llegar al coste medio"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "1.05#t1",
+  "codigo": "1.05",
+  "bloque": 1,
+  "nivel": 1,
+  "titulo": "Pensamiento marginal e incentivos",
+  "q": "¿Qué relación hay entre una magnitud marginal y su media?",
+  "a": "**La media baja cuando la marginal está por debajo y sube cuando está por encima.** Es lo que dice $d\\mathrm{Me}/dx = (\\mathrm{Mg} - \\mathrm{Me})/x$: el signo del cambio de la media lo pone la diferencia entre ambas. Añadir algo peor que el promedio lo baja, y algo mejor lo sube.",
+  "opciones": [
+   "Cuando la marginal es mínima, la media también lo es",
+   "La media siempre es mayor que la marginal",
+   "Ambas alcanzan su mínimo en la misma cantidad producida",
+   "La media baja cuando la marginal está por debajo y sube cuando está por encima"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "1.05#t2",
+  "codigo": "1.05",
+  "bloque": 1,
+  "nivel": 1,
+  "titulo": "Pensamiento marginal e incentivos",
+  "q": "Un hospital empieza a medir a sus servicios por el número de altas y en un año la cifra mejora mucho sin que la salud de los pacientes cambie. ¿Qué ha pasado?",
+  "a": "**Que al convertirse en objetivo dejó de medir lo que medía.** Es la ley de Goodhart: un indicador presionado se optimiza por la vía más barata —dar altas antes, seleccionar casos leves— y deja de ser un reflejo de lo que pretendía capturar.",
+  "opciones": [
+   "Que el indicador estaba mal elegido desde el principio",
+   "Que hace falta un indicador complementario para corregirlo",
+   "Que la mejora es real pero tardará en verse en la salud",
+   "Que al convertirse en objetivo dejó de medir lo que medía"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "1.05#t3",
+  "codigo": "1.05",
+  "bloque": 1,
+  "nivel": 1,
+  "titulo": "Pensamiento marginal e incentivos",
+  "q": "Alguien reparte su gasto entre dos bienes de precios distintos. ¿Cuándo ha optimizado?",
+  "a": "**Cuando la utilidad que le da el último euro es la misma en los dos.** Es la regla de igualación $\\mathrm{UMg}_A/p_A = \\mathrm{UMg}_B/p_B$. Si un euro rindiera más en un bien que en otro, movería gasto hacia él y mejoraría, luego no estaría en el óptimo.",
+  "opciones": [
+   "Cuando gasta lo mismo en cada uno",
+   "Cuando la utilidad que le da el último euro es la misma en los dos",
+   "Cuando la utilidad marginal de ambos bienes coincide",
+   "Cuando compra más del bien con mayor utilidad marginal"
+  ],
+  "correcta": 1
+ },
+ {
   "id": "1.06#0",
   "codigo": "1.06",
   "bloque": 1,
@@ -272,6 +592,70 @@ export default [
   "titulo": "Flujo circular de la renta y agentes económicos",
   "q": "¿Por qué una identidad no sirve para explicar?",
   "a": "Porque se cumple por definición y por tanto no puede ser falsada: no hay dato capaz de contradecirla. Sirve para organizar información y detectar afirmaciones incoherentes. Explicar exige un modelo que diga qué decide cada agente y por qué, y que pueda resultar equivocado al contrastarlo."
+ },
+ {
+  "id": "1.06#t0",
+  "codigo": "1.06",
+  "bloque": 1,
+  "nivel": 1,
+  "titulo": "Flujo circular de la renta y agentes económicos",
+  "q": "En una economía cerrada sin sector público, el ahorro iguala a la inversión. ¿Qué se puede concluir de eso?",
+  "a": "**Nada causal: es una identidad contable, cierta por construcción.** Se han definido de modo que su diferencia sea nula, así que la igualdad no informa de ninguna dirección de influencia. Las identidades organizan la información y detectan incoherencias; explicar exige un modelo.",
+  "opciones": [
+   "Que ahorrar más provoca más inversión",
+   "Nada causal: es una identidad contable, cierta por construcción",
+   "Que el sistema financiero funciona correctamente",
+   "Que invertir más obliga a los hogares a ahorrar más"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "1.06#t1",
+  "codigo": "1.06",
+  "bloque": 1,
+  "nivel": 1,
+  "titulo": "Flujo circular de la renta y agentes económicos",
+  "q": "¿Por qué el PIB no es la suma de la producción de todas las empresas?",
+  "a": "**Porque se contaría varias veces el mismo valor: el trigo dentro de la harina y la harina dentro del pan.** Por eso se suma el valor añadido —producción menos consumos intermedios— y su total coincide exactamente con el valor de los bienes finales, que es lo que se quiere medir.",
+  "opciones": [
+   "Porque hay empresas que no declaran toda su producción",
+   "Porque la producción se mide a precios de mercado y el PIB a precios básicos",
+   "Porque las empresas públicas se contabilizan aparte",
+   "Porque se contaría varias veces el mismo valor: el trigo dentro de la harina y la harina dentro del pan"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "1.06#t2",
+  "codigo": "1.06",
+  "bloque": 1,
+  "nivel": 1,
+  "titulo": "Flujo circular de la renta y agentes económicos",
+  "q": "Un plan promete reducir el déficit público sin que el sector privado ahorre menos ni cambie el saldo exterior. ¿Es posible?",
+  "a": "**No: la suma de los tres saldos es cero por construcción.** $(S-I) + (T-G) + (M-X) = 0$. Si uno mejora, otro empeora; detectar la imposibilidad no requiere ningún modelo, solo aritmética.",
+  "opciones": [
+   "Sí, si el crecimiento económico aumenta la recaudación",
+   "Depende de si el déficit es estructural o cíclico",
+   "No: la suma de los tres saldos es cero por construcción",
+   "Sí, si el ajuste se hace por el lado del gasto y no de los ingresos"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "1.06#t3",
+  "codigo": "1.06",
+  "bloque": 1,
+  "nivel": 1,
+  "titulo": "Flujo circular de la renta y agentes económicos",
+  "q": "El INE publica que las tres estimaciones del PIB —producción, renta y gasto— difieren entre sí. ¿Qué indica eso?",
+  "a": "**Que coinciden por definición pero se calculan con fuentes distintas: la discrepancia se documenta y concilia.** El tamaño de esa discrepancia estadística es de hecho uno de los indicadores de calidad de un sistema de cuentas nacionales, y se publica precisamente para que pueda juzgarse.",
+  "opciones": [
+   "Que la identidad contable no se cumple en la práctica",
+   "Que hay un error en alguna de las tres y hay que corregirlo",
+   "Que se han usado deflactores distintos en cada enfoque",
+   "Que coinciden por definición pero se calculan con fuentes distintas: la discrepancia se documenta y concilia"
+  ],
+  "correcta": 3
  },
  {
   "id": "1.07#0",
@@ -319,6 +703,70 @@ export default [
   "a": "Porque las ponderaciones se actualizan cada año, y eso destruye la aditividad: la suma de las partes deja de coincidir con el total. Es el precio de tener índices representativos, y por eso las estadísticas publican contribuciones al crecimiento en lugar de invitar a sumar."
  },
  {
+  "id": "1.07#t0",
+  "codigo": "1.07",
+  "bloque": 1,
+  "nivel": 1,
+  "titulo": "Números índice, tasas de variación y deflactación",
+  "q": "El IPC de un país vale 128 y el de otro 112. ¿Cuál es más caro?",
+  "a": "**No se puede saber: un índice mide variación desde su propia base, no nivel.** Para comparar niveles hacen falta paridades de poder adquisitivo, que es otra construcción distinta. Comparar índices con bases diferentes es como comparar dos cronómetros puestos en marcha en momentos distintos.",
+  "opciones": [
+   "No se puede saber: un índice mide variación desde su propia base, no nivel",
+   "El primero, salvo que las cestas de consumo sean muy distintas",
+   "El primero, porque su índice es más alto",
+   "El segundo, si su base es más reciente"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "1.07#t1",
+  "codigo": "1.07",
+  "bloque": 1,
+  "nivel": 1,
+  "titulo": "Números índice, tasas de variación y deflactación",
+  "q": "Una acción cae un 50 % y al año siguiente sube un 50 %. ¿Cómo ha quedado?",
+  "a": "**Un 25 % por debajo, porque las tasas se encadenan multiplicando.** $(1 - 0{,}5)(1 + 0{,}5) = 0{,}75$. La subida se aplica sobre una base ya reducida a la mitad, así que recupera menos de lo que se perdió.",
+  "opciones": [
+   "Un 25 % por debajo, porque las tasas se encadenan multiplicando",
+   "Depende del orden en que se produzcan las dos variaciones",
+   "Un 25 % por encima, por el efecto de la base menor",
+   "Igual que al principio: las dos variaciones se cancelan"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "1.07#t2",
+  "codigo": "1.07",
+  "bloque": 1,
+  "nivel": 1,
+  "titulo": "Números índice, tasas de variación y deflactación",
+  "q": "La tasa de paro pasa del 4 % al 5 %. ¿Cómo se describe correctamente esa variación?",
+  "a": "**Ha subido un punto porcentual, que equivale a un aumento del 25 %.** Ambas cifras son correctas y describen lo mismo desde ángulos distintos: la diferencia absoluta en puntos y la variación relativa. Decir cuál se usa evita la ambigüedad.",
+  "opciones": [
+   "Ha subido 100 puntos básicos, equivalentes a un 1 %",
+   "Ha subido un 20 %, que es la diferencia relativa sobre el 5 %",
+   "Ha subido un punto porcentual, que equivale a un aumento del 25 %",
+   "Ha subido un 1 %"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "1.07#t3",
+  "codigo": "1.07",
+  "bloque": 1,
+  "nivel": 1,
+  "titulo": "Números índice, tasas de variación y deflactación",
+  "q": "Una empresa industrial quiere saber si su facturación ha crecido en términos reales. ¿Con qué la deflacta?",
+  "a": "**Con un índice de precios industriales, el que corresponde a lo que ella produce.** Cada magnitud tiene su deflactor: el IPC para el consumo de los hogares, los índices industriales para la producción, el deflactor del PIB para los agregados. Usar el que corresponde a lo que se mide es toda la regla.",
+  "opciones": [
+   "Con un índice de precios industriales, el que corresponde a lo que ella produce",
+   "Con el deflactor del PIB, que cubre toda la economía",
+   "Con la inflación subyacente, que excluye los componentes volátiles",
+   "Con el IPC, que es el índice de precios de referencia"
+  ],
+  "correcta": 0
+ },
+ {
   "id": "1.08#0",
   "codigo": "1.08",
   "bloque": 1,
@@ -362,6 +810,70 @@ export default [
   "titulo": "Modelos económicos: supuestos, causalidad y falsación",
   "q": "¿Por qué una teoría no se abandona tras un único contraste fallido?",
   "a": "Por el problema de Duhem-Quine: nunca se contrasta una hipótesis aislada, sino junto con supuestos auxiliares, datos y método. Un fallo indica que algo del conjunto está mal, no qué. Lo sospechoso no es sobrevivir a un contraste, sino sobrevivir añadiendo excepciones cada vez."
+ },
+ {
+  "id": "1.08#t0",
+  "codigo": "1.08",
+  "bloque": 1,
+  "nivel": 2,
+  "titulo": "Modelos económicos: supuestos, causalidad y falsación",
+  "q": "Un estudio observa que las empresas con más formación interna crecen más. ¿Qué impide concluir que la formación causa el crecimiento?",
+  "a": "**Que puede haber una variable omitida: las empresas que ya van bien se permiten formar más.** Es el caso de manual: un tercer factor —la buena marcha— empuja a la vez la formación y el crecimiento. Y a su lado están la causalidad inversa y el sesgo de selección, que ninguna cantidad de datos descarta por sí sola.",
+  "opciones": [
+   "Que faltaría comprobar que el coeficiente es significativo",
+   "Que la muestra podría ser pequeña",
+   "Que la correlación es solo estadística y nunca implica nada",
+   "Que puede haber una variable omitida: las empresas que ya van bien se permiten formar más"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "1.08#t1",
+  "codigo": "1.08",
+  "bloque": 1,
+  "nivel": 2,
+  "titulo": "Modelos económicos: supuestos, causalidad y falsación",
+  "q": "Se evalúa un plan de empleo comparando el paro antes y después de aplicarlo. ¿Qué falla en ese diseño?",
+  "a": "**Que entre ambos momentos cambia todo lo demás, así que mezcla el plan con el ciclo.** Hace falta un grupo de comparación creíble que diga qué habría pasado sin el plan. Un «antes» no es un contrafactual, porque el antes y el después no se diferencian solo en el plan.",
+  "opciones": [
+   "Nada, si el periodo comparado es suficientemente largo",
+   "Que entre ambos momentos cambia todo lo demás, así que mezcla el plan con el ciclo",
+   "Que el paro no es la variable adecuada para medir un plan de empleo",
+   "Que habría que comparar con la media histórica en vez de con el año anterior"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "1.08#t2",
+  "codigo": "1.08",
+  "bloque": 1,
+  "nivel": 2,
+  "titulo": "Modelos económicos: supuestos, causalidad y falsación",
+  "q": "Un estudio busca qué tienen en común las empresas que llevan más de treinta años funcionando. ¿Qué problema tiene?",
+  "a": "**Sesgo de supervivencia: los rasgos hallados pueden estar también en las que quebraron.** Los ausentes contienen la mitad de la información. Si las quebradas compartían esos mismos rasgos, lo hallado no explica la supervivencia: solo describe a las empresas en general.",
+  "opciones": [
+   "Sesgo de supervivencia: los rasgos hallados pueden estar también en las que quebraron",
+   "Que la muestra estará dominada por sectores maduros",
+   "Que las empresas antiguas usan tecnologías obsoletas y no son comparables",
+   "Que treinta años es un umbral arbitrario"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "1.08#t3",
+  "codigo": "1.08",
+  "bloque": 1,
+  "nivel": 2,
+  "titulo": "Modelos económicos: supuestos, causalidad y falsación",
+  "q": "Una teoría lleva veinte años sobreviviendo a los contrastes gracias a añadir un caso especial cada vez que falla. ¿Cómo debe valorarse?",
+  "a": "**Mal: una teoría compatible con cualquier resultado ya no predice nada.** Una teoría informa en la medida en que prohíbe resultados. Si ninguno la refutaría, deja de ser falsable y su supervivencia no es evidencia de nada.",
+  "opciones": [
+   "Bien: sobrevivir a los contrastes es exactamente lo que se le pide a una teoría",
+   "Bien, mientras cada excepción tenga justificación teórica",
+   "Depende de si las excepciones son pocas o muchas",
+   "Mal: una teoría compatible con cualquier resultado ya no predice nada"
+  ],
+  "correcta": 3
  },
  {
   "id": "1.09#0",
@@ -409,6 +921,70 @@ export default [
   "a": "No. Hay un núcleo que ningún cambio ha revocado —coste de oportunidad, razonamiento marginal, respuesta a incentivos, identidades contables— y una periferia en disputa donde se investiga. Confundir el desacuerdo en la frontera con la ausencia de conocimiento es un error que ninguna ciencia resistiría."
  },
  {
+  "id": "1.09#t0",
+  "codigo": "1.09",
+  "bloque": 1,
+  "nivel": 2,
+  "titulo": "Historia del pensamiento económico",
+  "q": "¿Cuál es la mejor forma de leer la sucesión de escuelas económicas?",
+  "a": "**Como respuestas a preguntas distintas, cada una nacida de un problema que su antecesora no sabía tratar.** Es lo único que hace útil esta historia: entender qué problema concreto obligó a cambiar de herramientas explica mejor la teoría actual que memorizar su resultado.",
+  "opciones": [
+   "Como posiciones políticas enfrentadas que se disputan la influencia",
+   "Como una carrera hacia la verdad actual, donde cada una mejora a la anterior",
+   "Como paradigmas incompatibles que se sustituyen limpiamente unos a otros",
+   "Como respuestas a preguntas distintas, cada una nacida de un problema que su antecesora no sabía tratar"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "1.09#t1",
+  "codigo": "1.09",
+  "bloque": 1,
+  "nivel": 2,
+  "titulo": "Historia del pensamiento económico",
+  "q": "¿A quién corresponde la teoría del valor trabajo?",
+  "a": "**A la economía clásica en general, incluidos Smith y Ricardo; Marx la hereda y reelabora.** Es la posición común de la economía clásica. Lo que cambia con el marginalismo es el fundamento entero del valor, y ese giro afecta a toda la tradición anterior por igual, no solo a Marx.",
+  "opciones": [
+   "A los marginalistas, que la refinaron con el concepto de utilidad",
+   "A la economía clásica en general, incluidos Smith y Ricardo; Marx la hereda y reelabora",
+   "A Marx, que la formuló para su crítica del capitalismo",
+   "A los fisiócratas, que situaban el valor en la tierra"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "1.09#t2",
+  "codigo": "1.09",
+  "bloque": 1,
+  "nivel": 2,
+  "titulo": "Historia del pensamiento económico",
+  "q": "¿Qué efecto tuvo la crítica de Lucas sobre la macroeconomía keynesiana?",
+  "a": "**La obligó a refundarse sobre decisiones individuales explícitas, y con rigideces reaparecieron sus resultados.** La nueva economía keynesiana rehízo el trabajo sobre microfundamentos y mostró que, con precios o salarios rígidos, los resultados anteriores vuelven a aparecer.",
+  "opciones": [
+   "No tuvo efecto real, porque los modelos anteriores seguían prediciendo bien",
+   "La sustituyó por completo por modelos de equilibrio general sin desempleo",
+   "La invalidó: sus conclusiones dejaron de sostenerse",
+   "La obligó a refundarse sobre decisiones individuales explícitas, y con rigideces reaparecieron sus resultados"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "1.09#t3",
+  "codigo": "1.09",
+  "bloque": 1,
+  "nivel": 2,
+  "titulo": "Historia del pensamiento económico",
+  "q": "En economía hay desacuerdo público constante. ¿Qué se sigue de ello sobre el estado del conocimiento?",
+  "a": "**Que el desacuerdo se concentra en la frontera; hay un núcleo que ningún cambio de paradigma ha revocado.** Coste de oportunidad, razonamiento marginal, respuesta a incentivos e identidades contables siguen en pie sea cual sea la escuela. El desacuerdo vive en la periferia, que es donde debe estar.",
+  "opciones": [
+   "Que las distintas escuelas son incomparables entre sí",
+   "Que el desacuerdo se concentra en la frontera; hay un núcleo que ningún cambio de paradigma ha revocado",
+   "Que el consenso llegará cuando haya mejores datos",
+   "Que casi todo está en disputa y poco puede darse por sabido"
+  ],
+  "correcta": 1
+ },
+ {
   "id": "1.10#0",
   "codigo": "1.10",
   "bloque": 1,
@@ -454,6 +1030,70 @@ export default [
   "a": "Clasificando la afirmación. Si discrepan sobre qué mecanismo domina o sobre cuánto vale un parámetro, el desacuerdo es positivo y admite evidencia. Si discrepan sobre cuánto pesa la equidad o sobre qué debe asignarse por mercado, es normativo y no se resuelve con datos, solo se explicita."
  },
  {
+  "id": "1.10#t0",
+  "codigo": "1.10",
+  "bloque": 1,
+  "nivel": 2,
+  "titulo": "Economía normativa frente a positiva",
+  "q": "Un informe de coste-beneficio usa una tasa de descuento del 4 %. ¿Qué tipo de decisión es esa?",
+  "a": "**En parte valorativa, porque fija cuánto pesa el bienestar de las generaciones futuras.** Cuanto mayor sea la tasa, menos valen hoy los efectos lejanos. En un proyecto climático esa cifra decide casi el resultado, y es un juicio de valor viajando dentro de un parámetro.",
+  "opciones": [
+   "En parte valorativa, porque fija cuánto pesa el bienestar de las generaciones futuras",
+   "Técnica: se toma del tipo de interés observado en los mercados",
+   "Irrelevante, porque afecta por igual a costes y beneficios",
+   "Puramente convencional, ya que todos los organismos usan la misma"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "1.10#t1",
+  "codigo": "1.10",
+  "bloque": 1,
+  "nivel": 2,
+  "titulo": "Economía normativa frente a positiva",
+  "q": "«Un tope de precios reduce la cantidad intercambiada» y «no debe fijarse un tope». ¿Qué separa ambas afirmaciones?",
+  "a": "**La segunda añade una premisa sobre lo deseable que la primera no contiene.** Reducir la cantidad es un hecho; que eso baste para descartar la medida requiere decidir cuánto pesa esa reducción frente a lo que el tope pretende conseguir. Esa premisa hay que ponerla sobre la mesa.",
+  "opciones": [
+   "Que la segunda exige conocer también el efecto sobre la recaudación",
+   "Que la primera es verificable y la segunda es una opinión sin fundamento",
+   "Nada: la segunda se deduce de la primera",
+   "La segunda añade una premisa sobre lo deseable que la primera no contiene"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "1.10#t2",
+  "codigo": "1.10",
+  "bloque": 1,
+  "nivel": 2,
+  "titulo": "Economía normativa frente a positiva",
+  "q": "Dos economistas discrepan sobre una política. ¿Cómo saber si el desacuerdo puede resolverse con evidencia?",
+  "a": "**Viendo de cuál de las cuatro fuentes viene: mecanismo y parámetro sí se resuelven; criterio de valor y ámbito, no.** Distinguir la fuente es lo primero que conviene hacer, porque determina si tiene sentido buscar datos o si lo que hace falta es explicitar el criterio y discutirlo como tal.",
+  "opciones": [
+   "Depende de si ambos usan el mismo modelo teórico",
+   "Viendo de cuál de las cuatro fuentes viene: mecanismo y parámetro sí se resuelven; criterio de valor y ámbito, no",
+   "No puede: todo desacuerdo entre economistas es en el fondo ideológico",
+   "Se resuelve siempre con datos suficientes y de calidad"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "1.10#t3",
+  "codigo": "1.10",
+  "bloque": 1,
+  "nivel": 2,
+  "titulo": "Economía normativa frente a positiva",
+  "q": "¿Qué puede y qué no puede hacer un economista en un debate normativo?",
+  "a": "**Puede cuantificar efectos, intercambios, ganadores y perdedores; no establecer cuánto pesa la desigualdad.** Y también señalar incoherencias, que es una aportación fuerte: detectar que un plan es aritméticamente imposible no exige ningún juicio de valor.",
+  "opciones": [
+   "No debe intervenir, porque su análisis es solo positivo",
+   "Puede recomendar siempre que use el criterio de eficiencia, que es neutral",
+   "Puede y debe recomendar la política óptima, que es su función técnica",
+   "Puede cuantificar efectos, intercambios, ganadores y perdedores; no establecer cuánto pesa la desigualdad"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "1.11#0",
   "codigo": "1.11",
   "bloque": 1,
@@ -497,6 +1137,70 @@ export default [
   "titulo": "Escuelas heterodoxas y enfoques alternativos",
   "q": "¿Dónde aparece en las cuentas nacionales la destrucción creativa de Schumpeter?",
   "a": "Como minoración del patrimonio, no como proceso productivo. La obsolescencia previsible entra en el consumo de capital fijo (K.1) y la imprevisible en las otras variaciones del volumen de activos (B.10.2). Es un buen ejemplo de que el sistema no es neutral: el mecanismo que una tradición considera el motor del crecimiento aparece contabilizado como una pérdida de valor."
+ },
+ {
+  "id": "1.11#t0",
+  "codigo": "1.11",
+  "bloque": 1,
+  "nivel": 3,
+  "titulo": "Escuelas heterodoxas y enfoques alternativos",
+  "q": "¿Es «la heterodoxia» un bloque con una posición común?",
+  "a": "**No: sus miembros discrepan entre sí más que con la corriente principal.** La escuela austriaca y la marxista sostienen tesis opuestas casi en todo, y ninguna aceptaría el marco de la otra. Cada una se organiza alrededor de un fenómeno distinto que el modelo de equilibrio trata mal.",
+  "opciones": [
+   "Sí, en lo esencial, aunque difieran en los detalles",
+   "No: sus miembros discrepan entre sí más que con la corriente principal",
+   "Sí: comparten el rechazo al equilibrio y a la formalización",
+   "Solo desde los años setenta, cuando se articularon como alternativa"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "1.11#t1",
+  "codigo": "1.11",
+  "bloque": 1,
+  "nivel": 3,
+  "titulo": "Escuelas heterodoxas y enfoques alternativos",
+  "q": "Una empresa se endeuda para pagar los intereses de su deuda. ¿En qué postura de Minsky está?",
+  "a": "**Ponzi: la deuda crece sola sin que ocurra nada externo.** Es la definición: al no cubrir siquiera los intereses, el saldo se agranda por su propia dinámica. No hace falta ninguna sacudida exterior para que la situación empeore.",
+  "opciones": [
+   "Especulativa: puede pagar intereses pero refinancia el principal",
+   "Depende de si el acreedor acepta la refinanciación",
+   "Cubierta: sigue atendiendo sus compromisos",
+   "Ponzi: la deuda crece sola sin que ocurra nada externo"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "1.11#t2",
+  "codigo": "1.11",
+  "bloque": 1,
+  "nivel": 3,
+  "titulo": "Escuelas heterodoxas y enfoques alternativos",
+  "q": "¿Necesita la hipótesis de inestabilidad financiera de Minsky que los agentes sean irracionales?",
+  "a": "**No: basta con que la percepción del riesgo dependa de la experiencia reciente.** Ajustar el riesgo percibido a lo que se ha vivido es individualmente sensato. La fragilidad emerge del comportamiento agregado de agentes que se comportan con sensatez, y por eso es difícil de prevenir con supervisión individual.",
+  "opciones": [
+   "No: basta con que la percepción del riesgo dependa de la experiencia reciente",
+   "Sí: el exceso de confianza es su motor",
+   "No, porque supone agentes con expectativas racionales completas",
+   "Sí, pero solo por parte de los prestamistas"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "1.11#t3",
+  "codigo": "1.11",
+  "bloque": 1,
+  "nivel": 3,
+  "titulo": "Escuelas heterodoxas y enfoques alternativos",
+  "q": "¿Terminan siempre en tragedia los recursos de propiedad común?",
+  "a": "**No: Ostrom documentó sistemas comunales duraderos e identificó qué condiciones los sostienen.** Aguas de riego, pastos y pesquerías gestionadas comunalmente durante siglos. La tragedia es un caso particular, no el destino de todo bien común, y las condiciones que lo evitan son observables.",
+  "opciones": [
+   "Solo si el recurso es renovable",
+   "Sí, salvo que intervenga el Estado regulando el acceso",
+   "Sí: sin propiedad privada, el incentivo a sobreexplotar es inevitable",
+   "No: Ostrom documentó sistemas comunales duraderos e identificó qué condiciones los sostienen"
+  ],
+  "correcta": 3
  },
  {
   "id": "10.01#0",
@@ -553,6 +1257,70 @@ export default [
   "a": "Porque depende de decisiones de clasificación e imputación. Los alquileres imputados de la vivienda en propiedad añaden varios puntos al sector servicios sin transacción ni empleo asociados, y el marco input-output revela que parte de lo atribuido al turismo es en realidad industria, transporte y agricultura arrastrados por su demanda final."
  },
  {
+  "id": "10.01#t0",
+  "codigo": "10.01",
+  "bloque": 10,
+  "nivel": 2,
+  "titulo": "Estructura productiva y especialización de la economía española",
+  "q": "Dos países tienen empresas igual de productivas en cada tramo de tamaño. ¿Pueden tener productividades agregadas distintas?",
+  "a": "**Sí: la agregada es una media ponderada por empleo, y basta con que la gente se distribuya distinto entre tramos.** Dos países con empresas idénticas tramo a tramo pueden diferir un 10 % en productividad agregada solo por cómo se reparte el empleo entre esos tramos.",
+  "opciones": [
+   "Sí: la agregada es una media ponderada por empleo, y basta con que la gente se distribuya distinto entre tramos",
+   "No: si las empresas son idénticas, la agregada es idéntica",
+   "Solo si uno de ellos mide la productividad por hora y el otro por persona",
+   "Sí, si sus tipos impositivos difieren"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "10.01#t1",
+  "codigo": "10.01",
+  "bloque": 10,
+  "nivel": 2,
+  "titulo": "Estructura productiva y especialización de la economía española",
+  "q": "«España es una economía de servicios.» ¿Qué falta en esa afirmación?",
+  "a": "**Distinguir cuáles: consultoría, informática e ingeniería son intensivas en conocimiento y exportables; hostelería y comercio minorista, no.** Meter en la misma categoría servicios de productividad creciente y exportables con otros que no lo son borra justamente la información relevante.",
+  "opciones": [
+   "Nada: describe correctamente la estructura productiva",
+   "Añadir que la industria conserva un peso mayor que en el resto de la UE",
+   "Distinguir cuáles: consultoría, informática e ingeniería son intensivas en conocimiento y exportables; hostelería y comercio minorista, no",
+   "Precisar si se mide por empleo o por valor añadido"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "10.01#t2",
+  "codigo": "10.01",
+  "bloque": 10,
+  "nivel": 2,
+  "titulo": "Estructura productiva y especialización de la economía española",
+  "q": "La productividad agregada crece poco mientras el empleo se desplaza hacia servicios de mejora lenta. ¿A qué se debe?",
+  "a": "**En parte al efecto Baumol, que descuenta crecimiento agregado de forma mecánica al cambiar la composición del empleo.** En el ejemplo de la ficha son 0,61 puntos anuales que se pierden sin que ninguna empresa haya empeorado: solo ha cambiado dónde trabaja la gente.",
+  "opciones": [
+   "A la temporalidad del mercado de trabajo",
+   "A un error de medición en la contabilidad nacional",
+   "A la mala gestión de las empresas, que no invierten en tecnología",
+   "En parte al efecto Baumol, que descuenta crecimiento agregado de forma mecánica al cambiar la composición del empleo"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "10.01#t3",
+  "codigo": "10.01",
+  "bloque": 10,
+  "nivel": 2,
+  "titulo": "Estructura productiva y especialización de la economía española",
+  "q": "España invirtió intensamente entre 1999 y 2007 y su productividad total de los factores se estancó. ¿Cómo se explica?",
+  "a": "**El capital fue a construcción e inmobiliario: lo decisivo no es cuánto se invierte sino en qué.** Invertir mucho no garantiza crecer en productividad. La composición de la inversión es lo que decide, y ahí fue a activos que no la elevan.",
+  "opciones": [
+   "El capital fue a construcción e inmobiliario: lo decisivo no es cuánto se invierte sino en qué",
+   "La productividad total de los factores no guarda relación con la inversión",
+   "La inversión tarda unos quince años en trasladarse a la productividad",
+   "La estadística de PTF no captura la inversión en vivienda"
+  ],
+  "correcta": 0
+ },
+ {
   "id": "10.02#0",
   "codigo": "10.02",
   "bloque": 10,
@@ -605,6 +1373,70 @@ export default [
   "titulo": "Mercado de trabajo español: EPA, afiliación y dualidad",
   "q": "¿Qué cifra de empleo hay que usar para calcular la productividad?",
   "a": "La de contabilidad nacional, en puestos equivalentes a tiempo completo o mejor en horas trabajadas, porque es la que resulta coherente con el VAB del numerador. Mezclar el VAB de las cuentas con el empleo de la EPA produce cifras que no significan nada, y es un error muy común en comparaciones internacionales."
+ },
+ {
+  "id": "10.02#t0",
+  "codigo": "10.02",
+  "bloque": 10,
+  "nivel": 2,
+  "titulo": "Mercado de trabajo español: EPA, afiliación y dualidad",
+  "q": "El paro registrado y el paro de la EPA dan cifras distintas. ¿Cuál está mal?",
+  "a": "**Ninguno: miden cosas distintas —inscripciones en oficinas de empleo frente a la definición internacional de desempleo—.** Uno cuenta a quien se inscribe; la otra aplica el criterio internacional de buscar activamente empleo y estar disponible. Compararlos directamente no tiene sentido.",
+  "opciones": [
+   "El registrado, porque solo recoge a quienes cobran prestación",
+   "Ninguno: miden cosas distintas —inscripciones en oficinas de empleo frente a la definición internacional de desempleo—",
+   "La EPA, por tratarse de una encuesta con margen de error",
+   "El registrado, porque depende de incentivos administrativos"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "10.02#t1",
+  "codigo": "10.02",
+  "bloque": 10,
+  "nivel": 2,
+  "titulo": "Mercado de trabajo español: EPA, afiliación y dualidad",
+  "q": "Hay 21,4 millones de afiliaciones a la Seguridad Social. ¿Hay 21,4 millones de personas trabajando?",
+  "a": "**No: quien tiene dos contratos cuenta dos veces, y quien trabaja sin cotizar no cuenta.** Por eso la cifra de afiliaciones queda por encima del número real de ocupados con pluriempleo y por debajo si hay economía sumergida.",
+  "opciones": [
+   "Sí, descontando a los autónomos, que se cuentan aparte",
+   "Sí: cada afiliación corresponde a un trabajador dado de alta",
+   "No: quien tiene dos contratos cuenta dos veces, y quien trabaja sin cotizar no cuenta",
+   "No: la cifra incluye también a los pensionistas"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "10.02#t2",
+  "codigo": "10.02",
+  "bloque": 10,
+  "nivel": 2,
+  "titulo": "Mercado de trabajo español: EPA, afiliación y dualidad",
+  "q": "La tasa de paro cae una décima en un trimestre. ¿Qué cabe decir?",
+  "a": "**Que no se puede distinguir de cero: el margen de error de la EPA para la tasa nacional ronda los ±0,25 puntos.** La EPA es una encuesta, y comentar décimas es comentar el error de muestreo como si fuera economía.",
+  "opciones": [
+   "Que el mercado laboral ha mejorado ligeramente",
+   "Que confirma la tendencia si va en la misma dirección que el trimestre anterior",
+   "Que no se puede distinguir de cero: el margen de error de la EPA para la tasa nacional ronda los ±0,25 puntos",
+   "Que la mejora es pequeña pero estadísticamente sólida"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "10.02#t3",
+  "codigo": "10.02",
+  "bloque": 10,
+  "nivel": 2,
+  "titulo": "Mercado de trabajo español: EPA, afiliación y dualidad",
+  "q": "En plena recesión, la tasa de temporalidad baja del 25 % al 19,6 %. ¿Es una mejora?",
+  "a": "**No: baja porque se ha destruido empleo temporal, y el indicador mejora mientras el mercado empeora.** Hay que mirar los niveles, no solo el ratio: un indicador que mejora por reducción del denominador equivocado no informa de nada bueno.",
+  "opciones": [
+   "Sí, si además crece la afiliación",
+   "No se puede saber sin conocer el sector",
+   "Sí: menos temporalidad significa empleo de más calidad",
+   "No: baja porque se ha destruido empleo temporal, y el indicador mejora mientras el mercado empeora"
+  ],
+  "correcta": 3
  },
  {
   "id": "10.03#0",
@@ -661,6 +1493,70 @@ export default [
   "a": "Personas, en todo caso: una sociedad no puede soportar nada. La carga se reparte entre accionistas, trabajadores y clientes según la movilidad del capital y la competencia del sector, y en una economía abierta una parte apreciable se traslada a los salarios. El reparto concreto es una pregunta empírica difícil, no una cuestión de diseño legal."
  },
  {
+  "id": "10.03#t0",
+  "codigo": "10.03",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "Sistema fiscal español: figuras impositivas y suficiencia",
+  "q": "Un trabajador cuesta a su empresa 40.000 € al año, con una cotización empresarial del 30 %. ¿Cuál es su salario bruto?",
+  "a": "**30.769 €: la cotización se calcula sobre el bruto, así que el bruto es 40.000 dividido por 1,30.** El coste es el bruto más su 30 %, es decir, bruto × 1,30. Invertir esa relación es una división, no una resta, y el error altera todo el cálculo de la cuña.",
+  "opciones": [
+   "30.769 €: la cotización se calcula sobre el bruto, así que el bruto es 40.000 dividido por 1,30",
+   "28.000 €: 40.000 menos el 30 %",
+   "40.000 €: el bruto es lo que cuesta el trabajador",
+   "26.000 €, una vez descontada también la cotización del trabajador"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "10.03#t1",
+  "codigo": "10.03",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "Sistema fiscal español: figuras impositivas y suficiencia",
+  "q": "Se discute la carga fiscal sobre el trabajo hablando del IRPF. ¿Qué se deja fuera?",
+  "a": "**Las cotizaciones sociales, que en el ejemplo aportan el 72 % de la cuña frente al 28 % del IRPF.** El debate público invierte las proporciones, en parte porque la cotización empresarial no aparece en la nómina y por tanto es invisible para quien la soporta.",
+  "opciones": [
+   "El IVA que el trabajador paga después al consumir su salario",
+   "Nada relevante: el IRPF es el impuesto que grava el salario",
+   "Las cotizaciones sociales, que en el ejemplo aportan el 72 % de la cuña frente al 28 % del IRPF",
+   "Los impuestos autonómicos sobre la renta, que van aparte"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "10.03#t2",
+  "codigo": "10.03",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "Sistema fiscal español: figuras impositivas y suficiencia",
+  "q": "«El IVA es regresivo.» ¿Es cierto?",
+  "a": "**Depende de la base: es regresivo sobre la renta anual, proporcional sobre el consumo y aproximadamente proporcional sobre la renta de toda la vida.** Las tres afirmaciones son correctas y describen cosas distintas. Decir «el IVA es regresivo» sin especificar la base es discutir sin haber fijado el término de comparación.",
+  "opciones": [
+   "No: los tipos reducidos sobre alimentos lo hacen progresivo",
+   "Sí, sin matices: todos pagan el mismo tipo con independencia de su renta",
+   "Sí, y por eso su recaudación se destina a gasto social",
+   "Depende de la base: es regresivo sobre la renta anual, proporcional sobre el consumo y aproximadamente proporcional sobre la renta de toda la vida"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "10.03#t3",
+  "codigo": "10.03",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "Sistema fiscal español: figuras impositivas y suficiencia",
+  "q": "¿Es un tipo reducido de IVA un buen instrumento redistributivo?",
+  "a": "**No: benefician más en euros a quien más consume, que suele ser quien más renta tiene.** En el ejemplo de la ficha, el hogar de 120.000 € paga cuatro veces más IVA que el de renta baja: un tipo reducido le ahorra a él cuatro veces más dinero.",
+  "opciones": [
+   "Sí: abarata bienes básicos que pesan más en el presupuesto de los hogares pobres",
+   "Sí, siempre que se apliquen solo a alimentos y medicamentos",
+   "No: benefician más en euros a quien más consume, que suele ser quien más renta tiene",
+   "Es indiferente: el IVA no admite finalidad redistributiva"
+  ],
+  "correcta": 2
+ },
+ {
   "id": "10.04#0",
   "codigo": "10.04",
   "bloque": 10,
@@ -713,6 +1609,70 @@ export default [
   "titulo": "Gasto público, Estado de bienestar y pensiones",
   "q": "¿Por qué la deuda pública registrada no refleja el problema de las pensiones?",
   "a": "Porque el SEC 2010 no registra como pasivo el compromiso futuro de un sistema de reparto: no es una obligación exigible en sentido contable. Se estima en cuentas suplementarias y su magnitud no aparece en ninguna cifra de deuda. Por eso la sostenibilidad a largo plazo y el saldo del ejercicio son discusiones distintas."
+ },
+ {
+  "id": "10.04#t0",
+  "codigo": "10.04",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "Gasto público, Estado de bienestar y pensiones",
+  "q": "¿Resuelve un sistema de capitalización el problema demográfico del envejecimiento?",
+  "a": "**No: lo que consumen los jubilados de un año lo produce quien trabaja ese año, sea cual sea el sistema.** Un fondo permite comprar esa producción con mejor posición relativa, pero no crea la producción. El problema es real y ningún mecanismo financiero lo elimina.",
+  "opciones": [
+   "No, porque los mercados financieros son demasiado volátiles a treinta años",
+   "Sí: cada generación financia su propia pensión con lo que ha ahorrado",
+   "Sí, si los fondos se invierten en países con demografía más joven",
+   "No: lo que consumen los jubilados de un año lo produce quien trabaja ese año, sea cual sea el sistema"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "10.04#t1",
+  "codigo": "10.04",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "Gasto público, Estado de bienestar y pensiones",
+  "q": "Al analizar la sostenibilidad del sistema de reparto, ¿qué ratio interviene en la identidad contable?",
+  "a": "**Cotizantes por pensión.** Un país puede envejecer y mantener el ratio si eleva la tasa de empleo o incorpora inmigración: la demografía no lo determina por sí sola.",
+  "opciones": [
+   "La tasa de natalidad de las dos últimas décadas",
+   "La esperanza de vida a los 65 años",
+   "La tasa de dependencia demográfica: mayores sobre población en edad de trabajar",
+   "Cotizantes por pensión"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "10.04#t2",
+  "codigo": "10.04",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "Gasto público, Estado de bienestar y pensiones",
+  "q": "El ratio de cotizantes por pensión cae de 2,3 a 1,5 y no se toca nada. ¿Qué ocurre?",
+  "a": "**La tasa de sustitución se ajusta sola, del 65 % al 42,4 %.** El recorte llega igualmente, solo que sin haberse decidido ni discutido, y recae íntegramente sobre los pensionistas futuros. No hacer nada es también una elección sobre quién paga.",
+  "opciones": [
+   "El sistema entra en déficit y se financia con deuda indefinidamente",
+   "No pasa nada hasta que el fondo de reserva se agote",
+   "Las pensiones se congelan en términos nominales",
+   "La tasa de sustitución se ajusta sola, del 65 % al 42,4 %"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "10.04#t3",
+  "codigo": "10.04",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "Gasto público, Estado de bienestar y pensiones",
+  "q": "Se amplía el periodo de cómputo para calcular la pensión. ¿Qué tipo de medida es?",
+  "a": "**Un recorte de la tasa de sustitución con otro nombre, y además desigual.** Perjudica más a quien tuvo carreras ascendentes o interrumpidas: al incluir años peores, la base reguladora baja precisamente para quien empezó cobrando poco.",
+  "opciones": [
+   "Una medida neutral en gasto que solo redistribuye entre cohortes",
+   "Un ajuste técnico que mejora la equidad del cálculo",
+   "Un recorte de la tasa de sustitución con otro nombre, y además desigual",
+   "Un incentivo para prolongar la vida laboral"
+  ],
+  "correcta": 2
  },
  {
   "id": "10.05#0",
@@ -769,6 +1729,70 @@ export default [
   "a": "Decide cómo recaudar una cantidad dada al mínimo coste de eficiencia. No decide cuánto debe recaudarse, que es una elección social sobre qué se hace colectivamente, ni cómo ponderar eficiencia frente a equidad, que es una cuestión de valores. Lo que aporta es el precio de cada opción distributiva, que es información y no una prescripción."
  },
  {
+  "id": "10.05#t0",
+  "codigo": "10.05",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "Bienes públicos, imposición óptima y eficiencia",
+  "q": "¿Cuánto cuesta a la sociedad recaudar un euro de impuestos?",
+  "a": "**Más de un euro: hay que sumar el exceso de gravamen, riqueza que no se genera y que no recibe nadie.** Al 40 % de tipo, cada euro recaudado cuesta a la sociedad 1,10 €. Ese coste marginal de los fondos obliga a exigir a un proyecto público una rentabilidad social superior a su presupuesto.",
+  "opciones": [
+   "Depende del destino que se dé a la recaudación",
+   "Menos de un euro, por el efecto multiplicador del gasto público",
+   "Más de un euro: hay que sumar el exceso de gravamen, riqueza que no se genera y que no recibe nadie",
+   "Un euro: es una transferencia del contribuyente al Estado"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "10.05#t1",
+  "codigo": "10.05",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "Bienes públicos, imposición óptima y eficiencia",
+  "q": "La regla de Ramsey recomienda gravar más los bienes de demanda inelástica. ¿Qué problema tiene esa recomendación?",
+  "a": "**Que lo inelástico suele ser lo básico, así que el diseño más eficiente puede ser el más regresivo.** Gravar lo inelástico minimiza la distorsión precisamente porque la gente no puede evitarlo, y eso mismo lo hace duro con quien no tiene alternativa.",
+  "opciones": [
+   "Que contradice el principio de capacidad económica recogido en la Constitución",
+   "Que es inaplicable: las elasticidades no se pueden estimar",
+   "Que lo inelástico suele ser lo básico, así que el diseño más eficiente puede ser el más regresivo",
+   "Que reduce la recaudación total, al gravar bienes de poco peso"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "10.05#t2",
+  "codigo": "10.05",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "Bienes públicos, imposición óptima y eficiencia",
+  "q": "¿Es la sanidad pública un bien público en sentido económico?",
+  "a": "**No: es rival y excluible; se financia públicamente por equidad, externalidades y fallos del mercado de seguros.** Un bien público puro es no rival y no excluible. Una cama de hospital ocupada no la puede ocupar otro, y se puede excluir a quien no esté cubierto.",
+  "opciones": [
+   "No: es rival y excluible; se financia públicamente por equidad, externalidades y fallos del mercado de seguros",
+   "Solo la atención primaria, que sí es no rival",
+   "Sí: la provee el Estado y beneficia a toda la población",
+   "Sí, porque nadie puede ser excluido de la atención de urgencias"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "10.05#t3",
+  "codigo": "10.05",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "Bienes públicos, imposición óptima y eficiencia",
+  "q": "Un impuesto pigouviano sobre emisiones, ¿genera exceso de gravamen?",
+  "a": "**No: lo elimina, porque corrige una externalidad preexistente.** Recauda y mejora la eficiencia a la vez. Meterlo en el mismo saco que los demás impuestos hace perder de vista que es una figura de naturaleza distinta.",
+  "opciones": [
+   "No, siempre que su recaudación se destine a políticas ambientales",
+   "No: lo elimina, porque corrige una externalidad preexistente",
+   "Sí, y por eso su tipo debe ser bajo",
+   "Sí, como cualquier impuesto: distorsiona las decisiones de producción"
+  ],
+  "correcta": 1
+ },
+ {
   "id": "10.06#0",
   "codigo": "10.06",
   "bloque": 10,
@@ -821,6 +1845,70 @@ export default [
   "titulo": "SEC 2010: sectores institucionales y secuencia de cuentas",
   "q": "¿Qué es el ajuste entre la cuenta de capital y la cuenta financiera?",
   "a": "La discrepancia entre dos estimaciones de la misma magnitud, la capacidad de financiación, obtenidas por vías independientes. En teoría debería ser cero y en la práctica no lo es. Se publica, y es uno de los pocos indicadores honestos de la calidad de la estimación que ofrece el sistema, con la misma función que las revisiones."
+ },
+ {
+  "id": "10.06#t0",
+  "codigo": "10.06",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "SEC 2010: sectores institucionales y secuencia de cuentas",
+  "q": "Alguien pide a la vez menos déficit público, más ahorro de las familias y el mismo saldo exterior. ¿Es posible?",
+  "a": "**No: los saldos sectoriales suman el saldo frente al resto del mundo por identidad contable, así que fijar tres determina el cuarto.** No es una cuestión de voluntad política ni de coyuntura: es aritmética de las cuentas nacionales. Alguien tiene que acabar endeudándose.",
+  "opciones": [
+   "Sí, si las empresas mantienen su posición financiera",
+   "No: los saldos sectoriales suman el saldo frente al resto del mundo por identidad contable, así que fijar tres determina el cuarto",
+   "No, salvo que aumente la inversión pública",
+   "Sí, siempre que el crecimiento del PIB lo permita"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "10.06#t1",
+  "codigo": "10.06",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "SEC 2010: sectores institucionales y secuencia de cuentas",
+  "q": "Las administraciones tienen un desahorro de 60 y una necesidad de financiación de 90. ¿A qué corresponde la diferencia?",
+  "a": "**A la inversión pública: 30.** El desahorro es el saldo de la cuenta corriente y la necesidad de financiación incorpora además la cuenta de capital, donde está la inversión. Distinguirlos es lo que permite discutir si el déficit financia gasto corriente o formación de capital.",
+  "opciones": [
+   "A transferencias de capital recibidas de la Unión Europea",
+   "A los intereses de la deuda pendientes de pago",
+   "A la inversión pública: 30",
+   "A un ajuste estadístico entre la cuenta de capital y la financiera"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "10.06#t2",
+  "codigo": "10.06",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "SEC 2010: sectores institucionales y secuencia de cuentas",
+  "q": "Una administración retrasa el pago a sus proveedores hasta el ejercicio siguiente. ¿Reduce el déficit del año?",
+  "a": "**No: el SEC registra en devengo, así que la obligación se contabiliza cuando se genera.** Retrasar el pago convierte gasto en deuda comercial sin alterar el déficit registrado: cambia la forma de la deuda, no su existencia.",
+  "opciones": [
+   "Sí, si el retraso se documenta con la conformidad del proveedor",
+   "No: el SEC registra en devengo, así que la obligación se contabiliza cuando se genera",
+   "Sí: no ha salido dinero de la caja",
+   "Solo en la contabilidad presupuestaria, no en la nacional"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "10.06#t3",
+  "codigo": "10.06",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "SEC 2010: sectores institucionales y secuencia de cuentas",
+  "q": "¿Cómo clasifica el SEC a una empresa pública que no cubre la mitad de sus costes con ventas?",
+  "a": "**Dentro del sector administraciones públicas.** Si no cubre con ventas al menos la mitad de sus costes, no es productor de mercado, y su déficit y su deuda computan como públicos.",
+  "opciones": [
+   "Depende del porcentaje de capital en manos públicas",
+   "Como sociedad no financiera, por su actividad productiva",
+   "Como institución sin fines de lucro al servicio de los hogares",
+   "Dentro del sector administraciones públicas"
+  ],
+  "correcta": 3
  },
  {
   "id": "10.07#0",
@@ -877,6 +1965,70 @@ export default [
   "a": "Porque sus servicios carecen de precio de mercado y se valoran por sus costes de producción, principalmente salarios. Si el output se define como el coste del input, la relación entre ambos apenas puede variar. Es una convención necesaria y muy consecuente para cualquier análisis de eficiencia del sector público."
  },
  {
+  "id": "10.07#t0",
+  "codigo": "10.07",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "Producción, VAB y PIB: los tres enfoques de cálculo",
+  "q": "En la identidad del gasto, las importaciones se restan. ¿Significa que importar reduce el PIB?",
+  "a": "**No: se restan porque ya están incluidas dentro del consumo, la inversión y las exportaciones.** Es una corrección para no contar como producción interior algo producido fuera. La resta deshace una suma anterior, no penaliza nada.",
+  "opciones": [
+   "No: se restan porque ya están incluidas dentro del consumo, la inversión y las exportaciones",
+   "No: se restan por convención estadística, sin contenido económico",
+   "Sí, pero solo si se trata de bienes finales",
+   "Sí: cada euro importado es un euro que no se produce dentro"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "10.07#t1",
+  "codigo": "10.07",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "Producción, VAB y PIB: los tres enfoques de cálculo",
+  "q": "Para medir el peso de un sector en la economía, ¿sirve sumar la facturación de sus empresas?",
+  "a": "**No: incluye consumos intermedios y cuenta muchas veces el mismo valor; hay que usar el valor añadido.** En el ejemplo de la ficha, una producción de 1.900 genera un PIB de 1.000: la diferencia son consumos intermedios contados repetidamente.",
+  "opciones": [
+   "Sí, si se excluye a las empresas con menos de diez empleados",
+   "Sí: la facturación es la medida natural del tamaño de un sector",
+   "No: incluye consumos intermedios y cuenta muchas veces el mismo valor; hay que usar el valor añadido",
+   "Sí, siempre que se descuente el IVA repercutido"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "10.07#t2",
+  "codigo": "10.07",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "Producción, VAB y PIB: los tres enfoques de cálculo",
+  "q": "Los tres enfoques de cálculo del PIB dan exactamente la misma cifra. ¿Qué prueba eso?",
+  "a": "**Nada por sí solo: la coincidencia es una identidad contable impuesta en la conciliación, no un hallazgo.** Se estiman con fuentes independientes y la diferencia se reparte con criterios explícitos. Leer la coincidencia como comprobación es tomar el resultado del procedimiento por una validación externa.",
+  "opciones": [
+   "Que la economía sumergida es de tamaño despreciable",
+   "Que las estimaciones son de alta calidad",
+   "Nada por sí solo: la coincidencia es una identidad contable impuesta en la conciliación, no un hallazgo",
+   "Que las fuentes estadísticas están bien integradas"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "10.07#t3",
+  "codigo": "10.07",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "Producción, VAB y PIB: los tres enfoques de cálculo",
+  "q": "¿Por qué se dice que el PIB es bruto?",
+  "a": "**Porque no descuenta el consumo de capital fijo: una economía que solo repone su capital depreciado aparece produciendo.** El producto neto es conceptualmente superior como medida de lo que un país puede consumir sin empobrecerse, y se usa menos porque la depreciación es difícil de estimar.",
+  "opciones": [
+   "Porque se calcula antes de impuestos",
+   "Porque no descuenta el consumo de capital fijo: una economía que solo repone su capital depreciado aparece produciendo",
+   "Porque se mide a precios de mercado y no a precios básicos",
+   "Porque incluye la producción de las administraciones públicas"
+  ],
+  "correcta": 1
+ },
+ {
   "id": "10.08#0",
   "codigo": "10.08",
   "bloque": 10,
@@ -929,6 +2081,70 @@ export default [
   "titulo": "Índices encadenados, precios del año anterior y volumen",
   "q": "¿Tiene algún inconveniente el encadenamiento?",
   "a": "La deriva de cadena: cuando precios y cantidades oscilan arriba y abajo en lugar de moverse tendencialmente, el enlace de tasas puede acumular un error que no se anula al regresar al punto de partida. Es más grave con frecuencias altas, y por eso los enlaces se hacen anuales incluso en las cuentas trimestrales."
+ },
+ {
+  "id": "10.08#t0",
+  "codigo": "10.08",
+  "bloque": 10,
+  "nivel": 4,
+  "titulo": "Índices encadenados, precios del año anterior y volumen",
+  "q": "Se suman los componentes del PIB en volumen encadenado y no cuadra con el agregado. ¿Hay un error?",
+  "a": "**No: las series encadenadas no son aditivas, y la discrepancia crece con la distancia al año de referencia.** En el ejemplo de la ficha son 209,6 sobre 4.452,6 al quinto año. No es un fallo del dato: es una propiedad del método, y por eso el INE publica la discrepancia.",
+  "opciones": [
+   "No: las series encadenadas no son aditivas, y la discrepancia crece con la distancia al año de referencia",
+   "Sí: los componentes deben sumar el total en cualquier valoración",
+   "Sí: falta incluir la variación de existencias",
+   "No, pero la discrepancia debería ser siempre inferior al 0,1 %"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "10.08#t1",
+  "codigo": "10.08",
+  "bloque": 10,
+  "nivel": 4,
+  "titulo": "Índices encadenados, precios del año anterior y volumen",
+  "q": "¿Cómo se calculan las contribuciones al crecimiento de cada componente?",
+  "a": "**Ponderando la tasa de volumen de cada componente por su peso en valor corriente del periodo anterior.** Es la fórmula válida, y la que hace que las contribuciones sumen el crecimiento del agregado.",
+  "opciones": [
+   "Ponderando la tasa de volumen de cada componente por su peso en valor corriente del periodo anterior",
+   "Restando al crecimiento del total el de los demás componentes",
+   "Repartiendo el crecimiento del agregado en proporción al tamaño de cada componente",
+   "Dividiendo la variación del nivel encadenado del componente entre el nivel encadenado del total"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "10.08#t2",
+  "codigo": "10.08",
+  "bloque": 10,
+  "nivel": 4,
+  "titulo": "Índices encadenados, precios del año anterior y volumen",
+  "q": "Una serie de PIB en volumen usa una base fija de hace veinte años. ¿Qué efecto tiene?",
+  "a": "**Sobrestima sistemáticamente: valora con precios antiguos y altos las cantidades de los bienes que se han abaratado y cuyo consumo por eso ha crecido.** El caso de manual es la informática: precios que se desploman y cantidades que se disparan, valoradas a los precios altos del año base.",
+  "opciones": [
+   "No tiene efecto sobre las tasas, solo sobre los niveles",
+   "Subestima el crecimiento, porque no recoge productos nuevos",
+   "Es más precisa, porque las ponderaciones no cambian y la serie es homogénea",
+   "Sobrestima sistemáticamente: valora con precios antiguos y altos las cantidades de los bienes que se han abaratado y cuyo consumo por eso ha crecido"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "10.08#t3",
+  "codigo": "10.08",
+  "bloque": 10,
+  "nivel": 4,
+  "titulo": "Índices encadenados, precios del año anterior y volumen",
+  "q": "El deflactor del PIB sube un 3 % y el IPC un 4 %. ¿Es un error de alguna de las dos estadísticas?",
+  "a": "**No: cubren cosas distintas —el deflactor toda la producción interior sin importaciones; el IPC el consumo de los hogares, importaciones incluidas— y tienen fórmulas distintas.** Un encarecimiento del petróleo importado empuja el IPC y no el deflactor, porque el petróleo no se produce aquí. Esperar coincidencia es no haber leído qué cubre cada uno.",
+  "opciones": [
+   "Sí, si la diferencia supera el punto porcentual",
+   "No: cubren cosas distintas —el deflactor toda la producción interior sin importaciones; el IPC el consumo de los hogares, importaciones incluidas— y tienen fórmulas distintas",
+   "Sí: ambos miden la inflación y deberían coincidir",
+   "No, pero solo pueden diferir si ha habido cambios de imposición indirecta"
+  ],
+  "correcta": 1
  },
  {
   "id": "10.09#0",
@@ -985,6 +2201,70 @@ export default [
   "a": "Sí, si compite en calidad, diferenciación o tecnología difícil de imitar, que es la competitividad no-precio. La competencia por costes es la única disponible cuando se venden bienes indiferenciados, de modo que cuánto pesa este indicador depende de la especialización productiva descrita en la ficha 10.01."
  },
  {
+  "id": "10.09#t0",
+  "codigo": "10.09",
+  "bloque": 10,
+  "nivel": 4,
+  "titulo": "Coste laboral unitario, productividad y competitividad",
+  "q": "Un país tiene salarios muy superiores a los de sus competidores. ¿Pierde competitividad por ello?",
+  "a": "**No necesariamente: lo que erosiona la competitividad es que los salarios crezcan por encima de la productividad.** Un país con salarios altos y productividad alta puede tener un coste laboral unitario más bajo que otro con salarios bajos y productividad baja.",
+  "opciones": [
+   "Sí, salvo que compense con una divisa depreciada",
+   "No: los salarios no intervienen en el coste laboral unitario",
+   "No necesariamente: lo que erosiona la competitividad es que los salarios crezcan por encima de la productividad",
+   "Sí: el coste del trabajo es el principal determinante del precio final"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "10.09#t1",
+  "codigo": "10.09",
+  "bloque": 10,
+  "nivel": 4,
+  "titulo": "Coste laboral unitario, productividad y competitividad",
+  "q": "El coste laboral unitario de un país mejora un 9,4 % durante una recesión. ¿Ha mejorado su competitividad?",
+  "a": "**Hay que comprobarlo: puede deberse a que se ha destruido empleo de baja productividad, lo que sube la media sin que nada mejore.** Si desaparecen los puestos menos productivos, la productividad media del resto sube sin que ningún trabajador produzca más. La mejora es aritmética, no económica.",
+  "opciones": [
+   "No: el indicador no es válido en fases recesivas",
+   "Hay que comprobarlo: puede deberse a que se ha destruido empleo de baja productividad, lo que sube la media sin que nada mejore",
+   "Sí: producir cada unidad cuesta ahora menos trabajo",
+   "Sí, y el efecto será duradero porque los salarios son rígidos a la baja"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "10.09#t2",
+  "codigo": "10.09",
+  "bloque": 10,
+  "nivel": 4,
+  "titulo": "Coste laboral unitario, productividad y competitividad",
+  "q": "¿Por qué el coste laboral unitario subestima el coste real del trabajo en España?",
+  "a": "**Porque los autónomos aparecen como excedente de explotación y no como remuneración de asalariados.** Con un peso del trabajo por cuenta propia elevado, ese tratamiento contable deja fuera del numerador una parte real del coste del trabajo.",
+  "opciones": [
+   "Porque no incluye las cotizaciones sociales a cargo de la empresa",
+   "Porque los autónomos aparecen como excedente de explotación y no como remuneración de asalariados",
+   "Porque se calcula sobre horas trabajadas y no sobre personas",
+   "Porque excluye al sector público, donde no hay precios de mercado"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "10.09#t3",
+  "codigo": "10.09",
+  "bloque": 10,
+  "nivel": 4,
+  "titulo": "Coste laboral unitario, productividad y competitividad",
+  "q": "¿Es lo mismo una devaluación interna que una devaluación nominal de la moneda?",
+  "a": "**El resultado buscado es el mismo; el proceso no: la nominal corrige de golpe y la interna exige mover miles de precios y salarios uno a uno.** Una depreciación no exige renegociar nada; la devaluación interna se hace contrato a contrato, con desempleo por el medio y durante años.",
+  "opciones": [
+   "Sí: ambas abaratan los productos del país frente al exterior",
+   "Sí, y la interna es preferible por no generar inflación importada",
+   "No: la interna solo funciona en economías pequeñas y abiertas",
+   "El resultado buscado es el mismo; el proceso no: la nominal corrige de golpe y la interna exige mover miles de precios y salarios uno a uno"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "10.10#0",
   "codigo": "10.10",
   "bloque": 10,
@@ -1039,6 +2319,70 @@ export default [
   "a": "El registro suele adelantarse: afiliación, recaudación y aduanas son censales, se publican pronto y apenas se revisan, mientras que las cuentas son estimaciones conciliadas sujetas a revisión. Cuando ambos coinciden, la señal es fiable; cuando discrepan, lo prudente es concluir que aún no hay señal clara."
  },
  {
+  "id": "10.10#t0",
+  "codigo": "10.10",
+  "bloque": 10,
+  "nivel": 4,
+  "titulo": "Cuentas trimestrales, revisiones y datos en tiempo real",
+  "q": "Se publica el avance del PIB del trimestre con un crecimiento del 0,7 %. ¿Qué fiabilidad tiene?",
+  "a": "**Limitada: se elabora con una fracción de la información final, y en el ejemplo ese 0,7 % acabó siendo un 0,3 %.** La revisión absoluta media es de unas dos décimas, así que la diferencia entre un 0,4 % y un 0,5 % no es información.",
+  "opciones": [
+   "Alta para la tasa trimestral, baja para la interanual",
+   "Alta: el INE no publica hasta tener la información completa",
+   "Limitada: se elabora con una fracción de la información final, y en el ejemplo ese 0,7 % acabó siendo un 0,3 %",
+   "Depende del trimestre: los de verano son menos fiables por la estacionalidad"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "10.10#t1",
+  "codigo": "10.10",
+  "bloque": 10,
+  "nivel": 4,
+  "titulo": "Cuentas trimestrales, revisiones y datos en tiempo real",
+  "q": "Para juzgar si un banco central acertó con una decisión de hace cinco años, ¿qué datos hay que usar?",
+  "a": "**Los que tenía disponibles entonces, no la serie revisada.** Un banco central que veía una brecha de producción del −1,27 % actuaba de forma coherente aunque la brecha revisada resulte otra. Juzgarlo con datos posteriores le atribuye información que no tenía.",
+  "opciones": [
+   "Los que tenía disponibles entonces, no la serie revisada",
+   "Los datos revisados, corregidos por el error medio de revisión",
+   "La media de ambas, para equilibrar los dos puntos de vista",
+   "La serie revisada, que es la que refleja lo que realmente ocurrió"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "10.10#t2",
+  "codigo": "10.10",
+  "bloque": 10,
+  "nivel": 4,
+  "titulo": "Cuentas trimestrales, revisiones y datos en tiempo real",
+  "q": "¿Son las revisiones de las cuentas nacionales ruido aleatorio?",
+  "a": "**No: tienen patrones sistemáticos, al alza en expansiones y a la baja en recesiones.** Las fuentes tardías capturan mejor la actividad de las empresas que nacen y mueren, y esa creación y destrucción es cíclica. El sesgo va justo en la dirección que agrava el error de diagnóstico en tiempo real.",
+  "opciones": [
+   "Sí: por eso su media tiende a cero a largo plazo",
+   "Sí, salvo en los años de cambio metodológico",
+   "No, pero el sesgo es tan pequeño que puede ignorarse",
+   "No: tienen patrones sistemáticos, al alza en expansiones y a la baja en recesiones"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "10.10#t3",
+  "codigo": "10.10",
+  "bloque": 10,
+  "nivel": 4,
+  "titulo": "Cuentas trimestrales, revisiones y datos en tiempo real",
+  "q": "¿Qué diferencia hay entre nowcasting y predicción?",
+  "a": "**El nowcasting estima el trimestre en curso, que ya ha ocurrido pero aún no se ha medido; no dice nada sobre el futuro.** Combina indicadores de frecuencia alta para adelantar una medición pendiente. Confundirlo con predecir atribuye a la técnica una capacidad que no tiene.",
+  "opciones": [
+   "La predicción se refiere a variables reales y el nowcasting a variables nominales",
+   "El nowcasting estima el trimestre en curso, que ya ha ocurrido pero aún no se ha medido; no dice nada sobre el futuro",
+   "El nowcasting es más fiable porque usa modelos más complejos",
+   "Ninguna: el nowcasting es predicción a muy corto plazo"
+  ],
+  "correcta": 1
+ },
+ {
   "id": "10.11#0",
   "codigo": "10.11",
   "bloque": 10,
@@ -1082,6 +2426,70 @@ export default [
   "titulo": "Distribución de la renta y desigualdad",
   "q": "¿Por qué las cuentas nacionales no bastan para medir la desigualdad?",
   "a": "Porque publican saldos agregados por sector institucional: dan la renta disponible de todos los hogares (S.14) en conjunto, no su reparto entre ellos. Definen bien las etapas —B.5 de mercado, B.6 disponible, B.7 ajustada— pero la distribución hay que traerla de encuestas o de registros fiscales. Las cuentas distributivas intentan repartir los agregados del SEC imponiendo que la suma cuadre con el total contable."
+ },
+ {
+  "id": "10.11#t0",
+  "codigo": "10.11",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "Distribución de la renta y desigualdad",
+  "q": "Un estudio da un Gini de 0,49 para España y otro de 0,33. ¿Se contradicen?",
+  "a": "**No necesariamente: un Gini de renta de mercado y otro de renta disponible difieren en unos diez puntos en la misma economía.** La diferencia son impuestos y transferencias. Comparar países, años o estudios sin comprobar qué renta se está midiendo es la fuente de confusión más común del tema.",
+  "opciones": [
+   "Sí, salvo que se refieran a años distintos",
+   "No: el Gini admite un margen de error de esa magnitud",
+   "Sí: uno de los dos está mal calculado",
+   "No necesariamente: un Gini de renta de mercado y otro de renta disponible difieren en unos diez puntos en la misma economía"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "10.11#t1",
+  "codigo": "10.11",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "Distribución de la renta y desigualdad",
+  "q": "¿Por qué el Gini de la riqueza es mucho mayor que el de la renta?",
+  "a": "**Porque acumula décadas de diferencias de renta más las herencias.** Donde la renta da 0,35, la riqueza puede dar 0,70. Un flujo anual y un saldo acumulado durante generaciones no pueden repartirse igual.",
+  "opciones": [
+   "Porque acumula décadas de diferencias de renta más las herencias",
+   "Porque la riqueza incluye la vivienda habitual, que distorsiona el reparto",
+   "Porque la riqueza se mide con encuestas menos fiables",
+   "Porque el Gini no es aplicable a magnitudes de stock"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "10.11#t2",
+  "codigo": "10.11",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "Distribución de la renta y desigualdad",
+  "q": "Al medir la desigualdad se ignoran la sanidad y la educación públicas. ¿Qué efecto tiene?",
+  "a": "**Exagera la desigualdad: son renta real que el hogar no cobra pero disfruta, y su reparto es más igualitario que el monetario.** Al repartirse de forma más igualitaria que el dinero, incluirlas comprime la distribución. Dejarlas fuera hace parecer más desigual de lo que es a la economía.",
+  "opciones": [
+   "Ninguno: no son renta monetaria del hogar",
+   "Exagera la desigualdad: son renta real que el hogar no cobra pero disfruta, y su reparto es más igualitario que el monetario",
+   "La subestima, porque los hogares de renta alta usan más la sanidad privada",
+   "Depende del método de imputación empleado"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "10.11#t3",
+  "codigo": "10.11",
+  "bloque": 10,
+  "nivel": 3,
+  "titulo": "Distribución de la renta y desigualdad",
+  "q": "El Gini de un país baja durante una recesión. ¿Ha mejorado el bienestar?",
+  "a": "**No se sigue: el Gini baja tanto si suben las rentas bajas como si caen las altas.** Una recesión que golpee sobre todo a las rentas del capital reduce la desigualdad y empobrece al país. Las dos cosas no son equivalentes y el índice no las distingue.",
+  "opciones": [
+   "Sí, aunque el efecto sea transitorio",
+   "No se sigue: el Gini baja tanto si suben las rentas bajas como si caen las altas",
+   "No: el Gini no es comparable entre fases del ciclo",
+   "Sí: una distribución más igualitaria es siempre preferible"
+  ],
+  "correcta": 1
  },
  {
   "id": "11.01#0",
@@ -1138,6 +2546,70 @@ export default [
   "a": "Son reconstrucciones a partir de salarios, precios, cosechas y censos fiscales, con márgenes de error grandes que rara vez se comunican, y con un sesgo hacia la economía monetizada porque es la que deja rastro documental. Sirven para órdenes de magnitud y formas de curva, no para décimas ni comparaciones finas entre países."
  },
  {
+  "id": "11.01#t0",
+  "codigo": "11.01",
+  "bloque": 11,
+  "nivel": 2,
+  "titulo": "De la economía orgánica a la revolución industrial",
+  "q": "Antes de 1800 la renta por habitante apenas se movió. ¿Significa que no hubo progreso técnico?",
+  "a": "**No: hubo molinos, arado pesado, rotación de cultivos, imprenta y navegación oceánica; lo que no hubo fue crecimiento sostenido de la renta por habitante.** Los avances se traducían en más gente, no en más nivel de vida. Lo que hay que explicar no es la aparición de la técnica sino por qué dejó de convertirse solo en población.",
+  "opciones": [
+   "Sí, salvo en China, que sí innovaba",
+   "No, pero los avances fueron demasiado pequeños para medirse",
+   "No: hubo molinos, arado pesado, rotación de cultivos, imprenta y navegación oceánica; lo que no hubo fue crecimiento sostenido de la renta por habitante",
+   "Sí: sin innovación no puede haber crecimiento"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "11.01#t1",
+  "codigo": "11.01",
+  "bloque": 11,
+  "nivel": 2,
+  "titulo": "De la economía orgánica a la revolución industrial",
+  "q": "¿Cómo fueron las primeras décadas de la revolución industrial para los trabajadores?",
+  "a": "**El crecimiento fue modesto, los salarios reales apenas mejoraron, se alargaron las jornadas y cayó la esperanza de vida en las ciudades.** Leerla como un salto brusco de prosperidad falsea lo que vivió la generación que la atravesó: el despegue fue lento y su primer tramo fue duro.",
+  "opciones": [
+   "De mejora en el campo y empeoramiento en las ciudades industriales",
+   "De estancamiento salarial pero con jornadas más cortas",
+   "De mejora rápida y generalizada del nivel de vida",
+   "El crecimiento fue modesto, los salarios reales apenas mejoraron, se alargaron las jornadas y cayó la esperanza de vida en las ciudades"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "11.01#t2",
+  "codigo": "11.01",
+  "bloque": 11,
+  "nivel": 2,
+  "titulo": "De la economía orgánica a la revolución industrial",
+  "q": "Gran Bretaña tenía salarios altos y fue la primera en industrializarse. ¿Prueba que los salarios altos causaron la industrialización?",
+  "a": "**No: una economía ya más productiva paga más, así que la causalidad puede ir en sentido contrario.** Es un problema de endogeneidad de manual, del tipo que estudia el bloque 4: la variable explicativa puede ser consecuencia de lo que pretende explicar.",
+  "opciones": [
+   "Sí, y es la explicación aceptada por consenso",
+   "Sí: encarecer el trabajo incentiva sustituirlo por máquinas",
+   "No: los salarios británicos no eran realmente altos en términos reales",
+   "No: una economía ya más productiva paga más, así que la causalidad puede ir en sentido contrario"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "11.01#t3",
+  "codigo": "11.01",
+  "bloque": 11,
+  "nivel": 2,
+  "titulo": "De la economía orgánica a la revolución industrial",
+  "q": "La máquina de vapor era rentable en Newcastle y ruinosa en Milán con la técnica de 1750. ¿Por qué?",
+  "a": "**Porque consumía carbón a un ritmo enorme, y su precio relativo difería radicalmente entre ambos lugares.** Industrializarse no era la opción evidente: solo lo era donde los precios relativos la hacían rentable. La misma técnica da resultados opuestos en sitios distintos.",
+  "opciones": [
+   "Porque el mercado italiano era demasiado pequeño para amortizarla",
+   "Porque consumía carbón a un ritmo enorme, y su precio relativo difería radicalmente entre ambos lugares",
+   "Porque las patentes británicas impedían su uso en el continente",
+   "Porque en Italia no había mano de obra cualificada para operarla"
+  ],
+  "correcta": 1
+ },
+ {
   "id": "11.02#0",
   "codigo": "11.02",
   "bloque": 11,
@@ -1190,6 +2662,70 @@ export default [
   "titulo": "La primera globalización y el patrón oro, 1870-1914",
   "q": "¿Qué diferencia hay entre aquella globalización y la actual respecto a los perdedores?",
   "a": "La emigración. Entre 1850 y 1914 unos cincuenta y cinco millones de europeos se marcharon, lo que alivió la presión sobre los perdedores del comercio y contribuyó a la convergencia salarial entre continentes. Hoy esa válvula está cerrada y los perdedores permanecen donde están, lo que cambia por completo la dinámica política del ajuste."
+ },
+ {
+  "id": "11.02#t0",
+  "codigo": "11.02",
+  "bloque": 11,
+  "nivel": 2,
+  "titulo": "La primera globalización y el patrón oro, 1870-1914",
+  "q": "¿Es la globalización una tendencia irreversible de la historia?",
+  "a": "**No: la apertura comercial de 1913 no se recuperó hasta los años setenta, tras sesenta años de desintegración.** Es un régimen político sostenido por decisiones, no una ley natural. Se puede desmontar, y se desmontó durante dos generaciones.",
+  "opciones": [
+   "Sí: el comercio mundial ha crecido de forma sostenida desde el siglo XIX",
+   "No, pero los retrocesos nunca han durado más de una década",
+   "No: la apertura comercial de 1913 no se recuperó hasta los años setenta, tras sesenta años de desintegración",
+   "Sí, salvo interrupciones breves durante las guerras"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "11.02#t1",
+  "codigo": "11.02",
+  "bloque": 11,
+  "nivel": 2,
+  "titulo": "La primera globalización y el patrón oro, 1870-1914",
+  "q": "El patrón oro se asocia a la estabilidad de precios. ¿Qué matiza esa idea?",
+  "a": "**Que los precios eran estables a largo plazo y muy volátiles a corto, con deflaciones prolongadas y crisis bancarias frecuentes.** Y esa estabilidad de largo plazo se compraba renunciando a la política monetaria: el tipo de cambio mandaba sobre el empleo.",
+  "opciones": [
+   "Que la estabilidad se medía con índices poco fiables",
+   "Que los precios estables se lograron solo después de 1890",
+   "Que los precios eran estables a largo plazo y muy volátiles a corto, con deflaciones prolongadas y crisis bancarias frecuentes",
+   "Que la estabilidad de precios era un objetivo declarado y nunca conseguido"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "11.02#t2",
+  "codigo": "11.02",
+  "bloque": 11,
+  "nivel": 2,
+  "titulo": "La primera globalización y el patrón oro, 1870-1914",
+  "q": "El mecanismo de Hume predice que un país con déficit exterior pierde oro, sus precios bajan y recupera competitividad. ¿Qué falla?",
+  "a": "**Que ajustar por precios exige que salarios y contratos nominales caigan de verdad, y como no caen el ajuste se produce vía producción y empleo.** Es el mismo problema que reaparece en cualquier devaluación interna: sin rigidez nominal el ajuste sería indoloro, y con ella lo paga el empleo.",
+  "opciones": [
+   "Que ajustar por precios exige que salarios y contratos nominales caigan de verdad, y como no caen el ajuste se produce vía producción y empleo",
+   "Que la cantidad de oro no determina el nivel de precios",
+   "Que el comercio no responde a los precios relativos",
+   "Que los flujos de oro eran demasiado pequeños para mover nada"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "11.02#t3",
+  "codigo": "11.02",
+  "bloque": 11,
+  "nivel": 2,
+  "titulo": "La primera globalización y el patrón oro, 1870-1914",
+  "q": "¿Era simétrico el ajuste bajo el patrón oro entre países con déficit y con superávit?",
+  "a": "**No: el que pierde oro está obligado a ajustar porque agota reservas; el que lo gana puede esterilizar la entrada y no hacer nada.** En la práctica varios grandes acreedores esterilizaron durante años, y todo el peso del ajuste recayó sobre los deficitarios. Es la asimetría que reaparece en cualquier unión monetaria.",
+  "opciones": [
+   "No: los países con superávit ajustaban más rápido por presión inflacionista",
+   "Sí: ambos tenían el mismo incentivo a restablecer el equilibrio",
+   "Sí, porque las reglas del sistema obligaban a ambos por igual",
+   "No: el que pierde oro está obligado a ajustar porque agota reservas; el que lo gana puede esterilizar la entrada y no hacer nada"
+  ],
+  "correcta": 3
  },
  {
   "id": "11.03#0",
@@ -1246,6 +2782,70 @@ export default [
   "a": "Porque un régimen del que se puede salir cuando el coste se vuelve insoportable admite un ajuste ordenado, mientras que uno que exige credibilidad absoluta solo puede romperse de forma catastrófica. El patrón oro de entreguerras tenía la forma del anterior pero ninguna de las condiciones políticas que lo habían sostenido, y eso lo convirtió en una trampa en lugar de un ancla."
  },
  {
+  "id": "11.03#t0",
+  "codigo": "11.03",
+  "bloque": 11,
+  "nivel": 3,
+  "titulo": "Guerras, hiperinflaciones y el final del patrón oro",
+  "q": "¿Qué es en el fondo una hiperinflación?",
+  "a": "**Un síntoma fiscal: un Estado que no puede recaudar ni endeudarse acaba emitiendo, porque es la única vía que no exige convencer a nadie.** Por eso estos episodios acompañan a guerras, revoluciones y rupturas del Estado, y no a errores de política monetaria en tiempos normales.",
+  "opciones": [
+   "El resultado de una espiral de precios y salarios sin control",
+   "Un error técnico de un banco central mal dirigido",
+   "Un síntoma fiscal: un Estado que no puede recaudar ni endeudarse acaba emitiendo, porque es la única vía que no exige convencer a nadie",
+   "Una consecuencia inevitable de los tipos de cambio flotantes"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "11.03#t1",
+  "codigo": "11.03",
+  "bloque": 11,
+  "nivel": 3,
+  "titulo": "Guerras, hiperinflaciones y el final del patrón oro",
+  "q": "Un Estado emite cada vez más dinero para financiarse. ¿Recauda cada vez más?",
+  "a": "**No: la base del impuesto son los saldos reales que el público mantiene, y esa base se hunde cuando la inflación sube.** Tener dinero pasa a ser carísimo y todo el mundo se deshace de él en cuanto lo recibe. Hay un punto a partir del cual emitir más recauda menos.",
+  "opciones": [
+   "No: la base del impuesto son los saldos reales que el público mantiene, y esa base se hunde cuando la inflación sube",
+   "Sí, aunque a costa de más inflación",
+   "Sí: cada billete nuevo es poder de compra que el Estado se apropia",
+   "No, porque la emisión está limitada por los estatutos del banco central"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "11.03#t2",
+  "codigo": "11.03",
+  "bloque": 11,
+  "nivel": 3,
+  "titulo": "Guerras, hiperinflaciones y el final del patrón oro",
+  "q": "¿Cómo terminan las hiperinflaciones?",
+  "a": "**De golpe, cuando cambia el régimen fiscal y se introduce una moneda con respaldo creíble.** Una desaceleración lenta no es un final: sin cerrar el agujero fiscal, la inflación vuelve. Lo que cambia el rumbo es el régimen, no la intensidad.",
+  "opciones": [
+   "Con un control de precios que rompa las expectativas",
+   "Gradualmente, a medida que la política monetaria se endurece",
+   "De golpe, cuando cambia el régimen fiscal y se introduce una moneda con respaldo creíble",
+   "Cuando la moneda extranjera sustituye por completo a la nacional"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "11.03#t3",
+  "codigo": "11.03",
+  "bloque": 11,
+  "nivel": 3,
+  "titulo": "Guerras, hiperinflaciones y el final del patrón oro",
+  "q": "Al restaurar la convertibilidad, elegir la paridad de la moneda, ¿es una decisión técnica?",
+  "a": "**No: es una decisión distributiva de primer orden entre acreedores y deudores.** Una paridad alta favorece a acreedores y tenedores de deuda pública, y perjudica a deudores y a trabajadores de los sectores expuestos a la competencia exterior.",
+  "opciones": [
+   "No: es una decisión distributiva de primer orden entre acreedores y deudores",
+   "Sí, salvo que existan desequilibrios comerciales severos",
+   "No, pero sus efectos se reparten de forma homogénea entre la población",
+   "Sí: se trata de calcular el tipo que equilibra la balanza de pagos"
+  ],
+  "correcta": 0
+ },
+ {
   "id": "11.04#0",
   "codigo": "11.04",
   "bloque": 11,
@@ -1298,6 +2898,70 @@ export default [
   "titulo": "La Gran Depresión: causas, transmisión y respuestas",
   "q": "¿Qué tiene que ver la Gran Depresión con el bloque 10 de este plan?",
   "a": "Que lo creó. En 1929 no existía ninguna cifra de producción nacional, y el Congreso estadounidense encargó a Kuznets una estimación que se presentó en 1934. De ahí, pasando por la planificación de la economía de guerra y la armonización internacional posterior, sale el sistema de cuentas que hoy regula el SEC 2010."
+ },
+ {
+  "id": "11.04#t0",
+  "codigo": "11.04",
+  "bloque": 11,
+  "nivel": 2,
+  "titulo": "La Gran Depresión: causas, transmisión y respuestas",
+  "q": "¿Causó el crac bursátil de 1929 la Gran Depresión?",
+  "a": "**No: las caídas bursátiles son frecuentes y casi nunca producen depresiones; lo decisivo vino después.** Lo que convirtió una recesión seria en una catástrofe de una década fue el colapso bancario y monetario de los años siguientes.",
+  "opciones": [
+   "No: el crac fue consecuencia de la Depresión, no su causa",
+   "Sí: la pérdida de riqueza hundió el consumo",
+   "Sí, junto con la especulación con crédito a plazos",
+   "No: las caídas bursátiles son frecuentes y casi nunca producen depresiones; lo decisivo vino después"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "11.04#t1",
+  "codigo": "11.04",
+  "bloque": 11,
+  "nivel": 2,
+  "titulo": "La Gran Depresión: causas, transmisión y respuestas",
+  "q": "La cantidad de dinero se contrajo drásticamente entre 1930 y 1933. ¿Retiró el banco central la base monetaria?",
+  "a": "**No: fue el multiplicador el que se hundió, al subir a la vez el efectivo que quería el público y las reservas que retenían los bancos.** Los depositantes querían billetes y los bancos querían reservas, ambos por miedo, y esa doble huida derrumbó el dinero bancario sin que nadie tocara la base.",
+  "opciones": [
+   "No: la contracción se debió íntegramente a la caída de la demanda de crédito",
+   "Sí, por obligación del patrón oro",
+   "Sí: aplicó una política deliberadamente restrictiva",
+   "No: fue el multiplicador el que se hundió, al subir a la vez el efectivo que quería el público y las reservas que retenían los bancos"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "11.04#t2",
+  "codigo": "11.04",
+  "bloque": 11,
+  "nivel": 2,
+  "titulo": "La Gran Depresión: causas, transmisión y respuestas",
+  "q": "Los tipos nominales estaban cerca de cero en 1932. ¿Era expansiva la política monetaria?",
+  "a": "**No: con precios cayendo un 25 %, el tipo de interés real era altísimo.** Y la deflación multiplicaba además el valor real de todas las deudas, arruinando a deudores solventes en términos nominales.",
+  "opciones": [
+   "Sí: no se puede hacer más que llevar los tipos a cero",
+   "No, porque el banco central mantenía un coeficiente de reservas elevado",
+   "Sí, pero el crédito no llegaba a las empresas",
+   "No: con precios cayendo un 25 %, el tipo de interés real era altísimo"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "11.04#t3",
+  "codigo": "11.04",
+  "bloque": 11,
+  "nivel": 2,
+  "titulo": "La Gran Depresión: causas, transmisión y respuestas",
+  "q": "¿Qué pesó más en la recuperación estadounidense?",
+  "a": "**Abandonar el oro y devaluar, es decir, recuperar la capacidad de expandir la oferta monetaria.** Es la lección que más ha marcado la política económica posterior: mientras el compromiso con el oro estuvo vigente, no se podía combatir la deflación.",
+  "opciones": [
+   "Abandonar el oro y devaluar, es decir, recuperar la capacidad de expandir la oferta monetaria",
+   "El gasto público del New Deal",
+   "El arancel Smoot-Hawley, que protegió a la industria nacional",
+   "La reforma del sistema bancario de 1933"
+  ],
+  "correcta": 0
  },
  {
   "id": "11.05#0",
@@ -1354,6 +3018,70 @@ export default [
   "a": "Solo en parte. Varias de sus causas eran irrepetibles: la brecha tecnológica que se cerró, el trasvase de la agricultura a la industria, la energía barata, la demografía favorable y la demanda embalsada tras quince años de depresión y guerra. El marco institucional sí fue una elección, y esa parte es discutible; el resto no se puede convocar por decreto."
  },
  {
+  "id": "11.05#t0",
+  "codigo": "11.05",
+  "bloque": 11,
+  "nivel": 2,
+  "titulo": "Bretton Woods y la edad de oro, 1945-1973",
+  "q": "¿En qué se diferenciaba Bretton Woods de un patrón oro clásico?",
+  "a": "**En que las paridades eran ajustables ante un desequilibrio fundamental y los movimientos de capital estaban controlados.** Esas dos piezas permitían tener a la vez tipo fijo y política monetaria propia, que es lo que el trilema declara imposible sin controles.",
+  "opciones": [
+   "En que Bretton Woods permitía la flotación de las monedas europeas",
+   "En que el anclaje se hacía a una cesta de materias primas y no al oro",
+   "En que las paridades eran ajustables ante un desequilibrio fundamental y los movimientos de capital estaban controlados",
+   "En nada esencial: ambos anclaban las monedas al oro"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "11.05#t1",
+  "codigo": "11.05",
+  "bloque": 11,
+  "nivel": 2,
+  "titulo": "Bretton Woods y la edad de oro, 1945-1973",
+  "q": "¿A qué se debió el crecimiento excepcional de la edad de oro?",
+  "a": "**A convergencia tecnológica, traslado de trabajadores del campo a la industria, energía barata y demografía favorable, con el marco monetario como facilitador.** Distinguir la parte estructural de la coyuntural es lo que evita leer la desaceleración posterior a 1973 como un fracaso: el mecanismo de convergencia se agota por construcción.",
+  "opciones": [
+   "A la apertura comercial, que recuperó los niveles de 1913",
+   "Al sistema monetario de Bretton Woods, que dio estabilidad",
+   "A convergencia tecnológica, traslado de trabajadores del campo a la industria, energía barata y demografía favorable, con el marco monetario como facilitador",
+   "Al gasto público de los Estados de bienestar europeos"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "11.05#t2",
+  "codigo": "11.05",
+  "bloque": 11,
+  "nivel": 2,
+  "titulo": "Bretton Woods y la edad de oro, 1945-1973",
+  "q": "¿Por qué se rompió el sistema de Bretton Woods?",
+  "a": "**Por una contradicción interna: dar liquidez al mundo exigía déficit estadounidense, y ese déficit vaciaba de credibilidad la convertibilidad del dólar.** Triffin lo señaló en 1960, más de una década antes del colapso: el sistema necesitaba para funcionar justamente lo que lo destruía.",
+  "opciones": [
+   "Por la negativa alemana a revaluar el marco",
+   "Por el agotamiento de las reservas de oro mundiales",
+   "Por la crisis del petróleo de 1973",
+   "Por una contradicción interna: dar liquidez al mundo exigía déficit estadounidense, y ese déficit vaciaba de credibilidad la convertibilidad del dólar"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "11.05#t3",
+  "codigo": "11.05",
+  "bloque": 11,
+  "nivel": 2,
+  "titulo": "Bretton Woods y la edad de oro, 1945-1973",
+  "q": "¿Existe una solución óptima del trilema entre tipo fijo, libertad de capitales y política monetaria propia?",
+  "a": "**No: cada vértice sacrifica algo, y cuál convenga depende de qué se esté dispuesto a perder.** Bretton Woods sacrificó la libertad de capitales; el patrón oro y el euro, la política monetaria nacional; la flotación, la estabilidad cambiaria. La historia del siglo XX es la de países cambiando de vértice cuando el sacrificio se vuelve insoportable.",
+  "opciones": [
+   "Sí, pero solo para economías grandes y diversificadas",
+   "No, porque el trilema solo se aplica a economías emergentes",
+   "Sí: la flotación con capitales libres, que es la combinación dominante",
+   "No: cada vértice sacrifica algo, y cuál convenga depende de qué se esté dispuesto a perder"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "11.06#0",
   "codigo": "11.06",
   "bloque": 11,
@@ -1406,6 +3134,70 @@ export default [
   "titulo": "Petróleo, estanflación y el giro de los ochenta",
   "q": "¿Puede la política monetaria resolver un choque de oferta?",
   "a": "No. Subir tipos no produce ni un barril más de petróleo. Lo único que puede hacer es impedir que el encarecimiento se traslade a las expectativas y se vuelva permanente, y lo hace a costa de demanda. La pérdida de renta real que impone un insumo importado más caro es inevitable, y la única discusión posible es cómo se reparte."
+ },
+ {
+  "id": "11.06#t0",
+  "codigo": "11.06",
+  "bloque": 11,
+  "nivel": 3,
+  "titulo": "Petróleo, estanflación y el giro de los ochenta",
+  "q": "¿Puede un gobierno elegir de forma permanente un punto de la curva de Phillips, aceptando algo más de inflación a cambio de menos paro?",
+  "a": "**No: la relación se desplaza cuando cambian las expectativas de inflación, así que no hay una curva sino una familia de curvas.** Funciona mientras las expectativas van por detrás de los hechos. En cuanto se ajustan, el empleo vuelve a su nivel anterior con una inflación más alta, y hay que subir la apuesta para repetir el efecto.",
+  "opciones": [
+   "No, porque la curva de Phillips nunca tuvo respaldo empírico",
+   "Sí, siempre que la inflación se mantenga por debajo del 5 %",
+   "No: la relación se desplaza cuando cambian las expectativas de inflación, así que no hay una curva sino una familia de curvas",
+   "Sí: es el fundamento de la política de demanda de posguerra"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "11.06#t1",
+  "codigo": "11.06",
+  "bloque": 11,
+  "nivel": 3,
+  "titulo": "Petróleo, estanflación y el giro de los ochenta",
+  "q": "Un choque de oferta eleva a la vez la inflación y el paro. ¿Qué puede hacer la política de demanda?",
+  "a": "**No puede arreglar las dos cosas: estimular alimenta la inflación y contraer agrava el paro.** Por eso la estanflación no fue un fallo de gestión sino un problema sin solución dentro del marco keynesiano de posguerra: no había instrumento para dos objetivos que se movían juntos en la mala dirección.",
+  "opciones": [
+   "No puede arreglar las dos cosas: estimular alimenta la inflación y contraer agrava el paro",
+   "Estimular, que es lo que corresponde ante un aumento del paro",
+   "Aplicar ambas de forma alterna para suavizar el ciclo",
+   "Contraer, que es lo que corresponde ante un aumento de la inflación"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "11.06#t2",
+  "codigo": "11.06",
+  "bloque": 11,
+  "nivel": 3,
+  "titulo": "Petróleo, estanflación y el giro de los ochenta",
+  "q": "¿De qué depende el ratio de sacrificio, es decir, cuánto desempleo cuesta bajar un punto la inflación?",
+  "a": "**De la velocidad con que se ajusten las expectativas, que depende de la credibilidad del banco central.** Si el banco central es creíble, las expectativas bajan casi de inmediato y desinflar sale barato; si no lo es, hay que demostrarlo con una recesión.",
+  "opciones": [
+   "De la velocidad con que se ajusten las expectativas, que depende de la credibilidad del banco central",
+   "Del nivel de partida de la inflación",
+   "Del peso de la industria en el PIB",
+   "Es una constante estructural de cada economía"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "11.06#t3",
+  "codigo": "11.06",
+  "bloque": 11,
+  "nivel": 3,
+  "titulo": "Petróleo, estanflación y el giro de los ochenta",
+  "q": "¿Puede la política monetaria resolver un encarecimiento del petróleo?",
+  "a": "**No: subir tipos no produce ni un barril más; lo único que puede hacer es impedir que el encarecimiento se traslade a las expectativas.** El objetivo realista es que un choque puntual no se convierta en inflación persistente. Ahí la indiciación salarial es decisiva: convierte matemáticamente cualquier choque en permanente.",
+  "opciones": [
+   "No: subir tipos no produce ni un barril más; lo único que puede hacer es impedir que el encarecimiento se traslade a las expectativas",
+   "No, y por eso conviene recurrir a controles de precios",
+   "Sí: subir tipos contiene la inflación resultante",
+   "Sí, bajando tipos para compensar la caída de la actividad"
+  ],
+  "correcta": 0
  },
  {
   "id": "11.07#0",
@@ -1462,6 +3254,70 @@ export default [
   "a": "Porque la válvula de escape está cerrada. Los perdedores de la primera globalización emigraron por decenas de millones, lo que alivió la presión y ayudó a converger salarios entre continentes. Hoy la movilidad internacional e incluso la interna son bajas, y los perdedores permanecen donde están, lo que da al problema una geografía y una expresión electoral."
  },
  {
+  "id": "11.07#t0",
+  "codigo": "11.07",
+  "bloque": 11,
+  "nivel": 3,
+  "titulo": "La segunda globalización, China y las cadenas de valor",
+  "q": "Un teléfono se importa por 500 dólares y solo 8 corresponden al ensamblaje realizado en el país exportador. ¿Cómo lo registra la aduana?",
+  "a": "**Por los 500 dólares completos, aunque casi todo ese valor se generó en otros países.** La aduana anota el valor de lo que cruza la frontera, así que los déficits bilaterales medidos en bruto atribuyen a un país un valor que en su mayoría se generó en otros.",
+  "opciones": [
+   "Por los 8 dólares de valor añadido local",
+   "Por el valor de los componentes, excluyendo el margen comercial",
+   "Por los 500 dólares completos, aunque casi todo ese valor se generó en otros países",
+   "Depende del acuerdo comercial aplicable"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "11.07#t1",
+  "codigo": "11.07",
+  "bloque": 11,
+  "nivel": 3,
+  "titulo": "La segunda globalización, China y las cadenas de valor",
+  "q": "Se impone un arancel a un producto ensamblado en un país concreto. ¿A quién golpea?",
+  "a": "**También al país que impone el arancel, porque el producto final incorpora valor de muchos orígenes, incluido el suyo.** Gravar el producto ensamblado grava también los componentes propios que viajaron hasta allí. El arancel se cobra sobre el valor total, no sobre la parte extranjera.",
+  "opciones": [
+   "A los consumidores del país importador únicamente",
+   "Solo al país señalado, que es quien lo exporta",
+   "Al país señalado y a sus proveedores directos",
+   "También al país que impone el arancel, porque el producto final incorpora valor de muchos orígenes, incluido el suyo"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "11.07#t2",
+  "codigo": "11.07",
+  "bloque": 11,
+  "nivel": 3,
+  "titulo": "La segunda globalización, China y las cadenas de valor",
+  "q": "¿Devolvería cerrar la frontera los empleos industriales perdidos?",
+  "a": "**No: una parte importante no se fue a ningún sitio, dejó de existir por automatización.** Distinguir ambos efectos es difícil porque ocurrieron simultáneamente y en los mismos sectores, y esa dificultad es la que alimenta el debate político.",
+  "opciones": [
+   "Sí: son empleos que se trasladaron a otros países",
+   "Sí, aunque con un retraso de varios años",
+   "No: una parte importante no se fue a ningún sitio, dejó de existir por automatización",
+   "No, porque los trabajadores desplazados ya se han reciclado"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "11.07#t3",
+  "codigo": "11.07",
+  "bloque": 11,
+  "nivel": 3,
+  "titulo": "La segunda globalización, China y las cadenas de valor",
+  "q": "¿Qué diferencia clave hay entre esta globalización y la de 1880 en cuanto a sus perdedores?",
+  "a": "**Que entonces los perdedores emigraron por decenas de millones, y hoy esa válvula está cerrada.** Cincuenta y cinco millones de europeos emigraron entre 1850 y 1914: eso alivió la presión sobre los perdedores y ayudó a igualar salarios entre continentes.",
+  "opciones": [
+   "Que entonces los perdedores estaban en la industria y ahora en la agricultura",
+   "Que entonces los perdedores emigraron por decenas de millones, y hoy esa válvula está cerrada",
+   "Que entonces existían políticas de compensación y hoy no",
+   "Que entonces las pérdidas eran menores en magnitud"
+  ],
+  "correcta": 1
+ },
+ {
   "id": "11.08#0",
   "codigo": "11.08",
   "bloque": 11,
@@ -1514,6 +3370,70 @@ export default [
   "titulo": "Crisis financieras: el patrón que se repite",
   "q": "¿Por qué el sistema de cuentas nacionales ve mal las crisis financieras?",
   "a": "Porque mide muy bien los flujos y bastante peor los stocks, y las crisis se gestan en los stocks. El PIB no registra revalorizaciones de activos, lo cual es correcto por diseño, así que un auge de balances puede ser invisible en las cuentas corrientes hasta que estalla. Las cuentas financieras sí lo verían, y se publican tarde y sin atención."
+ },
+ {
+  "id": "11.08#t0",
+  "codigo": "11.08",
+  "bloque": 11,
+  "nivel": 3,
+  "titulo": "Crisis financieras: el patrón que se repite",
+  "q": "¿Son impredecibles las crisis financieras?",
+  "a": "**No en cuanto a su mecánica: la brecha del crédito sobre PIB, el precio real de la vivienda y el déficit exterior las anuncian; lo que no se puede predecir es la fecha.** Los indicadores son conocidos y públicos. El problema no es de información sino de incentivos: pararse mientras todos siguen tiene coste inmediato y beneficio incierto.",
+  "opciones": [
+   "Sí: si lo fueran, el mercado las anticiparía y no ocurrirían",
+   "No: los modelos de riesgo actuales permiten datarlas con meses de antelación",
+   "Sí, porque dependen de sucesos externos imprevisibles",
+   "No en cuanto a su mecánica: la brecha del crédito sobre PIB, el precio real de la vivienda y el déficit exterior las anuncian; lo que no se puede predecir es la fecha"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "11.08#t1",
+  "codigo": "11.08",
+  "bloque": 11,
+  "nivel": 3,
+  "titulo": "Crisis financieras: el patrón que se repite",
+  "q": "Durante el auge, la morosidad de un banco es mínima. ¿Prueba que su cartera es sólida?",
+  "a": "**No: nadie impaga mientras puede refinanciar contra una garantía que se revaloriza.** La morosidad baja del auge no mide solvencia: mide que el precio del activo sigue subiendo. Cuando deja de subir, aparece de golpe todo lo que estaba tapado.",
+  "opciones": [
+   "No: nadie impaga mientras puede refinanciar contra una garantía que se revaloriza",
+   "Sí, si además su ratio de capital supera el mínimo regulatorio",
+   "Sí: la morosidad es la medida directa de la calidad del crédito",
+   "No, salvo que la cartera esté diversificada por sectores"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "11.08#t2",
+  "codigo": "11.08",
+  "bloque": 11,
+  "nivel": 3,
+  "titulo": "Crisis financieras: el patrón que se repite",
+  "q": "Un banco opera con un 3 % de capital sobre activos. ¿Por qué es difícil que las entidades prudentes resistan la presión de imitarlo?",
+  "a": "**Porque con ese apalancamiento una subida del 1 % en los activos eleva la rentabilidad sobre recursos propios un 33 %, y la entidad prudente parece mediocre durante años.** El apalancamiento no es una decisión aislada de cada entidad: es una carrera en la que el prudente pierde cuota, bolsa y consejero delegado mucho antes de tener razón.",
+  "opciones": [
+   "Porque con ese apalancamiento una subida del 1 % en los activos eleva la rentabilidad sobre recursos propios un 33 %, y la entidad prudente parece mediocre durante años",
+   "Porque los depositantes prefieren bancos apalancados",
+   "Porque la regulación premia el apalancamiento con menores exigencias",
+   "Porque el coste de capital de una entidad prudente es más alto"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "11.08#t3",
+  "codigo": "11.08",
+  "bloque": 11,
+  "nivel": 3,
+  "titulo": "Crisis financieras: el patrón que se repite",
+  "q": "Tras una crisis financiera la deuda pública se dispara. ¿De dónde procede la mayor parte del aumento?",
+  "a": "**De la caída de la recaudación y del aumento del gasto que produce la recesión.** La distinción se ignora casi siempre en el debate público, y cambia por completo el diagnóstico de qué hay que evitar la próxima vez.",
+  "opciones": [
+   "De la subida de los tipos de interés exigidos por los mercados",
+   "De la asunción de la deuda privada de los hogares",
+   "Del coste directo del rescate bancario",
+   "De la caída de la recaudación y del aumento del gasto que produce la recesión"
+  ],
+  "correcta": 3
  },
  {
   "id": "11.09#0",
@@ -1570,6 +3490,70 @@ export default [
   "a": "No. España perdió nueve puntos de posición relativa entre 1975 y 1985 y siete entre 2007 y 2013. En ambos casos una década borró buena parte de lo ganado en quince o veinte años, y en ambos el retroceso coincidió con una crisis afrontada sin margen de maniobra."
  },
  {
+  "id": "11.09#t0",
+  "codigo": "11.09",
+  "bloque": 11,
+  "nivel": 2,
+  "titulo": "España: del atraso al desarrollismo y la integración europea",
+  "q": "¿Qué desató el crecimiento español de los años sesenta?",
+  "a": "**La apertura al exterior del giro de 1959: devaluación, entrada de divisas, turismo, remesas e inversión extranjera.** El Plan de Estabilización fue un ajuste de urgencia con las reservas agotadas, y lo que cambió el rumbo fue dejar entrar bienes, capital y turistas.",
+  "opciones": [
+   "La apertura al exterior del giro de 1959: devaluación, entrada de divisas, turismo, remesas e inversión extranjera",
+   "El aumento de la población activa por la incorporación de las mujeres al mercado laboral",
+   "Los Planes de Desarrollo del régimen, que planificaron la industrialización",
+   "La inversión pública en infraestructuras de la década anterior"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "11.09#t1",
+  "codigo": "11.09",
+  "bloque": 11,
+  "nivel": 2,
+  "titulo": "España: del atraso al desarrollismo y la integración europea",
+  "q": "Buena parte del avance de la productividad en los sesenta vino de mover trabajadores del campo a la industria. ¿Es una mejora de eficiencia?",
+  "a": "**No es lo mismo: mover gente de un sector de productividad 40 a otro de 140 eleva la media sin que mejore nada dentro de cada sector.** Es un efecto composicional, y tiene un límite claro: se agota cuando ya no queda gente en el sector de baja productividad. Confundirlo con mejora de eficiencia lleva a esperar que el crecimiento continúe cuando el mecanismo se ha acabado.",
+  "opciones": [
+   "Sí, porque la industria incorporaba tecnología más avanzada",
+   "Sí: la productividad media del país subió",
+   "No es lo mismo: mover gente de un sector de productividad 40 a otro de 140 eleva la media sin que mejore nada dentro de cada sector",
+   "No: el traslado sectorial no afecta a la productividad agregada"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "11.09#t2",
+  "codigo": "11.09",
+  "bloque": 11,
+  "nivel": 2,
+  "titulo": "España: del atraso al desarrollismo y la integración europea",
+  "q": "¿Puede darse por irreversible la convergencia de España con Europa?",
+  "a": "**No: España perdió nueve puntos de posición relativa entre 1975 y 1985 y siete entre 2007 y 2013.** En ambos casos una década borró buena parte de lo ganado en las dos anteriores. La convergencia es un resultado, no una tendencia garantizada.",
+  "opciones": [
+   "Sí: la pertenencia a la Unión Europea garantiza la convergencia a largo plazo",
+   "Sí, salvo en periodos de recesión mundial",
+   "No: España perdió nueve puntos de posición relativa entre 1975 y 1985 y siete entre 2007 y 2013",
+   "No, pero los retrocesos se han recuperado siempre en menos de cinco años"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "11.09#t3",
+  "codigo": "11.09",
+  "bloque": 11,
+  "nivel": 2,
+  "titulo": "España: del atraso al desarrollismo y la integración europea",
+  "q": "¿Fueron 1959 y 1986 el mismo tipo de decisión?",
+  "a": "**No: la primera fue un ajuste de urgencia con las reservas agotadas y sin red de compensación; la segunda, una decisión política de largo plazo.** Tratar ambas como el mismo tipo de decisión borra que una se tomó sin alternativa y la otra con alternativas sobre la mesa y fondos de compensación negociados.",
+  "opciones": [
+   "Sí, y ambas se tomaron bajo presión de organismos internacionales",
+   "No: la primera fue un ajuste de urgencia con las reservas agotadas y sin red de compensación; la segunda, una decisión política de largo plazo",
+   "Sí: ambas abrieron la economía española al exterior",
+   "No: 1959 fue política y 1986 puramente técnica"
+  ],
+  "correcta": 1
+ },
+ {
   "id": "11.10#0",
   "codigo": "11.10",
   "bloque": 11,
@@ -1622,6 +3606,70 @@ export default [
   "titulo": "Divergencia y convergencia: por qué unos países son ricos",
   "q": "¿Por qué las lecciones de los casos de éxito hay que tomarlas con cautela?",
   "a": "Por selección: los éxitos se estudian y los fracasos con políticas parecidas se olvidan. Varios países aplicaron estrategias similares sin resultados comparables. Es el mismo mecanismo del sesgo de publicación de la ficha 4.04, y sin contar los fracasos cualquier receta extraída de los ganadores está sesgada."
+ },
+ {
+  "id": "11.10#t0",
+  "codigo": "11.10",
+  "bloque": 11,
+  "nivel": 4,
+  "titulo": "Divergencia y convergencia: por qué unos países son ricos",
+  "q": "¿Cuál es la pregunta correcta sobre la desigualdad entre países?",
+  "a": "**Por qué algunos empezaron a crecer y otros no consiguen engancharse.** La divergencia moderna es el fenómeno que hay que explicar, y formular la pregunta al revés lleva a buscar causas del estancamiento en lugar de causas del despegue.",
+  "opciones": [
+   "Por qué la ayuda al desarrollo no ha funcionado",
+   "Por qué unos países son pobres, dado que la mayoría lo es",
+   "Por qué la renta mundial se concentra en tan pocos países",
+   "Por qué algunos empezaron a crecer y otros no consiguen engancharse"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "11.10#t1",
+  "codigo": "11.10",
+  "bloque": 11,
+  "nivel": 4,
+  "titulo": "Divergencia y convergencia: por qué unos países son ricos",
+  "q": "¿Se observa convergencia automática de los países pobres hacia los ricos?",
+  "a": "**No en términos absolutos: unos países se han acercado espectacularmente y otros siguen igual o peor.** Lo que sí se observa es convergencia condicional: los países se acercan a su propio estado estacionario, y esos estados difieren.",
+  "opciones": [
+   "Sí, aunque a un ritmo muy lento",
+   "Sí: el modelo de crecimiento predice rendimientos decrecientes del capital",
+   "No, y tampoco se observa convergencia condicional",
+   "No en términos absolutos: unos países se han acercado espectacularmente y otros siguen igual o peor"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "11.10#t2",
+  "codigo": "11.10",
+  "bloque": 11,
+  "nivel": 4,
+  "titulo": "Divergencia y convergencia: por qué unos países son ricos",
+  "q": "¿Qué objeción de fondo tienen las explicaciones culturales del desarrollo?",
+  "a": "**Que son circulares: la cultura se acaba definiendo por sus resultados y cambia con la prosperidad tanto como la causa.** Han envejecido especialmente mal: los mismos rasgos que explicaban el atraso de un país se invocaron después para explicar su éxito.",
+  "opciones": [
+   "Que son circulares: la cultura se acaba definiendo por sus resultados y cambia con la prosperidad tanto como la causa",
+   "Que no se pueden cuantificar",
+   "Que solo se han aplicado a países europeos",
+   "Que ignoran el papel de la geografía"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "11.10#t3",
+  "codigo": "11.10",
+  "bloque": 11,
+  "nivel": 4,
+  "titulo": "Divergencia y convergencia: por qué unos países son ricos",
+  "q": "Se discute entre una reforma que eleva la renta un 5 % de una vez y otra que añade un punto al crecimiento anual permanente. ¿Cuál importa más?",
+  "a": "**La segunda: en cinco años ya supera a la primera, y después la distancia no deja de crecer.** La discusión pública se centra casi siempre en efectos de nivel, que son visibles y acotados, y descuida los de tasa, que son los que a largo plazo deciden la posición de un país.",
+  "opciones": [
+   "Depende del horizonte político del gobierno que las aplique",
+   "La segunda: en cinco años ya supera a la primera, y después la distancia no deja de crecer",
+   "La primera, porque su efecto es inmediato y seguro",
+   "Ambas por igual: el efecto acumulado es equivalente"
+  ],
+  "correcta": 1
  },
  {
   "id": "12.01#0",
@@ -1678,6 +3726,70 @@ export default [
   "a": "Una entidad sin personalidad jurídica que lleva un conjunto completo de cuentas y actúa con autonomía frente a su propietario; se trata como una sociedad y se separa contablemente de él. Importa porque saca al negocio del sector hogares: su renta deja de ser renta mixta y pasa a registrarse como excedente de explotación y dividendos."
  },
  {
+  "id": "12.01#t0",
+  "codigo": "12.01",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "Unidades institucionales, residencia y sectorización",
+  "q": "Una eléctrica participada mayoritariamente por el Estado cubre el 92 % de sus costes con ventas. ¿En qué sector la clasifica el SEC?",
+  "a": "**En sociedades no financieras (S.11): el criterio es el comportamiento, no la propiedad.** Lo que decide es si cubre con ventas al menos la mitad de sus costes de producción. Con el 92 %, es claramente productor de mercado.",
+  "opciones": [
+   "Depende de si cotiza en bolsa",
+   "En un sector mixto, en proporción a la participación pública",
+   "En sociedades no financieras (S.11): el criterio es el comportamiento, no la propiedad",
+   "En administraciones públicas (S.13), por ser de propiedad pública"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "12.01#t1",
+  "codigo": "12.01",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "Unidades institucionales, residencia y sectorización",
+  "q": "La filial española de una multinacional alemana produce en Valladolid. ¿Entra su producción en el PIB español?",
+  "a": "**Sí: es una unidad residente en España, y la residencia no es la nacionalidad del capital.** El criterio es el centro de interés económico predominante. A la inversa, una empresa de capital español que produce en Marruecos no aporta al PIB español.",
+  "opciones": [
+   "Sí: es una unidad residente en España, y la residencia no es la nacionalidad del capital",
+   "No: el beneficio revierte a la matriz alemana",
+   "Solo si más de la mitad de su plantilla es española",
+   "Sí, en la parte correspondiente al capital español"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "12.01#t2",
+  "codigo": "12.01",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "Unidades institucionales, residencia y sectorización",
+  "q": "Al aplicar la regla del 50 %, ¿cómo se tratan las aportaciones presupuestarias que recibe una entidad?",
+  "a": "**Van al denominador, con los costes: una transferencia pública no es una venta.** Por eso inyectar dinero público en una entidad no mejora su ratio: lo empeora, y puede acabar sacándola del sector de sociedades y metiendo su deuda en la pública.",
+  "opciones": [
+   "Como ventas, ya que financian la actividad",
+   "Se excluyen del cálculo por completo",
+   "Como ventas, pero ponderadas al 50 %",
+   "Van al denominador, con los costes: una transferencia pública no es una venta"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "12.01#t3",
+  "codigo": "12.01",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "Unidades institucionales, residencia y sectorización",
+  "q": "Una empresa pública de transporte ingresa 120 millones en billetes y tiene 400 de costes. ¿Es productor de mercado?",
+  "a": "**No: cubre el 30 % de sus costes, así que sigue siendo administración pública.** El billete no es un precio económicamente significativo cuando deja tres cuartas partes del coste sin cubrir. Su déficit y su deuda computan como públicos.",
+  "opciones": [
+   "Depende de si la tarifa la fija la empresa o el regulador",
+   "No: cubre el 30 % de sus costes, así que sigue siendo administración pública",
+   "Sí, si los billetes se venden a través de canales comerciales",
+   "Sí: cobra por sus servicios, luego vende"
+  ],
+  "correcta": 1
+ },
+ {
   "id": "12.02#0",
   "codigo": "12.02",
   "bloque": 12,
@@ -1730,6 +3842,70 @@ export default [
   "titulo": "La cuenta de producción: P.1, P.2 y el valor añadido",
   "q": "¿Es gratuita toda la producción de no mercado?",
   "a": "No. Incluye los pagos parciales (P.131), como las tasas universitarias o la entrada a un museo público. Lo que la define no es que no se cobre nada, sino que lo cobrado no es un precio económicamente significativo, con el criterio cuantitativo de la regla del 50 %."
+ },
+ {
+  "id": "12.02#t0",
+  "codigo": "12.02",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "La cuenta de producción: P.1, P.2 y el valor añadido",
+  "q": "El excedente neto de explotación de las administraciones públicas es cero. ¿Qué informa ese dato?",
+  "a": "**Nada económico: es una identidad del método, porque la producción se define como la suma de los costes y luego se restan esos mismos costes.** Si se suman los costes para obtener la producción y después se van restando uno a uno, lo que queda al final es cero por construcción.",
+  "opciones": [
+   "Que el sector público no genera beneficios, como corresponde a su naturaleza",
+   "Nada económico: es una identidad del método, porque la producción se define como la suma de los costes y luego se restan esos mismos costes",
+   "Que sus servicios se prestan de forma eficiente",
+   "Que su producción se valora exactamente a coste de mercado"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "12.02#t1",
+  "codigo": "12.02",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "La cuenta de producción: P.1, P.2 y el valor añadido",
+  "q": "¿Con qué criterio se valoran la producción y los consumos intermedios en la cuenta de producción?",
+  "a": "**La producción a precios básicos y los consumos intermedios a precios de adquisición.** El productor recibe el precio básico —sin impuestos sobre productos— y paga por sus insumos el precio de adquisición, impuestos incluidos. Son dos ópticas distintas y ambas correctas.",
+  "opciones": [
+   "Ambos a precios de mercado, para que el valor añadido sea homogéneo",
+   "La producción a precios de adquisición y los consumos intermedios a precios básicos",
+   "La producción a precios básicos y los consumos intermedios a precios de adquisición",
+   "Ambos a precios básicos"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "12.02#t2",
+  "codigo": "12.02",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "La cuenta de producción: P.1, P.2 y el valor añadido",
+  "q": "Un hospital público mejora sus procesos y atiende a más pacientes con el mismo presupuesto. ¿Cómo lo recoge la contabilidad nacional?",
+  "a": "**Apenas lo recoge: si el producto se define como el coste de los insumos, la relación entre ambos es casi constante por construcción.** Por eso juzgar la eficiencia del sector público con su productividad medida en las cuentas nacionales no lleva a ninguna parte: el indicador no puede moverse.",
+  "opciones": [
+   "Como un aumento del valor añadido del sector sanidad",
+   "Apenas lo recoge: si el producto se define como el coste de los insumos, la relación entre ambos es casi constante por construcción",
+   "Como una mejora de la productividad, visible en el excedente",
+   "Como un aumento de la producción del sector público"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "12.02#t3",
+  "codigo": "12.02",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "La cuenta de producción: P.1, P.2 y el valor añadido",
+  "q": "¿Qué es la producción de no mercado?",
+  "a": "**Aquella cuyo precio no es económicamente significativo, incluidos los pagos parciales como tasas universitarias o entradas de museo.** Lo que la define no es que no se cobre, sino que lo que se cobra no cubre razonablemente el coste. Las tasas universitarias son el ejemplo típico.",
+  "opciones": [
+   "Aquella cuyo precio no es económicamente significativo, incluidos los pagos parciales como tasas universitarias o entradas de museo",
+   "La que realizan las administraciones públicas y las familias",
+   "La que se presta gratuitamente a la población",
+   "La que no genera valor añadido"
+  ],
+  "correcta": 0
  },
  {
   "id": "12.03#0",
@@ -1786,6 +3962,70 @@ export default [
   "a": "De los servicios de alquiler que los propietarios se prestan al ocupar sus propias viviendas: la producción imputada de la ficha 12.02. Ahí no hay trabajo del titular que remunerar, solo capital, así que es excedente puro y no renta mixta. Ronda la quinta parte del saldo del sector según los datos del INE."
  },
  {
+  "id": "12.03#t0",
+  "codigo": "12.03",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "La cuenta de explotación: remuneración, impuestos y excedente",
+  "q": "Un autónomo obtiene 30.000 € de renta mixta. ¿Es su beneficio empresarial?",
+  "a": "**No: dentro va el trabajo del titular y el rendimiento de su capital en el mismo número, y el SEC no puede separarlos.** Se llama mixta precisamente por eso. Contabilizarla entera como excedente atribuye al capital una renta que en gran medida es salarial.",
+  "opciones": [
+   "No: dentro va el trabajo del titular y el rendimiento de su capital en el mismo número, y el SEC no puede separarlos",
+   "No: la renta mixta solo recoge la retribución de su trabajo",
+   "Sí, una vez descontada su cotización de autónomo",
+   "Sí: es lo que le queda tras pagar todos sus costes"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "12.03#t1",
+  "codigo": "12.03",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "La cuenta de explotación: remuneración, impuestos y excedente",
+  "q": "Una reforma convierte a muchos asalariados en autónomos. ¿Qué le ocurre a la participación salarial sin corregir?",
+  "a": "**Cae, y el excedente sube, sin que un solo euro haya cambiado de destinatario.** Es un efecto de composición puro, y por eso hay que mirar qué ha pasado con el empleo antes de interpretar una caída de la participación salarial como un cambio en el reparto.",
+  "opciones": [
+   "Cae solo si además bajan los salarios de los que siguen siendo asalariados",
+   "Cae, y el excedente sube, sin que un solo euro haya cambiado de destinatario",
+   "No varía: la renta total del trabajo es la misma",
+   "Sube, porque los autónomos declaran rentas mayores"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "12.03#t2",
+  "codigo": "12.03",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "La cuenta de explotación: remuneración, impuestos y excedente",
+  "q": "¿Qué son las cotizaciones sociales imputadas (D.122)?",
+  "a": "**La contrapartida contable de prestaciones que un empleador paga directamente a sus trabajadores sin pasar por un sistema de seguridad social: no mueven dinero.** Se registra el flujo como si existiera para que la prestación tenga origen contable, pero no hay ningún ingreso ni pago detrás.",
+  "opciones": [
+   "Las cotizaciones que el Estado paga por sus funcionarios",
+   "Las que el trabajador paga y el empleador ingresa en su nombre",
+   "Las cotizaciones estimadas de la economía sumergida",
+   "La contrapartida contable de prestaciones que un empleador paga directamente a sus trabajadores sin pasar por un sistema de seguridad social: no mueven dinero"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "12.03#t3",
+  "codigo": "12.03",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "La cuenta de explotación: remuneración, impuestos y excedente",
+  "q": "¿Es todo el saldo de la cuenta de explotación de los hogares renta mixta?",
+  "a": "**No: hay también excedente de explotación puro, el de los servicios de alquiler que los propietarios se prestan al ocupar su vivienda.** Ahí no hay ningún trabajo del titular que separar, así que es excedente sin más: son los alquileres imputados de la vivienda en propiedad.",
+  "opciones": [
+   "No: hay también excedente de explotación puro, el de los servicios de alquiler que los propietarios se prestan al ocupar su vivienda",
+   "No: incluye además la remuneración de asalariados que perciben sus miembros",
+   "Sí: los hogares no tienen capital productivo",
+   "Sí, salvo en los hogares con empleados domésticos"
+  ],
+  "correcta": 0
+ },
+ {
   "id": "12.04#0",
   "codigo": "12.04",
   "bloque": 12,
@@ -1838,6 +4078,70 @@ export default [
   "titulo": "Rentas de la propiedad y el saldo de rentas primarias",
   "q": "¿Qué registra D.44 y por qué es contraintuitivo?",
   "a": "Las rentas que generan las reservas de seguros, fondos de pensiones y fondos de inversión, registradas como si la entidad las pagara a sus asegurados y partícipes. Es contraintuitivo porque el cliente no ve ese dinero, y se hace así porque el SEC considera que esas reservas son propiedad del asegurado y no de la compañía."
+ },
+ {
+  "id": "12.04#t0",
+  "codigo": "12.04",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "Rentas de la propiedad y el saldo de rentas primarias",
+  "q": "Una filial retiene sus beneficios y no reparte dividendo a su matriz extranjera. ¿Cómo lo registra el SEC?",
+  "a": "**Imputa que la filial los distribuye a la matriz y que esta los reinvierte de inmediato.** Es una imputación en dos pasos que deja la renta atribuida a quien tiene derecho a ella y el dinero donde está.",
+  "opciones": [
+   "Imputa que la filial los distribuye a la matriz y que esta los reinvierte de inmediato",
+   "Como un aumento de las reservas de la filial, sin efecto en la renta nacional",
+   "Como una transferencia de capital al final del ejercicio",
+   "No lo registra: sin pago no hay operación"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "12.04#t1",
+  "codigo": "12.04",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "Rentas de la propiedad y el saldo de rentas primarias",
+  "q": "Los intereses de esta cuenta no coinciden con los que aparecen en los contratos. ¿Por qué?",
+  "a": "**Porque están ajustados por SIFMI: se les ha quitado el margen del intermediario financiero, que es producción de servicios y no renta.** El banco cobra al prestatario más de lo que paga al depositante, y esa diferencia retribuye un servicio. El SEC la saca de aquí y la lleva a producción.",
+  "opciones": [
+   "Porque se expresan en términos reales, descontada la inflación",
+   "Porque se netean los cobrados contra los pagados",
+   "Porque están ajustados por SIFMI: se les ha quitado el margen del intermediario financiero, que es producción de servicios y no renta",
+   "Porque se registran en devengo y no en caja"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "12.04#t2",
+  "codigo": "12.04",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "Rentas de la propiedad y el saldo de rentas primarias",
+  "q": "Un país acoge muchas filiales de multinacionales extranjeras. ¿Qué agregado describe mejor la renta de sus residentes?",
+  "a": "**La renta nacional, porque el PIB mide producción en el territorio y parte de esa renta sale hacia los propietarios extranjeros.** Irlanda es el caso extremo: su PIB y su renta nacional cuentan historias muy distintas sobre lo que reciben sus residentes.",
+  "opciones": [
+   "El valor añadido bruto a precios básicos",
+   "El PIB, que mide toda la actividad económica del país",
+   "La renta nacional, porque el PIB mide producción en el territorio y parte de esa renta sale hacia los propietarios extranjeros",
+   "El PIB per cápita, que corrige por población"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "12.04#t3",
+  "codigo": "12.04",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "Rentas de la propiedad y el saldo de rentas primarias",
+  "q": "¿Son igual de fiables todas las partidas de la cuenta de rentas de la propiedad?",
+  "a": "**No: los intereses se estiman con los balances financieros del banco central y son sólidos; los dividendos, en buena parte por diferencia.** Conviene saber qué partida soporta cuánto peso analítico: no todas están estimadas con la misma solidez.",
+  "opciones": [
+   "No: las más fiables son los dividendos, por estar auditados en las cuentas anuales",
+   "Sí: todas proceden de registros administrativos",
+   "No: los intereses se estiman con los balances financieros del banco central y son sólidos; los dividendos, en buena parte por diferencia",
+   "Sí, salvo en los años de cambio metodológico"
+  ],
+  "correcta": 2
  },
  {
   "id": "12.05#0",
@@ -1894,6 +4198,70 @@ export default [
   "a": "No. Solo los préstamos y los depósitos, y solo en las entidades que hacen banca tradicional. Lo que se cobra por operar con valores son comisiones explícitas, que se registran como cualquier otro servicio porque sí están facturadas y no hay nada que estimar indirectamente."
  },
  {
+  "id": "12.05#t0",
+  "codigo": "12.05",
+  "bloque": 12,
+  "nivel": 4,
+  "titulo": "SIFMI y seguros: la producción que no se observa",
+  "q": "¿Qué diferencia hay entre el SIFMI y los intereses?",
+  "a": "**El SIFMI es un margen —la diferencia entre el tipo aplicado y uno de referencia— y se registra como producción de servicios; los intereses son rentas de la propiedad.** Retribuyen cosas distintas: uno paga un servicio que el banco presta, el otro paga el uso del dinero. Por eso van a cuentas distintas.",
+  "opciones": [
+   "El SIFMI es la parte de los intereses que corresponde a la inflación",
+   "El SIFMI son los intereses de los préstamos y los intereses propiamente dichos, los de los depósitos",
+   "Ninguna: el SIFMI es el nombre técnico de los intereses bancarios",
+   "El SIFMI es un margen —la diferencia entre el tipo aplicado y uno de referencia— y se registra como producción de servicios; los intereses son rentas de la propiedad"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "12.05#t1",
+  "codigo": "12.05",
+  "bloque": 12,
+  "nivel": 4,
+  "titulo": "SIFMI y seguros: la producción que no se observa",
+  "q": "Un hogar paga una hipoteca sobre su vivienda habitual. ¿Cómo se registra el SIFMI asociado?",
+  "a": "**Como consumo intermedio: el hogar es productor del servicio de alojamiento que se imputa a sí mismo.** Es coherente con los alquileres imputados: si el hogar produce un servicio de alojamiento para sí mismo, el coste financiero de esa producción es un insumo.",
+  "opciones": [
+   "La mitad como consumo final y la mitad como consumo intermedio",
+   "Como consumo final, porque el hogar es un consumidor",
+   "Como consumo intermedio: el hogar es productor del servicio de alojamiento que se imputa a sí mismo",
+   "No se registra: las hipotecas quedan fuera del perímetro del SIFMI"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "12.05#t2",
+  "codigo": "12.05",
+  "bloque": 12,
+  "nivel": 4,
+  "titulo": "SIFMI y seguros: la producción que no se observa",
+  "q": "¿Son las indemnizaciones que paga una aseguradora un consumo intermedio suyo?",
+  "a": "**No: se detraen de la producción, porque económicamente son dinero que vuelve al colectivo asegurado.** La compañía no compra nada con ellas: reparte entre los siniestrados lo que ha recaudado del conjunto. Su servicio es organizar ese reparto, no el reparto mismo.",
+  "opciones": [
+   "Sí: son un coste necesario para prestar el servicio",
+   "No: son transferencias de capital a los asegurados",
+   "Sí, pero solo la parte que excede a las provisiones dotadas",
+   "No: se detraen de la producción, porque económicamente son dinero que vuelve al colectivo asegurado"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "12.05#t3",
+  "codigo": "12.05",
+  "bloque": 12,
+  "nivel": 4,
+  "titulo": "SIFMI y seguros: la producción que no se observa",
+  "q": "Una aseguradora paga primas de reaseguro y cobra del reasegurador cuando hay siniestros. ¿Cómo se registra?",
+  "a": "**De forma asimétrica: las primas de reaseguro son consumo intermedio suyo, y los cobros y pagos del reaseguro, transferencias corrientes.** Es una asimetría fácil de pasar por alto y que altera el valor añadido del sector si se registra mal.",
+  "opciones": [
+   "De forma asimétrica: las primas de reaseguro son consumo intermedio suyo, y los cobros y pagos del reaseguro, transferencias corrientes",
+   "Todo como transferencias corrientes, primas incluidas",
+   "Todo como consumo intermedio, cobros incluidos",
+   "Se netean unos contra otros y solo se registra el saldo"
+  ],
+  "correcta": 0
+ },
+ {
   "id": "12.06#0",
   "codigo": "12.06",
   "bloque": 12,
@@ -1946,6 +4314,70 @@ export default [
   "titulo": "Distribución secundaria: impuestos, cotizaciones y prestaciones",
   "q": "¿Qué le falta a esta cuenta para medir toda la redistribución?",
   "a": "Tres cosas: la redistribución en especie, de magnitud comparable a la monetaria; los impuestos indirectos, que actuaron antes en la secuencia y son regresivos sobre la renta anual; y el hecho de que la propia renta primaria ya está condicionada por instituciones como el salario mínimo o la negociación colectiva, que comprimen la distribución antes de que llegue ningún impuesto."
+ },
+ {
+  "id": "12.06#t0",
+  "codigo": "12.06",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "Distribución secundaria: impuestos, cotizaciones y prestaciones",
+  "q": "¿Aparece el IVA en la cuenta de distribución secundaria?",
+  "a": "**No: aquí solo entran los impuestos corrientes sobre la renta y el patrimonio; el IVA actuó antes, al valorar la producción.** Los impuestos sobre productos se descontaron al pasar de precios de adquisición a precios básicos. Buscarlos aquí es buscarlos dos cuentas más tarde de donde actúan.",
+  "opciones": [
+   "Sí, en la parte no deducible por las empresas",
+   "Sí: es el principal impuesto corriente que pagan los hogares",
+   "Solo el IVA soportado por las administraciones públicas",
+   "No: aquí solo entran los impuestos corrientes sobre la renta y el patrimonio; el IVA actuó antes, al valorar la producción"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "12.06#t1",
+  "codigo": "12.06",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "Distribución secundaria: impuestos, cotizaciones y prestaciones",
+  "q": "¿De dónde viene la mayor parte del efecto redistributivo en los países desarrollados?",
+  "a": "**De las prestaciones, por pura magnitud: las pensiones y el desempleo mueven mucho más dinero hacia abajo del que mueven los impuestos.** El grueso está en el gasto, no en el ingreso. Discutir solo la escala del impuesto es discutir la parte pequeña del mecanismo.",
+  "opciones": [
+   "De la progresividad del impuesto sobre la renta",
+   "De los impuestos sobre el patrimonio y las sucesiones",
+   "De la imposición indirecta con tipos reducidos",
+   "De las prestaciones, por pura magnitud: las pensiones y el desempleo mueven mucho más dinero hacia abajo del que mueven los impuestos"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "12.06#t2",
+  "codigo": "12.06",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "Distribución secundaria: impuestos, cotizaciones y prestaciones",
+  "q": "Los hogares pagan alrededor del 77 % de los impuestos corrientes. ¿Es una anomalía del sistema español?",
+  "a": "**No: el impuesto sobre la renta de las personas físicas es la figura mayor entre los directos, y lo que las sociedades no pagan aquí lo pagan sus accionistas.** El reparto entre sectores no mide quién soporta la carga: la renta societaria acaba llegando a hogares, que tributan por ella.",
+  "opciones": [
+   "No, pero el porcentaje es muy inferior en el resto de la Unión Europea",
+   "No: el impuesto sobre la renta de las personas físicas es la figura mayor entre los directos, y lo que las sociedades no pagan aquí lo pagan sus accionistas",
+   "Sí, y se corrige al incluir las cotizaciones sociales",
+   "Sí: refleja la baja tributación efectiva de las grandes empresas"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "12.06#t3",
+  "codigo": "12.06",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "Distribución secundaria: impuestos, cotizaciones y prestaciones",
+  "q": "En las sociedades, la renta disponible coincide casi exactamente con su ahorro. ¿Por qué?",
+  "a": "**Porque no tienen consumo final: todo lo que les queda tras las transferencias corrientes es, por definición, ahorro.** El consumo final es un concepto que solo se aplica a hogares, administraciones e instituciones sin fines de lucro. Sin él, renta disponible y ahorro son la misma cifra.",
+  "opciones": [
+   "Porque su consumo intermedio ya se descontó en la cuenta de producción",
+   "Porque están obligadas a reinvertir sus beneficios",
+   "Porque no tienen consumo final: todo lo que les queda tras las transferencias corrientes es, por definición, ahorro",
+   "Porque los dividendos se registran en otra cuenta posterior"
+  ],
+  "correcta": 2
  },
  {
   "id": "12.07#0",
@@ -2002,6 +4434,70 @@ export default [
   "a": "No. El margen de la compañía ya salió antes como producción de servicios medida indirectamente. Esos 4 reflejan que en ese ejercicio hubo menos siniestros de los previstos. El par D.71-D.72 muestra el seguro como lo que económicamente es: una transferencia del colectivo asegurado hacia aquellos a los que les ha ocurrido algo."
  },
  {
+  "id": "12.07#t0",
+  "codigo": "12.07",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "Otras transferencias corrientes: qué hay dentro del D.7",
+  "q": "¿Cómo clasifica el SEC las multas de tráfico?",
+  "a": "**Como transferencias corrientes diversas (D.75).** Es el cajón de las transferencias corrientes que no encajan en ninguna de las categorías anteriores, y las sanciones van ahí.",
+  "opciones": [
+   "Como impuestos corrientes, por ser obligatorias y sin contrapartida",
+   "Como transferencias de capital, al no financiar gasto recurrente",
+   "Como transferencias corrientes diversas (D.75)",
+   "Como ventas de servicios de las administraciones públicas"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "12.07#t1",
+  "codigo": "12.07",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "Otras transferencias corrientes: qué hay dentro del D.7",
+  "q": "¿Qué son los recursos propios de la Unión Europea (D.76)?",
+  "a": "**Las aportaciones que los Estados miembros hacen al presupuesto comunitario.** Van desde los Estados hacia la UE, que a efectos del SEC es una unidad no residente, así que sí afectan a la renta nacional disponible.",
+  "opciones": [
+   "Las aportaciones que los Estados miembros hacen al presupuesto comunitario",
+   "Los fondos que la UE transfiere a los Estados miembros",
+   "Los ingresos que la UE obtiene de sus propias inversiones financieras",
+   "El presupuesto que cada Estado destina a sus políticas europeas"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "12.07#t2",
+  "codigo": "12.07",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "Otras transferencias corrientes: qué hay dentro del D.7",
+  "q": "Una administración concede una beca que cubre la matrícula universitaria y una subvención para que una empresa compre maquinaria. ¿Cómo se clasifican?",
+  "a": "**La beca es corriente y la subvención de capital, porque la primera financia gasto y la segunda va ligada a la adquisición de un activo.** Y la consecuencia importa: la corriente afecta a la renta disponible del receptor y la de capital no, porque entra en la secuencia después del ahorro.",
+  "opciones": [
+   "Ambas como transferencias de capital, por proceder del presupuesto de inversión",
+   "La beca es corriente y la subvención de capital, porque la primera financia gasto y la segunda va ligada a la adquisición de un activo",
+   "Ambas como transferencias corrientes, por ser ayudas públicas",
+   "La beca es de capital, por invertir en formación, y la subvención corriente"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "12.07#t3",
+  "codigo": "12.07",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "Otras transferencias corrientes: qué hay dentro del D.7",
+  "q": "¿Cuál de estos flujos NO es una transferencia corriente del D.7?",
+  "a": "**La compra de material sanitario por parte de un hospital público.** Aquí sí hay contrapartida: el hospital recibe unos bienes a cambio del dinero. Es una compraventa y por tanto consumo intermedio, no una transferencia.",
+  "opciones": [
+   "La compra de material sanitario por parte de un hospital público",
+   "Los traspasos de financiación del Estado a las comunidades autónomas",
+   "La ayuda oficial al desarrollo que España entrega a otro país",
+   "Las primas netas de seguro no vida que pagan los hogares"
+  ],
+  "correcta": 0
+ },
+ {
   "id": "12.08#0",
   "codigo": "12.08",
   "bloque": 12,
@@ -2054,6 +4550,70 @@ export default [
   "titulo": "Consumo final: gasto, consumo efectivo y transferencias en especie",
   "q": "¿Por qué el consumo de las cuentas nacionales supera al declarado en las encuestas?",
   "a": "Por cuatro razones: las cuentas incluyen alquileres imputados, SIFMI y seguros medidos por margen, que nadie declara; corrigen la subdeclaración de alcohol, tabaco y juego con fuentes de oferta; cubren a la población que vive en instituciones; y registran en devengo. Las dos fuentes responden a preguntas distintas y ninguna es mejor."
+ },
+ {
+  "id": "12.08#t0",
+  "codigo": "12.08",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "Consumo final: gasto, consumo efectivo y transferencias en especie",
+  "q": "¿Tienen las administraciones públicas consumo final efectivo individual?",
+  "a": "**No: todo su consumo individual se transfiere a los hogares en especie, y solo les queda el colectivo.** Defensa, justicia, seguridad o diplomacia no se pueden individualizar, y eso es lo único que las administraciones consumen de verdad.",
+  "opciones": [
+   "Sí, pero se reparte entre ambos sectores a partes iguales",
+   "Sí: la sanidad y la educación que prestan son consumo individual suyo",
+   "No: todo su consumo individual se transfiere a los hogares en especie, y solo les queda el colectivo",
+   "Sí, en la parte que financian con tasas y precios públicos"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "12.08#t1",
+  "codigo": "12.08",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "Consumo final: gasto, consumo efectivo y transferencias en especie",
+  "q": "¿Qué añade la renta disponible ajustada (B.7) sobre la renta disponible (B.6)?",
+  "a": "**Las transferencias sociales en especie que el hogar recibe sin pagarlas.** Mide lo que el hogar puede realmente disponer, incluida la sanidad y la educación que recibe gratis y que de otro modo tendría que comprar.",
+  "opciones": [
+   "El ajuste por variación de derechos por pensiones",
+   "Los impuestos corrientes ya satisfechos",
+   "Las rentas de la propiedad imputadas a los asegurados",
+   "Las transferencias sociales en especie que el hogar recibe sin pagarlas"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "12.08#t2",
+  "codigo": "12.08",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "Consumo final: gasto, consumo efectivo y transferencias en especie",
+  "q": "El ahorro puede calcularse como renta disponible menos gasto, o como renta disponible ajustada menos consumo efectivo. ¿Coinciden?",
+  "a": "**Sí, y esa coincidencia es una comprobación útil de que el sistema está bien construido.** Lo que se añade por un lado se añade por el otro, y el ahorro sale idéntico. Es una de esas propiedades que confirman la coherencia interna de las cuentas.",
+  "opciones": [
+   "No: la segunda óptica da un ahorro mayor, al incluir las transferencias en especie",
+   "No: la primera es la oficial y la segunda solo una aproximación",
+   "Solo coinciden en el agregado nacional, no sector por sector",
+   "Sí, y esa coincidencia es una comprobación útil de que el sistema está bien construido"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "12.08#t3",
+  "codigo": "12.08",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "Consumo final: gasto, consumo efectivo y transferencias en especie",
+  "q": "¿Qué sectores tienen gasto en consumo final en el SEC?",
+  "a": "**Las administraciones públicas, los hogares y las instituciones sin fines de lucro al servicio de los hogares.** Son los tres sectores que consumen para satisfacer necesidades y no para producir otra cosa.",
+  "opciones": [
+   "Las administraciones públicas, los hogares y las instituciones sin fines de lucro al servicio de los hogares",
+   "Todos los sectores residentes",
+   "Todos menos las instituciones financieras",
+   "Solo las administraciones públicas y los hogares"
+  ],
+  "correcta": 0
  },
  {
   "id": "12.09#0",
@@ -2110,6 +4670,70 @@ export default [
   "a": "La discrepancia entre dos estimaciones independientes de la misma magnitud, la capacidad de financiación: una obtenida por el lado no financiero y otra por el lado de los instrumentos. En teoría deberían coincidir y en la práctica no lo hacen. Se publica, y es uno de los pocos indicadores honestos de la calidad del sistema."
  },
  {
+  "id": "12.09#t0",
+  "codigo": "12.09",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "Cuentas de acumulación: capital, transferencias y capacidad de financiación",
+  "q": "¿Qué diferencia hay entre el ahorro de un sector y su capacidad de financiación?",
+  "a": "**El ahorro dice cuánta renta no se consumió; la capacidad de financiación, si tras invertir hubo que pedir prestado.** Un sector puede ahorrar mucho y necesitar financiación si invierte más de lo que ahorra, y al revés.",
+  "opciones": [
+   "Son lo mismo medido en dos cuentas distintas",
+   "El ahorro dice cuánta renta no se consumió; la capacidad de financiación, si tras invertir hubo que pedir prestado",
+   "El ahorro es un stock y la capacidad de financiación un flujo",
+   "El ahorro se mide antes de impuestos y la capacidad de financiación después"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "12.09#t1",
+  "codigo": "12.09",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "Cuentas de acumulación: capital, transferencias y capacidad de financiación",
+  "q": "¿Por qué las transferencias de capital no afectan al ahorro?",
+  "a": "**Porque se registran en la cuenta de capital, después del ahorro en la secuencia.** Es la distinción de la ficha 12.07 con su consecuencia contable: lo que financia gasto corriente entra antes y mueve la renta disponible; lo que financia un activo entra después y solo mueve la capacidad de financiación.",
+  "opciones": [
+   "Porque su importe suele ser pequeño",
+   "Porque se registran en la cuenta de capital, después del ahorro en la secuencia",
+   "Porque se compensan entre los sectores residentes",
+   "Porque solo las reciben las administraciones públicas"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "12.09#t2",
+  "codigo": "12.09",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "Cuentas de acumulación: capital, transferencias y capacidad de financiación",
+  "q": "Un país presenta un déficit exterior elevado. ¿Qué es lo primero que conviene preguntar?",
+  "a": "**Qué sector lo genera.** No significa lo mismo un déficit causado por inversión empresarial elevada que uno causado por desahorro público o por hogares endeudándose para comprar vivienda.",
+  "opciones": [
+   "Si supera el umbral del procedimiento de desequilibrios macroeconómicos",
+   "Qué sector lo genera",
+   "Cuántos años lleva en déficit",
+   "Si se financia con deuda o con inversión extranjera directa"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "12.09#t3",
+  "codigo": "12.09",
+  "bloque": 12,
+  "nivel": 3,
+  "titulo": "Cuentas de acumulación: capital, transferencias y capacidad de financiación",
+  "q": "La cuenta de capital y la cuenta financiera estiman la misma capacidad de financiación y no coinciden. ¿Qué se hace con esa diferencia?",
+  "a": "**Se publica: es uno de los pocos indicadores directos de la calidad de la estimación.** Que dos caminos independientes no lleguen al mismo número dice cuánta confianza merece el resultado. Ocultarlo daría una falsa impresión de precisión.",
+  "opciones": [
+   "Se reparte proporcionalmente entre los sectores",
+   "Se imputa al resto del mundo, que es el sector de cierre",
+   "Se corrige la cuenta financiera, por ser la menos fiable",
+   "Se publica: es uno de los pocos indicadores directos de la calidad de la estimación"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "12.10#0",
   "codigo": "12.10",
   "bloque": 12,
@@ -2162,6 +4786,70 @@ export default [
   "titulo": "El resto del mundo (S.2) y el puente con la balanza de pagos",
   "q": "¿Qué relación hay entre el B.9 del S.2 y la balanza de pagos?",
   "a": "Equivale, con el signo cambiado, al saldo conjunto de la cuenta corriente y la cuenta de capital de la balanza de pagos. Los dos marcos están armonizados y sus grandes saldos coinciden por diseño, aunque los compilen organismos distintos con lenguajes distintos: recursos y empleos en el SEC, ingresos y pagos en el manual del FMI."
+ },
+ {
+  "id": "12.10#t0",
+  "codigo": "12.10",
+  "bloque": 12,
+  "nivel": 4,
+  "titulo": "El resto del mundo (S.2) y el puente con la balanza de pagos",
+  "q": "El saldo B.11 del sector resto del mundo es negativo. ¿Qué significa para España?",
+  "a": "**Que España tiene superávit comercial: las cuentas del S.2 se llevan desde su punto de vista.** Lo que para el resto del mundo es un empleo, para la economía nacional es un recurso. Es la regla del espejo aplicada a los saldos.",
+  "opciones": [
+   "Que el resto del mundo ha reducido su inversión en España",
+   "Que España tiene superávit comercial: las cuentas del S.2 se llevan desde su punto de vista",
+   "Que España tiene déficit comercial",
+   "Que las importaciones españolas han caído"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "12.10#t1",
+  "codigo": "12.10",
+  "bloque": 12,
+  "nivel": 4,
+  "titulo": "El resto del mundo (S.2) y el puente con la balanza de pagos",
+  "q": "¿Es el resto del mundo (S.2) un sector institucional más?",
+  "a": "**No: agrupa unidades no residentes muy heterogéneas y solo recoge las operaciones que tienen contrapartida residente.** No interesa lo que un no residente haga con otro no residente: solo entra lo que toca a la economía nacional.",
+  "opciones": [
+   "Sí, aunque con una secuencia de cuentas reducida",
+   "No: agrupa unidades no residentes muy heterogéneas y solo recoge las operaciones que tienen contrapartida residente",
+   "Sí: es el quinto sector del sistema, junto a los cuatro residentes",
+   "No: es un subsector de las sociedades no financieras"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "12.10#t2",
+  "codigo": "12.10",
+  "bloque": 12,
+  "nivel": 4,
+  "titulo": "El resto del mundo (S.2) y el puente con la balanza de pagos",
+  "q": "Las estadísticas de aduanas valoran las exportaciones FOB y las importaciones CIF. ¿Qué exige el SEC?",
+  "a": "**Valorar ambas FOB, reasignando fletes y seguros a la partida de servicios.** Esos servicios son eso, servicios, y tienen que registrarse como tales para que el saldo de bienes mida solo bienes.",
+  "opciones": [
+   "Valorar ambas al tipo de cambio medio del periodo",
+   "Valorar ambas CIF, para incluir el coste real de la operación",
+   "Valorar ambas FOB, reasignando fletes y seguros a la partida de servicios",
+   "Mantener ambos criterios, porque reflejan realidades distintas"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "12.10#t3",
+  "codigo": "12.10",
+  "bloque": 12,
+  "nivel": 4,
+  "titulo": "El resto del mundo (S.2) y el puente con la balanza de pagos",
+  "q": "Un país encadena varios años de capacidad de financiación positiva. ¿Deja de ser deudor frente al exterior?",
+  "a": "**No necesariamente: el saldo anual reduce la posición deudora, pero la posición de inversión internacional es un stock construido a lo largo de décadas.** Y esa posición condiciona los pagos de rentas al exterior durante mucho tiempo, que es lo que mantiene el saldo corriente por debajo del comercial.",
+  "opciones": [
+   "No necesariamente: el saldo anual reduce la posición deudora, pero la posición de inversión internacional es un stock construido a lo largo de décadas",
+   "Sí: un saldo positivo cancela la deuda externa acumulada",
+   "Sí, si el superávit supera el 2 % del PIB",
+   "No: la posición exterior no depende de los saldos anuales"
+  ],
+  "correcta": 0
  },
  {
   "id": "13.01#0",
@@ -2218,6 +4906,70 @@ export default [
   "a": "La P dice que hay bienes de por medio; el 5 dice que es formación de capital; el 2 dice que son existencias. Luego es la variación de existencias y vive en la cuenta de capital. La gramática basta: la letra sitúa la familia y el dígito estrecha."
  },
  {
+  "id": "13.01#t0",
+  "codigo": "13.01",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La gramática del sistema: cómo se lee cualquier código del SEC",
+  "q": "¿Puede buscarse la contrapartida de un B.2g en otro sector?",
+  "a": "**No: los saldos B no son operaciones, son lo que queda al cerrar una cuenta.** Nadie paga ni cobra un B.2g. Buscar su contrapartida lleva a un callejón sin salida y suele ser el primer síntoma de no haber entendido la gramática del sistema.",
+  "opciones": [
+   "Sí: toda anotación del sistema tiene contrapartida por partida doble",
+   "No: los saldos B no son operaciones, son lo que queda al cerrar una cuenta",
+   "No, salvo en las cuentas del resto del mundo",
+   "Sí, en el sector que recibe el excedente"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "13.01#t1",
+  "codigo": "13.01",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La gramática del sistema: cómo se lee cualquier código del SEC",
+  "q": "Un banco concede un préstamo y después cobra los intereses. ¿A qué familias de códigos pertenece cada cosa?",
+  "a": "**El préstamo es F (operación financiera) y los intereses D (operación de distribución).** Conceder un préstamo intercambia un activo financiero por dinero y no reparte renta; cobrar intereses sí reparte renta y no crea ningún activo nuevo.",
+  "opciones": [
+   "El préstamo es D y los intereses F",
+   "Ambas a la familia D, porque las dos distribuyen renta",
+   "El préstamo es F (operación financiera) y los intereses D (operación de distribución)",
+   "Ambas a la familia F, por tratarse de operaciones bancarias"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "13.01#t2",
+  "codigo": "13.01",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La gramática del sistema: cómo se lee cualquier código del SEC",
+  "q": "Sin consultar el reglamento, ¿qué se puede deducir del código D.42?",
+  "a": "**Que es una renta de la propiedad, y por tanto vive en la cuenta de asignación de renta primaria.** La letra sitúa la familia y el dígito estrecha: D.4 son rentas de la propiedad, así que D.42 tiene que ser una de ellas. La gramática ahorra memorizar miles de partidas.",
+  "opciones": [
+   "Que es una renta de la propiedad, y por tanto vive en la cuenta de asignación de renta primaria",
+   "Que es un activo no financiero, por el 4 inicial",
+   "Que es un saldo contable de la cuarta cuenta de la secuencia",
+   "Que es un impuesto, porque la familia D agrupa la imposición"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "13.01#t3",
+  "codigo": "13.01",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La gramática del sistema: cómo se lee cualquier código del SEC",
+  "q": "¿Qué relación hay entre el saldo de una cuenta y la cuenta siguiente?",
+  "a": "**El saldo de una cuenta es la primera entrada de la siguiente, y por eso cualquier reclasificación arrastra todo lo que hay por debajo.** Por eso el sistema es una cadena y no una lista: mover una partida arriba mueve todos los saldos posteriores.",
+  "opciones": [
+   "El saldo de una cuenta debe coincidir con el de la siguiente",
+   "El saldo de una cuenta es la primera entrada de la siguiente, y por eso cualquier reclasificación arrastra todo lo que hay por debajo",
+   "Las cuentas se encadenan solo dentro de cada sector, no en el agregado",
+   "Ninguna: cada cuenta se calcula de forma independiente y luego se concilian"
+  ],
+  "correcta": 1
+ },
+ {
   "id": "13.02#0",
   "codigo": "13.02",
   "bloque": 13,
@@ -2270,6 +5022,70 @@ export default [
   "titulo": "Operaciones de bienes y servicios: el equilibrio por producto",
   "q": "Los márgenes comerciales de un producto, ¿aumentan la oferta total de la economía?",
   "a": "No. Son producción de las ramas de comercio y transporte y ya están contados en el P.1 de esas ramas. En las tablas de origen y destino se reasignan al producto vendido para que cuadre su precio de adquisición, pero no se añaden al total de la oferta."
+ },
+ {
+  "id": "13.02#t0",
+  "codigo": "13.02",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Operaciones de bienes y servicios: el equilibrio por producto",
+  "q": "El gasto de los hogares en carburante crece un 20 %. ¿Mide eso la actividad de las refinerías?",
+  "a": "**No: en un litro de gasolina el productor recibe 0,60 € y el consumidor paga 1,54; entre medias hay impuestos y márgenes de otras ramas.** El desfase puede ser de más del doble. Quien mira el gasto de los hogares y cree estar midiendo la actividad del sector que fabrica se equivoca por un factor grande.",
+  "opciones": [
+   "No: en un litro de gasolina el productor recibe 0,60 € y el consumidor paga 1,54; entre medias hay impuestos y márgenes de otras ramas",
+   "Sí, una vez descontado el IVA",
+   "Sí: el gasto en un producto mide la producción de quien lo fabrica",
+   "No, pero la diferencia es pequeña en productos industriales"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "13.02#t1",
+  "codigo": "13.02",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Operaciones de bienes y servicios: el equilibrio por producto",
+  "q": "¿Qué IVA se registra en las cuentas nacionales?",
+  "a": "**El no deducible: el que soportan las empresas por sus insumos se recupera y no entra.** Solo se registra el que efectivamente queda, que es el de hogares, administraciones y sectores exentos.",
+  "opciones": [
+   "Solo el ingresado efectivamente en Hacienda",
+   "El no deducible: el que soportan las empresas por sus insumos se recupera y no entra",
+   "El repercutido total en todas las fases de la cadena",
+   "El de las operaciones interiores, excluyendo importaciones"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "13.02#t2",
+  "codigo": "13.02",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Operaciones de bienes y servicios: el equilibrio por producto",
+  "q": "Al construir la identidad entre oferta y empleos, ¿por qué hay que ajustar la valoración?",
+  "a": "**Porque la oferta se valora a precios básicos y los empleos a precios de adquisición.** Hay que sumar los impuestos netos sobre productos y reasignar los márgenes de comercio y transporte para que ambos lados hablen del mismo precio.",
+  "opciones": [
+   "Porque las importaciones se valoran CIF y la producción interior FOB",
+   "Porque los impuestos se devengan en un ejercicio distinto del de la operación",
+   "Porque la producción se mide en volumen y los empleos en valor corriente",
+   "Porque la oferta se valora a precios básicos y los empleos a precios de adquisición"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "13.02#t3",
+  "codigo": "13.02",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Operaciones de bienes y servicios: el equilibrio por producto",
+  "q": "¿Cómo se pasa de la suma de los valores añadidos al PIB a precios de mercado?",
+  "a": "**Sumando los impuestos sobre productos y restando las subvenciones sobre productos.** Los valores añadidos están a precios básicos, que no incluyen esos impuestos; el PIB a precios de mercado sí.",
+  "opciones": [
+   "Sumando los impuestos sobre productos y restando las subvenciones sobre productos",
+   "Sumando los consumos intermedios de todas las ramas",
+   "Sumando las importaciones y restando las exportaciones",
+   "Restando el consumo de capital fijo"
+  ],
+  "correcta": 0
  },
  {
   "id": "13.03#0",
@@ -2326,6 +5142,70 @@ export default [
   "a": "Porque la empresa sigue siendo la propietaria del activo, luego su compra es formación de capital fijo, pero el servicio que el directivo obtiene en su vida privada es remuneración en especie imputada cada año. Aumenta la renta primaria del hogar y reduce el excedente de la empresa sin que se mueva un euro de tesorería."
  },
  {
+  "id": "13.03#t0",
+  "codigo": "13.03",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "El consumo intermedio (P.2): la frontera con el salario y con la inversión",
+  "q": "El servicio que presta un banco al mantener una cuenta no aparece en ninguna factura. ¿Es consumo intermedio de la empresa cliente?",
+  "a": "**Sí: es el SIFMI, un servicio real que se cobra por diferencial de tipos en lugar de por comisión.** El sistema lo estima y lo imputa, y si no se hiciera el valor añadido de la empresa aparecería inflado y el del banco desaparecería.",
+  "opciones": [
+   "Solo si el banco lo desglosa en su información a clientes",
+   "Sí: es el SIFMI, un servicio real que se cobra por diferencial de tipos en lugar de por comisión",
+   "No: se registra como renta de la propiedad, junto con los intereses",
+   "No: sin factura no hay operación que registrar"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "13.03#t1",
+  "codigo": "13.03",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "El consumo intermedio (P.2): la frontera con el salario y con la inversión",
+  "q": "Una empresa gasta 40.000 € en ropa de trabajo obligatoria y 6.000 € en un plan de pensiones para su director. ¿Cómo se clasifica cada cosa?",
+  "a": "**La ropa es consumo intermedio y el plan de pensiones remuneración de asalariados.** El criterio de esta frontera es a quién beneficia: si al puesto es P.2, y si a la persona es D.1. La ropa de trabajo cumple una función productiva; el plan de pensiones retribuye a alguien.",
+  "opciones": [
+   "Ambas como consumo intermedio, por ser gasto corriente de la empresa",
+   "La ropa es consumo intermedio y el plan de pensiones remuneración de asalariados",
+   "La ropa es formación de capital y el plan de pensiones consumo intermedio",
+   "Ambas como remuneración de asalariados"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "13.03#t2",
+  "codigo": "13.03",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "El consumo intermedio (P.2): la frontera con el salario y con la inversión",
+  "q": "¿Dónde van las primas netas de seguro no vida que paga una empresa?",
+  "a": "**Se reparten: el margen del asegurador es consumo intermedio y el resto es transferencia corriente.** Es una de las partidas que más se colocan mal, precisamente porque un único pago se reparte entre dos cuentas distintas.",
+  "opciones": [
+   "A formación de capital, si cubren activos fijos",
+   "A transferencias corrientes, en su totalidad",
+   "A consumo intermedio, en su totalidad",
+   "Se reparten: el margen del asegurador es consumo intermedio y el resto es transferencia corriente"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "13.03#t3",
+  "codigo": "13.03",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "El consumo intermedio (P.2): la frontera con el salario y con la inversión",
+  "q": "¿Coincide el valor añadido que calcula el INE para una empresa con el que sale de sus cuentas anuales?",
+  "a": "**No: los criterios de activación, amortización y periodificación del plan contable no son los del SEC, y el instituto reconvierte los datos.** Es la regla de oro del tema: la contabilidad de empresa no es la contabilidad nacional, y esperar que cuadren lleva a buscar errores donde solo hay criterios diferentes.",
+  "opciones": [
+   "No: los criterios de activación, amortización y periodificación del plan contable no son los del SEC, y el instituto reconvierte los datos",
+   "Sí: ambas parten de la misma contabilidad",
+   "No, pero la diferencia es siempre inferior al 1 %",
+   "Sí, salvo diferencias por el tratamiento del IVA"
+  ],
+  "correcta": 0
+ },
+ {
   "id": "13.04#0",
   "codigo": "13.04",
   "bloque": 13,
@@ -2378,6 +5258,70 @@ export default [
   "titulo": "La remuneración de asalariados (D.1) por dentro",
   "q": "En el ejemplo, ¿por qué el coste laboral es 500 y la nómina bruta 368?",
   "a": "Los 132 de diferencia son 17 de retribución en especie que el trabajador sí disfruta, 110 de cotizaciones efectivas que le compran derechos y 5 de cotizaciones imputadas que no paga nadie. Es el 26,4 % del coste total, y ninguno de los tres conceptos aparece como ingreso en su cuenta bancaria."
+ },
+ {
+  "id": "13.04#t0",
+  "codigo": "13.04",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La remuneración de asalariados (D.1) por dentro",
+  "q": "¿Cuál de estos conceptos NO forma parte de la remuneración de asalariados (D.1)?",
+  "a": "**La renta que obtiene un autónomo de su propio negocio.** Va a la renta mixta (B.3), porque no hay relación de asalariado. Por eso la participación salarial calculada sin corregir infravalora el peso del trabajo.",
+  "opciones": [
+   "La retribución en especie",
+   "Las cotizaciones sociales a cargo del empleador",
+   "La renta que obtiene un autónomo de su propio negocio",
+   "Las cotizaciones sociales imputadas"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "13.04#t1",
+  "codigo": "13.04",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La remuneración de asalariados (D.1) por dentro",
+  "q": "¿Está el IRPF que se retiene al trabajador dentro del D.11?",
+  "a": "**Sí: los sueldos y salarios se registran en bruto, antes de retenciones y de la cotización del trabajador.** La retención es un adelanto de un impuesto que el trabajador paga, así que forma parte de su remuneración antes de pagarlo.",
+  "opciones": [
+   "No: el D.11 recoge el líquido que percibe el trabajador",
+   "Solo la parte correspondiente al tramo estatal",
+   "No: los impuestos se registran únicamente en la cuenta de distribución secundaria",
+   "Sí: los sueldos y salarios se registran en bruto, antes de retenciones y de la cotización del trabajador"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "13.04#t2",
+  "codigo": "13.04",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La remuneración de asalariados (D.1) por dentro",
+  "q": "Dos estudios dan participaciones salariales distintas para el mismo país y año. ¿Cuál puede ser la causa?",
+  "a": "**Que uno divida por el PIB a precios de mercado y otro por el valor añadido a precios básicos.** El valor añadido a precios básicos excluye los impuestos netos sobre productos, así que el denominador es menor y la participación sale mayor. La diferencia entre ambas medidas es de varios puntos.",
+  "opciones": [
+   "Que uno use datos trimestrales y otro anuales",
+   "Que uno incluya al sector público y otro no",
+   "Que uno mida en términos nominales y otro en volumen",
+   "Que uno divida por el PIB a precios de mercado y otro por el valor añadido a precios básicos"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "13.04#t3",
+  "codigo": "13.04",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La remuneración de asalariados (D.1) por dentro",
+  "q": "¿Qué relación hay entre las cotizaciones imputadas (D.122) y las prestaciones sociales directas del empleador (D.622)?",
+  "a": "**Son iguales por construcción: la primera existe precisamente para dar origen contable a la segunda.** Sin la cotización imputada, la prestación aparecería sin haber sido financiada por nadie. El sistema inventa el flujo de entrada para que el de salida tenga procedencia.",
+  "opciones": [
+   "Son iguales por construcción: la primera existe precisamente para dar origen contable a la segunda",
+   "La D.122 suele superar a la D.622, y la diferencia se acumula como reserva",
+   "Son independientes: una está en la cuenta de explotación y la otra en la de distribución secundaria",
+   "La D.622 se calcula como un porcentaje fijo de la D.122"
+  ],
+  "correcta": 0
  },
  {
   "id": "13.05#0",
@@ -2434,6 +5378,70 @@ export default [
   "a": "Cuando se produce la emisión, no cuando se cobra. Lo cobrado por adelantado se anota entretanto como un pasivo financiero de las administraciones, sin efecto sobre el déficit. La regla impide que adelantar subastas maquille el saldo de un ejercicio a costa de los siguientes."
  },
  {
+  "id": "13.05#t0",
+  "codigo": "13.05",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Impuestos sobre la producción y las importaciones (D.2) y subvenciones (D.3)",
+  "q": "El impuesto sobre vehículos, ¿es D.214 o D.29?",
+  "a": "**Depende de su base: D.214 cuando grava la matriculación de cada unidad vendida y D.29 cuando grava la tenencia del parque de una empresa.** Lo que decide es si el importe depende de lo que se vende. Clasificar por el nombre del impuesto en lugar de por su base es el error típico de este bloque.",
+  "opciones": [
+   "Siempre D.214, por recaer sobre un producto identificable",
+   "Depende de su base: D.214 cuando grava la matriculación de cada unidad vendida y D.29 cuando grava la tenencia del parque de una empresa",
+   "Siempre D.29, por ser un impuesto local",
+   "Depende del sector que lo pague"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "13.05#t1",
+  "codigo": "13.05",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Impuestos sobre la producción y las importaciones (D.2) y subvenciones (D.3)",
+  "q": "Una empresa paga el IAE. ¿Reduce eso su excedente de explotación?",
+  "a": "**Sí: los otros impuestos sobre la producción (D.29) se descuentan dentro de la cuenta de explotación.** Es la diferencia práctica entre las dos familias: el D.21 sale antes, al valorar la producción, y el D.29 se resta aquí, junto a la remuneración de asalariados.",
+  "opciones": [
+   "No: como todos los impuestos, se descuenta en la cuenta de distribución secundaria",
+   "No: ya quedó fuera al valorar la producción a precios básicos",
+   "Sí: los otros impuestos sobre la producción (D.29) se descuentan dentro de la cuenta de explotación",
+   "Solo en la parte proporcional a su cifra de negocio"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "13.05#t2",
+  "codigo": "13.05",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Impuestos sobre la producción y las importaciones (D.2) y subvenciones (D.3)",
+  "q": "¿Qué distingue una subvención a los productos (D.31) de una a la producción (D.39)?",
+  "a": "**El mismo criterio que separa D.21 de D.29: si el importe depende de la cantidad producida o vendida.** Son las gemelas de los dos tipos de impuesto y siguen la misma lógica: una acompaña a cada unidad y la otra a la actividad de producir.",
+  "opciones": [
+   "La primera es reintegrable y la segunda no",
+   "El mismo criterio que separa D.21 de D.29: si el importe depende de la cantidad producida o vendida",
+   "La primera se cobra por anticipado y la segunda a posteriori",
+   "La primera la concede el Estado y la segunda la Unión Europea"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "13.05#t3",
+  "codigo": "13.05",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Impuestos sobre la producción y las importaciones (D.2) y subvenciones (D.3)",
+  "q": "Las cifras de impuestos sobre la producción que se publican suelen ser netas. ¿Por qué importa saberlo?",
+  "a": "**Porque las subvenciones se registran con signo contrario, y comparar impuestos brutos de un país con netos de otro da una diferencia inventada.** En países con mucha subvención a la producción la diferencia entre bruto y neto es considerable, y la comparación cruzada produce una brecha que no existe.",
+  "opciones": [
+   "Porque las cifras netas se expresan en volumen y las brutas en valor corriente",
+   "Porque solo las netas incluyen los impuestos autonómicos",
+   "Porque las subvenciones se registran con signo contrario, y comparar impuestos brutos de un país con netos de otro da una diferencia inventada",
+   "Porque los importes netos excluyen el IVA"
+  ],
+  "correcta": 2
+ },
+ {
   "id": "13.06#0",
   "codigo": "13.06",
   "bloque": 13,
@@ -2486,6 +5494,70 @@ export default [
   "titulo": "Impuestos corrientes sobre la renta y el patrimonio (D.5)",
   "q": "En el ejemplo, las cotizaciones del hogar duplican a sus impuestos sobre la renta. ¿Por qué importa?",
   "a": "Porque las cotizaciones pesan 10.905 € frente a 4.920 € de D.5 y sin embargo casi nunca se citan al hablar de presión fiscal. Ese reparto es estructural en España, y buena parte de esas cotizaciones el trabajador ni siquiera las ve, porque las paga el empleador y el sistema se las atribuye a él."
+ },
+ {
+  "id": "13.06#t0",
+  "codigo": "13.06",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Impuestos corrientes sobre la renta y el patrimonio (D.5)",
+  "q": "¿Cuándo un pago obligatorio a una administración es la compra de un servicio y no un impuesto?",
+  "a": "**Cuando hay un servicio identificable y proporcional al uso: entonces es P.3 y no un tributo.** Cuando la contraprestación es difusa o el importe no guarda relación con el coste del servicio, vuelve a ser impuesto por mucho que se llame tasa.",
+  "opciones": [
+   "Cuando hay un servicio identificable y proporcional al uso: entonces es P.3 y no un tributo",
+   "Cuando lo recauda un ayuntamiento en lugar del Estado",
+   "Cuando el pagador puede renunciar a él",
+   "Cuando su importe es reducido"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "13.06#t1",
+  "codigo": "13.06",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Impuestos corrientes sobre la renta y el patrimonio (D.5)",
+  "q": "¿Qué recoge el D.59, «otros impuestos corrientes», frente al D.51?",
+  "a": "**Los impuestos periódicos sobre el patrimonio y sobre la tenencia de vehículos por los hogares.** El D.51 grava la renta —IRPF, sociedades, ganancias de capital— y el D.59 recoge los que gravan periódicamente el patrimonio o su tenencia.",
+  "opciones": [
+   "Los impuestos sobre productos que no son IVA",
+   "Los impuestos que recaudan las comunidades autónomas",
+   "Los impuestos periódicos sobre el patrimonio y sobre la tenencia de vehículos por los hogares",
+   "Los impuestos aplazados o fraccionados"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "13.06#t2",
+  "codigo": "13.06",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Impuestos corrientes sobre la renta y el patrimonio (D.5)",
+  "q": "¿En qué cuenta reduce el impuesto sobre sociedades la renta de una empresa?",
+  "a": "**En la cuenta de distribución secundaria: es D.51 y reduce su renta disponible.** Y como las sociedades no tienen consumo final, esa reducción de renta disponible se traduce directamente en menos ahorro.",
+  "opciones": [
+   "En la cuenta de explotación, junto a los otros impuestos sobre la producción",
+   "En la cuenta de capital, como transferencia de capital",
+   "En la cuenta de producción, al valorar a precios básicos",
+   "En la cuenta de distribución secundaria: es D.51 y reduce su renta disponible"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "13.06#t3",
+  "codigo": "13.06",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Impuestos corrientes sobre la renta y el patrimonio (D.5)",
+  "q": "Un hogar paga a lo largo del año IRPF, IVA en sus compras, el IBI de su vivienda y un impuesto de sucesiones. ¿Cuántos de ellos reducen su renta disponible?",
+  "a": "**Solo uno: el IRPF.** El IVA ya estaba dentro del precio de lo que compró; el IBI de la vivienda propia es D.29 porque el propietario es productor de su alojamiento; y el de sucesiones es D.91, que vive en la cuenta de capital y solo reduce el patrimonio neto.",
+  "opciones": [
+   "Tres: todos menos el IVA",
+   "Los cuatro: todos son pagos obligatorios sin contrapartida",
+   "Ninguno: la renta disponible se calcula antes de impuestos",
+   "Solo uno: el IRPF"
+  ],
+  "correcta": 3
  },
  {
   "id": "13.07#0",
@@ -2542,6 +5614,70 @@ export default [
   "a": "No. Solo lo son las transferencias que cubren riesgos o necesidades socialmente reconocidos —vejez, enfermedad, desempleo, dependencia, familia, vivienda, exclusión— y una beca no cubre ninguno. Va a transferencias corrientes diversas o de capital según el caso. La lista de riesgos está fijada en el reglamento para que la frontera no dependa del criterio de cada país."
  },
  {
+  "id": "13.07#t0",
+  "codigo": "13.07",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Cotizaciones y prestaciones sociales (D.6) por dentro",
+  "q": "Un autónomo paga su cuota mensual a la Seguridad Social. ¿En qué partida se registra?",
+  "a": "**En D.613, con las cotizaciones efectivas a cargo de los hogares.** El autónomo cotiza como hogar, igual que el asalariado por su parte, y por eso comparten epígrafe.",
+  "opciones": [
+   "En D.611, junto a las cotizaciones que pagan los empleadores",
+   "No se registra como cotización: es un gasto de su actividad",
+   "En D.613, con las cotizaciones efectivas a cargo de los hogares",
+   "En D.612, por no haber empleador que la aporte"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "13.07#t1",
+  "codigo": "13.07",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Cotizaciones y prestaciones sociales (D.6) por dentro",
+  "q": "¿Qué separa el D.631 del D.632 dentro de las transferencias sociales en especie?",
+  "a": "**El D.631 son servicios que la administración produce y el D.632 bienes y servicios que compra en el mercado y entrega al hogar.** La sanidad prestada en un hospital público es D.631; los medicamentos con receta que el hogar retira en una farmacia privada y financia el sistema son D.632.",
+  "opciones": [
+   "El D.631 son servicios que la administración produce y el D.632 bienes y servicios que compra en el mercado y entrega al hogar",
+   "El D.631 lo entrega el Estado y el D.632 las comunidades autónomas",
+   "El D.631 son prestaciones sanitarias y el D.632 educativas",
+   "El D.631 se valora a precios de mercado y el D.632 por costes"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "13.07#t2",
+  "codigo": "13.07",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Cotizaciones y prestaciones sociales (D.6) por dentro",
+  "q": "Un gobierno concede una ayuda a la compra de vehículos eléctricos. ¿Es una prestación social?",
+  "a": "**No: las prestaciones sociales cubren riesgos socialmente reconocidos, y esta persigue un objetivo ambiental.** Vejez, enfermedad, desempleo, dependencia, familia, vivienda y exclusión son la lista. Una ayuda a la compra de un coche va a transferencias corrientes o de capital, según su finalidad.",
+  "opciones": [
+   "Sí, si se concede en función de la renta del solicitante",
+   "No: es una subvención a los productos, porque abarata un bien concreto",
+   "No: las prestaciones sociales cubren riesgos socialmente reconocidos, y esta persigue un objetivo ambiental",
+   "Sí: es una transferencia pública a los hogares"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "13.07#t3",
+  "codigo": "13.07",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "Cotizaciones y prestaciones sociales (D.6) por dentro",
+  "q": "En el ejemplo de la ficha se cotizan 10.905 € por un trabajador. ¿Cuánto de eso figura en su nómina?",
+  "a": "**Solo 1.905 €: los 9.000 € de cotización patronal no aparecen en ningún documento que el trabajador reciba.** Es la razón de que el debate sobre la carga fiscal del trabajo gire en torno al impuesto sobre la renta: la mayor de las dos cargas es literalmente invisible para quien la soporta.",
+  "opciones": [
+   "Solo 1.905 €: los 9.000 € de cotización patronal no aparecen en ningún documento que el trabajador reciba",
+   "La mitad, por el reparto legal entre empresa y trabajador",
+   "Nada: las cotizaciones se liquidan al margen de la nómina",
+   "Los 10.905 €, desglosados entre las dos partes"
+  ],
+  "correcta": 0
+ },
+ {
   "id": "13.08#0",
   "codigo": "13.08",
   "bloque": 13,
@@ -2594,6 +5730,70 @@ export default [
   "titulo": "La formación de capital (P.5): activos fijos, existencias y objetos valiosos",
   "q": "¿Qué dos categorías de activo fijo incorporó el SEC 2010 y qué efecto tuvieron?",
   "a": "Los productos de propiedad intelectual, sobre todo la I+D y el software, y los sistemas de armamento. Ambas elevaron el nivel del PIB, porque lo que antes se restaba como consumo intermedio pasó a contarse como inversión. La lógica es la misma en los dos casos: prestan servicio durante años, así que no se consumen en el período."
+ },
+ {
+  "id": "13.08#t0",
+  "codigo": "13.08",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La formación de capital (P.5): activos fijos, existencias y objetos valiosos",
+  "q": "Una empresa compra un solar por 900.000 € y paga 60.000 € de gastos de notaría, registro e impuestos de transmisión. ¿Qué parte es formación de capital?",
+  "a": "**Solo los 60.000 € de costes de transmisión: el terreno no lo ha producido nadie.** El criterio de la formación de capital es que exista un activo producido. El suelo estaba ahí antes que nadie; los servicios jurídicos y registrales, no.",
+  "opciones": [
+   "Los 960.000 €: es una inversión en toda regla",
+   "Solo los 60.000 € de costes de transmisión: el terreno no lo ha producido nadie",
+   "Nada: la compra de terrenos no es formación de capital en ningún caso",
+   "Los 900.000 € del solar; los gastos son consumo intermedio"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "13.08#t1",
+  "codigo": "13.08",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La formación de capital (P.5): activos fijos, existencias y objetos valiosos",
+  "q": "¿Se deprecia un cuadro registrado como objeto valioso?",
+  "a": "**No: se adquiere como depósito de valor, no presta servicios productivos y no genera consumo de capital fijo.** Un cuadro comprado hace treinta años sigue valiendo lo mismo en las cuentas que el día que se adquirió, corregido por revalorizaciones, que van por otra vía.",
+  "opciones": [
+   "Sí, si está expuesto en las oficinas de la empresa",
+   "Depende de si su valor de mercado sube o baja",
+   "Sí, con una vida útil larga fijada por convención",
+   "No: se adquiere como depósito de valor, no presta servicios productivos y no genera consumo de capital fijo"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "13.08#t2",
+  "codigo": "13.08",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La formación de capital (P.5): activos fijos, existencias y objetos valiosos",
+  "q": "La variación de existencias explica buena parte del crecimiento de un trimestre. ¿Qué conviene tener en cuenta antes de construir un relato?",
+  "a": "**Que es la partida más revisada del sistema y a menudo actúa como cierre residual del equilibrio entre oferta y empleos.** Una parte de lo que se atribuye a las existencias en la primera estimación es sencillamente lo que no ha cuadrado por otro sitio, y suele desaparecer en revisiones posteriores.",
+  "opciones": [
+   "Que las administraciones públicas no tienen existencias",
+   "Que solo recoge existencias de productos terminados",
+   "Que es la partida más revisada del sistema y a menudo actúa como cierre residual del equilibrio entre oferta y empleos",
+   "Que se mide a precios del año anterior y no es comparable con el resto"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "13.08#t3",
+  "codigo": "13.08",
+  "bloque": 13,
+  "nivel": 3,
+  "titulo": "La formación de capital (P.5): activos fijos, existencias y objetos valiosos",
+  "q": "¿Qué diferencia hay entre la formación bruta de capital fijo (P.51g) y la neta (P.51n)?",
+  "a": "**La neta descuenta el consumo de capital fijo, es decir, lo que se ha desgastado durante el ejercicio.** La neta dice cuánto crece de verdad el stock de capital: si una economía invierte justo lo que se le desgasta, su inversión neta es cero aunque la bruta sea enorme.",
+  "opciones": [
+   "La neta descuenta el consumo de capital fijo, es decir, lo que se ha desgastado durante el ejercicio",
+   "La neta excluye la inversión financiada con subvenciones",
+   "La bruta se mide a precios de adquisición y la neta a precios básicos",
+   "La bruta incluye los objetos valiosos y la neta no"
+  ],
+  "correcta": 0
  },
  {
   "id": "13.09#0",
@@ -2650,6 +5850,70 @@ export default [
   "a": "Que una operación puntual e irrepetible puede alterar el indicador con el que se vigila la política fiscal: Alemania pasó de déficit a superávit en un ejercicio y volvió al déficit al siguiente. La capacidad de financiación incluye la venta de patrimonio, que no es lo mismo que reducir el desequilibrio corriente. De ahí que hoy se usen saldos ajustados de operaciones puntuales y que las reglas de clasificación se endurecieran."
  },
  {
+  "id": "13.09#t0",
+  "codigo": "13.09",
+  "bloque": 13,
+  "nivel": 4,
+  "titulo": "Activos no producidos (NP): terrenos, espectro y derechos de emisión",
+  "q": "Una empresa aporta 524.000 € al PIB en la operación y necesita financiar 824.000 €. ¿Por qué difieren las dos cifras?",
+  "a": "**Porque el solar sale de su caja aunque no sea producción de nadie: el NP resta en la capacidad de financiación sin haber sumado en el producto.** Formación de capital y necesidad de financiación no son lo mismo: la segunda incluye la adquisición de activos que nadie ha producido.",
+  "opciones": [
+   "Porque la diferencia son impuestos que no forman parte del PIB",
+   "Porque el solar sale de su caja aunque no sea producción de nadie: el NP resta en la capacidad de financiación sin haber sumado en el producto",
+   "Porque el PIB se mide en devengo y la financiación en caja",
+   "Porque una parte de la inversión se financia con subvenciones"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "13.09#t1",
+  "codigo": "13.09",
+  "bloque": 13,
+  "nivel": 4,
+  "titulo": "Activos no producidos (NP): terrenos, espectro y derechos de emisión",
+  "q": "¿Cuándo aparece el fondo de comercio (AN.23) en las cuentas nacionales?",
+  "a": "**Solo cuando se materializa en una compraventa: alguien paga por encima del valor de los activos identificables.** Es un activo no producido precisamente porque nadie lo fabricó: emerge del precio pagado en una operación concreta.",
+  "opciones": [
+   "Cada año, a medida que la empresa consolida su posición de mercado",
+   "Cuando el auditor lo reconoce en las cuentas anuales",
+   "Solo cuando se materializa en una compraventa: alguien paga por encima del valor de los activos identificables",
+   "Nunca: el SEC no reconoce el fondo de comercio como activo"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "13.09#t2",
+  "codigo": "13.09",
+  "bloque": 13,
+  "nivel": 4,
+  "titulo": "Activos no producidos (NP): terrenos, espectro y derechos de emisión",
+  "q": "Un comerciante paga un traspaso para quedarse con el local de otro. ¿Qué adquiere en términos del SEC?",
+  "a": "**Un activo no producido de la familia AN.22: contratos, arrendamientos y licencias.** El derecho a ocupar ese local en esas condiciones tiene valor, da beneficios y no ha salido de ninguna producción.",
+  "opciones": [
+   "Un activo financiero, al tratarse de un derecho contractual",
+   "Un activo no producido de la familia AN.22: contratos, arrendamientos y licencias",
+   "Un activo fijo, porque le permitirá producir durante años",
+   "Un consumo intermedio del ejercicio"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "13.09#t3",
+  "codigo": "13.09",
+  "bloque": 13,
+  "nivel": 4,
+  "titulo": "Activos no producidos (NP): terrenos, espectro y derechos de emisión",
+  "q": "¿Es el subsuelo con reservas de gas un activo en las cuentas nacionales?",
+  "a": "**Sí: es un recurso natural (AN.21), un activo no producido con valor económico.** Da beneficios a su propietario y no salió de una producción: son las dos condiciones que definen un activo no producido.",
+  "opciones": [
+   "No, hasta que el gas se extrae y se vende",
+   "No: solo son activos las cosas que alguien ha producido",
+   "Sí: es un recurso natural (AN.21), un activo no producido con valor económico",
+   "Sí, como existencias del sector energético"
+  ],
+  "correcta": 2
+ },
+ {
   "id": "13.10#0",
   "codigo": "13.10",
   "bloque": 13,
@@ -2702,6 +5966,70 @@ export default [
   "titulo": "Balances, revalorizaciones y consumo de capital fijo",
   "q": "¿Por qué las cuentas de flujos no advierten de una burbuja y los balances sí?",
   "a": "Porque durante un auge de precios de activos el PIB, la renta y el consumo pueden crecer con normalidad mientras el patrimonio se infla por revalorización, que no produce nada. La señal es la proporción entre K.7 y ahorro neto: cuando la revalorización aporta más que el ahorro, el enriquecimiento descansa sobre precios que pueden bajar."
+ },
+ {
+  "id": "13.10#t0",
+  "codigo": "13.10",
+  "bloque": 13,
+  "nivel": 4,
+  "titulo": "Balances, revalorizaciones y consumo de capital fijo",
+  "q": "Un incendio destruye una fábrica. ¿Por qué vía recoge el sistema esa pérdida de patrimonio?",
+  "a": "**Por otras variaciones del volumen de activos (B.10.2), junto a hallazgos, catástrofes y reclasificaciones.** Es la vía que recoge lo que cambia el patrimonio sin ser ni ahorro ni cambio de precio: el activo sencillamente deja de existir.",
+  "opciones": [
+   "Como una revalorización negativa (B.10.3)",
+   "Por otras variaciones del volumen de activos (B.10.2), junto a hallazgos, catástrofes y reclasificaciones",
+   "Como formación de capital fijo negativa en la cuenta de capital",
+   "Como consumo de capital fijo del ejercicio (K.1)"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "13.10#t1",
+  "codigo": "13.10",
+  "bloque": 13,
+  "nivel": 4,
+  "titulo": "Balances, revalorizaciones y consumo de capital fijo",
+  "q": "Un piso sube un 10 % en un año en el que el nivel general de precios sube un 3 %. ¿Qué parte de la ganancia enriquece realmente a su propietario?",
+  "a": "**Solo la parte que excede al 3 %: el resto es ganancia neutral y solo mantiene su poder de compra.** El sistema separa la ganancia neutral, que solo sigue al nivel general, de la real, que refleja un cambio de precio relativo. Confundirlas infla enormemente la sensación de enriquecimiento en periodos de inflación alta.",
+  "opciones": [
+   "Solo la parte que excede al 3 %: el resto es ganancia neutral y solo mantiene su poder de compra",
+   "El 3 %, que es la parte cierta y no especulativa",
+   "El 10 % completo: es lo que ha subido su patrimonio",
+   "Nada: las ganancias por tenencia no son renta"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "13.10#t2",
+  "codigo": "13.10",
+  "bloque": 13,
+  "nivel": 4,
+  "titulo": "Balances, revalorizaciones y consumo de capital fijo",
+  "q": "El precio de la vivienda sube un 15 % en un año. ¿Qué agregados de las cuentas nacionales lo recogen?",
+  "a": "**Ninguno de los grandes agregados de flujo: aparece en los balances, por la vía de la revalorización.** Por eso durante un auge de precios de activos las cuentas de flujos pueden ir con normalidad mientras el patrimonio se infla: la señal está en los balances, no en el PIB.",
+  "opciones": [
+   "La renta nacional y el ahorro de los hogares",
+   "El consumo, a través de los alquileres imputados",
+   "El PIB, porque aumenta el valor de la producción inmobiliaria",
+   "Ninguno de los grandes agregados de flujo: aparece en los balances, por la vía de la revalorización"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "13.10#t3",
+  "codigo": "13.10",
+  "bloque": 13,
+  "nivel": 4,
+  "titulo": "Balances, revalorizaciones y consumo de capital fijo",
+  "q": "Al sumar el patrimonio neto de todos los sectores residentes de un país, ¿qué queda?",
+  "a": "**Los activos no financieros más la posición financiera neta frente al resto del mundo.** Los activos financieros entre residentes se cancelan: el activo de uno es el pasivo de otro. Lo que sobrevive es lo real y lo que se tiene frente a fuera.",
+  "opciones": [
+   "El PIB acumulado desde que existen las cuentas nacionales",
+   "El valor de los activos financieros, que son los que tienen precio de mercado",
+   "La suma de todos los activos, financieros y no financieros, del país",
+   "Los activos no financieros más la posición financiera neta frente al resto del mundo"
+  ],
+  "correcta": 3
  },
  {
   "id": "14.01#0",
@@ -2758,6 +6086,70 @@ export default [
   "a": "Una asimetría de información. Sin él, cada contraparte tendría que verificar por su cuenta y en cada operación quién representa a una sociedad y hasta dónde llega su poder. El Registro convierte ese coste privado y repetido en uno público y único, y por esa vía abarata el crédito comercial y permite contratar con desconocidos."
  },
  {
+  "id": "14.01#t0",
+  "codigo": "14.01",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "El empresario, las fuentes del derecho mercantil y el Registro Mercantil",
+  "q": "Un conflicto mercantil no está regulado por ninguna ley mercantil. ¿A qué se acude?",
+  "a": "**A los usos del comercio, y solo después al derecho civil.** El derecho mercantil nació de los usos de los comerciantes medievales y conserva de aquel origen que la costumbre profesional preceda al derecho común.",
+  "opciones": [
+   "Directamente al derecho civil, que es el derecho común",
+   "A la analogía con otra ley mercantil que regule un supuesto parecido",
+   "A la jurisprudencia mercantil, que tiene rango de fuente",
+   "A los usos del comercio, y solo después al derecho civil"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "14.01#t1",
+  "codigo": "14.01",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "El empresario, las fuentes del derecho mercantil y el Registro Mercantil",
+  "q": "Dos socios firman la escritura de constitución de una sociedad limitada ante notario y aún no la han inscrito. ¿Existe la sociedad?",
+  "a": "**No como sociedad limitada: la inscripción es constitutiva y hasta entonces hay una sociedad en formación con otro régimen de responsabilidad.** Es el contraste con el empresario individual, para quien la inscripción es potestativa. Tratar la inscripción como un trámite uniforme oculta esa diferencia esencial.",
+  "opciones": [
+   "No existe nada hasta la inscripción: los actos realizados antes son nulos",
+   "Sí, pero solo frente a los socios, no frente a terceros",
+   "No como sociedad limitada: la inscripción es constitutiva y hasta entonces hay una sociedad en formación con otro régimen de responsabilidad",
+   "Sí: la escritura pública basta para que nazca la persona jurídica"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "14.01#t2",
+  "codigo": "14.01",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "El empresario, las fuentes del derecho mercantil y el Registro Mercantil",
+  "q": "¿Cómo está organizado el Registro Mercantil?",
+  "a": "**Por sujetos: cada empresario o sociedad tiene su hoja.** Aquí lo que interesa es quién es cada operador y qué le afecta: administradores, poderes, cuentas, modificaciones estructurales.",
+  "opciones": [
+   "Por sujetos: cada empresario o sociedad tiene su hoja",
+   "Por bienes, como el Registro de la Propiedad",
+   "Por fecha de constitución",
+   "Por sectores de actividad económica"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "14.01#t3",
+  "codigo": "14.01",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "El empresario, las fuentes del derecho mercantil y el Registro Mercantil",
+  "q": "Un asiento del Registro Mercantil resulta ser inexacto. ¿Queda protegido quien contrató confiando en él?",
+  "a": "**Sí: por el principio de fe pública, el tercero de buena fe queda protegido aunque el asiento fuese inexacto.** El Registro no informa: garantiza. Junto al principio de legitimación —el contenido se presume exacto mientras no se declare lo contrario— es lo que hace que contratar con un desconocido sea viable.",
+  "opciones": [
+   "No: la inexactitud invalida el asiento desde el origen",
+   "No, salvo que la inexactitud fuera imputable a la propia sociedad",
+   "Solo si consigue demostrar que hizo comprobaciones adicionales",
+   "Sí: por el principio de fe pública, el tercero de buena fe queda protegido aunque el asiento fuese inexacto"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "14.02#0",
   "codigo": "14.02",
   "bloque": 14,
@@ -2810,6 +6202,70 @@ export default [
   "titulo": "Formas jurídicas: autónomo, sociedad limitada, anónima y cooperativa",
   "q": "Una sociedad anónima de titularidad pública que no cubre costes con sus ventas, ¿en qué sector del SEC está?",
   "a": "En administraciones públicas (S.13), no en sociedades no financieras. El SEC clasifica por el criterio del 50 % de cobertura de costes con ventas y por el control, no por la forma jurídica, y por eso su deuda computa como deuda pública pese a ser una sociedad mercantil."
+ },
+ {
+  "id": "14.02#t0",
+  "codigo": "14.02",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Formas jurídicas: autónomo, sociedad limitada, anónima y cooperativa",
+  "q": "Un autónomo contrae deudas con proveedores de su negocio. ¿Con qué responde?",
+  "a": "**Con todo su patrimonio, presente y futuro, incluida su vivienda.** Es la diferencia de fondo con la sociedad, y pesa mucho más que cualquier cálculo fiscal. La elección real es entre ser la empresa o participar en otra persona distinta de uno.",
+  "opciones": [
+   "Hasta el límite del capital que declaró al darse de alta",
+   "Con su patrimonio personal solo si actuó con negligencia",
+   "Con todo su patrimonio, presente y futuro, incluida su vivienda",
+   "Solo con los bienes afectos a la actividad"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "14.02#t1",
+  "codigo": "14.02",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Formas jurídicas: autónomo, sociedad limitada, anónima y cooperativa",
+  "q": "¿Qué diferencia hay entre las participaciones de una limitada y las acciones de una anónima?",
+  "a": "**Las participaciones no son libremente transmisibles y las acciones sí.** La limitada es una sociedad cerrada: la ley presume que a los socios les importa con quién comparten empresa. La anónima nació para reunir capital de desconocidos.",
+  "opciones": [
+   "Las participaciones exigen escritura pública y las acciones no",
+   "Las participaciones dan derecho a voto y las acciones solo a dividendo",
+   "Las participaciones no son libremente transmisibles y las acciones sí",
+   "Ninguna sustancial: son dos nombres para la parte alícuota del capital"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "14.02#t2",
+  "codigo": "14.02",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Formas jurídicas: autónomo, sociedad limitada, anónima y cooperativa",
+  "q": "¿Cuánto capital hay que desembolsar para constituir una sociedad anónima?",
+  "a": "**15.000 €: el 25 % del capital mínimo de 60.000 €.** Suscribir y desembolsar son cosas distintas: el socio se compromete por el total y aporta de entrada una parte.",
+  "opciones": [
+   "3.000 €, igual que la limitada antes de la reforma",
+   "15.000 €: el 25 % del capital mínimo de 60.000 €",
+   "Un euro, como en la limitada",
+   "Los 60.000 € íntegros en el momento de la constitución"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "14.02#t3",
+  "codigo": "14.02",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Formas jurídicas: autónomo, sociedad limitada, anónima y cooperativa",
+  "q": "¿Cómo se reparte el excedente en una cooperativa?",
+  "a": "**Según la actividad que cada socio haya realizado con la cooperativa.** Se es socio por participar en la actividad, no por poner dinero, y el reparto sigue esa misma lógica. Verla como una sociedad con ventajas fiscales pierde de vista lo esencial.",
+  "opciones": [
+   "Según la actividad que cada socio haya realizado con la cooperativa",
+   "A partes iguales entre todos los socios",
+   "Se reinvierte íntegramente: las cooperativas no reparten",
+   "En proporción al capital aportado, como en cualquier sociedad"
+  ],
+  "correcta": 0
  },
  {
   "id": "14.03#0",
@@ -2866,6 +6322,70 @@ export default [
   "a": "Porque el capital mínimo nunca los protegió bien: una cifra fija ni se ajusta al riesgo ni impide que se consuma el primer año. Y porque el colchón se trasladó en el tiempo mediante la reserva del 20 %, mientras se reforzaban la transparencia contable, los deberes de los administradores y un concurso que se active pronto."
  },
  {
+  "id": "14.03#t0",
+  "codigo": "14.03",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Capital social, aportaciones y el alcance de la responsabilidad limitada",
+  "q": "Una sociedad con 50.000 € de capital tiene un patrimonio neto de 55.000 € y obtiene 8.000 € de beneficio. ¿Cuánto puede repartir?",
+  "a": "**Como máximo 5.000 €: tras el reparto el patrimonio neto no puede quedar por debajo de la cifra de capital.** Esa es la función del capital social: marca cuánto patrimonio queda retenido y no puede salir hacia los socios.",
+  "opciones": [
+   "Nada, mientras el patrimonio neto no duplique el capital",
+   "Como máximo 5.000 €: tras el reparto el patrimonio neto no puede quedar por debajo de la cifra de capital",
+   "Los 55.000 € del patrimonio neto, descontada la reserva legal",
+   "Los 8.000 € del beneficio del ejercicio"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "14.03#t1",
+  "codigo": "14.03",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Capital social, aportaciones y el alcance de la responsabilidad limitada",
+  "q": "Un socio paga sus gastos personales con la cuenta de la sociedad durante años. ¿Qué riesgo corre?",
+  "a": "**Que se levante el velo por confusión de patrimonios y responda personalmente de las deudas sociales.** El levantamiento del velo no es una rareza doctrinal: es jurisprudencia constante, y su presupuesto habitual es exactamente este. Quien no distingue dos patrimonios difícilmente puede pedir al juez que los distinga.",
+  "opciones": [
+   "La nulidad de la sociedad desde su constitución",
+   "Ninguno frente a terceros: es un problema fiscal suyo",
+   "Que se levante el velo por confusión de patrimonios y responda personalmente de las deudas sociales",
+   "Una sanción administrativa por llevar contabilidad desordenada"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "14.03#t2",
+  "codigo": "14.03",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Capital social, aportaciones y el alcance de la responsabilidad limitada",
+  "q": "¿Hasta dónde responde la sociedad de sus propias deudas?",
+  "a": "**Con todo su patrimonio: la limitación afecta al socio, no a la sociedad.** Es la confusión más extendida sobre el nombre «limitada»: lo que está limitado es lo que arriesga el socio, es decir, lo que aportó.",
+  "opciones": [
+   "Hasta el importe de su capital social",
+   "Hasta el importe de su patrimonio neto",
+   "Hasta el capital desembolsado, no el suscrito",
+   "Con todo su patrimonio: la limitación afecta al socio, no a la sociedad"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "14.03#t3",
+  "codigo": "14.03",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Capital social, aportaciones y el alcance de la responsabilidad limitada",
+  "q": "Una sociedad acumula pérdidas que dejan el patrimonio neto muy por debajo de la mitad del capital, y su administrador no convoca junta ni promueve la disolución. ¿Qué consecuencia tiene?",
+  "a": "**El administrador puede acabar respondiendo personalmente de las deudas sociales posteriores.** Es una de las grietas prácticas de la responsabilidad limitada: administrar mal la abre por sí solo, sin necesidad de aval ni de fraude.",
+  "opciones": [
+   "Los socios pierden su derecho de voto hasta restablecer el equilibrio",
+   "La sociedad se disuelve automáticamente por ministerio de la ley",
+   "El administrador puede acabar respondiendo personalmente de las deudas sociales posteriores",
+   "Ninguna hasta que un acreedor solicite el concurso"
+  ],
+  "correcta": 2
+ },
+ {
   "id": "14.04#0",
   "codigo": "14.04",
   "bloque": 14,
@@ -2918,6 +6438,70 @@ export default [
   "titulo": "Junta general y órgano de administración: quién decide qué",
   "q": "¿Cuál es el conflicto de agencia dominante en la empresa española y con qué herramientas se aborda?",
   "a": "No el clásico entre propiedad dispersa y gestor profesional, sino el que enfrenta a mayoría y minoría, porque el capital está concentrado y quien controla administra. Las herramientas propias son el deber de abstención en conflicto de interés, el régimen de operaciones vinculadas, la impugnación de acuerdos abusivos y el derecho de separación por falta de dividendos."
+ },
+ {
+  "id": "14.04#t0",
+  "codigo": "14.04",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Junta general y órgano de administración: quién decide qué",
+  "q": "Los socios de una limitada quieren imponer al administrador a qué proveedor comprar. ¿Pueden?",
+  "a": "**No: la junta decide lo esencial y lo estructural, no cómo se administra, salvo que los estatutos prevean instrucciones o autorizaciones.** El reparto es la frontera que ordena todo el gobierno de la sociedad. Y aunque la junta imparta instrucciones, el administrador sigue vinculando a la sociedad frente a terceros.",
+  "opciones": [
+   "No: la junta decide lo esencial y lo estructural, no cómo se administra, salvo que los estatutos prevean instrucciones o autorizaciones",
+   "No: ni siquiera los estatutos pueden atribuir a la junta ninguna intervención en la gestión",
+   "Sí, si el acuerdo se adopta por mayoría reforzada",
+   "Sí: la junta es el órgano soberano y puede decidir sobre cualquier materia"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "14.04#t1",
+  "codigo": "14.04",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Junta general y órgano de administración: quién decide qué",
+  "q": "¿Qué es una junta universal?",
+  "a": "**La que se celebra con todo el capital presente y con acuerdo unánime sobre el orden del día, sin necesidad de convocatoria previa.** Es lo que permite a las sociedades pequeñas funcionar sin el aparato formal de las convocatorias: si están todos y todos aceptan tratar los asuntos, la junta es válida.",
+  "opciones": [
+   "La que se celebra con todo el capital presente y con acuerdo unánime sobre el orden del día, sin necesidad de convocatoria previa",
+   "La que adopta acuerdos por unanimidad de los asistentes",
+   "La junta ordinaria anual, por ser obligatoria para todas las sociedades",
+   "La convocada por el registrador mercantil a instancia de un socio minoritario"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "14.04#t2",
+  "codigo": "14.04",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Junta general y órgano de administración: quién decide qué",
+  "q": "¿Cómo se calculan las mayorías en la junta de una limitada y en la de una anónima?",
+  "a": "**En la limitada por votos correspondientes a las participaciones y en la anónima por capital.** Es un matiz que rara vez se recuerda y que puede cambiar el resultado de una votación cuando existen participaciones con voto plural o privilegios.",
+  "opciones": [
+   "En la limitada por votos correspondientes a las participaciones y en la anónima por capital",
+   "En ambas por número de socios, un socio un voto",
+   "En la limitada por capital y en la anónima por votos",
+   "En ambas por capital presente en la reunión"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "14.04#t3",
+  "codigo": "14.04",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Junta general y órgano de administración: quién decide qué",
+  "q": "Una sociedad nombra dos administradores mancomunados. ¿Qué significa?",
+  "a": "**Que deben actuar conjuntamente para vincular a la sociedad.** Da más control y menos agilidad: cualquier contrato exige la firma de los dos, y un desacuerdo entre ellos bloquea a la sociedad.",
+  "opciones": [
+   "Que se turnan en el cargo por periodos alternos",
+   "Que deben actuar conjuntamente para vincular a la sociedad",
+   "Que forman un consejo de administración de dos miembros",
+   "Que cada uno puede actuar por separado y vincular a la sociedad"
+  ],
+  "correcta": 1
  },
  {
   "id": "14.05#0",
@@ -2974,6 +6558,70 @@ export default [
   "a": "El nombrado e inscrito y también el administrador de hecho: quien ejerce las funciones sin título, con título caducado, o quien imparte las instrucciones que los administradores formales se limitan a ejecutar. La figura existe para impedir gobernar detrás de un testaferro, y los tribunales atienden a quién decide, no al Registro."
  },
  {
+  "id": "14.05#t0",
+  "codigo": "14.05",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Deberes y responsabilidad de los administradores",
+  "q": "Un administrador causa un daño al patrimonio de la sociedad. Un socio quiere reclamar. ¿Qué acción corresponde y a dónde va lo recuperado?",
+  "a": "**La acción social: repara el daño a la sociedad y lo recuperado entra en la caja social.** El socio puede ejercitarla en ciertos casos, y lo que obtenga no es suyo: repone el patrimonio de la sociedad, y él se beneficia indirectamente como socio.",
+  "opciones": [
+   "Cualquiera de las dos, y el socio elige el destino de lo recuperado",
+   "La acción individual, y lo recuperado va al socio que la ejercita",
+   "La acción individual, y lo recuperado se reparte entre todos los socios",
+   "La acción social: repara el daño a la sociedad y lo recuperado entra en la caja social"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "14.05#t1",
+  "codigo": "14.05",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Deberes y responsabilidad de los administradores",
+  "q": "Un administrador conoce una oportunidad de negocio por su cargo y la aprovecha personalmente. ¿Qué consecuencias tiene?",
+  "a": "**Debe indemnizar el daño causado, y además devolver el enriquecimiento obtenido.** Es la particularidad de la lealtad frente a la diligencia: no basta con reparar, hay que restituir lo ganado, aunque la sociedad no pueda cuantificar un daño equivalente.",
+  "opciones": [
+   "Debe cesar en el cargo, sin consecuencias patrimoniales",
+   "Ninguna, si la sociedad no tenía capacidad financiera para acometerla",
+   "Debe indemnizar el daño causado, y además devolver el enriquecimiento obtenido",
+   "Solo debe indemnizar el daño, si la sociedad prueba que lo ha sufrido"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "14.05#t2",
+  "codigo": "14.05",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Deberes y responsabilidad de los administradores",
+  "q": "¿Cubre la protección de la discrecionalidad empresarial el no haber depositado las cuentas?",
+  "a": "**No: solo ampara decisiones estratégicas y de negocio sujetas a apreciación, no las omisiones formales.** No convocar la junta, no formular o no depositar las cuentas y no promover la disolución quedan fuera de la protección: no son decisiones, son incumplimientos.",
+  "opciones": [
+   "No: solo ampara decisiones estratégicas y de negocio sujetas a apreciación, no las omisiones formales",
+   "Sí: es una decisión de gestión como cualquier otra",
+   "No, salvo que la sociedad careciera de medios para elaborarlas",
+   "Sí, si el administrador actuó de buena fe y sin interés personal"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "14.05#t3",
+  "codigo": "14.05",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Deberes y responsabilidad de los administradores",
+  "q": "¿Qué distingue el deber de diligencia del de lealtad en cuanto a su régimen?",
+  "a": "**La diligencia es modulable por los estatutos y la lealtad es imperativa.** El estándar de diligencia admite adaptarse a la naturaleza del cargo y a la sociedad; la lealtad no se puede rebajar por pacto.",
+  "opciones": [
+   "La diligencia es modulable por los estatutos y la lealtad es imperativa",
+   "La lealtad solo obliga a los consejeros y la diligencia a todos los administradores",
+   "Ambos son imperativos y no admiten modulación",
+   "La diligencia se exige a los administradores y la lealtad a los socios de control"
+  ],
+  "correcta": 0
+ },
+ {
   "id": "14.06#0",
   "codigo": "14.06",
   "bloque": 14,
@@ -3026,6 +6674,70 @@ export default [
   "titulo": "Cuentas anuales: formulación, aprobación, depósito y auditoría",
   "q": "¿Qué relación hay entre el depósito de cuentas y el PIB del sector sociedades?",
   "a": "Directa: las cuentas depositadas por cientos de miles de sociedades, normalizadas por un mismo plan contable, son la materia prima de la Central de Balances y de la estimación del sector sociedades no financieras en contabilidad nacional. Una obligación pensada para proteger acreedores acabó siendo infraestructura estadística."
+ },
+ {
+  "id": "14.06#t0",
+  "codigo": "14.06",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Cuentas anuales: formulación, aprobación, depósito y auditoría",
+  "q": "La junta aprueba las cuentas anuales en junio. ¿Queda cumplida la obligación?",
+  "a": "**No: aprobar y depositar son actos distintos, de órganos distintos y con plazos distintos; queda un mes para el depósito.** La junta aprueba dentro de los seis primeros meses y el depósito se presenta en el Registro Mercantil en el mes siguiente a la aprobación.",
+  "opciones": [
+   "Sí, si la sociedad no está obligada a auditarse",
+   "Sí: la aprobación es el acto que cierra el ciclo",
+   "No: falta además la formulación, que se hace después de aprobar",
+   "No: aprobar y depositar son actos distintos, de órganos distintos y con plazos distintos; queda un mes para el depósito"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "14.06#t1",
+  "codigo": "14.06",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Cuentas anuales: formulación, aprobación, depósito y auditoría",
+  "q": "Una sociedad lleva más de un año sin depositar sus cuentas. ¿Qué le ocurre?",
+  "a": "**Se le cierra la hoja registral, y además queda fuera del crédito bancario, de los concursos públicos y de casi toda homologación de proveedores.** El cierre impide inscribir casi cualquier acto —nombramientos, poderes, modificaciones— y la ausencia de cuentas públicas cierra por sí sola muchas puertas comerciales.",
+  "opciones": [
+   "Se disuelve de pleno derecho",
+   "Una multa proporcional a su cifra de negocios, sin más efectos",
+   "Nada mientras no reciba un requerimiento del Registro",
+   "Se le cierra la hoja registral, y además queda fuera del crédito bancario, de los concursos públicos y de casi toda homologación de proveedores"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "14.06#t2",
+  "codigo": "14.06",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Cuentas anuales: formulación, aprobación, depósito y auditoría",
+  "q": "¿Quién formula las cuentas anuales y en qué plazo?",
+  "a": "**Los administradores, dentro de los tres meses siguientes al cierre del ejercicio.** Es competencia indelegable suya, y de ahí que respondan de su contenido: el plazo empieza a correr con el cierre del ejercicio, no con la convocatoria de la junta.",
+  "opciones": [
+   "El asesor contable, sin plazo legal específico",
+   "El auditor, antes de emitir su informe",
+   "Los administradores, dentro de los tres meses siguientes al cierre del ejercicio",
+   "La junta general, dentro de los seis primeros meses"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "14.06#t3",
+  "codigo": "14.06",
+  "bloque": 14,
+  "nivel": 2,
+  "titulo": "Cuentas anuales: formulación, aprobación, depósito y auditoría",
+  "q": "Los umbrales que obligan a auditar han cambiado varias veces. ¿Qué conviene retener?",
+  "a": "**El mecanismo: superar dos de los tres límites —activo, cifra de negocios y empleados— durante dos ejercicios consecutivos.** Las cifras hay que consultarlas; la estructura de la regla es lo que permite saber qué comprobar y en qué años.",
+  "opciones": [
+   "Que solo se aplican a las sociedades anónimas",
+   "Las cifras vigentes, que llevan estables más de una década",
+   "Que la obligación depende únicamente de la cifra de negocios",
+   "El mecanismo: superar dos de los tres límites —activo, cifra de negocios y empleados— durante dos ejercicios consecutivos"
+  ],
+  "correcta": 3
  },
  {
   "id": "14.07#0",
@@ -3082,6 +6794,70 @@ export default [
   "a": "Porque es un contrato distinto entre el banco y la persona física, que la sociedad no cubre. La responsabilidad limitada regula quién responde de las deudas de la sociedad, no impide que el socio contraiga una deuda propia garantizándolas. Quien tiene poder de negociación exige el aval; quien no lo tiene se queda con la protección legal."
  },
  {
+  "id": "14.07#t0",
+  "codigo": "14.07",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Contratos mercantiles, garantías y el arrendamiento financiero",
+  "q": "Una empresa rescinde el contrato de su agente comercial, que durante años le ha creado una cartera de clientes. ¿Le debe algo por ello?",
+  "a": "**Sí: la indemnización por clientela, propia del contrato de agencia.** Es el rasgo característico de la agencia: el agente ha construido una clientela que sigue produciendo ingresos a quien le encargó promoverla.",
+  "opciones": [
+   "Sí, pero únicamente si la rescisión carece de causa",
+   "Sí: la indemnización por clientela, propia del contrato de agencia",
+   "Solo si el contrato la había pactado expresamente",
+   "No: la rescisión con preaviso extingue la relación sin más consecuencias"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "14.07#t1",
+  "codigo": "14.07",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Contratos mercantiles, garantías y el arrendamiento financiero",
+  "q": "¿Qué diferencia hay entre una fianza y un aval a primer requerimiento?",
+  "a": "**El aval a primer requerimiento obliga a pagar sin poder oponer las excepciones del contrato garantizado.** El fiador puede discutir si la deuda existe o si el acreedor cumplió; el avalista a primer requerimiento paga y discute después. La diferencia práctica es enorme para quien firma.",
+  "opciones": [
+   "La fianza es una garantía real y el aval una personal",
+   "La fianza es siempre bancaria y el aval puede darlo un particular",
+   "El aval a primer requerimiento solo cubre el principal, y la fianza también los intereses",
+   "El aval a primer requerimiento obliga a pagar sin poder oponer las excepciones del contrato garantizado"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "14.07#t2",
+  "codigo": "14.07",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Contratos mercantiles, garantías y el arrendamiento financiero",
+  "q": "Una empresa activa en su balance la máquina que tiene en leasing. ¿Puede venderla?",
+  "a": "**No: jurídicamente el propietario sigue siendo el arrendador hasta que se ejercita la opción de compra.** Es el error simétrico al de no activar el bien: el arrendador puede recuperarlo si no se paga, y en un concurso separarlo de la masa.",
+  "opciones": [
+   "Sí, si ya ha pagado más de la mitad de las cuotas",
+   "Sí, comunicándolo previamente al arrendador",
+   "No: jurídicamente el propietario sigue siendo el arrendador hasta que se ejercita la opción de compra",
+   "Sí: si figura en su balance, es suya a todos los efectos"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "14.07#t3",
+  "codigo": "14.07",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Contratos mercantiles, garantías y el arrendamiento financiero",
+  "q": "¿En qué dirección se especializa el derecho mercantil respecto del civil en materia de contratos?",
+  "a": "**Hacia más rapidez y certeza en el tráfico, y menos tutela del deudor.** Presume profesionalidad en ambas partes: quien contrata en el tráfico de empresa sabe lo que hace, y por eso el sistema prima la agilidad.",
+  "opciones": [
+   "Hacia una mayor exigencia de forma escrita y solemne",
+   "Hacia más protección del contratante débil, como en el derecho de consumo",
+   "Hacia plazos de prescripción más largos, para dar seguridad",
+   "Hacia más rapidez y certeza en el tráfico, y menos tutela del deudor"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "14.08#0",
   "codigo": "14.08",
   "bloque": 14,
@@ -3134,6 +6910,70 @@ export default [
   "titulo": "El contrato de trabajo: modalidades, extinción y negociación colectiva",
   "q": "¿Qué tiene de singular la eficacia de un convenio colectivo?",
   "a": "Que es normativa y general: obliga a todas las empresas y trabajadores de su ámbito, hayan negociado o no, funcionando como una norma y no como un contrato. Y opera como suelo y no como techo, dentro de una estructura escalonada en la que cada nivel puede mejorar al anterior pero nunca empeorarlo."
+ },
+ {
+  "id": "14.08#t0",
+  "codigo": "14.08",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "El contrato de trabajo: modalidades, extinción y negociación colectiva",
+  "q": "¿Es el despido objetivo una salida barata y sin riesgo para la empresa?",
+  "a": "**No: exige causa acreditada, carta con los hechos, preaviso e indemnización a disposición en el mismo acto, y cualquier fallo lo convierte en improcedente.** Si la causa no se prueba o hay defectos formales, se declara improcedente y la indemnización pasa de veinte a treinta y tres días por año.",
+  "opciones": [
+   "No, porque su indemnización es idéntica a la del improcedente",
+   "Sí, si se pacta con el trabajador antes de comunicarlo",
+   "No: exige causa acreditada, carta con los hechos, preaviso e indemnización a disposición en el mismo acto, y cualquier fallo lo convierte en improcedente",
+   "Sí: veinte días por año es la indemnización más baja del sistema"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "14.08#t1",
+  "codigo": "14.08",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "El contrato de trabajo: modalidades, extinción y negociación colectiva",
+  "q": "Tras la reforma de 2021 la tasa de temporalidad cayó con fuerza. ¿Fue todo cambio real?",
+  "a": "**No: parte fue recomposición, al pasar a contarse como indefinidos fijo-discontinuos relaciones antes contadas como temporales.** El fijo-discontinuo es indefinido a efectos estadísticos y su relación con la empresa sigue siendo intermitente: la etiqueta cambió más que la situación.",
+  "opciones": [
+   "Sí, y el efecto se concentró en el sector público",
+   "No: parte fue recomposición, al pasar a contarse como indefinidos fijo-discontinuos relaciones antes contadas como temporales",
+   "Sí: los contratos temporales se convirtieron masivamente en indefinidos",
+   "No: la caída se debió a la destrucción de empleo temporal durante la pandemia"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "14.08#t2",
+  "codigo": "14.08",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "El contrato de trabajo: modalidades, extinción y negociación colectiva",
+  "q": "¿Cuál es la regla general sobre la duración del contrato de trabajo desde 2021?",
+  "a": "**Indefinido por defecto: la temporalidad exige una causa tasada, circunstancias de la producción o sustitución.** El cambio consistió en invertir la presunción: antes había que justificar la conversión y ahora hay que justificar la temporalidad.",
+  "opciones": [
+   "La libertad de las partes para elegir entre temporal e indefinido",
+   "Indefinido por defecto, salvo en empresas de menos de cincuenta trabajadores",
+   "Temporal por defecto, con conversión automática a los dos años",
+   "Indefinido por defecto: la temporalidad exige una causa tasada, circunstancias de la producción o sustitución"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "14.08#t3",
+  "codigo": "14.08",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "El contrato de trabajo: modalidades, extinción y negociación colectiva",
+  "q": "El convenio de sector fija un salario mínimo y el contrato individual pacta uno inferior. ¿Qué se aplica?",
+  "a": "**El del convenio: cada nivel puede mejorar al anterior, nunca empeorarlo.** Es el principio de norma mínima: convenio de sector, convenio de empresa y contrato se ordenan en cascada y cada escalón solo puede mejorar el anterior.",
+  "opciones": [
+   "El del contrato, si el trabajador lo firmó libremente y con información suficiente",
+   "El del contrato, porque es la voluntad concreta de las partes",
+   "El promedio de ambos, por aplicación del principio de equidad",
+   "El del convenio: cada nivel puede mejorar al anterior, nunca empeorarlo"
+  ],
+  "correcta": 3
  },
  {
   "id": "14.09#0",
@@ -3190,6 +7030,70 @@ export default [
   "a": "Como una otra variación del volumen de activos (K.5), no como una operación: nadie compra ni vende nada. Reduce el patrimonio del acreedor sin pasar por su renta ni por el PIB. La conversión de deuda en capital, en cambio, sí es una operación financiera: sustituye un AF.4 por un AF.5."
  },
  {
+  "id": "14.09#t0",
+  "codigo": "14.09",
+  "bloque": 14,
+  "nivel": 4,
+  "titulo": "Insolvencia: preconcurso, concurso y segunda oportunidad",
+  "q": "Un socio presta dinero a su propia sociedad, que después entra en concurso. ¿Dónde cobra?",
+  "a": "**El último: los créditos de socios significativos quedan subordinados.** Y cobrar el último, con los porcentajes habituales de recuperación en el concurso español, significa casi siempre no cobrar. Conviene saberlo antes de firmar, no después.",
+  "opciones": [
+   "El último: los créditos de socios significativos quedan subordinados",
+   "Antes que los ordinarios, si el préstamo se documentó en escritura pública",
+   "Como acreedor con privilegio general, por haber sostenido la empresa",
+   "Como acreedor ordinario, igual que cualquier prestamista"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "14.09#t1",
+  "codigo": "14.09",
+  "bloque": 14,
+  "nivel": 4,
+  "titulo": "Insolvencia: preconcurso, concurso y segunda oportunidad",
+  "q": "Una empresa en dificultades retrasa la solicitud de concurso esperando que mejore el negocio. ¿Qué efecto tiene la espera?",
+  "a": "**Destruye valor cada mes: se pierden proveedores, clientes, trabajadores clave y financiación.** Lo que llega tarde al juzgado no es una empresa en dificultades, sino un cascarón. Es la razón de fondo de que el concurso español liquide más de lo que salva.",
+  "opciones": [
+   "Destruye valor cada mes: se pierden proveedores, clientes, trabajadores clave y financiación",
+   "Mejora las opciones de convenio, al reducirse el pasivo con los pagos realizados",
+   "Ninguno relevante: el concurso ordena la situación igual de bien más tarde",
+   "Es neutral, siempre que se mantenga al corriente con Hacienda y la Seguridad Social"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "14.09#t2",
+  "codigo": "14.09",
+  "bloque": 14,
+  "nivel": 4,
+  "titulo": "Insolvencia: preconcurso, concurso y segunda oportunidad",
+  "q": "¿Qué relación hay entre no depositar las cuentas anuales y la calificación del concurso?",
+  "a": "**Es una presunción de concurso culpable, con posible inhabilitación y condena a cubrir el déficit.** Lo es igual que no llevar contabilidad o cometer irregularidades relevantes en ella. La consecuencia puede alcanzar al patrimonio personal del administrador.",
+  "opciones": [
+   "Solo agrava la sanción administrativa del Registro Mercantil",
+   "Es una presunción de concurso culpable, con posible inhabilitación y condena a cubrir el déficit",
+   "Impide solicitar el concurso hasta regularizar la situación registral",
+   "Ninguna: son obligaciones de ámbitos distintos"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "14.09#t3",
+  "codigo": "14.09",
+  "bloque": 14,
+  "nivel": 4,
+  "titulo": "Insolvencia: preconcurso, concurso y segunda oportunidad",
+  "q": "¿Puede un acreedor disconforme bloquear un plan de reestructuración?",
+  "a": "**No: la homologación judicial permite arrastrar a acreedores e incluso a clases enteras disidentes, con garantías.** Entre las garantías está que el disidente no reciba menos de lo que obtendría en una liquidación. Sin arrastre, la reestructuración sería inviable en la práctica.",
+  "opciones": [
+   "Sí, si su crédito supera el 10 % del pasivo",
+   "No: los planes se aprueban por mayoría simple del pasivo total",
+   "Sí: nadie puede ser obligado a aceptar una quita",
+   "No: la homologación judicial permite arrastrar a acreedores e incluso a clases enteras disidentes, con garantías"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "14.10#0",
   "codigo": "14.10",
   "bloque": 14,
@@ -3244,6 +7148,70 @@ export default [
   "a": "La patente y la investigación que la sustenta son un activo producido: productos de propiedad intelectual (AN.117), que se capitalizan y se amortizan porque su vida útil es finita. Una marca comprada encaja entre los activos no producidos, próxima al fondo de comercio, y no se agota con el uso. Y una marca creada internamente no aparece en ningún balance."
  },
  {
+  "id": "14.10#t0",
+  "codigo": "14.10",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Competencia, propiedad industrial y protección de datos",
+  "q": "Dos empresas quieren fusionarse y su cuota conjunta no llega al 30 %. ¿Basta con eso para no notificar la operación?",
+  "a": "**No: los umbrales son alternativos, y también hay que comprobar el de volumen de negocios.** Basta superar uno. El de volumen atrapa operaciones grandes en euros aunque no concentren un mercado; el de cuota atrapa operaciones pequeñas en mercados estrechos.",
+  "opciones": [
+   "Sí, si además ninguna es dominante en su mercado",
+   "Sí: el umbral de cuota es el criterio determinante",
+   "No: toda concentración debe notificarse con independencia de su tamaño",
+   "No: los umbrales son alternativos, y también hay que comprobar el de volumen de negocios"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "14.10#t1",
+  "codigo": "14.10",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Competencia, propiedad industrial y protección de datos",
+  "q": "¿Sobre qué se calcula el techo de la multa por participar en un cártel?",
+  "a": "**Sobre el volumen de negocios total del infractor.** Es deliberado: la sanción tiene que doler a quien la recibe, y para eso debe medirse sobre su tamaño real.",
+  "opciones": [
+   "Sobre el volumen de negocios en España",
+   "Sobre el volumen de negocios del mercado afectado",
+   "Sobre el volumen de negocios total del infractor",
+   "Sobre el beneficio obtenido con la conducta"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "14.10#t2",
+  "codigo": "14.10",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Competencia, propiedad industrial y protección de datos",
+  "q": "¿Protege una marca la idea que hay detrás de un producto?",
+  "a": "**No: identifica el origen del producto, y no impide a nadie fabricar lo mismo, solo hacerlo pasar por el de otro.** Y por eso puede durar indefinidamente sin coste social: renovarla no priva a nadie de fabricar nada.",
+  "opciones": [
+   "No: identifica el origen del producto, y no impide a nadie fabricar lo mismo, solo hacerlo pasar por el de otro",
+   "Sí, durante los diez años de vigencia del registro",
+   "Sí: impide a terceros comercializar productos equivalentes",
+   "No, salvo que se registre además como marca tridimensional"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "14.10#t3",
+  "codigo": "14.10",
+  "bloque": 14,
+  "nivel": 3,
+  "titulo": "Competencia, propiedad industrial y protección de datos",
+  "q": "¿Cuál es el eje del régimen de protección de datos?",
+  "a": "**La responsabilidad proactiva: no basta con cumplir, hay que poder demostrarlo.** De ahí el registro de actividades, las evaluaciones de impacto y la documentación de las decisiones: invierte la carga y obliga a construir prueba de lo que se hace.",
+  "opciones": [
+   "Cifrar los datos personales almacenados",
+   "Notificar todo tratamiento a la autoridad de control antes de iniciarlo",
+   "Obtener el consentimiento del interesado para cualquier tratamiento",
+   "La responsabilidad proactiva: no basta con cumplir, hay que poder demostrarlo"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "15.01#0",
   "codigo": "15.01",
   "bloque": 15,
@@ -3287,6 +7255,70 @@ export default [
   "titulo": "El flujo del ajuste estacional: de la serie bruta a la publicada",
   "q": "La serie ajustada suma 399,97 en el año y la bruta 400,0. ¿Es un error de cálculo?",
   "a": "No: es el comportamiento normal del procedimiento. Los factores estacionales se estiman con información de todos los años y no se adaptan exactamente a cada uno, así que la suma anual de la serie ajustada no coincide con la de la bruta. En contabilidad nacional esa diferencia es inaceptable porque produciría dos cifras oficiales del mismo año, y se corrige con benchmarking, que reparte el desfase alterando lo menos posible el perfil de la serie."
+ },
+ {
+  "id": "15.01#t0",
+  "codigo": "15.01",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "El flujo del ajuste estacional: de la serie bruta a la publicada",
+  "q": "Se publica que el PIB creció un 0,3 % en el trimestre, dato ajustado de estacionalidad. ¿Qué tipo de cifra es?",
+  "a": "**Una estimación producida por un procedimiento con supuestos, publicada sin intervalo de confianza.** Publicarla sin intervalo le da una apariencia de precisión que el procedimiento no respalda, y esa apariencia es la fuente de la mayoría de las malas lecturas.",
+  "opciones": [
+   "Un dato provisional que se convertirá en observado con la próxima publicación",
+   "Un dato observado, medido directamente por el instituto de estadística",
+   "Una previsión revisable hasta el cierre del ejercicio",
+   "Una estimación producida por un procedimiento con supuestos, publicada sin intervalo de confianza"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "15.01#t1",
+  "codigo": "15.01",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "El flujo del ajuste estacional: de la serie bruta a la publicada",
+  "q": "¿Elimina el ajuste estacional los efectos de calendario?",
+  "a": "**No: son dos correcciones distintas, y la de calendario depende de cuántos días laborables tenga cada periodo concreto.** Un trimestre con dos días laborables más produce más, y eso no es estacionalidad: es aritmética del calendario de ese año.",
+  "opciones": [
+   "No: los efectos de calendario se corrigen únicamente en las series mensuales",
+   "Sí, salvo la Semana Santa, que se corrige aparte por ser móvil",
+   "Sí: la Semana Santa y los días laborables forman parte de la estacionalidad",
+   "No: son dos correcciones distintas, y la de calendario depende de cuántos días laborables tenga cada periodo concreto"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "15.01#t2",
+  "codigo": "15.01",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "El flujo del ajuste estacional: de la serie bruta a la publicada",
+  "q": "Los componentes de una serie se ajustan por separado y se suman. ¿Da eso la serie ajustada del agregado?",
+  "a": "**No: el ajuste no es lineal, y ajustar cada componente y sumarlos da un resultado distinto de ajustar el agregado.** Es una decisión que hay que tomar y documentar: ajustar directamente el agregado, o ajustar las partes y conciliar después.",
+  "opciones": [
+   "No, pero solo si los componentes tienen estacionalidades de signo contrario",
+   "Sí: el ajuste conserva la aditividad",
+   "Sí, salvo diferencias de redondeo",
+   "No: el ajuste no es lineal, y ajustar cada componente y sumarlos da un resultado distinto de ajustar el agregado"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "15.01#t3",
+  "codigo": "15.01",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "El flujo del ajuste estacional: de la serie bruta a la publicada",
+  "q": "¿Puede el ajuste estacional separar la tendencia del ciclo?",
+  "a": "**No: la descomposición estándar produce un componente conjunto de tendencia-ciclo.** Separar tendencia de ciclo exige supuestos adicionales sobre qué se considera potencial, que el ajuste estacional no hace ni pretende hacer.",
+  "opciones": [
+   "Sí, aplicando después un filtro de medias móviles más largo",
+   "Sí: son los dos componentes que quedan tras extraer la estacionalidad",
+   "No: la descomposición estándar produce un componente conjunto de tendencia-ciclo",
+   "No, salvo en series con más de treinta años de historia"
+  ],
+  "correcta": 2
  },
  {
   "id": "15.02#0",
@@ -3334,6 +7366,70 @@ export default [
   "a": "Sí, y es lo habitual. Al añadirse un trimestre nuevo, la predicción que sostenía el extremo se sustituye por el dato real, el modelo se reestima y cambian $\\theta$ y $\\Theta$, y los factores estacionales se recalculan afectando también al pasado. Las tres cosas modifican la serie ajustada sin que ningún dato bruto se haya tocado."
  },
  {
+  "id": "15.02#t0",
+  "codigo": "15.02",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Pre-ajuste: modelos RegARIMA y elección de la transformación",
+  "q": "¿Por qué el pre-ajuste no es un trámite previo que pueda corregirse después?",
+  "a": "**Porque en el enfoque basado en modelos la descomposición se deriva del ARIMA estimado en esta fase.** Un pre-ajuste mal especificado no se arregla en las etapas siguientes: se propaga a todos los componentes, porque de ese modelo salen.",
+  "opciones": [
+   "Porque en el enfoque basado en modelos la descomposición se deriva del ARIMA estimado en esta fase",
+   "Porque los regresores de calendario son obligatorios por reglamento europeo",
+   "Porque una vez publicado el dato no se puede volver atrás",
+   "Porque el pre-ajuste consume observaciones que ya no se recuperan"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "15.02#t1",
+  "codigo": "15.02",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Pre-ajuste: modelos RegARIMA y elección de la transformación",
+  "q": "¿Por qué el modelo RegARIMA estima conjuntamente los efectos de calendario y la parte ARIMA?",
+  "a": "**Porque estimar el calendario primero por regresión ordinaria sobre residuos autocorrelacionados da errores estándar mal calculados.** Los residuos de una serie económica están autocorrelacionados, y la regresión ordinaria supone lo contrario: los contrastes sobre la significación de los regresores dejan de ser fiables.",
+  "opciones": [
+   "Porque el reglamento europeo exige un único modelo",
+   "Porque estimar el calendario primero por regresión ordinaria sobre residuos autocorrelacionados da errores estándar mal calculados",
+   "Porque así se reduce el tiempo de cálculo",
+   "Porque de otro modo no se podrían incluir atípicos"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "15.02#t2",
+  "codigo": "15.02",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Pre-ajuste: modelos RegARIMA y elección de la transformación",
+  "q": "¿Qué es el modelo aerolínea y qué estatus tiene?",
+  "a": "**Un modelo (0,1,1)(0,1,1) con dos parámetros, y un buen punto de partida empírico, no un resultado teórico.** Ajusta razonablemente muchas series económicas y por eso se usa por defecto, pero hay series para las que no es el mejor y darlo por bueno sin comprobarlo produce ajustes pobres.",
+  "opciones": [
+   "Un modelo (0,1,1)(0,1,1) con dos parámetros, y un buen punto de partida empírico, no un resultado teórico",
+   "Un modelo específico para series del sector del transporte aéreo",
+   "Un modelo sin parámetros libres, que por eso se aplica automáticamente",
+   "El modelo que la teoría demuestra óptimo para series económicas estacionales"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "15.02#t3",
+  "codigo": "15.02",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Pre-ajuste: modelos RegARIMA y elección de la transformación",
+  "q": "¿Cuándo conviene desconfiar de la identificación automática del modelo?",
+  "a": "**En series cortas, muy irregulares o con cambios de nivel, donde conviene revisar la especificación elegida.** En esos casos el criterio de información puede elegir una especificación que ajusta bien la muestra y describe mal el proceso.",
+  "opciones": [
+   "Cuando la serie se expresa en logaritmos",
+   "En series cortas, muy irregulares o con cambios de nivel, donde conviene revisar la especificación elegida",
+   "Solo cuando la serie tiene menos de tres años",
+   "Siempre: la identificación automática no es aceptable en producción estadística"
+  ],
+  "correcta": 1
+ },
+ {
   "id": "15.03#0",
   "codigo": "15.03",
   "bloque": 15,
@@ -3377,6 +7473,70 @@ export default [
   "titulo": "Efectos de calendario: laborables, Semana Santa y año bisiesto",
   "q": "¿Por qué la serie corregida de calendario no cuadra con los totales anuales?",
   "a": "Porque un año tuvo los días hábiles que tuvo, y la corrección los normaliza a una referencia. La serie corregida es una magnitud contrafactual —lo que se habría producido con un calendario normal— y no tiene por qué sumar lo que efectivamente se produjo. Por eso la conciliación con las cuentas anuales se plantea sobre el dato bruto o el ajustado, y la corregida de calendario se trata como transformación analítica adicional."
+ },
+ {
+  "id": "15.03#t0",
+  "codigo": "15.03",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "Efectos de calendario: laborables, Semana Santa y año bisiesto",
+  "q": "El INE publica una serie ajustada de estacionalidad y otra ajustada también de calendario. ¿Cuál hay que usar?",
+  "a": "**Depende de la pregunta: una dice cuánto se produjo realmente y la otra cuánto se habría producido con un calendario medio.** Lo que no vale es mezclarlas: comparar un trimestre de una con otro de la otra produce una diferencia que es puro artefacto.",
+  "opciones": [
+   "Depende de la pregunta: una dice cuánto se produjo realmente y la otra cuánto se habría producido con un calendario medio",
+   "Siempre la primera, que es la oficial a efectos europeos",
+   "Siempre la segunda, que está más corregida",
+   "Es indiferente: las diferencias son inferiores a una décima"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "15.03#t1",
+  "codigo": "15.03",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "Efectos de calendario: laborables, Semana Santa y año bisiesto",
+  "q": "¿Tiene sentido aplicar el regresor de Semana Santa a cualquier serie?",
+  "a": "**No: solo donde la fiesta desplaza actividad de verdad, como hostelería, transporte o comercio.** Aplicarlo a una rama que no la sufre introduce ruido y consume un grado de libertad sin corregir nada.",
+  "opciones": [
+   "No, salvo que la Semana Santa caiga en marzo",
+   "No: solo donde la fiesta desplaza actividad de verdad, como hostelería, transporte o comercio",
+   "Sí, siempre que la serie sea trimestral",
+   "Sí: la fiesta afecta al conjunto de la economía"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "15.03#t2",
+  "codigo": "15.03",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "Efectos de calendario: laborables, Semana Santa y año bisiesto",
+  "q": "¿Por qué no basta un único regresor de calendario para corregir el PIB total?",
+  "a": "**Porque la construcción y la industria dependen mucho de los días hábiles y los servicios públicos casi nada.** Un solo coeficiente promedia sensibilidades muy distintas y corrige mal en ambos extremos: de más a unos sectores y de menos a otros.",
+  "opciones": [
+   "Porque el PIB se compone de tres ópticas de cálculo distintas",
+   "Porque el PIB se publica en volumen y el regresor se estima en valor",
+   "Porque los regresores de calendario solo son válidos para series mensuales",
+   "Porque la construcción y la industria dependen mucho de los días hábiles y los servicios públicos casi nada"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "15.03#t3",
+  "codigo": "15.03",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "Efectos de calendario: laborables, Semana Santa y año bisiesto",
+  "q": "¿Qué ocurre si se corrigen los efectos de calendario después de la descomposición en lugar de antes?",
+  "a": "**El filtro estacional mezcla parcialmente el calendario con el componente estacional al promediar por trimestres.** El componente estacional acaba recogiendo parte de algo que no se repite igual cada año, y a partir de ahí el resto de la descomposición hereda el error.",
+  "opciones": [
+   "Nada: el orden de las dos correcciones es indiferente",
+   "Se pierden las observaciones iniciales de la serie",
+   "El filtro estacional mezcla parcialmente el calendario con el componente estacional al promediar por trimestres",
+   "La serie ajustada queda sobrecorregida, con los efectos descontados dos veces"
+  ],
+  "correcta": 2
  },
  {
   "id": "15.04#0",
@@ -3424,6 +7584,70 @@ export default [
   "a": "Que se detecten atípicos donde solo hay ruido. Cada uno consume un grado de libertad y retira variabilidad de la serie, así que el resultado es una serie ajustada demasiado suave que ha absorbido como anomalías movimientos económicos reales. La suavidad no es señal de calidad: los filtros suavizan por construcción y el resultado siempre parece creíble."
  },
  {
+  "id": "15.04#t0",
+  "codigo": "15.04",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "Valores atípicos: escalón, impulso y cambio transitorio",
+  "q": "Un episodio transitorio se clasifica como escalón en lugar de como impulso. ¿Qué efecto tiene?",
+  "a": "**La serie ajustada olvida un episodio que sí era transitorio y arrastra un desnivel artificial indefinidamente.** El escalón desplaza todo lo posterior, así que un episodio de un mes queda incorporado a la serie como si el nivel hubiera cambiado de verdad.",
+  "opciones": [
+   "La serie ajustada olvida un episodio que sí era transitorio y arrastra un desnivel artificial indefinidamente",
+   "La serie ajustada muestra un descenso suave y prolongado que no ocurrió",
+   "El atípico deja de detectarse en revisiones posteriores",
+   "Ninguno relevante: ambos retiran el dato anómalo"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "15.04#t1",
+  "codigo": "15.04",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "Valores atípicos: escalón, impulso y cambio transitorio",
+  "q": "Un confinamiento afecta a varios trimestres seguidos. ¿Cómo se trata?",
+  "a": "**Combinando tipos: un escalón de caída y otro de recuperación, o una secuencia de impulsos.** Cuando el episodio abarca varios periodos, forzar un único tipo deja siempre residuo sin tratar.",
+  "opciones": [
+   "Como un cambio transitorio con alfa elevado",
+   "Combinando tipos: un escalón de caída y otro de recuperación, o una secuencia de impulsos",
+   "Como un único impulso en el trimestre de mayor caída",
+   "Como un atípico estacional, por afectar a periodos concretos"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "15.04#t2",
+  "codigo": "15.04",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "Valores atípicos: escalón, impulso y cambio transitorio",
+  "q": "Se corrige un atípico en el ajuste. ¿Cambia el dato bruto publicado?",
+  "a": "**No: el dato bruto es lo que se midió, con el episodio incluido; lo que se modifica es la serie ajustada.** Son dos series distintas, y la ajustada es sobre la que se comentan las variaciones. Confundir ambas cosas hace pensar que el instituto ha borrado un dato incómodo.",
+  "opciones": [
+   "No, salvo que el atípico se deba a un error de registro",
+   "Sí: la corrección se aplica a la serie original y se propaga a la ajustada",
+   "No: el dato bruto es lo que se midió, con el episodio incluido; lo que se modifica es la serie ajustada",
+   "Sí, pero solo en las revisiones anuales"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "15.04#t3",
+  "codigo": "15.04",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "Valores atípicos: escalón, impulso y cambio transitorio",
+  "q": "El patrón estacional de un trimestre concreto cambia, sin que cambie el nivel de la serie. ¿Qué tipo de atípico corresponde?",
+  "a": "**Un atípico estacional (SO): el problema está en el componente estacional, no en el nivel.** Ni el impulso ni el escalón arreglan nada aquí, porque actúan sobre una componente distinta de la afectada.",
+  "opciones": [
+   "Un escalón, por tratarse de un cambio permanente",
+   "Un impulso, por afectar a un periodo aislado",
+   "Un cambio transitorio, con alfa próximo a uno",
+   "Un atípico estacional (SO): el problema está en el componente estacional, no en el nivel"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "15.05#0",
   "codigo": "15.05",
   "bloque": 15,
@@ -3467,6 +7691,70 @@ export default [
   "titulo": "Descomposición: X-11 frente a SEATS",
   "q": "¿Dónde difieren más las series ajustadas por uno y otro método, y por qué importa?",
   "a": "En los extremos de la serie, en presencia de cambios del patrón estacional y en series cortas o muy irregulares. Importa porque el extremo es justamente el dato de coyuntura que se comenta y sobre el que se decide. También implica que comparar el crecimiento del último trimestre entre países que usan métodos distintos introduce diferencias de método donde se leen diferencias de economía."
+ },
+ {
+  "id": "15.05#t0",
+  "codigo": "15.05",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Descomposición: X-11 frente a SEATS",
+  "q": "¿Cuál de los dos métodos de descomposición, X-11 o SEATS, es el correcto?",
+  "a": "**Ninguno: no hay superioridad general demostrada, y cada uno tiene ventajas donde el otro flaquea.** SEATS aporta errores estándar de cada componente; X-11 funciona donde ningún modelo ajusta bien. La elección es del productor y conviene que sea explícita.",
+  "opciones": [
+   "Depende de la frecuencia: SEATS para mensuales y X-11 para trimestrales",
+   "SEATS, por derivarse de un modelo estadístico explícito",
+   "Ninguno: no hay superioridad general demostrada, y cada uno tiene ventajas donde el otro flaquea",
+   "X-11, por su robustez acreditada en décadas de uso"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "15.05#t1",
+  "codigo": "15.05",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Descomposición: X-11 frente a SEATS",
+  "q": "¿Qué se elige al optar entre un filtro estacional 3×3 y uno 3×9?",
+  "a": "**Entre reaccionar rápido a cambios del patrón estacional o mantener una estimación estable y lenta.** El 3×3 usa pocos años y sigue de cerca los cambios; el 3×9 promedia más y da factores estables que tardan en incorporar un cambio real.",
+  "opciones": [
+   "Entre reaccionar rápido a cambios del patrón estacional o mantener una estimación estable y lenta",
+   "Entre corregir o no los efectos de calendario",
+   "Entre una descomposición aditiva y una multiplicativa",
+   "Entre X-11 y SEATS"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "15.05#t2",
+  "codigo": "15.05",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Descomposición: X-11 frente a SEATS",
+  "q": "El ARIMA estimado no admite descomposición en componentes con varianzas no negativas. ¿Qué hace el programa?",
+  "a": "**Sustituye el modelo por uno próximo que sí admita descomposición.** Es una decisión relevante que ocurre de forma silenciosa: el modelo con el que finalmente se descompone no es el que se estimó.",
+  "opciones": [
+   "Reparte la varianza negativa entre los demás componentes",
+   "Sustituye el modelo por uno próximo que sí admita descomposición",
+   "Cambia automáticamente a X-11",
+   "Detiene el ajuste y devuelve un error"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "15.05#t3",
+  "codigo": "15.05",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Descomposición: X-11 frente a SEATS",
+  "q": "Una serie ajustada tiene un aspecto suave y creíble en el gráfico. ¿Es señal de que el ajuste es bueno?",
+  "a": "**No: los filtros suavizan por construcción, así que cualquier ajuste, bueno o malo, produce una serie de aspecto creíble.** Por eso existen los contrastes de estacionalidad residual, de estabilidad y de revisiones: para juzgar con algo que no sea la vista.",
+  "opciones": [
+   "No, pero es el mejor indicio disponible a falta de contrastes formales",
+   "No: los filtros suavizan por construcción, así que cualquier ajuste, bueno o malo, produce una serie de aspecto creíble",
+   "Sí, si además no quedan picos en los mismos trimestres de cada año",
+   "Sí: la suavidad indica que la estacionalidad se ha extraído bien"
+  ],
+  "correcta": 1
  },
  {
   "id": "15.06#0",
@@ -3514,6 +7802,70 @@ export default [
   "a": "Permite tratar de forma distinta ramas con sensibilidad distinta a los días hábiles, y ajustar series regionales con sus festivos autonómicos. Un calendario nacional aplicado a una serie regional deja un residuo sistemático que aparece como estacionalidad residual en los diagnósticos, y un calendario único para todo el cuadro de cuentas impone que industria y servicios de no mercado respondan igual, que es falso."
  },
  {
+  "id": "15.06#t0",
+  "codigo": "15.06",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "JDemetra+: herramienta, especificaciones y flujo de trabajo",
+  "q": "En la escalera de especificaciones, ¿tiene RSA3 más parámetros que RSA2?",
+  "a": "**No: RSA3 no corrige calendario, así que estima menos parámetros pese a estar más arriba.** Es una confusión fácil y con consecuencias: elegir por el número creyendo que se sube en sofisticación puede dejar sin corregir un efecto que la serie sí tiene.",
+  "opciones": [
+   "Sí, salvo en series trimestrales",
+   "Ambas estiman el mismo número: solo cambia el criterio de selección",
+   "No: RSA3 no corrige calendario, así que estima menos parámetros pese a estar más arriba",
+   "Sí: la numeración indica complejidad creciente"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "15.06#t1",
+  "codigo": "15.06",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "JDemetra+: herramienta, especificaciones y flujo de trabajo",
+  "q": "Se ajusta una serie de empleo de una comunidad autónoma con el calendario nacional. ¿Qué problema hay?",
+  "a": "**Que los festivos autonómicos hacen que el número de días hábiles difiera entre comunidades.** La serie queda corregida con un número de días que no es el suyo, y el residuo se cuela en los demás componentes. Por eso la herramienta permite definir calendarios propios.",
+  "opciones": [
+   "Ninguno: los festivos nacionales son los que más pesan",
+   "Que el calendario nacional solo es válido para series mensuales",
+   "Que los festivos autonómicos hacen que el número de días hábiles difiera entre comunidades",
+   "Que las series regionales no admiten corrección de calendario"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "15.06#t2",
+  "codigo": "15.06",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "JDemetra+: herramienta, especificaciones y flujo de trabajo",
+  "q": "Se quieren comparar los resultados de TRAMO-SEATS y X-13 sobre la misma serie. ¿Qué hay que garantizar?",
+  "a": "**Que se les den los mismos regresores de calendario y los mismos atípicos.** Si no, se estarían comparando dos ajustes que difieren en el pre-ajuste además de en el método de descomposición, y no se sabría a qué atribuir la diferencia.",
+  "opciones": [
+   "Que la serie tenga al menos veinte años de historia",
+   "Que ambos usen especificación automática, para que la comparación sea neutral",
+   "Que se comparen únicamente los últimos cuatro trimestres",
+   "Que se les den los mismos regresores de calendario y los mismos atípicos"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "15.06#t3",
+  "codigo": "15.06",
+  "bloque": 15,
+  "nivel": 3,
+  "titulo": "JDemetra+: herramienta, especificaciones y flujo de trabajo",
+  "q": "¿Qué aporta realmente una herramienta como JDemetra+?",
+  "a": "**Deja cada decisión explícita, documentada y reproducible; las decisiones siguen siendo del analista.** Un ajuste que no se puede reproducir no es publicable, y ese es el problema que la herramienta resuelve de verdad.",
+  "opciones": [
+   "Resuelve el ajuste: basta cargar la serie y ejecutar",
+   "Elimina la necesidad de revisar los atípicos, al detectarlos automáticamente",
+   "Calcula más rápido que las alternativas",
+   "Deja cada decisión explícita, documentada y reproducible; las decisiones siguen siendo del analista"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "15.07#0",
   "codigo": "15.07",
   "bloque": 15,
@@ -3557,6 +7909,70 @@ export default [
   "titulo": "Diagnósticos de calidad y estacionalidad residual",
   "q": "Un escalón real se ha tratado como impulso. ¿Qué diagnóstico lo detectará?",
   "a": "Ninguno del catálogo habitual. El error está en el nivel de la serie, no en su componente estacional, así que no habrá estacionalidad residual, los factores serán estables y las revisiones, pequeñas. Los contrastes vigilan la estacionalidad y son ciegos a los errores de especificación del nivel, que son precisamente los más dañinos y los peor identificados."
+ },
+ {
+  "id": "15.07#t0",
+  "codigo": "15.07",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Diagnósticos de calidad y estacionalidad residual",
+  "q": "Un contraste de estacionalidad residual no rechaza. ¿Puede concluirse que no queda estacionalidad?",
+  "a": "**No: los contrastes dependen del tamaño muestral y en series cortas tienen poca potencia.** En una serie de pocos años el contraste puede no detectar una estacionalidad residual perfectamente real.",
+  "opciones": [
+   "Sí, si además el estadístico Q está por debajo de uno",
+   "No, salvo que se haya aplicado también sobre el componente irregular",
+   "Sí: no rechazar equivale a aceptar la hipótesis nula",
+   "No: los contrastes dependen del tamaño muestral y en series cortas tienen poca potencia"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "15.07#t1",
+  "codigo": "15.07",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Diagnósticos de calidad y estacionalidad residual",
+  "q": "Un analista baja el umbral de detección de atípicos y todos los diagnósticos mejoran. ¿Qué ha ocurrido?",
+  "a": "**Ha retirado como atípicos partes del comportamiento legítimo de la serie, dejando un irregular artificialmente pequeño.** Todos los indicadores mejoran porque se ha vaciado de contenido justo lo que miden. Es el caso en que los diagnósticos engañan de la forma más limpia.",
+  "opciones": [
+   "Ha retirado como atípicos partes del comportamiento legítimo de la serie, dejando un irregular artificialmente pequeño",
+   "Ha mejorado la especificación del modelo",
+   "Nada relevante: los diagnósticos no dependen del umbral",
+   "Ha encontrado atípicos reales que antes pasaban desapercibidos"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "15.07#t2",
+  "codigo": "15.07",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Diagnósticos de calidad y estacionalidad residual",
+  "q": "En una serie trimestral, ¿basta con mirar la frecuencia estacional de periodo cuatro?",
+  "a": "**No: el armónico de periodo dos puede ser mayor, como en el ejemplo, 774 frente a 110.** Un diagnóstico que solo mire la frecuencia principal puede dar por limpia una serie con estacionalidad evidente en la otra.",
+  "opciones": [
+   "No, pero el armónico solo importa en series mensuales",
+   "Sí, si la serie ha sido corregida de calendario",
+   "No: el armónico de periodo dos puede ser mayor, como en el ejemplo, 774 frente a 110",
+   "Sí: es la frecuencia estacional propiamente dicha en datos trimestrales"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "15.07#t3",
+  "codigo": "15.07",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Diagnósticos de calidad y estacionalidad residual",
+  "q": "¿Qué prueban los diagnósticos de un ajuste estacional?",
+  "a": "**Ausencia de síntomas, no corrección del resultado: son alarmas que dirigen la revisión manual.** Pasar todos los contrastes no garantiza un buen ajuste, y suspenderlos indica dónde hay que mirar. Tratarlos como veredictos es pedirles lo que no pueden dar.",
+  "opciones": [
+   "Que la descomposición obtenida es la correcta",
+   "Que el modelo elegido es el que genera los datos",
+   "Que los componentes estimados coinciden con los verdaderos",
+   "Ausencia de síntomas, no corrección del resultado: son alarmas que dirigen la revisión manual"
+  ],
+  "correcta": 3
  },
  {
   "id": "15.08#0",
@@ -3604,6 +8020,70 @@ export default [
   "a": "Porque las partidas deben cumplir las identidades contables entre sí. Reidentificar el modelo del consumo final sin revisar a la vez el del PIB rompería la identidad del enfoque del gasto. A eso se suma que el calendario debe sincronizarse con el de las cuentas anuales, ya que no tiene sentido reidentificar en un trimestre en el que además va a cambiar toda la serie bruta."
  },
  {
+  "id": "15.08#t0",
+  "codigo": "15.08",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Política de revisiones y esquemas de refresco",
+  "q": "Una serie ajustada descargada hace un año no coincide con la actual, y ningún dato bruto se ha corregido. ¿Es posible?",
+  "a": "**Sí: los factores se reestiman con cada dato nuevo, y con ellos cambia el pasado ya publicado.** Por eso comparar series descargadas en fechas distintas produce diferencias que no corresponden a ningún cambio económico.",
+  "opciones": [
+   "Sí, pero solo en el último año de la serie",
+   "No, salvo que haya cambiado el método de descomposición",
+   "Sí: los factores se reestiman con cada dato nuevo, y con ellos cambia el pasado ya publicado",
+   "No: sin corrección de datos la serie ajustada no puede cambiar"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "15.08#t1",
+  "codigo": "15.08",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Política de revisiones y esquemas de refresco",
+  "q": "¿Por qué medir el coste de las revisiones en niveles resulta engañoso?",
+  "a": "**Porque el usuario lee tasas, y una revisión de nivel diminuta puede mover apreciablemente la tasa intertrimestral.** En el ejemplo, una revisión de 0,08 sobre 105 —menos de una décima porcentual del nivel— desplaza la tasa lo suficiente para cambiar el titular.",
+  "opciones": [
+   "Porque los niveles se revisan menos que las tasas por construcción",
+   "Porque los niveles no son comparables entre trimestres",
+   "Porque el usuario lee tasas, y una revisión de nivel diminuta puede mover apreciablemente la tasa intertrimestral",
+   "Porque los niveles se publican con menos decimales"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "15.08#t2",
+  "codigo": "15.08",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Política de revisiones y esquemas de refresco",
+  "q": "¿Es la política de ajuste concurrente la mejor por dar la estimación más precisa en cada momento?",
+  "a": "**Da la mejor estimación puntual y el peor perfil de revisiones: para quien modeliza sobre la serie, la base cambia bajo los pies.** Reestimarlo todo en cada publicación maximiza la calidad de la estimación actual y hace que el pasado se mueva continuamente.",
+  "opciones": [
+   "No: es la política que peor estima en cada momento",
+   "Da la mejor estimación puntual y el peor perfil de revisiones: para quien modeliza sobre la serie, la base cambia bajo los pies",
+   "Sí, salvo en series con muchos atípicos",
+   "Sí: usar toda la información disponible siempre es preferible"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "15.08#t3",
+  "codigo": "15.08",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Política de revisiones y esquemas de refresco",
+  "q": "Una serie apenas se revisa. ¿Es señal de calidad?",
+  "a": "**No: los factores proyectados no se revisan y pueden estar equivocados durante todo un año.** Es la política más frágil de todas: elimina las revisiones durante el año a costa de aplicar factores que pueden haber dejado de describir la realidad.",
+  "opciones": [
+   "Sí: la estabilidad indica que las estimaciones eran acertadas desde el principio",
+   "No, pero es preferible a una serie muy revisada",
+   "Sí, si además pasa todos los diagnósticos",
+   "No: los factores proyectados no se revisan y pueden estar equivocados durante todo un año"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "15.09#0",
   "codigo": "15.09",
   "bloque": 15,
@@ -3647,6 +8127,70 @@ export default [
   "titulo": "Benchmarking y conciliación: Denton y Cholette-Dagum",
   "q": "¿Por qué conciliar cada partida del PIB por separado no basta en contabilidad nacional?",
   "a": "Porque hay dos restricciones simultáneas y esa solo resuelve una. Aplicar Denton a cada partida hace que cada una sume su total anual, pero no garantiza que el PIB siga siendo la suma de sus componentes en cada trimestre. La conciliación temporal y la contable forman un problema multidimensional, y resolverlas por separado no asegura que ambas se cumplan."
+ },
+ {
+  "id": "15.09#t0",
+  "codigo": "15.09",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Benchmarking y conciliación: Denton y Cholette-Dagum",
+  "q": "La discrepancia anual se concentra en un solo año por un cambio de perímetro. ¿Debe repartirse con Denton?",
+  "a": "**No: repartirlo por toda la serie disuelve un problema que tiene una causa identificada y debe tratarse como tal.** Suavizar un salto real lo esconde en lugar de documentarlo, y deja una serie que no describe ni lo de antes ni lo de después.",
+  "opciones": [
+   "No, salvo que el cambio de perímetro afecte a más de un ejercicio",
+   "Sí, aplicando la variante proporcional en lugar de la aditiva",
+   "Sí: el método está diseñado para repartir cualquier discrepancia",
+   "No: repartirlo por toda la serie disuelve un problema que tiene una causa identificada y debe tratarse como tal"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "15.09#t1",
+  "codigo": "15.09",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Benchmarking y conciliación: Denton y Cholette-Dagum",
+  "q": "¿Por qué la variante aditiva de Denton es problemática en series con tendencia fuerte?",
+  "a": "**Porque reparte la misma cantidad absoluta con independencia del nivel, y pesa relativamente más donde la serie vale menos.** En una magnitud que se ha multiplicado por tres a lo largo de la serie, la misma corrección absoluta es un porcentaje muy distinto al principio que al final.",
+  "opciones": [
+   "Porque exige que la serie sea estacionaria",
+   "Porque no garantiza que se cumpla la restricción anual",
+   "Porque genera correcciones negativas al principio de la serie",
+   "Porque reparte la misma cantidad absoluta con independencia del nivel, y pesa relativamente más donde la serie vale menos"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "15.09#t2",
+  "codigo": "15.09",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Benchmarking y conciliación: Denton y Cholette-Dagum",
+  "q": "Llega el dato anual definitivo y cambian trimestres ya publicados cuyo dato bruto no se ha tocado. ¿Qué ha pasado?",
+  "a": "**Que el benchmarking es una revisión: ha cambiado el ancla, no el dato ni el ajuste.** Es una revisión de naturaleza contable, y conviene distinguirla de las que proceden del ajuste estacional o de los datos brutos.",
+  "opciones": [
+   "Que se ha reestimado el modelo ARIMA con el dato nuevo",
+   "Que el benchmarking es una revisión: ha cambiado el ancla, no el dato ni el ajuste",
+   "Un error en la publicación anterior",
+   "Un cambio en el método de ajuste estacional"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "15.09#t3",
+  "codigo": "15.09",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Benchmarking y conciliación: Denton y Cholette-Dagum",
+  "q": "Una serie conciliada tiene buen aspecto. ¿Cómo se verifica que el benchmarking se ha hecho bien?",
+  "a": "**Comprobando aritméticamente que la suma de los cuatro trimestres da el total anual.** Es la verificación imprescindible y la única que no admite discusión: o cuadra o no cuadra.",
+  "opciones": [
+   "Comprobando que la serie no presenta saltos visibles entre ejercicios",
+   "Comparando con la serie sin conciliar",
+   "Comprobando aritméticamente que la suma de los cuatro trimestres da el total anual",
+   "Contrastando la estacionalidad residual"
+  ],
+  "correcta": 2
  },
  {
   "id": "15.10#0",
@@ -3694,6 +8238,70 @@ export default [
   "a": "Porque siempre produce un resultado plausible: cumple la restricción anual y tiene un perfil creíble, aunque ese perfil sea enteramente artefacto del indicador elegido. Nada en el procedimiento avisa de que el indicador no representa bien la variable. La verificación útil es contrastar el perfil obtenido con otras fuentes de coyuntura independientes y comprobar que la relación estimada es estable en el tiempo."
  },
  {
+  "id": "15.10#t0",
+  "codigo": "15.10",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Desagregación temporal: Chow-Lin, Fernández y Litterman",
+  "q": "Se discute qué método usar para desagregar una serie anual: Chow-Lin, Fernández o Litterman. ¿Es esa la discusión importante?",
+  "a": "**No: los tres dan resultados parecidos con un indicador bueno, y ninguno salva un indicador malo.** La calidad del resultado la decide la relación entre el indicador y la variable objetivo. Discutir el método antes que el indicador es empezar por el final.",
+  "opciones": [
+   "Sí, porque de ello depende que se cumpla la restricción anual",
+   "No: los tres dan resultados parecidos con un indicador bueno, y ninguno salva un indicador malo",
+   "No: lo determinante es la longitud de la serie anual disponible",
+   "Sí: cada método produce perfiles trimestrales muy distintos"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "15.10#t1",
+  "codigo": "15.10",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Desagregación temporal: Chow-Lin, Fernández y Litterman",
+  "q": "¿Cómo debe elegirse el indicador para una desagregación temporal?",
+  "a": "**Por que exista un mecanismo económico que sostenga la relación, no solo correlación.** El mecanismo es lo que hace esperar que la relación siga vigente fuera de la muestra en que se estimó.",
+  "opciones": [
+   "Por su correlación con la variable objetivo, tomando la más alta disponible",
+   "Por que tenga la misma estacionalidad que la variable objetivo",
+   "Por su disponibilidad temprana, para poder publicar antes",
+   "Por que exista un mecanismo económico que sostenga la relación, no solo correlación"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "15.10#t2",
+  "codigo": "15.10",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Desagregación temporal: Chow-Lin, Fernández y Litterman",
+  "q": "La serie trimestral obtenida por desagregación temporal presenta tasas de +36 % y −21 %. ¿Hay un error?",
+  "a": "**No: es una serie bruta que hereda la estacionalidad del indicador, y hay que ajustarla estacionalmente.** Publicar eso como crecimiento trimestral sería absurdo. La desagregación produce el dato bruto; el ajuste estacional viene después.",
+  "opciones": [
+   "No: es una serie bruta que hereda la estacionalidad del indicador, y hay que ajustarla estacionalmente",
+   "Sí: variaciones de esa magnitud indican que la relación estimada es incorrecta",
+   "No: las tasas de una serie desagregada no son interpretables en ningún caso",
+   "Sí: significa que no se ha cumplido la restricción anual"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "15.10#t3",
+  "codigo": "15.10",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Desagregación temporal: Chow-Lin, Fernández y Litterman",
+  "q": "El resultado de una desagregación temporal cumple la restricción anual y tiene un perfil creíble. ¿Basta para aceptarlo?",
+  "a": "**No: la desagregación siempre produce un resultado plausible, aunque el perfil sea inventado.** Hay que comprobar la estabilidad de la relación y disponer de años suficientes: con tres observaciones anuales y dos parámetros, los residuos salen pequeños porque la recta pasa casi por los puntos.",
+  "opciones": [
+   "Sí: cumplir la restricción y ser plausible es lo máximo que puede pedirse",
+   "Sí, si además el indicador tiene correlación superior a 0,9",
+   "No, salvo que se haya usado Chow-Lin en lugar de Fernández",
+   "No: la desagregación siempre produce un resultado plausible, aunque el perfil sea inventado"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "15.11#0",
   "codigo": "15.11",
   "bloque": 15,
@@ -3737,6 +8345,70 @@ export default [
   "titulo": "Agregación directa frente a indirecta y coherencia de agregados",
   "q": "Un cuadro de cuentas trimestrales ajustado cuadra perfectamente. ¿Significa que no hubo discrepancia?",
   "a": "No. La discrepancia no desaparece con la conciliación: se coloca en algún sitio, sea una partida designada o un reparto con criterio publicado. Además, en volúmenes encadenados hay una no aditividad previa e independiente del ajuste. Un cuadro coherente ha absorbido en alguna parte lo que el ajuste no podía cuadrar, y esa partida arrastra un residuo sin interpretación económica."
+ },
+ {
+  "id": "15.11#t0",
+  "codigo": "15.11",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Agregación directa frente a indirecta y coherencia de agregados",
+  "q": "El factor estacional del agregado es 0,87 mientras el turismo tiene 1,66 y la industria 0,51. ¿Qué indica el 0,87?",
+  "a": "**Que dos patrones fuertes y opuestos se están cancelando parcialmente en el total.** Ajustar directamente un agregado así estimaría un patrón promedio que no describe bien a ninguna de las partes.",
+  "opciones": [
+   "Que el agregado tiene estacionalidad débil",
+   "Que hay un error en el cálculo de los factores",
+   "Que el agregado debe ajustarse con un filtro más corto",
+   "Que dos patrones fuertes y opuestos se están cancelando parcialmente en el total"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "15.11#t1",
+  "codigo": "15.11",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Agregación directa frente a indirecta y coherencia de agregados",
+  "q": "Un instituto ajusta unas partidas directamente y otras por agregación, según cuál dé mejor resultado en cada caso. ¿Es aceptable?",
+  "a": "**No: es peor que cualquiera de las dos opciones, porque las discrepancias dejan de tener un patrón interpretable.** La exigencia europea es elegir un criterio, aplicarlo a todo y documentarlo. Mezclar según convenga hace imposible saber de dónde viene cada descuadre.",
+  "opciones": [
+   "No: es peor que cualquiera de las dos opciones, porque las discrepancias dejan de tener un patrón interpretable",
+   "No, salvo en cuadros con menos de diez partidas",
+   "Sí, si documenta la elección partida por partida",
+   "Sí: aprovecha lo mejor de cada enfoque"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "15.11#t2",
+  "codigo": "15.11",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Agregación directa frente a indirecta y coherencia de agregados",
+  "q": "¿En qué se diferencian la no aditividad de los volúmenes encadenados y la del ajuste estacional?",
+  "a": "**Son dos fuentes independientes de discrepancia: los encadenados ya no son aditivos antes de ajustar, y el ajuste añade su propia no linealidad.** Confundirlas lleva a creer que corrigiendo una desaparece la otra, y a atribuir toda la discrepancia a una sola causa.",
+  "opciones": [
+   "La del encadenamiento es corregible y la del ajuste no",
+   "La del ajuste solo afecta a series trimestrales",
+   "Son dos fuentes independientes de discrepancia: los encadenados ya no son aditivos antes de ajustar, y el ajuste añade su propia no linealidad",
+   "Son la misma cosa vista desde dos ángulos"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "15.11#t3",
+  "codigo": "15.11",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Agregación directa frente a indirecta y coherencia de agregados",
+  "q": "Un cuadro de cuentas trimestrales ajustado cuadra perfectamente. ¿Significa que no hubo discrepancia?",
+  "a": "**No: la discrepancia se ha colocado en alguna partida o repartido con un criterio, y conviene saber cuál.** Un cuadro que cuadra sin explicar dónde fue la diferencia esconde información sobre la calidad de sus propias estimaciones.",
+  "opciones": [
+   "No, pero la discrepancia es siempre despreciable",
+   "Sí, si se ha usado ajuste indirecto",
+   "No: la discrepancia se ha colocado en alguna partida o repartido con un criterio, y conviene saber cuál",
+   "Sí: si cuadra, las series ajustadas son aditivas"
+  ],
+  "correcta": 2
  },
  {
   "id": "15.12#0",
@@ -3784,6 +8456,70 @@ export default [
   "a": "No usarla como evidencia sobre el periodo reconstruido. Si ese tramo se generó aplicando hacia atrás una relación estimada en el periodo de solape, cualquier regularidad que se encuentre puede ser artefacto del procedimiento, sobre todo si el solape fue corto o la relación no era estable. Sirve para dar contexto y leer tendencias largas, no como fuente sobre lo que no se observó."
  },
  {
+  "id": "15.12#t0",
+  "codigo": "15.12",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Predicción, retropredicción y nowcasting",
+  "q": "Un indicador tiene correlación 0,8 con la variable objetivo. ¿Qué proporción de la incertidumbre elimina?",
+  "a": "**Menos de lo que sugiere: la reducción de varianza es proporcional al cuadrado de la correlación, y la incertidumbre se mide en desviaciones típicas.** Una correlación de 0,8 es alta para coyuntura y aun así deja bastante más incertidumbre de la que la cifra sugiere a primera vista.",
+  "opciones": [
+   "Menos de lo que sugiere: la reducción de varianza es proporcional al cuadrado de la correlación, y la incertidumbre se mide en desviaciones típicas",
+   "Toda ella, si el indicador cubre el trimestre completo",
+   "El 64 % de la incertidumbre, que es la correlación al cuadrado",
+   "El 80 %, en proporción a la correlación"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "15.12#t1",
+  "codigo": "15.12",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Predicción, retropredicción y nowcasting",
+  "q": "¿Contra qué debe evaluarse un nowcast?",
+  "a": "**Contra la primera estimación oficial publicada, que es lo que intentaba anticipar.** Es coherente con la regla general de evaluar cualquier decisión con la información disponible en su momento.",
+  "opciones": [
+   "Contra el dato bruto sin ajustar, para eliminar el efecto del procedimiento",
+   "Contra la serie revisada, que es la que refleja lo que realmente ocurrió",
+   "Contra la primera estimación oficial publicada, que es lo que intentaba anticipar",
+   "Contra la media de las previsiones de otros analistas"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "15.12#t2",
+  "codigo": "15.12",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Predicción, retropredicción y nowcasting",
+  "q": "Se encuentra una regularidad interesante en el tramo de una serie histórica reconstruido por retropredicción. ¿Qué precaución exige?",
+  "a": "**Que puede ser un artefacto del procedimiento, si ese tramo se generó con una relación estimada en el solape.** La regularidad puede venir de la relación impuesta y no de lo que ocurrió. Y una clasificación suele cambiarse precisamente porque la antigua había dejado de describir bien la realidad.",
+  "opciones": [
+   "Ninguna: la retropredicción usa la misma metodología que el resto de la serie",
+   "Que hay que reponderarla por la longitud del periodo reconstruido",
+   "Que puede ser un artefacto del procedimiento, si ese tramo se generó con una relación estimada en el solape",
+   "Que solo es válida si el solape supera los diez años"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "15.12#t3",
+  "codigo": "15.12",
+  "bloque": 15,
+  "nivel": 4,
+  "titulo": "Predicción, retropredicción y nowcasting",
+  "q": "¿Qué separa el nowcasting de la previsión?",
+  "a": "**Que el nowcast estima algo que ya ha ocurrido y se conocerá con certeza en semanas.** Esa diferencia hace que el nowcast sea verificable enseguida, mientras que una previsión a dos años tarda dos años en poder juzgarse.",
+  "opciones": [
+   "Que el nowcast estima algo que ya ha ocurrido y se conocerá con certeza en semanas",
+   "Que el nowcast se refiere al trimestre siguiente y la previsión al año",
+   "Que el nowcasting usa modelos de factores y la previsión modelos estructurales",
+   "Que el nowcasting no admite intervalos de confianza"
+  ],
+  "correcta": 0
+ },
+ {
   "id": "16.01#0",
   "codigo": "16.01",
   "bloque": 16,
@@ -3827,6 +8563,70 @@ export default [
   "titulo": "Estructuras jerárquicas y agrupadas",
   "q": "¿Por qué el sistema de cuentas nacionales no es una jerarquía en sentido estricto?",
   "a": "Porque organiza la información según varias clasificaciones simultáneas que no se anidan: sector institucional, rama de actividad, producto y operación. El valor añadido se desagrega por rama o por sector y ninguna contiene a la otra. Además las restricciones se cruzan: los tres enfoques del PIB, el equilibrio por producto y el cierre de las cuentas de cada sector se imponen a la vez."
+ },
+ {
+  "id": "16.01#t0",
+  "codigo": "16.01",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Estructuras jerárquicas y agrupadas",
+  "q": "Un servicio de estudios publica su previsión del PIB y, en el mismo documento, previsiones de consumo, inversión y sector exterior. ¿Qué hay que comprobar?",
+  "a": "**Que las de los componentes sumen la del agregado.** Previstas por separado no cuadran: la suma de las previsiones no es la previsión de la suma. Publicarlas juntas sin conciliar es publicar una contradicción.",
+  "opciones": [
+   "Que todas usen el mismo horizonte temporal",
+   "Que cada una venga con su intervalo de confianza",
+   "Que se hayan estimado con el mismo modelo",
+   "Que las de los componentes sumen la del agregado"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "16.01#t1",
+  "codigo": "16.01",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Estructuras jerárquicas y agrupadas",
+  "q": "Una cadena vende quinientos productos en cincuenta tiendas. ¿Qué condiciona la elección del método de reconciliación?",
+  "a": "**El tamaño: son decenas de miles de series, y cualquier método que exija invertir una matriz de esa dimensión resulta impracticable.** Es una restricción práctica que decide antes que cualquier consideración estadística: hay métodos excelentes que no se pueden ejecutar a esa escala.",
+  "opciones": [
+   "El sector de actividad de la cadena",
+   "El número de niveles de la jerarquía, que no puede superar cuatro",
+   "La frecuencia de los datos, diaria o semanal",
+   "El tamaño: son decenas de miles de series, y cualquier método que exija invertir una matriz de esa dimensión resulta impracticable"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "16.01#t2",
+  "codigo": "16.01",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Estructuras jerárquicas y agrupadas",
+  "q": "Un conjunto de previsiones cuadra perfectamente en todos los niveles. ¿Es señal de calidad?",
+  "a": "**No: puede cuadrar y estar equivocado en bloque; bottom-up siempre es coherente y puede ser malo.** Confundir coherencia con exactitud lleva a dar por resuelto un problema de modelización con un procedimiento contable.",
+  "opciones": [
+   "No, pero la coherencia garantiza al menos que el error total esté acotado",
+   "Sí: la coherencia es el criterio principal de calidad de un sistema de previsiones",
+   "Sí, si se ha obtenido con un método que respete la invariancia",
+   "No: puede cuadrar y estar equivocado en bloque; bottom-up siempre es coherente y puede ser malo"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "16.01#t3",
+  "codigo": "16.01",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Estructuras jerárquicas y agrupadas",
+  "q": "Se plantea desagregar hasta el nivel máximo que permitan los datos disponibles. ¿Es buen criterio?",
+  "a": "**No: bajar de nivel multiplica el número de series y el ruido de cada una, sin que necesariamente aporte detalle útil.** El nivel de desagregación debe elegirse por para qué se va a usar la previsión, no por hasta dónde llegan los ficheros.",
+  "opciones": [
+   "Sí, siempre que la matriz de sumas siga siendo invertible",
+   "No, salvo en estructuras agrupadas",
+   "No: bajar de nivel multiplica el número de series y el ruido de cada una, sin que necesariamente aporte detalle útil",
+   "Sí: más detalle siempre aporta más información"
+  ],
+  "correcta": 2
  },
  {
   "id": "16.02#0",
@@ -3874,6 +8674,70 @@ export default [
   "a": "Porque la construcción entera supone que los agregados son sumas de las hojas, y ninguna de esas dos magnitudes lo es. Los volúmenes encadenados no son aditivos ni siquiera en los datos observados, y la tasa de un agregado es una media ponderada de las de sus componentes, no su suma. Hay que reconciliar sobre niveles aditivos y derivar después las magnitudes que se publican."
  },
  {
+  "id": "16.02#t0",
+  "codigo": "16.02",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Coherencia y la matriz de sumas",
+  "q": "¿Qué contiene la matriz de sumas?",
+  "a": "**Solo ceros y unos que describen qué suma qué.** Describe la estructura de agregación y nada más, y por eso puede escribirse antes de tener un solo dato.",
+  "opciones": [
+   "Los datos históricos de cada serie de la jerarquía",
+   "Solo ceros y unos que describen qué suma qué",
+   "Las ponderaciones de cada hoja en su agregado",
+   "Las covarianzas entre los errores de previsión"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "16.02#t1",
+  "codigo": "16.02",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Coherencia y la matriz de sumas",
+  "q": "¿Puede aplicarse la formulación matricial a una estructura agrupada, con región y producto cruzados?",
+  "a": "**Sí: solo exige que cada serie sea una suma de hojas, y basta añadir una fila por cada agregado que interese.** Los totales por región y los totales por producto son ambos sumas de las mismas celdas, así que caben en la misma matriz.",
+  "opciones": [
+   "Sí, pero perdiendo la garantía de coherencia en los cruces",
+   "Solo si se elige previamente cuál de los dos criterios va primero",
+   "No: exige un árbol en el que cada serie tenga un único padre",
+   "Sí: solo exige que cada serie sea una suma de hojas, y basta añadir una fila por cada agregado que interese"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "16.02#t2",
+  "codigo": "16.02",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Coherencia y la matriz de sumas",
+  "q": "¿Qué exige la condición de invariancia a un método de reconciliación?",
+  "a": "**Que devuelva los valores originales cuando se le entrega un conjunto de previsiones ya coherente.** Es natural —no tocar lo que ya está bien— y además tiene consecuencia estadística: preserva la insesgadez, y el top-down la incumple.",
+  "opciones": [
+   "Que el resultado no dependa del orden en que se recorra la jerarquía",
+   "Que la suma de los ajustes aplicados sea cero",
+   "Que funcione igual con cualquier número de niveles",
+   "Que devuelva los valores originales cuando se le entrega un conjunto de previsiones ya coherente"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "16.02#t3",
+  "codigo": "16.02",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Coherencia y la matriz de sumas",
+  "q": "¿Puede reconciliarse directamente una jerarquía de tasas de variación?",
+  "a": "**No: toda la construcción supone que los agregados son sumas de las hojas, y las tasas, ratios e índices no son aditivos.** Es la misma razón por la que no se puede reconciliar directamente sobre volúmenes encadenados. Hay que trabajar sobre magnitudes aditivas y derivar después las tasas.",
+  "opciones": [
+   "No: toda la construcción supone que los agregados son sumas de las hojas, y las tasas, ratios e índices no son aditivos",
+   "Sí, ponderando cada tasa por el peso de su serie",
+   "Sí: las tasas se agregan igual que los niveles",
+   "No, salvo que todas las series tengan la misma base"
+  ],
+  "correcta": 0
+ },
+ {
   "id": "16.03#0",
   "codigo": "16.03",
   "bloque": 16,
@@ -3917,6 +8781,70 @@ export default [
   "titulo": "Bottom-up, top-down y middle-out",
   "q": "¿En qué situación sigue siendo razonable un top-down?",
   "a": "Cuando las hojas son casi ruido puro. En jerarquías con miles de referencias por punto de venta, modelar cada serie individualmente no aporta nada porque su previsión sería poco más que su media histórica; repartir un agregado bien previsto con proporciones estables da un resultado defendible con una fracción del coste. El criterio general es dónde está concentrada la información."
+ },
+ {
+  "id": "16.03#t0",
+  "codigo": "16.03",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Bottom-up, top-down y middle-out",
+  "q": "¿Es bottom-up la opción más prudente por partir del máximo detalle?",
+  "a": "**No: descarta las previsiones de los niveles agregados, que se apoyan en las series con mejor relación señal-ruido.** En jerarquías profundas las hojas pueden tener tan poca señal que sumar ruido produzca un agregado peor que preverlo directamente.",
+  "opciones": [
+   "No: bottom-up no garantiza la coherencia entre niveles",
+   "Sí, salvo en jerarquías con más de tres niveles",
+   "Sí: usar toda la información disponible en las hojas es lo más seguro",
+   "No: descarta las previsiones de los niveles agregados, que se apoyan en las series con mejor relación señal-ruido"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "16.03#t1",
+  "codigo": "16.03",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Bottom-up, top-down y middle-out",
+  "q": "¿De dónde procede el sesgo del top-down?",
+  "a": "**De que el método incumple la condición de invariancia: modificaría incluso unas previsiones base ya coherentes.** Por eso sesga aun partiendo de previsiones base insesgadas: es una propiedad estructural del reparto proporcional.",
+  "opciones": [
+   "De errores de implementación al calcular las proporciones",
+   "De que el modelo del agregado suele estar mal especificado",
+   "De que el método incumple la condición de invariancia: modificaría incluso unas previsiones base ya coherentes",
+   "De que las proporciones históricas se estiman con pocos años"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "16.03#t2",
+  "codigo": "16.03",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Bottom-up, top-down y middle-out",
+  "q": "Se comparan bottom-up y top-down midiendo el error solo en el nivel agregado. ¿Qué problema tiene esa evaluación?",
+  "a": "**Que top-down acierta por construcción en el total, así que el resultado está decidido de antemano.** Bottom-up acierta por construcción en las hojas y top-down en el total: evaluar en un solo nivel garantiza que gane el que lo respeta.",
+  "opciones": [
+   "Que faltaría corregir por el número de series de cada nivel",
+   "Que el error del agregado siempre es menor que el de las hojas",
+   "Que no se pueden comparar métodos que reparten de forma distinta",
+   "Que top-down acierta por construcción en el total, así que el resultado está decidido de antemano"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "16.03#t3",
+  "codigo": "16.03",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Bottom-up, top-down y middle-out",
+  "q": "Las proporciones estimadas por separado para cada hoja suman 1,03. ¿Qué hay que hacer?",
+  "a": "**Normalizarlas para que sumen uno, o el reparto no reproducirá el total.** Estimar cada proporción por su cuenta rara vez da una suma exacta de uno, y la normalización es el paso que se olvida.",
+  "opciones": [
+   "Aceptarlas: la desviación es pequeña",
+   "Volver a estimar el modelo del agregado",
+   "Normalizarlas para que sumen uno, o el reparto no reproducirá el total",
+   "Descartar la hoja con la proporción más alta"
+  ],
+  "correcta": 2
  },
  {
   "id": "16.04#0",
@@ -3964,6 +8892,70 @@ export default [
   "a": "Poco: si la incoherencia es pequeña, la componente perpendicular del error también lo es y hay poco que eliminar. La relación es la inversa de lo que sugiere la intuición: cuanto peor cuadren las previsiones, más se gana reconciliándolas. Eso significa también que una incoherencia grande es una señal de que los modelos base son inconsistentes entre sí y conviene mirar por qué."
  },
  {
+  "id": "16.04#t0",
+  "codigo": "16.04",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Combinación óptima y reconciliación MinT",
+  "q": "¿Garantiza la reconciliación MinT que mejore la previsión de cada serie individual?",
+  "a": "**No: lo que se reduce es el error del conjunto, y una serie concreta puede empeorar.** En el ejemplo, energía pasa de 22,0 a 21,45 y puede que 22,0 fuera lo acertado. Se gana en agregado y se puede perder en un punto.",
+  "opciones": [
+   "No: lo que se reduce es el error del conjunto, y una serie concreta puede empeorar",
+   "Sí, salvo en las series hoja",
+   "Sí: por eso se llama óptima",
+   "No, pero sí que ninguna empeore respecto a su previsión base"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "16.04#t1",
+  "codigo": "16.04",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Combinación óptima y reconciliación MinT",
+  "q": "¿Es la proyección ponderada siempre preferible a la ortogonal?",
+  "a": "**Con la matriz de covarianzas correcta domina; con una mal estimada puede ser peor que la ortogonal, que no supone nada.** La matriz hay que estimarla, y ahí está el problema práctico de todo el método.",
+  "opciones": [
+   "No: la ortogonal es preferible por ser insesgada",
+   "Sí, siempre que se disponga de al menos veinte observaciones",
+   "Sí: incorporar información sobre la fiabilidad de cada previsión nunca puede empeorar el resultado",
+   "Con la matriz de covarianzas correcta domina; con una mal estimada puede ser peor que la ortogonal, que no supone nada"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "16.04#t2",
+  "codigo": "16.04",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Combinación óptima y reconciliación MinT",
+  "q": "¿Se puede confundir la proyección ortogonal con bottom-up por ser ambas sencillas y coherentes?",
+  "a": "**No: la ortogonal usa todas las previsiones y las mueve todas; bottom-up usa solo las hojas y las deja intactas.** En el ejemplo, bottom-up deja el total en 133,50 y la ortogonal en 132,64. Son dos conjuntos coherentes distintos, y esa es la lección de fondo: la coherencia no determina el resultado.",
+  "opciones": [
+   "No: la ortogonal usa todas las previsiones y las mueve todas; bottom-up usa solo las hojas y las deja intactas",
+   "Son equivalentes cuando la jerarquía tiene un solo nivel",
+   "Sí: ambas ignoran la matriz de covarianzas y dan el mismo resultado",
+   "No: bottom-up no es una proyección sobre el subespacio coherente"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "16.04#t3",
+  "codigo": "16.04",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Combinación óptima y reconciliación MinT",
+  "q": "Las previsiones base están muy lejos de cuadrar entre niveles. ¿Qué conviene hacer antes de reconciliar?",
+  "a": "**Revisar los modelos: una incoherencia grande es también una señal de que alguno está mal especificado.** La magnitud de la incoherencia es información sobre la calidad de los modelos base, y conviene leerla antes de hacerla desaparecer.",
+  "opciones": [
+   "Aplicar bottom-up, que siempre cuadra",
+   "Revisar los modelos: una incoherencia grande es también una señal de que alguno está mal especificado",
+   "Aumentar la ponderación del nivel agregado",
+   "Nada: cuanto mayor sea la incoherencia, más gana la reconciliación"
+  ],
+  "correcta": 1
+ },
+ {
   "id": "16.05#0",
   "codigo": "16.05",
   "bloque": 16,
@@ -4007,6 +8999,69 @@ export default [
   "titulo": "Estimación de la matriz de covarianzas",
   "q": "¿Qué comparación hay que hacer siempre antes de adoptar una aproximación?",
   "a": "Contra la proyección ortogonal, que no supone nada. Cualquier aproximación más sofisticada tiene que demostrar mejora fuera de muestra sobre ella; si no lo hace, la complejidad añadida no se justifica. La ganancia de refinar la matriz es real pero modesta, y la pérdida por refinarla mal puede ser grande."
+ },
+ {
+  "id": "16.05#t0",
+  "codigo": "16.05",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Estimación de la matriz de covarianzas",
+  "q": "Una jerarquía se estima con diez años de datos mensuales. ¿Cuántas series admite como máximo una matriz de covarianzas completa?",
+  "a": "**Quince, porque 15 · 16 / 2 = 120 y hay 120 observaciones.** Una matriz de n series tiene n(n+1)/2 entradas distintas. Con n = 15 salen 120, exactamente las observaciones disponibles; a partir de ahí hay más parámetros que datos y la matriz muestral deja de ser invertible.",
+  "opciones": [
+   "No hay límite: basta con esperar a acumular más historia",
+   "Quince, porque 15 · 16 / 2 = 120 y hay 120 observaciones",
+   "Diez, una por cada año de historia disponible",
+   "Ciento veinte, una por cada observación de la muestra"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "16.05#t1",
+  "codigo": "16.05",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Estimación de la matriz de covarianzas",
+  "q": "¿Qué información se renuncia a usar al suponer que la matriz es diagonal?",
+  "a": "**Las covarianzas, es decir, cómo se equivocan juntas las previsiones.** La diagonal recoge cuánto se equivoca cada previsión por separado; las covarianzas recogen si dos ramas fallan siempre en el mismo sentido por compartir un choque común. Esa es la información que la reconciliación podría aprovechar y con una matriz diagonal no puede.",
+  "opciones": [
+   "Ninguna relevante: diagonalizar solo acelera el cálculo",
+   "Las varianzas de cada serie, que quedan sustituidas por una común",
+   "Las covarianzas, es decir, cómo se equivocan juntas las previsiones",
+   "La coherencia de la jerarquía, que deja de estar garantizada"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "16.05#t2",
+  "codigo": "16.05",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Estimación de la matriz de covarianzas",
+  "q": "Al construir la matriz, ¿sobre qué hay que calcular las covarianzas?",
+  "a": "**Sobre los errores de previsión de cada serie.** El método pondera según cuánto y cómo se equivoca cada previsión, así que la materia prima son los errores, no los niveles. Es lo único que distingue una rama bien modelada de otra que no lo está.",
+  "opciones": [
+   "Sobre los errores de previsión de cada serie",
+   "Sobre las series de la jerarquía, que es lo que se está prediciendo",
+   "Sobre las series ya reconciliadas, para incorporar la coherencia"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "16.05#t3",
+  "codigo": "16.05",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Estimación de la matriz de covarianzas",
+  "q": "¿Cuál es la disciplina razonable al elegir aproximación de la matriz?",
+  "a": "**Partir de la proyección ortogonal y exigir a cada alternativa mejora fuera de muestra.** La proyección ortogonal no supone nada y por eso es el punto de partida honesto. Cualquier refinamiento añade hipótesis, así que le corresponde a él demostrar que compensa, y la única prueba válida es la evaluación fuera de muestra por niveles.",
+  "opciones": [
+   "Partir de la proyección ortogonal y exigir a cada alternativa mejora fuera de muestra",
+   "Quedarse con la que produzca las cifras más coherentes entre niveles",
+   "Empezar por la matriz completa y simplificarla solo si el cálculo falla",
+   "Escoger la aproximación más sofisticada que los datos permitan estimar"
+  ],
+  "correcta": 0
  },
  {
   "id": "16.06#0",
@@ -4054,6 +9109,70 @@ export default [
   "a": "Cuál de las dos previsiones considera más fiable. Ajustar el trimestre más lejano, o repartir la diferencia por igual, son criterios implícitos sobre dónde colocar el error, tomados sin evaluarlos. Plantearlo como jerarquía temporal hace explícita esa decisión y, además, produce un conjunto que espera equivocarse menos que cualquiera de las dos previsiones originales."
  },
  {
+  "id": "16.06#t0",
+  "codigo": "16.06",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Jerarquías temporales: mensual, trimestral y anual",
+  "q": "Un equipo produce previsiones mensuales, trimestrales y anuales de la misma serie. ¿Tiene una jerarquía?",
+  "a": "**Sí: una serie única agregada a distintas frecuencias ya forma una jerarquía, sin necesidad de componentes.** Quien produce previsiones a varias frecuencias ya tiene el problema de coherencia, aunque no lo llame así.",
+  "opciones": [
+   "Solo si la serie tiene estacionalidad",
+   "Solo si las tres previsiones proceden del mismo modelo",
+   "Sí: una serie única agregada a distintas frecuencias ya forma una jerarquía, sin necesidad de componentes",
+   "No: una jerarquía exige que haya componentes que sumen un agregado"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "16.06#t1",
+  "codigo": "16.06",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Jerarquías temporales: mensual, trimestral y anual",
+  "q": "Con datos mensuales, ¿puede agregarse de cinco en cinco meses para formar un nivel de la jerarquía?",
+  "a": "**No: los niveles disponibles son los divisores del periodo estacional, y cinco no divide a doce.** Con datos mensuales los niveles son 1, 2, 3, 4, 6 y 12. Agregar de cinco en cinco produce bloques que cruzan años y no encajan en la estructura.",
+  "opciones": [
+   "No: los niveles disponibles son los divisores del periodo estacional, y cinco no divide a doce",
+   "No, salvo que la serie no tenga estacionalidad",
+   "Sí, si se completa el último bloque con predicciones",
+   "Sí: cualquier agrupación de periodos consecutivos vale"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "16.06#t2",
+  "codigo": "16.06",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Jerarquías temporales: mensual, trimestral y anual",
+  "q": "Se ajusta un único modelo mensual y se agregan sus previsiones a trimestral y anual. ¿Es reconciliación temporal?",
+  "a": "**No: eso es bottom-up temporal, y desperdicia la mitad de la idea.** La ganancia procede de ajustar un modelo por nivel, con la especificación que corresponda a cada frecuencia, y combinarlos después.",
+  "opciones": [
+   "Sí: el resultado es coherente entre las tres frecuencias",
+   "Sí, y además es la variante más eficiente por usar el máximo detalle",
+   "No: eso es bottom-up temporal, y desperdicia la mitad de la idea",
+   "No: la agregación temporal exige aplicar benchmarking"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "16.06#t3",
+  "codigo": "16.06",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Jerarquías temporales: mensual, trimestral y anual",
+  "q": "¿Conviene especificar modelos estacionales en los niveles anual y semestral de una jerarquía temporal?",
+  "a": "**No: la serie anual no tiene estacionalidad por construcción y la semestral casi tampoco; añadir parámetros estacionales ahí solo mete ruido.** Agregar el año entero elimina el patrón intraanual: no queda nada estacional que modelizar.",
+  "opciones": [
+   "No, salvo que la serie tenga un ciclo plurianual",
+   "Sí: mantener la misma especificación en todos los niveles facilita la comparación",
+   "Sí, con un periodo estacional adaptado a cada frecuencia",
+   "No: la serie anual no tiene estacionalidad por construcción y la semestral casi tampoco; añadir parámetros estacionales ahí solo mete ruido"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "16.07#0",
   "codigo": "16.07",
   "bloque": 16,
@@ -4097,6 +9216,70 @@ export default [
   "titulo": "Reconciliación probabilística",
   "q": "¿Por qué unos intervalos marginales no permiten calcular la probabilidad de recesión técnica?",
   "a": "Porque la pregunta involucra dos trimestres consecutivos de la misma serie, que es una propiedad conjunta. Un intervalo dice qué puede pasar con una serie en un horizonte, pero no cómo se relacionan los errores de un periodo y del siguiente. Con trayectorias simuladas la respuesta es inmediata: se cuenta en qué proporción de ellas hay dos trimestres negativos seguidos."
+ },
+ {
+  "id": "16.07#t0",
+  "codigo": "16.07",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Reconciliación probabilística",
+  "q": "Cuatro hojas tienen intervalos del 90 % de la misma anchura. ¿Cuál es el intervalo del total?",
+  "a": "**La suma de los cuatro, si los errores están perfectamente correlacionados.** Sumarlos supone implícitamente correlación perfecta: que las cuatro se equivoquen a la vez y en el mismo sentido. Con errores independientes la anchura correcta es la mitad.",
+  "opciones": [
+   "La media de los cuatro",
+   "La suma de los cuatro, en cualquier caso",
+   "La suma de los cuatro, si los errores están perfectamente correlacionados",
+   "El mayor de los cuatro"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "16.07#t1",
+  "codigo": "16.07",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Reconciliación probabilística",
+  "q": "Se reconcilian los puntos de una jerarquía. ¿Basta para tener previsiones probabilísticas coherentes?",
+  "a": "**No: reconciliar coloca la media dentro del subespacio, pero la distribución puede seguir asignando probabilidad a combinaciones imposibles.** La coherencia probabilística exige probabilidad cero fuera del subespacio coherente, y eso es bastante más que colocar la media.",
+  "opciones": [
+   "Sí, si además los intervalos se recalculan con la varianza reconciliada",
+   "Sí: si las medias cuadran, la distribución conjunta también",
+   "No, salvo que las previsiones base sean normales",
+   "No: reconciliar coloca la media dentro del subespacio, pero la distribución puede seguir asignando probabilidad a combinaciones imposibles"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "16.07#t2",
+  "codigo": "16.07",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Reconciliación probabilística",
+  "q": "¿Por qué es más grave diagonalizar la matriz de covarianzas al construir intervalos que al reconciliar puntos?",
+  "a": "**Porque en la construcción de intervalos equivale a afirmar independencia entre los errores, y si no la hay las anchuras salen mal.** En la reconciliación puntual diagonalizar da un resultado algo peor y razonable; aquí introduce un supuesto fuerte que determina directamente la anchura publicada.",
+  "opciones": [
+   "Porque diagonalizar cambia la media de la distribución",
+   "Porque los intervalos se calculan sobre la serie ajustada y los puntos sobre la bruta",
+   "Porque los intervalos exigen invertir la matriz y los puntos no",
+   "Porque en la construcción de intervalos equivale a afirmar independencia entre los errores, y si no la hay las anchuras salen mal"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "16.07#t3",
+  "codigo": "16.07",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Reconciliación probabilística",
+  "q": "Se simulan trayectorias para obtener previsiones probabilísticas. ¿Cómo hay que remuestrear los residuos?",
+  "a": "**Por vectores completos: todas las series de la misma fecha juntas, para conservar la correlación entre ellas.** Y conviene además preservar la dependencia entre horizontes: los intervalos marginales por horizonte la ignoran y no permiten responder preguntas conjuntas.",
+  "opciones": [
+   "Serie a serie, para que cada una conserve su propia distribución",
+   "Por vectores completos: todas las series de la misma fecha juntas, para conservar la correlación entre ellas",
+   "Solo los residuos de las series hoja, y agregar después",
+   "Aleatoriamente sobre el conjunto de todos los residuos de todas las series"
+  ],
+  "correcta": 1
  },
  {
   "id": "16.08#0",
@@ -4144,6 +9327,70 @@ export default [
   "a": "No sin dos comprobaciones. Primera, si la diferencia es distinguible del ruido: los contrastes de igualdad de exactitud predictiva existen para eso. Segunda, si compensa el coste: mantener una reconciliación óptima con matriz estimada exige vigilancia continua, mientras que un bottom-up funciona solo. La decisión correcta no siempre es adoptar el método que gana la comparación."
  },
  {
+  "id": "16.08#t0",
+  "codigo": "16.08",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Evaluación de previsiones jerárquicas",
+  "q": "Se compara la matriz de covarianzas estimada sobre el mismo periodo en el que después se mide el error. ¿Qué ocurre?",
+  "a": "**El resultado sale optimista y no se reproduce fuera de muestra.** La evaluación honesta usa origen móvil: estimar con lo disponible en cada fecha y repetir, como si se estuviera prediciendo de verdad.",
+  "opciones": [
+   "Nada: usar todos los datos disponibles es lo correcto",
+   "El método pierde la propiedad de invariancia",
+   "La matriz queda mal condicionada y no se puede invertir",
+   "El resultado sale optimista y no se reproduce fuera de muestra"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "16.08#t1",
+  "codigo": "16.08",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Evaluación de previsiones jerárquicas",
+  "q": "Un método de reconciliación mejora un 2 % sobre treinta orígenes de evaluación. ¿Basta para adoptarlo?",
+  "a": "**Conviene ser cauto: con pocos orígenes una diferencia de esa magnitud puede no ser distinguible del azar, y además hay que pesar el coste.** Mantener una reconciliación óptima con matriz estimada exige vigilancia continua; la ortogonal no requiere nada. Esa asimetría pesa en la decisión.",
+  "opciones": [
+   "Sí: una mejora consistente es una mejora",
+   "No: por debajo del 5 % ninguna mejora es adoptable",
+   "Conviene ser cauto: con pocos orígenes una diferencia de esa magnitud puede no ser distinguible del azar, y además hay que pesar el coste",
+   "Sí, si además mejora en todos los niveles de la jerarquía"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "16.08#t2",
+  "codigo": "16.08",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Evaluación de previsiones jerárquicas",
+  "q": "¿De qué depende la escala de una medida de error escalada?",
+  "a": "**Del error de una previsión ingenua sobre el histórico de la propia serie.** Una serie muy predecible tiene un denominador pequeño, así que su medida escalada sale grande aunque el error absoluto sea diminuto. Conviene saberlo al leer la tabla.",
+  "opciones": [
+   "Del número de series de la jerarquía",
+   "Del error de una previsión ingenua sobre el histórico de la propia serie",
+   "Del nivel medio de la serie evaluada",
+   "Del horizonte de previsión utilizado"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "16.08#t3",
+  "codigo": "16.08",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Evaluación de previsiones jerárquicas",
+  "q": "Se publican intervalos de previsión y se evalúan con el error absoluto medio de los puntos. ¿Es suficiente?",
+  "a": "**No: si el producto son intervalos o probabilidades, hacen falta medidas probabilísticas que juzguen la calibración.** Evaluar intervalos con medidas de error puntual no dice si están bien calibrados, que es justamente lo que hay que comprobar de un intervalo.",
+  "opciones": [
+   "Sí, siempre que se acompañe de la cobertura observada del intervalo",
+   "No: si el producto son intervalos o probabilidades, hacen falta medidas probabilísticas que juzguen la calibración",
+   "Sí: si el punto central acierta, el intervalo está bien situado",
+   "No, pero el error puntual es el mejor sustituto disponible"
+  ],
+  "correcta": 1
+ },
+ {
   "id": "16.09#0",
   "codigo": "16.09",
   "bloque": 16,
@@ -4187,6 +9434,70 @@ export default [
   "titulo": "Aplicación a cuentas nacionales y estadística oficial",
   "q": "¿Qué aporta este marco a la compilación de cuentas nacionales?",
   "a": "No reconciliar donde no se reconciliaba, sino escribir el criterio con el que ya se reconcilia. El juicio del compilador sobre qué fuente es más fiable suele ser sólido, pero no está documentado, no se puede auditar y se pierde al cambiar la persona. Una matriz de ponderaciones explícita es discutible, revisable y reproducible; el argumento principal es de transparencia."
+ },
+ {
+  "id": "16.09#t0",
+  "codigo": "16.09",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Aplicación a cuentas nacionales y estadística oficial",
+  "q": "¿Es el sistema de cuentas nacionales una jerarquía anidada?",
+  "a": "**No: las restricciones se cruzan, y una partida participa a la vez en la identidad de su rama, en la de su producto y en la del agregado.** El marco origen-destino exige cuadrar a la vez por filas y por columnas, y ninguna estructura de árbol recoge dos criterios cruzados.",
+  "opciones": [
+   "Sí, con la salvedad del sector resto del mundo",
+   "No: las restricciones se cruzan, y una partida participa a la vez en la identidad de su rama, en la de su producto y en la del agregado",
+   "Sí: los sectores se agrupan en la economía total como las hojas en su rama",
+   "No: las cuentas nacionales no admiten formulación matricial"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "16.09#t1",
+  "codigo": "16.09",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Aplicación a cuentas nacionales y estadística oficial",
+  "q": "Una tabla origen-destino de 50 × 50 cuadra por filas y columnas. ¿Garantiza eso la calidad de sus cifras?",
+  "a": "**No: hay 2.500 celdas y solo unas 99 restricciones efectivas, apenas un 4 %.** Queda enorme libertad para que las cifras individuales estén equivocadas mientras el conjunto cuadra perfectamente.",
+  "opciones": [
+   "No, pero el porcentaje de restricciones aumenta con el tamaño de la tabla",
+   "Sí: cuadrar simultáneamente por dos criterios es una restricción muy exigente",
+   "Sí, si además coinciden los tres enfoques de cálculo del PIB",
+   "No: hay 2.500 celdas y solo unas 99 restricciones efectivas, apenas un 4 %"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "16.09#t2",
+  "codigo": "16.09",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Aplicación a cuentas nacionales y estadística oficial",
+  "q": "Un compilador coloca sistemáticamente la discrepancia en la variación de existencias. ¿Qué está declarando?",
+  "a": "**Que esa partida tiene varianza infinita, es decir, que su estimación no vale nada.** Puede ser cierto —la variación de existencias es la partida peor medida— y entonces conviene decirlo explícitamente en lugar de que quede implícito en el procedimiento.",
+  "opciones": [
+   "Que esa partida tiene varianza infinita, es decir, que su estimación no vale nada",
+   "Que la discrepancia procede de esa partida",
+   "Que aplica el criterio recomendado por el reglamento europeo",
+   "Que esa partida es la más volátil de las cuentas"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "16.09#t3",
+  "codigo": "16.09",
+  "bloque": 16,
+  "nivel": 4,
+  "titulo": "Aplicación a cuentas nacionales y estadística oficial",
+  "q": "¿Qué aporta el marco de reconciliación a la compilación de cuentas nacionales, que ya venía cuadrando sus tablas?",
+  "a": "**Escribir el criterio: hacer explícito y reproducible un reparto que hasta ahora estaba en la cabeza de quien compila.** Un criterio escrito se puede discutir, auditar y reproducir; uno implícito no. Y además revela que el reparto ha podido cambiar con las personas y los periodos.",
+  "opciones": [
+   "Escribir el criterio: hacer explícito y reproducible un reparto que hasta ahora estaba en la cabeza de quien compila",
+   "Sustituir el juicio experto del compilador por un algoritmo objetivo",
+   "Eliminar la necesidad de confrontar fuentes",
+   "Reducir el tiempo de compilación"
+  ],
+  "correcta": 0
  },
  {
   "id": "16.10#0",
@@ -4234,6 +9545,70 @@ export default [
   "a": "Permitir especificar la matriz de sumas explícitamente. Las interfaces que solo aceptan jerarquías anidadas dejan de servir en cuanto la estructura tiene criterios cruzados, que es lo habitual con más de una clasificación. El ecosistema de R está maduro y cubre jerarquías transversales, agrupadas y temporales con reconciliación probabilística; en Python las opciones son menos completas."
  },
  {
+  "id": "16.10#t0",
+  "codigo": "16.10",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Herramientas, diagnóstico y práctica",
+  "q": "¿Cuál es la primera comprobación antes de reconciliar una jerarquía?",
+  "a": "**Verificar sobre los datos históricos que la estructura declarada se cumple de verdad.** Con definiciones que no encajan, partidas contadas dos veces o cambios de perímetro, las hojas no sumaban la rama ni siquiera en el pasado, y se salta con mucha frecuencia.",
+  "opciones": [
+   "Elegir el método de reconciliación",
+   "Estimar la matriz de covarianzas de los errores",
+   "Verificar sobre los datos históricos que la estructura declarada se cumple de verdad",
+   "Comprobar que todas las series tienen la misma longitud"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "16.10#t1",
+  "codigo": "16.10",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Herramientas, diagnóstico y práctica",
+  "q": "Manufactura y energía reciben el mismo ajuste absoluto de 0,548 al reconciliar. ¿Significa lo mismo para ambas?",
+  "a": "**No: sus niveles difieren, así que el mismo ajuste absoluto es un porcentaje muy distinto en cada una.** El diagnóstico útil compara el ajuste de cada serie con su propia escala y con su variabilidad típica.",
+  "opciones": [
+   "No: el ajuste debería haber sido proporcional al nivel de cada serie",
+   "Sí: el ajuste absoluto es la medida natural del movimiento aplicado",
+   "Sí, si ambas pertenecen a la misma rama",
+   "No: sus niveles difieren, así que el mismo ajuste absoluto es un porcentaje muy distinto en cada una"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "16.10#t2",
+  "codigo": "16.10",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Herramientas, diagnóstico y práctica",
+  "q": "Una serie recibe un ajuste del 2,49 % cuando su crecimiento trimestral típico es del 0,5 %. ¿Qué indica?",
+  "a": "**Que la reconciliación no está afinando la previsión: la está reescribiendo porque el resto de la jerarquía se lo exige.** Es la señal de alarma del diagnóstico: conviene mirar si la previsión base de esa serie es mala, o si lo que falla es la estructura o alguna otra rama.",
+  "opciones": [
+   "Que el método elegido es demasiado conservador",
+   "Que la reconciliación está afinando bien esa previsión",
+   "Que la serie es especialmente volátil",
+   "Que la reconciliación no está afinando la previsión: la está reescribiendo porque el resto de la jerarquía se lo exige"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "16.10#t3",
+  "codigo": "16.10",
+  "bloque": 16,
+  "nivel": 3,
+  "titulo": "Herramientas, diagnóstico y práctica",
+  "q": "Se va a elegir herramienta para reconciliar. ¿Qué requisito debe cumplir?",
+  "a": "**Permitir especificar la matriz de sumas explícitamente, y no solo árboles anidados.** Las interfaces que solo aceptan árboles dejan de servir en cuanto la estructura tiene criterios cruzados, que es lo habitual en cuanto hay territorio y producto a la vez.",
+  "opciones": [
+   "Estimar automáticamente la matriz de covarianzas",
+   "Permitir especificar la matriz de sumas explícitamente, y no solo árboles anidados",
+   "Incluir todos los métodos de reconciliación publicados",
+   "Ofrecer una interfaz gráfica para dibujar la jerarquía"
+  ],
+  "correcta": 1
+ },
+ {
   "id": "2.01#0",
   "codigo": "2.01",
   "bloque": 2,
@@ -4277,6 +9652,70 @@ export default [
   "titulo": "Preferencias, utilidad y restricción presupuestaria",
   "q": "¿Qué relación tiene esta ficha con el IPC?",
   "a": "El objetivo teórico de un índice de precios de consumo es el índice del coste de la vida, definido a partir de la función de gasto del problema del consumidor. Y las ponderaciones del IPC son proporciones de gasto, que en Cobb-Douglas coinciden con los parámetros de la utilidad."
+ },
+ {
+  "id": "2.01#t0",
+  "codigo": "2.01",
+  "bloque": 2,
+  "nivel": 1,
+  "titulo": "Preferencias, utilidad y restricción presupuestaria",
+  "q": "Una función de utilidad asigna 10 a una cesta y 20 a otra. ¿Qué se puede afirmar?",
+  "a": "**Solo que la segunda se prefiere a la primera.** La utilidad es única salvo transformación monótona creciente, así que lo único invariante —y por tanto lo único con contenido— es qué va antes y qué va después.",
+  "opciones": [
+   "Solo que la segunda se prefiere a la primera",
+   "Que la utilidad marginal entre ambas es de 10",
+   "Que quien la consume duplica su bienestar al pasar de una a otra",
+   "Que la segunda cesta gusta el doble que la primera"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "2.01#t1",
+  "codigo": "2.01",
+  "bloque": 2,
+  "nivel": 1,
+  "titulo": "Preferencias, utilidad y restricción presupuestaria",
+  "q": "En el óptimo del consumidor la relación marginal de sustitución iguala al cociente de precios. ¿Qué es eso?",
+  "a": "**El resultado del problema: la RMS describe gustos y el precio relativo, el mercado.** Son dos cosas de naturaleza distinta —una preferencia y un dato de mercado— y el óptimo es precisamente el punto donde el consumidor ha ajustado la primera hasta encontrarse con la segunda.",
+  "opciones": [
+   "El resultado del problema: la RMS describe gustos y el precio relativo, el mercado",
+   "Un supuesto del modelo, necesario para que haya solución",
+   "Una identidad contable, cierta por construcción",
+   "Una condición que solo se cumple con preferencias Cobb-Douglas"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "2.01#t2",
+  "codigo": "2.01",
+  "bloque": 2,
+  "nivel": 1,
+  "titulo": "Preferencias, utilidad y restricción presupuestaria",
+  "q": "Con $U(x,y) = x + 2y$, precios $p_x = 1$, $p_y = 3$ y renta 60, ¿qué se obtiene aplicando la condición de tangencia?",
+  "a": "**Nada útil: las curvas de indiferencia son rectas y el óptimo está en una esquina.** La RMS es constante e igual a $1/2$ y el precio relativo es $1/3$. Como la RMS supera al precio relativo, se gasta todo en $x$: $x = 60$, $y = 0$, con utilidad 60.",
+  "opciones": [
+   "Una solución con cantidades negativas, que hay que redondear a cero",
+   "Dos soluciones posibles, entre las que decide la renta",
+   "Nada útil: las curvas de indiferencia son rectas y el óptimo está en una esquina",
+   "La cesta óptima directamente"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "2.01#t3",
+  "codigo": "2.01",
+  "bloque": 2,
+  "nivel": 1,
+  "titulo": "Preferencias, utilidad y restricción presupuestaria",
+  "q": "Se multiplican por dos todos los precios y también la renta. ¿Qué le pasa a la cesta elegida?",
+  "a": "**No cambia: el conjunto presupuestario es idéntico.** Es la homogeneidad de grado cero: $x(\\lambda p, \\lambda m) = x(p, m)$. La recta presupuestaria no se mueve ni un milímetro, luego el óptimo tampoco.",
+  "opciones": [
+   "Depende de si las preferencias son homotéticas",
+   "Aumenta, porque la renta nominal es mayor",
+   "No cambia: el conjunto presupuestario es idéntico",
+   "Se reduce a la mitad, porque todo cuesta el doble"
+  ],
+  "correcta": 2
  },
  {
   "id": "2.02#0",
@@ -4324,6 +9763,70 @@ export default [
   "a": "Porque la agregación de demandas individuales no preserva la estructura del problema individual. Solo bajo condiciones restrictivas —curvas de Engel lineales y paralelas, por ejemplo— la demanda agregada se comporta como la de un único consumidor."
  },
  {
+  "id": "2.02#t0",
+  "codigo": "2.02",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Elección del consumidor y derivación de la demanda",
+  "q": "¿Por qué la curva de demanda tiene normalmente pendiente negativa?",
+  "a": "**Es un resultado que se deduce de resolver el óptimo a distintos precios, y admite una excepción teórica.** Se deduce, y la excepción son los bienes Giffen, donde el efecto renta es negativo y supera al de sustitución. Que exista esa excepción confirma que es un resultado y no un supuesto.",
+  "opciones": [
+   "Es un supuesto básico de la teoría del consumidor",
+   "Es un resultado que se deduce de resolver el óptimo a distintos precios, y admite una excepción teórica",
+   "Es una regularidad empírica sin fundamento teórico",
+   "Se sigue directamente de la utilidad marginal decreciente"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "2.02#t1",
+  "codigo": "2.02",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Elección del consumidor y derivación de la demanda",
+  "q": "Una demanda Cobb-Douglas tiene elasticidad-precio exactamente $-1$. ¿Qué se sigue de ahí?",
+  "a": "**Nada general: es una propiedad de esa familia concreta, no de la teoría.** Sus proporciones de gasto constantes y su elasticidad unitaria vienen de la forma funcional elegida. Sirven para hacer cuentas limpias, no para describir consumidores.",
+  "opciones": [
+   "Que las Cobb-Douglas son el caso más realista",
+   "Nada general: es una propiedad de esa familia concreta, no de la teoría",
+   "Que la mayoría de bienes tienen elasticidad cercana a $-1$",
+   "Que el gasto en el bien crece con su precio"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "2.02#t2",
+  "codigo": "2.02",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Elección del consumidor y derivación de la demanda",
+  "q": "¿En qué se diferencian la demanda marshalliana y la hicksiana?",
+  "a": "**La marshalliana mantiene la renta constante y es la observable; la hicksiana mantiene la utilidad y es la que sirve para bienestar.** Es justo la distinción que hace falta para el análisis de bienestar: medir la variación compensatoria exige mantener constante la utilidad, no la renta.",
+  "opciones": [
+   "La marshalliana se usa a corto plazo y la hicksiana a largo",
+   "La marshalliana mantiene la renta constante y es la observable; la hicksiana mantiene la utilidad y es la que sirve para bienestar",
+   "En nada sustantivo: son dos nombres para la misma curva",
+   "La hicksiana incluye el efecto renta y la marshalliana no"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "2.02#t3",
+  "codigo": "2.02",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Elección del consumidor y derivación de la demanda",
+  "q": "Un sistema de demanda estimado da elasticidades que no cumplen la agregación de Engel. ¿Qué indica eso?",
+  "a": "**Que hay un error de especificación o de datos: son restricciones que cualquier sistema coherente debe cumplir.** $\\sum_i w_i \\eta_i = 1$ y la homogeneidad acotan qué conjuntos de elasticidades son posibles. Son una comprobación de errores gratuita y muy útil.",
+  "opciones": [
+   "Que hay un error de especificación o de datos: son restricciones que cualquier sistema coherente debe cumplir",
+   "Que el consumidor no se comporta racionalmente",
+   "Que falta incluir algún bien en el sistema",
+   "Que las preferencias no son Cobb-Douglas"
+  ],
+  "correcta": 0
+ },
+ {
   "id": "2.03#0",
   "codigo": "2.03",
   "bloque": 2,
@@ -4367,6 +9870,70 @@ export default [
   "titulo": "Efecto renta y efecto sustitución (Slutsky)",
   "q": "¿Qué se pierde al encadenar índices para reducir ese sesgo?",
   "a": "La aditividad de los agregados en volumen: las componentes encadenadas ya no suman el total. Por eso se trabaja con contribuciones al crecimiento en lugar de con niveles agregados."
+ },
+ {
+  "id": "2.03#t0",
+  "codigo": "2.03",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Efecto renta y efecto sustitución (Slutsky)",
+  "q": "Un cálculo de descomposición de Slutsky arroja un efecto sustitución positivo. ¿Qué significa?",
+  "a": "**Que hay un error: el efecto sustitución es negativo siempre, por teorema.** Es un resultado demostrado, no una regularidad empírica: manteniendo el poder adquisitivo, encarecer un bien nunca aumenta su demanda compensada. Un signo positivo delata un fallo de cálculo.",
+  "opciones": [
+   "Que la compensación se ha hecho a la manera de Hicks en vez de Slutsky",
+   "Que el bien es Giffen",
+   "Que el bien es inferior y el efecto renta domina",
+   "Que hay un error: el efecto sustitución es negativo siempre, por teorema"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "2.03#t1",
+  "codigo": "2.03",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Efecto renta y efecto sustitución (Slutsky)",
+  "q": "¿Qué le falta a un bien inferior para ser Giffen?",
+  "a": "**Que absorba una proporción muy grande del presupuesto, para que el efecto renta venza al de sustitución.** El término de renta va ponderado por el peso del bien en el gasto. Un bien que supone el 0,5 % del presupuesto tiene efecto renta irrelevante por muy inferior que sea, y por eso los casos documentados son alimentos básicos de poblaciones muy pobres.",
+  "opciones": [
+   "Nada: todo bien inferior es Giffen",
+   "Que no tenga sustitutivos cercanos",
+   "Que su elasticidad-renta sea inferior a $-1$",
+   "Que absorba una proporción muy grande del presupuesto, para que el efecto renta venza al de sustitución"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "2.03#t2",
+  "codigo": "2.03",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Efecto renta y efecto sustitución (Slutsky)",
+  "q": "¿Por qué el IPC tiene sesgo de sustitución?",
+  "a": "**Porque fijar ponderaciones ignora que la gente se desplaza hacia lo que se abarata.** Es consecuencia inevitable de la construcción tipo Laspeyres. Al mantener las cantidades del año base se sobrevalora lo que ha subido, porque la gente ya no compra tanto de eso.",
+  "opciones": [
+   "Porque fijar ponderaciones ignora que la gente se desplaza hacia lo que se abarata",
+   "Porque el INE tarda en actualizar la cesta y podría hacerlo antes",
+   "Porque incluye bienes importados cuyo precio no controla",
+   "Porque usa la fórmula de Paasche en vez de la de Laspeyres"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "2.03#t3",
+  "codigo": "2.03",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Efecto renta y efecto sustitución (Slutsky)",
+  "q": "Con complementarios perfectos —café y azúcar en proporción fija—, sube el precio del café. ¿Cómo se reparte el efecto?",
+  "a": "**Todo es efecto renta: el efecto sustitución es nulo por construcción.** Si los bienes se consumen en proporción rígida, no hay sustitución posible por definición. Todo el cambio viene de que el consumidor es más pobre en términos reales.",
+  "opciones": [
+   "No cabe descomponer: la demanda no está definida",
+   "Mitad sustitución, mitad renta",
+   "Todo es efecto renta: el efecto sustitución es nulo por construcción",
+   "Todo es efecto sustitución, porque el consumidor cambia de bien"
+  ],
+  "correcta": 2
  },
  {
   "id": "2.04#0",
@@ -4414,6 +9981,70 @@ export default [
   "a": "Que retribuye conjuntamente el trabajo y el capital de los empresarios individuales sin separarlos. Hay que repartirla con algún criterio, y estimaciones que difieren solo en ese criterio dan participaciones salariales apreciablemente distintas."
  },
  {
+  "id": "2.04#t0",
+  "codigo": "2.04",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Tecnología, función de producción y rendimientos a escala",
+  "q": "¿En qué se diferencian la productividad marginal decreciente y los rendimientos decrecientes a escala?",
+  "a": "**La primera es de corto plazo y aumenta un factor con los demás fijos; los segundos son de largo plazo y aumentan todos a la vez.** Son fenómenos distintos y ambos aparecen en la misma función. En $Q = 10 K^{0{,}3} L^{0{,}5}$ los exponentes suman 0,8 —decrecientes a escala— y cada factor por separado tiene productividad marginal decreciente.",
+  "opciones": [
+   "La primera es de corto plazo y aumenta un factor con los demás fijos; los segundos son de largo plazo y aumentan todos a la vez",
+   "La primera es un supuesto y los segundos un resultado empírico",
+   "La primera se refiere al trabajo y los segundos al capital",
+   "En nada: son dos nombres del mismo fenómeno"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "2.04#t1",
+  "codigo": "2.04",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Tecnología, función de producción y rendimientos a escala",
+  "q": "Una empresa produce menos de lo que su función de producción indica para sus factores. ¿Qué mide esa diferencia?",
+  "a": "**La ineficiencia técnica: la función describe la frontera de lo posible, no lo que se obtiene.** Medir esa distancia es una rama entera de la economía aplicada, y la diferencia entre frontera y comportamiento es justamente lo que hace informativa la comparación.",
+  "opciones": [
+   "La ineficiencia técnica: la función describe la frontera de lo posible, no lo que se obtiene",
+   "El efecto de los rendimientos decrecientes",
+   "Un error en la estimación de la función",
+   "La depreciación del capital no contabilizada"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "2.04#t2",
+  "codigo": "2.04",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Tecnología, función de producción y rendimientos a escala",
+  "q": "Un estudio quiere analizar cómo ha evolucionado la participación salarial y usa una Cobb-Douglas. ¿Qué problema tiene?",
+  "a": "**Que impone participaciones factoriales constantes por construcción, que es justo lo que se quiere estudiar.** Su elasticidad de sustitución es unitaria, y de ahí se sigue que las participaciones no se mueven. Preguntarle a esa función si la participación salarial cae es preguntarle algo que su forma ya ha contestado que no.",
+  "opciones": [
+   "Ninguno: es la especificación estándar para este tipo de análisis",
+   "Que no permite rendimientos crecientes a escala",
+   "Que impone participaciones factoriales constantes por construcción, que es justo lo que se quiere estudiar",
+   "Que exige suponer competencia perfecta en el mercado de productos"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "2.04#t3",
+  "codigo": "2.04",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Tecnología, función de producción y rendimientos a escala",
+  "q": "La contabilidad del crecimiento atribuye a la PTF el residuo no explicado por capital y trabajo. ¿Qué recoge esa magnitud?",
+  "a": "**El progreso técnico y también errores de medición, cambios de calidad y variaciones de utilización de la capacidad.** Todo lo que no se ha medido bien acaba dentro. Por eso una PTF que cae en una recesión no significa que se haya olvidado tecnología: significa que la capacidad está infrautilizada.",
+  "opciones": [
+   "El progreso técnico y también errores de medición, cambios de calidad y variaciones de utilización de la capacidad",
+   "El progreso técnico, ni más ni menos",
+   "La inversión en investigación y desarrollo del período",
+   "Solo la mejora en la formación de los trabajadores"
+  ],
+  "correcta": 0
+ },
+ {
   "id": "2.05#0",
   "codigo": "2.05",
   "bloque": 2,
@@ -4457,6 +10088,70 @@ export default [
   "titulo": "Costes: fijos, variables, marginales y de largo plazo",
   "q": "¿Por qué en las cuentas nacionales no se distingue entre coste fijo y variable?",
   "a": "Porque esa clasificación depende del horizonte de decisión de cada empresa y no es observable desde fuera. El SEC clasifica los costes por naturaleza: consumos intermedios, remuneración, consumo de capital fijo e impuestos netos sobre la producción."
+ },
+ {
+  "id": "2.05#t0",
+  "codigo": "2.05",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Costes: fijos, variables, marginales y de largo plazo",
+  "q": "¿Qué distingue el corto plazo del largo plazo en la teoría de costes?",
+  "a": "**Qué factores están fijos: en el largo plazo no hay ninguno, y por tanto no hay costes fijos.** Es la definición operativa, y de ella cuelga la regla de cierre: a corto se produce si el precio cubre el coste variable medio; a largo se permanece si cubre el coste medio total.",
+  "opciones": [
+   "El corto plazo es menos de un año y el largo, más",
+   "El corto plazo se refiere a decisiones de producción y el largo a decisiones de inversión",
+   "En el corto plazo los precios están dados y en el largo pueden variar",
+   "Qué factores están fijos: en el largo plazo no hay ninguno, y por tanto no hay costes fijos"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "2.05#t1",
+  "codigo": "2.05",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Costes: fijos, variables, marginales y de largo plazo",
+  "q": "Con $\\mathrm{CT}(q) = 100 + 2q + 0{,}05q^2$ y $q = 60$: el coste marginal es 8 y el coste medio 6,67. ¿Cómo puede ser mayor el marginal?",
+  "a": "**Es normal: el marginal es la derivada del coste total, no el promedio del último lote.** Son magnitudes de naturaleza distinta: una es el coste de la unidad siguiente y la otra reparte todo el coste —incluidos los 100 fijos— entre las unidades producidas.",
+  "opciones": [
+   "Significa que hay deseconomías de escala",
+   "Es un error: el marginal nunca supera al medio",
+   "Es normal: el marginal es la derivada del coste total, no el promedio del último lote",
+   "Significa que la empresa está produciendo por encima de su capacidad"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "2.05#t2",
+  "codigo": "2.05",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Costes: fijos, variables, marginales y de largo plazo",
+  "q": "Una empresa tiene beneficio contable positivo y beneficio económico nulo. ¿Qué significa?",
+  "a": "**Que obtiene exactamente la retribución normal del capital, ni más ni menos.** Es el equivalente microeconómico de que la rentabilidad del capital invertido iguale a su coste. Un resultado perfectamente sano y el que cabe esperar en competencia.",
+  "opciones": [
+   "Que obtiene exactamente la retribución normal del capital, ni más ni menos",
+   "Que debería cerrar, porque no gana nada por encima de sus costes",
+   "Que su contabilidad tiene un error",
+   "Que está perdiendo dinero en términos reales"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "2.05#t3",
+  "codigo": "2.05",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Costes: fijos, variables, marginales y de largo plazo",
+  "q": "El precio cae por debajo del coste medio total pero sigue por encima del coste variable medio. ¿Qué debe hacer la empresa a corto plazo?",
+  "a": "**Seguir produciendo: cubre lo evitable y contribuye a pagar lo que ya está comprometido.** Mientras $P \\geq$ mín CVMe, cada unidad vendida deja un excedente que reduce la pérdida. Cerrar dejaría la pérdida entera de los costes fijos.",
+  "opciones": [
+   "Seguir produciendo: cubre lo evitable y contribuye a pagar lo que ya está comprometido",
+   "Reducir la producción hasta que el precio vuelva a cubrir el coste medio",
+   "Subir el precio hasta cubrir el coste medio",
+   "Cerrar, porque no cubre sus costes"
+  ],
+  "correcta": 0
  },
  {
   "id": "2.06#0",
@@ -4504,6 +10199,70 @@ export default [
   "a": "Porque con producto homogéneo, información completa y entrada libre todas las empresas deberían converger a la misma tecnología eficiente y al mismo beneficio económico nulo. La dispersión persistente que muestran la Central de Balances y la estadística estructural indica heterogeneidad real de productividad y barreras a la imitación, que son justamente lo que el modelo supone ausente."
  },
  {
+  "id": "2.06#t0",
+  "codigo": "2.06",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Competencia perfecta y equilibrio de la industria",
+  "q": "¿Qué exige realmente la competencia perfecta?",
+  "a": "**Que la demanda residual de cada empresa sea horizontal y que la entrada sea libre.** De la demanda horizontal se sigue que el ingreso marginal es el precio, y de la entrada libre que el beneficio económico tiende a cero. Todo el modelo descansa en esas dos cosas.",
+  "opciones": [
+   "Que ninguna empresa supere el 10 % de cuota de mercado",
+   "Que el producto sea homogéneo y el precio esté regulado",
+   "Que las empresas sean pequeñas y numerosas",
+   "Que la demanda residual de cada empresa sea horizontal y que la entrada sea libre"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "2.06#t1",
+  "codigo": "2.06",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Competencia perfecta y equilibrio de la industria",
+  "q": "¿Qué parte de la curva de coste marginal es la curva de oferta de la empresa?",
+  "a": "**Solo el tramo creciente por encima del mínimo del coste variable medio.** El tramo decreciente no puede ser óptimo, y por debajo del CVMe conviene parar. Lo que queda es exactamente la curva de oferta a corto plazo.",
+  "opciones": [
+   "Solo el tramo creciente por encima del mínimo del coste variable medio",
+   "El tramo decreciente, donde aún hay economías de escala",
+   "Solo el tramo por encima del mínimo del coste medio total",
+   "Toda ella"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "2.06#t2",
+  "codigo": "2.06",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Competencia perfecta y equilibrio de la industria",
+  "q": "Sube permanentemente la demanda en una industria de costes constantes. ¿Qué queda alterado a largo plazo?",
+  "a": "**El número de empresas: el precio vuelve al mínimo del coste medio.** Cada empresa vuelve a producir en el mínimo de su coste medio, que es el mismo de antes. Lo único que ha cambiado es cuántas empresas hay.",
+  "opciones": [
+   "El número de empresas: el precio vuelve al mínimo del coste medio",
+   "El tamaño de cada empresa, que produce más",
+   "El precio, que se instala en un nivel superior",
+   "Nada: la industria vuelve exactamente a la situación anterior"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "2.06#t3",
+  "codigo": "2.06",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Competencia perfecta y equilibrio de la industria",
+  "q": "Una empresa presenta un margen sobre costes muy alto. ¿Prueba eso poder de mercado?",
+  "a": "**No necesariamente: puede ser la renta transitoria de una escasez de capacidad, que es justo la señal que atrae la entrada.** Un beneficio extraordinario es el mecanismo del modelo, no su anomalía: sin él nadie entraría y la oferta no se ajustaría. Lo que delata poder de mercado es que persista pese a haber entrada posible.",
+  "opciones": [
+   "Sí: en competencia el margen tiende a cero",
+   "No, porque el margen contable nunca refleja el poder de mercado",
+   "No necesariamente: puede ser la renta transitoria de una escasez de capacidad, que es justo la señal que atrae la entrada",
+   "Sí, si se mantiene más de un ejercicio"
+  ],
+  "correcta": 2
+ },
+ {
   "id": "2.07#0",
   "codigo": "2.07",
   "bloque": 2,
@@ -4547,6 +10306,70 @@ export default [
   "titulo": "Monopolio, discriminación de precios y regulación",
   "q": "¿Por qué no se regula siempre un monopolio natural fijando el precio igual al coste marginal?",
   "a": "Porque con costes fijos grandes el coste medio está por encima del marginal, así que ese precio genera pérdidas iguales al coste fijo y la empresa necesita una subvención permanente, financiada con impuestos que distorsionan en otro sitio. Fijar el precio al coste medio la hace viable a cambio de renunciar a parte de la eficiencia."
+ },
+ {
+  "id": "2.07#t0",
+  "codigo": "2.07",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Monopolio, discriminación de precios y regulación",
+  "q": "¿Puede un monopolista fijar el precio que quiera?",
+  "a": "**No: elige un punto de la curva de demanda, y esta le impone la relación entre precio y cantidad.** Puede elegir precio o cantidad, pero no ambos. Toda su libertad consiste en escoger sobre qué punto de la demanda se sitúa.",
+  "opciones": [
+   "Sí, mientras cubra sus costes",
+   "No: elige un punto de la curva de demanda, y esta le impone la relación entre precio y cantidad",
+   "Sí: por eso es monopolista",
+   "No, porque la regulación se lo impide en la mayoría de sectores"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "2.07#t1",
+  "codigo": "2.07",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Monopolio, discriminación de precios y regulación",
+  "q": "Un monopolio reduce el excedente del consumidor en 2.400 y obtiene un beneficio de 1.600. ¿Cuánto cuesta en eficiencia?",
+  "a": "**800: lo que desaparece y no aparece como beneficio de nadie.** La pérdida irrecuperable es la parte del excedente que no llega a nadie: intercambios que habrían beneficiado a ambas partes y ya no ocurren. Es lo único que justifica intervenir por razones de eficiencia.",
+  "opciones": [
+   "800: lo que desaparece y no aparece como beneficio de nadie",
+   "4.000, sumando pérdida del consumidor y beneficio del monopolista",
+   "1.600, que es lo que se transfiere",
+   "2.400: todo lo que pierde el consumidor"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "2.07#t2",
+  "codigo": "2.07",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Monopolio, discriminación de precios y regulación",
+  "q": "¿Por qué un monopolista nunca produce en el tramo inelástico de la demanda?",
+  "a": "**Porque subir el precio aumentaría el ingreso y reduciría el coste a la vez.** Con $|\\varepsilon| < 1$, subir el precio sube el ingreso total y a la vez baja la cantidad, y con ella el coste. Ninguna empresa deja pasar una mejora doble, así que el óptimo cae siempre en el tramo elástico.",
+  "opciones": [
+   "Porque ahí el beneficio sería negativo",
+   "Porque subir el precio aumentaría el ingreso y reduciría el coste a la vez",
+   "Porque la regulación se lo prohíbe",
+   "Porque en ese tramo la demanda es demasiado sensible al precio"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "2.07#t3",
+  "codigo": "2.07",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Monopolio, discriminación de precios y regulación",
+  "q": "¿Debe trocearse un monopolio natural en varias empresas?",
+  "a": "**No: por definición una sola produce más barato, así que trocearlo eleva el coste de abastecer el mercado.** El problema del monopolio natural no se resuelve con estructura sino con regulación del precio o con subastas por el mercado. Partirlo empeora lo que se quería mejorar.",
+  "opciones": [
+   "Sí, si el sector es estratégico",
+   "No: por definición una sola produce más barato, así que trocearlo eleva el coste de abastecer el mercado",
+   "No, porque las economías de escala desaparecerían y subiría el precio",
+   "Sí: más empresas siempre significa más competencia"
+  ],
+  "correcta": 1
  },
  {
   "id": "2.08#0",
@@ -4594,6 +10417,70 @@ export default [
   "a": "No por sí solo. Con producto homogéneo, costes comunes y precios observables, el movimiento simultáneo es lo que predice también la competencia. Acreditar colusión requiere evidencia de comunicación entre competidores o de conductas que solo tengan sentido bajo un acuerdo, y esa frontera entre paralelismo consciente y acuerdo es de las más difíciles del derecho de la competencia."
  },
  {
+  "id": "2.08#t0",
+  "codigo": "2.08",
+  "bloque": 2,
+  "nivel": 3,
+  "titulo": "Oligopolio y teoría de juegos",
+  "q": "En el dilema del prisionero, ¿qué significa que la casilla de traición mutua sea un equilibrio de Nash?",
+  "a": "**Que ninguno gana desviándose por su cuenta, aunque ambos estarían mejor cooperando.** Cada uno hace lo mejor dado lo que hace el otro, y por eso el resultado se sostiene. Que nadie quiera moverse no significa que a nadie le convenga que ambos se muevan a la vez.",
+  "opciones": [
+   "Que ambos jugadores han razonado mal",
+   "Que ninguno gana desviándose por su cuenta, aunque ambos estarían mejor cooperando",
+   "Que es el resultado que maximiza el beneficio conjunto",
+   "Que es el mejor resultado alcanzable para ambos"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "2.08#t1",
+  "codigo": "2.08",
+  "bloque": 2,
+  "nivel": 3,
+  "titulo": "Oligopolio y teoría de juegos",
+  "q": "Cournot predice márgenes positivos con dos empresas y Bertrand predice el resultado competitivo. ¿Se contradicen?",
+  "a": "**No: modelizan compromisos distintos, capacidad en Cournot y precio en Bertrand.** Cournot describe mercados donde lo que se fija con antelación es la capacidad —cemento, refino—; Bertrand, donde se fija precio y se puede servir toda la demanda. Elegir el modelo es elegir qué es lo rígido.",
+  "opciones": [
+   "No: modelizan compromisos distintos, capacidad en Cournot y precio en Bertrand",
+   "Sí, y por eso se usa el promedio de ambos",
+   "No, porque Bertrand solo se aplica a servicios",
+   "Sí: uno de los dos modelos está mal"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "2.08#t2",
+  "codigo": "2.08",
+  "bloque": 2,
+  "nivel": 3,
+  "titulo": "Oligopolio y teoría de juegos",
+  "q": "¿Qué sostiene realmente un cártel?",
+  "a": "**La amenaza creíble de castigo futuro, porque individualmente conviene desviarse.** Cumplir renta 800 cada período; desviarse renta 900 una vez y 711 para siempre. La colusión solo se sostiene si el futuro pesa lo suficiente, que aquí exige $\\delta \\geq 0{,}53$.",
+  "opciones": [
+   "Los contratos firmados entre las empresas",
+   "Que el acuerdo conviene a todos sus miembros",
+   "La amenaza creíble de castigo futuro, porque individualmente conviene desviarse",
+   "La dificultad técnica de aumentar la producción a corto plazo"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "2.08#t3",
+  "codigo": "2.08",
+  "bloque": 2,
+  "nivel": 3,
+  "titulo": "Oligopolio y teoría de juegos",
+  "q": "Dos gasolineras suben el precio el mismo día y en la misma cuantía. ¿Prueba eso un acuerdo?",
+  "a": "**No: con producto homogéneo y costes comunes, moverse a la vez es lo que predice la competencia.** Acreditar colusión exige evidencia de comunicación o de conductas que no se explican por la competencia, como precios que no bajan cuando el coste baja.",
+  "opciones": [
+   "No: con producto homogéneo y costes comunes, moverse a la vez es lo que predice la competencia",
+   "Sí, si se repite varias veces al año",
+   "No, salvo que ambas pertenezcan al mismo grupo empresarial",
+   "Sí: la coincidencia es demasiado exacta para ser casual"
+  ],
+  "correcta": 0
+ },
+ {
   "id": "2.09#0",
   "codigo": "2.09",
   "bloque": 2,
@@ -4637,6 +10524,70 @@ export default [
   "titulo": "Mercados de factores y determinación de salarios",
   "q": "¿Por qué la renta mixta complica medir el reparto entre trabajo y capital?",
   "a": "Porque agrupa en una sola partida la retribución del trabajo y del capital de los autónomos, sin criterio observable para separarlas. En economías con mucho empleo por cuenta propia, la participación medida de las rentas del trabajo depende del supuesto de imputación que se use, y ese supuesto rara vez se explicita al citar la cifra."
+ },
+ {
+  "id": "2.09#t0",
+  "codigo": "2.09",
+  "bloque": 2,
+  "nivel": 3,
+  "titulo": "Mercados de factores y determinación de salarios",
+  "q": "¿Destruye empleo un salario mínimo?",
+  "a": "**Depende de la estructura del mercado: en monopsonio y por debajo de cierto umbral aumenta salario y empleo a la vez.** Un monopsonista contrata por debajo del valor del producto marginal para no tener que subir el salario a toda la plantilla. Un mínimo bien situado rompe esa restricción y le hace contratar más.",
+  "opciones": [
+   "Depende de la estructura del mercado: en monopsonio y por debajo de cierto umbral aumenta salario y empleo a la vez",
+   "No: la evidencia empírica lo ha descartado",
+   "Sí siempre: encarece el factor y reduce su demanda",
+   "Solo si supera el salario medio del sector"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "2.09#t1",
+  "codigo": "2.09",
+  "bloque": 2,
+  "nivel": 3,
+  "titulo": "Mercados de factores y determinación de salarios",
+  "q": "Estudiar un año cuesta 4.000 € de matrícula y supone dejar de ingresar 27.000 € de salario. ¿Qué error se comete al evaluar la inversión solo con la matrícula?",
+  "a": "**Se ignora el coste de oportunidad, que aquí es casi siete veces mayor, e infla enormemente la rentabilidad aparente.** El coste total del año es 31.000 y no 4.000. Ignorar los 27.000 hace parecer rentabilísima cualquier formación, y es el error más frecuente de los cálculos divulgativos sobre estudios.",
+  "opciones": [
+   "Se ignora la inflación del período",
+   "Se ignora el coste de oportunidad, que aquí es casi siete veces mayor, e infla enormemente la rentabilidad aparente",
+   "Se ignora que el título tiene valor de reventa",
+   "Ninguno: la matrícula es el desembolso real"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "2.09#t2",
+  "codigo": "2.09",
+  "bloque": 2,
+  "nivel": 3,
+  "titulo": "Mercados de factores y determinación de salarios",
+  "q": "Los titulados universitarios ganan más. ¿Prueba eso que la universidad aumenta la productividad?",
+  "a": "**No: la teoría de la señalización predice la misma correlación sin que la formación añada nada.** Basta con que el título sea más barato de obtener para quien ya es más productivo: entonces sirve para separar candidatos aunque no enseñe nada. Distinguir ambas hipótesis exige diseños específicos, no más datos observacionales.",
+  "opciones": [
+   "Sí, siempre que se controle por el sector de actividad",
+   "No: la teoría de la señalización predice la misma correlación sin que la formación añada nada",
+   "No, porque la correlación desaparece al controlar por la renta familiar",
+   "Sí: es una correlación robusta y persistente"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "2.09#t3",
+  "codigo": "2.09",
+  "bloque": 2,
+  "nivel": 3,
+  "titulo": "Mercados de factores y determinación de salarios",
+  "q": "¿Hace falta un único empleador para que haya monopsonio?",
+  "a": "**No: basta con que el trabajador afronte costes de cambiar, como distancia, especialización o conciliación.** Cualquiera de esas fricciones hace que subir el salario sea necesario para atraer a un trabajador más, que es exactamente lo que genera la cuña entre salario y valor del producto marginal.",
+  "opciones": [
+   "No: basta con que el trabajador afronte costes de cambiar, como distancia, especialización o conciliación",
+   "Sí, esa es la definición",
+   "No, pero sí que haya menos de tres empleadores en la zona",
+   "Sí, salvo que exista un convenio colectivo que fije el salario"
+  ],
+  "correcta": 0
  },
  {
   "id": "2.10#0",
@@ -4684,6 +10635,70 @@ export default [
   "a": "Porque la franquicia que devuelve el incentivo a prevenir es también la que deja al asegurado soportando riesgo. En el ejemplo hace falta una franquicia de 4.000 sobre una pérdida de 5.000. Incentivos y aseguramiento se mueven en direcciones opuestas, y ese intercambio es irreducible mientras la conducta no sea observable."
  },
  {
+  "id": "2.10#t0",
+  "codigo": "2.10",
+  "bloque": 2,
+  "nivel": 3,
+  "titulo": "Fallos de mercado: externalidades, bienes públicos, información",
+  "q": "¿Qué es exactamente un fallo de mercado?",
+  "a": "**Que exista un intercambio mutuamente beneficioso que no llega a realizarse.** Es la definición operativa, y su virtud es que se puede comprobar: hay que señalar qué intercambio no ocurre y por qué. Sin eso, la etiqueta no dice nada.",
+  "opciones": [
+   "Que el precio se aleje del coste de producción",
+   "Que el Estado tenga que intervenir para corregir el reparto",
+   "Que exista un intercambio mutuamente beneficioso que no llega a realizarse",
+   "Un resultado socialmente indeseable o injusto"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "2.10#t1",
+  "codigo": "2.10",
+  "bloque": 2,
+  "nivel": 3,
+  "titulo": "Fallos de mercado: externalidades, bienes públicos, información",
+  "q": "Una fábrica genera una externalidad negativa. ¿Cuál es la producción eficiente?",
+  "a": "**Aquella donde el beneficio marginal iguala al coste marginal social, que sigue siendo positiva.** El daño se internaliza sumándolo al coste privado. La actividad sigue mereciendo la pena mientras lo que aporta supere lo que cuesta a la sociedad entera.",
+  "opciones": [
+   "Cero: la actividad debe eliminarse",
+   "Aquella donde el beneficio marginal iguala al coste marginal social, que sigue siendo positiva",
+   "La que iguale el daño total al beneficio total",
+   "La misma que sin externalidad, corrigiendo después con indemnizaciones"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "2.10#t2",
+  "codigo": "2.10",
+  "bloque": 2,
+  "nivel": 3,
+  "titulo": "Fallos de mercado: externalidades, bienes públicos, información",
+  "q": "El daño externo de una actividad asciende a 1.600 y su pérdida de eficiencia a 200. ¿Por qué difieren tanto?",
+  "a": "**Porque la mayor parte del daño corresponde a producción que sigue siendo eficiente hacer.** Solo las 20 unidades que sobran generan daño sin beneficio compensatorio. Las 60 restantes causan daño y aportan más de lo que cuestan: eliminarlas empeoraría el resultado.",
+  "opciones": [
+   "Porque la mayor parte del daño corresponde a producción que sigue siendo eficiente hacer",
+   "Porque el daño se mide en términos brutos y la pérdida en netos",
+   "Porque parte del daño es difícil de valorar",
+   "Porque la pérdida de eficiencia solo cuenta el daño no compensado"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "2.10#t3",
+  "codigo": "2.10",
+  "bloque": 2,
+  "nivel": 3,
+  "titulo": "Fallos de mercado: externalidades, bienes públicos, información",
+  "q": "¿En qué se diferencian selección adversa y riesgo moral?",
+  "a": "**La selección adversa es información oculta antes de contratar; el riesgo moral, acción oculta después.** No sé con quién estoy contratando frente a no observo lo que hace una vez contratado. La primera se combate con señales y filtros; la segunda, con franquicias e incentivos.",
+  "opciones": [
+   "La selección adversa afecta al vendedor y el riesgo moral al comprador",
+   "La selección adversa se corrige con franquicias y el riesgo moral con señales",
+   "La selección adversa es información oculta antes de contratar; el riesgo moral, acción oculta después",
+   "En nada relevante: ambas son asimetrías de información"
+  ],
+  "correcta": 2
+ },
+ {
   "id": "2.11#0",
   "codigo": "2.11",
   "bloque": 2,
@@ -4727,6 +10742,70 @@ export default [
   "titulo": "Ventaja comparativa y ganancias del comercio",
   "q": "Si el país en conjunto gana, ¿por qué hay oposición política al comercio?",
   "a": "Porque «el país gana» significa que los ganadores podrían compensar a los perdedores, no que lo hagan. Con dos factores, Stolper-Samuelson predice que el factor escaso —el trabajo poco cualificado en una economía avanzada— pierde retribución real de forma permanente. Además la ganancia es difusa y pequeña por persona, mientras que la pérdida es concentrada y grande, lo que hace que solo un lado tenga incentivos para organizarse."
+ },
+ {
+  "id": "2.11#t0",
+  "codigo": "2.11",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Ventaja comparativa y ganancias del comercio",
+  "q": "Norte tarda 2 h en un software y 4 h en un textil; Sur tarda 8 h y 6 h. ¿Cómo se decide quién exporta qué?",
+  "a": "**Comparando dentro de cada país: para Norte un software cuesta medio textil; para Sur, 1,33.** La pregunta correcta es interna: qué deja de producir cada país por hacer una unidad más. Norte renuncia a menos textil por software, así que se especializa en software y Sur en textil.",
+  "opciones": [
+   "No hay comercio posible: Norte no gana nada intercambiando",
+   "Sur exporta ambos, porque su trabajo es más barato",
+   "Comparando dentro de cada país: para Norte un software cuesta medio textil; para Sur, 1,33",
+   "Norte exporta ambos, porque es más rápido en los dos"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "2.11#t1",
+  "codigo": "2.11",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Ventaja comparativa y ganancias del comercio",
+  "q": "Un país muy poco productivo se especializa correctamente y comercia. ¿Qué consigue?",
+  "a": "**Consumir más que en autarquía, aunque siga siendo más pobre que ellos.** Es exactamente lo que dice el modelo: cada país mejora sobre sí mismo. Su nivel de vida sigue dependiendo de su productividad absoluta.",
+  "opciones": [
+   "Alcanzar el nivel de vida de sus socios comerciales",
+   "Nada, porque su productividad no ha cambiado",
+   "Consumir más que en autarquía, aunque siga siendo más pobre que ellos",
+   "Empeorar, porque compite en desventaja"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "2.11#t2",
+  "codigo": "2.11",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Ventaja comparativa y ganancias del comercio",
+  "q": "Un tratado comercial aumenta el PIB del país. ¿Se sigue que todos ganan?",
+  "a": "**No: significa que los ganadores podrían compensar a los perdedores, no que lo hagan.** Con más de un factor, Stolper-Samuelson predice que el factor escaso en el país pierde en términos reales. La oposición de los perjudicados no es irracional.",
+  "opciones": [
+   "Sí, porque los precios bajan para todos los consumidores",
+   "No: significa que los ganadores podrían compensar a los perdedores, no que lo hagan",
+   "Sí, si el efecto agregado es positivo",
+   "No, pero las pérdidas son siempre transitorias"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "2.11#t3",
+  "codigo": "2.11",
+  "bloque": 2,
+  "nivel": 2,
+  "titulo": "Ventaja comparativa y ganancias del comercio",
+  "q": "¿Es la ventaja comparativa una característica fija de cada país?",
+  "a": "**No: depende de tecnología, capital humano y dotación de factores, y las tres cambian.** Y de ahí que la política de formación e innovación tenga efectos comerciales: no se limita a explotar una ventaja dada, la construye.",
+  "opciones": [
+   "No: depende de tecnología, capital humano y dotación de factores, y las tres cambian",
+   "Sí: depende de su geografía y sus recursos naturales",
+   "No, pero solo cambia con acuerdos comerciales",
+   "Sí, salvo que cambie la población"
+  ],
+  "correcta": 0
  },
  {
   "id": "2.12#0",
@@ -4774,6 +10853,70 @@ export default [
   "a": "Hay desviación de comercio y el país pierde 10 por unidad. Antes se importaba de A a 120 (100 + 20 de arancel), con 20 de recaudación. Tras la unión, B entra libre a 110 y desplaza a A, que sigue en 120. El consumidor ahorra 10 pero el Estado pierde los 20 que ingresaba: la diferencia es pérdida neta. El proveedor eficiente ha sido sustituido por el socio."
  },
  {
+  "id": "2.12#t0",
+  "codigo": "2.12",
+  "bloque": 2,
+  "nivel": 3,
+  "titulo": "Política comercial: aranceles, cuotas y uniones aduaneras",
+  "q": "Un país pequeño impone un arancel del 20 %. ¿Quién lo paga?",
+  "a": "**El comprador nacional: el precio interno sube exactamente la cuantía del arancel.** Precisamente porque la oferta exterior es perfectamente elástica, todo el arancel se traslada. Es el caso de manual y el que aplica a casi cualquier economía abierta pequeña.",
+  "opciones": [
+   "Se reparte entre ambos según sus elasticidades",
+   "El exportador extranjero, que baja su precio para no perder el mercado",
+   "El importador nacional, que no puede trasladarlo al consumidor",
+   "El comprador nacional: el precio interno sube exactamente la cuantía del arancel"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "2.12#t1",
+  "codigo": "2.12",
+  "bloque": 2,
+  "nivel": 3,
+  "titulo": "Política comercial: aranceles, cuotas y uniones aduaneras",
+  "q": "Un arancel hace perder 650 al consumidor. El productor gana 400 y el Estado recauda 150. ¿Cuál es el coste de eficiencia?",
+  "a": "**100: la parte que no reaparece en manos de nadie.** $650 - 400 - 150 = 100$. Esos cien son producción nacional ineficiente y consumo que deja de producirse, y no aparecen como ganancia de nadie.",
+  "opciones": [
+   "550, que es lo que se transfiere",
+   "650, que es lo que pierde el consumidor",
+   "250, la diferencia entre lo que pierde el consumidor y lo que gana el productor",
+   "100: la parte que no reaparece en manos de nadie"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "2.12#t2",
+  "codigo": "2.12",
+  "bloque": 2,
+  "nivel": 3,
+  "titulo": "Política comercial: aranceles, cuotas y uniones aduaneras",
+  "q": "¿En qué se diferencian un arancel y una cuota que produzcan el mismo precio interno?",
+  "a": "**En quién se queda el equivalente de la recaudación: el Estado con el arancel, quien tenga la licencia con la cuota.** Con la cuota esa renta va a quien obtiene el permiso de importación, que puede ser un importador nacional o incluso el exportador extranjero. Y eso convierte la asignación de licencias en un objeto de captura.",
+  "opciones": [
+   "En nada: son instrumentos equivalentes",
+   "En que la cuota genera más pérdida de eficiencia",
+   "En que el arancel protege más la producción nacional",
+   "En quién se queda el equivalente de la recaudación: el Estado con el arancel, quien tenga la licencia con la cuota"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "2.12#t3",
+  "codigo": "2.12",
+  "bloque": 2,
+  "nivel": 3,
+  "titulo": "Política comercial: aranceles, cuotas y uniones aduaneras",
+  "q": "Un producto tiene un arancel nominal del 10 % y sus insumos importados entran libres de derechos y suponen el 80 % del coste. ¿Qué protección real recibe?",
+  "a": "**Mucho más: el arancel protege el valor añadido, que aquí es solo el 20 % del precio.** Si el precio sube 10 y el valor añadido nacional era 20, la protección efectiva sobre ese valor añadido es del 50 %. Juzgar la protección por el arancel nominal la subestima sistemáticamente en las cadenas de valor largas.",
+  "opciones": [
+   "Un 10 %, igual que el arancel nominal",
+   "Ninguna, porque los insumos no están protegidos",
+   "Mucho más: el arancel protege el valor añadido, que aquí es solo el 20 % del precio",
+   "Un 8 %, ponderando por el peso de los insumos"
+  ],
+  "correcta": 2
+ },
+ {
   "id": "3.01#0",
   "codigo": "3.01",
   "bloque": 3,
@@ -4817,6 +10960,70 @@ export default [
   "titulo": "PIB, renta nacional y agregados macroeconómicos",
   "q": "¿Por qué una catástrofe seguida de reconstrucción puede elevar el PIB?",
   "a": "Porque el daño destruye patrimonio, que el PIB no mide, mientras que la reconstrucción es producción del periodo, que sí mide. No es un error de cálculo sino la consecuencia de que el PIB sea un flujo de producción de mercado y no una medida de riqueza ni de bienestar."
+ },
+ {
+  "id": "3.01#t0",
+  "codigo": "3.01",
+  "bloque": 3,
+  "nivel": 1,
+  "titulo": "PIB, renta nacional y agregados macroeconómicos",
+  "q": "Una economía crece un 6 % nominal con un deflactor del 3 %. ¿Cuánto ha crecido en términos reales?",
+  "a": "**Un 2,91 %: las tasas se encadenan, no se restan.** $1{,}06/1{,}03 - 1 = 2{,}91\\ \\%$. Es el mismo encadenamiento multiplicativo que rige cualquier composición de tasas.",
+  "opciones": [
+   "Un 2,91 %: las tasas se encadenan, no se restan",
+   "Un 6 %, porque el deflactor ya está incorporado",
+   "Un 9 %, sumando ambos efectos",
+   "Un 3 %, restando la inflación del crecimiento nominal"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "3.01#t1",
+  "codigo": "3.01",
+  "bloque": 3,
+  "nivel": 1,
+  "titulo": "PIB, renta nacional y agregados macroeconómicos",
+  "q": "Un particular vende su vivienda por 300.000 €. ¿Cuánto suma eso al PIB?",
+  "a": "**Solo la comisión del agente y los servicios asociados: la casa ya existía.** Lo que sí es producción del año es el servicio de intermediación: la comisión del agente, la notaría, la gestoría. Ocurre igual con la compraventa de acciones.",
+  "opciones": [
+   "Solo la comisión del agente y los servicios asociados: la casa ya existía",
+   "300.000 €, que es el valor de la transacción",
+   "Nada, porque las operaciones entre particulares no se registran",
+   "El margen entre el precio de compra y el de venta"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "3.01#t2",
+  "codigo": "3.01",
+  "bloque": 3,
+  "nivel": 1,
+  "titulo": "PIB, renta nacional y agregados macroeconómicos",
+  "q": "Un terremoto destruye viviendas y la reconstrucción posterior eleva el PIB. ¿Es eso una paradoja de la contabilidad?",
+  "a": "**No: el PIB mide producción del período, y la pérdida de patrimonio va a los balances, no al flujo.** Es la misma distinción entre cuenta de resultados y balance: el flujo anual y el fondo acumulado son magnitudes distintas y ambas hacen falta.",
+  "opciones": [
+   "No: el PIB mide producción del período, y la pérdida de patrimonio va a los balances, no al flujo",
+   "Sí: demuestra que el PIB está mal construido",
+   "Sí, y por eso las catástrofes se descuentan del PIB",
+   "No, porque la reconstrucción se financia con seguros y no computa"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "3.01#t3",
+  "codigo": "3.01",
+  "bloque": 3,
+  "nivel": 1,
+  "titulo": "PIB, renta nacional y agregados macroeconómicos",
+  "q": "Un informe compara el PIB per cápita de España y de la India usando el tipo de cambio de mercado. ¿Qué problema tiene?",
+  "a": "**Que los bienes no comerciables tienen precios muy distintos y el tipo de cambio no los recoge, exagerando la diferencia.** Un corte de pelo o un alquiler cuestan mucho menos en la India y el tipo de cambio no lo refleja. Por eso se usan paridades de poder adquisitivo, que corrigen justo eso.",
+  "opciones": [
+   "Que el PIB per cápita no es comparable entre países de distinto tamaño",
+   "Ninguno: es la conversión estándar",
+   "Que habría que usar el PIB nominal en vez del real",
+   "Que los bienes no comerciables tienen precios muy distintos y el tipo de cambio no los recoge, exagerando la diferencia"
+  ],
+  "correcta": 3
  },
  {
   "id": "3.02#0",
@@ -4864,6 +11071,70 @@ export default [
   "a": "La subida automática del tipo efectivo cuando los tramos del impuesto no se actualizan con los precios. Alguien cuya renta sube igual que la inflación pasa a un tipo medio superior y pierde poder adquisitivo neto: en el ejemplo, un 0,63 % pese a no haber ganado nada real. Es una subida de impuestos que nadie ha aprobado."
  },
  {
+  "id": "3.02#t0",
+  "codigo": "3.02",
+  "bloque": 3,
+  "nivel": 1,
+  "titulo": "Inflación, IPC y deflactor del PIB",
+  "q": "Sube un 30 % el precio del aceite de oliva. ¿Es eso inflación?",
+  "a": "**No: es un cambio de precios relativos; inflación es la subida sostenida y generalizada del nivel de precios.** La distinción importa porque las respuestas de política son opuestas: contra un cambio de precios relativos no se hace política monetaria.",
+  "opciones": [
+   "No, salvo que se traslade a otros productos",
+   "Sí: los precios han subido",
+   "No: es un cambio de precios relativos; inflación es la subida sostenida y generalizada del nivel de precios",
+   "Sí, si el aceite pesa lo suficiente en la cesta del IPC"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "3.02#t1",
+  "codigo": "3.02",
+  "bloque": 3,
+  "nivel": 1,
+  "titulo": "Inflación, IPC y deflactor del PIB",
+  "q": "En un año el IPC sube un 3,2 % y el deflactor del PIB un 2,4 %. ¿Qué indica esa diferencia?",
+  "a": "**Que miden cestas distintas: el IPC incluye importaciones y el deflactor, exportaciones.** El IPC cubre el consumo de los hogares e incluye lo importado; el deflactor cubre la producción interior e incluye lo exportado. Una subida del petróleo empuja al IPC y no al deflactor.",
+  "opciones": [
+   "Que uno de los dos está mal calculado",
+   "Que la inflación real está entre ambas cifras",
+   "Que miden cestas distintas: el IPC incluye importaciones y el deflactor, exportaciones",
+   "Que el IPC usa Paasche y el deflactor Laspeyres"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "3.02#t2",
+  "codigo": "3.02",
+  "bloque": 3,
+  "nivel": 1,
+  "titulo": "Inflación, IPC y deflactor del PIB",
+  "q": "El tipo de interés nominal es del 5 % y la inflación del 3 %. ¿Cuál es el tipo real?",
+  "a": "**1,942 %: la relación de Fisher es multiplicativa.** $(1+i) = (1+r)(1+\\pi)$, así que $r = 1{,}05/1{,}03 - 1 = 1{,}942\\ \\%$. Es el mismo encadenamiento que rige cualquier composición de tasas.",
+  "opciones": [
+   "8 %, sumando ambos",
+   "1,67 %, dividiendo el nominal entre la inflación",
+   "2 %, restando la inflación",
+   "1,942 %: la relación de Fisher es multiplicativa"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "3.02#t3",
+  "codigo": "3.02",
+  "bloque": 3,
+  "nivel": 1,
+  "titulo": "Inflación, IPC y deflactor del PIB",
+  "q": "Los tramos del IRPF no se actualizan y los salarios suben igual que los precios. ¿Qué ocurre?",
+  "a": "**El tipo medio sube y se pierde poder adquisitivo neto: es la progresividad en frío.** Es una subida de impuestos que nadie ha aprobado y que ocurre por omisión. Actualizar los tramos con la inflación es lo que la evita.",
+  "opciones": [
+   "El tipo medio sube y se pierde poder adquisitivo neto: es la progresividad en frío",
+   "Nada: el poder adquisitivo se mantiene",
+   "Sube la recaudación, pero el contribuyente queda igual",
+   "Baja la recaudación, porque las rentas reales no crecen"
+  ],
+  "correcta": 0
+ },
+ {
   "id": "3.03#0",
   "codigo": "3.03",
   "bloque": 3,
@@ -4907,6 +11178,70 @@ export default [
   "titulo": "Mercado de trabajo: paro, actividad y curva de Phillips",
   "q": "¿Por qué no debe dividirse el PIB entre los ocupados de la EPA para medir productividad?",
   "a": "Porque mezcla dos marcos estadísticos. El PIB procede de la Contabilidad Nacional, que estima puestos equivalentes a tiempo completo y horas trabajadas; la EPA cuenta personas ocupadas por encuesta. Lo coherente es dividir el PIB entre las horas o los puestos equivalentes de la propia Contabilidad Nacional."
+ },
+ {
+  "id": "3.03#t0",
+  "codigo": "3.03",
+  "bloque": 3,
+  "nivel": 2,
+  "titulo": "Mercado de trabajo: paro, actividad y curva de Phillips",
+  "q": "La tasa de paro baja del 10,87 % al 8,89 % sin que se haya creado un solo empleo. ¿Cómo es posible?",
+  "a": "**Por el efecto desánimo: quien deja de buscar sale de la población activa y desaparece del denominador.** La tasa se calcula sobre los activos, y quien abandona la búsqueda deja de contar como parado y también como activo. Por eso conviene mirar la tasa de empleo junto a la de paro.",
+  "opciones": [
+   "Por el efecto desánimo: quien deja de buscar sale de la población activa y desaparece del denominador",
+   "Porque el paro registrado y el de la EPA se han acercado",
+   "Es imposible: la tasa solo baja si aumenta la ocupación",
+   "Porque han bajado los salarios y eso reduce el paro medido"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "3.03#t1",
+  "codigo": "3.03",
+  "bloque": 3,
+  "nivel": 2,
+  "titulo": "Mercado de trabajo: paro, actividad y curva de Phillips",
+  "q": "Un gobierno mantiene el paro tres puntos por debajo de la tasa natural durante años. ¿Qué ocurre con la inflación?",
+  "a": "**Crece indefinidamente: cada periodo añade 1,5 puntos más.** Con $\\pi = \\pi^e - 0{,}5(u - u_n)$ y expectativas adaptativas, sostener la brecha suma el mismo incremento una y otra vez. No hay menú estable entre paro e inflación.",
+  "opciones": [
+   "Sube al principio y vuelve sola a su nivel anterior",
+   "Se instala en un nivel más alto pero estable",
+   "No cambia si el banco central mantiene su objetivo",
+   "Crece indefinidamente: cada periodo añade 1,5 puntos más"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "3.03#t2",
+  "codigo": "3.03",
+  "bloque": 3,
+  "nivel": 2,
+  "titulo": "Mercado de trabajo: paro, actividad y curva de Phillips",
+  "q": "¿Es la tasa natural de paro un dato que pueda consultarse?",
+  "a": "**No: se estima con incertidumbre considerable y métodos que dan resultados distintos.** Y además puede moverse con las instituciones laborales y con la productividad, así que una estimación de hace diez años no sirve hoy sin revisarla.",
+  "opciones": [
+   "No: se estima con incertidumbre considerable y métodos que dan resultados distintos",
+   "Sí, y es estable en el tiempo para cada país",
+   "Sí: la publican los institutos estadísticos",
+   "No, pero puede deducirse del paro observado en los años de expansión"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "3.03#t3",
+  "codigo": "3.03",
+  "bloque": 3,
+  "nivel": 2,
+  "titulo": "Mercado de trabajo: paro, actividad y curva de Phillips",
+  "q": "¿Por qué se dice que la frontera entre paro cíclico y estructural no es fija?",
+  "a": "**Por la histéresis: un paro cíclico prolongado deteriora la empleabilidad y puede elevar la propia tasa natural.** Y de ahí una consecuencia de política importante: dejar que el paro cíclico se prolongue no es neutral, porque lo vuelve estructural y ya no responde a la demanda.",
+  "opciones": [
+   "Porque los datos se revisan con frecuencia",
+   "Porque depende de qué definición estadística se adopte",
+   "Por la histéresis: un paro cíclico prolongado deteriora la empleabilidad y puede elevar la propia tasa natural",
+   "Porque el paro friccional se cuenta unas veces en un grupo y otras en otro"
+  ],
+  "correcta": 2
  },
  {
   "id": "3.04#0",
@@ -4954,6 +11289,70 @@ export default [
   "a": "Porque hay capacidad ociosa, así que la demanda adicional se traduce en producción y no en precios; y porque si el tipo de interés está en su límite inferior no se produce el desplazamiento de inversión privada que normalmente lo amortigua. El mismo modelo da respuestas distintas según el estado de la economía."
  },
  {
+  "id": "3.04#t0",
+  "codigo": "3.04",
+  "bloque": 3,
+  "nivel": 2,
+  "titulo": "Modelo keynesiano de renta y multiplicadores",
+  "q": "¿Qué supuesto hace falta para que el multiplicador keynesiano funcione como describe el modelo?",
+  "a": "**Que haya capacidad ociosa: la respuesta a más demanda es más producción y no más precios.** Sin recursos parados, un impulso de demanda se traduce en inflación y no en renta. Todo el modelo descansa en que hay factores sin emplear dispuestos a ponerse a producir.",
+  "opciones": [
+   "Que la economía sea cerrada",
+   "Que el banco central mantenga el tipo de interés fijo",
+   "Que haya capacidad ociosa: la respuesta a más demanda es más producción y no más precios",
+   "Que el gobierno financie el gasto con deuda y no con impuestos"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "3.04#t1",
+  "codigo": "3.04",
+  "bloque": 3,
+  "nivel": 2,
+  "titulo": "Modelo keynesiano de renta y multiplicadores",
+  "q": "En una economía con $C = 100 + 0{,}8\\,Y_d$ y un impuesto proporcional del 25 %, ¿cuánto vale el multiplicador?",
+  "a": "**2,5: el impuesto filtra parte de cada euro antes de que se gaste.** $k = 1/[1 - c(1-t)] = 1/[1 - 0{,}8 \\times 0{,}75] = 1/0{,}4 = 2{,}5$. Cada euro de renta adicional deja el 25 % en Hacienda antes de llegar al consumo.",
+  "opciones": [
+   "5, que es $1/(1-0{,}8)$",
+   "0,8, que es la propensión marginal a consumir",
+   "2,5: el impuesto filtra parte de cada euro antes de que se gaste",
+   "1,25, porque el impuesto se lleva la mayor parte"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "3.04#t2",
+  "codigo": "3.04",
+  "bloque": 3,
+  "nivel": 2,
+  "titulo": "Modelo keynesiano de renta y multiplicadores",
+  "q": "Un gobierno puede gastar 100 o rebajar impuestos en 100. ¿Producen el mismo efecto sobre la renta?",
+  "a": "**No: el gasto entra íntegro en la demanda, mientras que de la rebaja se ahorra una parte antes de empezar la cadena.** Por eso $|k_T| < k$: la primera ronda de la rebaja solo aporta $c \\times 100$ y no 100. Es un resultado del mecanismo, no una preferencia por una política u otra.",
+  "opciones": [
+   "Sí, salvo que el gasto sea en inversión",
+   "No: el gasto entra íntegro en la demanda, mientras que de la rebaja se ahorra una parte antes de empezar la cadena",
+   "Sí: los 100 llegan igual a la economía",
+   "No: la rebaja fiscal tiene mayor efecto porque los hogares deciden mejor"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "3.04#t3",
+  "codigo": "3.04",
+  "bloque": 3,
+  "nivel": 2,
+  "titulo": "Modelo keynesiano de renta y multiplicadores",
+  "q": "¿Es la paradoja del ahorro una ley general de la economía?",
+  "a": "**No: opera con capacidad ociosa; con pleno empleo, más ahorro financia más inversión.** Con recursos parados, el gasto de uno es la renta de otro y ahorrar más deprime ambos. En pleno empleo el mecanismo se invierte y el ahorro eleva el crecimiento a largo plazo.",
+  "opciones": [
+   "No: es un resultado que la evidencia ha refutado",
+   "Sí: ahorrar más siempre reduce la renta agregada",
+   "Sí, aunque su efecto es pequeño",
+   "No: opera con capacidad ociosa; con pleno empleo, más ahorro financia más inversión"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "3.05#0",
   "codigo": "3.05",
   "bloque": 3,
@@ -4997,6 +11396,70 @@ export default [
   "titulo": "Modelo IS-LM y política de demanda",
   "q": "¿Por qué la deflación puede ser contractiva pese a aumentar la oferta monetaria real?",
   "a": "Porque eleva el tipo de interés real, que es el relevante para invertir, y aumenta el peso real de las deudas existentes, deprimiendo el gasto de los endeudados. Ese canal puede dominar al efecto expansivo de mayor liquidez real, y por eso los objetivos de inflación se fijan en positivo."
+ },
+ {
+  "id": "3.05#t0",
+  "codigo": "3.05",
+  "bloque": 3,
+  "nivel": 2,
+  "titulo": "Modelo IS-LM y política de demanda",
+  "q": "Una expansión fiscal desplaza la IS 150 y la renta de equilibrio sube 100. ¿Por qué difieren?",
+  "a": "**Por el efecto desplazamiento: la subida del tipo de interés recorta parte de la inversión privada.** Más renta eleva la demanda de dinero y con ella el tipo, y ese tipo mayor desanima inversión. La diferencia de 50 es exactamente lo que se pierde por esa vía.",
+  "opciones": [
+   "Por el efecto desplazamiento: la subida del tipo de interés recorta parte de la inversión privada",
+   "Porque parte del gasto se filtra en importaciones",
+   "Por un error de cálculo del multiplicador",
+   "Porque el multiplicador tarda en desplegarse por completo"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "3.05#t1",
+  "codigo": "3.05",
+  "bloque": 3,
+  "nivel": 2,
+  "titulo": "Modelo IS-LM y política de demanda",
+  "q": "Con el tipo de interés en su límite inferior, ¿qué ocurre con la política monetaria?",
+  "a": "**Pierde eficacia: la LM es casi horizontal y las inyecciones apenas mueven la renta.** Si el tipo no puede bajar más, añadir liquidez no lo mueve y por tanto no estimula la inversión. Es el escenario en que la política fiscal recupera todo su multiplicador.",
+  "opciones": [
+   "Pierde eficacia: la LM es casi horizontal y las inyecciones apenas mueven la renta",
+   "Se vuelve más eficaz, porque el crédito es barato",
+   "Funciona igual: más liquidez siempre eleva la renta",
+   "Deja de existir, porque el banco central no puede actuar"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "3.05#t2",
+  "codigo": "3.05",
+  "bloque": 3,
+  "nivel": 2,
+  "titulo": "Modelo IS-LM y política de demanda",
+  "q": "El banco central emite dinero y los precios acaban subiendo en la misma proporción. ¿Se desplaza la LM?",
+  "a": "**No: la LM está en términos reales y $M/P$ no ha cambiado.** Es la neutralidad del dinero vista desde este modelo: si precios y cantidad se mueven a la par, los saldos reales quedan igual y el equilibrio no se mueve.",
+  "opciones": [
+   "No, porque la emisión no afecta a la demanda de dinero",
+   "Sí: la oferta monetaria ha aumentado",
+   "Sí, pero solo temporalmente",
+   "No: la LM está en términos reales y $M/P$ no ha cambiado"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "3.05#t3",
+  "codigo": "3.05",
+  "bloque": 3,
+  "nivel": 2,
+  "titulo": "Modelo IS-LM y política de demanda",
+  "q": "¿Es el efecto desplazamiento un argumento contra el gasto público?",
+  "a": "**No: es un resultado del modelo que mide cuánto se reduce el efecto, y varía entre cero y el total según la pendiente de la LM.** Con LM horizontal el desplazamiento es nulo y el multiplicador actúa entero; con LM vertical se lo lleva todo. Es una magnitud a estimar, no un veredicto.",
+  "opciones": [
+   "No: es un resultado del modelo que mide cuánto se reduce el efecto, y varía entre cero y el total según la pendiente de la LM",
+   "No, porque en la práctica nunca se observa",
+   "Sí: demuestra que el gasto público expulsa a la inversión privada",
+   "Sí, salvo que la economía esté en recesión"
+  ],
+  "correcta": 0
  },
  {
   "id": "3.06#0",
@@ -5044,6 +11507,70 @@ export default [
   "a": "Porque anula la señal de precio que induce a consumir menos del bien que se ha vuelto escaso, sosteniendo su demanda. Una transferencia dirigida compensa la pérdida de renta sin tocar el precio relativo, protegiendo a quien lo necesita y conservando el incentivo al ahorro energético."
  },
  {
+  "id": "3.06#t0",
+  "codigo": "3.06",
+  "bloque": 3,
+  "nivel": 2,
+  "titulo": "Oferta y demanda agregadas",
+  "q": "¿Por qué cae la demanda agregada cuando sube el nivel de precios?",
+  "a": "**Por tres mecanismos distintos: saldos reales, tipo de interés y comercio exterior.** Menos saldos reales reducen el consumo; más demanda de dinero eleva el tipo y recorta la inversión; y los precios internos altos empeoran las exportaciones netas. Son tres canales, ninguno de sustitución.",
+  "opciones": [
+   "Porque los bienes se encarecen frente a otros, como en cualquier demanda de mercado",
+   "Por tres mecanismos distintos: saldos reales, tipo de interés y comercio exterior",
+   "Porque las empresas producen menos al subir sus costes",
+   "Porque la renta nominal de los hogares no se ajusta"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "3.06#t1",
+  "codigo": "3.06",
+  "bloque": 3,
+  "nivel": 2,
+  "titulo": "Oferta y demanda agregadas",
+  "q": "Un impulso de demanda eleva la producción por encima del potencial. ¿Qué pasa a largo plazo?",
+  "a": "**Al revisarse salarios y expectativas, la producción vuelve al potencial y solo quedan precios más altos.** La oferta de corto plazo se desplaza hacia arriba y la economía regresa a su capacidad. A largo plazo la oferta agregada es vertical: la capacidad la fijan capital, trabajo y productividad.",
+  "opciones": [
+   "Al revisarse salarios y expectativas, la producción vuelve al potencial y solo quedan precios más altos",
+   "La producción se queda en el nuevo nivel superior",
+   "El potencial sube hasta alcanzar el nuevo nivel de producción",
+   "La producción cae por debajo del potencial por sobrerreacción"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "3.06#t2",
+  "codigo": "3.06",
+  "bloque": 3,
+  "nivel": 2,
+  "titulo": "Oferta y demanda agregadas",
+  "q": "Suben a la vez los precios y cae la producción. ¿De qué tipo de choque se trata?",
+  "a": "**De oferta: si fuera de demanda, precios y producción se moverían en el mismo sentido.** La pista es la producción, no la inflación: un mismo nivel de precios es compatible con una expansión y con una estanflación, y lo que las distingue es hacia dónde va el producto.",
+  "opciones": [
+   "No se puede saber sin conocer el tipo de interés",
+   "De oferta: si fuera de demanda, precios y producción se moverían en el mismo sentido",
+   "De demanda: los precios señalan exceso de gasto",
+   "De demanda negativa, que reduce producción y precios"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "3.06#t3",
+  "codigo": "3.06",
+  "bloque": 3,
+  "nivel": 2,
+  "titulo": "Oferta y demanda agregadas",
+  "q": "Ante un choque de oferta adverso, ¿qué puede conseguir la política de demanda?",
+  "a": "**Elegir entre sostener el empleo o contener la inflación, pero no ambas cosas.** Expandir sostiene el empleo y agrava la inflación; contraer hace lo contrario. Ese intercambio forzoso es lo que hace incómodos los choques de oferta.",
+  "opciones": [
+   "Elegir entre sostener el empleo o contener la inflación, pero no ambas cosas",
+   "Nada: la política de demanda es inoperante en ese caso",
+   "Devolver producción y precios a su punto de partida",
+   "Corregirlo por completo si actúa con rapidez suficiente"
+  ],
+  "correcta": 0
+ },
+ {
   "id": "3.07#0",
   "codigo": "3.07",
   "bloque": 3,
@@ -5087,6 +11614,70 @@ export default [
   "titulo": "Dinero, bancos y creación de liquidez",
   "q": "¿Por qué la ecuación cuantitativa no sirve para predecir la inflación a corto plazo?",
   "a": "Porque es una identidad que solo se convierte en teoría si la velocidad de circulación es estable, y no lo es: cae en las crisis y se recupera después. A largo plazo y en episodios de inflación muy alta la relación entre dinero y precios sí es sólida."
+ },
+ {
+  "id": "3.07#t0",
+  "codigo": "3.07",
+  "bloque": 3,
+  "nivel": 2,
+  "titulo": "Dinero, bancos y creación de liquidez",
+  "q": "¿De dónde sale el dinero que un banco presta?",
+  "a": "**El préstamo crea el depósito: el banco anota a la vez un activo y un pasivo.** El dinero aparece en ese momento. Lo que limita la capacidad de prestar no es el ahorro previo sino el capital regulatorio, la liquidez y, sobre todo, que haya demanda solvente.",
+  "opciones": [
+   "De los depósitos que le han confiado sus clientes",
+   "Del capital aportado por sus accionistas",
+   "El préstamo crea el depósito: el banco anota a la vez un activo y un pasivo",
+   "De las reservas que le entrega el banco central"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "3.07#t1",
+  "codigo": "3.07",
+  "bloque": 3,
+  "nivel": 2,
+  "titulo": "Dinero, bancos y creación de liquidez",
+  "q": "¿Qué es el multiplicador monetario?",
+  "a": "**Una identidad contable ex post entre dos agregados, no una secuencia causal.** $m = (1+c)/(c+r)$ relaciona base y oferta monetaria después de que todo haya ocurrido. Tratarla como un mecanismo lleva a predicciones que no se cumplen.",
+  "opciones": [
+   "La relación entre el tipo de intervención y el tipo del crédito",
+   "Una identidad contable ex post entre dos agregados, no una secuencia causal",
+   "El mecanismo por el que el banco central inyecta reservas y los bancos las multiplican",
+   "El límite legal de crédito que puede conceder un banco"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "3.07#t2",
+  "codigo": "3.07",
+  "bloque": 3,
+  "nivel": 2,
+  "titulo": "Dinero, bancos y creación de liquidez",
+  "q": "El banco central multiplica por cinco la base monetaria y la inflación no se mueve. ¿Cómo se explica?",
+  "a": "**Si las reservas se quedan depositadas en el banco central por falta de demanda solvente, no hay crédito nuevo ni gasto nuevo.** La base solo se convierte en dinero cuando alimenta crédito. Si se queda parada en el balance del banco central, no llega a la economía real.",
+  "opciones": [
+   "Si las reservas se quedan depositadas en el banco central por falta de demanda solvente, no hay crédito nuevo ni gasto nuevo",
+   "Con retardo: la inflación llegará más tarde",
+   "Porque la velocidad de circulación es constante y compensa",
+   "Porque la base monetaria no forma parte de la oferta monetaria"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "3.07#t3",
+  "codigo": "3.07",
+  "bloque": 3,
+  "nivel": 2,
+  "titulo": "Dinero, bancos y creación de liquidez",
+  "q": "Los hogares amortizan más préstamos de los que suscriben. ¿Qué le pasa a la cantidad de dinero?",
+  "a": "**Se contrae: al devolver el crédito desaparece el depósito correspondiente.** El proceso es simétrico al de creación: si el crédito crea depósitos, devolverlo los destruye. Una economía desapalancándose ve contraerse su masa monetaria.",
+  "opciones": [
+   "Depende de lo que haga el banco central con la base monetaria",
+   "Aumenta, porque los bancos disponen de más fondos",
+   "Se contrae: al devolver el crédito desaparece el depósito correspondiente",
+   "No cambia: el dinero devuelto vuelve a prestarse"
+  ],
+  "correcta": 2
  },
  {
   "id": "3.08#0",
@@ -5134,6 +11725,70 @@ export default [
   "a": "En el primer caso el tipo elegido no es el correcto y se corrige cambiándolo. En el segundo, el tipo oficial no llega a hogares y empresas —por fragmentación financiera o por restricción crediticia— y hace falta un instrumento cuyo objetivo sea restablecer el canal, no reorientar la política."
  },
  {
+  "id": "3.08#t0",
+  "codigo": "3.08",
+  "bloque": 3,
+  "nivel": 3,
+  "titulo": "Política monetaria: BCE, tipos y mecanismo de transmisión",
+  "q": "El tipo oficial está al 4 % y las expectativas de inflación al 6 %. ¿Es una política restrictiva?",
+  "a": "**No: el tipo real es negativo, así que la orientación es expansiva.** Lo relevante es el tipo real comparado con el de equilibrio. Con $r \\approx 4 - 6 = -2\\ \\%$, endeudarse sale a cuenta y la política estimula.",
+  "opciones": [
+   "Sí, porque supera el objetivo del 2 %",
+   "No se puede saber sin conocer la brecha de producción",
+   "No: el tipo real es negativo, así que la orientación es expansiva",
+   "Sí: un 4 % es un tipo alto"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "3.08#t1",
+  "codigo": "3.08",
+  "bloque": 3,
+  "nivel": 3,
+  "titulo": "Política monetaria: BCE, tipos y mecanismo de transmisión",
+  "q": "El banco central sube tipos y tres meses después la inflación sigue igual. ¿Qué se concluye?",
+  "a": "**Nada aún: el efecto pleno tarda entre uno y dos años, con dispersión considerable.** Por eso la decisión se toma sobre previsiones y no sobre el dato publicado, y por eso los retardos obligan a actuar antes de tener la confirmación.",
+  "opciones": [
+   "Que la transmisión está rota",
+   "Que la subida ha sido insuficiente y hay que subir más",
+   "Que la inflación no es de demanda",
+   "Nada aún: el efecto pleno tarda entre uno y dos años, con dispersión considerable"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "3.08#t2",
+  "codigo": "3.08",
+  "bloque": 3,
+  "nivel": 3,
+  "titulo": "Política monetaria: BCE, tipos y mecanismo de transmisión",
+  "q": "¿Es el objetivo del 2 % un techo que no debe superarse?",
+  "a": "**No: es simétrico, y quedarse por debajo de forma persistente es igual de indeseable.** La deflación eleva el tipo real justo cuando conviene bajarlo y aumenta el peso real de las deudas. Por eso el BCE lo formuló explícitamente como simétrico.",
+  "opciones": [
+   "Sí: por encima empieza el problema",
+   "No: es simétrico, y quedarse por debajo de forma persistente es igual de indeseable",
+   "No: es un suelo, porque la deflación es lo verdaderamente peligroso",
+   "Sí, pero con tolerancia para desviaciones transitorias"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "3.08#t3",
+  "codigo": "3.08",
+  "bloque": 3,
+  "nivel": 3,
+  "titulo": "Política monetaria: BCE, tipos y mecanismo de transmisión",
+  "q": "¿Controla el banco central la cantidad de dinero de la economía?",
+  "a": "**No: controla el tipo a muy corto plazo y suministra las reservas necesarias para sostenerlo.** El dinero lo crea el crédito bancario, y la reserva se acomoda a la demanda. Confundir el instrumento con el objetivo lleva a esperar control sobre lo que no se controla.",
+  "opciones": [
+   "Sí, a través del coeficiente de reservas",
+   "No, pero sí controla el crédito mediante los requisitos de capital",
+   "Sí: la fija mediante la base monetaria",
+   "No: controla el tipo a muy corto plazo y suministra las reservas necesarias para sostenerlo"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "3.09#0",
   "codigo": "3.09",
   "bloque": 3,
@@ -5177,6 +11832,70 @@ export default [
   "titulo": "Crecimiento económico: Solow, capital humano y productividad",
   "q": "¿Por qué puede caer la productividad media sin que empeore ninguna empresa?",
   "a": "Por composición: si crece el peso de sectores o empresas menos productivos, la media agregada baja aunque cada unidad mantenga su nivel. Por eso hay que descomponer entre efecto intrasectorial y efecto composición antes de interpretar cualquier variación de la productividad agregada."
+ },
+ {
+  "id": "3.09#t0",
+  "codigo": "3.09",
+  "bloque": 3,
+  "nivel": 3,
+  "titulo": "Crecimiento económico: Solow, capital humano y productividad",
+  "q": "Un país duplica su tasa de ahorro. ¿Qué le ocurre a su crecimiento a largo plazo?",
+  "a": "**No cambia: sube el nivel de renta por trabajador —un 41 % en el ejemplo— pero no la tasa.** Distinguir efecto nivel de efecto tasa es lo que separa entender Solow de repetirlo. Más ahorro lleva a un estado estacionario más alto, y una vez allí se crece igual que antes.",
+  "opciones": [
+   "Se duplica también",
+   "Cae, porque se consume menos",
+   "Aumenta, aunque menos que proporcionalmente",
+   "No cambia: sube el nivel de renta por trabajador —un 41 % en el ejemplo— pero no la tasa"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "3.09#t1",
+  "codigo": "3.09",
+  "bloque": 3,
+  "nivel": 3,
+  "titulo": "Crecimiento económico: Solow, capital humano y productividad",
+  "q": "¿Por qué no puede acumularse capital indefinidamente para crecer?",
+  "a": "**Porque el capital tiene rendimientos decrecientes y la reposición acaba absorbiendo toda la inversión.** La curva de inversión se aplana y la recta de reposición $(\\delta + n + g)k$ no. Donde se cortan, todo lo que se invierte se va en mantener el capital existente.",
+  "opciones": [
+   "Porque el capital tiene rendimientos decrecientes y la reposición acaba absorbiendo toda la inversión",
+   "Porque el ahorro tiene un límite físico",
+   "Porque la población crece y diluye el capital disponible",
+   "Porque la tecnología se vuelve obsoleta"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "3.09#t2",
+  "codigo": "3.09",
+  "bloque": 3,
+  "nivel": 3,
+  "titulo": "Crecimiento económico: Solow, capital humano y productividad",
+  "q": "Un país pobre no converge hacia la renta de los ricos. ¿Contradice eso el modelo de Solow?",
+  "a": "**No: predice convergencia condicional, cada país hacia su propio estado estacionario.** Cada estado estacionario depende de esos parámetros. Un país con baja tasa de ahorro e instituciones frágiles converge hacia un nivel bajo, y eso es lo que el modelo predice.",
+  "opciones": [
+   "No, porque el modelo no dice nada sobre países distintos",
+   "Sí, salvo que el país tenga conflictos armados",
+   "Sí: el modelo predice convergencia",
+   "No: predice convergencia condicional, cada país hacia su propio estado estacionario"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "3.09#t3",
+  "codigo": "3.09",
+  "bloque": 3,
+  "nivel": 3,
+  "titulo": "Crecimiento económico: Solow, capital humano y productividad",
+  "q": "La productividad media de un país cae. ¿Significa que sus empresas han empeorado?",
+  "a": "**No necesariamente: puede deberse a la composición, si crece el peso de sectores menos productivos.** Por eso se descompone entre efecto «dentro» —cada sector mejora o empeora— y efecto «entre» —el empleo se desplaza—. Sin esa separación no se sabe qué ha pasado.",
+  "opciones": [
+   "Sí: la productividad media mide cómo lo hacen las empresas",
+   "Sí, salvo que haya cambiado la definición estadística",
+   "No, porque la productividad media no tiene relación con la de las empresas",
+   "No necesariamente: puede deberse a la composición, si crece el peso de sectores menos productivos"
+  ],
+  "correcta": 3
  },
  {
   "id": "3.10#0",
@@ -5224,6 +11943,70 @@ export default [
   "a": "No necesariamente. La caída de la renta reduce las importaciones y mejora el saldo sin que la capacidad exportadora haya cambiado. Para saber si el ajuste es estructural hay que comprobar si las exportaciones ganan cuota de mercado; si no, la mejora se revertirá al recuperarse la demanda interna."
  },
  {
+  "id": "3.10#t0",
+  "codigo": "3.10",
+  "bloque": 3,
+  "nivel": 3,
+  "titulo": "Economía abierta: tipo de cambio, balanza de pagos, Mundell-Fleming",
+  "q": "Un país tiene déficit por cuenta corriente. ¿Qué significa eso necesariamente?",
+  "a": "**Que su inversión supera a su ahorro: es una identidad, y su lectura depende de la causa.** $\\mathrm{CC} = S - I$. Un déficit puede reflejar una economía atractiva que recibe inversión productiva o una que consume por encima de sus posibilidades, y distinguirlo exige mirar en qué se invierte.",
+  "opciones": [
+   "Que su moneda está sobrevalorada",
+   "Que su inversión supera a su ahorro: es una identidad, y su lectura depende de la causa",
+   "Que sus exportaciones son poco competitivas",
+   "Que está perdiendo reservas"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "3.10#t1",
+  "codigo": "3.10",
+  "bloque": 3,
+  "nivel": 3,
+  "titulo": "Economía abierta: tipo de cambio, balanza de pagos, Mundell-Fleming",
+  "q": "Un país devalúa su moneda y en los meses siguientes su saldo comercial empeora. ¿Qué ha pasado?",
+  "a": "**Es la curva en jota: las elasticidades son bajas a corto plazo y el efecto precio domina al de cantidad.** Al principio las importaciones cuestan más y su volumen apenas cae, así que la factura sube. Solo cuando las cantidades reaccionan mejora el saldo, y para que llegue a mejorar hace falta la condición de Marshall-Lerner.",
+  "opciones": [
+   "La devaluación ha fallado",
+   "Se ha medido el saldo en moneda extranjera en vez de nacional",
+   "Es la curva en jota: las elasticidades son bajas a corto plazo y el efecto precio domina al de cantidad",
+   "Los socios comerciales han devaluado también"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "3.10#t2",
+  "codigo": "3.10",
+  "bloque": 3,
+  "nivel": 3,
+  "titulo": "Economía abierta: tipo de cambio, balanza de pagos, Mundell-Fleming",
+  "q": "¿Puede un país tener tipo de cambio fijo, libre movilidad de capital y política monetaria propia?",
+  "a": "**No: es una restricción lógica y solo caben dos de las tres.** Con tipo fijo y capital libre, el tipo de interés lo determina el exterior por arbitraje. Querer fijarlo a la vez es querer dos valores distintos para la misma variable.",
+  "opciones": [
+   "Sí, si su banco central tiene reservas suficientes",
+   "Sí, mientras la inflación sea baja",
+   "Sí, con controles parciales bien diseñados",
+   "No: es una restricción lógica y solo caben dos de las tres"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "3.10#t3",
+  "codigo": "3.10",
+  "bloque": 3,
+  "nivel": 3,
+  "titulo": "Economía abierta: tipo de cambio, balanza de pagos, Mundell-Fleming",
+  "q": "Con tipo de cambio flexible y capital móvil, ¿qué le ocurre a una expansión fiscal?",
+  "a": "**Se neutraliza en buena parte: el tipo sube, entra capital, la moneda se aprecia y las exportaciones caen.** Es el resultado de Mundell-Fleming, y su reverso es que la política monetaria se amplifica en ese mismo régimen. Aplicar recetas de un régimen en el otro invierte las conclusiones.",
+  "opciones": [
+   "Funciona igual que en economía cerrada",
+   "Depende del signo del saldo por cuenta corriente",
+   "Se amplifica, porque la moneda se deprecia y las exportaciones crecen",
+   "Se neutraliza en buena parte: el tipo sube, entra capital, la moneda se aprecia y las exportaciones caen"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "3.11#0",
   "codigo": "3.11",
   "bloque": 3,
@@ -5267,6 +12050,70 @@ export default [
   "titulo": "Deuda pública y sostenibilidad fiscal",
   "q": "Otro Estado declara un déficit del 3,5 % y su deuda sube 4,7 puntos. ¿Qué explica la diferencia?",
   "a": "El ajuste déficit-deuda, de 1,2 puntos. Las causas habituales son adquisiciones netas de activos financieros —endeudarse para prestar o para recapitalizar una entidad aumenta la deuda sin generar déficit—, las diferencias entre el registro en devengo del déficit y los flujos de caja, y los efectos de valoración o de tipo de cambio. No es un residuo estadístico: es una magnitud que debe poder desglosarse."
+ },
+ {
+  "id": "3.11#t0",
+  "codigo": "3.11",
+  "bloque": 3,
+  "nivel": 3,
+  "titulo": "Deuda pública y sostenibilidad fiscal",
+  "q": "Un país tiene una deuda del 105 % del PIB que baja y otro del 60 % que sube tres puntos al año. ¿Cuál está en mejor posición?",
+  "a": "**El del 105 %, porque lo que ordena es la trayectoria y no el nivel.** La sostenibilidad es una propiedad de la senda: hacia dónde va la ratio y con qué esfuerzo puede estabilizarse. Un nivel alto que decrece es una posición mejor que uno bajo que se dispara.",
+  "opciones": [
+   "Ambos igual: 60 % es el umbral y ambos lo rebasarán",
+   "El del 105 %, porque lo que ordena es la trayectoria y no el nivel",
+   "No se puede comparar sin conocer el saldo primario",
+   "El del 60 %, porque el nivel es lo que cuenta"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "3.11#t1",
+  "codigo": "3.11",
+  "bloque": 3,
+  "nivel": 3,
+  "titulo": "Deuda pública y sostenibilidad fiscal",
+  "q": "El bono a diez años de un país cotiza al 4 %. ¿Qué tipo hay que usar en la ecuación de la deuda?",
+  "a": "**El tipo implícito medio de toda la deuda viva, que suele ser bastante distinto.** Se calcula como intereses del año divididos entre la deuda del anterior, y es lo que efectivamente drena recursos. Con deuda de vencimiento largo, tarda años en reflejar los tipos de mercado.",
+  "opciones": [
+   "El tipo real, restando la inflación al 4 %",
+   "El tipo implícito medio de toda la deuda viva, que suele ser bastante distinto",
+   "El tipo de las nuevas emisiones ponderado por su volumen",
+   "El 4 %, que es el coste de financiarse hoy"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "3.11#t2",
+  "codigo": "3.11",
+  "bloque": 3,
+  "nivel": 3,
+  "titulo": "Deuda pública y sostenibilidad fiscal",
+  "q": "En la ecuación $\\Delta b = \\dfrac{r-g}{1+g}b_{-1} - sp$, ¿qué exige la coherencia entre $r$ y $g$?",
+  "a": "**Que ambas sean nominales o ambas reales; emparejarlas mal es el error de signo más frecuente.** Un tipo nominal del 3 % con un crecimiento real del 2 % da la impresión de que $r > g$ cuando en nominales puede ocurrir lo contrario. El signo se invierte y con él el diagnóstico.",
+  "opciones": [
+   "Nada: son magnitudes independientes",
+   "Que ambas sean nominales o ambas reales; emparejarlas mal es el error de signo más frecuente",
+   "Que $g$ incluya el deflactor y $r$ no",
+   "Que $r$ sea nominal y $g$ real, porque la deuda se emite en nominal"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "3.11#t3",
+  "codigo": "3.11",
+  "bloque": 3,
+  "nivel": 3,
+  "titulo": "Deuda pública y sostenibilidad fiscal",
+  "q": "Con $r > g$, ¿qué hace falta para que la ratio de deuda no crezca?",
+  "a": "**Un superávit primario de al menos $b_{-1}\\,\\dfrac{r-g}{1+g}$.** Es el saldo primario que estabiliza: el que deja $\\Delta b = 0$. Con $r > g$ la deuda tiende a crecer sola, y hace falta un superávit antes de intereses para compensarlo.",
+  "opciones": [
+   "Un superávit primario de al menos $b_{-1}\\,\\dfrac{r-g}{1+g}$",
+   "Que el déficit total sea cero",
+   "Reducir el gasto público en la misma cuantía que los intereses",
+   "Que el banco central compre deuda"
+  ],
+  "correcta": 0
  },
  {
   "id": "4.01#0",
@@ -5323,6 +12170,70 @@ export default [
   "a": "Evita tener que recalcular el óptimo. Como en el punto óptimo las condiciones de primer orden se cumplen, el efecto de reajustar las variables de decisión es de segundo orden y se anula, de modo que basta derivar el lagrangiano respecto al parámetro manteniendo las decisiones fijas. De ahí salen el lema de Shephard y la identidad de Roy."
  },
  {
+  "id": "4.01#t0",
+  "codigo": "4.01",
+  "bloque": 4,
+  "nivel": 2,
+  "titulo": "Álgebra lineal y optimización aplicadas a la economía",
+  "q": "¿Qué mide el multiplicador de Lagrange en un problema de maximización con restricción?",
+  "a": "**El precio sombra: cuánto mejora el objetivo si se relaja la restricción una unidad.** Y de ahí que tenga aplicaciones muy concretas: los mercados de derechos de emisión ponen literalmente precio a un multiplicador de Lagrange descubierto por el mercado.",
+  "opciones": [
+   "Un artefacto del método sin contenido económico",
+   "La pendiente de la restricción en el óptimo",
+   "La distancia entre el óptimo restringido y el libre",
+   "El precio sombra: cuánto mejora el objetivo si se relaja la restricción una unidad"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "4.01#t1",
+  "codigo": "4.01",
+  "bloque": 4,
+  "nivel": 2,
+  "titulo": "Álgebra lineal y optimización aplicadas a la economía",
+  "q": "El gradiente de una función se anula en un punto. ¿Qué se ha encontrado?",
+  "a": "**Un punto crítico, que puede ser máximo, mínimo o punto de silla.** Sin comprobar la segunda derivada —o sin poder invocar concavidad— no se sabe qué se ha encontrado. Es el paso que más se omite.",
+  "opciones": [
+   "Un punto crítico, que puede ser máximo, mínimo o punto de silla",
+   "Un mínimo, si la función es convexa",
+   "El óptimo, siempre que la restricción sea lineal",
+   "Un máximo"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "4.01#t2",
+  "codigo": "4.01",
+  "bloque": 4,
+  "nivel": 2,
+  "titulo": "Álgebra lineal y optimización aplicadas a la economía",
+  "q": "En un problema de consumidor la solución óptima consume cero de un bien. ¿Sirve Lagrange?",
+  "a": "**No: el método supone óptimo interior y hay que usar Kuhn-Tucker.** Con solución de esquina la igualdad de la relación marginal de sustitución y el cociente de precios deja de valer, y hay que trabajar con desigualdades y holgura complementaria.",
+  "opciones": [
+   "Sí: basta con imponer la restricción de no negatividad al final",
+   "No, porque el problema no tiene solución",
+   "No: el método supone óptimo interior y hay que usar Kuhn-Tucker",
+   "Sí, si se reformula con logaritmos"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "4.01#t3",
+  "codigo": "4.01",
+  "bloque": 4,
+  "nivel": 2,
+  "titulo": "Álgebra lineal y optimización aplicadas a la economía",
+  "q": "Un estudio usa multiplicadores input-output para estimar el efecto de una inversión pública. ¿Qué hay que advertir?",
+  "a": "**Que suponen precios fijos, tecnología fija, capacidad ociosa y ninguna restricción de oferta.** Con esos supuestos, el multiplicador dice cómo está interconectada la economía, no cuánta actividad nueva generaría la inversión: parte de ella desplazaría a otra existente.",
+  "opciones": [
+   "Nada: es la metodología estándar para impacto económico",
+   "Que hay que sumar los efectos directos e indirectos por separado",
+   "Que solo valen para el sector primario",
+   "Que suponen precios fijos, tecnología fija, capacidad ociosa y ninguna restricción de oferta"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "4.02#0",
   "codigo": "4.02",
   "bloque": 4,
@@ -5375,6 +12286,70 @@ export default [
   "titulo": "Estadística descriptiva y distribuciones",
   "q": "¿Qué añade dibujar los datos si ya se tienen media, varianza y correlación?",
   "a": "La forma, que esos tres números no contienen. El cuarteto de Anscombe muestra cuatro conjuntos idénticos en esos estadísticos y radicalmente distintos al representarlos: uno lineal, uno curvo, uno dominado por un atípico y uno donde un solo punto genera toda la relación. Con los resúmenes solos, los cuatro parecerían el mismo problema."
+ },
+ {
+  "id": "4.02#t0",
+  "codigo": "4.02",
+  "bloque": 4,
+  "nivel": 1,
+  "titulo": "Estadística descriptiva y distribuciones",
+  "q": "En una distribución salarial ocho de cada diez trabajadores cobran menos que la media. ¿Qué indica eso?",
+  "a": "**Que la distribución tiene cola derecha larga y la media no describe al individuo típico.** En renta, salarios, patrimonio o facturación la media va arrastrada por la cola. La mediana responde mucho mejor a «cuánto cobra la gente».",
+  "opciones": [
+   "Que hay atípicos que habría que eliminar",
+   "Que la muestra no es representativa",
+   "Que la distribución tiene cola derecha larga y la media no describe al individuo típico",
+   "Que la media está mal calculada"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "4.02#t1",
+  "codigo": "4.02",
+  "bloque": 4,
+  "nivel": 1,
+  "titulo": "Estadística descriptiva y distribuciones",
+  "q": "Un dato supera $Q_3 + 1{,}5\\,\\mathrm{IQR}$. ¿Qué hay que hacer con él?",
+  "a": "**Averiguar de dónde sale: puede ser un error de registro o una observación real e importante.** Si es un error de registro se corrige; si es un salario real, excluirlo distorsiona el coste laboral que se quería medir. La respuesta depende del origen, no del criterio.",
+  "opciones": [
+   "Averiguar de dónde sale: puede ser un error de registro o una observación real e importante",
+   "Eliminarlo: el criterio lo identifica como atípico",
+   "Nada: la regla solo se aplica a distribuciones normales",
+   "Sustituirlo por la mediana"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "4.02#t2",
+  "codigo": "4.02",
+  "bloque": 4,
+  "nivel": 1,
+  "titulo": "Estadística descriptiva y distribuciones",
+  "q": "Se quiere comparar la dispersión de dos variables con medias de 20.000 € y 500.000 €. ¿Qué se usa?",
+  "a": "**El coeficiente de variación, que es adimensional.** $\\mathrm{CV} = s/\\bar x$ elimina las unidades y permite la comparación. Es la respuesta a «disperso respecto a qué».",
+  "opciones": [
+   "La varianza, que penaliza más las desviaciones grandes",
+   "El rango intercuartílico",
+   "El coeficiente de variación, que es adimensional",
+   "La desviación típica de cada una"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "4.02#t3",
+  "codigo": "4.02",
+  "bloque": 4,
+  "nivel": 1,
+  "titulo": "Estadística descriptiva y distribuciones",
+  "q": "Un análisis aplica la regla del 68-95-99,7 a una distribución de patrimonios. ¿Qué falla?",
+  "a": "**Que esos porcentajes son propiedades de la normal, y en una distribución asimétrica no se cumplen.** Con cola larga o colas gruesas, el intervalo de dos desviaciones puede contener muy poco o casi todo. Aplicar la regla a ciegas convierte una propiedad de la normal en una creencia sobre los datos.",
+  "opciones": [
+   "Que esos porcentajes son propiedades de la normal, y en una distribución asimétrica no se cumplen",
+   "Que la desviación típica no está definida para patrimonios",
+   "Que habría que usar tres desviaciones en vez de dos",
+   "Nada: son propiedades de la desviación típica"
+  ],
+  "correcta": 0
  },
  {
   "id": "4.03#0",
@@ -5431,6 +12406,70 @@ export default [
   "a": "Sí, si su varianza es suficientemente menor. El criterio relevante es el error cuadrático medio, que suma varianza y sesgo al cuadrado: un poco de sesgo a cambio de mucha menos varianza reduce el error total esperado. Es el fundamento de los estimadores de encogimiento y de buena parte del aprendizaje estadístico."
  },
  {
+  "id": "4.03#t0",
+  "codigo": "4.03",
+  "bloque": 4,
+  "nivel": 2,
+  "titulo": "Probabilidad e inferencia: estimación e intervalos",
+  "q": "¿En qué se diferencian la desviación típica y el error estándar?",
+  "a": "**La desviación típica describe cuánto varían los individuos; el error estándar, cuánto variaría el estimador entre muestras.** Por eso $\\mathrm{EE}(\\bar x) = \\sigma/\\sqrt n$ decrece con $n$ mientras $\\sigma$ se queda donde está: los salarios siguen siendo igual de dispares por muchas personas que se entrevisten.",
+  "opciones": [
+   "El error estándar se usa con muestras pequeñas y la desviación típica con grandes",
+   "La desviación típica describe cuánto varían los individuos; el error estándar, cuánto variaría el estimador entre muestras",
+   "La desviación típica se calcula sobre la población y el error estándar sobre la muestra",
+   "En nada: son dos nombres para la misma medida de dispersión"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "4.03#t1",
+  "codigo": "4.03",
+  "bloque": 4,
+  "nivel": 2,
+  "titulo": "Probabilidad e inferencia: estimación e intervalos",
+  "q": "Un intervalo de confianza al 95 % va de 1,18 a 2,82. ¿Cómo se interpreta correctamente?",
+  "a": "**El 95 % de los intervalos construidos así contendrían el parámetro; este contiene o no lo contiene.** La aleatoriedad está en el procedimiento. Una vez calculado este intervalo concreto, ya no hay probabilidad que repartir: acertó o no acertó.",
+  "opciones": [
+   "Hay un 95 % de probabilidad de que el parámetro esté entre 1,18 y 2,82",
+   "El 95 % de las observaciones caen entre 1,18 y 2,82",
+   "El 95 % de los intervalos construidos así contendrían el parámetro; este contiene o no lo contiene",
+   "El parámetro vale 2,00 con un error del 5 %"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "4.03#t2",
+  "codigo": "4.03",
+  "bloque": 4,
+  "nivel": 2,
+  "titulo": "Probabilidad e inferencia: estimación e intervalos",
+  "q": "Una encuesta de 1.000 personas da un margen de $\\pm 2$ puntos. ¿Cuántas hacen falta para bajarlo a $\\pm 1$?",
+  "a": "**4.000: el error decrece con la raíz de $n$.** Para dividir el margen entre dos hay que multiplicar la muestra por cuatro. Bajarlo a $\\pm 0{,}2$ exigiría 100.000 entrevistas, y esa aritmética es la que fija el coste de cualquier encuesta oficial.",
+  "opciones": [
+   "4.000: el error decrece con la raíz de $n$",
+   "2.000: el doble de muestra para la mitad de margen",
+   "1.500, porque el rendimiento es decreciente",
+   "10.000, porque hay que multiplicar por diez"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "4.03#t3",
+  "codigo": "4.03",
+  "bloque": 4,
+  "nivel": 2,
+  "titulo": "Probabilidad e inferencia: estimación e intervalos",
+  "q": "Se estima $\\sigma$ a partir de una muestra de 10 observaciones. ¿Qué distribución hay que usar para el intervalo?",
+  "a": "**La t de Student, cuyas colas gruesas reconocen la incertidumbre sobre la varianza.** Con 9 grados de libertad el valor crítico es 2,262 frente al 1,96 de la normal: usar la normal estrecha el intervalo un 15 % y produce falsa precisión.",
+  "opciones": [
+   "La normal, corrigiendo el error estándar por el tamaño",
+   "La normal, por el teorema central del límite",
+   "La t de Student, cuyas colas gruesas reconocen la incertidumbre sobre la varianza",
+   "Cualquiera: con 10 observaciones la diferencia es despreciable"
+  ],
+  "correcta": 2
+ },
+ {
   "id": "4.04#0",
   "codigo": "4.04",
   "bloque": 4,
@@ -5483,6 +12522,70 @@ export default [
   "titulo": "Contraste de hipótesis y errores de tipo I y II",
   "q": "Con un millón de observaciones, un efecto de 7 € anuales resulta significativo. ¿Qué se hace con eso?",
   "a": "Se ignora, económicamente hablando. La significación solo dice que puede descartarse el cero, y con muestras enormes eso ocurre con cualquier diferencia. La pregunta relevante es si la magnitud cambia alguna decisión, y para responderla hay que mirar el coeficiente y su intervalo de confianza frente a un umbral de relevancia fijado de antemano."
+ },
+ {
+  "id": "4.04#t0",
+  "codigo": "4.04",
+  "bloque": 4,
+  "nivel": 2,
+  "titulo": "Contraste de hipótesis y errores de tipo I y II",
+  "q": "Un contraste da un p-valor de 0,03. ¿Qué significa exactamente?",
+  "a": "**Que si la nula fuera cierta, habría un 3 % de probabilidad de observar datos al menos tan extremos.** Es la definición, y la dirección del condicionamiento es todo. La consecuencia práctica: si la hipótesis era poco plausible de antemano, un resultado significativo es muy probablemente un falso positivo.",
+  "opciones": [
+   "Que el efecto estimado es correcto con un 97 % de confianza",
+   "Que si la nula fuera cierta, habría un 3 % de probabilidad de observar datos al menos tan extremos",
+   "Que hay un 97 % de probabilidad de que el efecto exista",
+   "Que hay un 3 % de probabilidad de que la hipótesis nula sea cierta"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "4.04#t1",
+  "codigo": "4.04",
+  "bloque": 4,
+  "nivel": 2,
+  "titulo": "Contraste de hipótesis y errores de tipo I y II",
+  "q": "Un estudio no rechaza la hipótesis nula. ¿Qué se concluye?",
+  "a": "**Que los datos son compatibles con ella, lo que puede deberse a que no hay efecto o a que faltó potencia.** Y por eso conviene mirar el intervalo de confianza: si es ancho, el estudio no ha descartado efectos grandes y decir «no hay efecto» es engañoso.",
+  "opciones": [
+   "Que los datos son compatibles con ella, lo que puede deberse a que no hay efecto o a que faltó potencia",
+   "Que hay que repetir el estudio con otra muestra",
+   "Que el efecto es menor que el umbral de significación",
+   "Que la nula es cierta: no hay efecto"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "4.04#t2",
+  "codigo": "4.04",
+  "bloque": 4,
+  "nivel": 2,
+  "titulo": "Contraste de hipótesis y errores de tipo I y II",
+  "q": "Con 100.000 observaciones, un estudio detecta como significativo un efecto de siete euros al mes. ¿Qué hay que decir?",
+  "a": "**Que la significación estadística no implica relevancia económica: con muestras grandes cualquier diferencia se vuelve significativa.** Son dos preguntas distintas: si el efecto existe y si merece la pena. Siete euros al mes puede ser indiscutiblemente real y a la vez irrelevante para cualquier política.",
+  "opciones": [
+   "Que el efecto es sólido y debe tenerse en cuenta",
+   "Que la muestra es demasiado grande y hay que reducirla",
+   "Que hace falta un p-valor más exigente",
+   "Que la significación estadística no implica relevancia económica: con muestras grandes cualquier diferencia se vuelve significativa"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "4.04#t3",
+  "codigo": "4.04",
+  "bloque": 4,
+  "nivel": 2,
+  "titulo": "Contraste de hipótesis y errores de tipo I y II",
+  "q": "Se realizan veinte contrastes y todas las hipótesis nulas son ciertas. ¿Qué probabilidad hay de al menos un falso positivo al 5 %?",
+  "a": "**64 %: $1 - 0{,}95^{20}$.** $1 - 0{,}95^{20} = 0{,}64$. Y veinte contrastes se alcanzan sin querer, combinando definiciones de variable, submuestras y especificaciones.",
+  "opciones": [
+   "64 %: $1 - 0{,}95^{20}$",
+   "100 %, porque el error se acumula",
+   "1 %, porque los contrastes son independientes",
+   "5 %, el nivel de significación elegido"
+  ],
+  "correcta": 0
  },
  {
   "id": "4.05#0",
@@ -5539,6 +12642,70 @@ export default [
   "a": "Porque cero años de educación está fuera del rango de los datos, que van de 8 a 18. La recta describe la relación donde hay observaciones; extrapolar hasta cero supone que la linealidad se mantiene en una zona sin ninguna evidencia. La constante suele ser un artefacto del ajuste, no una magnitud interpretable."
  },
  {
+  "id": "4.05#t0",
+  "codigo": "4.05",
+  "bloque": 4,
+  "nivel": 2,
+  "titulo": "Regresión lineal simple y múltiple por MCO",
+  "q": "El coeficiente de la educación pasa de 2,00 a 1,50 al añadir el tamaño de la empresa. ¿Cuál es el verdadero?",
+  "a": "**Ninguno: cada conjunto de controles define una pregunta distinta.** El 2,00 responde a «cuánto más gana en promedio quien estudió más»; el 1,50, a «cuánto más gana a igualdad de tamaño de empresa». Buscar «el coeficiente verdadero» sin decir la pregunta no tiene sentido.",
+  "opciones": [
+   "El 1,50, porque incluye más información",
+   "La media de ambos, ponderada por el $R^2$",
+   "El 2,00, que es la relación sin contaminar por otras variables",
+   "Ninguno: cada conjunto de controles define una pregunta distinta"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "4.05#t1",
+  "codigo": "4.05",
+  "bloque": 4,
+  "nivel": 2,
+  "titulo": "Regresión lineal simple y múltiple por MCO",
+  "q": "Se quiere medir el efecto de la educación sobre el salario y se añade la ocupación como control. ¿Qué ocurre?",
+  "a": "**Bloquea parte del efecto: la ocupación es posterior a la educación y uno de sus canales.** Estudiar más lleva a mejores ocupaciones, y esas ocupaciones pagan más. Controlar por ocupación mide solo el efecto **dentro** de cada ocupación y descarta el canal principal.",
+  "opciones": [
+   "No cambia nada, porque ocupación y educación están correlacionadas",
+   "Mejora la estimación: elimina una fuente de variación ajena",
+   "Bloquea parte del efecto: la ocupación es posterior a la educación y uno de sus canales",
+   "Introduce colinealidad y agranda los errores estándar"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "4.05#t2",
+  "codigo": "4.05",
+  "bloque": 4,
+  "nivel": 2,
+  "titulo": "Regresión lineal simple y múltiple por MCO",
+  "q": "La constante de una regresión salario-educación vale 4,00. ¿Cómo se interpreta?",
+  "a": "**No se interpreta: cero años de estudio queda fuera del rango de los datos.** Extrapolar fuera del rango es suponer que la recta sigue siendo válida donde nadie la ha comprobado. La constante suele ser un artefacto geométrico, no una magnitud con significado.",
+  "opciones": [
+   "No se interpreta: cero años de estudio queda fuera del rango de los datos",
+   "Como el salario mínimo del sector",
+   "Como el salario de quien no tiene estudios",
+   "Como el efecto de las variables omitidas"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "4.05#t3",
+  "codigo": "4.05",
+  "bloque": 4,
+  "nivel": 2,
+  "titulo": "Regresión lineal simple y múltiple por MCO",
+  "q": "Un modelo tiene $R^2 = 0{,}80$. ¿Qué se puede concluir?",
+  "a": "**Que explica el 80 % de la variación de la muestra, sin decir nada sobre causalidad ni especificación.** Y en ecuaciones de salarios con datos reales lo normal es entre 0,2 y 0,4: un 0,80 es señal de muestra pequeña más que de buen modelo.",
+  "opciones": [
+   "Que es un buen modelo y sus coeficientes son fiables",
+   "Que la relación es causal en un 80 %",
+   "Que el 80 % de los coeficientes son significativos",
+   "Que explica el 80 % de la variación de la muestra, sin decir nada sobre causalidad ni especificación"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "4.06#0",
   "codigo": "4.06",
   "bloque": 4,
@@ -5591,6 +12758,70 @@ export default [
   "titulo": "Diagnóstico: heterocedasticidad, autocorrelación, multicolinealidad",
   "q": "¿Por qué eliminar la experiencia no es la solución a ese VIF de 37?",
   "a": "Porque si la experiencia influye realmente en el salario, quitarla introduce sesgo de variable omitida, que es un problema peor que un error estándar grande: sesga en lugar de solo restar precisión. La respuesta honesta es que con esta muestra no se pueden separar ambos efectos, y que hace falta más variación, no una especificación más cómoda."
+ },
+ {
+  "id": "4.06#t0",
+  "codigo": "4.06",
+  "bloque": 4,
+  "nivel": 3,
+  "titulo": "Diagnóstico: heterocedasticidad, autocorrelación, multicolinealidad",
+  "q": "Heterocedasticidad, autocorrelación y multicolinealidad. ¿Qué le hacen a los coeficientes estimados?",
+  "a": "**Nada: $\\hat\\beta$ sigue siendo insesgado y consistente; lo que se rompe es la fórmula de la varianza.** El número está bien y el intervalo, mal. La consecuencia es más sutil y por eso más peligrosa: el coeficiente se puede creer, su significación no.",
+  "opciones": [
+   "Los sesgan, y por eso hay que corregirlos",
+   "Nada: $\\hat\\beta$ sigue siendo insesgado y consistente; lo que se rompe es la fórmula de la varianza",
+   "Solo la multicolinealidad los sesga",
+   "Los hacen inconsistentes, aunque insesgados en muestras pequeñas"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "4.06#t1",
+  "codigo": "4.06",
+  "bloque": 4,
+  "nivel": 3,
+  "titulo": "Diagnóstico: heterocedasticidad, autocorrelación, multicolinealidad",
+  "q": "Un modelo tiene la F conjunta muy significativa y ningún coeficiente individualmente significativo. ¿Qué ocurre?",
+  "a": "**Es la firma de la colinealidad: el conjunto explica, pero los datos no permiten repartir el mérito.** En el ejemplo la F vale 14,8 frente a un crítico de 4,74, y los p-valores individuales son 0,19 y 0,58. Tras residualizar una variable respecto de la otra apenas queda un 2,7 % de variación con la que estimar.",
+  "opciones": [
+   "Es la firma de la colinealidad: el conjunto explica, pero los datos no permiten repartir el mérito",
+   "La muestra es demasiado pequeña para cualquier inferencia",
+   "El modelo está mal especificado y hay que cambiar de variables",
+   "Hay un error en el programa estadístico"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "4.06#t2",
+  "codigo": "4.06",
+  "bloque": 4,
+  "nivel": 3,
+  "titulo": "Diagnóstico: heterocedasticidad, autocorrelación, multicolinealidad",
+  "q": "Ante colinealidad entre dos variables relevantes, ¿conviene eliminar una?",
+  "a": "**No: introduce sesgo de variable omitida, que es peor que un error estándar grande.** La colinealidad no sesga: solo dice que estos datos no permiten separar ambos efectos. Quitar una variable relevante sí sesga, y ese cambio empeora el diagnóstico.",
+  "opciones": [
+   "Sí, si su VIF supera 10",
+   "No: introduce sesgo de variable omitida, que es peor que un error estándar grande",
+   "Solo si las dos miden aproximadamente lo mismo",
+   "Sí: reduce los errores estándar y el modelo queda más limpio"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "4.06#t3",
+  "codigo": "4.06",
+  "bloque": 4,
+  "nivel": 3,
+  "titulo": "Diagnóstico: heterocedasticidad, autocorrelación, multicolinealidad",
+  "q": "Los residuos de una regresión con datos trimestrales están fuertemente autocorrelados. ¿Cuál es la primera pregunta?",
+  "a": "**Qué la causa: suele indicar que falta una variable, una forma funcional o una dinámica.** Unos residuos que predicen a los siguientes casi por completo indican que hay estructura sin modelar. Ajustar los errores estándar es el segundo paso, no el primero.",
+  "opciones": [
+   "Qué la causa: suele indicar que falta una variable, una forma funcional o una dinámica",
+   "Qué corrección aplicar: Newey-West o mínimos cuadrados generalizados",
+   "Si conviene pasar a datos anuales para eliminarla",
+   "Si la muestra es lo bastante larga para estimar $\\rho$"
+  ],
+  "correcta": 0
  },
  {
   "id": "4.07#0",
@@ -5647,6 +12878,70 @@ export default [
   "a": "De dónde sale la variación que identifica el efecto y por qué es creíble que sea ajena a la evolución del empleo. Si viene de comparar países o años sin más, no vale: las subidas se deciden cuando la economía va bien. Si viene de una frontera, un umbral o un calendario escalonado, hay que examinar el supuesto concreto que cada diseño necesita."
  },
  {
+  "id": "4.07#t0",
+  "codigo": "4.07",
+  "bloque": 4,
+  "nivel": 4,
+  "titulo": "Variables instrumentales y endogeneidad",
+  "q": "¿Resuelve la endogeneidad añadir más variables de control?",
+  "a": "**Solo si la variable contaminante se observa; la capacidad individual o la calidad de la gestión no se observan.** Y por eso existen las variables instrumentales: aprovechan una fuente de variación exógena en vez de intentar medir lo inmedible.",
+  "opciones": [
+   "Solo si la variable contaminante se observa; la capacidad individual o la calidad de la gestión no se observan",
+   "No: los controles nunca reducen el sesgo",
+   "Sí, si se añaden suficientes",
+   "Sí, siempre que los controles sean anteriores a la variable de interés"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "4.07#t1",
+  "codigo": "4.07",
+  "bloque": 4,
+  "nivel": 4,
+  "titulo": "Variables instrumentales y endogeneidad",
+  "q": "¿Cómo se comprueba que un instrumento cumple la restricción de exclusión?",
+  "a": "**No se comprueba con los datos: es un argumento sustantivo que hay que defender.** Exigiría observar el error, que es precisamente lo que no se observa. Presentarla como contrastable es el error más frecuente de esta literatura.",
+  "opciones": [
+   "Con un contraste de sobreidentificación de Sargan",
+   "Con el estadístico F de la primera etapa",
+   "Comparando el estimador de variables instrumentales con el de MCO",
+   "No se comprueba con los datos: es un argumento sustantivo que hay que defender"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "4.07#t2",
+  "codigo": "4.07",
+  "bloque": 4,
+  "nivel": 4,
+  "titulo": "Variables instrumentales y endogeneidad",
+  "q": "Un instrumento tiene una primera etapa muy pequeña pero el estimador «sale». ¿Se puede usar?",
+  "a": "**No: el estimador es un cociente y siempre sale; con primera etapa pequeña, cualquier violación mínima de la exclusión se amplifica.** Con denominador cercano a cero, un sesgo minúsculo en el numerador se convierte en un sesgo enorme en el resultado. Los instrumentos débiles pueden estar más sesgados que el propio MCO.",
+  "opciones": [
+   "Sí, ampliando la muestra hasta que la primera etapa sea significativa",
+   "No: el estimador es un cociente y siempre sale; con primera etapa pequeña, cualquier violación mínima de la exclusión se amplifica",
+   "Sí, si el coeficiente tiene el signo esperado",
+   "Sí: que salga significa que hay información suficiente"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "4.07#t3",
+  "codigo": "4.07",
+  "bloque": 4,
+  "nivel": 4,
+  "titulo": "Variables instrumentales y endogeneidad",
+  "q": "Una reforma que alargó la escolaridad obligatoria se usa como instrumento. ¿Qué efecto se estima?",
+  "a": "**El efecto sobre quienes cambiaron de comportamiento por causa de la reforma.** Es el efecto local sobre los «cumplidores». Una reforma de escolaridad obligatoria informa sobre quien habría dejado los estudios antes y no lo hizo, no sobre quien pensaba ir a la universidad.",
+  "opciones": [
+   "El efecto sobre quienes ya estudiaban de más",
+   "El efecto sobre quienes cambiaron de comportamiento por causa de la reforma",
+   "El efecto medio de la educación en toda la población",
+   "El efecto medio sobre los tratados por la reforma"
+  ],
+  "correcta": 1
+ },
+ {
   "id": "4.08#0",
   "codigo": "4.08",
   "bloque": 4,
@@ -5699,6 +12994,70 @@ export default [
   "titulo": "Datos de panel: efectos fijos y aleatorios",
   "q": "¿Por qué el estudio del efecto de la maternidad sobre los ingresos es más convincente en panel?",
   "a": "Porque compara a cada persona con su propia trayectoria antes del nacimiento, en lugar de comparar madres con no madres, que difieren en muchas cosas anteriores. La conclusión no depende entonces de qué variables se controlen, que es justo la debilidad de las brechas ajustadas de la ficha 4.05."
+ },
+ {
+  "id": "4.08#t0",
+  "codigo": "4.08",
+  "bloque": 4,
+  "nivel": 4,
+  "titulo": "Datos de panel: efectos fijos y aleatorios",
+  "q": "¿Qué elimina exactamente un estimador de efectos fijos?",
+  "a": "**Solo la heterogeneidad no observada que sea constante en el tiempo dentro de cada unidad.** Compara cada unidad consigo misma, así que todo lo que no varía —cultura de empresa, capacidad individual, geografía— desaparece. Lo que varía a la vez que la explicativa sigue contaminando.",
+  "opciones": [
+   "El sesgo de selección de la muestra",
+   "Solo la heterogeneidad no observada que sea constante en el tiempo dentro de cada unidad",
+   "La correlación entre observaciones de la misma unidad",
+   "Toda la endogeneidad del modelo"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "4.08#t1",
+  "codigo": "4.08",
+  "bloque": 4,
+  "nivel": 4,
+  "titulo": "Datos de panel: efectos fijos y aleatorios",
+  "q": "Se quiere estimar con efectos fijos el efecto del sistema legal de un país sobre su crecimiento. ¿Qué ocurre?",
+  "a": "**No se puede: una variable que no varía en el tiempo desaparece con la transformación intragrupo.** La transformación resta a cada observación la media de su unidad, y una variable constante dentro de la unidad se convierte en cero. Es el precio de eliminar la heterogeneidad fija.",
+  "opciones": [
+   "Se obtiene una estimación más limpia que sin efectos fijos",
+   "El coeficiente sale, pero con un error estándar muy grande",
+   "No se puede: una variable que no varía en el tiempo desaparece con la transformación intragrupo",
+   "Hay que usar efectos aleatorios y contrastar con Hausman"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "4.08#t2",
+  "codigo": "4.08",
+  "bloque": 4,
+  "nivel": 4,
+  "titulo": "Datos de panel: efectos fijos y aleatorios",
+  "q": "Un contraste de Hausman no rechaza. ¿Se pueden usar efectos aleatorios?",
+  "a": "**Con cautela: no rechazar puede significar que el supuesto se cumple o que el contraste no tiene potencia.** Con pocas unidades la falta de potencia es habitual, y entonces el no rechazo no informa. Conviene sostener la elección con el argumento sustantivo, no solo con el contraste.",
+  "opciones": [
+   "Sí: el contraste acredita que su supuesto se cumple",
+   "No: Hausman solo sirve para elegir entre modelos anidados",
+   "Sí, y además son más eficientes, así que siempre son preferibles",
+   "Con cautela: no rechazar puede significar que el supuesto se cumple o que el contraste no tiene potencia"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "4.08#t3",
+  "codigo": "4.08",
+  "bloque": 4,
+  "nivel": 4,
+  "titulo": "Datos de panel: efectos fijos y aleatorios",
+  "q": "Un panel de empresas cubre 2007-2012 sin efectos fijos temporales. ¿Qué se arriesga?",
+  "a": "**Que la crisis, común a todas las unidades, se atribuya a la variable explicativa.** Sin una constante por periodo, cualquier tendencia común —una recesión, una reforma estatal, un cambio de precios internacionales— acaba dentro del coeficiente de interés.",
+  "opciones": [
+   "Perder eficiencia por sobreparametrizar",
+   "Que la crisis, común a todas las unidades, se atribuya a la variable explicativa",
+   "Que los errores estándar queden infravalorados",
+   "Nada, si los efectos fijos individuales están incluidos"
+  ],
+  "correcta": 1
  },
  {
   "id": "4.09#0",
@@ -5755,6 +13114,70 @@ export default [
   "a": "Porque con raíz unitaria la varianza de la predicción crece sin límite con el horizonte, así que el intervalo se ensancha hasta no restringir nada. Son escenarios de referencia coherentes para hacer cuentas, no pronósticos. Presentarlas como cifras exactas y usarlas en presupuestos es la versión más costosa del error de la ficha 4.03."
  },
  {
+  "id": "4.09#t0",
+  "codigo": "4.09",
+  "bloque": 4,
+  "nivel": 4,
+  "titulo": "Series temporales: estacionariedad, ARIMA y cointegración",
+  "q": "Dos paseos aleatorios independientes dan $R^2 = 0{,}86$ y $t = 19$. ¿Qué ha pasado?",
+  "a": "**Es una regresión espuria: con raíces unitarias las distribuciones asintóticas habituales no valen.** Repitiendo el experimento doscientas veces, el coeficiente sale significativo al 5 % en el 79,5 % de las ocasiones. La tasa de falsos positivos es dieciséis veces la nominal.",
+  "opciones": [
+   "La muestra es demasiado corta",
+   "Falta incluir una tendencia determinista",
+   "Es una regresión espuria: con raíces unitarias las distribuciones asintóticas habituales no valen",
+   "Las series están relacionadas aunque parezcan aleatorias"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "4.09#t1",
+  "codigo": "4.09",
+  "bloque": 4,
+  "nivel": 4,
+  "titulo": "Series temporales: estacionariedad, ARIMA y cointegración",
+  "q": "En un contraste de raíz unitaria el estadístico vale $-2{,}20$. ¿Se rechaza al 5 %?",
+  "a": "**No: bajo la nula de raíz unitaria el crítico con constante es $-2{,}86$, no $-1{,}96$.** La distribución es la de Dickey-Fuller, con colas desplazadas. Aplicar 1,96 rechaza mucho más de lo debido y hace parecer estacionarias series que no lo son.",
+  "opciones": [
+   "Sí: supera en valor absoluto el crítico de 1,96",
+   "No se puede decidir sin conocer el p-valor exacto",
+   "No: bajo la nula de raíz unitaria el crítico con constante es $-2{,}86$, no $-1{,}96$",
+   "Sí, si la muestra tiene más de 100 observaciones"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "4.09#t2",
+  "codigo": "4.09",
+  "bloque": 4,
+  "nivel": 4,
+  "titulo": "Series temporales: estacionariedad, ARIMA y cointegración",
+  "q": "Dos series tienen raíz unitaria y están cointegradas. ¿Conviene diferenciarlas antes de regresar?",
+  "a": "**No: eliminaría la relación de largo plazo, que suele ser lo que la teoría afirma.** La respuesta correcta es un modelo de corrección del error, que recoge a la vez la dinámica de corto plazo y el equilibrio de largo. Diferenciar deja solo la primera.",
+  "opciones": [
+   "Sí, pero solo una de las dos",
+   "Sí: diferenciar siempre es la precaución correcta",
+   "Da igual: cointegradas o no, el resultado es el mismo",
+   "No: eliminaría la relación de largo plazo, que suele ser lo que la teoría afirma"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "4.09#t3",
+  "codigo": "4.09",
+  "bloque": 4,
+  "nivel": 4,
+  "titulo": "Series temporales: estacionariedad, ARIMA y cointegración",
+  "q": "Un test encuentra que los tipos de interés causan a lo Granger al consumo. ¿Qué se ha demostrado?",
+  "a": "**Precedencia predictiva: sus rezagos ayudan a predecir el consumo una vez descontados los propios.** Es una afirmación sobre capacidad de predicción, no sobre mecanismo. Útil para pronosticar y no concluyente para política.",
+  "opciones": [
+   "Que los tipos causan el consumo",
+   "Que el consumo no causa a los tipos",
+   "Que existe una relación de largo plazo entre ambos",
+   "Precedencia predictiva: sus rezagos ayudan a predecir el consumo una vez descontados los propios"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "4.10#0",
   "codigo": "4.10",
   "bloque": 4,
@@ -5809,6 +13232,70 @@ export default [
   "a": "La estacional elimina la pauta que se repite en el mismo periodo cada año. La de calendario corrige el número de días laborables, los años bisiestos y la posición móvil de la Semana Santa, que se desplaza entre marzo y abril y por tanto ninguna pauta fija puede capturar. En España la segunda pesa bastante por el peso del turismo."
  },
  {
+  "id": "4.10#t0",
+  "codigo": "4.10",
+  "bloque": 4,
+  "nivel": 4,
+  "titulo": "Desestacionalización y extracción de señal",
+  "q": "El dato bruto del PIB pasa de caer un 4 % a subir un 27 % entre trimestres. ¿Qué informa eso?",
+  "a": "**Sobre todo el calendario: el patrón estacional puede superar con creces la señal económica.** Con turismo estacional muy marcado, comentar la variación de un dato bruto entre periodos consecutivos es comentar las vacaciones. Por eso se publican series ajustadas.",
+  "opciones": [
+   "Un cambio de metodología estadística",
+   "Una recuperación muy intensa",
+   "Sobre todo el calendario: el patrón estacional puede superar con creces la señal económica",
+   "Un error de medición del instituto"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "4.10#t1",
+  "codigo": "4.10",
+  "bloque": 4,
+  "nivel": 4,
+  "titulo": "Desestacionalización y extracción de señal",
+  "q": "¿Es la serie desestacionalizada el dato «verdadero»?",
+  "a": "**No: es el resultado de un modelo con supuestos sobre descomposición, atípicos, filtros y calendario.** Dos programas —o el mismo con otras opciones— dan series distintas a partir del mismo bruto. Por eso los institutos documentan sus especificaciones.",
+  "opciones": [
+   "No: es el resultado de un modelo con supuestos sobre descomposición, atípicos, filtros y calendario",
+   "Sí, siempre que la haga un instituto oficial",
+   "No, porque siempre pierde información respecto al bruto",
+   "Sí: el bruto está contaminado y el ajustado está limpio"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "4.10#t2",
+  "codigo": "4.10",
+  "bloque": 4,
+  "nivel": 4,
+  "titulo": "Desestacionalización y extracción de señal",
+  "q": "¿Por qué el último dato desestacionalizado de una serie es el menos fiable?",
+  "a": "**Porque en el extremo no hay observaciones a la derecha y el filtro las sustituye por predicciones.** Los filtros son simétricos y necesitan datos a ambos lados. En el extremo se completan con previsiones del modelo, y por eso el dato más comentado es justo el que más se revisa después.",
+  "opciones": [
+   "Porque en el extremo no hay observaciones a la derecha y el filtro las sustituye por predicciones",
+   "Porque el ajuste estacional necesita al menos cinco años de datos",
+   "Porque la estacionalidad del último periodo aún no se conoce",
+   "Porque los institutos lo publican con menos verificación"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "4.10#t3",
+  "codigo": "4.10",
+  "bloque": 4,
+  "nivel": 4,
+  "titulo": "Desestacionalización y extracción de señal",
+  "q": "¿Se pueden sumar los componentes desestacionalizados para obtener el agregado ajustado?",
+  "a": "**No: cada componente tiene su propio patrón estacional y la suma de los ajustados no coincide con el agregado ajustado.** Por eso los institutos publican el agregado ajustado directamente, y advierten de la discrepancia con la suma de sus partes.",
+  "opciones": [
+   "No, salvo que la descomposición sea aditiva",
+   "No: cada componente tiene su propio patrón estacional y la suma de los ajustados no coincide con el agregado ajustado",
+   "Sí, si todos se ajustan con el mismo programa",
+   "Sí: el ajuste es una transformación lineal"
+  ],
+  "correcta": 1
+ },
+ {
   "id": "5.01#0",
   "codigo": "5.01",
   "bloque": 5,
@@ -5852,6 +13339,70 @@ export default [
   "titulo": "Patrimonio, masas patrimoniales y ecuación fundamental",
   "q": "Reordena mentalmente estas partidas: proveedores, terrenos, reservas, existencias, deuda a largo.",
   "a": "Activo no corriente: terrenos. Activo corriente: existencias. Patrimonio neto: reservas. Pasivo no corriente: deuda a largo. Pasivo corriente: proveedores."
+ },
+ {
+  "id": "5.01#t0",
+  "codigo": "5.01",
+  "bloque": 5,
+  "nivel": 1,
+  "titulo": "Patrimonio, masas patrimoniales y ecuación fundamental",
+  "q": "Una empresa tiene 225.000 € de patrimonio neto. ¿Cuánto dinero puede repartir hoy?",
+  "a": "**Depende de la tesorería: el neto es un residuo algebraico, no un saldo bancario.** En el ejemplo, esos 225.000 € de neto conviven con 12.000 € en el banco. Confundir ambas cosas produce decisiones de reparto imposibles de ejecutar.",
+  "opciones": [
+   "Nada hasta que cierre el ejercicio",
+   "Depende de la tesorería: el neto es un residuo algebraico, no un saldo bancario",
+   "La mitad, por prudencia",
+   "225.000 €, que es lo que pertenece a los socios"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "5.01#t1",
+  "codigo": "5.01",
+  "bloque": 5,
+  "nivel": 1,
+  "titulo": "Patrimonio, masas patrimoniales y ecuación fundamental",
+  "q": "¿Mide el balance el valor de la empresa?",
+  "a": "**No: registra coste histórico corregido y deja fuera marca, cartera de clientes y conocimiento generados internamente.** Por eso la diferencia entre valor contable y valor de mercado puede ser enorme, y por eso el fondo de comercio solo aflora cuando alguien compra la empresa.",
+  "opciones": [
+   "No, pero se aproxima bastante en empresas industriales",
+   "Sí: recoge todos sus activos y pasivos",
+   "No: registra coste histórico corregido y deja fuera marca, cartera de clientes y conocimiento generados internamente",
+   "Sí, si se aplica el valor razonable a todas las partidas"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "5.01#t2",
+  "codigo": "5.01",
+  "bloque": 5,
+  "nivel": 1,
+  "titulo": "Patrimonio, masas patrimoniales y ecuación fundamental",
+  "q": "¿Dónde se coloca la amortización acumulada en el balance?",
+  "a": "**En el activo con signo negativo: es una cuenta correctora que minora la partida a la que acompaña.** Aparece a la izquierda restando del inmovilizado, de modo que la diferencia es el valor neto contable. Colocarla a la derecha descuadra el balance y desdibuja qué queda por amortizar.",
+  "opciones": [
+   "Fuera del balance, en la memoria",
+   "En el pasivo, porque representa una obligación futura de reposición",
+   "En el activo con signo negativo: es una cuenta correctora que minora la partida a la que acompaña",
+   "En el patrimonio neto, como reserva"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "5.01#t3",
+  "codigo": "5.01",
+  "bloque": 5,
+  "nivel": 1,
+  "titulo": "Patrimonio, masas patrimoniales y ecuación fundamental",
+  "q": "Una cadena de supermercados tiene fondo de maniobra negativo. ¿Es señal de alarma?",
+  "a": "**No necesariamente: en distribución alimentaria es estructural y sano, porque se cobra antes de pagar.** Cobra al contado y paga a proveedores a sesenta días, así que financia su actividad con dinero ajeno sin coste. Interpretar el signo sin mirar el ciclo lleva a diagnósticos falsos.",
+  "opciones": [
+   "Sí: no puede atender sus deudas a corto plazo",
+   "No necesariamente: en distribución alimentaria es estructural y sano, porque se cobra antes de pagar",
+   "No, porque el fondo de maniobra no mide liquidez",
+   "Sí, salvo que tenga líneas de crédito disponibles"
+  ],
+  "correcta": 1
  },
  {
   "id": "5.02#0",
@@ -5899,6 +13450,70 @@ export default [
   "a": "La caja recoge los 60.000 € de aportación y los 20.000 € de préstamo, que no son ingresos, y no recoge los 18.000 € pendientes de cobro ni los 12.000 € pendientes de pago. Resultado y tesorería miden cosas distintas."
  },
  {
+  "id": "5.02#t0",
+  "codigo": "5.02",
+  "bloque": 5,
+  "nivel": 1,
+  "titulo": "La partida doble y el ciclo contable",
+  "q": "En contabilidad, ¿qué significan «debe» y «haber»?",
+  "a": "**Son nombres de posición: la izquierda y la derecha de una cuenta, sin ninguna valoración.** La caja aumenta por el debe y una deuda aumenta por el haber: ninguna de las dos cosas es buena ni mala por estar donde está.",
+  "opciones": [
+   "Debe es lo negativo y haber lo positivo",
+   "Debe son los gastos y haber los ingresos",
+   "Que la empresa debe dinero o lo tiene",
+   "Son nombres de posición: la izquierda y la derecha de una cuenta, sin ninguna valoración"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "5.02#t1",
+  "codigo": "5.02",
+  "bloque": 5,
+  "nivel": 1,
+  "titulo": "La partida doble y el ciclo contable",
+  "q": "Un asiento registra la compra de una máquina como gasto de suministros, y cuadra. ¿Está bien?",
+  "a": "**No: el cuadre solo prueba consistencia aritmética, no que las cuentas elegidas sean las correctas.** Deforma el resultado del ejercicio —imputa entero lo que debía repartirse en varios años— y hace desaparecer un activo del balance. Ambos estados quedan mal y ninguno lo delata.",
+  "opciones": [
+   "No: el cuadre solo prueba consistencia aritmética, no que las cuentas elegidas sean las correctas",
+   "No, pero se corrige solo al cerrar el ejercicio",
+   "Sí, si el importe es pequeño",
+   "Sí: si cuadra, el registro es correcto"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "5.02#t2",
+  "codigo": "5.02",
+  "bloque": 5,
+  "nivel": 1,
+  "titulo": "La partida doble y el ciclo contable",
+  "q": "Una empresa vende en diciembre y cobra en marzo. ¿Cuándo se reconoce el ingreso?",
+  "a": "**En diciembre: el devengo imputa según la corriente real de bienes y servicios.** El ingreso nace cuando se entrega el bien; el cobro solo cancela el derecho que quedó registrado como cliente. Por eso una empresa puede tener beneficios y quedarse sin caja.",
+  "opciones": [
+   "En diciembre: el devengo imputa según la corriente real de bienes y servicios",
+   "En marzo, salvo que se emita factura en diciembre",
+   "Repartido entre ambos meses",
+   "En marzo, cuando entra el dinero"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "5.02#t3",
+  "codigo": "5.02",
+  "bloque": 5,
+  "nivel": 1,
+  "titulo": "La partida doble y el ciclo contable",
+  "q": "¿Es la amortización una salida de dinero?",
+  "a": "**No: es un reparto contable de un desembolso ya realizado, sin pago asociado.** Por eso el estado de flujos de efectivo la suma de vuelta al partir del resultado: se restó del beneficio sin haber salido de la caja.",
+  "opciones": [
+   "Sí, si se dota un fondo de reposición",
+   "No: es un reparto contable de un desembolso ya realizado, sin pago asociado",
+   "Sí: refleja el desgaste que habrá que reponer",
+   "Depende del método de amortización elegido"
+  ],
+  "correcta": 1
+ },
+ {
   "id": "5.03#0",
   "codigo": "5.03",
   "bloque": 5,
@@ -5942,6 +13557,70 @@ export default [
   "titulo": "El PGC español: estructura y marco conceptual",
   "q": "¿Qué introdujo el RD 1/2021 respecto del texto de 2007?",
   "a": "Alineó con las NIIF-UE el tratamiento de los instrumentos financieros y el reconocimiento de ingresos por ventas y prestación de servicios, reescribiendo sustancialmente esas normas de registro y valoración."
+ },
+ {
+  "id": "5.03#t0",
+  "codigo": "5.03",
+  "bloque": 5,
+  "nivel": 1,
+  "titulo": "El PGC español: estructura y marco conceptual",
+  "q": "¿Son obligatorios los números de cuenta del PGC?",
+  "a": "**No: lo obligatorio son los criterios de registro y valoración y los modelos oficiales de cuentas anuales.** Una empresa puede llamar a sus cuentas como quiera mientras aplique bien los criterios y presente el balance, la cuenta de pérdidas y ganancias, el estado de cambios en el patrimonio neto, el de flujos de efectivo y la memoria en los modelos previstos.",
+  "opciones": [
+   "No: lo obligatorio son los criterios de registro y valoración y los modelos oficiales de cuentas anuales",
+   "Sí, para sociedades; no, para empresarios individuales",
+   "Sí, salvo autorización del ICAC",
+   "Sí: usar otra codificación invalida la contabilidad"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "5.03#t1",
+  "codigo": "5.03",
+  "bloque": 5,
+  "nivel": 1,
+  "titulo": "El PGC español: estructura y marco conceptual",
+  "q": "¿Por dónde conviene empezar a estudiar el PGC?",
+  "a": "**Por el marco conceptual: fija por qué se contabiliza y de él se derivan las normas de registro y valoración.** Sin el marco conceptual, cada operación nueva exige buscar un asiento en vez de razonarlo. Con él, las normas de registro y valoración se siguen casi solas.",
+  "opciones": [
+   "Por el marco conceptual: fija por qué se contabiliza y de él se derivan las normas de registro y valoración",
+   "Por los modelos de cuentas anuales, que es lo que hay que presentar",
+   "Por las definiciones y relaciones contables, que explican cada cuenta",
+   "Por el cuadro de cuentas, que es la parte práctica"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "5.03#t2",
+  "codigo": "5.03",
+  "bloque": 5,
+  "nivel": 1,
+  "titulo": "El PGC español: estructura y marco conceptual",
+  "q": "Una empresa lleva un ejercicio por debajo de los límites del PGC de Pymes. ¿Puede aplicarlo?",
+  "a": "**No: hay que cumplirlos durante dos ejercicios consecutivos.** La regla de los dos ejercicios evita que una empresa entre y salga del régimen simplificado según fluctúe su actividad. Y algunas operaciones quedan fuera del PGC de Pymes en todo caso.",
+  "opciones": [
+   "Sí, si además lo aprueba la junta general",
+   "No: hay que cumplirlos durante dos ejercicios consecutivos",
+   "Depende de si audita sus cuentas",
+   "Sí: los límites se comprueban cada ejercicio"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "5.03#t3",
+  "codigo": "5.03",
+  "bloque": 5,
+  "nivel": 1,
+  "titulo": "El PGC español: estructura y marco conceptual",
+  "q": "¿Qué relación hay entre el PGC y el Impuesto sobre Sociedades?",
+  "a": "**El resultado contable es el punto de partida de la base imponible, que se obtiene aplicando ajustes fiscales.** De ahí las diferencias permanentes y temporarias, y de ahí que existan los impuestos diferidos que estudia la ficha 5.09.",
+  "opciones": [
+   "El resultado contable es el punto de partida de la base imponible, que se obtiene aplicando ajustes fiscales",
+   "Son el mismo cuerpo normativo con dos nombres",
+   "El PGC se aplica solo a efectos fiscales",
+   "La norma fiscal prevalece sobre el PGC en caso de conflicto"
+  ],
+  "correcta": 0
  },
  {
   "id": "5.04#0",
@@ -5989,6 +13668,70 @@ export default [
   "a": "Valor neto realizable. Es el criterio propio de las existencias, y compararlo con el precio de adquisición o coste de producción es lo que determina si hay que dotar deterioro."
  },
  {
+  "id": "5.04#t0",
+  "codigo": "5.04",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Principios contables y criterios de valoración",
+  "q": "¿Qué significa el principio de prudencia?",
+  "a": "**Reconocer las pérdidas conocidas aunque no se hayan materializado, sin autorizar a infravalorar sistemáticamente.** La asimetría es deliberada —los riesgos se reconocen antes que las ganancias— pero está acotada: no es una licencia para reducir el resultado a voluntad.",
+  "opciones": [
+   "Elegir siempre la cifra más baja del activo y la más alta del pasivo",
+   "Dotar provisiones por cualquier riesgo imaginable",
+   "Aplazar el reconocimiento de ingresos hasta el cobro",
+   "Reconocer las pérdidas conocidas aunque no se hayan materializado, sin autorizar a infravalorar sistemáticamente"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "5.04#t1",
+  "codigo": "5.04",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Principios contables y criterios de valoración",
+  "q": "¿Qué es el valor razonable de un activo?",
+  "a": "**El precio cotizado en mercado activo y, en su defecto, transacciones comparables y solo al final técnicas de valoración.** El orden importa mucho: cuanto más se baja en la jerarquía, más discrecional es la cifra y más explicación exige la memoria.",
+  "opciones": [
+   "El coste de adquisición actualizado por la inflación",
+   "El importe que la empresa espera obtener al venderlo algún día",
+   "El valor de tasación que emita un experto independiente",
+   "El precio cotizado en mercado activo y, en su defecto, transacciones comparables y solo al final técnicas de valoración"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "5.04#t2",
+  "codigo": "5.04",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Principios contables y criterios de valoración",
+  "q": "Una empresa es a la vez cliente y proveedor de otra. ¿Puede presentar el saldo neto?",
+  "a": "**No: figuran en bruto a uno y otro lado del balance, salvo derecho legal de compensación.** El principio de no compensación protege esa información. Solo cede cuando existe un derecho legal exigible a liquidar por el neto.",
+  "opciones": [
+   "Sí: refleja mejor la posición real entre ambas",
+   "Sí, si ambos saldos vencen en el mismo plazo",
+   "Sí, si la diferencia es pequeña",
+   "No: figuran en bruto a uno y otro lado del balance, salvo derecho legal de compensación"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "5.04#t3",
+  "codigo": "5.04",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Principios contables y criterios de valoración",
+  "q": "Un test de deterioro se resuelve con el valor en uso. ¿Qué exige especial cuidado?",
+  "a": "**Justificar la tasa de descuento: un punto de diferencia cambia el resultado del test.** Es el criterio más manipulable de todos: debe reflejar el riesgo específico del activo y no la conveniencia del resultado, y la memoria tiene que explicarlo.",
+  "opciones": [
+   "Usar el mismo criterio que el ejercicio anterior",
+   "Contar con una tasación externa",
+   "Estimar bien la vida útil restante del activo",
+   "Justificar la tasa de descuento: un punto de diferencia cambia el resultado del test"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "5.05#0",
   "codigo": "5.05",
   "bloque": 5,
@@ -6032,6 +13775,70 @@ export default [
   "titulo": "Existencias y coste de ventas",
   "q": "Una empresa de gran rotación cambia de precio medio a FIFO. ¿Esperas un efecto grande en el resultado?",
   "a": "No. Cuanto más rápida es la rotación, menos tiempo hay para que los precios de compra diverjan, y los dos métodos convergen. El efecto es grande justo en el caso contrario: rotación lenta y precios cambiantes."
+ },
+ {
+  "id": "5.05#t0",
+  "codigo": "5.05",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Existencias y coste de ventas",
+  "q": "¿Qué recoge la cuenta 600, «Compras de mercaderías»?",
+  "a": "**Las compras del período, que solo coinciden con el consumo si las existencias no varían.** Si la empresa compra 100 y no vende nada, la 600 marca 100 y el consumo es cero. La diferencia la recoge la variación de existencias.",
+  "opciones": [
+   "El margen bruto de la actividad comercial",
+   "El coste de lo vendido en el ejercicio",
+   "El valor de las existencias al cierre",
+   "Las compras del período, que solo coinciden con el consumo si las existencias no varían"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "5.05#t1",
+  "codigo": "5.05",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Existencias y coste de ventas",
+  "q": "Al cierre, las existencias finales superan a las iniciales. ¿Cómo afecta al gasto del ejercicio?",
+  "a": "**Lo reduce: las finales se abonan a la 610 y minoran el consumo.** Equivocar este signo desplaza resultado de un ejercicio a otro, y es de los errores que pasan más desapercibidos porque el asiento cuadra igual.",
+  "opciones": [
+   "Depende de si se usa precio medio ponderado o FIFO",
+   "Lo aumenta: hay más existencias que valorar",
+   "No lo afecta: las existencias están en el balance",
+   "Lo reduce: las finales se abonan a la 610 y minoran el consumo"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "5.05#t2",
+  "codigo": "5.05",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Existencias y coste de ventas",
+  "q": "El proveedor baja sus precios y ahora la misma mercancía se compraría más barata. ¿Hay que dotar deterioro?",
+  "a": "**No necesariamente: el criterio es el valor neto realizable, que mira al precio de venta.** Si la empresa sigue pudiendo venderlas por encima del coste, no hay pérdida que reconocer. Que el proveedor haya bajado precios no implica que el cliente vaya a pagar menos.",
+  "opciones": [
+   "Sí, por el principio de prudencia",
+   "Sí: el valor de reposición es menor que el coste registrado",
+   "No, porque el deterioro de existencias no está previsto en el PGC",
+   "No necesariamente: el criterio es el valor neto realizable, que mira al precio de venta"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "5.05#t3",
+  "codigo": "5.05",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Existencias y coste de ventas",
+  "q": "Una empresa quiere usar LIFO porque en inflación reduce el beneficio. ¿Puede?",
+  "a": "**No: LIFO no está permitido ni en el PGC ni en las NIIF.** Reduce el beneficio en épocas de precios crecientes, sí, pero al precio de dejar en balance existencias valoradas a precios muy antiguos, que deja de informar. Los métodos admitidos son precio medio ponderado y FIFO.",
+  "opciones": [
+   "Sí, pero debe conciliar el resultado con el método FIFO",
+   "Sí, solo para existencias no perecederas",
+   "Sí, si lo declara en la memoria",
+   "No: LIFO no está permitido ni en el PGC ni en las NIIF"
+  ],
+  "correcta": 3
  },
  {
   "id": "5.06#0",
@@ -6079,6 +13886,70 @@ export default [
   "a": "Mejora el resultado, porque sustituye un gasto inmediato por una amortización repartida en varios años. También infla el activo y el patrimonio neto. Es una manipulación clásica y se detecta comparando la evolución de las adiciones de inmovilizado con la de la actividad."
  },
  {
+  "id": "5.06#t0",
+  "codigo": "5.06",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Inmovilizado material e intangible: amortización y deterioro",
+  "q": "Una máquina cuesta 100.000 €, tiene valor residual de 10.000 € y vida útil de 10 años. ¿Cuál es la cuota anual?",
+  "a": "**9.000 €: la base amortizable es el coste menos el valor residual.** $(100.000 - 10.000)/10 = 9.000$. La base amortizable es lo que la empresa espera consumir, no lo que pagó.",
+  "opciones": [
+   "9.000 €: la base amortizable es el coste menos el valor residual",
+   "11.000 €, incluyendo el valor residual como coste adicional",
+   "10.000 €, amortizando el coste completo",
+   "Depende del método fiscal aplicable"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "5.06#t1",
+  "codigo": "5.06",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Inmovilizado material e intangible: amortización y deterioro",
+  "q": "Se dota un deterioro sobre un inmovilizado. ¿Qué hay que hacer con la amortización futura?",
+  "a": "**Recalcularla: la base amortizable pendiente es menor y la cuota tiene que bajar.** El deterioro ha reducido el valor contable, así que lo que resta por repartir entre los años pendientes es menor. Es un recálculo obligado, no opcional.",
+  "opciones": [
+   "Aumentarla, para reflejar el mayor desgaste",
+   "Suspenderla hasta que revierta el deterioro",
+   "Nada: la cuota se calculó al dar de alta el activo",
+   "Recalcularla: la base amortizable pendiente es menor y la cuota tiene que bajar"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "5.06#t2",
+  "codigo": "5.06",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Inmovilizado material e intangible: amortización y deterioro",
+  "q": "Una empresa amortiza según las tablas de la Ley del Impuesto sobre Sociedades. ¿Es correcto?",
+  "a": "**No necesariamente: el PGC exige estimar la vida útil real, y las tablas fijan límites de deducibilidad fiscal.** Si coinciden, perfecto y sin ajustes. Si no, hay que amortizar contablemente según la vida útil real y practicar los ajustes extracontables que correspondan.",
+  "opciones": [
+   "No necesariamente: el PGC exige estimar la vida útil real, y las tablas fijan límites de deducibilidad fiscal",
+   "Sí, siempre que se aplique el coeficiente máximo",
+   "No: las tablas fiscales están derogadas",
+   "Sí: son las tablas oficiales"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "5.06#t3",
+  "codigo": "5.06",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Inmovilizado material e intangible: amortización y deterioro",
+  "q": "Se sustituye el motor de una máquina, lo que alarga su vida útil tres años. ¿Cómo se registra?",
+  "a": "**Se capitaliza: aumenta la vida útil, y hay que dar de baja la parte sustituida.** Solo se capitaliza lo que aumenta capacidad, productividad o vida útil, y este caso lo hace. Dar de baja el componente antiguo evita duplicar valor en el activo.",
+  "opciones": [
+   "Se capitaliza: aumenta la vida útil, y hay que dar de baja la parte sustituida",
+   "Como provisión para grandes reparaciones",
+   "Como gasto anticipado, repartido en tres años",
+   "Como gasto de reparación del ejercicio"
+  ],
+  "correcta": 0
+ },
+ {
   "id": "5.07#0",
   "codigo": "5.07",
   "bloque": 5,
@@ -6122,6 +13993,70 @@ export default [
   "titulo": "Instrumentos financieros: activos y pasivos",
   "q": "¿Por qué los préstamos se valoran a nominal en contabilidad nacional y los bonos a precio de mercado?",
   "a": "Porque los bonos cotizan y hay un precio observable, mientras que los préstamos no tienen mercado que les dé precio. Es la misma lógica de fiabilidad de la medición que ordena las carteras del PGC, aplicada a otro nivel."
+ },
+ {
+  "id": "5.07#t0",
+  "codigo": "5.07",
+  "bloque": 5,
+  "nivel": 3,
+  "titulo": "Instrumentos financieros: activos y pasivos",
+  "q": "Un bono a coste amortizado paga un cupón de 5.000 €. ¿Cuál es el ingreso financiero del ejercicio?",
+  "a": "**El coste amortizado inicial multiplicado por el tipo de interés efectivo, que rara vez coincide con el cupón.** $\\text{Ingreso}_t = \\mathrm{CA}_{t-1} \\times \\mathrm{TIE}$. La diferencia entre ingreso y cupón es precisamente lo que ajusta el coste amortizado cada periodo.",
+  "opciones": [
+   "El cupón más la amortización de la prima",
+   "La diferencia entre el valor razonable de cierre y el de apertura",
+   "5.000 €, que es lo cobrado",
+   "El coste amortizado inicial multiplicado por el tipo de interés efectivo, que rara vez coincide con el cupón"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "5.07#t1",
+  "codigo": "5.07",
+  "bloque": 5,
+  "nivel": 3,
+  "titulo": "Instrumentos financieros: activos y pasivos",
+  "q": "¿Van siempre a gasto los costes de transacción de una compra de activos financieros?",
+  "a": "**No: depende de la cartera; a coste amortizado y a valor razonable con cambios en patrimonio neto se incorporan al valor inicial.** En las demás carteras forman parte del precio de adquisición, y en las de coste amortizado entran además en el cálculo del tipo de interés efectivo.",
+  "opciones": [
+   "Sí: son gastos del ejercicio en que se incurren",
+   "No: siempre se capitalizan",
+   "Sí, salvo que superen el 5 % del importe de la operación",
+   "No: depende de la cartera; a coste amortizado y a valor razonable con cambios en patrimonio neto se incorporan al valor inicial"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "5.07#t2",
+  "codigo": "5.07",
+  "bloque": 5,
+  "nivel": 3,
+  "titulo": "Instrumentos financieros: activos y pasivos",
+  "q": "¿Cómo se clasifica hoy un activo financiero en el PGC?",
+  "a": "**Por el modelo de negocio con que se gestiona y las características de sus flujos contractuales.** Los dos filtros son objetivos: cómo se gestiona el conjunto de activos y si los flujos son solo principal e intereses. Eso decide coste amortizado o valor razonable.",
+  "opciones": [
+   "Por su plazo de vencimiento",
+   "Por si cotiza o no en un mercado organizado",
+   "Por la intención de la dirección al adquirirlo",
+   "Por el modelo de negocio con que se gestiona y las características de sus flujos contractuales"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "5.07#t3",
+  "codigo": "5.07",
+  "bloque": 5,
+  "nivel": 3,
+  "titulo": "Instrumentos financieros: activos y pasivos",
+  "q": "Se calcula el deterioro de un préstamo. ¿A qué tipo se descuentan los flujos esperados?",
+  "a": "**Al tipo de interés efectivo original de la operación.** El tipo efectivo original aísla lo que se quiere medir: cuánto menos se espera cobrar de este deudor concreto.",
+  "opciones": [
+   "Al tipo medio de la cartera de préstamos",
+   "Al tipo de mercado vigente hoy",
+   "Al tipo de interés efectivo original de la operación",
+   "Al tipo libre de riesgo del plazo correspondiente"
+  ],
+  "correcta": 2
  },
  {
   "id": "5.08#0",
@@ -6169,6 +14104,70 @@ export default [
   "a": "Porque el SEC exige que todo pasivo tenga un acreedor identificable que registre el activo correspondiente. Sin contrapartida concreta no hay instrumento financiero, y la provisión queda fuera del balance del sector."
  },
  {
+  "id": "5.08#t0",
+  "codigo": "5.08",
+  "bloque": 5,
+  "nivel": 3,
+  "titulo": "Provisiones, contingencias y periodificación",
+  "q": "¿En qué se diferencian una provisión y un deterioro?",
+  "a": "**El deterioro corrige a la baja un activo y figura minorándolo; la provisión es un pasivo y va a la derecha del balance.** Uno dice «este activo vale menos de lo que pone»; la otra dice «debo algo cuyo importe o vencimiento no sé con certeza». Confundirlos descoloca el balance entero.",
+  "opciones": [
+   "El deterioro corrige a la baja un activo y figura minorándolo; la provisión es un pasivo y va a la derecha del balance",
+   "En nada: ambos reducen el resultado por un riesgo",
+   "El deterioro es reversible y la provisión no",
+   "La provisión es fiscalmente deducible y el deterioro no"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "5.08#t1",
+  "codigo": "5.08",
+  "bloque": 5,
+  "nivel": 3,
+  "titulo": "Provisiones, contingencias y periodificación",
+  "q": "Una empresa planea renovar su flota el año que viene por 2 millones. ¿Debe dotar provisión?",
+  "a": "**No: no existe obligación presente, porque la empresa puede decidir no hacerlo.** Las tres condiciones son obligación presente, salida probable de recursos e importe estimable con fiabilidad. Aquí falla la primera, y por eso los gastos futuros previstos no se provisionan.",
+  "opciones": [
+   "Solo si ya ha firmado el contrato de compra",
+   "Sí: el gasto es previsible y cuantificable",
+   "Sí, repartida entre este ejercicio y el siguiente",
+   "No: no existe obligación presente, porque la empresa puede decidir no hacerlo"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "5.08#t2",
+  "codigo": "5.08",
+  "bloque": 5,
+  "nivel": 3,
+  "titulo": "Provisiones, contingencias y periodificación",
+  "q": "Una provisión a largo plazo aumenta cada año por el efecto del descuento. ¿Dónde va ese incremento?",
+  "a": "**A gastos financieros: es el paso del tiempo, no la actividad.** $\\Delta_t = P_{t-1} \\times i$ es exactamente un coste financiero: lo que cuesta que la obligación esté un año más cerca.",
+  "opciones": [
+   "Directamente contra reservas",
+   "No se registra hasta que la obligación venza",
+   "A gastos financieros: es el paso del tiempo, no la actividad",
+   "A gastos de explotación, junto con la dotación original"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "5.08#t3",
+  "codigo": "5.08",
+  "bloque": 5,
+  "nivel": 3,
+  "titulo": "Provisiones, contingencias y periodificación",
+  "q": "Una empresa cobra en enero 12.000 € por un servicio de mantenimiento anual concentrado en verano. ¿Cómo periodifica?",
+  "a": "**Según el servicio efectivamente prestado, aunque no sea uniforme.** El devengo imputa según la corriente real de servicios. Si el grueso del trabajo es en verano, ahí es donde debe reconocerse el ingreso.",
+  "opciones": [
+   "Según el servicio efectivamente prestado, aunque no sea uniforme",
+   "1.000 € al mes, siguiendo el año natural de la factura",
+   "Todo en enero, cuando se cobra",
+   "Todo en diciembre, al completarse el servicio"
+  ],
+  "correcta": 0
+ },
+ {
   "id": "5.09#0",
   "codigo": "5.09",
   "bloque": 5,
@@ -6212,6 +14211,70 @@ export default [
   "titulo": "Impuesto sobre beneficios y diferencias temporarias",
   "q": "¿Aparecen los impuestos diferidos en las cuentas nacionales?",
   "a": "No. El SEC registra el impuesto devengado frente a las administraciones públicas como operación de distribución D.51, sin reconocer activos ni pasivos derivados de desfases entre criterio contable y criterio fiscal."
+ },
+ {
+  "id": "5.09#t0",
+  "codigo": "5.09",
+  "bloque": 5,
+  "nivel": 3,
+  "titulo": "Impuesto sobre beneficios y diferencias temporarias",
+  "q": "¿Coinciden el gasto por impuesto sobre beneficios y la cuota a pagar a Hacienda?",
+  "a": "**No: el gasto es la cifra contable e incorpora los impuestos diferidos; la cuota es lo que se declara.** El gasto refleja el impuesto que corresponde al resultado contable del ejercicio; la cuota refleja lo que la norma fiscal exige pagar este año. La diferencia son los diferidos.",
+  "opciones": [
+   "No, pero la diferencia se lleva directamente a reservas",
+   "No: el gasto es la cifra contable e incorpora los impuestos diferidos; la cuota es lo que se declara",
+   "Sí, salvo que haya bases imponibles negativas",
+   "Sí: el gasto es lo que se paga"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "5.09#t1",
+  "codigo": "5.09",
+  "bloque": 5,
+  "nivel": 3,
+  "titulo": "Impuesto sobre beneficios y diferencias temporarias",
+  "q": "Un deterioro no es deducible este año pero sí lo será cuando la pérdida se materialice. ¿Qué tipo de diferencia es?",
+  "a": "**Temporaria: revertirá en el futuro y genera un activo por impuesto diferido.** La clave es si la diferencia desaparece con el tiempo. Como el gasto acabará siendo deducible, hoy se ha pagado un impuesto que se recuperará, y eso es un activo.",
+  "opciones": [
+   "Permanente: la norma fiscal no lo admite",
+   "Permanente el primer año y temporaria después",
+   "Ninguna: si no es deducible, no hay diferencia que registrar",
+   "Temporaria: revertirá en el futuro y genera un activo por impuesto diferido"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "5.09#t2",
+  "codigo": "5.09",
+  "bloque": 5,
+  "nivel": 3,
+  "titulo": "Impuesto sobre beneficios y diferencias temporarias",
+  "q": "Se aprueba una bajada del tipo del 25 % al 23 % a partir del año que viene. ¿A qué tipo se valoran los diferidos?",
+  "a": "**Al 23 %, que es el esperable en el momento de la reversión según normativa aprobada.** Los diferidos se valoran al tipo que se espera aplicable cuando reviertan, y una reforma ya aprobada obliga a reexpresarlos con efecto inmediato en el resultado.",
+  "opciones": [
+   "Al 25 %, que es el vigente al cierre",
+   "A la media de ambos",
+   "Al 23 %, que es el esperable en el momento de la reversión según normativa aprobada",
+   "Al que resulte más prudente"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "5.09#t3",
+  "codigo": "5.09",
+  "bloque": 5,
+  "nivel": 3,
+  "titulo": "Impuesto sobre beneficios y diferencias temporarias",
+  "q": "Una empresa con pérdidas acumuladas quiere activar sus bases imponibles negativas. ¿Qué se exige?",
+  "a": "**Probabilidad de ganancias fiscales futuras suficientes, sostenida por un plan de negocio.** Sin ese soporte, activar bases negativas infla el activo justo en el momento en que la empresa está peor, que es cuando más engaña.",
+  "opciones": [
+   "Autorización de la Administración tributaria",
+   "Que las pérdidas sean de los últimos cinco ejercicios",
+   "Nada: el derecho a compensarlas existe por ley",
+   "Probabilidad de ganancias fiscales futuras suficientes, sostenida por un plan de negocio"
+  ],
+  "correcta": 3
  },
  {
   "id": "5.10#0",
@@ -6259,6 +14322,70 @@ export default [
   "a": "Las cuentas de revalorización y de otras variaciones del volumen de activos, que recogen precisamente lo que altera el patrimonio de un sector sin ser una transacción del período."
  },
  {
+  "id": "5.10#t0",
+  "codigo": "5.10",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Cuentas anuales: balance, PyG, ECPN, EFE y memoria",
+  "q": "¿Qué rango tiene la memoria dentro de las cuentas anuales?",
+  "a": "**Es una cuenta anual con el mismo rango que el balance.** Sin ella no se sabe con qué criterios se han elaborado las cifras, así que el balance por sí solo no es interpretable.",
+  "opciones": [
+   "Es un anexo explicativo de carácter voluntario",
+   "Es obligatoria solo para empresas auditadas",
+   "Es una cuenta anual con el mismo rango que el balance",
+   "Es un documento de gestión, no contable"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "5.10#t1",
+  "codigo": "5.10",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Cuentas anuales: balance, PyG, ECPN, EFE y memoria",
+  "q": "Una empresa presenta beneficio y a la vez consume caja. ¿Es contradictorio?",
+  "a": "**No: el resultado se calcula por devengo y el flujo de efectivo mide cobros y pagos.** El resultado incluye amortizaciones, deterioros y provisiones que no son caja, y excluye movimientos de circulante que sí lo son. Por eso hacen falta los dos estados.",
+  "opciones": [
+   "No, pero indica que la contabilidad está mal llevada",
+   "No: el resultado se calcula por devengo y el flujo de efectivo mide cobros y pagos",
+   "Sí, salvo que haya repartido dividendos",
+   "Sí: si gana dinero, tiene que entrar dinero"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "5.10#t2",
+  "codigo": "5.10",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Cuentas anuales: balance, PyG, ECPN, EFE y memoria",
+  "q": "El resultado del ejercicio es positivo. ¿Basta ese dato?",
+  "a": "**No: puede esconder una explotación en pérdidas compensada por una venta de inmovilizado.** Por eso la cuenta de resultados se lee en cascada: resultado de explotación, financiero y antes de impuestos. Lo recurrente y lo extraordinario no valen igual.",
+  "opciones": [
+   "Sí, si además el flujo de explotación es positivo",
+   "Sí: es la cifra que resume el desempeño",
+   "No: puede esconder una explotación en pérdidas compensada por una venta de inmovilizado",
+   "No, pero solo importa si la empresa cotiza"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "5.10#t3",
+  "codigo": "5.10",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Cuentas anuales: balance, PyG, ECPN, EFE y memoria",
+  "q": "¿Para qué sirve el estado de cambios en el patrimonio neto?",
+  "a": "**Para recoger los ingresos y gastos que van directamente a patrimonio neto sin pasar por la cuenta de resultados.** Determinados ajustes de valoración, subvenciones y coberturas no aparecen en la cuenta de resultados. Sin el ECPN se pierde una parte del rendimiento del ejercicio.",
+  "opciones": [
+   "Para conciliar el resultado contable con la base imponible",
+   "Para detallar el reparto del dividendo",
+   "Para recoger los ingresos y gastos que van directamente a patrimonio neto sin pasar por la cuenta de resultados",
+   "Para desglosar las reservas por su origen legal"
+  ],
+  "correcta": 2
+ },
+ {
   "id": "6.01#0",
   "codigo": "6.01",
   "bloque": 6,
@@ -6302,6 +14429,70 @@ export default [
   "titulo": "Coste completo frente a coste variable",
   "q": "Una fábrica trabaja al 60 % de su capacidad normal. ¿Qué pasa con el 40 % de costes fijos restante?",
   "a": "Es coste de subactividad y va directo a la cuenta de resultados. No puede incorporarse al valor de las existencias, porque no corresponde a un consumo productivo sino a capacidad ociosa."
+ },
+ {
+  "id": "6.01#t0",
+  "codigo": "6.01",
+  "bloque": 6,
+  "nivel": 2,
+  "titulo": "Coste completo frente a coste variable",
+  "q": "Sobra capacidad en la fábrica. Llega un pedido especial a 15 € la unidad, y el coste completo unitario es de 18 €. ¿Conviene aceptarlo?",
+  "a": "**Sí, si el coste variable unitario es menor de 15 €: los fijos ya están comprometidos y cada unidad aporta contribución.** Si el variable es, por ejemplo, 12 €, cada unidad deja 3 € de margen de contribución que antes no existían. Rechazarla destruye ese margen sin ahorrar ningún fijo.",
+  "opciones": [
+   "No: se vendería por debajo de coste y cada unidad daría 3 € de pérdida",
+   "Sí, si el coste variable unitario es menor de 15 €: los fijos ya están comprometidos y cada unidad aporta contribución",
+   "No, salvo que se pueda subir el precio hasta los 18 €",
+   "Sí, porque un pedido especial nunca afecta al resultado"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "6.01#t1",
+  "codigo": "6.01",
+  "bloque": 6,
+  "nivel": 2,
+  "titulo": "Coste completo frente a coste variable",
+  "q": "¿Qué diferencia hay entre margen bruto y margen de contribución?",
+  "a": "**El bruto descuenta el coste completo de lo vendido (fijos incluidos); el de contribución descuenta solo el coste variable.** De ahí que solo el margen de contribución sirva para el punto muerto o el apalancamiento operativo: son las magnitudes que exigen separar lo que varía de lo que no.",
+  "opciones": [
+   "El bruto es por producto y el de contribución es de toda la empresa",
+   "El bruto se calcula antes de impuestos y el de contribución después",
+   "El bruto descuenta el coste completo de lo vendido (fijos incluidos); el de contribución descuenta solo el coste variable",
+   "Ninguna: son dos nombres del mismo concepto"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "6.01#t2",
+  "codigo": "6.01",
+  "bloque": 6,
+  "nivel": 2,
+  "titulo": "Coste completo frente a coste variable",
+  "q": "La fábrica trabaja muy por debajo de su capacidad normal. ¿Qué se hace con los costes fijos correspondientes a la capacidad ociosa?",
+  "a": "**Se llevan a gasto del ejercicio: son coste de subactividad y no pueden activarse.** El PGC lo dice expresamente. La fórmula es CF × (1 − Actividad real / Actividad normal), y esa porción va directa a resultados.",
+  "opciones": [
+   "Se difieren hasta el ejercicio en que se recupere la actividad normal",
+   "Se incorporan a las existencias, como el resto de los fijos de producción",
+   "Se reparten entre las unidades vendidas, no entre las producidas",
+   "Se llevan a gasto del ejercicio: son coste de subactividad y no pueden activarse"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "6.01#t3",
+  "codigo": "6.01",
+  "bloque": 6,
+  "nivel": 2,
+  "titulo": "Coste completo frente a coste variable",
+  "q": "Un ejercicio en que la producción supera a la venta arroja más beneficio por coste completo que por coste variable. ¿Qué ocurre después?",
+  "a": "**Se invierte: el año en que se vacíe ese almacén, el coste completo dará un resultado deprimido en la misma cuantía.** Por eso la diferencia entre ambos métodos es siempre (Q producida − Q vendida) × CF unitario, con el signo que corresponda: acumular almacén adelanta resultado y vaciarlo lo devuelve.",
+  "opciones": [
+   "Se corrige sola al cierre mediante un ajuste por periodificación",
+   "Nada: el coste completo genera beneficio adicional de forma permanente",
+   "Se invierte: el año en que se vacíe ese almacén, el coste completo dará un resultado deprimido en la misma cuantía",
+   "La diferencia se consolida como reserva"
+  ],
+  "correcta": 2
  },
  {
   "id": "6.02#0",
@@ -6349,6 +14540,70 @@ export default [
   "a": "Como trabajo en curso: la parte ejecutada cada año es producción de ese año y entra en la variación de existencias. Si se esperara a la entrega, el PIB de los años de construcción estaría infravalorado y el de la entrega, inflado."
  },
  {
+  "id": "6.02#t0",
+  "codigo": "6.02",
+  "bloque": 6,
+  "nivel": 2,
+  "titulo": "Sistemas de costes por órdenes y por procesos",
+  "q": "¿Qué determina si una empresa debe usar coste por órdenes o coste por procesos?",
+  "a": "**La estructura física de la producción: si el producto es identificable y singular, por órdenes; si es homogéneo y continuo, por procesos.** El sistema de costes debe copiar la producción que pretende medir. Si no la copia, reparte coste con un criterio que la realidad no respalda.",
+  "opciones": [
+   "La preferencia del director financiero, ya que ambos son admisibles",
+   "El tamaño de la empresa y sus recursos administrativos",
+   "El sector en que opera, según la clasificación del PGC",
+   "La estructura física de la producción: si el producto es identificable y singular, por órdenes; si es homogéneo y continuo, por procesos"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "6.02#t1",
+  "codigo": "6.02",
+  "bloque": 6,
+  "nivel": 2,
+  "titulo": "Sistemas de costes por órdenes y por procesos",
+  "q": "Se aplica coste por procesos a una producción heterogénea, con unidades que consumen recursos muy distintos. ¿Qué ocurre?",
+  "a": "**El medio subvenciona sistemáticamente a las unidades caras a costa de las baratas, y el error no se compensa.** Cada unidad barata carga con coste ajeno y cada cara aparece más rentable de lo que es, con lo que las decisiones de precio y de mezcla se toman al revés.",
+  "opciones": [
+   "Se obtiene un coste conservador, útil para fijar precios mínimos",
+   "El coste medio aproxima razonablemente el coste de cada unidad",
+   "El resultado global sale mal, pero los costes unitarios siguen siendo válidos",
+   "El medio subvenciona sistemáticamente a las unidades caras a costa de las baratas, y el error no se compensa"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "6.02#t2",
+  "codigo": "6.02",
+  "bloque": 6,
+  "nivel": 2,
+  "titulo": "Sistemas de costes por órdenes y por procesos",
+  "q": "Al calcular unidades equivalentes, ¿por qué no basta con un único porcentaje de avance?",
+  "a": "**Porque materiales y costes de conversión avanzan a ritmos distintos, y un solo porcentaje produce un reparto que no agota el coste.** Lo habitual es que los materiales se incorporen al comienzo del proceso y la conversión de forma gradual, así que hacen falta dos columnas de unidades equivalentes.",
+  "opciones": [
+   "Sí basta, siempre que se aplique de forma coherente todo el ejercicio",
+   "Porque el porcentaje debe recalcularse cada mes por la inflación",
+   "Porque materiales y costes de conversión avanzan a ritmos distintos, y un solo porcentaje produce un reparto que no agota el coste",
+   "Porque las unidades equivalentes solo se aplican a los materiales"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "6.02#t3",
+  "codigo": "6.02",
+  "bloque": 6,
+  "nivel": 2,
+  "titulo": "Sistemas de costes por órdenes y por procesos",
+  "q": "La tasa de aplicación de indirectos se fijó con datos presupuestados y al cierre no coincide con los indirectos reales. ¿Qué hay que hacer?",
+  "a": "**Regularizar la sobre o infraaplicación al cierre, imputándola al coste de las ventas o repartiéndola si es significativa.** Es el paso que casi nunca coincide y casi siempre se olvida: la tasa se fija con datos previstos y la diferencia tiene que aterrizar en algún sitio antes de cerrar.",
+  "opciones": [
+   "Nada: la tasa presupuestada es la que vale, y la diferencia se ignora",
+   "Trasladar la diferencia al ejercicio siguiente como mayor o menor tasa",
+   "Recalcular hacia atrás todos los costes del ejercicio con la tasa real",
+   "Regularizar la sobre o infraaplicación al cierre, imputándola al coste de las ventas o repartiéndola si es significativa"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "6.03#0",
   "codigo": "6.03",
   "bloque": 6,
@@ -6392,6 +14647,70 @@ export default [
   "titulo": "Costes ABC y asignación de indirectos",
   "q": "¿Por qué los costes de estructura no se reparten en un ABC bien planteado?",
   "a": "Porque no existe una relación causal entre ellos y los productos. Repartirlos exigiría una base arbitraria, que es justo lo que el método intenta evitar. Se tratan como coste del período."
+ },
+ {
+  "id": "6.03#t0",
+  "codigo": "6.03",
+  "bloque": 6,
+  "nivel": 3,
+  "titulo": "Costes ABC y asignación de indirectos",
+  "q": "Una empresa implanta un sistema ABC. ¿Qué efecto tiene sobre el coste total?",
+  "a": "**Ninguno: no cambia el coste agregado ni un céntimo, solo cambia su atribución entre productos.** Lo que reduce el coste son las decisiones que se toman después, cuando por fin se ve dónde se consume de verdad. El sistema informa; ahorrar es una decisión posterior.",
+  "opciones": [
+   "Lo reduce solo si los indirectos superan el 50 % del total",
+   "Lo aumenta, por el coste de mantener el sistema",
+   "Ninguno: no cambia el coste agregado ni un céntimo, solo cambia su atribución entre productos",
+   "Lo reduce, porque elimina repartos ineficientes"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "6.03#t1",
+  "codigo": "6.03",
+  "bloque": 6,
+  "nivel": 3,
+  "titulo": "Costes ABC y asignación de indirectos",
+  "q": "¿Cuál es el criterio correcto para elegir un inductor de coste?",
+  "a": "**Que explique por qué la actividad consume recursos.** Si la actividad es «preparación de máquinas», el inductor es el número de preparaciones, no las unidades: una serie corta consume una preparación entera igual que una larga.",
+  "opciones": [
+   "Que reparta el coste de forma uniforme entre los productos",
+   "Que explique por qué la actividad consume recursos",
+   "Que sea proporcional a las unidades producidas, para mantener la comparabilidad",
+   "Que el dato ya se esté midiendo, para no añadir trabajo administrativo"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "6.03#t2",
+  "codigo": "6.03",
+  "bloque": 6,
+  "nivel": 3,
+  "titulo": "Costes ABC y asignación de indirectos",
+  "q": "El ABC atribuye a un producto un coste superior a su precio de venta. ¿Basta para retirarlo del catálogo?",
+  "a": "**No: los indirectos no se evaporan al retirarlo, se redistribuyen sobre los que quedan salvo que la capacidad se elimine o se reutilice.** Una decisión de eliminación exige preguntarse qué costes desaparecen realmente. Si la nave, los supervisores y el sistema siguen ahí, el problema se traslada a los productos restantes.",
+  "opciones": [
+   "Sí: vender por debajo de coste destruye valor de forma demostrada",
+   "No: los indirectos no se evaporan al retirarlo, se redistribuyen sobre los que quedan salvo que la capacidad se elimine o se reutilice",
+   "Sí, siempre que el sistema ABC esté correctamente implantado",
+   "No, porque el ABC no sirve para decisiones sobre la cartera de productos"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "6.03#t3",
+  "codigo": "6.03",
+  "bloque": 6,
+  "nivel": 3,
+  "titulo": "Costes ABC y asignación de indirectos",
+  "q": "¿Por qué no conviene repartir los costes de estructura —dirección general, jurídico, sede— entre los productos?",
+  "a": "**Porque no tienen inductor razonable respecto de los productos, y forzar el reparto reintroduce la arbitrariedad que el ABC venía a eliminar.** Dejarlos sin repartir y presentarlos como lo que son —coste de existir de la empresa— es más informativo que inventar una clave de reparto.",
+  "opciones": [
+   "Porque no tienen inductor razonable respecto de los productos, y forzar el reparto reintroduce la arbitrariedad que el ABC venía a eliminar",
+   "Porque su importe es siempre pequeño y no altera el resultado",
+   "Porque el PGC lo prohíbe expresamente",
+   "Porque son costes variables y no pertenecen al sistema de costes"
+  ],
+  "correcta": 0
  },
  {
   "id": "6.04#0",
@@ -6439,6 +14758,70 @@ export default [
   "a": "Porque la remuneración de asalariados se ajusta con retardo y actúa como coste cuasi fijo, mientras que el excedente de explotación es el residuo que absorbe la caída. Es apalancamiento operativo a escala agregada."
  },
  {
+  "id": "6.04#t0",
+  "codigo": "6.04",
+  "bloque": 6,
+  "nivel": 2,
+  "titulo": "Punto muerto y apalancamiento operativo",
+  "q": "¿Con qué margen se calcula el punto muerto?",
+  "a": "**Con el margen de contribución, que descuenta solo los costes variables.** El punto muerto pregunta cuántas unidades hacen falta para cubrir los fijos, y para eso el numerador tiene que estar limpio de fijos.",
+  "opciones": [
+   "Con el margen de contribución, que descuenta solo los costes variables",
+   "Con cualquiera de los tres, según la información disponible",
+   "Con el margen bruto, que es el que figura en la cuenta de resultados",
+   "Con el margen neto, ya descontados todos los gastos"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "6.04#t1",
+  "codigo": "6.04",
+  "bloque": 6,
+  "nivel": 2,
+  "titulo": "Punto muerto y apalancamiento operativo",
+  "q": "El grado de apalancamiento operativo de una empresa se calculó en un año de ventas altas. ¿Sirve para predecir el comportamiento en un año flojo?",
+  "a": "**No: depende del nivel de actividad y crece al acercarse al punto muerto.** Cerca del punto muerto el beneficio es pequeño y cualquier variación de ventas lo mueve en porcentajes enormes: el mismo negocio tiene un GAO distinto cada año.",
+  "opciones": [
+   "Sí: el GAO es una característica estructural de la empresa",
+   "Sí, corrigiéndolo por la inflación del período",
+   "No, salvo que la estructura de costes fijos no haya cambiado",
+   "No: depende del nivel de actividad y crece al acercarse al punto muerto"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "6.04#t2",
+  "codigo": "6.04",
+  "bloque": 6,
+  "nivel": 2,
+  "titulo": "Punto muerto y apalancamiento operativo",
+  "q": "Una empresa multiproducto quiere su punto muerto. ¿Cómo debe calcularlo?",
+  "a": "**En euros de venta, con el ratio de margen de contribución medio ponderado por la mezcla.** Y con una advertencia incorporada: el resultado vale para esa mezcla. Si cambia el peso de cada producto, cambia el punto muerto sin que se haya movido ningún coste.",
+  "opciones": [
+   "En unidades, sumando las de todos los productos",
+   "Producto a producto, repartiendo los fijos por partes iguales",
+   "En euros de venta, con el ratio de margen de contribución medio ponderado por la mezcla",
+   "En unidades del producto más vendido, tomándolo como referencia"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "6.04#t3",
+  "codigo": "6.04",
+  "bloque": 6,
+  "nivel": 2,
+  "titulo": "Punto muerto y apalancamiento operativo",
+  "q": "Un apalancamiento operativo alto, ¿qué indica sobre la empresa?",
+  "a": "**Que está expuesta al ciclo: amplifica tanto las subidas como las caídas de ventas.** Es una medida de sensibilidad, no de mérito. La lectura correcta es «cuánto se mueve mi beneficio si las ventas se mueven un 1 %».",
+  "opciones": [
+   "Que tiene poca deuda, ya que el apalancamiento operativo y el financiero son excluyentes",
+   "Que está expuesta al ciclo: amplifica tanto las subidas como las caídas de ventas",
+   "Que su punto muerto es bajo",
+   "Que está bien gestionada: aprovecha mejor cada euro de venta adicional"
+  ],
+  "correcta": 1
+ },
+ {
   "id": "6.05#0",
   "codigo": "6.05",
   "bloque": 6,
@@ -6482,6 +14865,70 @@ export default [
   "titulo": "Presupuestación y control por desviaciones",
   "q": "¿Con qué fórmula de número índice se corresponde valorar el efecto cantidad a precios estándar?",
   "a": "Con un índice de volumen de Laspeyres: mide la variación real manteniendo fijos los precios de la base. La desviación de precio a cantidades reales se corresponde con un índice de precios de Paasche."
+ },
+ {
+  "id": "6.05#t0",
+  "codigo": "6.05",
+  "bloque": 6,
+  "nivel": 3,
+  "titulo": "Presupuestación y control por desviaciones",
+  "q": "La producción real ha sido distinta de la presupuestada. ¿Contra qué presupuesto hay que comparar los costes reales?",
+  "a": "**Contra el presupuesto flexibilizado al nivel de actividad real.** Flexibilizar responde a la pregunta correcta: dado lo que realmente se produjo, ¿cuánto debería haber costado? Solo entonces la diferencia mide gestión.",
+  "opciones": [
+   "Contra el presupuesto original corregido por inflación",
+   "Contra el presupuesto original, que es el que se aprobó",
+   "Contra la media de los tres últimos ejercicios",
+   "Contra el presupuesto flexibilizado al nivel de actividad real"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "6.05#t1",
+  "codigo": "6.05",
+  "bloque": 6,
+  "nivel": 3,
+  "titulo": "Presupuestación y control por desviaciones",
+  "q": "La desviación total en consumo de materiales es de apenas 200 €. ¿Puede darse por buena?",
+  "a": "**No: las componentes se compensan, y puede esconder un ahorro grande en precio junto a un derroche grande en cantidad.** Comprar materia prima barata y de mala calidad da desviación favorable en precio y desfavorable en cantidad, con total próximo a cero. Sin descomponer, no se ve.",
+  "opciones": [
+   "No, pero solo si la empresa audita sus estándares",
+   "Sí, si está dentro del margen de tolerancia habitual del 5 %",
+   "No: las componentes se compensan, y puede esconder un ahorro grande en precio junto a un derroche grande en cantidad",
+   "Sí: una desviación tan pequeña no merece análisis"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "6.05#t2",
+  "codigo": "6.05",
+  "bloque": 6,
+  "nivel": 3,
+  "titulo": "Presupuestación y control por desviaciones",
+  "q": "¿A qué precio debe valorarse la desviación en cantidad de materiales?",
+  "a": "**Al precio estándar, para aislar la responsabilidad de producción de las condiciones de compra.** Toda la lógica del sistema es esa: cada desviación debe quedar en manos de quien puede actuar sobre ella. Por eso cantidad va a precio estándar.",
+  "opciones": [
+   "Al precio estándar, para aislar la responsabilidad de producción de las condiciones de compra",
+   "Al precio real de compra, que es el desembolso efectivo",
+   "Al precio estándar del ejercicio anterior, para dar continuidad a la serie",
+   "Al precio medio del mercado en el período"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "6.05#t3",
+  "codigo": "6.05",
+  "bloque": 6,
+  "nivel": 3,
+  "titulo": "Presupuestación y control por desviaciones",
+  "q": "El informe muestra una desviación favorable en mantenimiento. ¿Cómo debe interpretarse?",
+  "a": "**Como una etiqueta aritmética que hay que investigar: puede significar que el mantenimiento previsto simplemente no se hizo.** Y la factura llega después, en averías. Lo mismo ocurre con formación o I+D: ahorrar en ellas se anota como favorable y se paga más tarde.",
+  "opciones": [
+   "Como un error de imputación, ya que el mantenimiento no admite estándar",
+   "Como una etiqueta aritmética que hay que investigar: puede significar que el mantenimiento previsto simplemente no se hizo",
+   "Como un indicio de que el estándar estaba mal calculado",
+   "Como una buena noticia: se ha gastado menos de lo previsto"
+  ],
+  "correcta": 1
  },
  {
   "id": "6.06#0",
@@ -6529,6 +14976,70 @@ export default [
   "a": "Porque el almacén está valorado a coste. Dividir por las ventas mezclaría una magnitud a coste con otra que incluye margen, y subestimaría sistemáticamente los días."
  },
  {
+  "id": "6.06#t0",
+  "codigo": "6.06",
+  "bloque": 6,
+  "nivel": 2,
+  "titulo": "Análisis patrimonial y de liquidez",
+  "q": "¿Cuál es el valor «correcto» del ratio de circulante?",
+  "a": "**No hay uno: depende del ciclo del negocio, y un supermercado sano puede tener 0,6 y una constructora sana 2,5.** Los ratios comparan contra el propio sector y contra la propia historia, nunca contra una cifra universal.",
+  "opciones": [
+   "El que iguale al del líder del sector",
+   "No hay uno: depende del ciclo del negocio, y un supermercado sano puede tener 0,6 y una constructora sana 2,5",
+   "Mayor que 1 en cualquier sector, por definición de solvencia a corto",
+   "Entre 1,5 y 2, según la regla clásica"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "6.06#t1",
+  "codigo": "6.06",
+  "bloque": 6,
+  "nivel": 2,
+  "titulo": "Análisis patrimonial y de liquidez",
+  "q": "El fondo de maniobra de una empresa crece año tras año. ¿Es una buena señal?",
+  "a": "**No necesariamente: puede deberse a un almacén que se llena de producto invendible y a facturas de clientes que no se cobran.** Hay que mirar la composición: existencias que rotan cada vez más despacio y saldos de clientes envejecidos engordan el fondo de maniobra mientras la liquidez empeora.",
+  "opciones": [
+   "No necesariamente: puede deberse a un almacén que se llena de producto invendible y a facturas de clientes que no se cobran",
+   "No: un fondo de maniobra creciente es siempre síntoma de exceso de financiación a largo",
+   "Sí, siempre que se mantenga por encima del 20 % del activo total",
+   "Sí: significa que el activo corriente cubre cada vez mejor las deudas a corto"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "6.06#t2",
+  "codigo": "6.06",
+  "bloque": 6,
+  "nivel": 2,
+  "titulo": "Análisis patrimonial y de liquidez",
+  "q": "¿Sobre qué base se calculan los días de almacén?",
+  "a": "**Sobre el coste de las ventas, porque el almacén está valorado a coste y las ventas incluyen margen.** Numerador y denominador tienen que estar en la misma moneda: coste con coste. Cuanto mayor sea el margen, mayor el error de usar ventas.",
+  "opciones": [
+   "Sobre el activo corriente medio",
+   "Sobre la producción del período a precio de venta",
+   "Sobre las ventas del período",
+   "Sobre el coste de las ventas, porque el almacén está valorado a coste y las ventas incluyen margen"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "6.06#t3",
+  "codigo": "6.06",
+  "bloque": 6,
+  "nivel": 2,
+  "titulo": "Análisis patrimonial y de liquidez",
+  "q": "Una empresa presenta un ciclo de caja negativo. ¿Qué significa?",
+  "a": "**Que cobra antes de pagar: sus proveedores financian su actividad, posición excelente y típica de la distribución minorista.** El crecimiento genera caja en lugar de consumirla, que es la razón de que estos modelos puedan expandirse sin financiación bancaria.",
+  "opciones": [
+   "Que cobra antes de pagar: sus proveedores financian su actividad, posición excelente y típica de la distribución minorista",
+   "Que está vendiendo por debajo de coste",
+   "Que ha cometido un error de cálculo, porque el ciclo de caja no puede ser negativo",
+   "Que tiene un problema de liquidez y necesita financiación urgente"
+  ],
+  "correcta": 0
+ },
+ {
   "id": "6.07#0",
   "codigo": "6.07",
   "bloque": 6,
@@ -6572,6 +15083,70 @@ export default [
   "titulo": "Análisis de rentabilidad y descomposición DuPont",
   "q": "¿Cuál es el análogo del margen DuPont en las cuentas nacionales?",
   "a": "La tasa de margen de las sociedades no financieras: excedente bruto de explotación sobre valor añadido bruto. Mide la misma idea —qué proporción de lo generado queda para el capital— a escala sectorial."
+ },
+ {
+  "id": "6.07#t0",
+  "codigo": "6.07",
+  "bloque": 6,
+  "nivel": 2,
+  "titulo": "Análisis de rentabilidad y descomposición DuPont",
+  "q": "¿Qué resultado debe ir en el numerador del ROA?",
+  "a": "**El BAII, para que la rentabilidad del activo no quede contaminada por la estructura financiera.** El ROA responde a «qué rinde lo invertido, sea de quien sea el dinero». Solo con el BAII puede después compararse con el coste de la deuda y aislar el efecto del apalancamiento.",
+  "opciones": [
+   "El EBITDA, por ser el más comparable entre empresas",
+   "El resultado neto, que es el que finalmente queda",
+   "El BAII, para que la rentabilidad del activo no quede contaminada por la estructura financiera",
+   "El resultado antes de impuestos, para neutralizar el efecto fiscal"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "6.07#t1",
+  "codigo": "6.07",
+  "bloque": 6,
+  "nivel": 2,
+  "titulo": "Análisis de rentabilidad y descomposición DuPont",
+  "q": "El ROE de una empresa ha subido tres años seguidos. ¿Basta para concluir que va mejor?",
+  "a": "**No: hay que descomponerlo, porque puede venir de más deuda o de un neto reducido por recompras o pérdidas acumuladas.** Solo las dos primeras vías —margen y rotación— son mejora operativa. Subir por el multiplicador es asumir más riesgo, y un neto que encoge sube el ratio sin que nada mejore.",
+  "opciones": [
+   "Sí: el ROE es la medida sintética de la rentabilidad del accionista",
+   "Sí, si además el sector no ha crecido",
+   "No, salvo que se compare con el ROE de los competidores",
+   "No: hay que descomponerlo, porque puede venir de más deuda o de un neto reducido por recompras o pérdidas acumuladas"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "6.07#t2",
+  "codigo": "6.07",
+  "bloque": 6,
+  "nivel": 2,
+  "titulo": "Análisis de rentabilidad y descomposición DuPont",
+  "q": "Para calcular el coste de la deuda, ¿debe incluirse el saldo de proveedores en el denominador?",
+  "a": "**No: el crédito comercial no devenga interés explícito, e incluirlo da un coste artificialmente bajo que exagera el diferencial apalancado.** El coste de la deuda se calcula sobre la deuda que devenga intereses. Con proveedores dentro, el diferencial (ROA − coste de la deuda) parece mucho mayor de lo que es.",
+  "opciones": [
+   "No: el crédito comercial no devenga interés explícito, e incluirlo da un coste artificialmente bajo que exagera el diferencial apalancado",
+   "No, porque los proveedores forman parte del patrimonio neto",
+   "Sí, ponderado por su plazo medio de pago",
+   "Sí: es pasivo exigible como cualquier otro"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "6.07#t3",
+  "codigo": "6.07",
+  "bloque": 6,
+  "nivel": 2,
+  "titulo": "Análisis de rentabilidad y descomposición DuPont",
+  "q": "Una empresa tiene ROE del 20 % con ROA del 10 % gracias al apalancamiento. Si el ROA cae al 2 %, ¿qué ocurre?",
+  "a": "**El ROE puede volverse muy negativo: el multiplicador amplifica en ambas direcciones.** Cuando el ROA cae por debajo del coste de la deuda, el diferencial se vuelve negativo y el multiplicador lo agranda. La misma palanca que daba el 20 % es la que hunde.",
+  "opciones": [
+   "El ROE baja al 10 %, el nivel que tendría sin deuda",
+   "El ROE puede volverse muy negativo: el multiplicador amplifica en ambas direcciones",
+   "El ROE se mantiene, porque la deuda ya estaba contratada",
+   "El ROE baja proporcionalmente, hasta el 4 %"
+  ],
+  "correcta": 1
  },
  {
   "id": "6.08#0",
@@ -6619,6 +15194,70 @@ export default [
   "a": "El ahorro bruto (B.8g). Y la capacidad o necesidad de financiación (B.9) equivale al flujo de caja libre: lo que queda tras invertir, positivo o negativo."
  },
  {
+  "id": "6.08#t0",
+  "codigo": "6.08",
+  "bloque": 6,
+  "nivel": 3,
+  "titulo": "Análisis del estado de flujos de efectivo",
+  "q": "¿Es correcto calcular el flujo de explotación como beneficio más amortización?",
+  "a": "**No: ignora la variación del capital corriente, que puede cambiar la cifra por completo.** En Arlanza ese cálculo daría 100.000 € frente a los 40.000 € reales: la diferencia está en clientes y existencias, que absorbieron caja sin pasar por el resultado.",
+  "opciones": [
+   "Sí, siempre que no haya deterioros ni provisiones",
+   "No: ignora la variación del capital corriente, que puede cambiar la cifra por completo",
+   "No, porque además hay que sumar los intereses pagados",
+   "Sí: es el llamado cash flow, de uso general"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "6.08#t1",
+  "codigo": "6.08",
+  "bloque": 6,
+  "nivel": 3,
+  "titulo": "Análisis del estado de flujos de efectivo",
+  "q": "Una empresa presenta flujo de inversión negativo. ¿Qué indica?",
+  "a": "**Que está invirtiendo, lo normal en un negocio vivo; la señal preocupante sería la contraria.** Un flujo de inversión positivo sostenido significa que la empresa está vendiendo su inmovilizado, y eso sí merece explicación.",
+  "opciones": [
+   "Que está perdiendo dinero en sus inversiones financieras",
+   "Que ha tenido que vender activos para cubrir pérdidas",
+   "Que su inmovilizado se ha deteriorado durante el ejercicio",
+   "Que está invirtiendo, lo normal en un negocio vivo; la señal preocupante sería la contraria"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "6.08#t2",
+  "codigo": "6.08",
+  "bloque": 6,
+  "nivel": 3,
+  "titulo": "Análisis del estado de flujos de efectivo",
+  "q": "¿Por qué hay que mirar el signo conjunto de los tres flujos y no solo el de explotación?",
+  "a": "**Porque el patrón de signos identifica la fase del negocio de un vistazo: dice también qué se está haciendo con la caja generada o de dónde sale la que falta.** Explotación positiva con inversión negativa y financiación negativa describe una empresa madura que se autofinancia y devuelve deuda; los tres positivos, una que se financia sin generar caja.",
+  "opciones": [
+   "Porque el patrón de signos identifica la fase del negocio de un vistazo: dice también qué se está haciendo con la caja generada o de dónde sale la que falta",
+   "Porque el flujo de explotación es el menos fiable de los tres",
+   "Porque los tres deben sumar cero en un estado bien confeccionado",
+   "Porque así se detectan errores de imputación entre epígrafes"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "6.08#t3",
+  "codigo": "6.08",
+  "bloque": 6,
+  "nivel": 3,
+  "titulo": "Análisis del estado de flujos de efectivo",
+  "q": "¿Puede tomarse el EBITDA como medida del flujo de caja?",
+  "a": "**No: además de excluir intereses e impuestos, ignora la inversión necesaria para mantener la capacidad y la variación del circulante.** Que la amortización no sea salida de caja no significa que la reposición del activo sea gratis. Un negocio intensivo en capital puede tener EBITDA alto y caja libre nula.",
+  "opciones": [
+   "Sí: excluye las partidas que no suponen movimiento de efectivo",
+   "No: además de excluir intereses e impuestos, ignora la inversión necesaria para mantener la capacidad y la variación del circulante",
+   "Sí, en empresas sin deuda financiera",
+   "No, salvo que se le reste la amortización del ejercicio"
+  ],
+  "correcta": 1
+ },
+ {
   "id": "6.09#0",
   "codigo": "6.09",
   "bloque": 6,
@@ -6662,6 +15301,70 @@ export default [
   "titulo": "Calidad del resultado y contabilidad creativa",
   "q": "¿Por qué las cuentas nacionales resisten mejor este tipo de manipulación?",
   "a": "Por redundancia: fuentes múltiples e independientes, contraste oferta-demanda y contrapartida obligatoria entre sectores. Además, magnitudes clave como el consumo de capital fijo se estiman externamente y no dependen de lo que declare cada empresa."
+ },
+ {
+  "id": "6.09#t0",
+  "codigo": "6.09",
+  "bloque": 6,
+  "nivel": 4,
+  "titulo": "Calidad del resultado y contabilidad creativa",
+  "q": "¿En qué se diferencia la contabilidad creativa del fraude contable?",
+  "a": "**La creativa opera dentro de la norma explotando el margen de estimación que esta concede; el fraude registra hechos falsos.** Por eso la creativa es más difícil de detectar y más frecuente: no hay norma que romper, solo estimaciones que estirar hasta el borde de lo defendible.",
+  "opciones": [
+   "En la intención: la creativa es involuntaria y el fraude deliberado",
+   "En la cuantía: se llama fraude cuando supera el umbral de materialidad",
+   "En nada de fondo: ambas falsean la imagen de la empresa",
+   "La creativa opera dentro de la norma explotando el margen de estimación que esta concede; el fraude registra hechos falsos"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "6.09#t1",
+  "codigo": "6.09",
+  "bloque": 6,
+  "nivel": 4,
+  "titulo": "Calidad del resultado y contabilidad creativa",
+  "q": "Una empresa presenta devengos altos en el ejercicio. ¿Es prueba de manipulación?",
+  "a": "**No: son normales en empresas que crecen deprisa; lo que informa es el patrón sostenido, no un dato aislado.** Y hay que ajustar además por sector y fase: una constructora con obra plurianual o un negocio estacional presentan devengos altos por razones estructurales.",
+  "opciones": [
+   "No, porque los devengos no guardan relación con la calidad del resultado",
+   "No: son normales en empresas que crecen deprisa; lo que informa es el patrón sostenido, no un dato aislado",
+   "Sí, si además el auditor ha emitido salvedades",
+   "Sí: los devengos altos son el indicador más fiable de manipulación"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "6.09#t2",
+  "codigo": "6.09",
+  "bloque": 6,
+  "nivel": 4,
+  "titulo": "Calidad del resultado y contabilidad creativa",
+  "q": "El informe de auditoría es limpio, sin salvedades. ¿Descarta la contabilidad creativa?",
+  "a": "**No: el auditor verifica el cumplimiento del marco normativo, y la contabilidad creativa por definición lo cumple.** Una opinión sin salvedades no certifica que las estimaciones sean prudentes, solo que están dentro de lo aceptable. El margen entre «prudente» y «aceptable» es donde ocurre todo.",
+  "opciones": [
+   "No: el auditor verifica el cumplimiento del marco normativo, y la contabilidad creativa por definición lo cumple",
+   "Sí, si el auditor es una de las grandes firmas",
+   "Sí: es la función del auditor detectar precisamente eso",
+   "No, porque el auditor no revisa las estimaciones contables"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "6.09#t3",
+  "codigo": "6.09",
+  "bloque": 6,
+  "nivel": 4,
+  "titulo": "Calidad del resultado y contabilidad creativa",
+  "q": "¿Puede haber interés en manipular el resultado a la baja?",
+  "a": "**Sí: para pagar menos impuestos, negociar con la plantilla, preparar una exclusión de cotización o crear reservas latentes.** Un resultado deprimido hoy también prepara un resultado holgado mañana, porque la manipulación siempre se revierte: lo diferido acaba apareciendo.",
+  "opciones": [
+   "Sí, pero solo mediante fraude, no con contabilidad creativa",
+   "No, salvo en empresas públicas",
+   "No: manipular a la baja perjudica a la propia empresa",
+   "Sí: para pagar menos impuestos, negociar con la plantilla, preparar una exclusión de cotización o crear reservas latentes"
+  ],
+  "correcta": 3
  },
  {
   "id": "6.10#0",
@@ -6709,6 +15412,70 @@ export default [
   "a": "Porque organiza la economía por residencia y comportamiento económico, no por propiedad. Cada sociedad residente es una unidad institucional propia. Sí consolida, en cambio, dentro de un sector: la deuda pública PDE se presenta neta de las deudas entre administraciones."
  },
  {
+  "id": "6.10#t0",
+  "codigo": "6.10",
+  "bloque": 6,
+  "nivel": 4,
+  "titulo": "Consolidación de estados financieros y grupos",
+  "q": "¿Qué determina la obligación de consolidar?",
+  "a": "**El control efectivo, que puede existir con el 40 % si el resto está disperso o hay pactos parasociales.** Y a la inversa: se puede tener más de la mitad sin controlar, si existen restricciones estatutarias o derechos de veto de terceros.",
+  "opciones": [
+   "El control efectivo, que puede existir con el 40 % si el resto está disperso o hay pactos parasociales",
+   "Que la matriz y la filial compartan domicilio fiscal",
+   "Que las sociedades operen en el mismo sector",
+   "Superar el 50 % del capital de otra sociedad"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "6.10#t1",
+  "codigo": "6.10",
+  "bloque": 6,
+  "nivel": 4,
+  "titulo": "Consolidación de estados financieros y grupos",
+  "q": "De las eliminaciones básicas de consolidación, ¿cuál es la que altera el resultado del grupo?",
+  "a": "**La eliminación de los resultados internos no realizados.** Es la que más se descuida. Sin ella, un grupo puede inflar su beneficio moviendo existencias entre sociedades sin haber vendido nada fuera.",
+  "opciones": [
+   "La eliminación de saldos recíprocos entre sociedades del grupo",
+   "La eliminación de la inversión-fondos propios",
+   "Ninguna: las eliminaciones nunca tocan el resultado",
+   "La eliminación de los resultados internos no realizados"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "6.10#t2",
+  "codigo": "6.10",
+  "bloque": 6,
+  "nivel": 4,
+  "titulo": "Consolidación de estados financieros y grupos",
+  "q": "¿Dónde figuran los socios externos en el balance consolidado?",
+  "a": "**En el patrimonio neto, en una línea separada: son propietarios de una parte del grupo, no acreedores.** Colocarlos en el pasivo distorsiona el endeudamiento del grupo y todos los ratios que se construyen sobre él.",
+  "opciones": [
+   "Fuera del balance, solo mencionados en la memoria",
+   "En el pasivo no corriente, como deuda a largo plazo con terceros",
+   "En el patrimonio neto, en una línea separada: son propietarios de una parte del grupo, no acreedores",
+   "En el activo, como menor valor de la participación"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "6.10#t3",
+  "codigo": "6.10",
+  "bloque": 6,
+  "nivel": 4,
+  "titulo": "Consolidación de estados financieros y grupos",
+  "q": "Un grupo tiene una asociada muy endeudada, integrada por puesta en equivalencia. ¿Qué muestran las cuentas consolidadas?",
+  "a": "**Solo el valor neto de la participación: los activos y las deudas de la asociada no aparecen.** Por eso un grupo puede presentar un endeudamiento aparente muy inferior al real: la deuda vive en asociadas que solo figuran por una cifra neta.",
+  "opciones": [
+   "Los activos y deudas de la asociada al 100 %, con socios externos por el resto",
+   "Solo el valor neto de la participación: los activos y las deudas de la asociada no aparecen",
+   "Los activos y deudas de la asociada, en proporción al porcentaje de participación",
+   "Nada de la asociada, que queda fuera del perímetro"
+  ],
+  "correcta": 1
+ },
+ {
   "id": "7.01#0",
   "codigo": "7.01",
   "bloque": 7,
@@ -6752,6 +15519,70 @@ export default [
   "titulo": "Valor temporal del dinero: capitalización y descuento",
   "q": "¿Por qué no se pueden sumar directamente las cuotas de dos préstamos de distinto plazo?",
   "a": "Porque los pagos ocurren en fechas distintas y no son magnitudes homogéneas. Un préstamo a 30 años tiene un total de cuotas mayor y puede ser más barato en valor actual. La comparación exige descontar ambos flujos."
+ },
+ {
+  "id": "7.01#t0",
+  "codigo": "7.01",
+  "bloque": 7,
+  "nivel": 1,
+  "titulo": "Valor temporal del dinero: capitalización y descuento",
+  "q": "¿Rinde lo mismo un 12 % nominal anual que un 12 % nominal capitalizable mensualmente?",
+  "a": "**No: el capitalizable mensualmente rinde más, y la comparación solo es válida en tipo efectivo anual.** Al capitalizar cada mes, los intereses del primer mes generan intereses el segundo. Por eso la normativa obliga a publicar la TAE: para que la comparación se haga sobre una base homogénea.",
+  "opciones": [
+   "No: el capitalizable mensualmente rinde menos, porque fracciona el interés",
+   "Sí: el tipo nominal es el mismo, así que el rendimiento es idéntico",
+   "Depende del importe invertido",
+   "No: el capitalizable mensualmente rinde más, y la comparación solo es válida en tipo efectivo anual"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "7.01#t1",
+  "codigo": "7.01",
+  "bloque": 7,
+  "nivel": 1,
+  "titulo": "Valor temporal del dinero: capitalización y descuento",
+  "q": "Con un tipo nominal del 8 % y una inflación del 5 %, ¿cuál es el tipo real?",
+  "a": "**Algo menos del 3 %: la relación de Fisher es multiplicativa, no aditiva.** La relación exacta es (1 + i) = (1 + r)(1 + π), de donde r = 1,08/1,05 − 1 ≈ 2,86 %. La diferencia parece menor y se acumula período a período.",
+  "opciones": [
+   "Algo más del 3 %, porque la inflación erosiona también los intereses",
+   "El 3 %, pero solo si el plazo es inferior a un año",
+   "El 3 %, restando la inflación al nominal",
+   "Algo menos del 3 %: la relación de Fisher es multiplicativa, no aditiva"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "7.01#t2",
+  "codigo": "7.01",
+  "bloque": 7,
+  "nivel": 1,
+  "titulo": "Valor temporal del dinero: capitalización y descuento",
+  "q": "Los flujos de un proyecto están estimados en euros corrientes, incorporando la inflación prevista. ¿A qué tasa deben descontarse?",
+  "a": "**A la tasa nominal, porque los flujos ya llevan la inflación dentro.** Flujos nominales con tasa nominal, flujos constantes con tasa real. Cruzar los criterios es un error frecuente y siempre sesga el resultado en la misma dirección.",
+  "opciones": [
+   "A cualquiera de las dos, siempre que se aplique de forma constante",
+   "A la tasa nominal, porque los flujos ya llevan la inflación dentro",
+   "A la tasa real, para eliminar el efecto de la inflación",
+   "A la tasa real más la prima de riesgo"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "7.01#t3",
+  "codigo": "7.01",
+  "bloque": 7,
+  "nivel": 1,
+  "titulo": "Valor temporal del dinero: capitalización y descuento",
+  "q": "¿Es correcto usar la misma tasa de descuento para todos los proyectos de una empresa?",
+  "a": "**No: la tasa incorpora el coste de oportunidad y la prima de riesgo del flujo concreto que se descuenta.** Aplicar la misma tasa a una inversión segura y a una arriesgada favorece sistemáticamente a la segunda, que aparece con un valor actual inflado.",
+  "opciones": [
+   "Sí: la tasa es un parámetro técnico de la empresa, no del proyecto",
+   "Sí, si todos los proyectos se financian con la misma estructura de capital",
+   "No, pero solo cuando los plazos difieren mucho",
+   "No: la tasa incorpora el coste de oportunidad y la prima de riesgo del flujo concreto que se descuenta"
+  ],
+  "correcta": 3
  },
  {
   "id": "7.02#0",
@@ -6799,6 +15630,70 @@ export default [
   "a": "No. El SEC separa del tipo cobrado por el banco una componente de servicio de intermediación (SIFMI), que se reclasifica como compra de un servicio y no como interés. La cifra contable y la estadística difieren por ese ajuste."
  },
  {
+  "id": "7.02#t0",
+  "codigo": "7.02",
+  "bloque": 7,
+  "nivel": 1,
+  "titulo": "Rentas, préstamos y cuadros de amortización",
+  "q": "Un préstamo a treinta años tiene un total de cuotas pagadas mayor que otro a quince. ¿Es más caro?",
+  "a": "**No necesariamente: sumar cuotas de fechas distintas no es válido, y puede ser más barato en valor actual.** La comparación correcta se hace descontando ambos flujos a una misma tasa. El total nominal solo mide cuánto dinero cambia de manos, no cuánto vale.",
+  "opciones": [
+   "Sí: se paga más dinero en total, luego cuesta más",
+   "Sí, porque el plazo largo siempre lleva un tipo superior",
+   "No necesariamente: sumar cuotas de fechas distintas no es válido, y puede ser más barato en valor actual",
+   "No: a mayor plazo, menor coste, por el efecto de la inflación"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "7.02#t1",
+  "codigo": "7.02",
+  "bloque": 7,
+  "nivel": 1,
+  "titulo": "Rentas, préstamos y cuadros de amortización",
+  "q": "En un préstamo francés, la primera cuota es casi toda intereses. ¿Significa que el banco los cobra por adelantado?",
+  "a": "**No: los cobra sobre el capital vivo, que al principio es casi todo el préstamo.** Si aún se debe casi todo, el interés de ese período es alto en términos absolutos. La proporción cambia sola a medida que baja la deuda pendiente.",
+  "opciones": [
+   "No: la proporción alta se debe a la comisión de apertura repartida en las primeras cuotas",
+   "No: los cobra sobre el capital vivo, que al principio es casi todo el préstamo",
+   "Sí: se cobra primero el interés y al final el capital",
+   "Sí, y por eso la amortización anticipada resulta poco ventajosa al inicio"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "7.02#t2",
+  "codigo": "7.02",
+  "bloque": 7,
+  "nivel": 1,
+  "titulo": "Rentas, préstamos y cuadros de amortización",
+  "q": "Al aplicar la fórmula de Gordon, la tasa de crecimiento g resulta igual o superior al tipo de descuento i. ¿Qué se hace?",
+  "a": "**Se revisa el supuesto: el resultado es negativo o infinito, es decir, un sinsentido.** Un crecimiento perpetuo superior al tipo de descuento implicaría que el flujo acaba superando a cualquier magnitud finita, incluida la economía entera. Es imposible por construcción.",
+  "opciones": [
+   "Se acepta el resultado: indica un activo de valor muy elevado",
+   "Se aplica la fórmula solo a los primeros diez años",
+   "Se sustituye i por g para evitar la división por cero",
+   "Se revisa el supuesto: el resultado es negativo o infinito, es decir, un sinsentido"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "7.02#t3",
+  "codigo": "7.02",
+  "bloque": 7,
+  "nivel": 1,
+  "titulo": "Rentas, préstamos y cuadros de amortización",
+  "q": "Dos préstamos ofrecen el mismo tipo nominal. ¿Basta para concluir que cuestan lo mismo?",
+  "a": "**No: comisión de apertura, tasación, seguros vinculados y gastos de formalización elevan el tipo efectivo por encima del nominal.** Es el mismo mecanismo del coste efectivo: hay que meter en el cálculo todos los flujos asociados a la operación, no solo los intereses.",
+  "opciones": [
+   "No, pero la diferencia es siempre marginal",
+   "Sí: el tipo nominal determina los intereses de cada período",
+   "No: comisión de apertura, tasación, seguros vinculados y gastos de formalización elevan el tipo efectivo por encima del nominal",
+   "Sí, siempre que el plazo también coincida"
+  ],
+  "correcta": 2
+ },
+ {
   "id": "7.03#0",
   "codigo": "7.03",
   "bloque": 7,
@@ -6842,6 +15737,70 @@ export default [
   "titulo": "Criterios de inversión: VAN, TIR y sus trampas",
   "q": "¿Por qué no se restan los intereses de los flujos de un proyecto?",
   "a": "Porque el coste de la financiación ya está incorporado en la tasa de descuento. Restarlo también del numerador lo contabilizaría dos veces. Los flujos son antes de intereses; la financiación vive en el denominador."
+ },
+ {
+  "id": "7.03#t0",
+  "codigo": "7.03",
+  "bloque": 7,
+  "nivel": 2,
+  "titulo": "Criterios de inversión: VAN, TIR y sus trampas",
+  "q": "Hay que elegir un proyecto y solo uno. El A tiene una TIR del 40 % sobre 10.000 € y el B del 15 % sobre 500.000 €. ¿Cuál se elige?",
+  "a": "**El B: crea 75.000 € de valor frente a los 4.000 € del A, y en proyectos excluyentes manda el VAN.** El criterio correcto cuando hay que elegir uno y solo uno es siempre el VAN, porque mide creación de valor en euros y no en tanto por ciento.",
+  "opciones": [
+   "El A, porque su rentabilidad es mucho mayor",
+   "Es indiferente: ambos superan cualquier coste de capital razonable",
+   "El B: crea 75.000 € de valor frente a los 4.000 € del A, y en proyectos excluyentes manda el VAN",
+   "El A, salvo que la empresa no pueda colocar los 490.000 € restantes"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "7.03#t1",
+  "codigo": "7.03",
+  "bloque": 7,
+  "nivel": 2,
+  "titulo": "Criterios de inversión: VAN, TIR y sus trampas",
+  "q": "Los flujos de un proyecto cambian de signo más de una vez. ¿Puede aplicarse la regla «aceptar si la TIR supera al coste de capital»?",
+  "a": "**No: puede haber varias TIR o ninguna, y la regla pierde entonces todo sentido.** Hay que recurrir al VAN, que está bien definido para cualquier serie de flujos y no depende de cuántas veces cambien de signo.",
+  "opciones": [
+   "No: puede haber varias TIR o ninguna, y la regla pierde entonces todo sentido",
+   "Sí, tomando la mayor de las TIR obtenidas",
+   "No, salvo que el cambio de signo se produzca en el último período",
+   "Sí: la TIR está definida para cualquier serie de flujos"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "7.03#t2",
+  "codigo": "7.03",
+  "bloque": 7,
+  "nivel": 2,
+  "titulo": "Criterios de inversión: VAN, TIR y sus trampas",
+  "q": "Se comparan dos proyectos por su VAN: uno dura diez años y otro cinco. ¿Es una comparación válida tal cual?",
+  "a": "**No: el proyecto largo tiene más ocasiones de generar valor, y hay que igualar horizontes o usar la anualidad equivalente.** La anualidad equivalente traduce cada VAN a un flujo anual constante, que sí es comparable porque se expresa en la misma unidad temporal.",
+  "opciones": [
+   "Sí, si ambos se descuentan a la misma tasa",
+   "No, pero basta con dividir cada VAN entre los años de vida del proyecto",
+   "No: el proyecto largo tiene más ocasiones de generar valor, y hay que igualar horizontes o usar la anualidad equivalente",
+   "Sí: el VAN ya incorpora el momento de cada flujo"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "7.03#t3",
+  "codigo": "7.03",
+  "bloque": 7,
+  "nivel": 2,
+  "titulo": "Criterios de inversión: VAN, TIR y sus trampas",
+  "q": "¿Qué papel debe tener el plazo de recuperación en la decisión de inversión?",
+  "a": "**Servir como filtro de liquidez o de riesgo político, nunca como criterio principal.** Como filtro es razonable: en un país con riesgo de expropiación, recuperar la inversión en tres años en lugar de doce cambia de verdad la exposición.",
+  "opciones": [
+   "Descartarse por completo: no aporta información útil",
+   "Ser el criterio principal, por su sencillez y su prudencia",
+   "Sustituir al VAN cuando los flujos son difíciles de estimar",
+   "Servir como filtro de liquidez o de riesgo político, nunca como criterio principal"
+  ],
+  "correcta": 3
  },
  {
   "id": "7.04#0",
@@ -6889,6 +15848,70 @@ export default [
   "a": "Porque el estado de flujos parte del resultado ya apalancado, con intereses pagados y su escudo fiscal incorporado. El FCF los excluye: 12.000 € de intereses menos 3.000 € de ahorro fiscal explican los 9.000 € de diferencia."
  },
  {
+  "id": "7.04#t0",
+  "codigo": "7.04",
+  "bloque": 7,
+  "nivel": 2,
+  "titulo": "Estimación de flujos de caja libres",
+  "q": "Una empresa ha gastado 200.000 € en un estudio de viabilidad. ¿Deben incluirse en los flujos del proyecto?",
+  "a": "**No: son coste hundido, irrecuperable y ajeno a la decisión de acometer o no el proyecto.** Incluirlo lleva tanto a rechazar proyectos buenos —porque el estudio los hace parecer caros— como a persistir en malos para «no perder lo invertido».",
+  "opciones": [
+   "No: son coste hundido, irrecuperable y ajeno a la decisión de acometer o no el proyecto",
+   "No, salvo que el estudio pueda venderse a un tercero",
+   "Sí, repartidos a lo largo de la vida del proyecto",
+   "Sí: son un desembolso real atribuible al proyecto"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "7.04#t1",
+  "codigo": "7.04",
+  "bloque": 7,
+  "nivel": 2,
+  "titulo": "Estimación de flujos de caja libres",
+  "q": "El proyecto usará una nave que la empresa ya tiene vacía y en propiedad. ¿Qué coste se imputa?",
+  "a": "**El coste de oportunidad: lo que la nave rendiría en su mejor uso alternativo, por ejemplo alquilada.** Y no solo con naves: terrenos, marcas y tiempo de directivos son los casos habituales, y todos se olvidan por la misma razón, que no generan factura.",
+  "opciones": [
+   "Su valor contable neto, repartido entre los años del proyecto",
+   "Ninguno: la nave ya es de la empresa y no supone desembolso",
+   "Su precio de adquisición actualizado por inflación",
+   "El coste de oportunidad: lo que la nave rendiría en su mejor uso alternativo, por ejemplo alquilada"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "7.04#t2",
+  "codigo": "7.04",
+  "bloque": 7,
+  "nivel": 2,
+  "titulo": "Estimación de flujos de caja libres",
+  "q": "¿Por qué no deben restarse los intereses de los flujos de caja del proyecto?",
+  "a": "**Porque el coste de la financiación ya está en la tasa de descuento, y restarlo también del numerador lo cuenta dos veces.** Descontar es precisamente la operación que penaliza el flujo por el coste del dinero. Hacerlo dos veces hunde el VAN de forma artificial.",
+  "opciones": [
+   "Porque los intereses corresponden a la empresa y no al proyecto",
+   "Porque su importe es imposible de estimar antes de contratar la financiación",
+   "Porque los intereses no son un gasto deducible del proyecto",
+   "Porque el coste de la financiación ya está en la tasa de descuento, y restarlo también del numerador lo cuenta dos veces"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "7.04#t3",
+  "codigo": "7.04",
+  "bloque": 7,
+  "nivel": 2,
+  "titulo": "Estimación de flujos de caja libres",
+  "q": "En una valoración, el valor residual supone dos tercios del total. ¿Qué conviene hacer?",
+  "a": "**Comprobar los supuestos: la valoración no descansa en los flujos proyectados sino en dos parámetros de una fórmula.** Todo el peso recae sobre la g de crecimiento perpetuo y la tasa de descuento. Con una g superior al crecimiento nominal de la economía, el negocio acabaría siendo mayor que el PIB.",
+  "opciones": [
+   "Nada: es habitual en negocios en crecimiento y confirma su potencial",
+   "Alargar el período explícito hasta que el residual baje del 10 %",
+   "Comprobar los supuestos: la valoración no descansa en los flujos proyectados sino en dos parámetros de una fórmula",
+   "Eliminar el valor residual y quedarse solo con el período explícito"
+  ],
+  "correcta": 2
+ },
+ {
   "id": "7.05#0",
   "codigo": "7.05",
   "bloque": 7,
@@ -6932,6 +15955,70 @@ export default [
   "titulo": "Coste de capital y WACC",
   "q": "Un proyecto es más arriesgado que la empresa. ¿Qué pasa si se descuenta al WACC corporativo?",
   "a": "Sale sobrevalorado y se aprueba con demasiada facilidad. Repetido sistemáticamente, desplaza el perfil de riesgo de la empresa hacia lo arriesgado sin que nadie haya tomado esa decisión de forma explícita."
+ },
+ {
+  "id": "7.05#t0",
+  "codigo": "7.05",
+  "bloque": 7,
+  "nivel": 3,
+  "titulo": "Coste de capital y WACC",
+  "q": "Los fondos propios no devengan intereses ni aparecen en la cuenta de resultados. ¿Tienen coste?",
+  "a": "**Sí: tienen coste de oportunidad, el rendimiento que el accionista exige por asumir ese riesgo.** El accionista podría invertir en otra cosa de riesgo parecido. Si la empresa no le da al menos eso, está destruyendo valor aunque presente beneficios.",
+  "opciones": [
+   "No, salvo que se repartan dividendos",
+   "Sí, pero solo en sociedades cotizadas, donde hay precio de mercado",
+   "Sí: tienen coste de oportunidad, el rendimiento que el accionista exige por asumir ese riesgo",
+   "No: por eso financiarse con capital propio es la opción más barata"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "7.05#t1",
+  "codigo": "7.05",
+  "bloque": 7,
+  "nivel": 3,
+  "titulo": "Coste de capital y WACC",
+  "q": "Una empresa cotizada tiene una capitalización que triplica su patrimonio neto contable. ¿Con qué valores debe ponderar el WACC?",
+  "a": "**Con valores de mercado: lo que se pondera es el capital realmente en juego.** Usar contables infrapondera enormemente el peso de los recursos propios y devuelve un WACC artificialmente bajo, que hace parecer aceptables proyectos que no lo son.",
+  "opciones": [
+   "Con la media de ambos, para moderar la volatilidad bursátil",
+   "Con valores contables corregidos por el fondo de comercio",
+   "Con valores contables, que son los auditados y verificables",
+   "Con valores de mercado: lo que se pondera es el capital realmente en juego"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "7.05#t2",
+  "codigo": "7.05",
+  "bloque": 7,
+  "nivel": 3,
+  "titulo": "Coste de capital y WACC",
+  "q": "¿Qué coste de la deuda hay que usar en el WACC?",
+  "a": "**El actual: el tipo al que la empresa se financiaría hoy.** El coste de capital es una magnitud prospectiva: sirve para descontar flujos futuros, así que se construye con condiciones actuales.",
+  "opciones": [
+   "El menor de los dos, por prudencia",
+   "El actual: el tipo al que la empresa se financiaría hoy",
+   "El histórico: el tipo medio que la empresa está pagando por su deuda viva",
+   "El tipo legal del dinero, por ser una referencia objetiva"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "7.05#t3",
+  "codigo": "7.05",
+  "bloque": 7,
+  "nivel": 3,
+  "titulo": "Coste de capital y WACC",
+  "q": "El WACC ya incorpora el coste de la deuda después de impuestos. ¿Debe además sumarse el escudo fiscal a los flujos?",
+  "a": "**No: ya está en la tasa, y contarlo dos veces infla el valor.** Es el error simétrico al de restar los intereses del flujo, y en la misma valoración pueden aparecer los dos, cada uno empujando en sentido contrario.",
+  "opciones": [
+   "No, porque el escudo fiscal solo se aplica en la valoración de empresas, no de proyectos",
+   "Sí, si el proyecto se financia mayoritariamente con deuda",
+   "Sí: el ahorro fiscal es un flujo real que hay que recoger",
+   "No: ya está en la tasa, y contarlo dos veces infla el valor"
+  ],
+  "correcta": 3
  },
  {
   "id": "7.06#0",
@@ -6979,6 +16066,70 @@ export default [
   "a": "Los efectos se multiplican: una caída de ventas del 10 % puede reducir el beneficio del accionista en un 80 % o más. Es la combinación que concentra las quiebras en las recesiones, y por eso los sectores con costes fijos altos deben moderar la deuda."
  },
  {
+  "id": "7.06#t0",
+  "codigo": "7.06",
+  "bloque": 7,
+  "nivel": 3,
+  "titulo": "Estructura de capital: Modigliani-Miller e impuestos",
+  "q": "¿Qué dice exactamente el teorema de Modigliani-Miller?",
+  "a": "**Que no importa bajo unos supuestos que no se cumplen, lo que señala dónde buscar: impuestos, insolvencia, información asimétrica o incentivos.** Su valor está en el contrapositivo: si la financiación sí afecta al valor, tiene que ser por alguna de esas fricciones, y ahí es donde hay que mirar.",
+  "opciones": [
+   "Que la forma de financiarse no importa, así que la estructura de capital es irrelevante",
+   "Que la deuda siempre aumenta el valor de la empresa por el escudo fiscal",
+   "Que no importa bajo unos supuestos que no se cumplen, lo que señala dónde buscar: impuestos, insolvencia, información asimétrica o incentivos",
+   "Que existe un ratio de endeudamiento óptimo calculable para cada empresa"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "7.06#t1",
+  "codigo": "7.06",
+  "bloque": 7,
+  "nivel": 3,
+  "titulo": "Estructura de capital: Modigliani-Miller e impuestos",
+  "q": "La deuda es más barata que los fondos propios. ¿Basta con endeudarse más para bajar el coste de capital?",
+  "a": "**No: endeudarse eleva el riesgo del accionista y con él el coste de los fondos propios, y sin impuestos ambos efectos se cancelan.** Es el resultado central de Modigliani-Miller: la palanca redistribuye el riesgo entre acreedores y accionistas, pero no lo hace desaparecer.",
+  "opciones": [
+   "Sí, hasta el límite que permitan los covenants bancarios",
+   "No: endeudarse eleva el riesgo del accionista y con él el coste de los fondos propios, y sin impuestos ambos efectos se cancelan",
+   "No, porque el coste de la deuda sube con el endeudamiento hasta igualar al de los fondos propios",
+   "Sí: sustituir recursos caros por baratos reduce necesariamente la media ponderada"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "7.06#t2",
+  "codigo": "7.06",
+  "bloque": 7,
+  "nivel": 3,
+  "titulo": "Estructura de capital: Modigliani-Miller e impuestos",
+  "q": "¿Puede aplicarse el escudo fiscal de la deuda sin límite?",
+  "a": "**No: hace falta beneficio suficiente contra el que deducir, y en España rige además el tope del 30 % del beneficio operativo.** Una empresa en pérdidas no obtiene ahorro fiscal, justo cuando más endeudada suele estar. El escudo desaparece precisamente en el peor momento.",
+  "opciones": [
+   "No: solo es deducible la mitad de los intereses",
+   "Sí, siempre que la deuda sea con entidades financieras",
+   "Sí: los intereses son siempre gasto deducible",
+   "No: hace falta beneficio suficiente contra el que deducir, y en España rige además el tope del 30 % del beneficio operativo"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "7.06#t3",
+  "codigo": "7.06",
+  "bloque": 7,
+  "nivel": 3,
+  "titulo": "Estructura de capital: Modigliani-Miller e impuestos",
+  "q": "Una empresa con costes fijos elevados se endeuda fuertemente. ¿Qué efecto tiene la combinación?",
+  "a": "**Se multiplican: la misma caída de ventas queda amplificada dos veces.** Primero los costes fijos amplifican la caída de ventas hasta el resultado operativo, y después los intereses amplifican esa caída hasta el resultado del accionista.",
+  "opciones": [
+   "Se compensan: el apalancamiento financiero diversifica el riesgo operativo",
+   "Es neutra: son riesgos de naturaleza distinta y no interactúan",
+   "Se multiplican: la misma caída de ventas queda amplificada dos veces",
+   "Reduce el riesgo total, porque la deuda aporta disciplina en el control de costes"
+  ],
+  "correcta": 2
+ },
+ {
   "id": "7.07#0",
   "codigo": "7.07",
   "bloque": 7,
@@ -7022,6 +16173,70 @@ export default [
   "titulo": "Política de dividendos y retribución al accionista",
   "q": "¿Qué es un superdividendo en el SEC 2010 y por qué importa?",
   "a": "Un reparto que excede claramente la renta empresarial del período, pagado con reservas o con la venta de activos. Se clasifica como retirada de capital, no como renta de la propiedad, y por tanto no reduce el déficit de la administración que lo cobra."
+ },
+ {
+  "id": "7.07#t0",
+  "codigo": "7.07",
+  "bloque": 7,
+  "nivel": 3,
+  "titulo": "Política de dividendos y retribución al accionista",
+  "q": "Una acción reparte un dividendo del 5 % sobre su cotización. ¿Es un rendimiento que se añade al del precio?",
+  "a": "**No: el precio cae aproximadamente en el importe repartido el día que la acción cotiza sin derecho a él.** El dividendo transforma valor de acción en efectivo, no lo crea. Es el mismo bolsillo con el dinero cambiado de sitio.",
+  "opciones": [
+   "No: el precio cae aproximadamente en el importe repartido el día que la acción cotiza sin derecho a él",
+   "No, porque el dividendo tributa y reduce la rentabilidad neta",
+   "Sí, siempre que la empresa mantenga el beneficio",
+   "Sí: el accionista cobra el dividendo y conserva la acción"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "7.07#t1",
+  "codigo": "7.07",
+  "bloque": 7,
+  "nivel": 3,
+  "titulo": "Política de dividendos y retribución al accionista",
+  "q": "¿Sobre qué magnitud conviene evaluar si un dividendo es sostenible?",
+  "a": "**Sobre la caja: el beneficio incorpora amortizaciones y estimaciones, y el dividendo se paga con efectivo.** La pregunta relevante es de dónde sale el dinero: si el flujo de explotación menos la inversión de mantenimiento no cubre el reparto, el dividendo lo paga alguien más.",
+  "opciones": [
+   "Sobre la cifra de ventas, que es la magnitud menos manipulable",
+   "Sobre el patrimonio neto, para no descapitalizar la empresa",
+   "Sobre el beneficio, mediante el pay-out",
+   "Sobre la caja: el beneficio incorpora amortizaciones y estimaciones, y el dividendo se paga con efectivo"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "7.07#t2",
+  "codigo": "7.07",
+  "bloque": 7,
+  "nivel": 3,
+  "titulo": "Política de dividendos y retribución al accionista",
+  "q": "Una acción presenta una rentabilidad por dividendo muy superior a la de su sector. ¿Es buena señal?",
+  "a": "**A menudo no: suele venir de un precio que ha caído, y anticipa un recorte del dividendo.** El mercado ha vendido la acción por algo, y ese algo suele ser la sospecha de que el dividendo no se sostiene. La rentabilidad alta es entonces un síntoma, no un premio.",
+  "opciones": [
+   "Es indiferente: la rentabilidad por dividendo no aporta información",
+   "Sí, si la empresa lleva años sin recortar el reparto",
+   "A menudo no: suele venir de un precio que ha caído, y anticipa un recorte del dividendo",
+   "Sí: indica una política de retribución generosa"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "7.07#t3",
+  "codigo": "7.07",
+  "bloque": 7,
+  "nivel": 3,
+  "titulo": "Política de dividendos y retribución al accionista",
+  "q": "Una empresa tiene proyectos con VAN positivo sin financiar y decide repartir dividendo. ¿Qué ocurre?",
+  "a": "**Es el único caso en que la decisión de dividendo destruye valor de forma inequívoca.** La prioridad es invertir en lo que rinde por encima del coste de capital; el residuo es lo que se reparte. Repartir antes de invertir renuncia a valor que estaba disponible.",
+  "opciones": [
+   "Se crea valor, porque el reparto disciplina a los directivos",
+   "Depende de si el dividendo es en efectivo o en acciones",
+   "Nada relevante: el accionista decide qué hacer con su dinero",
+   "Es el único caso en que la decisión de dividendo destruye valor de forma inequívoca"
+  ],
+  "correcta": 3
  },
  {
   "id": "7.08#0",
@@ -7069,6 +16284,70 @@ export default [
   "a": "Directa: cuando el sector público alarga sus plazos, está financiándose con las NOF de sus proveedores, que deben cubrir esa brecha con crédito bancario. Los planes de pago a proveedores fueron, en estos términos, una inyección de fondo de maniobra al sector privado."
  },
  {
+  "id": "7.08#t0",
+  "codigo": "7.08",
+  "bloque": 7,
+  "nivel": 2,
+  "titulo": "Gestión del circulante y necesidades operativas de fondos",
+  "q": "¿Qué distingue a las necesidades operativas de fondos del fondo de maniobra?",
+  "a": "**Las NOF son lo que el negocio necesita; el fondo de maniobra, lo que la estructura financiera proporciona.** Si las NOF superan al fondo de maniobra, la diferencia hay que financiarla con recursos negociados: ese hueco es el problema de tesorería que hay que ver venir.",
+  "opciones": [
+   "Nada: son dos nombres de la misma magnitud, calculada de distinta forma",
+   "Las NOF son a corto plazo y el fondo de maniobra a largo",
+   "Las NOF son lo que el negocio necesita; el fondo de maniobra, lo que la estructura financiera proporciona",
+   "Las NOF se calculan a coste y el fondo de maniobra a precio de venta"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "7.08#t1",
+  "codigo": "7.08",
+  "bloque": 7,
+  "nivel": 2,
+  "titulo": "Gestión del circulante y necesidades operativas de fondos",
+  "q": "Contablemente las NOF son activo corriente. ¿Cómo deben tratarse desde el punto de vista financiero?",
+  "a": "**Como inversión permanente: el nivel agregado no baja mientras el negocio funcione, aunque cada partida concreta rote.** Por eso financiarlas con recursos a corto es un desajuste estructural: se está cubriendo una inversión permanente con dinero que puede desaparecer.",
+  "opciones": [
+   "Como activo a corto plazo: cada partida rota en pocos meses",
+   "Como un gasto del ejercicio, ya que se renuevan continuamente",
+   "Como inversión permanente: el nivel agregado no baja mientras el negocio funcione, aunque cada partida concreta rote",
+   "Como pasivo, porque su financiación exige recursos ajenos"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "7.08#t2",
+  "codigo": "7.08",
+  "bloque": 7,
+  "nivel": 2,
+  "titulo": "Gestión del circulante y necesidades operativas de fondos",
+  "q": "Un proveedor ofrece un 2 % de descuento por pagar a 10 días en lugar de a 60. ¿Conviene aceptarlo?",
+  "a": "**Sí casi siempre: equivale a un coste anual en torno al 15,7 %, más caro que casi cualquier financiación disponible.** Un 2 % durante 50 días, capitalizado al año, da alrededor del 15,7 %. Rechazar el descuento es contratar crédito a ese tipo sin darse cuenta.",
+  "opciones": [
+   "Sí casi siempre: equivale a un coste anual en torno al 15,7 %, más caro que casi cualquier financiación disponible",
+   "No: renunciar a 50 días de financiación gratuita por un 2 % no compensa",
+   "Es indiferente: un 2 % es una cifra marginal",
+   "Solo si la empresa tiene exceso de tesorería sin remunerar"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "7.08#t3",
+  "codigo": "7.08",
+  "bloque": 7,
+  "nivel": 2,
+  "titulo": "Gestión del circulante y necesidades operativas de fondos",
+  "q": "Un plan de negocio proyecta duplicar las ventas en tres años. ¿Qué es lo que más se olvida?",
+  "a": "**Proyectar las NOF, que crecen con las ventas y absorben caja en la misma proporción.** Es el error más caro de los planes de negocio: crecer vendiendo a crédito y con más almacén consume dinero, y el plan enseña beneficios mientras la tesorería se agota.",
+  "opciones": [
+   "Proyectar las NOF, que crecen con las ventas y absorben caja en la misma proporción",
+   "Ajustar los precios por inflación",
+   "Incorporar el efecto fiscal del mayor beneficio",
+   "Revisar la amortización del inmovilizado existente"
+  ],
+  "correcta": 0
+ },
+ {
   "id": "7.09#0",
   "codigo": "7.09",
   "bloque": 7,
@@ -7112,6 +16391,70 @@ export default [
   "titulo": "Valoración de empresas: descuento de flujos y múltiplos",
   "q": "¿Cómo valora el SEC 2010 las participaciones en sociedades no cotizadas?",
   "a": "Estimando su valor de mercado, habitualmente capitalizando magnitudes con múltiplos de cotizadas comparables del mismo sector, o en su defecto con el valor de los fondos propios contables ajustado. Es la técnica de múltiplos aplicada a escala sectorial."
+ },
+ {
+  "id": "7.09#t0",
+  "codigo": "7.09",
+  "bloque": 7,
+  "nivel": 3,
+  "titulo": "Valoración de empresas: descuento de flujos y múltiplos",
+  "q": "Se descuentan los flujos de caja libres al WACC y se obtienen 50 millones. ¿Cuánto valen los fondos propios?",
+  "a": "**50 millones menos la deuda neta: el descuento al WACC da el valor del negocio, no el de los accionistas.** Confundirlos sobrevalora la participación en el importe íntegro de la deuda, que en empresas apalancadas puede ser la mitad del valor.",
+  "opciones": [
+   "50 millones: es el valor que arroja el descuento",
+   "50 millones más la tesorería disponible",
+   "50 millones menos el patrimonio neto contable",
+   "50 millones menos la deuda neta: el descuento al WACC da el valor del negocio, no el de los accionistas"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "7.09#t1",
+  "codigo": "7.09",
+  "bloque": 7,
+  "nivel": 3,
+  "titulo": "Valoración de empresas: descuento de flujos y múltiplos",
+  "q": "¿Cuál de estos múltiplos está mal construido?",
+  "a": "**EV / beneficio neto.** El numerador incluye a los acreedores y el denominador es una magnitud que ya ha pagado los intereses: se compara el valor de todos con el resultado de unos pocos.",
+  "opciones": [
+   "EV / ventas",
+   "EV / EBITDA",
+   "EV / beneficio neto",
+   "PER, es decir, precio / beneficio neto"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "7.09#t2",
+  "codigo": "7.09",
+  "bloque": 7,
+  "nivel": 3,
+  "titulo": "Valoración de empresas: descuento de flujos y múltiplos",
+  "q": "¿Cuál es la comprobación más barata para detectar errores en un descuento de flujos?",
+  "a": "**Mirar qué múltiplo sobre EBITDA implica el valor terminal y compararlo con lo que se paga en el sector.** Es la verificación que más errores detecta: si el terminal implica un múltiplo muy por encima del que se paga en el sector, el modelo está diciendo algo que el mercado no respalda.",
+  "opciones": [
+   "Recalcular el WACC con datos de mercado actualizados",
+   "Repetir la proyección con un año más de horizonte explícito",
+   "Contrastar el resultado con el patrimonio neto contable",
+   "Mirar qué múltiplo sobre EBITDA implica el valor terminal y compararlo con lo que se paga en el sector"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "7.09#t3",
+  "codigo": "7.09",
+  "bloque": 7,
+  "nivel": 3,
+  "titulo": "Valoración de empresas: descuento de flujos y múltiplos",
+  "q": "¿Cómo se eligen las empresas comparables para una valoración por múltiplos?",
+  "a": "**Porque compartan los determinantes del valor: crecimiento, margen, intensidad de capital y riesgo.** El múltiplo resume esos cuatro factores en un número. Si difieren, el múltiplo no es trasladable por mucho que coincida la actividad.",
+  "opciones": [
+   "Por tamaño similar en cifra de negocio",
+   "Por epígrafe de actividad, para asegurar que operan en el mismo sector",
+   "Porque compartan los determinantes del valor: crecimiento, margen, intensidad de capital y riesgo",
+   "Por cotizar en el mismo mercado y con liquidez parecida"
+  ],
+  "correcta": 2
  },
  {
   "id": "7.10#0",
@@ -7159,6 +16502,70 @@ export default [
   "a": "No. Es una operación financiera de compraventa de participaciones: cambia de manos la propiedad de activos existentes. Solo la reorganización posterior, si traslada funciones o intangibles entre países, altera los flujos que las cuentas nacionales registran."
  },
  {
+  "id": "7.10#t0",
+  "codigo": "7.10",
+  "bloque": 7,
+  "nivel": 4,
+  "titulo": "Fusiones, adquisiciones y creación de valor",
+  "q": "Una adquisición mejora el beneficio por acción del comprador. ¿Prueba que crea valor?",
+  "a": "**No: comprar una empresa con un PER inferior al propio mejora el BPA por aritmética, incluso con sinergias nulas o negativas.** Es un efecto contable sin contenido económico: se emiten pocas acciones caras a cambio de muchos beneficios baratos, y el cociente sube solo.",
+  "opciones": [
+   "Sí: el BPA es la medida directa de lo que gana el accionista",
+   "No, salvo que el pago se realice en efectivo",
+   "Sí, siempre que la mejora se mantenga más de un ejercicio",
+   "No: comprar una empresa con un PER inferior al propio mejora el BPA por aritmética, incluso con sinergias nulas o negativas"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "7.10#t1",
+  "codigo": "7.10",
+  "bloque": 7,
+  "nivel": 4,
+  "titulo": "Fusiones, adquisiciones y creación de valor",
+  "q": "¿A qué tasa deben descontarse los flujos de la empresa que se quiere adquirir?",
+  "a": "**A una tasa que refleje el riesgo del negocio adquirido.** La tasa depende del riesgo de los flujos que se descuentan, y esos flujos los genera el negocio comprado, no el que compra.",
+  "opciones": [
+   "A la media de los WACC de ambas empresas, ponderada por tamaño",
+   "A una tasa que refleje el riesgo del negocio adquirido",
+   "Al WACC del comprador, que es quien realiza la inversión",
+   "Al WACC del comprador tras la operación, ya incorporada la nueva deuda"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "7.10#t2",
+  "codigo": "7.10",
+  "bloque": 7,
+  "nivel": 4,
+  "titulo": "Fusiones, adquisiciones y creación de valor",
+  "q": "¿Dónde deben incorporarse las sinergias esperadas de una operación?",
+  "a": "**Fuera de él: el valor autónomo es lo que la empresa vale sola, y las sinergias son lo que justifica la prima.** Y de ahí sale el techo racional del precio: valor autónomo más sinergias. Sin ese límite escrito antes de negociar, la dinámica competitiva empuja por encima.",
+  "opciones": [
+   "En el valor terminal, que es donde se materializan",
+   "En la tasa de descuento, rebajándola para recoger la mejora esperada",
+   "Fuera de él: el valor autónomo es lo que la empresa vale sola, y las sinergias son lo que justifica la prima",
+   "En el valor autónomo del objetivo, para reflejar su potencial real"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "7.10#t3",
+  "codigo": "7.10",
+  "bloque": 7,
+  "nivel": 4,
+  "titulo": "Fusiones, adquisiciones y creación de valor",
+  "q": "Una operación se justifica por la diversificación: los dos negocios no están correlacionados. ¿Reduce eso el riesgo para el accionista?",
+  "a": "**No de forma que le compense: el accionista puede diversificar comprando acciones de ambas, y mucho más barato que pagando una prima de control.** La diversificación conglomeral es una de las justificaciones más habituales y peor fundadas: hace el trabajo que el inversor ya puede hacer solo, cobrándole una prima por ello.",
+  "opciones": [
+   "Sí, y además reduce el coste de capital del grupo",
+   "Sí: la combinación estabiliza los resultados del grupo",
+   "No, porque la diversificación exige que los negocios estén correlacionados negativamente",
+   "No de forma que le compense: el accionista puede diversificar comprando acciones de ambas, y mucho más barato que pagando una prima de control"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "8.01#0",
   "codigo": "8.01",
   "bloque": 8,
@@ -7202,6 +16609,70 @@ export default [
   "titulo": "Sistema financiero: intermediarios, mercados e instrumentos",
   "q": "¿En qué subsector del SEC 2010 está un fondo de inversión no monetario?",
   "a": "S.124. La subdivisión de S.12 en nueve subsectores permite seguir el desplazamiento de la intermediación desde la banca de depósitos hacia otros vehículos, una transformación estructural de la última década."
+ },
+ {
+  "id": "8.01#t0",
+  "codigo": "8.01",
+  "bloque": 8,
+  "nivel": 1,
+  "titulo": "Sistema financiero: intermediarios, mercados e instrumentos",
+  "q": "Un inversor compra acciones de Telefónica en bolsa por 10.000 €. ¿Cuánto dinero recibe la empresa?",
+  "a": "**Nada: el dinero va al vendedor anterior, no a la empresa.** Solo el mercado primario capta financiación nueva. El secundario es indispensable —sin él nadie acudiría al primario— pero no aporta un euro al emisor.",
+  "opciones": [
+   "10.000 €, menos las comisiones del intermediario",
+   "Nada: el dinero va al vendedor anterior, no a la empresa",
+   "La parte proporcional a su autocartera",
+   "10.000 €, contabilizados como ampliación de capital"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "8.01#t1",
+  "codigo": "8.01",
+  "bloque": 8,
+  "nivel": 1,
+  "titulo": "Sistema financiero: intermediarios, mercados e instrumentos",
+  "q": "Una entidad tiene activos muy por encima de sus deudas pero no puede atender los pagos de mañana. ¿Qué problema tiene?",
+  "a": "**De liquidez: es solvente, pero sus activos no se convierten en dinero al ritmo que exigen los vencimientos.** Son problemas distintos, y confundirlos es el error de fondo de esta ficha. Una entidad solvente puede caer por iliquidez si nadie le presta a tiempo.",
+  "opciones": [
+   "De solvencia, porque no puede hacer frente a sus obligaciones",
+   "De rentabilidad, porque sus activos no generan lo suficiente",
+   "De liquidez: es solvente, pero sus activos no se convierten en dinero al ritmo que exigen los vencimientos",
+   "De ambos: la iliquidez implica insolvencia"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "8.01#t2",
+  "codigo": "8.01",
+  "bloque": 8,
+  "nivel": 1,
+  "titulo": "Sistema financiero: intermediarios, mercados e instrumentos",
+  "q": "Un banco publica un CET1 del 13 %. ¿Sobre qué está calculado ese porcentaje?",
+  "a": "**Sobre los activos ponderados por riesgo, no sobre el activo total.** La deuda pública pondera poco y el crédito al consumo mucho, así que un 13 % de CET1 puede corresponder a un porcentaje mucho menor sobre el activo total.",
+  "opciones": [
+   "Sobre los activos ponderados por riesgo, no sobre el activo total",
+   "Sobre el activo total del balance",
+   "Sobre los depósitos de la clientela",
+   "Sobre el volumen de crédito concedido"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "8.01#t3",
+  "codigo": "8.01",
+  "bloque": 8,
+  "nivel": 1,
+  "titulo": "Sistema financiero: intermediarios, mercados e instrumentos",
+  "q": "Un particular tiene 250.000 € en una cuenta de un banco que quiebra. ¿Qué está garantizado?",
+  "a": "**100.000 €; el resto queda como acreedor ordinario en el concurso.** Son 100.000 € por titular y entidad. Por eso los saldos grandes tienen incentivo pleno a salir al primer rumor, que es lo que convierte una duda en una retirada masiva.",
+  "opciones": [
+   "El importe íntegro, por tratarse de un depósito a la vista",
+   "El 75 %, según el orden de prelación de acreedores",
+   "Nada: la garantía cubre solo depósitos a plazo",
+   "100.000 €; el resto queda como acreedor ordinario en el concurso"
+  ],
+  "correcta": 3
  },
  {
   "id": "8.02#0",
@@ -7249,6 +16720,70 @@ export default [
   "a": "Porque la deuda PDE se mide a valor nominal, no de mercado. El valor de mercado de los títulos en circulación sí cayó, y eso aparece en las cuentas financieras como revalorización negativa, pero no en la cifra de deuda que se vigila fiscalmente."
  },
  {
+  "id": "8.02#t0",
+  "codigo": "8.02",
+  "bloque": 8,
+  "nivel": 3,
+  "titulo": "Renta fija: precio, TIR, duración y convexidad",
+  "q": "«La renta fija no tiene riesgo porque los flujos están pactados de antemano.» ¿Es cierto?",
+  "a": "**No: los flujos son fijos, el valor no. Un bono largo puede perder un 25 % en un año de subida de tipos.** El riesgo de tipo de interés es real y proporcional a la duración: el precio es el valor actual de los flujos, y descontarlos a un tipo mayor los hace valer menos.",
+  "opciones": [
+   "Sí, salvo que el emisor impague",
+   "No: los flujos son fijos, el valor no. Un bono largo puede perder un 25 % en un año de subida de tipos",
+   "Sí, si se compra en emisión y no en mercado secundario",
+   "No, pero solo en bonos sin cupón"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "8.02#t1",
+  "codigo": "8.02",
+  "bloque": 8,
+  "nivel": 3,
+  "titulo": "Renta fija: precio, TIR, duración y convexidad",
+  "q": "Un bono vence dentro de diez años. ¿Cuál es su duración?",
+  "a": "**Menos de diez años, salvo que sea un cupón cero.** Con cupones, parte del valor se cobra antes del vencimiento, así que el plazo medio ponderado de los flujos es siempre menor que diez años.",
+  "opciones": [
+   "Diez años, por definición de duración",
+   "Más de diez años, porque incorpora los cupones",
+   "Menos de diez años, salvo que sea un cupón cero",
+   "Depende del emisor, no del calendario de flujos"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "8.02#t2",
+  "codigo": "8.02",
+  "bloque": 8,
+  "nivel": 3,
+  "titulo": "Renta fija: precio, TIR, duración y convexidad",
+  "q": "Los tipos suben tres puntos de golpe, como en 2022. ¿Basta la duración para estimar la caída del precio?",
+  "a": "**No: es una aproximación lineal y el error crece con el cuadrado de la variación; hay que corregir por convexidad.** Con medio punto el error es despreciable; con tres puntos la corrección por convexidad deja de ser un refinamiento y pasa a ser necesaria.",
+  "opciones": [
+   "No: es una aproximación lineal y el error crece con el cuadrado de la variación; hay que corregir por convexidad",
+   "Sí: la duración modificada da la variación exacta del precio",
+   "Sí, si se aplica sobre la duración de Macaulay en lugar de la modificada",
+   "No, porque la duración solo sirve para bajadas de tipos"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "8.02#t3",
+  "codigo": "8.02",
+  "bloque": 8,
+  "nivel": 3,
+  "titulo": "Renta fija: precio, TIR, duración y convexidad",
+  "q": "Un bono ofrece una TIR del 6 % y otro del 4 %. ¿Es mejor el primero?",
+  "a": "**No necesariamente: la TIR más alta puede estar retribuyendo un mayor riesgo de impago.** La comparación exige separar el tipo sin riesgo del diferencial de crédito. Si no se hace, se confunde una prima de riesgo con una oportunidad.",
+  "opciones": [
+   "Sí: la TIR mide la rentabilidad de la inversión",
+   "Sí, si ambos vencen el mismo día",
+   "No necesariamente: la TIR más alta puede estar retribuyendo un mayor riesgo de impago",
+   "No: una TIR alta indica siempre un bono sobrevalorado"
+  ],
+  "correcta": 2
+ },
+ {
   "id": "8.03#0",
   "codigo": "8.03",
   "bloque": 8,
@@ -7292,6 +16827,70 @@ export default [
   "titulo": "Estructura temporal de tipos y curva de rendimientos",
   "q": "¿Por qué importa la vida media de la deuda pública cuando suben los tipos?",
   "a": "Porque determina la velocidad con que la subida llega al gasto por intereses. Con vida media larga, el valor de mercado de la deuda cae de inmediato pero el presupuesto solo lo nota a medida que los títulos vencen y se refinancian."
+ },
+ {
+  "id": "8.03#t0",
+  "codigo": "8.03",
+  "bloque": 8,
+  "nivel": 3,
+  "titulo": "Estructura temporal de tipos y curva de rendimientos",
+  "q": "Para construir la estructura temporal de tipos, ¿qué tipos hay que usar?",
+  "a": "**Los tipos cupón cero, obtenidos por bootstrapping a partir de los bonos con cupón.** Solo un tipo cupón cero corresponde a un único flujo en una única fecha, que es lo que hace comparables dos plazos distintos.",
+  "opciones": [
+   "Los tipos cupón cero, obtenidos por bootstrapping a partir de los bonos con cupón",
+   "Las TIR de los bonos con cupón de cada plazo",
+   "Los tipos oficiales del banco central para cada vencimiento",
+   "La media de las TIR de todos los emisores de cada plazo"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "8.03#t1",
+  "codigo": "8.03",
+  "bloque": 8,
+  "nivel": 3,
+  "titulo": "Estructura temporal de tipos y curva de rendimientos",
+  "q": "El tipo forward implícito a un año dentro de un año es del 3 %. ¿Es esa la previsión del mercado?",
+  "a": "**No: el forward es la expectativa más la prima de plazo, y la prima no es observable.** Extraer expectativas puras exige un modelo que estime la prima. Leer el forward como predicción atribuye al mercado una previsión que no ha hecho.",
+  "opciones": [
+   "Sí: los forwards son la expectativa del mercado por construcción",
+   "No: el forward es la expectativa más la prima de plazo, y la prima no es observable",
+   "Sí, siempre que la curva tenga pendiente positiva",
+   "No: los forwards solo reflejan el coste de financiar la posición"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "8.03#t2",
+  "codigo": "8.03",
+  "bloque": 8,
+  "nivel": 3,
+  "titulo": "Estructura temporal de tipos y curva de rendimientos",
+  "q": "La curva de tipos está completamente plana. ¿Qué indica?",
+  "a": "**Que el mercado espera bajadas de tipos, si la prima de plazo es positiva.** Si se exige una prima por comprometer dinero a largo, hace falta esperar bajadas suficientes para anularla y dejar la curva horizontal.",
+  "opciones": [
+   "Que el mercado no tiene expectativas definidas sobre los tipos futuros",
+   "Que la política monetaria es neutral",
+   "Que el mercado espera bajadas de tipos, si la prima de plazo es positiva",
+   "Que los plazos largos y cortos tienen el mismo riesgo"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "8.03#t3",
+  "codigo": "8.03",
+  "bloque": 8,
+  "nivel": 3,
+  "titulo": "Estructura temporal de tipos y curva de rendimientos",
+  "q": "La curva se invierte. ¿Debe leerse como señal de recesión?",
+  "a": "**Como indicador informativo, no como regla mecánica: hay menos de diez recesiones en la muestra, falsos positivos y desfases muy variables.** Es un indicador que merece atención y no una regla de decisión. Tratarlo como regla confunde una regularidad con una ley.",
+  "opciones": [
+   "Sí: no ha fallado nunca en las últimas décadas",
+   "No: la inversión de la curva no guarda relación con el ciclo",
+   "Sí, y permite además fechar el inicio de la recesión con precisión trimestral",
+   "Como indicador informativo, no como regla mecánica: hay menos de diez recesiones en la muestra, falsos positivos y desfases muy variables"
+  ],
+  "correcta": 3
  },
  {
   "id": "8.04#0",
@@ -7339,6 +16938,70 @@ export default [
   "a": "No. Es una revalorización, que en el SEC 2010 se registra fuera de las operaciones, en la cuenta de revalorización. El ahorro es renta no consumida; que suban los precios de los activos ya poseídos es otra cosa."
  },
  {
+  "id": "8.04#t0",
+  "codigo": "8.04",
+  "bloque": 8,
+  "nivel": 2,
+  "titulo": "Renta variable: valoración y análisis fundamental",
+  "q": "Una utility cotiza a PER 12 y una tecnológica a PER 35. ¿Está la primera más barata?",
+  "a": "**No se puede concluir: el múltiplo depende del crecimiento, del riesgo y de la política de reparto, que difieren estructuralmente entre sectores.** Comparar PER entre sectores es como comparar precios sin mirar qué se compra. La comparación válida es dentro del mismo sector y con negocios equiparables.",
+  "opciones": [
+   "Sí: paga menos veces el beneficio",
+   "No se puede concluir: el múltiplo depende del crecimiento, del riesgo y de la política de reparto, que difieren estructuralmente entre sectores",
+   "Sí, si ambas tienen el mismo ROE",
+   "No: un PER alto indica siempre mejor calidad de negocio"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "8.04#t1",
+  "codigo": "8.04",
+  "bloque": 8,
+  "nivel": 2,
+  "titulo": "Renta variable: valoración y análisis fundamental",
+  "q": "Una empresa cíclica está en el pico del ciclo y su PER es muy bajo. ¿Qué significa?",
+  "a": "**Que su beneficio es máximo y el PER parece bajo justo cuando la acción está cara.** Por eso hay que normalizar el beneficio, promediándolo a lo largo del ciclo, antes de calcular el múltiplo.",
+  "opciones": [
+   "Que el mercado la está infravalorando claramente",
+   "Que su beneficio es máximo y el PER parece bajo justo cuando la acción está cara",
+   "Que el mercado espera un crecimiento muy alto",
+   "Que su riesgo percibido ha caído"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "8.04#t2",
+  "codigo": "8.04",
+  "bloque": 8,
+  "nivel": 2,
+  "titulo": "Renta variable: valoración y análisis fundamental",
+  "q": "Una empresa con ROE del 6 % y coste de los fondos propios del 10 % decide retener todo el beneficio para crecer. ¿Crea valor?",
+  "a": "**No: con un ROE inferior al coste de los fondos propios, cada euro retenido vale menos de un euro.** La empresa debería repartir. Es la misma idea que en la política de dividendos: solo se retiene lo que rinde por encima de lo que exige el accionista.",
+  "opciones": [
+   "Sí: retener beneficio siempre financia crecimiento futuro",
+   "Depende del sector en que reinvierta",
+   "No: con un ROE inferior al coste de los fondos propios, cada euro retenido vale menos de un euro",
+   "Sí, porque evita el coste fiscal del reparto de dividendos"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "8.04#t3",
+  "codigo": "8.04",
+  "bloque": 8,
+  "nivel": 2,
+  "titulo": "Renta variable: valoración y análisis fundamental",
+  "q": "Una acción cotiza con un P/VC de 0,7. ¿Es señal de infravaloración?",
+  "a": "**Suele indicar lo contrario: que el mercado espera un ROE por debajo del coste de los fondos propios.** La relación P/VC = (ROE − g)/(k − g) lo hace explícito. Solo hay oportunidad si uno cree que ese ROE esperado es demasiado pesimista.",
+  "opciones": [
+   "Sí: se compra por 70 céntimos un euro de patrimonio contable",
+   "Suele indicar lo contrario: que el mercado espera un ROE por debajo del coste de los fondos propios",
+   "Sí, siempre que la empresa no tenga deuda",
+   "No aporta información: el valor contable es un dato histórico"
+  ],
+  "correcta": 1
+ },
+ {
   "id": "8.05#0",
   "codigo": "8.05",
   "bloque": 8,
@@ -7382,6 +17045,70 @@ export default [
   "titulo": "Riesgo, rentabilidad y diversificación",
   "q": "¿Por qué falla la diversificación en las crisis?",
   "a": "Porque las correlaciones aumentan: las ventas forzadas, los movimientos de aversión al riesgo y la percepción de un choque común hacen que activos habitualmente independientes caigan a la vez. Las correlaciones estimadas en calma subestiman el riesgo de cola."
+ },
+ {
+  "id": "8.05#t0",
+  "codigo": "8.05",
+  "bloque": 8,
+  "nivel": 3,
+  "titulo": "Riesgo, rentabilidad y diversificación",
+  "q": "Un activo es muy volátil por sí solo. ¿Aumenta necesariamente el riesgo de la cartera al incorporarlo?",
+  "a": "**No: si está poco correlacionado con el resto, puede reducir el riesgo total.** Dentro de una cartera lo relevante es la covarianza con el resto, no la volatilidad individual. Juzgar cada activo por separado lleva a rechazar precisamente lo que más diversifica.",
+  "opciones": [
+   "Sí: la volatilidad de la cartera es la media ponderada de las individuales",
+   "No: si está poco correlacionado con el resto, puede reducir el riesgo total",
+   "Sí, salvo que se le dé un peso inferior al 5 %",
+   "Depende únicamente de su rentabilidad esperada"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "8.05#t1",
+  "codigo": "8.05",
+  "bloque": 8,
+  "nivel": 3,
+  "titulo": "Riesgo, rentabilidad y diversificación",
+  "q": "Una cartera tiene treinta valores, todos del mercado español y del sector bancario. ¿Está bien diversificada?",
+  "a": "**No: lo que importa es la estructura de correlaciones, y esos treinta valores se mueven casi juntos.** Treinta valores altamente correlacionados se comportan casi como uno solo. La diversificación la da la correlación, no el número.",
+  "opciones": [
+   "Sí: treinta posiciones superan de sobra el umbral habitual",
+   "Sí, siempre que ninguna pese más del 10 %",
+   "No: lo que importa es la estructura de correlaciones, y esos treinta valores se mueven casi juntos",
+   "No se puede saber sin conocer la rentabilidad esperada de cada valor"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "8.05#t2",
+  "codigo": "8.05",
+  "bloque": 8,
+  "nivel": 3,
+  "titulo": "Riesgo, rentabilidad y diversificación",
+  "q": "¿Hasta dónde puede reducirse el riesgo añadiendo activos a una cartera?",
+  "a": "**Hasta el riesgo sistemático, que la diversificación no elimina.** En el ejemplo de la ficha la volatilidad no baja del 16,4 % por muchos activos que se añadan. Esa parte irreducible es justamente la que el mercado remunera.",
+  "opciones": [
+   "Hasta cero, si se añaden suficientes activos",
+   "Hasta el riesgo sistemático, que la diversificación no elimina",
+   "Hasta la mitad del riesgo del activo menos volátil",
+   "No hay límite teórico, solo costes de transacción"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "8.05#t3",
+  "codigo": "8.05",
+  "bloque": 8,
+  "nivel": 3,
+  "titulo": "Riesgo, rentabilidad y diversificación",
+  "q": "Una cartera se optimiza con correlaciones estimadas en un período de calma. ¿Qué riesgo se corre?",
+  "a": "**Que la cartera esté menos diversificada de lo que aparenta, porque las correlaciones aumentan en las crisis.** Las correlaciones se disparan justo cuando se necesita la protección, así que la cobertura desaparece en el único escenario en que hacía falta.",
+  "opciones": [
+   "Ninguno: son los datos más limpios, sin episodios atípicos",
+   "Sobrestimar la rentabilidad esperada de los activos defensivos",
+   "Que la cartera esté menos diversificada de lo que aparenta, porque las correlaciones aumentan en las crisis",
+   "Que la optimización no converja numéricamente"
+  ],
+  "correcta": 2
  },
  {
   "id": "8.06#0",
@@ -7429,6 +17156,70 @@ export default [
   "a": "Que la cartera de mercado verdadera es inobservable, porque incluiría inmuebles, capital humano y activos no cotizados. Todo contraste del CAPM es en realidad un contraste conjunto del modelo y del índice usado como aproximación."
  },
  {
+  "id": "8.06#t0",
+  "codigo": "8.06",
+  "bloque": 8,
+  "nivel": 3,
+  "titulo": "CAPM, beta y modelos multifactor",
+  "q": "¿Qué parte del riesgo de un activo remunera el mercado?",
+  "a": "**Solo la sistemática: nadie paga prima por asumir un riesgo que se puede eliminar diversificando.** En el ejemplo de la ficha, la mitad de la volatilidad de la acción es específica y no recibe compensación alguna.",
+  "opciones": [
+   "Solo la sistemática: nadie paga prima por asumir un riesgo que se puede eliminar diversificando",
+   "La volatilidad total del activo",
+   "La parte específica, que es la propia del negocio",
+   "La mayor de las dos, según cuál domine"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "8.06#t1",
+  "codigo": "8.06",
+  "bloque": 8,
+  "nivel": 3,
+  "titulo": "CAPM, beta y modelos multifactor",
+  "q": "Dos analistas estiman la beta de la misma acción y obtienen 0,8 y 1,3. ¿Cómo puede ser?",
+  "a": "**La beta no es una característica objetiva: depende del período, la frecuencia, el índice y si se ajusta.** Dos estimaciones igualmente defendibles pueden diferir en varias décimas, y esa diferencia se traslada entera al coste de capital.",
+  "opciones": [
+   "Uno de los dos ha cometido un error de cálculo",
+   "La beta no es una característica objetiva: depende del período, la frecuencia, el índice y si se ajusta",
+   "Han usado modelos distintos: uno el CAPM y otro un multifactor",
+   "Es imposible: la beta es un dato de mercado observable"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "8.06#t2",
+  "codigo": "8.06",
+  "bloque": 8,
+  "nivel": 3,
+  "titulo": "CAPM, beta y modelos multifactor",
+  "q": "Un fondo obtiene alfa positivo de forma sostenida. ¿Prueba la habilidad del gestor?",
+  "a": "**No necesariamente: puede reflejar exposición a factores que un modelo de un solo índice no recoge.** Tamaño, valor, momento y calidad explican buena parte de lo que durante décadas se atribuyó a talento: era exposición sistemática con otro nombre.",
+  "opciones": [
+   "Sí, si el alfa es estadísticamente significativo",
+   "Sí: por definición, el alfa es el exceso no explicado por el mercado",
+   "No necesariamente: puede reflejar exposición a factores que un modelo de un solo índice no recoge",
+   "No: el alfa positivo sostenido es imposible en mercados eficientes"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "8.06#t3",
+  "codigo": "8.06",
+  "bloque": 8,
+  "nivel": 3,
+  "titulo": "CAPM, beta y modelos multifactor",
+  "q": "¿Puede usarse la media histórica de la prima de riesgo como estimación de la prima esperada?",
+  "a": "**Con cautela: incluso con un siglo de datos el intervalo de confianza abarca varios puntos porcentuales.** Y eso importa porque esos puntos se trasladan íntegros al coste de capital y de ahí a cualquier valoración que se apoye en él.",
+  "opciones": [
+   "Sí: con un siglo de datos la estimación es muy precisa",
+   "Con cautela: incluso con un siglo de datos el intervalo de confianza abarca varios puntos porcentuales",
+   "No: la prima esperada es observable en el mercado de opciones",
+   "Sí, siempre que se use la media geométrica en lugar de la aritmética"
+  ],
+  "correcta": 1
+ },
+ {
   "id": "8.07#0",
   "codigo": "8.07",
   "bloque": 8,
@@ -7472,6 +17263,70 @@ export default [
   "titulo": "Eficiencia de mercados y finanzas conductuales",
   "q": "La bolsa sube un 30 % en un año. ¿Aumenta el PIB por ello?",
   "a": "No directamente: la revalorización de activos existentes no es producción ni renta, se registra en la cuenta de revalorización. Sí computa la actividad asociada —comisiones, intermediación— como producción del período."
+ },
+ {
+  "id": "8.07#t0",
+  "codigo": "8.07",
+  "bloque": 8,
+  "nivel": 3,
+  "titulo": "Eficiencia de mercados y finanzas conductuales",
+  "q": "Un mercado es eficiente. ¿Significa que sus precios son correctos?",
+  "a": "**No: significa que reflejan la información disponible, no que acierten.** Un precio puede incorporar toda la información pública y resultar equivocado después, sencillamente porque el futuro trajo algo que nadie sabía.",
+  "opciones": [
+   "Sí: eficiencia y precio justo son lo mismo",
+   "No: significa que reflejan la información disponible, no que acierten",
+   "Sí, salvo en los mercados poco líquidos",
+   "No: significa que nadie puede perder dinero invirtiendo a largo plazo"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "8.07#t1",
+  "codigo": "8.07",
+  "bloque": 8,
+  "nivel": 3,
+  "titulo": "Eficiencia de mercados y finanzas conductuales",
+  "q": "Un gestor lleva ocho años seguidos batiendo a su índice. ¿Es prueba de habilidad?",
+  "a": "**No: en una población de miles de gestores, algunos acumularán rachas largas por puro azar.** Distinguir habilidad de suerte exige series muy largas y control por exposición a factores, porque parte del exceso puede ser prima de riesgo disfrazada.",
+  "opciones": [
+   "Sí: ocho años es una serie suficientemente larga",
+   "Sí, si además el fondo tiene un patrimonio elevado",
+   "No: en una población de miles de gestores, algunos acumularán rachas largas por puro azar",
+   "No: batir al índice ocho años seguidos es estadísticamente imposible"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "8.07#t2",
+  "codigo": "8.07",
+  "bloque": 8,
+  "nivel": 3,
+  "titulo": "Eficiencia de mercados y finanzas conductuales",
+  "q": "Una estadística muestra que los fondos de renta variable han rendido de media un 9 % anual en veinte años. ¿Qué falta comprobar?",
+  "a": "**Si incluye a los fondos que cerraron: los que lo hicieron mal desaparecen y solo quedan los supervivientes.** El sesgo de supervivencia infla cualquier estadística sobre la industria construida solo con los fondos que siguen vivos.",
+  "opciones": [
+   "Si la cifra es nominal o real",
+   "Si incluye a los fondos que cerraron: los que lo hicieron mal desaparecen y solo quedan los supervivientes",
+   "Si el período incluye alguna recesión",
+   "Si la media es aritmética o geométrica"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "8.07#t3",
+  "codigo": "8.07",
+  "bloque": 8,
+  "nivel": 3,
+  "titulo": "Eficiencia de mercados y finanzas conductuales",
+  "q": "Si los mercados fueran perfectamente eficientes, ¿tendría sentido analizar empresas?",
+  "a": "**La paradoja de Grossman y Stiglitz señala que no: si nadie analizara, los precios dejarían de ser informativos.** El equilibrio exige ineficiencia suficiente para pagar el análisis que hace eficientes los precios. La eficiencia perfecta se destruiría a sí misma.",
+  "opciones": [
+   "No: sería un gasto sin contrapartida",
+   "Sí, pero solo para inversores institucionales",
+   "No: bastaría con comprar el índice y olvidarse",
+   "La paradoja de Grossman y Stiglitz señala que no: si nadie analizara, los precios dejarían de ser informativos"
+  ],
+  "correcta": 3
  },
  {
   "id": "8.08#0",
@@ -7519,6 +17374,70 @@ export default [
   "a": "No. Los flujos de liquidación de derivados son operaciones financieras, no rentas de la propiedad, y por tanto no alteran el gasto por intereses D.41 ni el déficit. Solo cambian la posición financiera neta."
  },
  {
+  "id": "8.08#t0",
+  "codigo": "8.08",
+  "bloque": 8,
+  "nivel": 4,
+  "titulo": "Derivados I: futuros y forwards",
+  "q": "El futuro del petróleo a seis meses cotiza por debajo del precio de contado. ¿Espera el mercado que baje?",
+  "a": "**No necesariamente: el precio del futuro sale del arbitraje, y puede reflejar simplemente que el activo paga rendimientos por poseerlo.** Entre el contado y el futuro median el coste de financiación, el de almacenamiento y el rendimiento por conveniencia de tener el activo físico.",
+  "opciones": [
+   "Sí: el futuro es la previsión del mercado sobre el precio futuro",
+   "No necesariamente: el precio del futuro sale del arbitraje, y puede reflejar simplemente que el activo paga rendimientos por poseerlo",
+   "Sí, y la diferencia mide la caída esperada en porcentaje",
+   "No: el futuro siempre cotiza por debajo del contado"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "8.08#t1",
+  "codigo": "8.08",
+  "bloque": 8,
+  "nivel": 4,
+  "titulo": "Derivados I: futuros y forwards",
+  "q": "Una empresa cubre su exposición con futuros y la cobertura funciona. ¿Puede aun así tener un problema?",
+  "a": "**Sí: la liquidación diaria puede exigir garantías antes de que llegue la compensación de la partida cubierta.** La cobertura puede ser correcta y aun así generar salidas de caja masivas: hay que cuantificar la garantía exigible en el escenario adverso antes de montarla.",
+  "opciones": [
+   "No: si la cobertura funciona, el riesgo queda neutralizado",
+   "Sí: la liquidación diaria puede exigir garantías antes de que llegue la compensación de la partida cubierta",
+   "Sí, pero solo si el mercado es poco líquido",
+   "No, salvo que haya errado el número de contratos"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "8.08#t2",
+  "codigo": "8.08",
+  "bloque": 8,
+  "nivel": 4,
+  "titulo": "Derivados I: futuros y forwards",
+  "q": "Se quiere cubrir una posición cuyo subyacente no coincide exactamente con el del futuro disponible. ¿Cuántos contratos hay que usar?",
+  "a": "**Los que resulten de aplicar la correlación por el cociente de volatilidades.** Es el ratio de cobertura de mínima varianza: recoge cuánto se mueven juntos y cuánto se mueve cada uno.",
+  "opciones": [
+   "Los que igualen el nominal, uno por uno",
+   "Los que resulten de aplicar la correlación por el cociente de volatilidades",
+   "Los que igualen la duración de ambas posiciones",
+   "El doble del nominal, para cubrir también el riesgo de base"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "8.08#t3",
+  "codigo": "8.08",
+  "bloque": 8,
+  "nivel": 4,
+  "titulo": "Derivados I: futuros y forwards",
+  "q": "Una empresa vende futuros sobre un activo que no produce ni posee. ¿Es una cobertura?",
+  "a": "**No: sin exposición previa que compensar, es tomar una posición direccional.** La distinción es exactamente esa. Sin exposición previa no hay nada que compensar, y lo que parece prudencia es especulación.",
+  "opciones": [
+   "Sí, si la intención declarada es reducir riesgo",
+   "Sí: vender futuros es siempre una posición defensiva",
+   "Depende de si la operación se registra en la cartera de negociación",
+   "No: sin exposición previa que compensar, es tomar una posición direccional"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "8.09#0",
   "codigo": "8.09",
   "bloque": 8,
@@ -7562,6 +17481,70 @@ export default [
   "titulo": "Derivados II: opciones y Black-Scholes",
   "q": "¿Cómo registra el SEC 2010 las opciones concedidas a empleados?",
   "a": "Como remuneración de asalariados D.11, valoradas a valor razonable en la concesión. Son coste laboral y forman parte del valor añadido distribuido al trabajo, aunque no supongan salida de caja para la empresa."
+ },
+ {
+  "id": "8.09#t0",
+  "codigo": "8.09",
+  "bloque": 8,
+  "nivel": 4,
+  "titulo": "Derivados II: opciones y Black-Scholes",
+  "q": "¿Dónde aparece la rentabilidad esperada del subyacente en la fórmula de Black-Scholes?",
+  "a": "**En ningún sitio, y no es un olvido: el argumento de réplica hace que el precio dependa solo de lo que cuesta construir la cartera equivalente.** Dos inversores con expectativas opuestas sobre la acción deben coincidir en el precio de la opción, porque ambos pueden replicarla al mismo coste.",
+  "opciones": [
+   "En la deriva del proceso del subyacente",
+   "En ningún sitio, y no es un olvido: el argumento de réplica hace que el precio dependa solo de lo que cuesta construir la cartera equivalente",
+   "Está implícita en el tipo sin riesgo",
+   "Aparece solo en las opciones de venta"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "8.09#t1",
+  "codigo": "8.09",
+  "bloque": 8,
+  "nivel": 4,
+  "titulo": "Derivados II: opciones y Black-Scholes",
+  "q": "Sube la volatilidad esperada del subyacente. ¿A quién beneficia?",
+  "a": "**Al comprador de opciones, tanto de compra como de venta.** La pérdida del comprador está limitada a la prima y la ganancia no, así que más dispersión de resultados aumenta el valor de la opción.",
+  "opciones": [
+   "Al comprador de opciones de compra y perjudica al de opciones de venta",
+   "Al vendedor de opciones, que cobra más prima",
+   "Al comprador de opciones, tanto de compra como de venta",
+   "A nadie: la volatilidad no afecta al precio de la opción"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "8.09#t2",
+  "codigo": "8.09",
+  "bloque": 8,
+  "nivel": 4,
+  "titulo": "Derivados II: opciones y Black-Scholes",
+  "q": "Una cartera está cubierta por delta. ¿Queda protegida frente a un movimiento brusco del subyacente?",
+  "a": "**No: la delta cambia al moverse el subyacente, y esa variación —la gamma— desajusta la cobertura.** En movimientos grandes el desajuste es rápido y sustancial, que es cuando más falta hacía la cobertura.",
+  "opciones": [
+   "Sí: la delta mide exactamente la sensibilidad al subyacente",
+   "No: la delta cambia al moverse el subyacente, y esa variación —la gamma— desajusta la cobertura",
+   "Sí, si se recalcula la delta al cierre de cada sesión",
+   "No, porque la delta solo cubre movimientos a la baja"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "8.09#t3",
+  "codigo": "8.09",
+  "bloque": 8,
+  "nivel": 4,
+  "titulo": "Derivados II: opciones y Black-Scholes",
+  "q": "La volatilidad implícita de las opciones sobre un índice está en el 22 %. ¿Es la previsión del mercado sobre la volatilidad futura?",
+  "a": "**No: incorpora la expectativa más una prima de riesgo, y ha superado sistemáticamente a la volatilidad realizada.** Quien vende volatilidad exige ser compensado por asumirla, y esa compensación es la brecha persistente entre implícita y realizada.",
+  "opciones": [
+   "Sí: por eso se la llama la previsión implícita del mercado",
+   "No: es la volatilidad histórica del último año",
+   "Sí, siempre que se tome la de las opciones a dinero",
+   "No: incorpora la expectativa más una prima de riesgo, y ha superado sistemáticamente a la volatilidad realizada"
+  ],
+  "correcta": 3
  },
  {
   "id": "8.10#0",
@@ -7609,6 +17592,70 @@ export default [
   "a": "Porque incentiva a los bancos a concentrar deuda de su propio Estado sin consumo de capital, creando un nexo en el que la solvencia bancaria y la soberana se amplifican mutuamente. Las cuentas financieras por sectores permiten medir esa concentración."
  },
  {
+  "id": "8.10#t0",
+  "codigo": "8.10",
+  "bloque": 8,
+  "nivel": 4,
+  "titulo": "Gestión de riesgos: VaR, cobertura y regulación bancaria",
+  "q": "Una cartera tiene un VaR diario del 1 % al 99 %. ¿Cuál es su pérdida máxima?",
+  "a": "**No lo dice: el VaR es un umbral que no se superará con cierta probabilidad, y calla sobre lo que ocurre por encima.** Dos carteras con el mismo VaR pueden tener pérdidas muy distintas en la cola. Para eso está el déficit esperado, que mide la media de lo que hay más allá del umbral.",
+  "opciones": [
+   "No lo dice: el VaR es un umbral que no se superará con cierta probabilidad, y calla sobre lo que ocurre por encima",
+   "El 1 % del valor de la cartera",
+   "El 1 % multiplicado por el número de días del período",
+   "El 99 % del valor de la cartera, en el peor caso"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "8.10#t1",
+  "codigo": "8.10",
+  "bloque": 8,
+  "nivel": 4,
+  "titulo": "Gestión de riesgos: VaR, cobertura y regulación bancaria",
+  "q": "Un modelo de VaR se calibra con la ventana de los dos últimos años, que han sido tranquilos. ¿Qué ocurre?",
+  "a": "**Produce un VaR bajo justo antes de que deje de serlo.** Por eso la regulación posterior a 2008 exige incorporar períodos de tensión histórica al cálculo, en lugar de dejarlo a la ventana reciente.",
+  "opciones": [
+   "Nada: la ventana reciente es la más representativa del riesgo actual",
+   "Produce un VaR bajo justo antes de que deje de serlo",
+   "El modelo sobrestima el riesgo por falta de episodios extremos",
+   "Deja de ser válido para carteras de renta fija"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "8.10#t2",
+  "codigo": "8.10",
+  "bloque": 8,
+  "nivel": 4,
+  "titulo": "Gestión de riesgos: VaR, cobertura y regulación bancaria",
+  "q": "¿Por qué es problemático suponer normalidad en las rentabilidades financieras?",
+  "a": "**Porque las rentabilidades tienen colas gruesas y asimetría negativa: bajo normalidad, movimientos ya observados varias veces deberían ser casi imposibles.** Es la comprobación que delata el supuesto: si el modelo asigna a un suceso una probabilidad de una vez cada varios miles de años y ha pasado tres veces en dos décadas, el modelo está mal.",
+  "opciones": [
+   "Porque impide calcular el VaR analíticamente",
+   "Porque exige series muy largas para estimar la media",
+   "Porque las rentabilidades tienen colas gruesas y asimetría negativa: bajo normalidad, movimientos ya observados varias veces deberían ser casi imposibles",
+   "Porque la normal no admite correlaciones entre activos"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "8.10#t3",
+  "codigo": "8.10",
+  "bloque": 8,
+  "nivel": 4,
+  "titulo": "Gestión de riesgos: VaR, cobertura y regulación bancaria",
+  "q": "Si todas las entidades usan modelos de riesgo parecidos, ¿qué efecto tiene?",
+  "a": "**Reaccionan a la vez ante las mismas señales, lo que amplifica los movimientos que el modelo pretendía medir.** La medición deja de ser neutral: pasa a formar parte del fenómeno que mide, y ese es un problema que ningún refinamiento del modelo resuelve.",
+  "opciones": [
+   "Ninguno: cada una gestiona su propia cartera",
+   "Reduce el riesgo del sistema, porque todas miden bien",
+   "Mejora la comparabilidad entre entidades sin más consecuencias",
+   "Reaccionan a la vez ante las mismas señales, lo que amplifica los movimientos que el modelo pretendía medir"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "8.11#0",
   "codigo": "8.11",
   "bloque": 8,
@@ -7652,6 +17699,70 @@ export default [
   "titulo": "Fondos de inversión e inversión colectiva",
   "q": "Un fondo acumula sus dividendos sin repartirlos. ¿Aparece esa renta en las cuentas nacionales del hogar partícipe?",
   "a": "Sí. El SEC la imputa como rentas de inversión atribuidas a los partícipes en fondos de inversión (D.443) y registra simultáneamente una reinversión por el mismo importe. La renta figura en el hogar aunque no la haya cobrado, porque el sistema la atribuye a quien soporta el riesgo económico. Es el mismo tratamiento que reciben los seguros y los fondos de pensiones."
+ },
+ {
+  "id": "8.11#t0",
+  "codigo": "8.11",
+  "bloque": 8,
+  "nivel": 2,
+  "titulo": "Fondos de inversión e inversión colectiva",
+  "q": "¿Sobre qué se cobra la comisión de gestión de un fondo?",
+  "a": "**Sobre el patrimonio, todos los años, gane o pierda el fondo.** En un año de caída del 10 % con comisión del 1,8 %, el partícipe pierde el 10 % y además paga el 1,8 %. La comisión no depende del resultado.",
+  "opciones": [
+   "Sobre la ganancia obtenida, como una participación en el resultado",
+   "Sobre el patrimonio, todos los años, gane o pierda el fondo",
+   "Sobre las aportaciones realizadas, en el momento de suscribir",
+   "Sobre la plusvalía, en el momento del reembolso"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "8.11#t1",
+  "codigo": "8.11",
+  "bloque": 8,
+  "nivel": 2,
+  "titulo": "Fondos de inversión e inversión colectiva",
+  "q": "Entra mucho dinero nuevo en un fondo. ¿Diluye eso a los partícipes que ya estaban?",
+  "a": "**No: se emiten participaciones nuevas al valor liquidativo vigente, de modo que el VL no varía.** Es una diferencia esencial con las acciones: entra dinero y se emiten participaciones por el valor exacto que aporta, así que el reparto no cambia.",
+  "opciones": [
+   "Sí, igual que una ampliación de capital diluye a los accionistas",
+   "Sí, salvo que el fondo esté cerrado a nuevas suscripciones",
+   "No: se emiten participaciones nuevas al valor liquidativo vigente, de modo que el VL no varía",
+   "Depende de si el gestor logra invertir el dinero rápidamente"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "8.11#t2",
+  "codigo": "8.11",
+  "bloque": 8,
+  "nivel": 2,
+  "titulo": "Fondos de inversión e inversión colectiva",
+  "q": "Una comisión del 2 % anual, ¿es pequeña frente a una rentabilidad esperada del 7 %?",
+  "a": "**No: hay que compararla con el resultado acumulado, y en treinta años se lleva una fracción enorme de lo ganado.** Y es la única variable que el inversor controla por completo: la rentabilidad futura es incierta y el coste es seguro.",
+  "opciones": [
+   "Sí: se lleva menos de un tercio de la rentabilidad anual",
+   "No: hay que compararla con el resultado acumulado, y en treinta años se lleva una fracción enorme de lo ganado",
+   "Sí, si el fondo bate a su índice",
+   "Es indiferente: lo que importa es la rentabilidad neta que se publica"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "8.11#t3",
+  "codigo": "8.11",
+  "bloque": 8,
+  "nivel": 2,
+  "titulo": "Fondos de inversión e inversión colectiva",
+  "q": "¿En qué se diferencia un fondo de inversión de un depósito bancario?",
+  "a": "**El depósito es un pasivo del banco con remuneración pactada y garantía; el fondo es un patrimonio separado cuyo valor fluctúa.** Que sea patrimonio separado protege al partícipe si quiebra la gestora, y a la vez significa que nadie le garantiza el valor: lo que fluctúa es suyo.",
+  "opciones": [
+   "En nada sustancial: ambos están cubiertos por el fondo de garantía de depósitos",
+   "En el plazo: el depósito es a plazo fijo y el fondo no",
+   "En la fiscalidad, que es lo único que cambia",
+   "El depósito es un pasivo del banco con remuneración pactada y garantía; el fondo es un patrimonio separado cuyo valor fluctúa"
+  ],
+  "correcta": 3
  },
  {
   "id": "9.01#0",
@@ -7699,6 +17810,70 @@ export default [
   "a": "En hogares (S.14), no en sociedades no financieras, porque no puede separarse su patrimonio personal del empresarial. Su excedente se registra como renta mixta (B.3), que retribuye conjuntamente su trabajo y su capital."
  },
  {
+  "id": "9.01#t0",
+  "codigo": "9.01",
+  "bloque": 9,
+  "nivel": 1,
+  "titulo": "La empresa: formas jurídicas y gobierno corporativo",
+  "q": "Un autónomo constituye una sociedad limitada. ¿Queda su patrimonio personal a salvo de las deudas del negocio?",
+  "a": "**No del todo: los avales personales que exige el banco, las deudas con Hacienda y la Seguridad Social en caso de responsabilidad del administrador y la actuación negligente abren brechas importantes.** El aval personal es la más común de todas: el banco lo pide precisamente para neutralizar la responsabilidad limitada, y quien lo firma responde con todo.",
+  "opciones": [
+   "Sí: esa es exactamente la función de la responsabilidad limitada",
+   "Solo hasta el importe del capital social desembolsado",
+   "No del todo: los avales personales que exige el banco, las deudas con Hacienda y la Seguridad Social en caso de responsabilidad del administrador y la actuación negligente abren brechas importantes",
+   "Sí, salvo que la sociedad tenga menos de dos socios"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "9.01#t1",
+  "codigo": "9.01",
+  "bloque": 9,
+  "nivel": 1,
+  "titulo": "La empresa: formas jurídicas y gobierno corporativo",
+  "q": "Una ronda de financiación reduce el porcentaje de los fundadores del 80 % al 55 %. ¿Han perdido valor?",
+  "a": "**No necesariamente: un porcentaje menor sobre una empresa que vale mucho más puede valer bastante más que antes.** Lo que destruye valor no es diluirse, sino hacerlo en una ronda a valoración inferior a la anterior. Confundir ambas cosas lleva a rechazar financiación que interesa.",
+  "opciones": [
+   "Sí: su participación en la empresa es menor",
+   "No necesariamente: un porcentaje menor sobre una empresa que vale mucho más puede valer bastante más que antes",
+   "Sí, en proporción exacta a la dilución sufrida",
+   "No: la dilución nunca afecta al valor de la participación"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "9.01#t2",
+  "codigo": "9.01",
+  "bloque": 9,
+  "nivel": 1,
+  "titulo": "La empresa: formas jurídicas y gobierno corporativo",
+  "q": "Un socio tiene el 51 % del capital. ¿Controla la empresa?",
+  "a": "**No necesariamente: los pactos de socios otorgan derechos de veto que no dependen del porcentaje.** Se puede tener el 51 % y no poder vender la empresa, o el 30 % y bloquear cualquier operación relevante. El control se lee en el pacto, no en el porcentaje.",
+  "opciones": [
+   "Sí: la mayoría del capital da la mayoría de los votos",
+   "Sí, salvo en decisiones que exijan mayoría reforzada por ley",
+   "No: el control depende del consejo de administración, no del capital",
+   "No necesariamente: los pactos de socios otorgan derechos de veto que no dependen del porcentaje"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "9.01#t3",
+  "codigo": "9.01",
+  "bloque": 9,
+  "nivel": 1,
+  "titulo": "La empresa: formas jurídicas y gobierno corporativo",
+  "q": "¿Cuándo conviene firmar el pacto de socios?",
+  "a": "**Al principio, cuando todavía hay acuerdo, porque su función es resolver los desacuerdos futuros.** Negociarlo en pleno conflicto es imposible, y su ausencia convierte cualquier discrepancia en un bloqueo del que a menudo solo se sale vendiendo o cerrando.",
+  "opciones": [
+   "Al principio, cuando todavía hay acuerdo, porque su función es resolver los desacuerdos futuros",
+   "Cuando aparezca el primer desacuerdo serio entre los socios",
+   "En la primera ronda de financiación externa, a exigencia del inversor",
+   "Solo si hay más de tres socios"
+  ],
+  "correcta": 0
+ },
+ {
   "id": "9.02#0",
   "codigo": "9.02",
   "bloque": 9,
@@ -7742,6 +17917,70 @@ export default [
   "titulo": "Análisis del entorno: PESTEL y cinco fuerzas",
   "q": "¿Dónde se observa el reparto del valor de una cadena en contabilidad nacional?",
   "a": "En las tablas de origen y destino, que muestran los consumos intermedios entre ramas, y en el valor añadido bruto sobre producción de cada rama, que indica qué proporción del valor retiene cada eslabón."
+ },
+ {
+  "id": "9.02#t0",
+  "codigo": "9.02",
+  "bloque": 9,
+  "nivel": 1,
+  "titulo": "Análisis del entorno: PESTEL y cinco fuerzas",
+  "q": "¿Qué explican las cinco fuerzas de Porter?",
+  "a": "**La rentabilidad media de un sector, en función de quién captura el valor que se genera en él.** La rentabilidad media depende de la estructura del sector, no del esfuerzo de sus empresas. Hay sectores donde trabajar bien apenas alcanza para sobrevivir.",
+  "opciones": [
+   "Por qué una empresa concreta es más rentable que sus competidoras",
+   "La rentabilidad media de un sector, en función de quién captura el valor que se genera en él",
+   "La evolución previsible de la demanda del sector",
+   "La eficiencia operativa de las empresas del sector"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "9.02#t1",
+  "codigo": "9.02",
+  "bloque": 9,
+  "nivel": 1,
+  "titulo": "Análisis del entorno: PESTEL y cinco fuerzas",
+  "q": "Al aplicar las cinco fuerzas a una cadena de cafeterías, ¿por qué importa cómo se defina el sector?",
+  "a": "**Porque todo el análisis depende de dónde se trace la frontera: restauración, bebidas o experiencia de ocio dan conclusiones distintas.** Cambia quiénes son los competidores, quiénes los sustitutivos y dónde están las barreras. Es la decisión más importante del análisis y la que menos se discute.",
+  "opciones": [
+   "Porque determina qué datos estadísticos están disponibles",
+   "Porque la definición del sector fija el tipo impositivo aplicable",
+   "Porque todo el análisis depende de dónde se trace la frontera: restauración, bebidas o experiencia de ocio dan conclusiones distintas",
+   "No importa: las cinco fuerzas son válidas con cualquier delimitación"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "9.02#t2",
+  "codigo": "9.02",
+  "bloque": 9,
+  "nivel": 1,
+  "titulo": "Análisis del entorno: PESTEL y cinco fuerzas",
+  "q": "Un sector está muy concentrado: tres empresas se reparten el 90 % del mercado. ¿Es rentable?",
+  "a": "**No se sigue: si compiten en precio con costes fijos altos, un sector concentrado puede ser ruinoso.** La concentración facilita la rentabilidad pero no la garantiza. Aerolíneas y siderurgia son concentradas y llevan décadas destruyendo valor.",
+  "opciones": [
+   "Sí: la concentración permite fijar precios por encima del coste",
+   "No se sigue: si compiten en precio con costes fijos altos, un sector concentrado puede ser ruinoso",
+   "Sí, salvo que exista regulación de precios",
+   "No: la concentración atrae siempre la intervención de competencia"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "9.02#t3",
+  "codigo": "9.02",
+  "bloque": 9,
+  "nivel": 1,
+  "titulo": "Análisis del entorno: PESTEL y cinco fuerzas",
+  "q": "¿Qué son los complementadores y por qué se olvidan en el análisis?",
+  "a": "**Agentes que aumentan el valor del producto sin ser proveedores ni clientes, y no encajan en ninguna de las cinco fuerzas.** Los desarrolladores de aplicaciones de una plataforma o los fabricantes de accesorios son decisivos y quedan fuera del esquema original: por eso hay que añadirlos a mano.",
+  "opciones": [
+   "Los distribuidores del producto, que se confunden con los clientes",
+   "Los competidores de sectores adyacentes, que se analizan aparte",
+   "Los proveedores de servicios auxiliares, ya recogidos en el poder de los proveedores",
+   "Agentes que aumentan el valor del producto sin ser proveedores ni clientes, y no encajan en ninguna de las cinco fuerzas"
+  ],
+  "correcta": 3
  },
  {
   "id": "9.03#0",
@@ -7789,6 +18028,70 @@ export default [
   "a": "Pasó de tratarse como consumo intermedio a capitalizarse como formación de capital, dentro de los productos de propiedad intelectual. Es inversión y eleva el nivel del PIB. El capital organizativo, en cambio, sigue sin reconocerse."
  },
  {
+  "id": "9.03#t0",
+  "codigo": "9.03",
+  "bloque": 9,
+  "nivel": 2,
+  "titulo": "Recursos, capacidades y ventaja competitiva",
+  "q": "Una empresa tiene un servicio de atención al cliente excelente. ¿Es una ventaja competitiva?",
+  "a": "**Solo si es mejor que el de sus competidores, difícil de imitar y se traduce en más margen o más volumen.** Una fortaleza es algo que se hace bien; una ventaja competitiva es algo que se hace mejor que los demás y que además se sostiene y se cobra.",
+  "opciones": [
+   "Solo si es mejor que el de sus competidores, difícil de imitar y se traduce en más margen o más volumen",
+   "Sí: es claramente una fortaleza de la empresa",
+   "Sí, si los clientes lo valoran en las encuestas",
+   "No: la atención al cliente nunca es fuente de ventaja"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "9.03#t1",
+  "codigo": "9.03",
+  "bloque": 9,
+  "nivel": 2,
+  "titulo": "Recursos, capacidades y ventaja competitiva",
+  "q": "¿Por qué los recursos que se compran rara vez dan ventaja duradera?",
+  "a": "**Porque si están en venta, los competidores también pueden adquirirlos.** Las capacidades, en cambio, se construyen con el tiempo y por eso son difíciles de replicar: no hay dónde comprarlas.",
+  "opciones": [
+   "Porque se amortizan y pierden valor con el tiempo",
+   "Porque si están en venta, los competidores también pueden adquirirlos",
+   "Porque exigen financiación y elevan el coste de capital",
+   "Porque el mercado los valora siempre por encima de su utilidad"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "9.03#t2",
+  "codigo": "9.03",
+  "bloque": 9,
+  "nivel": 2,
+  "titulo": "Recursos, capacidades y ventaja competitiva",
+  "q": "Una empresa posee una tecnología valiosa, rara e inimitable, y sin embargo no obtiene rentabilidad superior. ¿Qué puede fallar?",
+  "a": "**La organización: no está estructurada para explotarla.** Es la cuarta condición del VRIO, la que más se olvida: hay empresas con tecnología excepcional y estructuras incapaces de convertirla en producto.",
+  "opciones": [
+   "Que la tecnología no esté patentada",
+   "Que el sector no sea rentable en su conjunto",
+   "La organización: no está estructurada para explotarla",
+   "Que la tecnología sea demasiado nueva y el mercado no la entienda"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "9.03#t3",
+  "codigo": "9.03",
+  "bloque": 9,
+  "nivel": 2,
+  "titulo": "Recursos, capacidades y ventaja competitiva",
+  "q": "¿Dónde suelen estar los recursos más difíciles de imitar?",
+  "a": "**En lo menos visible: rutinas, relaciones, cultura y conocimiento tácito.** Lo que se ve se copia. Si un competidor puede describir exactamente en qué consiste tu ventaja, probablemente pueda reproducirla.",
+  "opciones": [
+   "En los activos tecnológicos protegidos por patentes",
+   "En la escala productiva, difícil de replicar por su coste",
+   "En la marca, que exige años de inversión publicitaria",
+   "En lo menos visible: rutinas, relaciones, cultura y conocimiento tácito"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "9.04#0",
   "codigo": "9.04",
   "bloque": 9,
@@ -7832,6 +18135,70 @@ export default [
   "titulo": "Estrategias competitivas y corporativas",
   "q": "Una empresa externaliza su logística. ¿Qué le pasa a su valor añadido?",
   "a": "Se reduce, porque lo que antes era coste de personal propio pasa a ser consumo intermedio. Aparece producción equivalente en la rama de transporte. El valor añadido total de la economía no cambia; su distribución por ramas, sí."
+ },
+ {
+  "id": "9.04#t0",
+  "codigo": "9.04",
+  "bloque": 9,
+  "nivel": 2,
+  "titulo": "Estrategias competitivas y corporativas",
+  "q": "Una empresa baja sus precios por debajo de los de la competencia. ¿Es liderazgo en costes?",
+  "a": "**No: el liderazgo en costes es tener la estructura de costes más baja, lo que permite bajar precios y seguir ganando.** El orden importa: primero la estructura de costes, después el precio. Al revés solo se acelera la pérdida.",
+  "opciones": [
+   "Sí: el liderazgo en costes se manifiesta en precios bajos",
+   "No: el liderazgo en costes es tener la estructura de costes más baja, lo que permite bajar precios y seguir ganando",
+   "Sí, si mantiene la política durante varios ejercicios",
+   "No: es diferenciación por precio"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "9.04#t1",
+  "codigo": "9.04",
+  "bloque": 9,
+  "nivel": 2,
+  "titulo": "Estrategias competitivas y corporativas",
+  "q": "¿Por qué no se pueden perseguir a la vez liderazgo en costes y diferenciación con el mismo modelo?",
+  "a": "**Porque exigen decisiones organizativas opuestas: estandarización frente a variedad, rigidez frente a flexibilidad.** Combinarlas solo es posible mediante una innovación que desplace la frontera, no queriendo las dos cosas con la misma organización.",
+  "opciones": [
+   "Porque la normativa contable obliga a segmentar la información por líneas",
+   "Porque exigen decisiones organizativas opuestas: estandarización frente a variedad, rigidez frente a flexibilidad",
+   "Porque los clientes no aceptan ambas propuestas de una misma marca",
+   "Porque duplicaría los costes de estructura"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "9.04#t2",
+  "codigo": "9.04",
+  "bloque": 9,
+  "nivel": 2,
+  "titulo": "Estrategias competitivas y corporativas",
+  "q": "Una empresa integra verticalmente porque su proveedor gana un buen margen. ¿Es buen motivo?",
+  "a": "**No: si el mercado es competitivo, ese margen retribuye una escala y un conocimiento que habría que replicar.** El criterio correcto es comparar el coste de hacerlo dentro con el de comprarlo fuera, no mirar el beneficio ajeno.",
+  "opciones": [
+   "Sí: ese margen pasa a quedarse en casa",
+   "Sí, si el proveedor es el único del mercado",
+   "No: si el mercado es competitivo, ese margen retribuye una escala y un conocimiento que habría que replicar",
+   "No: la integración vertical está desaconsejada en cualquier caso"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "9.04#t3",
+  "codigo": "9.04",
+  "bloque": 9,
+  "nivel": 2,
+  "titulo": "Estrategias competitivas y corporativas",
+  "q": "¿Qué distingue a una estrategia de una lista de objetivos?",
+  "a": "**Que la estrategia implica renuncias: a qué clientes no servir, qué productos no ofrecer, qué mercados no atender.** Un documento en el que todo son metas y nada son renuncias no es una estrategia: es una declaración de intenciones que no orienta ninguna decisión difícil.",
+  "opciones": [
+   "Que la estrategia se aprueba en consejo y los objetivos no",
+   "Que la estrategia tiene horizonte plurianual",
+   "Que la estrategia se expresa en indicadores cuantificables",
+   "Que la estrategia implica renuncias: a qué clientes no servir, qué productos no ofrecer, qué mercados no atender"
+  ],
+  "correcta": 3
  },
  {
   "id": "9.05#0",
@@ -7879,6 +18246,70 @@ export default [
   "a": "Porque el tejido español está muy sesgado hacia empresas muy pequeñas, que acceden peor a economías de escala, a inversión tecnológica y a las estructuras organizativas —normalización, delegación, medición— que son en sí mismas fuente de eficiencia."
  },
  {
+  "id": "9.05#t0",
+  "codigo": "9.05",
+  "bloque": 9,
+  "nivel": 2,
+  "titulo": "Diseño organizativo y estructuras",
+  "q": "Una empresa anuncia una estrategia nueva y mantiene intacta su estructura. ¿Qué cabe esperar?",
+  "a": "**Que la organización siga ejecutando lo que su estructura, sus incentivos y sus sistemas de medición le permiten.** Anunciar una estrategia nueva sobre una organización diseñada para la anterior produce el comportamiento anterior con vocabulario nuevo.",
+  "opciones": [
+   "Que la estrategia se imponga poco a poco y arrastre a la organización",
+   "Que la organización siga ejecutando lo que su estructura, sus incentivos y sus sistemas de medición le permiten",
+   "Que la transición sea más suave por no añadir cambios simultáneos",
+   "Que el resultado dependa exclusivamente del liderazgo del director general"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "9.05#t1",
+  "codigo": "9.05",
+  "bloque": 9,
+  "nivel": 2,
+  "titulo": "Diseño organizativo y estructuras",
+  "q": "Se decide aplanar la organización eliminando un nivel jerárquico. ¿Qué hay que hacer además?",
+  "a": "**Sustituir la supervisión directa por normalización de resultados o de habilidades.** Ampliar el ámbito de control hace imposible supervisar de cerca, así que la coordinación tiene que venir de otro mecanismo o desaparece.",
+  "opciones": [
+   "Reducir proporcionalmente la plantilla del nivel inferior",
+   "Sustituir la supervisión directa por normalización de resultados o de habilidades",
+   "Revisar el convenio colectivo aplicable",
+   "Nada más: menos niveles significa por sí mismo decisiones más rápidas"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "9.05#t2",
+  "codigo": "9.05",
+  "bloque": 9,
+  "nivel": 2,
+  "titulo": "Diseño organizativo y estructuras",
+  "q": "Se reorganiza la empresa por completo y se mantiene el sistema de retribución variable. ¿Qué ocurre?",
+  "a": "**Se produce el mismo comportamiento de antes: los incentivos suelen pesar más que las líneas del organigrama.** Un organigrama nuevo con la misma retribución variable produce exactamente las mismas conductas, dibujadas en otro sitio.",
+  "opciones": [
+   "El comportamiento cambia con el organigrama, aunque más lentamente",
+   "Se produce el mismo comportamiento de antes: los incentivos suelen pesar más que las líneas del organigrama",
+   "El sistema de incentivos se adapta solo, al cambiar los responsables",
+   "Mejora la coordinación, aunque no la motivación"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "9.05#t3",
+  "codigo": "9.05",
+  "bloque": 9,
+  "nivel": 2,
+  "titulo": "Diseño organizativo y estructuras",
+  "q": "Un equipo de seis personas va lento y se decide duplicarlo a doce. ¿Qué efecto tiene sobre la coordinación?",
+  "a": "**Se multiplica por más de cuatro: los canales de comunicación crecen con el cuadrado del tamaño.** De seis a doce personas los canales pasan de 15 a 66. Añadir gente a un equipo lento suele retrasarlo todavía más.",
+  "opciones": [
+   "Se duplica el esfuerzo de coordinación, en proporción al tamaño",
+   "No cambia: la coordinación depende del método de trabajo, no del número",
+   "Se reduce, porque hay más personas para repartir las tareas de enlace",
+   "Se multiplica por más de cuatro: los canales de comunicación crecen con el cuadrado del tamaño"
+  ],
+  "correcta": 3
+ },
+ {
   "id": "9.06#0",
   "codigo": "9.06",
   "bloque": 9,
@@ -7922,6 +18353,70 @@ export default [
   "titulo": "Dirección de personas: motivación, liderazgo y compensación",
   "q": "¿Qué diferencia hay entre D.11 y D.1 en el SEC 2010?",
   "a": "D.11 son los sueldos y salarios brutos; D.1 añade las cotizaciones sociales a cargo del empleador, efectivas e imputadas. El coste laboral que soporta la empresa es D.1, y comparar países usando solo D.11 distorsiona el análisis."
+ },
+ {
+  "id": "9.06#t0",
+  "codigo": "9.06",
+  "bloque": 9,
+  "nivel": 2,
+  "titulo": "Dirección de personas: motivación, liderazgo y compensación",
+  "q": "Una empresa retribuye a su fuerza de ventas por facturación y no por margen. ¿Por qué suele ocurrir?",
+  "a": "**Porque la facturación se mide sin discusión y el margen exige un sistema de costes decente.** Elegir el indicador por facilidad de medición es la razón más frecuente de que un sistema de incentivos produzca ventas que no interesan.",
+  "opciones": [
+   "Porque la facturación se mide sin discusión y el margen exige un sistema de costes decente",
+   "Porque la facturación es el objetivo prioritario en cualquier empresa",
+   "Porque el margen es información reservada que no puede compartirse",
+   "Porque la normativa laboral impide retribuir sobre magnitudes de resultado"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "9.06#t1",
+  "codigo": "9.06",
+  "bloque": 9,
+  "nivel": 2,
+  "titulo": "Dirección de personas: motivación, liderazgo y compensación",
+  "q": "Un sistema de variable reparte el bono entre seis objetivos al 15 % cada uno. ¿Qué problema tiene?",
+  "a": "**Que ninguno pesa lo suficiente para cambiar el comportamiento, y el sistema se convierte en una nómina complicada.** Dos o tres indicadores orientan de verdad; seis diluyen la señal hasta que nadie modifica su conducta por ninguno.",
+  "opciones": [
+   "Que la suma no llega al 100 %",
+   "Que ninguno pesa lo suficiente para cambiar el comportamiento, y el sistema se convierte en una nómina complicada",
+   "Que los objetivos múltiples son incompatibles entre sí por definición",
+   "Que exige revisar los pesos cada trimestre"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "9.06#t2",
+  "codigo": "9.06",
+  "bloque": 9,
+  "nivel": 2,
+  "titulo": "Dirección de personas: motivación, liderazgo y compensación",
+  "q": "¿Cuándo pueden los incentivos económicos empeorar el resultado?",
+  "a": "**En tareas creativas o de calidad difícil de observar, donde pueden desplazar la motivación intrínseca.** En tareas rutinarias y medibles funcionan bien. En las otras, poner precio a algo que se hacía por interés propio puede sustituir un motivo fuerte por uno débil.",
+  "opciones": [
+   "Cuando el importe del variable supera el 30 % del salario fijo",
+   "Cuando se pagan con periodicidad anual en lugar de trimestral",
+   "En tareas creativas o de calidad difícil de observar, donde pueden desplazar la motivación intrínseca",
+   "Nunca: un incentivo bien diseñado siempre mejora el desempeño"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "9.06#t3",
+  "codigo": "9.06",
+  "bloque": 9,
+  "nivel": 2,
+  "titulo": "Dirección de personas: motivación, liderazgo y compensación",
+  "q": "Dos empresas ofrecen 40.000 € brutos anuales. ¿Cuesta lo mismo cada empleado a ambas?",
+  "a": "**No: el coste incluye las cotizaciones sociales a cargo de la empresa, que elevan sustancialmente el bruto.** En España la diferencia es notable, y confundirlas distorsiona tanto la comparación de ofertas como el cálculo del coste de una contratación.",
+  "opciones": [
+   "Sí: el bruto es el coste para la empresa",
+   "Sí, salvo diferencias en el convenio aplicable",
+   "No: el coste incluye las cotizaciones sociales a cargo de la empresa, que elevan sustancialmente el bruto",
+   "No: depende del tipo de retención de IRPF de cada trabajador"
+  ],
+  "correcta": 2
  },
  {
   "id": "9.07#0",
@@ -7969,6 +18464,70 @@ export default [
   "a": "Porque el IPC pondera con la estructura media de gasto, y esa estructura varía mucho entre grupos. Los hogares de renta baja destinan más proporción a alimentación y energía, así que un episodio concentrado ahí les afecta por encima del índice general."
  },
  {
+  "id": "9.07#t0",
+  "codigo": "9.07",
+  "bloque": 9,
+  "nivel": 2,
+  "titulo": "Marketing estratégico: segmentación y posicionamiento",
+  "q": "Una empresa segmenta su mercado por edad y tamaño de cliente. ¿Es una buena base de segmentación?",
+  "a": "**Solo si esas variables explican diferencias reales de comportamiento de compra.** La segmentación útil se basa en el beneficio buscado o en el comportamiento. Si los grupos no difieren en algo que cambie cómo compran, no son segmentos.",
+  "opciones": [
+   "Sí: son variables objetivas y fáciles de verificar",
+   "Solo si esas variables explican diferencias reales de comportamiento de compra",
+   "Sí, porque permiten construir segmentos de tamaño equilibrado",
+   "No: la segmentación debe hacerse siempre por volumen de facturación"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "9.07#t1",
+  "codigo": "9.07",
+  "bloque": 9,
+  "nivel": 2,
+  "titulo": "Marketing estratégico: segmentación y posicionamiento",
+  "q": "¿Cómo se comprueba que una segmentación propuesta es real y no una descripción bonita?",
+  "a": "**Calculando CLV y CAC por grupo y viendo si difieren de forma significativa.** Si no muestran diferencias medibles en retención, margen o respuesta comercial, no son segmentos: son categorías descriptivas. Y si no difieren, hay que buscar otra base.",
+  "opciones": [
+   "Preguntando a los clientes en qué grupo se reconocen",
+   "Comprobando que los grupos son de tamaño similar",
+   "Verificando que la fuerza comercial los distingue con facilidad",
+   "Calculando CLV y CAC por grupo y viendo si difieren de forma significativa"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "9.07#t2",
+  "codigo": "9.07",
+  "bloque": 9,
+  "nivel": 2,
+  "titulo": "Marketing estratégico: segmentación y posicionamiento",
+  "q": "Dos clientes aportan el mismo margen anual, 200 €, y cuestan lo mismo captar. ¿Valen lo mismo?",
+  "a": "**No: si difieren en retención, uno puede valer más del doble que el otro.** Subir la retención del 60 % al 80 % multiplica el valor del cliente por 2,2 sin captar a nadie ni subir precios. Solo el valor del ciclo de vida revela la diferencia.",
+  "opciones": [
+   "Sí: mismo margen y mismo coste de captación es misma rentabilidad",
+   "No: si difieren en retención, uno puede valer más del doble que el otro",
+   "Sí, salvo que uno pague al contado y el otro a plazo",
+   "Depende del sector en que opere cada uno"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "9.07#t3",
+  "codigo": "9.07",
+  "bloque": 9,
+  "nivel": 2,
+  "titulo": "Marketing estratégico: segmentación y posicionamiento",
+  "q": "Una marca se posiciona como líder en calidad, en precio, en servicio y en innovación a la vez. ¿Qué problema tiene?",
+  "a": "**Que eso no es un posicionamiento sino la ausencia de uno.** Un posicionamiento eficaz dice una cosa, es creíble y resulta relevante para el segmento elegido. Decirlo todo equivale a no decir nada.",
+  "opciones": [
+   "Ninguno, si puede demostrar las cuatro cosas",
+   "Que necesitará cuatro campañas distintas y multiplicará el coste de comunicación",
+   "Que eso no es un posicionamiento sino la ausencia de uno",
+   "Que la normativa de publicidad prohíbe reclamar varios liderazgos"
+  ],
+  "correcta": 2
+ },
+ {
   "id": "9.08#0",
   "codigo": "9.08",
   "bloque": 9,
@@ -8012,6 +18571,70 @@ export default [
   "titulo": "Marketing mix y política de precios",
   "q": "¿Por qué hacen falta métodos hedónicos en los índices de precios?",
   "a": "Para separar qué parte de una subida de precio corresponde a inflación y qué parte a una mejora de calidad del producto. Sin ese ajuste, la inflación medida en bienes tecnológicos estaría sistemáticamente sobreestimada."
+ },
+ {
+  "id": "9.08#t0",
+  "codigo": "9.08",
+  "bloque": 9,
+  "nivel": 2,
+  "titulo": "Marketing mix y política de precios",
+  "q": "Una empresa fija sus precios añadiendo un margen del 40 % al coste unitario. ¿Qué falla en el método?",
+  "a": "**El coste unitario depende del volumen y el volumen depende del precio: el razonamiento es circular, y además ignora lo que el cliente está dispuesto a pagar.** Para saber el coste unitario hace falta saber cuántas unidades se venderán, y eso depende del precio que se está tratando de fijar.",
+  "opciones": [
+   "El coste unitario depende del volumen y el volumen depende del precio: el razonamiento es circular, y además ignora lo que el cliente está dispuesto a pagar",
+   "Que el margen del 40 % es demasiado bajo para cubrir la estructura",
+   "Que debería aplicarse sobre el coste completo y no sobre el variable",
+   "Nada: es el método más extendido y el más prudente"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "9.08#t1",
+  "codigo": "9.08",
+  "bloque": 9,
+  "nivel": 2,
+  "titulo": "Marketing mix y política de precios",
+  "q": "Con un margen del 30 %, se plantea una rebaja de precios del 10 %. ¿Cuánto hay que vender para mantener el beneficio?",
+  "a": "**Un 50 % más.** El margen pasa del 30 % al 20 % del precio original, así que hacen falta 30/20 = 1,5 veces el volumen. Es un cálculo de un minuto que casi nunca se hace antes de decidir.",
+  "opciones": [
+   "Un 10 % más, en proporción a la rebaja",
+   "Un 30 % más, en proporción al margen",
+   "Un 50 % más",
+   "Lo mismo: la rebaja se compensa con el mayor volumen"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "9.08#t2",
+  "codigo": "9.08",
+  "bloque": 9,
+  "nivel": 2,
+  "titulo": "Marketing mix y política de precios",
+  "q": "Descuentos, rappeles, portes, promociones y plazo de pago se llevan en cuentas distintas. ¿Cómo hay que analizarlos?",
+  "a": "**Como cascada completa hasta el precio efectivamente cobrado: todos son concesiones de precio.** Solo la cascada completa muestra el precio real de cada operación, y es habitual descubrir que clientes que parecían buenos no lo son.",
+  "opciones": [
+   "Por separado, ya que responden a decisiones comerciales distintas",
+   "Como cascada completa hasta el precio efectivamente cobrado: todos son concesiones de precio",
+   "Solo los que superen el 5 % del importe de la factura",
+   "Junto con los costes de distribución, que es donde acaban imputándose"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "9.08#t3",
+  "codigo": "9.08",
+  "bloque": 9,
+  "nivel": 2,
+  "titulo": "Marketing mix y política de precios",
+  "q": "Los comerciales conceden descuentos con demasiada facilidad. ¿Dónde está la raíz del problema?",
+  "a": "**En que su variable depende de la facturación, así que conceder descuentos no les cuesta nada.** El problema de precios suele ser, en el fondo, un problema de incentivos: quien concede el descuento no soporta su coste.",
+  "opciones": [
+   "En la falta de formación en técnicas de negociación",
+   "En que la competencia fija precios agresivos",
+   "En que su variable depende de la facturación, así que conceder descuentos no les cuesta nada",
+   "En la ausencia de una lista de precios oficial"
+  ],
+  "correcta": 2
  },
  {
   "id": "9.09#0",
@@ -8059,6 +18682,70 @@ export default [
   "a": "Porque un producto fragmentado entre países se contabiliza íntegro cada vez que cruza una frontera. Las tablas input-output internacionales y el comercio en valor añadido corrigen esa duplicación."
  },
  {
+  "id": "9.09#t0",
+  "codigo": "9.09",
+  "bloque": 9,
+  "nivel": 3,
+  "titulo": "Operaciones y cadena de suministro",
+  "q": "Una planta trabaja al 95 % de su capacidad. ¿Es señal de buena gestión?",
+  "a": "**Con variabilidad, no: los tiempos de espera crecen de forma no lineal al acercarse al 100 %, y el servicio empeora mucho.** Una planta al 95 % ofrece un servicio mucho peor que una al 85 %, y la diferencia no es proporcional: la cola se dispara cerca del límite.",
+  "opciones": [
+   "Sí: aprovecha al máximo la inversión realizada",
+   "Sí, siempre que la demanda sea estable",
+   "Con variabilidad, no: los tiempos de espera crecen de forma no lineal al acercarse al 100 %, y el servicio empeora mucho",
+   "Depende de si la capacidad se mide en horas o en unidades"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "9.09#t1",
+  "codigo": "9.09",
+  "bloque": 9,
+  "nivel": 3,
+  "titulo": "Operaciones y cadena de suministro",
+  "q": "Se mejora la productividad de una estación que no es el cuello de botella. ¿Qué se consigue?",
+  "a": "**Acumular inventario en curso, sin aumentar la salida del sistema.** Solo se produce antes lo que después tendrá que esperar al cuello. La mejora es real y localmente inútil.",
+  "opciones": [
+   "Aumentar la producción del sistema en la misma proporción",
+   "Acumular inventario en curso, sin aumentar la salida del sistema",
+   "Reducir el coste unitario total",
+   "Desplazar el cuello de botella a esa estación"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "9.09#t2",
+  "codigo": "9.09",
+  "bloque": 9,
+  "nivel": 3,
+  "titulo": "Operaciones y cadena de suministro",
+  "q": "Se plantea elevar el nivel de servicio del 95 % al 99,9 %. ¿Qué hay que valorar?",
+  "a": "**Que el stock de seguridad casi se duplica: cada punto adicional cuesta mucho más que el anterior.** El coste crece de forma acelerada, así que elegir el nivel «porque suena bien» compromete cantidades de dinero que nadie ha calculado.",
+  "opciones": [
+   "Que exige renegociar los plazos con los proveedores",
+   "Que el stock de seguridad casi se duplica: cada punto adicional cuesta mucho más que el anterior",
+   "Que obliga a cambiar el sistema de previsión de demanda",
+   "Nada: un nivel de servicio más alto siempre mejora la posición competitiva"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "9.09#t3",
+  "codigo": "9.09",
+  "bloque": 9,
+  "nivel": 3,
+  "titulo": "Operaciones y cadena de suministro",
+  "q": "Cada eslabón de una cadena de suministro reacciona a los pedidos del eslabón siguiente. ¿Qué produce?",
+  "a": "**El efecto látigo: cada eslabón amplifica la señal del anterior al no ver la demanda final.** La solución no es gestionar mejor cada eslabón sino compartir información de demanda final: distinguir señal de ruido antes de ajustar pedidos.",
+  "opciones": [
+   "Una cadena bien coordinada, porque cada uno responde a su cliente directo",
+   "El efecto látigo: cada eslabón amplifica la señal del anterior al no ver la demanda final",
+   "Un ajuste más rápido a los cambios de la demanda real",
+   "Un exceso de capacidad en el eslabón inicial únicamente"
+  ],
+  "correcta": 1
+ },
+ {
   "id": "9.10#0",
   "codigo": "9.10",
   "bloque": 9,
@@ -8102,5 +18789,69 @@ export default [
   "titulo": "Innovación, emprendimiento y modelos de negocio",
   "q": "¿Aparece en el PIB el valor de un servicio digital gratuito?",
   "a": "No como consumo de los hogares, porque no pagan nada. Se registra la producción de servicios publicitarios como consumo intermedio de las empresas. El valor percibido por el usuario queda fuera, y es uno de los argumentos del debate sobre la medición de la economía digital."
+ },
+ {
+  "id": "9.10#t0",
+  "codigo": "9.10",
+  "bloque": 9,
+  "nivel": 3,
+  "titulo": "Innovación, emprendimiento y modelos de negocio",
+  "q": "Un proyecto describe con detalle el problema que resuelve y cómo lo entrega, pero despacha en una línea de dónde saldrá el dinero. ¿Qué le falta?",
+  "a": "**La captura de valor: crear y entregar no basta si no se retiene una parte.** Un modelo de negocio son las tres partes o ninguna: hay innovaciones que crean muchísimo valor y no capturan casi nada.",
+  "opciones": [
+   "La captura de valor: crear y entregar no basta si no se retiene una parte",
+   "Un análisis de la competencia",
+   "Una previsión de tesorería a tres años",
+   "La definición del público objetivo"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "9.10#t1",
+  "codigo": "9.10",
+  "bloque": 9,
+  "nivel": 3,
+  "titulo": "Innovación, emprendimiento y modelos de negocio",
+  "q": "¿Qué caracteriza a una innovación disruptiva en sentido preciso?",
+  "a": "**Que empieza sirviendo peor a los clientes principales, a menudo desde un segmento marginal, y mejora hasta desplazarlos.** Por eso el líder la ignora racionalmente al principio: sus mejores clientes no la quieren, y cuando la quieren ya es tarde.",
+  "opciones": [
+   "Que introduce un cambio tecnológico radical",
+   "Que desplaza al líder del mercado en pocos años",
+   "Que empieza sirviendo peor a los clientes principales, a menudo desde un segmento marginal, y mejora hasta desplazarlos",
+   "Que se apoya en un modelo de negocio digital"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "9.10#t2",
+  "codigo": "9.10",
+  "bloque": 9,
+  "nivel": 3,
+  "titulo": "Innovación, emprendimiento y modelos de negocio",
+  "q": "Una empresa innovadora crea un mercado nuevo y acaba capturando una parte mínima del valor. ¿Por qué puede ocurrir?",
+  "a": "**Por protección débil de la innovación y control ajeno de los activos complementarios, como la distribución.** Con protección débil y distribución en manos ajenas, el innovador crea el mercado y se lo queda otro. Es un resultado frecuente y previsible.",
+  "opciones": [
+   "Porque no reinvirtió lo suficiente en I+D",
+   "Porque entró demasiado pronto, antes de que hubiera demanda",
+   "Porque no registró una marca reconocible",
+   "Por protección débil de la innovación y control ajeno de los activos complementarios, como la distribución"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "9.10#t3",
+  "codigo": "9.10",
+  "bloque": 9,
+  "nivel": 3,
+  "titulo": "Innovación, emprendimiento y modelos de negocio",
+  "q": "El número total de clientes crece mes a mes. ¿Basta para concluir que el negocio va bien?",
+  "a": "**No: hay que mirar por cohortes, porque el agregado puede ocultar que cada cohorte se comporta peor que la anterior.** El análisis por cohorte de captación revela deterioros que las métricas agregadas tardan meses en enseñar, cuando ya son caros de corregir.",
+  "opciones": [
+   "Sí: el crecimiento de la base es el indicador principal",
+   "No: hay que mirar por cohortes, porque el agregado puede ocultar que cada cohorte se comporta peor que la anterior",
+   "Sí, si además crece la facturación",
+   "No, salvo que el coste de captación se mantenga estable"
+  ],
+  "correcta": 1
  }
 ];

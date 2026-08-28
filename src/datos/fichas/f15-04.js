@@ -199,6 +199,82 @@ export default {
     },
 
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un episodio transitorio se clasifica como escalón en lugar de como impulso. ¿Qué efecto tiene?",
+              opciones: [
+                "La serie ajustada olvida un episodio que sí era transitorio y arrastra un desnivel artificial indefinidamente",
+                "La serie ajustada muestra un descenso suave y prolongado que no ocurrió",
+                "El atípico deja de detectarse en revisiones posteriores",
+                "Ninguno relevante: ambos retiran el dato anómalo",
+              ],
+              correcta: 0,
+              porque: [
+                "El escalón desplaza todo lo posterior, así que un episodio de un mes queda incorporado a la serie como si el nivel hubiera cambiado de verdad.",
+                "Ese es el efecto del error contrario: poner un impulso donde había un escalón.",
+                "La detección no depende de la clasificación elegida.",
+                "Retiran cosas muy distintas: uno un punto, el otro un nivel para siempre.",
+              ],
+            },
+            {
+              q: "Un confinamiento afecta a varios trimestres seguidos. ¿Cómo se trata?",
+              opciones: [
+                "Como un cambio transitorio con alfa elevado",
+                "Combinando tipos: un escalón de caída y otro de recuperación, o una secuencia de impulsos",
+                "Como un único impulso en el trimestre de mayor caída",
+                "Como un atípico estacional, por afectar a periodos concretos",
+              ],
+              correcta: 1,
+              porque: [
+                "El cambio transitorio decae con un perfil geométrico fijo que no describe una caída brusca seguida de una recuperación por escalones.",
+                "Cuando el episodio abarca varios periodos, forzar un único tipo deja siempre residuo sin tratar.",
+                "Un solo impulso corrige un periodo y deja los demás contaminando los factores estacionales.",
+                "El atípico estacional se usa cuando lo que cambia es el patrón intraanual, no el nivel.",
+              ],
+            },
+            {
+              q: "Se corrige un atípico en el ajuste. ¿Cambia el dato bruto publicado?",
+              opciones: [
+                "No, salvo que el atípico se deba a un error de registro",
+                "Sí: la corrección se aplica a la serie original y se propaga a la ajustada",
+                "No: el dato bruto es lo que se midió, con el episodio incluido; lo que se modifica es la serie ajustada",
+                "Sí, pero solo en las revisiones anuales",
+              ],
+              correcta: 2,
+              porque: [
+                "Un error de registro se corrige por otra vía, revisando el dato, y eso es distinto de tratarlo como atípico.",
+                "El bruto no se toca: es la observación.",
+                "Son dos series distintas, y la ajustada es sobre la que se comentan las variaciones. Confundir ambas cosas hace pensar que el instituto ha borrado un dato incómodo.",
+                "Tampoco en las revisiones anuales: lo que se revisa es la estimación, no la medición.",
+              ],
+            },
+            {
+              q: "El patrón estacional de un trimestre concreto cambia, sin que cambie el nivel de la serie. ¿Qué tipo de atípico corresponde?",
+              opciones: [
+                "Un escalón, por tratarse de un cambio permanente",
+                "Un impulso, por afectar a un periodo aislado",
+                "Un cambio transitorio, con alfa próximo a uno",
+                "Un atípico estacional (SO): el problema está en el componente estacional, no en el nivel",
+              ],
+              correcta: 3,
+              porque: [
+                "El escalón desplaza el nivel, y el enunciado dice que el nivel no ha cambiado.",
+                "El impulso retira un dato del nivel y deja intacto el patrón intraanual, que es justo lo que ha cambiado.",
+                "El cambio transitorio también opera sobre el nivel, con un perfil que decae.",
+                "Ni el impulso ni el escalón arreglan nada aquí, porque actúan sobre una componente distinta de la afectada.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

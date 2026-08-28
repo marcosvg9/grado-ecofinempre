@@ -191,6 +191,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "El gasto de los hogares en carburante crece un 20 %. ¿Mide eso la actividad de las refinerías?",
+              opciones: [
+                "No: en un litro de gasolina el productor recibe 0,60 € y el consumidor paga 1,54; entre medias hay impuestos y márgenes de otras ramas",
+                "Sí, una vez descontado el IVA",
+                "Sí: el gasto en un producto mide la producción de quien lo fabrica",
+                "No, pero la diferencia es pequeña en productos industriales",
+              ],
+              correcta: 0,
+              porque: [
+                "El desfase puede ser de más del doble. Quien mira el gasto de los hogares y cree estar midiendo la actividad del sector que fabrica se equivoca por un factor grande.",
+                "Descontar el IVA deja fuera todavía el impuesto especial y los márgenes de comercio y transporte.",
+                "Solo coincidirían si no hubiera impuestos, ni transporte, ni comercio por el camino.",
+                "En la gasolina la diferencia es enorme, y en general depende de la carga fiscal y de la longitud del canal.",
+              ],
+            },
+            {
+              q: "¿Qué IVA se registra en las cuentas nacionales?",
+              opciones: [
+                "Solo el ingresado efectivamente en Hacienda",
+                "El no deducible: el que soportan las empresas por sus insumos se recupera y no entra",
+                "El repercutido total en todas las fases de la cadena",
+                "El de las operaciones interiores, excluyendo importaciones",
+              ],
+              correcta: 1,
+              porque: [
+                "Lo ingresado en Hacienda se aproxima a lo no deducible, y el criterio conceptual es el otro: qué carga queda sin recuperar.",
+                "Solo se registra el que efectivamente queda, que es el de hogares, administraciones y sectores exentos.",
+                "Usar el repercutido total contaría varias veces el impuesto a lo largo de la cadena.",
+                "Las importaciones también soportan IVA y entran cuando no es deducible.",
+              ],
+            },
+            {
+              q: "Al construir la identidad entre oferta y empleos, ¿por qué hay que ajustar la valoración?",
+              opciones: [
+                "Porque las importaciones se valoran CIF y la producción interior FOB",
+                "Porque los impuestos se devengan en un ejercicio distinto del de la operación",
+                "Porque la producción se mide en volumen y los empleos en valor corriente",
+                "Porque la oferta se valora a precios básicos y los empleos a precios de adquisición",
+              ],
+              correcta: 3,
+              porque: [
+                "La valoración CIF/FOB es un ajuste del comercio exterior, no lo que descuadra esta identidad.",
+                "El devengo no introduce ninguna diferencia de valoración entre los dos lados.",
+                "Ambos lados se expresan en valor corriente al construir la identidad.",
+                "Hay que sumar los impuestos netos sobre productos y reasignar los márgenes de comercio y transporte para que ambos lados hablen del mismo precio.",
+              ],
+            },
+            {
+              q: "¿Cómo se pasa de la suma de los valores añadidos al PIB a precios de mercado?",
+              opciones: [
+                "Sumando los impuestos sobre productos y restando las subvenciones sobre productos",
+                "Sumando los consumos intermedios de todas las ramas",
+                "Sumando las importaciones y restando las exportaciones",
+                "Restando el consumo de capital fijo",
+              ],
+              correcta: 0,
+              porque: [
+                "Los valores añadidos están a precios básicos, que no incluyen esos impuestos; el PIB a precios de mercado sí.",
+                "Los consumos intermedios ya se restaron para obtener cada valor añadido: volver a sumarlos duplicaría el valor.",
+                "Ese ajuste pertenece a la óptica del gasto, y con el signo contrario.",
+                "Restar el consumo de capital fijo lleva al producto neto, no al PIB a precios de mercado.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

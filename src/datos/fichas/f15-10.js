@@ -194,6 +194,82 @@ export default {
     },
 
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Se discute qué método usar para desagregar una serie anual: Chow-Lin, Fernández o Litterman. ¿Es esa la discusión importante?",
+              opciones: [
+                "Sí, porque de ello depende que se cumpla la restricción anual",
+                "No: los tres dan resultados parecidos con un indicador bueno, y ninguno salva un indicador malo",
+                "No: lo determinante es la longitud de la serie anual disponible",
+                "Sí: cada método produce perfiles trimestrales muy distintos",
+              ],
+              correcta: 1,
+              porque: [
+                "Los tres cumplen la restricción anual: es una condición del planteamiento, no una diferencia entre ellos.",
+                "La calidad del resultado la decide la relación entre el indicador y la variable objetivo. Discutir el método antes que el indicador es empezar por el final.",
+                "La longitud importa para estimar la relación y no desplaza al indicador como factor decisivo.",
+                "Difieren en cómo distribuyen los residuos, y esa diferencia es pequeña comparada con la que introduce el indicador.",
+              ],
+            },
+            {
+              q: "¿Cómo debe elegirse el indicador para una desagregación temporal?",
+              opciones: [
+                "Por su correlación con la variable objetivo, tomando la más alta disponible",
+                "Por que tenga la misma estacionalidad que la variable objetivo",
+                "Por su disponibilidad temprana, para poder publicar antes",
+                "Por que exista un mecanismo económico que sostenga la relación, no solo correlación",
+              ],
+              correcta: 3,
+              porque: [
+                "Una correlación alta sin mecanismo detrás se rompe cuando cambian las condiciones, que es justo cuando hace falta que aguante.",
+                "La estacionalidad del indicador se traslada al resultado, y no es el criterio de selección.",
+                "La disponibilidad es una ventaja práctica y no garantiza que el indicador describa la variable.",
+                "El mecanismo es lo que hace esperar que la relación siga vigente fuera de la muestra en que se estimó.",
+              ],
+            },
+            {
+              q: "La serie trimestral obtenida por desagregación temporal presenta tasas de +36 % y −21 %. ¿Hay un error?",
+              opciones: [
+                "No: es una serie bruta que hereda la estacionalidad del indicador, y hay que ajustarla estacionalmente",
+                "Sí: variaciones de esa magnitud indican que la relación estimada es incorrecta",
+                "No: las tasas de una serie desagregada no son interpretables en ningún caso",
+                "Sí: significa que no se ha cumplido la restricción anual",
+              ],
+              correcta: 0,
+              porque: [
+                "Publicar eso como crecimiento trimestral sería absurdo. La desagregación produce el dato bruto; el ajuste estacional viene después.",
+                "La magnitud no delata un error: delata que se está leyendo una serie sin ajustar.",
+                "Sí lo son, una vez ajustadas.",
+                "La restricción anual se cumple: el problema no está en el nivel sino en el perfil intraanual.",
+              ],
+            },
+            {
+              q: "El resultado de una desagregación temporal cumple la restricción anual y tiene un perfil creíble. ¿Basta para aceptarlo?",
+              opciones: [
+                "Sí: cumplir la restricción y ser plausible es lo máximo que puede pedirse",
+                "Sí, si además el indicador tiene correlación superior a 0,9",
+                "No, salvo que se haya usado Chow-Lin en lugar de Fernández",
+                "No: la desagregación siempre produce un resultado plausible, aunque el perfil sea inventado",
+              ],
+              correcta: 3,
+              porque: [
+                "Es exactamente lo que la hace traicionera: nunca produce un resultado que salte a la vista como equivocado.",
+                "Una correlación alta estimada sobre pocos años puede ser precisamente el síntoma del problema.",
+                "El método no cambia la naturaleza de la advertencia.",
+                "Hay que comprobar la estabilidad de la relación y disponer de años suficientes: con tres observaciones anuales y dos parámetros, los residuos salen pequeños porque la recta pasa casi por los puntos.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

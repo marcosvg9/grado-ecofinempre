@@ -179,6 +179,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un administrador causa un daño al patrimonio de la sociedad. Un socio quiere reclamar. ¿Qué acción corresponde y a dónde va lo recuperado?",
+              opciones: [
+                "Cualquiera de las dos, y el socio elige el destino de lo recuperado",
+                "La acción individual, y lo recuperado va al socio que la ejercita",
+                "La acción individual, y lo recuperado se reparte entre todos los socios",
+                "La acción social: repara el daño a la sociedad y lo recuperado entra en la caja social",
+              ],
+              correcta: 3,
+              porque: [
+                "No son intercambiables: cada una responde a un daño distinto y el destino de lo recuperado viene determinado por cuál se ejercita.",
+                "La individual repara el daño directo a un socio o a un tercero, y aquí el patrimonio dañado es el social.",
+                "No hay reparto entre socios: el dinero vuelve a la sociedad.",
+                "El socio puede ejercitarla en ciertos casos, y lo que obtenga no es suyo: repone el patrimonio de la sociedad, y él se beneficia indirectamente como socio.",
+              ],
+            },
+            {
+              q: "Un administrador conoce una oportunidad de negocio por su cargo y la aprovecha personalmente. ¿Qué consecuencias tiene?",
+              opciones: [
+                "Debe cesar en el cargo, sin consecuencias patrimoniales",
+                "Ninguna, si la sociedad no tenía capacidad financiera para acometerla",
+                "Debe indemnizar el daño causado, y además devolver el enriquecimiento obtenido",
+                "Solo debe indemnizar el daño, si la sociedad prueba que lo ha sufrido",
+              ],
+              correcta: 2,
+              porque: [
+                "El cese es una consecuencia posible y no la única: la responsabilidad patrimonial subsiste.",
+                "La falta de capacidad puede alegarse, y no basta por sí sola: el deber de lealtad exige poner la oportunidad a disposición de la sociedad antes de tomarla.",
+                "Es la particularidad de la lealtad frente a la diligencia: no basta con reparar, hay que restituir lo ganado, aunque la sociedad no pueda cuantificar un daño equivalente.",
+                "Exigir daño probado dejaría impune al desleal que se enriquece sin empobrecer a nadie de forma demostrable.",
+              ],
+            },
+            {
+              q: "¿Cubre la protección de la discrecionalidad empresarial el no haber depositado las cuentas?",
+              opciones: [
+                "No: solo ampara decisiones estratégicas y de negocio sujetas a apreciación, no las omisiones formales",
+                "Sí: es una decisión de gestión como cualquier otra",
+                "No, salvo que la sociedad careciera de medios para elaborarlas",
+                "Sí, si el administrador actuó de buena fe y sin interés personal",
+              ],
+              correcta: 0,
+              porque: [
+                "No convocar la junta, no formular o no depositar las cuentas y no promover la disolución quedan fuera de la protección: no son decisiones, son incumplimientos.",
+                "No es una decisión de negocio: es un deber legal que no admite apreciación sobre si conviene cumplirlo.",
+                "La falta de medios no dispensa de una obligación legal.",
+                "Los cuatro requisitos —buena fe, ausencia de interés personal, información suficiente y procedimiento adecuado— se aplican a decisiones discrecionales, y aquí no hay discrecionalidad alguna.",
+              ],
+            },
+            {
+              q: "¿Qué distingue el deber de diligencia del de lealtad en cuanto a su régimen?",
+              opciones: [
+                "La diligencia es modulable por los estatutos y la lealtad es imperativa",
+                "La lealtad solo obliga a los consejeros y la diligencia a todos los administradores",
+                "Ambos son imperativos y no admiten modulación",
+                "La diligencia se exige a los administradores y la lealtad a los socios de control",
+              ],
+              correcta: 0,
+              porque: [
+                "El estándar de diligencia admite adaptarse a la naturaleza del cargo y a la sociedad; la lealtad no se puede rebajar por pacto.",
+                "Ambos obligan a todo administrador, sea consejero, único, solidario o mancomunado.",
+                "La diligencia sí admite modulación, y esa asimetría es lo que caracteriza el régimen.",
+                "La lealtad obliga al administrador; los deberes de los socios de control son otra cuestión.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

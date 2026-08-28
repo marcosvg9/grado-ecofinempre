@@ -174,6 +174,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Se suman los componentes del PIB en volumen encadenado y no cuadra con el agregado. ¿Hay un error?",
+              opciones: [
+                "No: las series encadenadas no son aditivas, y la discrepancia crece con la distancia al año de referencia",
+                "Sí: los componentes deben sumar el total en cualquier valoración",
+                "Sí: falta incluir la variación de existencias",
+                "No, pero la discrepancia debería ser siempre inferior al 0,1 %",
+              ],
+              correcta: 0,
+              porque: [
+                "En el ejemplo de la ficha son 209,6 sobre 4.452,6 al quinto año. No es un fallo del dato: es una propiedad del método, y por eso el INE publica la discrepancia.",
+                "La aditividad se pierde justamente al encadenar: cada serie se encadena con sus propias ponderaciones.",
+                "La variación de existencias está incluida; el desajuste persistiría igualmente.",
+                "No hay tal cota: la discrepancia crece cuanto más se aleja uno del año de referencia.",
+              ],
+            },
+            {
+              q: "¿Cómo se calculan las contribuciones al crecimiento de cada componente?",
+              opciones: [
+                "Ponderando la tasa de volumen de cada componente por su peso en valor corriente del periodo anterior",
+                "Restando al crecimiento del total el de los demás componentes",
+                "Repartiendo el crecimiento del agregado en proporción al tamaño de cada componente",
+                "Dividiendo la variación del nivel encadenado del componente entre el nivel encadenado del total",
+              ],
+              correcta: 0,
+              porque: [
+                "Es la fórmula válida, y la que hace que las contribuciones sumen el crecimiento del agregado.",
+                "Obtener una contribución por diferencia arrastra a esa partida todos los errores de las demás.",
+                "Repartir en proporción al tamaño ignora que cada componente ha crecido a un ritmo distinto.",
+                "Es incorrecto por la misma razón que no se pueden sumar los niveles encadenados: las ponderaciones de cada serie son distintas.",
+              ],
+            },
+            {
+              q: "Una serie de PIB en volumen usa una base fija de hace veinte años. ¿Qué efecto tiene?",
+              opciones: [
+                "No tiene efecto sobre las tasas, solo sobre los niveles",
+                "Subestima el crecimiento, porque no recoge productos nuevos",
+                "Es más precisa, porque las ponderaciones no cambian y la serie es homogénea",
+                "Sobrestima sistemáticamente: valora con precios antiguos y altos las cantidades de los bienes que se han abaratado y cuyo consumo por eso ha crecido",
+              ],
+              correcta: 3,
+              porque: [
+                "Afecta de lleno a las tasas, que es justamente lo que se quiere medir.",
+                "Los productos nuevos son un problema añadido, y el sesgo principal va en la dirección contraria.",
+                "La homogeneidad es aparente: unas ponderaciones que ya no describen la economía no la miden mejor por ser constantes.",
+                "El caso de manual es la informática: precios que se desploman y cantidades que se disparan, valoradas a los precios altos del año base.",
+              ],
+            },
+            {
+              q: "El deflactor del PIB sube un 3 % y el IPC un 4 %. ¿Es un error de alguna de las dos estadísticas?",
+              opciones: [
+                "Sí, si la diferencia supera el punto porcentual",
+                "No: cubren cosas distintas —el deflactor toda la producción interior sin importaciones; el IPC el consumo de los hogares, importaciones incluidas— y tienen fórmulas distintas",
+                "Sí: ambos miden la inflación y deberían coincidir",
+                "No, pero solo pueden diferir si ha habido cambios de imposición indirecta",
+              ],
+              correcta: 1,
+              porque: [
+                "No hay ningún umbral: las diferencias pueden ser grandes y perfectamente explicables.",
+                "Un encarecimiento del petróleo importado empuja el IPC y no el deflactor, porque el petróleo no se produce aquí. Esperar coincidencia es no haber leído qué cubre cada uno.",
+                "Miden inflaciones distintas: no hay ninguna razón para que coincidan.",
+                "La imposición indirecta es una de las causas posibles, y ni mucho menos la única.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

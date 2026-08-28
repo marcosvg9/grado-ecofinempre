@@ -183,6 +183,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "La junta aprueba las cuentas anuales en junio. ¿Queda cumplida la obligación?",
+              opciones: [
+                "Sí, si la sociedad no está obligada a auditarse",
+                "Sí: la aprobación es el acto que cierra el ciclo",
+                "No: falta además la formulación, que se hace después de aprobar",
+                "No: aprobar y depositar son actos distintos, de órganos distintos y con plazos distintos; queda un mes para el depósito",
+              ],
+              correcta: 3,
+              porque: [
+                "La auditoría condiciona el contenido de lo que se deposita, no si hay que depositar.",
+                "La aprobación es interna; lo que convierte la contabilidad privada en información pública y oponible es el depósito.",
+                "La formulación es lo primero, no lo último: la hacen los administradores dentro de los tres meses siguientes al cierre.",
+                "La junta aprueba dentro de los seis primeros meses y el depósito se presenta en el Registro Mercantil en el mes siguiente a la aprobación.",
+              ],
+            },
+            {
+              q: "Una sociedad lleva más de un año sin depositar sus cuentas. ¿Qué le ocurre?",
+              opciones: [
+                "Se disuelve de pleno derecho",
+                "Una multa proporcional a su cifra de negocios, sin más efectos",
+                "Nada mientras no reciba un requerimiento del Registro",
+                "Se le cierra la hoja registral, y además queda fuera del crédito bancario, de los concursos públicos y de casi toda homologación de proveedores",
+              ],
+              correcta: 3,
+              porque: [
+                "No hay disolución automática: la sociedad sigue existiendo, paralizada registralmente.",
+                "La sanción económica existe y no es lo que más duele: lo grave es quedarse fuera del tráfico.",
+                "El cierre registral opera por el transcurso del plazo, sin requerimiento previo.",
+                "El cierre impide inscribir casi cualquier acto —nombramientos, poderes, modificaciones— y la ausencia de cuentas públicas cierra por sí sola muchas puertas comerciales.",
+              ],
+            },
+            {
+              q: "¿Quién formula las cuentas anuales y en qué plazo?",
+              opciones: [
+                "El asesor contable, sin plazo legal específico",
+                "El auditor, antes de emitir su informe",
+                "Los administradores, dentro de los tres meses siguientes al cierre del ejercicio",
+                "La junta general, dentro de los seis primeros meses",
+              ],
+              correcta: 2,
+              porque: [
+                "El asesor puede prepararlas materialmente, y quien las formula y responde es el administrador.",
+                "El auditor opina sobre unas cuentas ya formuladas: no puede elaborar lo que después ha de revisar.",
+                "Es competencia indelegable suya, y de ahí que respondan de su contenido: el plazo empieza a correr con el cierre del ejercicio, no con la convocatoria de la junta.",
+                "La junta aprueba o rechaza en ese plazo; formular es un acto anterior y de otro órgano.",
+              ],
+            },
+            {
+              q: "Los umbrales que obligan a auditar han cambiado varias veces. ¿Qué conviene retener?",
+              opciones: [
+                "Que solo se aplican a las sociedades anónimas",
+                "Las cifras vigentes, que llevan estables más de una década",
+                "Que la obligación depende únicamente de la cifra de negocios",
+                "El mecanismo: superar dos de los tres límites —activo, cifra de negocios y empleados— durante dos ejercicios consecutivos",
+              ],
+              correcta: 3,
+              porque: [
+                "Se aplican a las sociedades de capital en general, no solo a las anónimas.",
+                "Han cambiado y volverán a cambiar: la normativa europea los revisó al alza para corregir el efecto de la inflación.",
+                "Son tres magnitudes y basta con superar dos de ellas: fiarlo todo a una sola lleva a conclusiones equivocadas.",
+                "Las cifras hay que consultarlas; la estructura de la regla es lo que permite saber qué comprobar y en qué años.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

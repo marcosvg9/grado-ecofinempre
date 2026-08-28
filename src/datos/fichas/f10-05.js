@@ -187,6 +187,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Cuánto cuesta a la sociedad recaudar un euro de impuestos?",
+              opciones: [
+                "Depende del destino que se dé a la recaudación",
+                "Menos de un euro, por el efecto multiplicador del gasto público",
+                "Más de un euro: hay que sumar el exceso de gravamen, riqueza que no se genera y que no recibe nadie",
+                "Un euro: es una transferencia del contribuyente al Estado",
+              ],
+              correcta: 2,
+              porque: [
+                "El destino determina si el gasto merece la pena; el coste de obtener los fondos existe con independencia de en qué se gasten.",
+                "El multiplicador es un efecto del gasto, y la pregunta es por el coste de obtener los fondos.",
+                "Al 40 % de tipo, cada euro recaudado cuesta a la sociedad 1,10 €. Ese coste marginal de los fondos obliga a exigir a un proyecto público una rentabilidad social superior a su presupuesto.",
+                "La transferencia es solo una parte. Además de mover dinero, el impuesto impide intercambios que habrían ocurrido.",
+              ],
+            },
+            {
+              q: "La regla de Ramsey recomienda gravar más los bienes de demanda inelástica. ¿Qué problema tiene esa recomendación?",
+              opciones: [
+                "Que contradice el principio de capacidad económica recogido en la Constitución",
+                "Que es inaplicable: las elasticidades no se pueden estimar",
+                "Que lo inelástico suele ser lo básico, así que el diseño más eficiente puede ser el más regresivo",
+                "Que reduce la recaudación total, al gravar bienes de poco peso",
+              ],
+              correcta: 2,
+              porque: [
+                "El conflicto es económico antes que jurídico: eficiencia y equidad apuntan aquí en direcciones opuestas.",
+                "Se estiman con dificultad y se estiman: no es ahí donde está la objeción de fondo.",
+                "Gravar lo inelástico minimiza la distorsión precisamente porque la gente no puede evitarlo, y eso mismo lo hace duro con quien no tiene alternativa.",
+                "Al contrario: recauda bien, porque la cantidad demandada apenas cae.",
+              ],
+            },
+            {
+              q: "¿Es la sanidad pública un bien público en sentido económico?",
+              opciones: [
+                "No: es rival y excluible; se financia públicamente por equidad, externalidades y fallos del mercado de seguros",
+                "Solo la atención primaria, que sí es no rival",
+                "Sí: la provee el Estado y beneficia a toda la población",
+                "Sí, porque nadie puede ser excluido de la atención de urgencias",
+              ],
+              correcta: 0,
+              porque: [
+                "Un bien público puro es no rival y no excluible. Una cama de hospital ocupada no la puede ocupar otro, y se puede excluir a quien no esté cubierto.",
+                "La atención primaria también es rival: la consulta que atiende a uno no atiende a otro a la vez.",
+                "Que lo provea el Estado no lo convierte en bien público: son dos cosas distintas y confundirlas es el error habitual.",
+                "La no exclusión en urgencias es una decisión de política pública, no una propiedad técnica del bien.",
+              ],
+            },
+            {
+              q: "Un impuesto pigouviano sobre emisiones, ¿genera exceso de gravamen?",
+              opciones: [
+                "No, siempre que su recaudación se destine a políticas ambientales",
+                "No: lo elimina, porque corrige una externalidad preexistente",
+                "Sí, y por eso su tipo debe ser bajo",
+                "Sí, como cualquier impuesto: distorsiona las decisiones de producción",
+              ],
+              correcta: 1,
+              porque: [
+                "El destino de la recaudación no cambia el efecto del impuesto sobre la asignación de recursos.",
+                "Recauda y mejora la eficiencia a la vez. Meterlo en el mismo saco que los demás impuestos hace perder de vista que es una figura de naturaleza distinta.",
+                "Su tipo debería igualar el daño marginal, que puede ser alto o bajo según la externalidad.",
+                "Distorsiona en el sentido de cambiar decisiones, y las cambia hacia donde deberían haber estado desde el principio.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

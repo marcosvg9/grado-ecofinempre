@@ -186,6 +186,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "El paro registrado y el paro de la EPA dan cifras distintas. ¿Cuál está mal?",
+              opciones: [
+                "El registrado, porque solo recoge a quienes cobran prestación",
+                "Ninguno: miden cosas distintas —inscripciones en oficinas de empleo frente a la definición internacional de desempleo—",
+                "La EPA, por tratarse de una encuesta con margen de error",
+                "El registrado, porque depende de incentivos administrativos",
+              ],
+              correcta: 1,
+              porque: [
+                "El registro no exige cobrar prestación: son cosas distintas.",
+                "Uno cuenta a quien se inscribe; la otra aplica el criterio internacional de buscar activamente empleo y estar disponible. Compararlos directamente no tiene sentido.",
+                "El margen de error de la encuesta es real y no invalida su definición, que es la homologable internacionalmente.",
+                "Depender de incentivos administrativos lo hace poco comparable, no incorrecto: mide exactamente lo que dice medir.",
+              ],
+            },
+            {
+              q: "Hay 21,4 millones de afiliaciones a la Seguridad Social. ¿Hay 21,4 millones de personas trabajando?",
+              opciones: [
+                "Sí, descontando a los autónomos, que se cuentan aparte",
+                "Sí: cada afiliación corresponde a un trabajador dado de alta",
+                "No: quien tiene dos contratos cuenta dos veces, y quien trabaja sin cotizar no cuenta",
+                "No: la cifra incluye también a los pensionistas",
+              ],
+              correcta: 2,
+              porque: [
+                "Los autónomos están incluidos en el total de afiliación, en su propio régimen.",
+                "Lo que se cuenta son relaciones laborales, no personas, y una persona puede sostener varias.",
+                "Por eso la cifra de afiliaciones queda por encima del número real de ocupados con pluriempleo y por debajo si hay economía sumergida.",
+                "Los pensionistas no son afiliados en alta laboral: la afiliación mide cotización por trabajo.",
+              ],
+            },
+            {
+              q: "La tasa de paro cae una décima en un trimestre. ¿Qué cabe decir?",
+              opciones: [
+                "Que el mercado laboral ha mejorado ligeramente",
+                "Que confirma la tendencia si va en la misma dirección que el trimestre anterior",
+                "Que no se puede distinguir de cero: el margen de error de la EPA para la tasa nacional ronda los ±0,25 puntos",
+                "Que la mejora es pequeña pero estadísticamente sólida",
+              ],
+              correcta: 2,
+              porque: [
+                "Puede haber mejorado o no: una décima cae dentro del ruido de la encuesta.",
+                "Encadenar variaciones no significativas no las convierte en tendencia si cada una es ruido.",
+                "La EPA es una encuesta, y comentar décimas es comentar el error de muestreo como si fuera economía.",
+                "Es justo lo contrario: una décima está muy por debajo del margen de error.",
+              ],
+            },
+            {
+              q: "En plena recesión, la tasa de temporalidad baja del 25 % al 19,6 %. ¿Es una mejora?",
+              opciones: [
+                "Sí, si además crece la afiliación",
+                "No se puede saber sin conocer el sector",
+                "Sí: menos temporalidad significa empleo de más calidad",
+                "No: baja porque se ha destruido empleo temporal, y el indicador mejora mientras el mercado empeora",
+              ],
+              correcta: 3,
+              porque: [
+                "Si creciera la afiliación no estaríamos en el caso descrito, que es de destrucción de empleo.",
+                "El mecanismo es el mismo en cualquier sector: lo que engaña es leer un cociente sin mirar sus componentes.",
+                "El cociente puede caer sin que ningún temporal haya pasado a indefinido: basta con que desaparezcan del empleo.",
+                "Hay que mirar los niveles, no solo el ratio: un indicador que mejora por reducción del denominador equivocado no informa de nada bueno.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

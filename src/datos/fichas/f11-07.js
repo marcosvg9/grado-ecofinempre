@@ -174,6 +174,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un teléfono se importa por 500 dólares y solo 8 corresponden al ensamblaje realizado en el país exportador. ¿Cómo lo registra la aduana?",
+              opciones: [
+                "Por los 8 dólares de valor añadido local",
+                "Por el valor de los componentes, excluyendo el margen comercial",
+                "Por los 500 dólares completos, aunque casi todo ese valor se generó en otros países",
+                "Depende del acuerdo comercial aplicable",
+              ],
+              correcta: 2,
+              porque: [
+                "El valor añadido es lo que interesa económicamente y no es lo que registra la estadística de aduanas.",
+                "El margen comercial no es lo que distorsiona la cifra: es la totalidad de los componentes importados y reexportados.",
+                "La aduana anota el valor de lo que cruza la frontera, así que los déficits bilaterales medidos en bruto atribuyen a un país un valor que en su mayoría se generó en otros.",
+                "El acuerdo comercial afecta a los aranceles, no a cómo se contabiliza el valor del flujo.",
+              ],
+            },
+            {
+              q: "Se impone un arancel a un producto ensamblado en un país concreto. ¿A quién golpea?",
+              opciones: [
+                "A los consumidores del país importador únicamente",
+                "Solo al país señalado, que es quien lo exporta",
+                "Al país señalado y a sus proveedores directos",
+                "También al país que impone el arancel, porque el producto final incorpora valor de muchos orígenes, incluido el suyo",
+              ],
+              correcta: 3,
+              porque: [
+                "Los consumidores lo soportan en buena medida, y no son los únicos afectados.",
+                "En una cadena fragmentada, quien ensambla aporta a menudo la parte más pequeña del valor.",
+                "La cadena es más larga que un escalón: incluye proveedores de proveedores repartidos por medio mundo.",
+                "Gravar el producto ensamblado grava también los componentes propios que viajaron hasta allí. El arancel se cobra sobre el valor total, no sobre la parte extranjera.",
+              ],
+            },
+            {
+              q: "¿Devolvería cerrar la frontera los empleos industriales perdidos?",
+              opciones: [
+                "Sí: son empleos que se trasladaron a otros países",
+                "Sí, aunque con un retraso de varios años",
+                "No: una parte importante no se fue a ningún sitio, dejó de existir por automatización",
+                "No, porque los trabajadores desplazados ya se han reciclado",
+              ],
+              correcta: 2,
+              porque: [
+                "Parte se trasladó y parte simplemente desapareció, y las dos causas actuaron a la vez.",
+                "El retraso no cambia que los puestos automatizados no vuelven al cerrar una frontera.",
+                "Distinguir ambos efectos es difícil porque ocurrieron simultáneamente y en los mismos sectores, y esa dificultad es la que alimenta el debate político.",
+                "La evidencia sobre las comarcas expuestas muestra lo contrario: desempleo persistente y participación laboral en caída.",
+              ],
+            },
+            {
+              q: "¿Qué diferencia clave hay entre esta globalización y la de 1880 en cuanto a sus perdedores?",
+              opciones: [
+                "Que entonces los perdedores estaban en la industria y ahora en la agricultura",
+                "Que entonces los perdedores emigraron por decenas de millones, y hoy esa válvula está cerrada",
+                "Que entonces existían políticas de compensación y hoy no",
+                "Que entonces las pérdidas eran menores en magnitud",
+              ],
+              correcta: 1,
+              porque: [
+                "En la primera los golpeados fueron sobre todo agricultores europeos frente al grano americano.",
+                "Cincuenta y cinco millones de europeos emigraron entre 1850 y 1914: eso alivió la presión sobre los perdedores y ayudó a igualar salarios entre continentes.",
+                "Las políticas de compensación son un desarrollo posterior: entonces prácticamente no existían.",
+                "Las pérdidas de entonces fueron enormes; lo que difiere es la salida disponible.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

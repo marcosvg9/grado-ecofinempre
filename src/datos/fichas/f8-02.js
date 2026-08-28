@@ -208,6 +208,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "«La renta fija no tiene riesgo porque los flujos están pactados de antemano.» ¿Es cierto?",
+              opciones: [
+                "Sí, salvo que el emisor impague",
+                "No: los flujos son fijos, el valor no. Un bono largo puede perder un 25 % en un año de subida de tipos",
+                "Sí, si se compra en emisión y no en mercado secundario",
+                "No, pero solo en bonos sin cupón",
+              ],
+              correcta: 1,
+              porque: [
+                "El impago es un riesgo más, pero incluso con un emisor impecable el precio del bono se mueve.",
+                "El riesgo de tipo de interés es real y proporcional a la duración: el precio es el valor actual de los flujos, y descontarlos a un tipo mayor los hace valer menos.",
+                "Comprar en emisión no protege: si los tipos suben, el bono vale menos en el mercado desde ese momento.",
+                "Los cupón cero son precisamente los más sensibles, porque toda su duración se concentra en el vencimiento.",
+              ],
+            },
+            {
+              q: "Un bono vence dentro de diez años. ¿Cuál es su duración?",
+              opciones: [
+                "Diez años, por definición de duración",
+                "Más de diez años, porque incorpora los cupones",
+                "Menos de diez años, salvo que sea un cupón cero",
+                "Depende del emisor, no del calendario de flujos",
+              ],
+              correcta: 2,
+              porque: [
+                "Duración y plazo hasta vencimiento solo coinciden en un bono cupón cero, que tiene un único flujo al final.",
+                "Los cupones acortan la duración, no la alargan: adelantan parte de la recuperación del valor.",
+                "Con cupones, parte del valor se cobra antes del vencimiento, así que el plazo medio ponderado de los flujos es siempre menor que diez años.",
+                "El emisor afecta al riesgo de crédito y por esa vía a la TIR, pero la duración sale del calendario y de la cuantía de los flujos.",
+              ],
+            },
+            {
+              q: "Los tipos suben tres puntos de golpe, como en 2022. ¿Basta la duración para estimar la caída del precio?",
+              opciones: [
+                "No: es una aproximación lineal y el error crece con el cuadrado de la variación; hay que corregir por convexidad",
+                "Sí: la duración modificada da la variación exacta del precio",
+                "Sí, si se aplica sobre la duración de Macaulay en lugar de la modificada",
+                "No, porque la duración solo sirve para bajadas de tipos",
+              ],
+              correcta: 0,
+              porque: [
+                "Con medio punto el error es despreciable; con tres puntos la corrección por convexidad deja de ser un refinamiento y pasa a ser necesaria.",
+                "Da una aproximación de primer orden: la relación precio-tipo es una curva, y la duración es solo su tangente.",
+                "Cambiar de versión de la duración no arregla nada: ambas son medidas lineales de una relación que no lo es.",
+                "El error aparece en ambos sentidos. De hecho la convexidad hace que la subida de precio ante una bajada sea mayor que la caída ante una subida igual.",
+              ],
+            },
+            {
+              q: "Un bono ofrece una TIR del 6 % y otro del 4 %. ¿Es mejor el primero?",
+              opciones: [
+                "Sí: la TIR mide la rentabilidad de la inversión",
+                "Sí, si ambos vencen el mismo día",
+                "No necesariamente: la TIR más alta puede estar retribuyendo un mayor riesgo de impago",
+                "No: una TIR alta indica siempre un bono sobrevalorado",
+              ],
+              correcta: 2,
+              porque: [
+                "La mide bajo dos supuestos que conviene recordar: mantener hasta vencimiento y reinvertir los cupones a esa misma tasa.",
+                "Coincidir en vencimiento no iguala el riesgo de crédito, que es lo que suele explicar la diferencia.",
+                "La comparación exige separar el tipo sin riesgo del diferencial de crédito. Si no se hace, se confunde una prima de riesgo con una oportunidad.",
+                "Una TIR alta significa precio bajo, y el precio bajo puede estar perfectamente justificado por el riesgo del emisor.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

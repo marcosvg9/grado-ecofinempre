@@ -187,6 +187,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Qué diferencia hay entre el ahorro de un sector y su capacidad de financiación?",
+              opciones: [
+                "Son lo mismo medido en dos cuentas distintas",
+                "El ahorro dice cuánta renta no se consumió; la capacidad de financiación, si tras invertir hubo que pedir prestado",
+                "El ahorro es un stock y la capacidad de financiación un flujo",
+                "El ahorro se mide antes de impuestos y la capacidad de financiación después",
+              ],
+              correcta: 1,
+              porque: [
+                "Se separan exactamente en la inversión y en las transferencias de capital, que median entre uno y otra.",
+                "Un sector puede ahorrar mucho y necesitar financiación si invierte más de lo que ahorra, y al revés.",
+                "Ambos son flujos del ejercicio; los stocks están en los balances.",
+                "Los impuestos ya se descontaron mucho antes, al llegar a la renta disponible.",
+              ],
+            },
+            {
+              q: "¿Por qué las transferencias de capital no afectan al ahorro?",
+              opciones: [
+                "Porque su importe suele ser pequeño",
+                "Porque se registran en la cuenta de capital, después del ahorro en la secuencia",
+                "Porque se compensan entre los sectores residentes",
+                "Porque solo las reciben las administraciones públicas",
+              ],
+              correcta: 1,
+              porque: [
+                "Pueden ser importes muy grandes, como los fondos europeos de inversión.",
+                "Es la distinción de la ficha 12.07 con su consecuencia contable: lo que financia gasto corriente entra antes y mueve la renta disponible; lo que financia un activo entra después y solo mueve la capacidad de financiación.",
+                "Algunas se compensan entre residentes y otras vienen del exterior, y en ningún caso es esa la razón.",
+                "Las reciben también empresas y hogares: el impuesto de sucesiones o una subvención de capital son ejemplos.",
+              ],
+            },
+            {
+              q: "Un país presenta un déficit exterior elevado. ¿Qué es lo primero que conviene preguntar?",
+              opciones: [
+                "Si supera el umbral del procedimiento de desequilibrios macroeconómicos",
+                "Qué sector lo genera",
+                "Cuántos años lleva en déficit",
+                "Si se financia con deuda o con inversión extranjera directa",
+              ],
+              correcta: 1,
+              porque: [
+                "El umbral es una referencia administrativa que no informa sobre la naturaleza del desequilibrio.",
+                "No significa lo mismo un déficit causado por inversión empresarial elevada que uno causado por desahorro público o por hogares endeudándose para comprar vivienda.",
+                "La persistencia importa y no dice de dónde viene el problema.",
+                "La forma de financiarlo es la segunda pregunta, y la primera es qué lo está generando.",
+              ],
+            },
+            {
+              q: "La cuenta de capital y la cuenta financiera estiman la misma capacidad de financiación y no coinciden. ¿Qué se hace con esa diferencia?",
+              opciones: [
+                "Se reparte proporcionalmente entre los sectores",
+                "Se imputa al resto del mundo, que es el sector de cierre",
+                "Se corrige la cuenta financiera, por ser la menos fiable",
+                "Se publica: es uno de los pocos indicadores directos de la calidad de la estimación",
+              ],
+              correcta: 3,
+              porque: [
+                "Repartirla la ocultaría, que es justo lo contrario de lo que interesa.",
+                "El resto del mundo tiene su propia estimación y también participa de la discrepancia.",
+                "Ninguna de las dos es sistemáticamente mejor: son dos vías independientes de llegar al mismo saldo.",
+                "Que dos caminos independientes no lleguen al mismo número dice cuánta confianza merece el resultado. Ocultarlo daría una falsa impresión de precisión.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

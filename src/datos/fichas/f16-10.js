@@ -195,6 +195,82 @@ export default {
     },
 
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Cuál es la primera comprobación antes de reconciliar una jerarquía?",
+              opciones: [
+                "Elegir el método de reconciliación",
+                "Estimar la matriz de covarianzas de los errores",
+                "Verificar sobre los datos históricos que la estructura declarada se cumple de verdad",
+                "Comprobar que todas las series tienen la misma longitud",
+              ],
+              correcta: 2,
+              porque: [
+                "El método es la última decisión, no la primera.",
+                "La matriz viene después: primero hay que saber si la estructura que se va a imponer describe los datos.",
+                "Con definiciones que no encajan, partidas contadas dos veces o cambios de perímetro, las hojas no sumaban la rama ni siquiera en el pasado, y se salta con mucha frecuencia.",
+                "La longitud es un requisito operativo menor comparado con que la estructura sea real.",
+              ],
+            },
+            {
+              q: "Manufactura y energía reciben el mismo ajuste absoluto de 0,548 al reconciliar. ¿Significa lo mismo para ambas?",
+              opciones: [
+                "No: el ajuste debería haber sido proporcional al nivel de cada serie",
+                "Sí: el ajuste absoluto es la medida natural del movimiento aplicado",
+                "Sí, si ambas pertenecen a la misma rama",
+                "No: sus niveles difieren, así que el mismo ajuste absoluto es un porcentaje muy distinto en cada una",
+              ],
+              correcta: 3,
+              porque: [
+                "La proyección reparte según la métrica elegida; el punto no es que el reparto esté mal, sino cómo hay que leerlo.",
+                "Leer el diagnóstico en términos absolutos oculta que un ajuste pequeño en absoluto puede ser enorme para una serie pequeña.",
+                "Pertenecer a la misma rama no iguala sus niveles.",
+                "El diagnóstico útil compara el ajuste de cada serie con su propia escala y con su variabilidad típica.",
+              ],
+            },
+            {
+              q: "Una serie recibe un ajuste del 2,49 % cuando su crecimiento trimestral típico es del 0,5 %. ¿Qué indica?",
+              opciones: [
+                "Que el método elegido es demasiado conservador",
+                "Que la reconciliación está afinando bien esa previsión",
+                "Que la serie es especialmente volátil",
+                "Que la reconciliación no está afinando la previsión: la está reescribiendo porque el resto de la jerarquía se lo exige",
+              ],
+              correcta: 3,
+              porque: [
+                "Un método conservador movería menos, no más.",
+                "Afinar sería moverla dentro de su variabilidad habitual, no cinco veces por encima de ella.",
+                "La volatilidad de la serie es justamente el término de comparación que hace saltar la alarma.",
+                "Es la señal de alarma del diagnóstico: conviene mirar si la previsión base de esa serie es mala, o si lo que falla es la estructura o alguna otra rama.",
+              ],
+            },
+            {
+              q: "Se va a elegir herramienta para reconciliar. ¿Qué requisito debe cumplir?",
+              opciones: [
+                "Estimar automáticamente la matriz de covarianzas",
+                "Permitir especificar la matriz de sumas explícitamente, y no solo árboles anidados",
+                "Incluir todos los métodos de reconciliación publicados",
+                "Ofrecer una interfaz gráfica para dibujar la jerarquía",
+              ],
+              correcta: 1,
+              porque: [
+                "La estimación automática de la matriz es una comodidad que conviene poder revisar, no un requisito.",
+                "Las interfaces que solo aceptan árboles dejan de servir en cuanto la estructura tiene criterios cruzados, que es lo habitual en cuanto hay territorio y producto a la vez.",
+                "Bastan unos pocos métodos bien implementados: la variedad no es el criterio.",
+                "Dibujar la jerarquía es cómodo y es precisamente lo que limita a los árboles.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

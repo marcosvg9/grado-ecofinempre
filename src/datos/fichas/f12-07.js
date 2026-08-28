@@ -191,6 +191,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Cómo clasifica el SEC las multas de tráfico?",
+              opciones: [
+                "Como impuestos corrientes, por ser obligatorias y sin contrapartida",
+                "Como transferencias de capital, al no financiar gasto recurrente",
+                "Como transferencias corrientes diversas (D.75)",
+                "Como ventas de servicios de las administraciones públicas",
+              ],
+              correcta: 2,
+              porque: [
+                "Comparten con los impuestos ser obligatorias y no dar nada a cambio, y les falta lo esencial: no gravan renta, patrimonio, producción ni importaciones.",
+                "Financian gasto corriente y no están vinculadas a la adquisición de ningún activo.",
+                "Es el cajón de las transferencias corrientes que no encajan en ninguna de las categorías anteriores, y las sanciones van ahí.",
+                "No hay servicio alguno que el sancionado reciba a cambio.",
+              ],
+            },
+            {
+              q: "¿Qué son los recursos propios de la Unión Europea (D.76)?",
+              opciones: [
+                "Las aportaciones que los Estados miembros hacen al presupuesto comunitario",
+                "Los fondos que la UE transfiere a los Estados miembros",
+                "Los ingresos que la UE obtiene de sus propias inversiones financieras",
+                "El presupuesto que cada Estado destina a sus políticas europeas",
+              ],
+              correcta: 0,
+              porque: [
+                "Van desde los Estados hacia la UE, que a efectos del SEC es una unidad no residente, así que sí afectan a la renta nacional disponible.",
+                "Las transferencias en sentido contrario existen y se registran en otras partidas.",
+                "La UE no financia su presupuesto con rentas de inversiones propias de forma relevante.",
+                "No es gasto nacional en políticas propias: es dinero que sale hacia el presupuesto común.",
+              ],
+            },
+            {
+              q: "Una administración concede una beca que cubre la matrícula universitaria y una subvención para que una empresa compre maquinaria. ¿Cómo se clasifican?",
+              opciones: [
+                "Ambas como transferencias de capital, por proceder del presupuesto de inversión",
+                "La beca es corriente y la subvención de capital, porque la primera financia gasto y la segunda va ligada a la adquisición de un activo",
+                "Ambas como transferencias corrientes, por ser ayudas públicas",
+                "La beca es de capital, por invertir en formación, y la subvención corriente",
+              ],
+              correcta: 1,
+              porque: [
+                "La partida presupuestaria de origen no determina la clasificación en cuentas nacionales.",
+                "Y la consecuencia importa: la corriente afecta a la renta disponible del receptor y la de capital no, porque entra en la secuencia después del ahorro.",
+                "El carácter público de la ayuda no decide nada: lo que decide es para qué sirve.",
+                "La formación es capital humano en sentido económico, y el SEC no la reconoce como activo: la beca financia gasto corriente.",
+              ],
+            },
+            {
+              q: "¿Cuál de estos flujos NO es una transferencia corriente del D.7?",
+              opciones: [
+                "La compra de material sanitario por parte de un hospital público",
+                "Los traspasos de financiación del Estado a las comunidades autónomas",
+                "La ayuda oficial al desarrollo que España entrega a otro país",
+                "Las primas netas de seguro no vida que pagan los hogares",
+              ],
+              correcta: 0,
+              porque: [
+                "Aquí sí hay contrapartida: el hospital recibe unos bienes a cambio del dinero. Es una compraventa y por tanto consumo intermedio, no una transferencia.",
+                "Son transferencias entre administraciones públicas, el D.73, que se anulan al consolidar el sector.",
+                "Es cooperación internacional corriente, el D.74.",
+                "Son el D.71, la primera de las categorías del bloque.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

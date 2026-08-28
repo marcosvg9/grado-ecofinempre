@@ -188,6 +188,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Qué parte del riesgo de un activo remunera el mercado?",
+              opciones: [
+                "Solo la sistemática: nadie paga prima por asumir un riesgo que se puede eliminar diversificando",
+                "La volatilidad total del activo",
+                "La parte específica, que es la propia del negocio",
+                "La mayor de las dos, según cuál domine",
+              ],
+              correcta: 0,
+              porque: [
+                "En el ejemplo de la ficha, la mitad de la volatilidad de la acción es específica y no recibe compensación alguna.",
+                "Usar la volatilidad total como medida del riesgo remunerado atribuye prima a algo que el inversor puede quitarse gratis.",
+                "El riesgo específico es justamente el que desaparece al diversificar, y por eso no se paga por soportarlo.",
+                "No es una cuestión de cuál domine: la parte específica no se remunera nunca, sea grande o pequeña.",
+              ],
+            },
+            {
+              q: "Dos analistas estiman la beta de la misma acción y obtienen 0,8 y 1,3. ¿Cómo puede ser?",
+              opciones: [
+                "Uno de los dos ha cometido un error de cálculo",
+                "La beta no es una característica objetiva: depende del período, la frecuencia, el índice y si se ajusta",
+                "Han usado modelos distintos: uno el CAPM y otro un multifactor",
+                "Es imposible: la beta es un dato de mercado observable",
+              ],
+              correcta: 1,
+              porque: [
+                "Ambas pueden estar bien calculadas. La discrepancia nace de decisiones metodológicas, no de errores.",
+                "Dos estimaciones igualmente defendibles pueden diferir en varias décimas, y esa diferencia se traslada entera al coste de capital.",
+                "El modelo teórico es el mismo; lo que cambia son los datos y el procedimiento con que se estima el parámetro.",
+                "No es observable: se estima por regresión sobre una muestra concreta, y la muestra es una elección.",
+              ],
+            },
+            {
+              q: "Un fondo obtiene alfa positivo de forma sostenida. ¿Prueba la habilidad del gestor?",
+              opciones: [
+                "Sí, si el alfa es estadísticamente significativo",
+                "Sí: por definición, el alfa es el exceso no explicado por el mercado",
+                "No necesariamente: puede reflejar exposición a factores que un modelo de un solo índice no recoge",
+                "No: el alfa positivo sostenido es imposible en mercados eficientes",
+              ],
+              correcta: 2,
+              porque: [
+                "La significación estadística dice que el exceso no es ruido, no que provenga de habilidad.",
+                "Es el exceso no explicado por ese modelo concreto. Si el modelo omite factores, el alfa recoge lo que el modelo no sabe ver.",
+                "Tamaño, valor, momento y calidad explican buena parte de lo que durante décadas se atribuyó a talento: era exposición sistemática con otro nombre.",
+                "Es perfectamente posible; la cuestión es a qué se debe, y ahí es donde entran los factores.",
+              ],
+            },
+            {
+              q: "¿Puede usarse la media histórica de la prima de riesgo como estimación de la prima esperada?",
+              opciones: [
+                "Sí: con un siglo de datos la estimación es muy precisa",
+                "Con cautela: incluso con un siglo de datos el intervalo de confianza abarca varios puntos porcentuales",
+                "No: la prima esperada es observable en el mercado de opciones",
+                "Sí, siempre que se use la media geométrica en lugar de la aritmética",
+              ],
+              correcta: 1,
+              porque: [
+                "La cantidad de datos engaña: la volatilidad anual de las bolsas es tan alta que el error estándar de la media sigue siendo enorme.",
+                "Y eso importa porque esos puntos se trasladan íntegros al coste de capital y de ahí a cualquier valoración que se apoye en él.",
+                "El mercado de opciones informa sobre volatilidad implícita, no da directamente la prima de riesgo esperada.",
+                "La elección entre media geométrica y aritmética cambia la cifra, pero no reduce la incertidumbre de la estimación.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

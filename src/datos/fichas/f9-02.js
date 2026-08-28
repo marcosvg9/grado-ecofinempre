@@ -174,6 +174,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Qué explican las cinco fuerzas de Porter?",
+              opciones: [
+                "Por qué una empresa concreta es más rentable que sus competidoras",
+                "La rentabilidad media de un sector, en función de quién captura el valor que se genera en él",
+                "La evolución previsible de la demanda del sector",
+                "La eficiencia operativa de las empresas del sector",
+              ],
+              correcta: 1,
+              porque: [
+                "Eso es lo que el marco no explica: la desviación respecto a la media es el objeto de la estrategia competitiva, no del análisis estructural.",
+                "La rentabilidad media depende de la estructura del sector, no del esfuerzo de sus empresas. Hay sectores donde trabajar bien apenas alcanza para sobrevivir.",
+                "El marco analiza quién se queda el valor, no cuánto crecerá la demanda.",
+                "La eficiencia operativa es una variable de la empresa, y el análisis es del sector.",
+              ],
+            },
+            {
+              q: "Al aplicar las cinco fuerzas a una cadena de cafeterías, ¿por qué importa cómo se defina el sector?",
+              opciones: [
+                "Porque determina qué datos estadísticos están disponibles",
+                "Porque la definición del sector fija el tipo impositivo aplicable",
+                "Porque todo el análisis depende de dónde se trace la frontera: restauración, bebidas o experiencia de ocio dan conclusiones distintas",
+                "No importa: las cinco fuerzas son válidas con cualquier delimitación",
+              ],
+              correcta: 2,
+              porque: [
+                "La disponibilidad de datos es una consecuencia práctica, no la razón de fondo.",
+                "La fiscalidad no depende de cómo se decida analizar el negocio.",
+                "Cambia quiénes son los competidores, quiénes los sustitutivos y dónde están las barreras. Es la decisión más importante del análisis y la que menos se discute.",
+                "Son válidas dentro de la frontera que se elija, y esa elección condiciona todas las respuestas.",
+              ],
+            },
+            {
+              q: "Un sector está muy concentrado: tres empresas se reparten el 90 % del mercado. ¿Es rentable?",
+              opciones: [
+                "Sí: la concentración permite fijar precios por encima del coste",
+                "No se sigue: si compiten en precio con costes fijos altos, un sector concentrado puede ser ruinoso",
+                "Sí, salvo que exista regulación de precios",
+                "No: la concentración atrae siempre la intervención de competencia",
+              ],
+              correcta: 1,
+              porque: [
+                "Lo permite si no se destrozan entre ellas, y con costes fijos elevados el incentivo a llenar capacidad bajando precios es enorme.",
+                "La concentración facilita la rentabilidad pero no la garantiza. Aerolíneas y siderurgia son concentradas y llevan décadas destruyendo valor.",
+                "La regulación de precios es un factor añadido, no lo que rompe la relación entre concentración y rentabilidad.",
+                "La intervención puede llegar o no, y no es la razón por la que un sector concentrado puede ser poco rentable.",
+              ],
+            },
+            {
+              q: "¿Qué son los complementadores y por qué se olvidan en el análisis?",
+              opciones: [
+                "Los distribuidores del producto, que se confunden con los clientes",
+                "Los competidores de sectores adyacentes, que se analizan aparte",
+                "Los proveedores de servicios auxiliares, ya recogidos en el poder de los proveedores",
+                "Agentes que aumentan el valor del producto sin ser proveedores ni clientes, y no encajan en ninguna de las cinco fuerzas",
+              ],
+              correcta: 3,
+              porque: [
+                "Los distribuidores sí encajan en el marco, como parte del canal y del poder de los compradores.",
+                "Los sectores adyacentes entran como sustitutivos o como entrantes potenciales.",
+                "Los servicios auxiliares son proveedores; el complementador no vende a la empresa ni le compra.",
+                "Los desarrolladores de aplicaciones de una plataforma o los fabricantes de accesorios son decisivos y quedan fuera del esquema original: por eso hay que añadirlos a mano.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

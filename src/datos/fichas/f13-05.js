@@ -179,6 +179,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "El impuesto sobre vehículos, ¿es D.214 o D.29?",
+              opciones: [
+                "Siempre D.214, por recaer sobre un producto identificable",
+                "Depende de su base: D.214 cuando grava la matriculación de cada unidad vendida y D.29 cuando grava la tenencia del parque de una empresa",
+                "Siempre D.29, por ser un impuesto local",
+                "Depende del sector que lo pague",
+              ],
+              correcta: 1,
+              porque: [
+                "El vehículo es identificable en ambos casos; lo que cambia es si el tributo acompaña a la venta o a la posesión.",
+                "Lo que decide es si el importe depende de lo que se vende. Clasificar por el nombre del impuesto en lugar de por su base es el error típico de este bloque.",
+                "La administración que lo recauda no interviene en la clasificación.",
+                "El sector pagador no determina la naturaleza del impuesto.",
+              ],
+            },
+            {
+              q: "Una empresa paga el IAE. ¿Reduce eso su excedente de explotación?",
+              opciones: [
+                "No: como todos los impuestos, se descuenta en la cuenta de distribución secundaria",
+                "No: ya quedó fuera al valorar la producción a precios básicos",
+                "Sí: los otros impuestos sobre la producción (D.29) se descuentan dentro de la cuenta de explotación",
+                "Solo en la parte proporcional a su cifra de negocio",
+              ],
+              correcta: 2,
+              porque: [
+                "Los impuestos corrientes sobre la renta sí van allí; el IAE no es uno de ellos.",
+                "Eso vale para los impuestos sobre productos. El IAE no depende de lo que se venda.",
+                "Es la diferencia práctica entre las dos familias: el D.21 sale antes, al valorar la producción, y el D.29 se resta aquí, junto a la remuneración de asalariados.",
+                "El IAE no es proporcional a las ventas, y esa es justamente la razón por la que es D.29 y no D.21.",
+              ],
+            },
+            {
+              q: "¿Qué distingue una subvención a los productos (D.31) de una a la producción (D.39)?",
+              opciones: [
+                "La primera es reintegrable y la segunda no",
+                "El mismo criterio que separa D.21 de D.29: si el importe depende de la cantidad producida o vendida",
+                "La primera se cobra por anticipado y la segunda a posteriori",
+                "La primera la concede el Estado y la segunda la Unión Europea",
+              ],
+              correcta: 1,
+              porque: [
+                "La reintegrabilidad es una condición del contrato, no un criterio de clasificación.",
+                "Son las gemelas de los dos tipos de impuesto y siguen la misma lógica: una acompaña a cada unidad y la otra a la actividad de producir.",
+                "El momento del cobro es indiferente: se registran en devengo.",
+                "El organismo que las concede no interviene en la clasificación.",
+              ],
+            },
+            {
+              q: "Las cifras de impuestos sobre la producción que se publican suelen ser netas. ¿Por qué importa saberlo?",
+              opciones: [
+                "Porque las cifras netas se expresan en volumen y las brutas en valor corriente",
+                "Porque solo las netas incluyen los impuestos autonómicos",
+                "Porque las subvenciones se registran con signo contrario, y comparar impuestos brutos de un país con netos de otro da una diferencia inventada",
+                "Porque los importes netos excluyen el IVA",
+              ],
+              correcta: 2,
+              porque: [
+                "Ambas se expresan en valor corriente.",
+                "El nivel de administración que recauda no distingue lo bruto de lo neto.",
+                "En países con mucha subvención a la producción la diferencia entre bruto y neto es considerable, y la comparación cruzada produce una brecha que no existe.",
+                "El IVA está en los impuestos sobre productos, brutos o netos.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

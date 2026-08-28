@@ -155,6 +155,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Una cartera tiene un VaR diario del 1 % al 99 %. ¿Cuál es su pérdida máxima?",
+              opciones: [
+                "No lo dice: el VaR es un umbral que no se superará con cierta probabilidad, y calla sobre lo que ocurre por encima",
+                "El 1 % del valor de la cartera",
+                "El 1 % multiplicado por el número de días del período",
+                "El 99 % del valor de la cartera, en el peor caso",
+              ],
+              correcta: 0,
+              porque: [
+                "Dos carteras con el mismo VaR pueden tener pérdidas muy distintas en la cola. Para eso está el déficit esperado, que mide la media de lo que hay más allá del umbral.",
+                "Ese 1 % es el umbral que se supera uno de cada cien días, no un techo.",
+                "El VaR no se acumula así, y en todo caso seguiría sin ser una pérdida máxima.",
+                "El 99 % es el nivel de confianza, no una magnitud de pérdida.",
+              ],
+            },
+            {
+              q: "Un modelo de VaR se calibra con la ventana de los dos últimos años, que han sido tranquilos. ¿Qué ocurre?",
+              opciones: [
+                "Nada: la ventana reciente es la más representativa del riesgo actual",
+                "Produce un VaR bajo justo antes de que deje de serlo",
+                "El modelo sobrestima el riesgo por falta de episodios extremos",
+                "Deja de ser válido para carteras de renta fija",
+              ],
+              correcta: 1,
+              porque: [
+                "Ser reciente no la hace representativa de lo que puede venir: la calma reciente es justamente el mal predictor del episodio siguiente.",
+                "Por eso la regulación posterior a 2008 exige incorporar períodos de tensión histórica al cálculo, en lugar de dejarlo a la ventana reciente.",
+                "Lo subestima, no lo sobrestima: sin episodios extremos en la muestra, la cola del modelo es demasiado fina.",
+                "El problema es general y afecta a cualquier clase de activo.",
+              ],
+            },
+            {
+              q: "¿Por qué es problemático suponer normalidad en las rentabilidades financieras?",
+              opciones: [
+                "Porque impide calcular el VaR analíticamente",
+                "Porque exige series muy largas para estimar la media",
+                "Porque las rentabilidades tienen colas gruesas y asimetría negativa: bajo normalidad, movimientos ya observados varias veces deberían ser casi imposibles",
+                "Porque la normal no admite correlaciones entre activos",
+              ],
+              correcta: 2,
+              porque: [
+                "Al contrario: la normalidad es justamente lo que permite el cálculo analítico cómodo, y de ahí viene la tentación.",
+                "La longitud de la serie es un problema aparte y no es el que introduce el supuesto de normalidad.",
+                "Es la comprobación que delata el supuesto: si el modelo asigna a un suceso una probabilidad de una vez cada varios miles de años y ha pasado tres veces en dos décadas, el modelo está mal.",
+                "La normal multivariante admite correlaciones perfectamente; lo que no captura es el grosor de las colas.",
+              ],
+            },
+            {
+              q: "Si todas las entidades usan modelos de riesgo parecidos, ¿qué efecto tiene?",
+              opciones: [
+                "Ninguno: cada una gestiona su propia cartera",
+                "Reduce el riesgo del sistema, porque todas miden bien",
+                "Mejora la comparabilidad entre entidades sin más consecuencias",
+                "Reaccionan a la vez ante las mismas señales, lo que amplifica los movimientos que el modelo pretendía medir",
+              ],
+              correcta: 3,
+              porque: [
+                "Las carteras son propias, pero las señales de venta se disparan a la vez y el mercado las recibe todas juntas.",
+                "Medir bien individualmente no impide que la reacción coordinada genere el movimiento que se temía.",
+                "La comparabilidad mejora, sí, y a costa de introducir un riesgo nuevo que no existía cuando cada entidad medía a su manera.",
+                "La medición deja de ser neutral: pasa a formar parte del fenómeno que mide, y ese es un problema que ningún refinamiento del modelo resuelve.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

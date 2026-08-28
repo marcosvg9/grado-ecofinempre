@@ -173,6 +173,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Cuál de estos conceptos NO forma parte de la remuneración de asalariados (D.1)?",
+              opciones: [
+                "La retribución en especie",
+                "Las cotizaciones sociales a cargo del empleador",
+                "La renta que obtiene un autónomo de su propio negocio",
+                "Las cotizaciones sociales imputadas",
+              ],
+              correcta: 2,
+              porque: [
+                "Es parte del D.11: un vehículo, un seguro médico o una vivienda cedida retribuyen igual que el dinero.",
+                "Son el D.121, y por eso el D.1 es el coste laboral completo y no la nómina.",
+                "Va a la renta mixta (B.3), porque no hay relación de asalariado. Por eso la participación salarial calculada sin corregir infravalora el peso del trabajo.",
+                "Son el D.122, y aunque no muevan dinero forman parte del coste que soporta el empleador.",
+              ],
+            },
+            {
+              q: "¿Está el IRPF que se retiene al trabajador dentro del D.11?",
+              opciones: [
+                "No: el D.11 recoge el líquido que percibe el trabajador",
+                "Solo la parte correspondiente al tramo estatal",
+                "No: los impuestos se registran únicamente en la cuenta de distribución secundaria",
+                "Sí: los sueldos y salarios se registran en bruto, antes de retenciones y de la cotización del trabajador",
+              ],
+              correcta: 3,
+              porque: [
+                "El líquido no aparece como tal en ninguna partida del sistema: es el resultado de restar cosas que se registran por separado.",
+                "El reparto entre tramos es una cuestión de administración tributaria, ajena al registro en cuentas nacionales.",
+                "El impuesto se registra allí, y eso no impide que la renta sobre la que se aplica esté antes en el D.11.",
+                "La retención es un adelanto de un impuesto que el trabajador paga, así que forma parte de su remuneración antes de pagarlo.",
+              ],
+            },
+            {
+              q: "Dos estudios dan participaciones salariales distintas para el mismo país y año. ¿Cuál puede ser la causa?",
+              opciones: [
+                "Que uno use datos trimestrales y otro anuales",
+                "Que uno incluya al sector público y otro no",
+                "Que uno mida en términos nominales y otro en volumen",
+                "Que uno divida por el PIB a precios de mercado y otro por el valor añadido a precios básicos",
+              ],
+              correcta: 3,
+              porque: [
+                "La frecuencia de los datos no altera el nivel del ratio anual.",
+                "Excluir el sector público sería una decisión muy visible y poco frecuente; el problema habitual es el denominador.",
+                "La participación salarial es un cociente entre magnitudes nominales en ambos casos.",
+                "El valor añadido a precios básicos excluye los impuestos netos sobre productos, así que el denominador es menor y la participación sale mayor. La diferencia entre ambas medidas es de varios puntos.",
+              ],
+            },
+            {
+              q: "¿Qué relación hay entre las cotizaciones imputadas (D.122) y las prestaciones sociales directas del empleador (D.622)?",
+              opciones: [
+                "Son iguales por construcción: la primera existe precisamente para dar origen contable a la segunda",
+                "La D.122 suele superar a la D.622, y la diferencia se acumula como reserva",
+                "Son independientes: una está en la cuenta de explotación y la otra en la de distribución secundaria",
+                "La D.622 se calcula como un porcentaje fijo de la D.122",
+              ],
+              correcta: 0,
+              porque: [
+                "Sin la cotización imputada, la prestación aparecería sin haber sido financiada por nadie. El sistema inventa el flujo de entrada para que el de salida tenga procedencia.",
+                "No hay reserva alguna: el rasgo de estas prestaciones es justamente que no hay fondo constituido.",
+                "Están en cuentas distintas y no son independientes: una es el reflejo contable de la otra.",
+                "No es un porcentaje: es el mismo importe.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

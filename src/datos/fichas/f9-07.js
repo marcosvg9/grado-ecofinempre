@@ -157,6 +157,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Una empresa segmenta su mercado por edad y tamaño de cliente. ¿Es una buena base de segmentación?",
+              opciones: [
+                "Sí: son variables objetivas y fáciles de verificar",
+                "Solo si esas variables explican diferencias reales de comportamiento de compra",
+                "Sí, porque permiten construir segmentos de tamaño equilibrado",
+                "No: la segmentación debe hacerse siempre por volumen de facturación",
+              ],
+              correcta: 1,
+              porque: [
+                "Edad, tamaño y geografía se registran sin esfuerzo, y esa comodidad es justamente lo que hace que se usen sin comprobar si sirven.",
+                "La segmentación útil se basa en el beneficio buscado o en el comportamiento. Si los grupos no difieren en algo que cambie cómo compran, no son segmentos.",
+                "El equilibrio de tamaños es irrelevante si los grupos se comportan igual.",
+                "La facturación tampoco es una base válida por sí misma: es otra variable cómoda que puede no explicar nada.",
+              ],
+            },
+            {
+              q: "¿Cómo se comprueba que una segmentación propuesta es real y no una descripción bonita?",
+              opciones: [
+                "Preguntando a los clientes en qué grupo se reconocen",
+                "Comprobando que los grupos son de tamaño similar",
+                "Verificando que la fuerza comercial los distingue con facilidad",
+                "Calculando CLV y CAC por grupo y viendo si difieren de forma significativa",
+              ],
+              correcta: 3,
+              porque: [
+                "Que los clientes se reconozcan en una etiqueta no implica que compren de forma distinta.",
+                "El tamaño no valida nada: dos grupos iguales en tamaño pueden comportarse igual.",
+                "La facilidad de identificación es útil para operar, pero no prueba que los grupos difieran en lo que importa.",
+                "Si no muestran diferencias medibles en retención, margen o respuesta comercial, no son segmentos: son categorías descriptivas. Y si no difieren, hay que buscar otra base.",
+              ],
+            },
+            {
+              q: "Dos clientes aportan el mismo margen anual, 200 €, y cuestan lo mismo captar. ¿Valen lo mismo?",
+              opciones: [
+                "Sí: mismo margen y mismo coste de captación es misma rentabilidad",
+                "No: si difieren en retención, uno puede valer más del doble que el otro",
+                "Sí, salvo que uno pague al contado y el otro a plazo",
+                "Depende del sector en que opere cada uno",
+              ],
+              correcta: 1,
+              porque: [
+                "La cuenta de resultados anual los presenta como equivalentes, y ahí está la trampa: mide un año de una relación que dura varios.",
+                "Subir la retención del 60 % al 80 % multiplica el valor del cliente por 2,2 sin captar a nadie ni subir precios. Solo el valor del ciclo de vida revela la diferencia.",
+                "El plazo de pago afecta al circulante, no a cuántos años se mantiene la relación.",
+                "El sector puede explicar por qué difiere la retención, pero la diferencia de valor la produce la retención misma.",
+              ],
+            },
+            {
+              q: "Una marca se posiciona como líder en calidad, en precio, en servicio y en innovación a la vez. ¿Qué problema tiene?",
+              opciones: [
+                "Ninguno, si puede demostrar las cuatro cosas",
+                "Que necesitará cuatro campañas distintas y multiplicará el coste de comunicación",
+                "Que eso no es un posicionamiento sino la ausencia de uno",
+                "Que la normativa de publicidad prohíbe reclamar varios liderazgos",
+              ],
+              correcta: 2,
+              porque: [
+                "Aunque las demostrara, el cliente no puede retener cuatro promesas: recordará una o ninguna.",
+                "El coste es un problema menor comparado con el de no ocupar ningún lugar reconocible frente a las alternativas.",
+                "Un posicionamiento eficaz dice una cosa, es creíble y resulta relevante para el segmento elegido. Decirlo todo equivale a no decir nada.",
+                "No hay tal prohibición; el problema es de eficacia, no legal.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

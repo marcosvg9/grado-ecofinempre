@@ -206,6 +206,82 @@ export default {
     },
 
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Se publica que el PIB creció un 0,3 % en el trimestre, dato ajustado de estacionalidad. ¿Qué tipo de cifra es?",
+              opciones: [
+                "Un dato provisional que se convertirá en observado con la próxima publicación",
+                "Un dato observado, medido directamente por el instituto de estadística",
+                "Una previsión revisable hasta el cierre del ejercicio",
+                "Una estimación producida por un procedimiento con supuestos, publicada sin intervalo de confianza",
+              ],
+              correcta: 3,
+              porque: [
+                "Nunca pasa a ser observada: seguirá siendo el resultado de aplicar un procedimiento, y de hecho cambiará al reestimarse los factores.",
+                "Lo observado es la serie bruta; la ajustada resulta de descomponerla con un método concreto.",
+                "No es una previsión: se refiere a un trimestre ya transcurrido.",
+                "Publicarla sin intervalo le da una apariencia de precisión que el procedimiento no respalda, y esa apariencia es la fuente de la mayoría de las malas lecturas.",
+              ],
+            },
+            {
+              q: "¿Elimina el ajuste estacional los efectos de calendario?",
+              opciones: [
+                "No: los efectos de calendario se corrigen únicamente en las series mensuales",
+                "Sí, salvo la Semana Santa, que se corrige aparte por ser móvil",
+                "Sí: la Semana Santa y los días laborables forman parte de la estacionalidad",
+                "No: son dos correcciones distintas, y la de calendario depende de cuántos días laborables tenga cada periodo concreto",
+              ],
+              correcta: 3,
+              porque: [
+                "Se corrigen en trimestrales y mensuales por igual.",
+                "La Semana Santa es el caso más visible de efecto de calendario, y no el único: los días laborables y el año bisiesto también lo son.",
+                "La estacionalidad es el patrón que se repite cada año; el calendario varía de un año a otro sin patrón fijo.",
+                "Un trimestre con dos días laborables más produce más, y eso no es estacionalidad: es aritmética del calendario de ese año.",
+              ],
+            },
+            {
+              q: "Los componentes de una serie se ajustan por separado y se suman. ¿Da eso la serie ajustada del agregado?",
+              opciones: [
+                "No, pero solo si los componentes tienen estacionalidades de signo contrario",
+                "Sí: el ajuste conserva la aditividad",
+                "Sí, salvo diferencias de redondeo",
+                "No: el ajuste no es lineal, y ajustar cada componente y sumarlos da un resultado distinto de ajustar el agregado",
+              ],
+              correcta: 3,
+              porque: [
+                "La discrepancia aparece con cualquier combinación de patrones estacionales.",
+                "Cada serie tiene su propio patrón estacional, su propio modelo y sus propios atípicos: no hay razón para que el procedimiento conmute con la suma.",
+                "La diferencia excede con mucho el redondeo y obliga a los institutos a decidir explícitamente qué enfoque publican.",
+                "Es una decisión que hay que tomar y documentar: ajustar directamente el agregado, o ajustar las partes y conciliar después.",
+              ],
+            },
+            {
+              q: "¿Puede el ajuste estacional separar la tendencia del ciclo?",
+              opciones: [
+                "Sí, aplicando después un filtro de medias móviles más largo",
+                "Sí: son los dos componentes que quedan tras extraer la estacionalidad",
+                "No: la descomposición estándar produce un componente conjunto de tendencia-ciclo",
+                "No, salvo en series con más de treinta años de historia",
+              ],
+              correcta: 2,
+              porque: [
+                "Alargar el filtro suaviza más la serie, y no resuelve qué parte de esa suavidad es tendencia y qué parte es ciclo.",
+                "Lo que queda tras extraer estacionalidad e irregular es un solo componente, no dos.",
+                "Separar tendencia de ciclo exige supuestos adicionales sobre qué se considera potencial, que el ajuste estacional no hace ni pretende hacer.",
+                "La longitud de la serie ayuda a estimar mejor, y no convierte un componente conjunto en dos separables sin supuestos.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

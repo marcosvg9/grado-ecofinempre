@@ -187,6 +187,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Resuelve un sistema de capitalización el problema demográfico del envejecimiento?",
+              opciones: [
+                "No, porque los mercados financieros son demasiado volátiles a treinta años",
+                "Sí: cada generación financia su propia pensión con lo que ha ahorrado",
+                "Sí, si los fondos se invierten en países con demografía más joven",
+                "No: lo que consumen los jubilados de un año lo produce quien trabaja ese año, sea cual sea el sistema",
+              ],
+              correcta: 3,
+              porque: [
+                "La volatilidad es un riesgo del sistema, distinto de la restricción demográfica que plantea la pregunta.",
+                "El ahorro acumulado no es un almacén de bienes futuros: son derechos sobre una producción que todavía no existe.",
+                "Invertir fuera mejora la posición negociadora sobre producción ajena, que es un argumento real y parcial, no una solución al problema de fondo.",
+                "Un fondo permite comprar esa producción con mejor posición relativa, pero no crea la producción. El problema es real y ningún mecanismo financiero lo elimina.",
+              ],
+            },
+            {
+              q: "Al analizar la sostenibilidad del sistema de reparto, ¿qué ratio interviene en la identidad contable?",
+              opciones: [
+                "La tasa de natalidad de las dos últimas décadas",
+                "La esperanza de vida a los 65 años",
+                "La tasa de dependencia demográfica: mayores sobre población en edad de trabajar",
+                "Cotizantes por pensión",
+              ],
+              correcta: 3,
+              porque: [
+                "La natalidad condiciona la demografía futura y tampoco entra directamente en la identidad.",
+                "La esperanza de vida influye en el número de pensiones, pero la identidad se formula sobre cotizantes por pensión.",
+                "Es el indicador que suele citarse y no es el que aparece en la identidad, que habla de quién cotiza, no de quién tiene cierta edad.",
+                "Un país puede envejecer y mantener el ratio si eleva la tasa de empleo o incorpora inmigración: la demografía no lo determina por sí sola.",
+              ],
+            },
+            {
+              q: "El ratio de cotizantes por pensión cae de 2,3 a 1,5 y no se toca nada. ¿Qué ocurre?",
+              opciones: [
+                "El sistema entra en déficit y se financia con deuda indefinidamente",
+                "No pasa nada hasta que el fondo de reserva se agote",
+                "Las pensiones se congelan en términos nominales",
+                "La tasa de sustitución se ajusta sola, del 65 % al 42,4 %",
+              ],
+              correcta: 3,
+              porque: [
+                "La deuda puede aplazar el ajuste unos años; la identidad contable sigue operando debajo.",
+                "El fondo de reserva amortigua un desfase temporal, no una caída permanente del ratio.",
+                "La congelación nominal es una política concreta, no lo que impone la aritmética por defecto.",
+                "El recorte llega igualmente, solo que sin haberse decidido ni discutido, y recae íntegramente sobre los pensionistas futuros. No hacer nada es también una elección sobre quién paga.",
+              ],
+            },
+            {
+              q: "Se amplía el periodo de cómputo para calcular la pensión. ¿Qué tipo de medida es?",
+              opciones: [
+                "Una medida neutral en gasto que solo redistribuye entre cohortes",
+                "Un ajuste técnico que mejora la equidad del cálculo",
+                "Un recorte de la tasa de sustitución con otro nombre, y además desigual",
+                "Un incentivo para prolongar la vida laboral",
+              ],
+              correcta: 2,
+              porque: [
+                "No es neutral en gasto: reduce el gasto en pensiones, que es su finalidad.",
+                "Se presenta como técnico y tiene un efecto perfectamente cuantificable sobre la cuantía de las pensiones.",
+                "Perjudica más a quien tuvo carreras ascendentes o interrumpidas: al incluir años peores, la base reguladora baja precisamente para quien empezó cobrando poco.",
+                "Puede tener ese efecto colateral, pero su naturaleza es la de un recorte de la cuantía.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

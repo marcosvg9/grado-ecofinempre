@@ -162,6 +162,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un autónomo constituye una sociedad limitada. ¿Queda su patrimonio personal a salvo de las deudas del negocio?",
+              opciones: [
+                "Sí: esa es exactamente la función de la responsabilidad limitada",
+                "Solo hasta el importe del capital social desembolsado",
+                "No del todo: los avales personales que exige el banco, las deudas con Hacienda y la Seguridad Social en caso de responsabilidad del administrador y la actuación negligente abren brechas importantes",
+                "Sí, salvo que la sociedad tenga menos de dos socios",
+              ],
+              correcta: 2,
+              porque: [
+                "Es su función y tiene excepciones que en la práctica se activan justo cuando el negocio va mal.",
+                "El capital social es lo que responde de las deudas sociales, pero eso no impide que el socio responda por otras vías con su propio patrimonio.",
+                "El aval personal es la más común de todas: el banco lo pide precisamente para neutralizar la responsabilidad limitada, y quien lo firma responde con todo.",
+                "La sociedad unipersonal es perfectamente válida y no altera el régimen de responsabilidad.",
+              ],
+            },
+            {
+              q: "Una ronda de financiación reduce el porcentaje de los fundadores del 80 % al 55 %. ¿Han perdido valor?",
+              opciones: [
+                "Sí: su participación en la empresa es menor",
+                "No necesariamente: un porcentaje menor sobre una empresa que vale mucho más puede valer bastante más que antes",
+                "Sí, en proporción exacta a la dilución sufrida",
+                "No: la dilución nunca afecta al valor de la participación",
+              ],
+              correcta: 1,
+              porque: [
+                "El porcentaje es menor y lo que importa es el producto del porcentaje por el valor, no cada factor por separado.",
+                "Lo que destruye valor no es diluirse, sino hacerlo en una ronda a valoración inferior a la anterior. Confundir ambas cosas lleva a rechazar financiación que interesa.",
+                "La proporción de la caída del porcentaje no dice nada mientras no se sepa cuánto ha subido la valoración.",
+                "Sí puede afectarlo, y mucho, cuando la ronda se cierra por debajo de la valoración anterior.",
+              ],
+            },
+            {
+              q: "Un socio tiene el 51 % del capital. ¿Controla la empresa?",
+              opciones: [
+                "Sí: la mayoría del capital da la mayoría de los votos",
+                "Sí, salvo en decisiones que exijan mayoría reforzada por ley",
+                "No: el control depende del consejo de administración, no del capital",
+                "No necesariamente: los pactos de socios otorgan derechos de veto que no dependen del porcentaje",
+              ],
+              correcta: 3,
+              porque: [
+                "Da la mayoría de los votos en junta, que es solo una parte de lo que decide quién manda.",
+                "Las mayorías reforzadas legales existen, pero la restricción más habitual y más fuerte suele ser contractual.",
+                "El consejo importa, y también lo determinan en buena medida los pactos entre socios.",
+                "Se puede tener el 51 % y no poder vender la empresa, o el 30 % y bloquear cualquier operación relevante. El control se lee en el pacto, no en el porcentaje.",
+              ],
+            },
+            {
+              q: "¿Cuándo conviene firmar el pacto de socios?",
+              opciones: [
+                "Al principio, cuando todavía hay acuerdo, porque su función es resolver los desacuerdos futuros",
+                "Cuando aparezca el primer desacuerdo serio entre los socios",
+                "En la primera ronda de financiación externa, a exigencia del inversor",
+                "Solo si hay más de tres socios",
+              ],
+              correcta: 0,
+              porque: [
+                "Negociarlo en pleno conflicto es imposible, y su ausencia convierte cualquier discrepancia en un bloqueo del que a menudo solo se sale vendiendo o cerrando.",
+                "Es exactamente el momento en que ya no se puede pactar nada: cada cláusula se lee como un movimiento contra la otra parte.",
+                "El inversor lo exigirá, sí, pero para entonces los fundadores llevan años sin reglas entre ellos.",
+                "Con dos socios el riesgo de bloqueo es máximo, porque no hay tercero que desempate.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

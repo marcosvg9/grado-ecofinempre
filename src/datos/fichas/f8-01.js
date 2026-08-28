@@ -165,6 +165,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un inversor compra acciones de Telefónica en bolsa por 10.000 €. ¿Cuánto dinero recibe la empresa?",
+              opciones: [
+                "10.000 €, menos las comisiones del intermediario",
+                "Nada: el dinero va al vendedor anterior, no a la empresa",
+                "La parte proporcional a su autocartera",
+                "10.000 €, contabilizados como ampliación de capital",
+              ],
+              correcta: 1,
+              porque: [
+                "Las comisiones se las lleva el intermediario, pero el resto tampoco llega a la empresa: va a quien vendió las acciones.",
+                "Solo el mercado primario capta financiación nueva. El secundario es indispensable —sin él nadie acudiría al primario— pero no aporta un euro al emisor.",
+                "La autocartera son acciones que la propia empresa posee; comprar en bolsa a otro accionista no la afecta.",
+                "Una ampliación de capital es una emisión nueva, es decir, mercado primario. Comprar acciones ya existentes no lo es.",
+              ],
+            },
+            {
+              q: "Una entidad tiene activos muy por encima de sus deudas pero no puede atender los pagos de mañana. ¿Qué problema tiene?",
+              opciones: [
+                "De solvencia, porque no puede hacer frente a sus obligaciones",
+                "De rentabilidad, porque sus activos no generan lo suficiente",
+                "De liquidez: es solvente, pero sus activos no se convierten en dinero al ritmo que exigen los vencimientos",
+                "De ambos: la iliquidez implica insolvencia",
+              ],
+              correcta: 2,
+              porque: [
+                "La solvencia es tener activos por encima de las deudas, y eso lo cumple. El impago inminente no la contradice.",
+                "La rentabilidad es otra dimensión: una entidad muy rentable puede quedarse sin caja igualmente.",
+                "Son problemas distintos, y confundirlos es el error de fondo de esta ficha. Una entidad solvente puede caer por iliquidez si nadie le presta a tiempo.",
+                "No implica insolvencia, aunque puede provocarla: si hay que malvender activos para pagar, la pérdida sí puede acabar comiéndose el patrimonio.",
+              ],
+            },
+            {
+              q: "Un banco publica un CET1 del 13 %. ¿Sobre qué está calculado ese porcentaje?",
+              opciones: [
+                "Sobre los activos ponderados por riesgo, no sobre el activo total",
+                "Sobre el activo total del balance",
+                "Sobre los depósitos de la clientela",
+                "Sobre el volumen de crédito concedido",
+              ],
+              correcta: 0,
+              porque: [
+                "La deuda pública pondera poco y el crédito al consumo mucho, así que un 13 % de CET1 puede corresponder a un porcentaje mucho menor sobre el activo total.",
+                "Leerlo sobre el activo total sobrestima notablemente el colchón real de capital de la entidad.",
+                "Los depósitos son financiación, no la base del ratio: el denominador mide riesgo de los activos.",
+                "El crédito es una parte de los activos ponderados, no el denominador completo.",
+              ],
+            },
+            {
+              q: "Un particular tiene 250.000 € en una cuenta de un banco que quiebra. ¿Qué está garantizado?",
+              opciones: [
+                "El importe íntegro, por tratarse de un depósito a la vista",
+                "El 75 %, según el orden de prelación de acreedores",
+                "Nada: la garantía cubre solo depósitos a plazo",
+                "100.000 €; el resto queda como acreedor ordinario en el concurso",
+              ],
+              correcta: 3,
+              porque: [
+                "La garantía tiene un tope y no depende de que el depósito sea a la vista o a plazo.",
+                "No hay ningún porcentaje: la cobertura es un importe fijo por titular y entidad.",
+                "Los depósitos a la vista están cubiertos igual que los de plazo, hasta el mismo límite.",
+                "Son 100.000 € por titular y entidad. Por eso los saldos grandes tienen incentivo pleno a salir al primer rumor, que es lo que convierte una duda en una retirada masiva.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

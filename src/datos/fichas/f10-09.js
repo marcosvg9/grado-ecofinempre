@@ -190,6 +190,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un país tiene salarios muy superiores a los de sus competidores. ¿Pierde competitividad por ello?",
+              opciones: [
+                "Sí, salvo que compense con una divisa depreciada",
+                "No: los salarios no intervienen en el coste laboral unitario",
+                "No necesariamente: lo que erosiona la competitividad es que los salarios crezcan por encima de la productividad",
+                "Sí: el coste del trabajo es el principal determinante del precio final",
+              ],
+              correcta: 2,
+              porque: [
+                "La divisa es un factor añadido; el punto es que el nivel salarial por sí solo no dice nada.",
+                "Sí intervienen: son el numerador. Lo que falta en esa lectura es el denominador.",
+                "Un país con salarios altos y productividad alta puede tener un coste laboral unitario más bajo que otro con salarios bajos y productividad baja.",
+                "El coste importa en relación con lo que se produce, no en términos absolutos.",
+              ],
+            },
+            {
+              q: "El coste laboral unitario de un país mejora un 9,4 % durante una recesión. ¿Ha mejorado su competitividad?",
+              opciones: [
+                "No: el indicador no es válido en fases recesivas",
+                "Hay que comprobarlo: puede deberse a que se ha destruido empleo de baja productividad, lo que sube la media sin que nada mejore",
+                "Sí: producir cada unidad cuesta ahora menos trabajo",
+                "Sí, y el efecto será duradero porque los salarios son rígidos a la baja",
+              ],
+              correcta: 1,
+              porque: [
+                "El indicador sigue siendo válido; lo que hay que hacer es descomponerlo antes de interpretarlo.",
+                "Si desaparecen los puestos menos productivos, la productividad media del resto sube sin que ningún trabajador produzca más. La mejora es aritmética, no económica.",
+                "El cociente mejora, y conviene saber por cuál de sus dos vías: puede ser porque el numerador baja o porque el denominador sube por composición.",
+                "La rigidez salarial es otro asunto y no valida una mejora que puede ser puramente composicional.",
+              ],
+            },
+            {
+              q: "¿Por qué el coste laboral unitario subestima el coste real del trabajo en España?",
+              opciones: [
+                "Porque no incluye las cotizaciones sociales a cargo de la empresa",
+                "Porque los autónomos aparecen como excedente de explotación y no como remuneración de asalariados",
+                "Porque se calcula sobre horas trabajadas y no sobre personas",
+                "Porque excluye al sector público, donde no hay precios de mercado",
+              ],
+              correcta: 1,
+              porque: [
+                "Las cotizaciones sí están dentro de la remuneración de asalariados.",
+                "Con un peso del trabajo por cuenta propia elevado, ese tratamiento contable deja fuera del numerador una parte real del coste del trabajo.",
+                "Medir en horas o en personas cambia el nivel del indicador, no introduce este sesgo concreto.",
+                "El sector público entra en las cuentas nacionales, valorado por costes.",
+              ],
+            },
+            {
+              q: "¿Es lo mismo una devaluación interna que una devaluación nominal de la moneda?",
+              opciones: [
+                "Sí: ambas abaratan los productos del país frente al exterior",
+                "Sí, y la interna es preferible por no generar inflación importada",
+                "No: la interna solo funciona en economías pequeñas y abiertas",
+                "El resultado buscado es el mismo; el proceso no: la nominal corrige de golpe y la interna exige mover miles de precios y salarios uno a uno",
+              ],
+              correcta: 3,
+              porque: [
+                "El destino coincide y el camino es lo que las separa, y el camino tiene coste social muy distinto.",
+                "Evita la inflación importada y lo paga con años de ajuste vía desempleo.",
+                "El tamaño y la apertura afectan a la eficacia de ambas, no a esta diferencia.",
+                "Una depreciación no exige renegociar nada; la devaluación interna se hace contrato a contrato, con desempleo por el medio y durante años.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

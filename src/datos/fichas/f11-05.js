@@ -184,6 +184,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿En qué se diferenciaba Bretton Woods de un patrón oro clásico?",
+              opciones: [
+                "En que Bretton Woods permitía la flotación de las monedas europeas",
+                "En que el anclaje se hacía a una cesta de materias primas y no al oro",
+                "En que las paridades eran ajustables ante un desequilibrio fundamental y los movimientos de capital estaban controlados",
+                "En nada esencial: ambos anclaban las monedas al oro",
+              ],
+              correcta: 2,
+              porque: [
+                "Las monedas europeas mantenían paridad fija; la flotación llegó al romperse el sistema.",
+                "El anclaje era al dólar, y el dólar al oro.",
+                "Esas dos piezas permitían tener a la vez tipo fijo y política monetaria propia, que es lo que el trilema declara imposible sin controles.",
+                "El anclaje último se parecía, y las dos diferencias que siguen cambian por completo el margen de maniobra de los gobiernos.",
+              ],
+            },
+            {
+              q: "¿A qué se debió el crecimiento excepcional de la edad de oro?",
+              opciones: [
+                "A la apertura comercial, que recuperó los niveles de 1913",
+                "Al sistema monetario de Bretton Woods, que dio estabilidad",
+                "A convergencia tecnológica, traslado de trabajadores del campo a la industria, energía barata y demografía favorable, con el marco monetario como facilitador",
+                "Al gasto público de los Estados de bienestar europeos",
+              ],
+              correcta: 2,
+              porque: [
+                "La apertura de 1913 no se recuperó hasta los setenta, es decir, al final del periodo.",
+                "El marco monetario facilitó el proceso y no lo generó: atribuirle todo el crecimiento confunde condición con causa.",
+                "Distinguir la parte estructural de la coyuntural es lo que evita leer la desaceleración posterior a 1973 como un fracaso: el mecanismo de convergencia se agota por construcción.",
+                "El gasto social creció en el periodo y no explica una aceleración de esa magnitud.",
+              ],
+            },
+            {
+              q: "¿Por qué se rompió el sistema de Bretton Woods?",
+              opciones: [
+                "Por la negativa alemana a revaluar el marco",
+                "Por el agotamiento de las reservas de oro mundiales",
+                "Por la crisis del petróleo de 1973",
+                "Por una contradicción interna: dar liquidez al mundo exigía déficit estadounidense, y ese déficit vaciaba de credibilidad la convertibilidad del dólar",
+              ],
+              correcta: 3,
+              porque: [
+                "Las tensiones cambiarias existieron y son un síntoma del problema de fondo, no su origen.",
+                "El oro no se agotó: lo que se agotó fue la credibilidad de convertir dólares en oro a la paridad pactada.",
+                "El choque del petróleo llegó después de la suspensión de la convertibilidad, no antes.",
+                "Triffin lo señaló en 1960, más de una década antes del colapso: el sistema necesitaba para funcionar justamente lo que lo destruía.",
+              ],
+            },
+            {
+              q: "¿Existe una solución óptima del trilema entre tipo fijo, libertad de capitales y política monetaria propia?",
+              opciones: [
+                "Sí, pero solo para economías grandes y diversificadas",
+                "No, porque el trilema solo se aplica a economías emergentes",
+                "Sí: la flotación con capitales libres, que es la combinación dominante",
+                "No: cada vértice sacrifica algo, y cuál convenga depende de qué se esté dispuesto a perder",
+              ],
+              correcta: 3,
+              porque: [
+                "El tamaño influye en cuánto duele cada sacrificio, no en que exista un vértice superior.",
+                "El trilema opera igual en economías avanzadas: la zona euro es el ejemplo más claro.",
+                "Es la combinación dominante hoy y sacrifica la estabilidad del tipo de cambio, que para una economía muy abierta puede ser un coste grande.",
+                "Bretton Woods sacrificó la libertad de capitales; el patrón oro y el euro, la política monetaria nacional; la flotación, la estabilidad cambiaria. La historia del siglo XX es la de países cambiando de vértice cuando el sacrificio se vuelve insoportable.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

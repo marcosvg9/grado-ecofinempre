@@ -184,6 +184,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un autónomo obtiene 30.000 € de renta mixta. ¿Es su beneficio empresarial?",
+              opciones: [
+                "No: dentro va el trabajo del titular y el rendimiento de su capital en el mismo número, y el SEC no puede separarlos",
+                "No: la renta mixta solo recoge la retribución de su trabajo",
+                "Sí, una vez descontada su cotización de autónomo",
+                "Sí: es lo que le queda tras pagar todos sus costes",
+              ],
+              correcta: 0,
+              porque: [
+                "Se llama mixta precisamente por eso. Contabilizarla entera como excedente atribuye al capital una renta que en gran medida es salarial.",
+                "Tampoco es solo trabajo: hay capital invertido en el negocio que también se está retribuyendo.",
+                "La cotización es un gasto más y no resuelve el problema conceptual de qué parte retribuye trabajo y qué parte capital.",
+                "Le queda eso, y no todo ello retribuye al capital: buena parte paga su propio trabajo.",
+              ],
+            },
+            {
+              q: "Una reforma convierte a muchos asalariados en autónomos. ¿Qué le ocurre a la participación salarial sin corregir?",
+              opciones: [
+                "Cae solo si además bajan los salarios de los que siguen siendo asalariados",
+                "Cae, y el excedente sube, sin que un solo euro haya cambiado de destinatario",
+                "No varía: la renta total del trabajo es la misma",
+                "Sube, porque los autónomos declaran rentas mayores",
+              ],
+              correcta: 1,
+              porque: [
+                "El efecto aparece aunque ningún salario se mueva.",
+                "Es un efecto de composición puro, y por eso hay que mirar qué ha pasado con el empleo antes de interpretar una caída de la participación salarial como un cambio en el reparto.",
+                "La renta del trabajo es la misma y deja de estar registrada como remuneración de asalariados: pasa a renta mixta.",
+                "El nivel de las rentas declaradas no es lo que mueve el indicador: lo mueve el cambio de epígrafe.",
+              ],
+            },
+            {
+              q: "¿Qué son las cotizaciones sociales imputadas (D.122)?",
+              opciones: [
+                "Las cotizaciones que el Estado paga por sus funcionarios",
+                "Las que el trabajador paga y el empleador ingresa en su nombre",
+                "Las cotizaciones estimadas de la economía sumergida",
+                "La contrapartida contable de prestaciones que un empleador paga directamente a sus trabajadores sin pasar por un sistema de seguridad social: no mueven dinero",
+              ],
+              correcta: 3,
+              porque: [
+                "Las de los funcionarios son efectivas cuando se ingresan en un régimen; lo imputado es otra cosa.",
+                "Esas son cotizaciones efectivas a cargo del trabajador, y sí implican un pago real.",
+                "La economía sumergida se estima por otras vías y no da lugar a esta partida.",
+                "Se registra el flujo como si existiera para que la prestación tenga origen contable, pero no hay ningún ingreso ni pago detrás.",
+              ],
+            },
+            {
+              q: "¿Es todo el saldo de la cuenta de explotación de los hogares renta mixta?",
+              opciones: [
+                "No: hay también excedente de explotación puro, el de los servicios de alquiler que los propietarios se prestan al ocupar su vivienda",
+                "No: incluye además la remuneración de asalariados que perciben sus miembros",
+                "Sí: los hogares no tienen capital productivo",
+                "Sí, salvo en los hogares con empleados domésticos",
+              ],
+              correcta: 0,
+              porque: [
+                "Ahí no hay ningún trabajo del titular que separar, así que es excedente sin más: son los alquileres imputados de la vivienda en propiedad.",
+                "Los sueldos que perciben sus miembros los reciben de otros sectores; no forman parte del saldo de explotación del hogar como productor.",
+                "Sí lo tienen, y muy voluminoso: la vivienda que ocupan.",
+                "Los empleados domésticos generan remuneración de asalariados pagada por el hogar, no cambian la naturaleza del saldo.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

@@ -159,6 +159,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Una empresa baja sus precios por debajo de los de la competencia. ¿Es liderazgo en costes?",
+              opciones: [
+                "Sí: el liderazgo en costes se manifiesta en precios bajos",
+                "No: el liderazgo en costes es tener la estructura de costes más baja, lo que permite bajar precios y seguir ganando",
+                "Sí, si mantiene la política durante varios ejercicios",
+                "No: es diferenciación por precio",
+              ],
+              correcta: 1,
+              porque: [
+                "Se manifiesta así cuando existe. Bajar precios sin tener la estructura detrás no es una estrategia sino una cuenta atrás.",
+                "El orden importa: primero la estructura de costes, después el precio. Al revés solo se acelera la pérdida.",
+                "Sostenerlo varios años sin la estructura adecuada agrava el problema en lugar de convertirlo en estrategia.",
+                "La diferenciación consiste en que el cliente pague más por algo distinto, que es lo contrario de competir por precio.",
+              ],
+            },
+            {
+              q: "¿Por qué no se pueden perseguir a la vez liderazgo en costes y diferenciación con el mismo modelo?",
+              opciones: [
+                "Porque la normativa contable obliga a segmentar la información por líneas",
+                "Porque exigen decisiones organizativas opuestas: estandarización frente a variedad, rigidez frente a flexibilidad",
+                "Porque los clientes no aceptan ambas propuestas de una misma marca",
+                "Porque duplicaría los costes de estructura",
+              ],
+              correcta: 1,
+              porque: [
+                "La contabilidad registra lo que se hace; no impone la forma de competir.",
+                "Combinarlas solo es posible mediante una innovación que desplace la frontera, no queriendo las dos cosas con la misma organización.",
+                "Los clientes pueden aceptarlo con marcas distintas: el obstáculo está dentro de la empresa, en cómo se organiza la producción.",
+                "El problema no es el coste de la estructura sino que las dos estructuras se contradicen.",
+              ],
+            },
+            {
+              q: "Una empresa integra verticalmente porque su proveedor gana un buen margen. ¿Es buen motivo?",
+              opciones: [
+                "Sí: ese margen pasa a quedarse en casa",
+                "Sí, si el proveedor es el único del mercado",
+                "No: si el mercado es competitivo, ese margen retribuye una escala y un conocimiento que habría que replicar",
+                "No: la integración vertical está desaconsejada en cualquier caso",
+              ],
+              correcta: 2,
+              porque: [
+                "Se queda en casa el margen y también el coste de generarlo, que es lo que la cuenta olvida.",
+                "Un proveedor único es un argumento distinto —de dependencia—, y ese sí puede justificar integrar.",
+                "El criterio correcto es comparar el coste de hacerlo dentro con el de comprarlo fuera, no mirar el beneficio ajeno.",
+                "No está desaconsejada: hay razones sólidas para integrar. La que no vale es la envidia del margen del proveedor.",
+              ],
+            },
+            {
+              q: "¿Qué distingue a una estrategia de una lista de objetivos?",
+              opciones: [
+                "Que la estrategia se aprueba en consejo y los objetivos no",
+                "Que la estrategia tiene horizonte plurianual",
+                "Que la estrategia se expresa en indicadores cuantificables",
+                "Que la estrategia implica renuncias: a qué clientes no servir, qué productos no ofrecer, qué mercados no atender",
+              ],
+              correcta: 3,
+              porque: [
+                "El órgano que la aprueba no cambia su contenido.",
+                "Una lista de objetivos también puede ser plurianual y seguir sin ser una estrategia.",
+                "Los indicadores sirven para seguirla, no para definirla: un documento lleno de métricas puede no contener ninguna elección.",
+                "Un documento en el que todo son metas y nada son renuncias no es una estrategia: es una declaración de intenciones que no orienta ninguna decisión difícil.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

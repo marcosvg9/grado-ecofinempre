@@ -178,6 +178,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Tienen las administraciones públicas consumo final efectivo individual?",
+              opciones: [
+                "Sí, pero se reparte entre ambos sectores a partes iguales",
+                "Sí: la sanidad y la educación que prestan son consumo individual suyo",
+                "No: todo su consumo individual se transfiere a los hogares en especie, y solo les queda el colectivo",
+                "Sí, en la parte que financian con tasas y precios públicos",
+              ],
+              correcta: 2,
+              porque: [
+                "No hay reparto: lo individualizable pasa entero a los hogares.",
+                "Lo pagan ellas y lo consumen las familias: en el consumo efectivo manda quién consume, no quién paga.",
+                "Defensa, justicia, seguridad o diplomacia no se pueden individualizar, y eso es lo único que las administraciones consumen de verdad.",
+                "La forma de financiación no cambia quién disfruta el servicio.",
+              ],
+            },
+            {
+              q: "¿Qué añade la renta disponible ajustada (B.7) sobre la renta disponible (B.6)?",
+              opciones: [
+                "El ajuste por variación de derechos por pensiones",
+                "Los impuestos corrientes ya satisfechos",
+                "Las rentas de la propiedad imputadas a los asegurados",
+                "Las transferencias sociales en especie que el hogar recibe sin pagarlas",
+              ],
+              correcta: 3,
+              porque: [
+                "El ajuste D.8 opera en la cuenta de utilización de la renta, no en el paso de B.6 a B.7.",
+                "Los impuestos ya están descontados en B.6: no vuelven a entrar.",
+                "Esas se registran en la cuenta de rentas de la propiedad, mucho antes.",
+                "Mide lo que el hogar puede realmente disponer, incluida la sanidad y la educación que recibe gratis y que de otro modo tendría que comprar.",
+              ],
+            },
+            {
+              q: "El ahorro puede calcularse como renta disponible menos gasto, o como renta disponible ajustada menos consumo efectivo. ¿Coinciden?",
+              opciones: [
+                "No: la segunda óptica da un ahorro mayor, al incluir las transferencias en especie",
+                "No: la primera es la oficial y la segunda solo una aproximación",
+                "Solo coinciden en el agregado nacional, no sector por sector",
+                "Sí, y esa coincidencia es una comprobación útil de que el sistema está bien construido",
+              ],
+              correcta: 3,
+              porque: [
+                "Las transferencias en especie se suman a la renta y se suman también al consumo, así que se cancelan en el saldo.",
+                "Ambas son igual de oficiales: son dos lecturas del mismo sistema.",
+                "Coinciden también sector por sector, precisamente por la cancelación.",
+                "Lo que se añade por un lado se añade por el otro, y el ahorro sale idéntico. Es una de esas propiedades que confirman la coherencia interna de las cuentas.",
+              ],
+            },
+            {
+              q: "¿Qué sectores tienen gasto en consumo final en el SEC?",
+              opciones: [
+                "Las administraciones públicas, los hogares y las instituciones sin fines de lucro al servicio de los hogares",
+                "Todos los sectores residentes",
+                "Todos menos las instituciones financieras",
+                "Solo las administraciones públicas y los hogares",
+              ],
+              correcta: 0,
+              porque: [
+                "Son los tres sectores que consumen para satisfacer necesidades y no para producir otra cosa.",
+                "Las sociedades no consumen: todo lo que compran es consumo intermedio o formación de capital.",
+                "Las financieras tampoco consumen, y las no financieras tampoco.",
+                "Faltan las instituciones sin fines de lucro al servicio de los hogares, que sí tienen consumo final.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

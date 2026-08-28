@@ -194,6 +194,82 @@ export default {
     },
 
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Se compara la matriz de covarianzas estimada sobre el mismo periodo en el que después se mide el error. ¿Qué ocurre?",
+              opciones: [
+                "Nada: usar todos los datos disponibles es lo correcto",
+                "El método pierde la propiedad de invariancia",
+                "La matriz queda mal condicionada y no se puede invertir",
+                "El resultado sale optimista y no se reproduce fuera de muestra",
+              ],
+              correcta: 3,
+              porque: [
+                "Usar todos los datos para estimar y evaluar a la vez es precisamente lo que invalida la evaluación.",
+                "La invariancia es una propiedad del método, independiente de cómo se evalúe.",
+                "El condicionamiento es otro problema, y puede darse con o sin este error de evaluación.",
+                "La evaluación honesta usa origen móvil: estimar con lo disponible en cada fecha y repetir, como si se estuviera prediciendo de verdad.",
+              ],
+            },
+            {
+              q: "Un método de reconciliación mejora un 2 % sobre treinta orígenes de evaluación. ¿Basta para adoptarlo?",
+              opciones: [
+                "Sí: una mejora consistente es una mejora",
+                "No: por debajo del 5 % ninguna mejora es adoptable",
+                "Conviene ser cauto: con pocos orígenes una diferencia de esa magnitud puede no ser distinguible del azar, y además hay que pesar el coste",
+                "Sí, si además mejora en todos los niveles de la jerarquía",
+              ],
+              correcta: 2,
+              porque: [
+                "Las diferencias entre métodos de reconciliación suelen ser de unos pocos puntos porcentuales, y treinta orígenes son pocos para distinguirlas del ruido.",
+                "No hay ningún umbral fijo: depende de la variabilidad de la mejora y de lo que cueste mantenerla.",
+                "Mantener una reconciliación óptima con matriz estimada exige vigilancia continua; la ortogonal no requiere nada. Esa asimetría pesa en la decisión.",
+                "Mejorar en todos los niveles refuerza el caso y no resuelve la cuestión del tamaño muestral ni la del coste.",
+              ],
+            },
+            {
+              q: "¿De qué depende la escala de una medida de error escalada?",
+              opciones: [
+                "Del número de series de la jerarquía",
+                "Del error de una previsión ingenua sobre el histórico de la propia serie",
+                "Del nivel medio de la serie evaluada",
+                "Del horizonte de previsión utilizado",
+              ],
+              correcta: 1,
+              porque: [
+                "El número de series afecta a cómo se promedia, no a la escala de cada medida.",
+                "Una serie muy predecible tiene un denominador pequeño, así que su medida escalada sale grande aunque el error absoluto sea diminuto. Conviene saberlo al leer la tabla.",
+                "Dividir por el nivel corregiría la escala y no tendría en cuenta lo predecible que es la serie.",
+                "El horizonte cambia el error y también el de la referencia ingenua.",
+              ],
+            },
+            {
+              q: "Se publican intervalos de previsión y se evalúan con el error absoluto medio de los puntos. ¿Es suficiente?",
+              opciones: [
+                "Sí, siempre que se acompañe de la cobertura observada del intervalo",
+                "No: si el producto son intervalos o probabilidades, hacen falta medidas probabilísticas que juzguen la calibración",
+                "Sí: si el punto central acierta, el intervalo está bien situado",
+                "No, pero el error puntual es el mejor sustituto disponible",
+              ],
+              correcta: 1,
+              porque: [
+                "La cobertura observada ya es una medida probabilística: incluirla es reconocer que el error puntual no basta.",
+                "Evaluar intervalos con medidas de error puntual no dice si están bien calibrados, que es justamente lo que hay que comprobar de un intervalo.",
+                "Un punto bien situado es compatible con un intervalo absurdamente ancho o absurdamente estrecho.",
+                "Existen medidas probabilísticas específicas y bien establecidas: no hace falta ningún sustituto.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

@@ -186,6 +186,82 @@ export default {
     },
 
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "El INE publica una serie ajustada de estacionalidad y otra ajustada también de calendario. ¿Cuál hay que usar?",
+              opciones: [
+                "Depende de la pregunta: una dice cuánto se produjo realmente y la otra cuánto se habría producido con un calendario medio",
+                "Siempre la primera, que es la oficial a efectos europeos",
+                "Siempre la segunda, que está más corregida",
+                "Es indiferente: las diferencias son inferiores a una décima",
+              ],
+              correcta: 0,
+              porque: [
+                "Lo que no vale es mezclarlas: comparar un trimestre de una con otro de la otra produce una diferencia que es puro artefacto.",
+                "Ambas son oficiales y ambas se publican; la elección es del analista.",
+                "Más correcciones no significa más adecuada: cada serie responde a una pregunta distinta.",
+                "Pueden diferir en bastante más: en el ejemplo del bloque, casi dos puntos entre la caída bruta y la corregida.",
+              ],
+            },
+            {
+              q: "¿Tiene sentido aplicar el regresor de Semana Santa a cualquier serie?",
+              opciones: [
+                "No, salvo que la Semana Santa caiga en marzo",
+                "No: solo donde la fiesta desplaza actividad de verdad, como hostelería, transporte o comercio",
+                "Sí, siempre que la serie sea trimestral",
+                "Sí: la fiesta afecta al conjunto de la economía",
+              ],
+              correcta: 1,
+              porque: [
+                "El mes en que caiga es justamente lo que hace variable el efecto donde existe; no lo crea donde no lo hay.",
+                "Aplicarlo a una rama que no la sufre introduce ruido y consume un grado de libertad sin corregir nada.",
+                "La frecuencia de la serie no determina si el fenómeno existe en esa actividad.",
+                "Afecta mucho a unas ramas y nada a otras: aplicarlo indiscriminadamente iguala lo que es desigual.",
+              ],
+            },
+            {
+              q: "¿Por qué no basta un único regresor de calendario para corregir el PIB total?",
+              opciones: [
+                "Porque el PIB se compone de tres ópticas de cálculo distintas",
+                "Porque el PIB se publica en volumen y el regresor se estima en valor",
+                "Porque los regresores de calendario solo son válidos para series mensuales",
+                "Porque la construcción y la industria dependen mucho de los días hábiles y los servicios públicos casi nada",
+              ],
+              correcta: 3,
+              porque: [
+                "Las tres ópticas dan el mismo agregado; el problema es la heterogeneidad sectorial dentro de él.",
+                "La unidad de medida no impide estimar una elasticidad al calendario.",
+                "Se aplican también a series trimestrales, como muestra el propio ejemplo del bloque.",
+                "Un solo coeficiente promedia sensibilidades muy distintas y corrige mal en ambos extremos: de más a unos sectores y de menos a otros.",
+              ],
+            },
+            {
+              q: "¿Qué ocurre si se corrigen los efectos de calendario después de la descomposición en lugar de antes?",
+              opciones: [
+                "Nada: el orden de las dos correcciones es indiferente",
+                "Se pierden las observaciones iniciales de la serie",
+                "El filtro estacional mezcla parcialmente el calendario con el componente estacional al promediar por trimestres",
+                "La serie ajustada queda sobrecorregida, con los efectos descontados dos veces",
+              ],
+              correcta: 2,
+              porque: [
+                "El orden importa mucho: cada etapa opera sobre lo que le entrega la anterior.",
+                "La pérdida de observaciones la causan las diferencias del modelo, no el orden de las correcciones.",
+                "El componente estacional acaba recogiendo parte de algo que no se repite igual cada año, y a partir de ahí el resto de la descomposición hereda el error.",
+                "No hay doble descuento: lo que hay es contaminación de un componente por otro.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

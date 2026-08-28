@@ -184,6 +184,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Son impredecibles las crisis financieras?",
+              opciones: [
+                "Sí: si lo fueran, el mercado las anticiparía y no ocurrirían",
+                "No: los modelos de riesgo actuales permiten datarlas con meses de antelación",
+                "Sí, porque dependen de sucesos externos imprevisibles",
+                "No en cuanto a su mecánica: la brecha del crédito sobre PIB, el precio real de la vivienda y el déficit exterior las anuncian; lo que no se puede predecir es la fecha",
+              ],
+              correcta: 3,
+              porque: [
+                "El argumento de la anticipación explicaría por qué no se repiten, y se repiten con notable regularidad.",
+                "Ningún modelo data una crisis: identificar la acumulación de riesgo no es lo mismo que saber cuándo se romperá.",
+                "El detonante suele ser menor y casi anecdótico: lo que hace grande la crisis es la fragilidad acumulada antes.",
+                "Los indicadores son conocidos y públicos. El problema no es de información sino de incentivos: pararse mientras todos siguen tiene coste inmediato y beneficio incierto.",
+              ],
+            },
+            {
+              q: "Durante el auge, la morosidad de un banco es mínima. ¿Prueba que su cartera es sólida?",
+              opciones: [
+                "No: nadie impaga mientras puede refinanciar contra una garantía que se revaloriza",
+                "Sí, si además su ratio de capital supera el mínimo regulatorio",
+                "Sí: la morosidad es la medida directa de la calidad del crédito",
+                "No, salvo que la cartera esté diversificada por sectores",
+              ],
+              correcta: 0,
+              porque: [
+                "La morosidad baja del auge no mide solvencia: mide que el precio del activo sigue subiendo. Cuando deja de subir, aparece de golpe todo lo que estaba tapado.",
+                "El capital regulatorio se calcula con ponderaciones que en el auge también parecen benignas.",
+                "Es una medida directa de lo que está ocurriendo hoy, no de la calidad subyacente de los préstamos.",
+                "La diversificación sectorial no protege si la garantía común —el inmueble— se deprecia en todos los sectores a la vez.",
+              ],
+            },
+            {
+              q: "Un banco opera con un 3 % de capital sobre activos. ¿Por qué es difícil que las entidades prudentes resistan la presión de imitarlo?",
+              opciones: [
+                "Porque con ese apalancamiento una subida del 1 % en los activos eleva la rentabilidad sobre recursos propios un 33 %, y la entidad prudente parece mediocre durante años",
+                "Porque los depositantes prefieren bancos apalancados",
+                "Porque la regulación premia el apalancamiento con menores exigencias",
+                "Porque el coste de capital de una entidad prudente es más alto",
+              ],
+              correcta: 0,
+              porque: [
+                "El apalancamiento no es una decisión aislada de cada entidad: es una carrera en la que el prudente pierde cuota, bolsa y consejero delegado mucho antes de tener razón.",
+                "Los depositantes rara vez miran el balance: están cubiertos hasta el límite garantizado.",
+                "La regulación pone mínimos; el problema es el incentivo a quedarse justo en ellos.",
+                "El coste de capital de una entidad prudente suele ser menor, no mayor.",
+              ],
+            },
+            {
+              q: "Tras una crisis financiera la deuda pública se dispara. ¿De dónde procede la mayor parte del aumento?",
+              opciones: [
+                "De la subida de los tipos de interés exigidos por los mercados",
+                "De la asunción de la deuda privada de los hogares",
+                "Del coste directo del rescate bancario",
+                "De la caída de la recaudación y del aumento del gasto que produce la recesión",
+              ],
+              correcta: 3,
+              porque: [
+                "El coste de los intereses agrava el problema una vez la deuda ya ha crecido; no es el origen del salto.",
+                "La deuda de los hogares no se asume públicamente: sigue en sus balances.",
+                "El rescate es la partida más visible y políticamente comentada, y no la mayor.",
+                "La distinción se ignora casi siempre en el debate público, y cambia por completo el diagnóstico de qué hay que evitar la próxima vez.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

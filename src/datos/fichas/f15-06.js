@@ -201,6 +201,82 @@ export default {
     },
 
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "En la escalera de especificaciones, ¿tiene RSA3 más parámetros que RSA2?",
+              opciones: [
+                "Sí, salvo en series trimestrales",
+                "Ambas estiman el mismo número: solo cambia el criterio de selección",
+                "No: RSA3 no corrige calendario, así que estima menos parámetros pese a estar más arriba",
+                "Sí: la numeración indica complejidad creciente",
+              ],
+              correcta: 2,
+              porque: [
+                "La frecuencia no altera qué delega cada escalón.",
+                "Difieren en qué se estima, no solo en cómo se elige.",
+                "Es una confusión fácil y con consecuencias: elegir por el número creyendo que se sube en sofisticación puede dejar sin corregir un efecto que la serie sí tiene.",
+                "La numeración indica qué se delega al programa, no cuánto se estima.",
+              ],
+            },
+            {
+              q: "Se ajusta una serie de empleo de una comunidad autónoma con el calendario nacional. ¿Qué problema hay?",
+              opciones: [
+                "Ninguno: los festivos nacionales son los que más pesan",
+                "Que el calendario nacional solo es válido para series mensuales",
+                "Que los festivos autonómicos hacen que el número de días hábiles difiera entre comunidades",
+                "Que las series regionales no admiten corrección de calendario",
+              ],
+              correcta: 2,
+              porque: [
+                "Los nacionales pesan y no son los únicos: la diferencia de días hábiles entre comunidades es real y medible.",
+                "Es aplicable a cualquier frecuencia.",
+                "La serie queda corregida con un número de días que no es el suyo, y el residuo se cuela en los demás componentes. Por eso la herramienta permite definir calendarios propios.",
+                "Sí la admiten, y precisamente por eso importa usar el calendario correcto.",
+              ],
+            },
+            {
+              q: "Se quieren comparar los resultados de TRAMO-SEATS y X-13 sobre la misma serie. ¿Qué hay que garantizar?",
+              opciones: [
+                "Que la serie tenga al menos veinte años de historia",
+                "Que ambos usen especificación automática, para que la comparación sea neutral",
+                "Que se comparen únicamente los últimos cuatro trimestres",
+                "Que se les den los mismos regresores de calendario y los mismos atípicos",
+              ],
+              correcta: 3,
+              porque: [
+                "La longitud ayuda a que ambos funcionen bien; no es lo que hace comparable el resultado.",
+                "La automática es lo contrario de neutral aquí: cada rama puede identificar cosas distintas y la comparación deja de aislar el método.",
+                "Las diferencias se concentran en los extremos, y restringir la comparación a ellos no corrige el problema de partida.",
+                "Si no, se estarían comparando dos ajustes que difieren en el pre-ajuste además de en el método de descomposición, y no se sabría a qué atribuir la diferencia.",
+              ],
+            },
+            {
+              q: "¿Qué aporta realmente una herramienta como JDemetra+?",
+              opciones: [
+                "Resuelve el ajuste: basta cargar la serie y ejecutar",
+                "Elimina la necesidad de revisar los atípicos, al detectarlos automáticamente",
+                "Calcula más rápido que las alternativas",
+                "Deja cada decisión explícita, documentada y reproducible; las decisiones siguen siendo del analista",
+              ],
+              correcta: 3,
+              porque: [
+                "No resuelve nada por sí sola: transformación, modelo, atípicos, calendario y política de revisiones siguen siendo elecciones.",
+                "La detección automática propone, y al final de la serie propone mal con frecuencia: hay que revisarla.",
+                "La velocidad es lo de menos: el valor está en que un método común hace comparables las series de los distintos países.",
+                "Un ajuste que no se puede reproducir no es publicable, y ese es el problema que la herramienta resuelve de verdad.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

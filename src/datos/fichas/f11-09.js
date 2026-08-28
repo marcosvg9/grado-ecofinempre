@@ -177,6 +177,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Qué desató el crecimiento español de los años sesenta?",
+              opciones: [
+                "La apertura al exterior del giro de 1959: devaluación, entrada de divisas, turismo, remesas e inversión extranjera",
+                "El aumento de la población activa por la incorporación de las mujeres al mercado laboral",
+                "Los Planes de Desarrollo del régimen, que planificaron la industrialización",
+                "La inversión pública en infraestructuras de la década anterior",
+              ],
+              correcta: 0,
+              porque: [
+                "El Plan de Estabilización fue un ajuste de urgencia con las reservas agotadas, y lo que cambió el rumbo fue dejar entrar bienes, capital y turistas.",
+                "La incorporación femenina al empleo fue muy posterior y no explica el despegue de los sesenta.",
+                "Los Planes llegaron después del giro de 1959 y su eficacia es muy discutida: atribuirles el crecimiento invierte el orden de los hechos.",
+                "La inversión de los años cincuenta se hizo en plena autarquía y con la renta todavía por debajo de 1935.",
+              ],
+            },
+            {
+              q: "Buena parte del avance de la productividad en los sesenta vino de mover trabajadores del campo a la industria. ¿Es una mejora de eficiencia?",
+              opciones: [
+                "Sí, porque la industria incorporaba tecnología más avanzada",
+                "Sí: la productividad media del país subió",
+                "No es lo mismo: mover gente de un sector de productividad 40 a otro de 140 eleva la media sin que mejore nada dentro de cada sector",
+                "No: el traslado sectorial no afecta a la productividad agregada",
+              ],
+              correcta: 2,
+              porque: [
+                "La industria sí incorporaba mejor tecnología, y ese es un efecto distinto y adicional al puramente composicional.",
+                "La media sube, y conviene saber si sube porque alguien produce más o porque ha cambiado la composición del empleo.",
+                "Es un efecto composicional, y tiene un límite claro: se agota cuando ya no queda gente en el sector de baja productividad. Confundirlo con mejora de eficiencia lleva a esperar que el crecimiento continúe cuando el mecanismo se ha acabado.",
+                "Sí la afecta, y mucho: es precisamente el mecanismo descrito.",
+              ],
+            },
+            {
+              q: "¿Puede darse por irreversible la convergencia de España con Europa?",
+              opciones: [
+                "Sí: la pertenencia a la Unión Europea garantiza la convergencia a largo plazo",
+                "Sí, salvo en periodos de recesión mundial",
+                "No: España perdió nueve puntos de posición relativa entre 1975 y 1985 y siete entre 2007 y 2013",
+                "No, pero los retrocesos se han recuperado siempre en menos de cinco años",
+              ],
+              correcta: 2,
+              porque: [
+                "La pertenencia facilita el proceso y no lo garantiza: hay miembros que llevan décadas sin acercarse.",
+                "No es solo cuestión del ciclo mundial: el retroceso de 1975-1985 tuvo causas en buena medida internas.",
+                "En ambos casos una década borró buena parte de lo ganado en las dos anteriores. La convergencia es un resultado, no una tendencia garantizada.",
+                "La recuperación de esos retrocesos llevó bastante más de cinco años.",
+              ],
+            },
+            {
+              q: "¿Fueron 1959 y 1986 el mismo tipo de decisión?",
+              opciones: [
+                "Sí, y ambas se tomaron bajo presión de organismos internacionales",
+                "No: la primera fue un ajuste de urgencia con las reservas agotadas y sin red de compensación; la segunda, una decisión política de largo plazo",
+                "Sí: ambas abrieron la economía española al exterior",
+                "No: 1959 fue política y 1986 puramente técnica",
+              ],
+              correcta: 1,
+              porque: [
+                "El Plan de Estabilización sí respondió a presión externa con las reservas exhaustas; la adhesión fue una elección con años de negociación por delante.",
+                "Tratar ambas como el mismo tipo de decisión borra que una se tomó sin alternativa y la otra con alternativas sobre la mesa y fondos de compensación negociados.",
+                "Ambas abrieron la economía y lo hicieron en circunstancias y con márgenes de elección incomparables.",
+                "La adhesión de 1986 fue una decisión eminentemente política; lo técnico vino después.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

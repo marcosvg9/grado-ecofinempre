@@ -191,6 +191,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Dónde aparece la rentabilidad esperada del subyacente en la fórmula de Black-Scholes?",
+              opciones: [
+                "En la deriva del proceso del subyacente",
+                "En ningún sitio, y no es un olvido: el argumento de réplica hace que el precio dependa solo de lo que cuesta construir la cartera equivalente",
+                "Está implícita en el tipo sin riesgo",
+                "Aparece solo en las opciones de venta",
+              ],
+              correcta: 1,
+              porque: [
+                "La deriva real desaparece del resultado precisamente porque la réplica la neutraliza.",
+                "Dos inversores con expectativas opuestas sobre la acción deben coincidir en el precio de la opción, porque ambos pueden replicarla al mismo coste.",
+                "El tipo sin riesgo es el coste de financiar la cartera réplica, no la rentabilidad esperada del activo disfrazada.",
+                "La fórmula de la opción de venta se obtiene por paridad y tampoco la contiene.",
+              ],
+            },
+            {
+              q: "Sube la volatilidad esperada del subyacente. ¿A quién beneficia?",
+              opciones: [
+                "Al comprador de opciones de compra y perjudica al de opciones de venta",
+                "Al vendedor de opciones, que cobra más prima",
+                "Al comprador de opciones, tanto de compra como de venta",
+                "A nadie: la volatilidad no afecta al precio de la opción",
+              ],
+              correcta: 2,
+              porque: [
+                "Beneficia a los compradores de ambos tipos: el efecto no depende de la dirección esperada.",
+                "El vendedor cobra más prima porque el riesgo que asume es mayor; no sale ganando por ello.",
+                "La pérdida del comprador está limitada a la prima y la ganancia no, así que más dispersión de resultados aumenta el valor de la opción.",
+                "Es uno de los parámetros que más pesan: de hecho es el único que no se observa directamente y hay que estimar.",
+              ],
+            },
+            {
+              q: "Una cartera está cubierta por delta. ¿Queda protegida frente a un movimiento brusco del subyacente?",
+              opciones: [
+                "Sí: la delta mide exactamente la sensibilidad al subyacente",
+                "No: la delta cambia al moverse el subyacente, y esa variación —la gamma— desajusta la cobertura",
+                "Sí, si se recalcula la delta al cierre de cada sesión",
+                "No, porque la delta solo cubre movimientos a la baja",
+              ],
+              correcta: 1,
+              porque: [
+                "La mide en un punto: es una derivada, y vale para movimientos pequeños alrededor del nivel actual.",
+                "En movimientos grandes el desajuste es rápido y sustancial, que es cuando más falta hacía la cobertura.",
+                "El ajuste diario ayuda con derivas lentas y no salva un salto brusco, que ocurre entre ajustes.",
+                "La delta es simétrica; el problema es su variación, no la dirección del movimiento.",
+              ],
+            },
+            {
+              q: "La volatilidad implícita de las opciones sobre un índice está en el 22 %. ¿Es la previsión del mercado sobre la volatilidad futura?",
+              opciones: [
+                "Sí: por eso se la llama la previsión implícita del mercado",
+                "No: es la volatilidad histórica del último año",
+                "Sí, siempre que se tome la de las opciones a dinero",
+                "No: incorpora la expectativa más una prima de riesgo, y ha superado sistemáticamente a la volatilidad realizada",
+              ],
+              correcta: 3,
+              porque: [
+                "El nombre es engañoso: lo implícito es lo que hace cuadrar el precio, y en ese precio hay más cosas que una previsión.",
+                "La implícita se extrae de los precios de las opciones, mirando hacia adelante; la histórica se calcula sobre el pasado.",
+                "Tomar las opciones a dinero reduce el efecto de la sonrisa, pero no elimina la prima de riesgo.",
+                "Quien vende volatilidad exige ser compensado por asumirla, y esa compensación es la brecha persistente entre implícita y realizada.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

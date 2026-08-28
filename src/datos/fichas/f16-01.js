@@ -188,6 +188,82 @@ export default {
     },
 
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un servicio de estudios publica su previsión del PIB y, en el mismo documento, previsiones de consumo, inversión y sector exterior. ¿Qué hay que comprobar?",
+              opciones: [
+                "Que todas usen el mismo horizonte temporal",
+                "Que cada una venga con su intervalo de confianza",
+                "Que se hayan estimado con el mismo modelo",
+                "Que las de los componentes sumen la del agregado",
+              ],
+              correcta: 3,
+              porque: [
+                "El horizonte común es necesario y no es lo que suele fallar.",
+                "Los intervalos son deseables y no resuelven la incoherencia entre niveles.",
+                "Modelos distintos son legítimos: el problema es que sus resultados no se hayan conciliado.",
+                "Previstas por separado no cuadran: la suma de las previsiones no es la previsión de la suma. Publicarlas juntas sin conciliar es publicar una contradicción.",
+              ],
+            },
+            {
+              q: "Una cadena vende quinientos productos en cincuenta tiendas. ¿Qué condiciona la elección del método de reconciliación?",
+              opciones: [
+                "El sector de actividad de la cadena",
+                "El número de niveles de la jerarquía, que no puede superar cuatro",
+                "La frecuencia de los datos, diaria o semanal",
+                "El tamaño: son decenas de miles de series, y cualquier método que exija invertir una matriz de esa dimensión resulta impracticable",
+              ],
+              correcta: 3,
+              porque: [
+                "El sector influye en los patrones, no en la viabilidad computacional.",
+                "No hay ningún límite de niveles: lo que crece es el producto de las dimensiones.",
+                "La frecuencia multiplica los datos y el problema de fondo es el número de series.",
+                "Es una restricción práctica que decide antes que cualquier consideración estadística: hay métodos excelentes que no se pueden ejecutar a esa escala.",
+              ],
+            },
+            {
+              q: "Un conjunto de previsiones cuadra perfectamente en todos los niveles. ¿Es señal de calidad?",
+              opciones: [
+                "No, pero la coherencia garantiza al menos que el error total esté acotado",
+                "Sí: la coherencia es el criterio principal de calidad de un sistema de previsiones",
+                "Sí, si se ha obtenido con un método que respete la invariancia",
+                "No: puede cuadrar y estar equivocado en bloque; bottom-up siempre es coherente y puede ser malo",
+              ],
+              correcta: 3,
+              porque: [
+                "No acota nada: un error común a todas las series se propaga coherentemente.",
+                "La coherencia es un requisito, no una medida de acierto: dice que las cifras no se contradicen, no que sean correctas.",
+                "La invariancia es una buena propiedad del método y tampoco garantiza que las previsiones base fueran buenas.",
+                "Confundir coherencia con exactitud lleva a dar por resuelto un problema de modelización con un procedimiento contable.",
+              ],
+            },
+            {
+              q: "Se plantea desagregar hasta el nivel máximo que permitan los datos disponibles. ¿Es buen criterio?",
+              opciones: [
+                "Sí, siempre que la matriz de sumas siga siendo invertible",
+                "No, salvo en estructuras agrupadas",
+                "No: bajar de nivel multiplica el número de series y el ruido de cada una, sin que necesariamente aporte detalle útil",
+                "Sí: más detalle siempre aporta más información",
+              ],
+              correcta: 2,
+              porque: [
+                "La matriz de sumas no se invierte, y su tamaño no es el criterio.",
+                "El argumento vale igual para jerarquías y para estructuras agrupadas.",
+                "El nivel de desagregación debe elegirse por para qué se va a usar la previsión, no por hasta dónde llegan los ficheros.",
+                "Más detalle también es más ruido: el coeficiente de variación de una serie hoja es mucho mayor que el del agregado.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

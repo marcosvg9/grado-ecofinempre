@@ -176,6 +176,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Puede un gobierno elegir de forma permanente un punto de la curva de Phillips, aceptando algo más de inflación a cambio de menos paro?",
+              opciones: [
+                "No, porque la curva de Phillips nunca tuvo respaldo empírico",
+                "Sí, siempre que la inflación se mantenga por debajo del 5 %",
+                "No: la relación se desplaza cuando cambian las expectativas de inflación, así que no hay una curva sino una familia de curvas",
+                "Sí: es el fundamento de la política de demanda de posguerra",
+              ],
+              correcta: 2,
+              porque: [
+                "Sí lo tuvo, y muy bueno, para el periodo en que se estimó. El error fue extrapolarla como relación estable.",
+                "No hay ningún umbral que salve el argumento: el mecanismo de ajuste de expectativas opera igual.",
+                "Funciona mientras las expectativas van por detrás de los hechos. En cuanto se ajustan, el empleo vuelve a su nivel anterior con una inflación más alta, y hay que subir la apuesta para repetir el efecto.",
+                "Se creyó durante años que sí, y los setenta demostraron lo contrario de la peor manera posible.",
+              ],
+            },
+            {
+              q: "Un choque de oferta eleva a la vez la inflación y el paro. ¿Qué puede hacer la política de demanda?",
+              opciones: [
+                "No puede arreglar las dos cosas: estimular alimenta la inflación y contraer agrava el paro",
+                "Estimular, que es lo que corresponde ante un aumento del paro",
+                "Aplicar ambas de forma alterna para suavizar el ciclo",
+                "Contraer, que es lo que corresponde ante un aumento de la inflación",
+              ],
+              correcta: 0,
+              porque: [
+                "Por eso la estanflación no fue un fallo de gestión sino un problema sin solución dentro del marco keynesiano de posguerra: no había instrumento para dos objetivos que se movían juntos en la mala dirección.",
+                "Estimular ataca una mitad del problema empeorando la otra.",
+                "Alternar no promedia los dos males: los produce por turnos.",
+                "Contraer hace exactamente lo mismo en sentido inverso.",
+              ],
+            },
+            {
+              q: "¿De qué depende el ratio de sacrificio, es decir, cuánto desempleo cuesta bajar un punto la inflación?",
+              opciones: [
+                "De la velocidad con que se ajusten las expectativas, que depende de la credibilidad del banco central",
+                "Del nivel de partida de la inflación",
+                "Del peso de la industria en el PIB",
+                "Es una constante estructural de cada economía",
+              ],
+              correcta: 0,
+              porque: [
+                "Si el banco central es creíble, las expectativas bajan casi de inmediato y desinflar sale barato; si no lo es, hay que demostrarlo con una recesión.",
+                "El nivel de partida marca cuánto hay que recorrer, no cuánto cuesta cada punto.",
+                "La composición sectorial influye en la rigidez de precios y no es el factor decisivo.",
+                "Tratarlo como constante impide entender por qué la misma desinflación cuesta muchísimo en un sitio y poco en otro.",
+              ],
+            },
+            {
+              q: "¿Puede la política monetaria resolver un encarecimiento del petróleo?",
+              opciones: [
+                "No: subir tipos no produce ni un barril más; lo único que puede hacer es impedir que el encarecimiento se traslade a las expectativas",
+                "No, y por eso conviene recurrir a controles de precios",
+                "Sí: subir tipos contiene la inflación resultante",
+                "Sí, bajando tipos para compensar la caída de la actividad",
+              ],
+              correcta: 0,
+              porque: [
+                "El objetivo realista es que un choque puntual no se convierta en inflación persistente. Ahí la indiciación salarial es decisiva: convierte matemáticamente cualquier choque en permanente.",
+                "Los controles de precios reprimen el síntoma y generan desabastecimiento, sin aumentar la oferta de crudo.",
+                "Contiene la inflación a costa de agravar la caída de la actividad, sin tocar la causa.",
+                "Bajar tipos sostiene la actividad y alimenta la traslación del choque a los precios.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

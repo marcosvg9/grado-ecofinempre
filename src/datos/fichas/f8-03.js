@@ -187,6 +187,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Para construir la estructura temporal de tipos, ¿qué tipos hay que usar?",
+              opciones: [
+                "Los tipos cupón cero, obtenidos por bootstrapping a partir de los bonos con cupón",
+                "Las TIR de los bonos con cupón de cada plazo",
+                "Los tipos oficiales del banco central para cada vencimiento",
+                "La media de las TIR de todos los emisores de cada plazo",
+              ],
+              correcta: 0,
+              porque: [
+                "Solo un tipo cupón cero corresponde a un único flujo en una única fecha, que es lo que hace comparables dos plazos distintos.",
+                "La TIR de un bono con cupones es un promedio confuso de los tipos que corresponden a todos sus flujos, y por eso no sirve para leer un plazo concreto.",
+                "El banco central fija un tipo a muy corto plazo; el resto de la curva lo forma el mercado.",
+                "Promediar emisores mezcla además diferenciales de crédito distintos, con lo que el problema empeora.",
+              ],
+            },
+            {
+              q: "El tipo forward implícito a un año dentro de un año es del 3 %. ¿Es esa la previsión del mercado?",
+              opciones: [
+                "Sí: los forwards son la expectativa del mercado por construcción",
+                "No: el forward es la expectativa más la prima de plazo, y la prima no es observable",
+                "Sí, siempre que la curva tenga pendiente positiva",
+                "No: los forwards solo reflejan el coste de financiar la posición",
+              ],
+              correcta: 1,
+              porque: [
+                "Lo serían si nadie exigiera nada por comprometer dinero a plazo, y eso no es lo que ocurre.",
+                "Extraer expectativas puras exige un modelo que estime la prima. Leer el forward como predicción atribuye al mercado una previsión que no ha hecho.",
+                "La pendiente positiva es compatible tanto con expectativas de subida como con una prima de plazo elevada y expectativas planas.",
+                "El coste de financiación es parte del arbitraje que fija el forward, pero la prima de plazo sigue estando dentro.",
+              ],
+            },
+            {
+              q: "La curva de tipos está completamente plana. ¿Qué indica?",
+              opciones: [
+                "Que el mercado no tiene expectativas definidas sobre los tipos futuros",
+                "Que la política monetaria es neutral",
+                "Que el mercado espera bajadas de tipos, si la prima de plazo es positiva",
+                "Que los plazos largos y cortos tienen el mismo riesgo",
+              ],
+              correcta: 2,
+              porque: [
+                "La ausencia de pendiente no es ausencia de opinión: es el resultado de dos componentes que se compensan.",
+                "La neutralidad de la política monetaria se juzga por el nivel de los tipos frente al tipo natural, no por la forma de la curva.",
+                "Si se exige una prima por comprometer dinero a largo, hace falta esperar bajadas suficientes para anularla y dejar la curva horizontal.",
+                "El riesgo de tipo de interés es mayor a plazo largo por pura duración, con independencia de la forma de la curva.",
+              ],
+            },
+            {
+              q: "La curva se invierte. ¿Debe leerse como señal de recesión?",
+              opciones: [
+                "Sí: no ha fallado nunca en las últimas décadas",
+                "No: la inversión de la curva no guarda relación con el ciclo",
+                "Sí, y permite además fechar el inicio de la recesión con precisión trimestral",
+                "Como indicador informativo, no como regla mecánica: hay menos de diez recesiones en la muestra, falsos positivos y desfases muy variables",
+              ],
+              correcta: 3,
+              porque: [
+                "Ha habido falsos positivos, y aun sin ellos una decena de episodios es una muestra pequeña para sostener una regla.",
+                "Sí la guarda, y bastante estrecha. El problema es el peso que se le puede dar, no la existencia de la relación.",
+                "El desfase entre inversión y recesión ha ido de unos pocos meses a más de dos años: no permite fechar nada.",
+                "Es un indicador que merece atención y no una regla de decisión. Tratarlo como regla confunde una regularidad con una ley.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

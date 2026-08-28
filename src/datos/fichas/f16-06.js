@@ -193,6 +193,82 @@ export default {
     },
 
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un equipo produce previsiones mensuales, trimestrales y anuales de la misma serie. ¿Tiene una jerarquía?",
+              opciones: [
+                "Solo si la serie tiene estacionalidad",
+                "Solo si las tres previsiones proceden del mismo modelo",
+                "Sí: una serie única agregada a distintas frecuencias ya forma una jerarquía, sin necesidad de componentes",
+                "No: una jerarquía exige que haya componentes que sumen un agregado",
+              ],
+              correcta: 2,
+              porque: [
+                "La jerarquía temporal existe con o sin estacionalidad; lo que la estacionalidad determina son los niveles disponibles.",
+                "Modelos distintos por nivel son precisamente lo que hace ganar: cada frecuencia destaca una dinámica distinta.",
+                "Quien produce previsiones a varias frecuencias ya tiene el problema de coherencia, aunque no lo llame así.",
+                "Los componentes son una forma de jerarquía, no la única: el tiempo agrega igual que el territorio o el producto.",
+              ],
+            },
+            {
+              q: "Con datos mensuales, ¿puede agregarse de cinco en cinco meses para formar un nivel de la jerarquía?",
+              opciones: [
+                "No: los niveles disponibles son los divisores del periodo estacional, y cinco no divide a doce",
+                "No, salvo que la serie no tenga estacionalidad",
+                "Sí, si se completa el último bloque con predicciones",
+                "Sí: cualquier agrupación de periodos consecutivos vale",
+              ],
+              correcta: 0,
+              porque: [
+                "Con datos mensuales los niveles son 1, 2, 3, 4, 6 y 12. Agregar de cinco en cinco produce bloques que cruzan años y no encajan en la estructura.",
+                "Aun sin estacionalidad los bloques deben encajar en el año para que las restricciones sean las que la matriz declara.",
+                "Rellenar con predicciones no arregla que los bloques no sean comparables entre años.",
+                "La agrupación tiene que encajar dentro del año para que los bloques se repitan igual todos los años.",
+              ],
+            },
+            {
+              q: "Se ajusta un único modelo mensual y se agregan sus previsiones a trimestral y anual. ¿Es reconciliación temporal?",
+              opciones: [
+                "Sí: el resultado es coherente entre las tres frecuencias",
+                "Sí, y además es la variante más eficiente por usar el máximo detalle",
+                "No: eso es bottom-up temporal, y desperdicia la mitad de la idea",
+                "No: la agregación temporal exige aplicar benchmarking",
+              ],
+              correcta: 2,
+              porque: [
+                "Es coherente, y la coherencia no es la ganancia que se persigue aquí.",
+                "El máximo detalle es también el máximo ruido: la serie anual tiene una relación señal-ruido mucho mejor.",
+                "La ganancia procede de ajustar un modelo por nivel, con la especificación que corresponda a cada frecuencia, y combinarlos después.",
+                "El benchmarking es otra cosa: da autoridad total al dato de baja frecuencia, y aquí ningún nivel manda a priori.",
+              ],
+            },
+            {
+              q: "¿Conviene especificar modelos estacionales en los niveles anual y semestral de una jerarquía temporal?",
+              opciones: [
+                "No, salvo que la serie tenga un ciclo plurianual",
+                "Sí: mantener la misma especificación en todos los niveles facilita la comparación",
+                "Sí, con un periodo estacional adaptado a cada frecuencia",
+                "No: la serie anual no tiene estacionalidad por construcción y la semestral casi tampoco; añadir parámetros estacionales ahí solo mete ruido",
+              ],
+              correcta: 3,
+              porque: [
+                "Un ciclo plurianual no es estacionalidad, y se recogería por otra vía.",
+                "La homogeneidad de especificación es cómoda y contraria a la idea: cada nivel pide el modelo que le corresponde.",
+                "No hay periodo estacional que adaptar cuando el nivel de agregación ya cubre el año completo.",
+                "Agregar el año entero elimina el patrón intraanual: no queda nada estacional que modelizar.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

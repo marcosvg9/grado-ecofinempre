@@ -191,6 +191,82 @@ export default {
     },
 
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Es el sistema de cuentas nacionales una jerarquía anidada?",
+              opciones: [
+                "Sí, con la salvedad del sector resto del mundo",
+                "No: las restricciones se cruzan, y una partida participa a la vez en la identidad de su rama, en la de su producto y en la del agregado",
+                "Sí: los sectores se agrupan en la economía total como las hojas en su rama",
+                "No: las cuentas nacionales no admiten formulación matricial",
+              ],
+              correcta: 1,
+              porque: [
+                "El resto del mundo plantea sus propias particularidades y no es lo que rompe la estructura de árbol.",
+                "El marco origen-destino exige cuadrar a la vez por filas y por columnas, y ninguna estructura de árbol recoge dos criterios cruzados.",
+                "Los sectores sí se agregan; el problema es que hay otras identidades simultáneas que un árbol no puede representar.",
+                "Sí la admiten: lo que hace falta es una matriz de sumas con restricciones cruzadas, no un árbol.",
+              ],
+            },
+            {
+              q: "Una tabla origen-destino de 50 × 50 cuadra por filas y columnas. ¿Garantiza eso la calidad de sus cifras?",
+              opciones: [
+                "No, pero el porcentaje de restricciones aumenta con el tamaño de la tabla",
+                "Sí: cuadrar simultáneamente por dos criterios es una restricción muy exigente",
+                "Sí, si además coinciden los tres enfoques de cálculo del PIB",
+                "No: hay 2.500 celdas y solo unas 99 restricciones efectivas, apenas un 4 %",
+              ],
+              correcta: 3,
+              porque: [
+                "Ocurre lo contrario: las celdas crecen con el cuadrado y las restricciones solo linealmente, así que la proporción cae.",
+                "Parece exigente y es débil en términos relativos: la proporción de restricciones sobre celdas es pequeña.",
+                "La coincidencia de los tres enfoques es otra restricción, y se impone en la conciliación en lugar de emerger de ella.",
+                "Queda enorme libertad para que las cifras individuales estén equivocadas mientras el conjunto cuadra perfectamente.",
+              ],
+            },
+            {
+              q: "Un compilador coloca sistemáticamente la discrepancia en la variación de existencias. ¿Qué está declarando?",
+              opciones: [
+                "Que esa partida tiene varianza infinita, es decir, que su estimación no vale nada",
+                "Que la discrepancia procede de esa partida",
+                "Que aplica el criterio recomendado por el reglamento europeo",
+                "Que esa partida es la más volátil de las cuentas",
+              ],
+              correcta: 0,
+              porque: [
+                "Puede ser cierto —la variación de existencias es la partida peor medida— y entonces conviene decirlo explícitamente en lugar de que quede implícito en el procedimiento.",
+                "No hay forma de saber de dónde procede: precisamente por eso es una discrepancia.",
+                "El reglamento no designa una partida de cierre: la elección es del compilador.",
+                "Su volatilidad es real y no es lo que justifica cargarle toda la discrepancia.",
+              ],
+            },
+            {
+              q: "¿Qué aporta el marco de reconciliación a la compilación de cuentas nacionales, que ya venía cuadrando sus tablas?",
+              opciones: [
+                "Escribir el criterio: hacer explícito y reproducible un reparto que hasta ahora estaba en la cabeza de quien compila",
+                "Sustituir el juicio experto del compilador por un algoritmo objetivo",
+                "Eliminar la necesidad de confrontar fuentes",
+                "Reducir el tiempo de compilación",
+              ],
+              correcta: 0,
+              porque: [
+                "Un criterio escrito se puede discutir, auditar y reproducir; uno implícito no. Y además revela que el reparto ha podido cambiar con las personas y los periodos.",
+                "El criterio del compilador suele ser sólido y estar bien informado sobre las fuentes: no se trata de reemplazarlo.",
+                "Confrontar fuentes es la esencia de compilar y sigue haciendo falta: reconciliar es precisamente eso, con el criterio explicitado.",
+                "El ahorro de tiempo, si lo hay, no es lo relevante.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

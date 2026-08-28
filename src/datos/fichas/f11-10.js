@@ -186,6 +186,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Cuál es la pregunta correcta sobre la desigualdad entre países?",
+              opciones: [
+                "Por qué la ayuda al desarrollo no ha funcionado",
+                "Por qué unos países son pobres, dado que la mayoría lo es",
+                "Por qué la renta mundial se concentra en tan pocos países",
+                "Por qué algunos empezaron a crecer y otros no consiguen engancharse",
+              ],
+              correcta: 3,
+              porque: [
+                "La eficacia de la ayuda es una cuestión importante y muy posterior a la pregunta de fondo.",
+                "Hace tres siglos lo eran todos: la pobreza es el estado por defecto y no requiere explicación especial.",
+                "La concentración es la descripción del hecho, no la pregunta sobre su origen.",
+                "La divergencia moderna es el fenómeno que hay que explicar, y formular la pregunta al revés lleva a buscar causas del estancamiento en lugar de causas del despegue.",
+              ],
+            },
+            {
+              q: "¿Se observa convergencia automática de los países pobres hacia los ricos?",
+              opciones: [
+                "Sí, aunque a un ritmo muy lento",
+                "Sí: el modelo de crecimiento predice rendimientos decrecientes del capital",
+                "No, y tampoco se observa convergencia condicional",
+                "No en términos absolutos: unos países se han acercado espectacularmente y otros siguen igual o peor",
+              ],
+              correcta: 3,
+              porque: [
+                "No es cuestión de ritmo: para muchos países la brecha no se ha reducido en absoluto.",
+                "El modelo la predice bajo supuestos —misma tecnología, mismas instituciones— que no se cumplen entre países.",
+                "La condicional sí se observa, y es justamente el matiz que salva el modelo.",
+                "Lo que sí se observa es convergencia condicional: los países se acercan a su propio estado estacionario, y esos estados difieren.",
+              ],
+            },
+            {
+              q: "¿Qué objeción de fondo tienen las explicaciones culturales del desarrollo?",
+              opciones: [
+                "Que son circulares: la cultura se acaba definiendo por sus resultados y cambia con la prosperidad tanto como la causa",
+                "Que no se pueden cuantificar",
+                "Que solo se han aplicado a países europeos",
+                "Que ignoran el papel de la geografía",
+              ],
+              correcta: 0,
+              porque: [
+                "Han envejecido especialmente mal: los mismos rasgos que explicaban el atraso de un país se invocaron después para explicar su éxito.",
+                "Se han construido índices culturales cuantitativos: el problema no es de medición.",
+                "Se han aplicado a todas las regiones del mundo.",
+                "Compiten con la geografía como explicación; ignorarla no es su defecto principal.",
+              ],
+            },
+            {
+              q: "Se discute entre una reforma que eleva la renta un 5 % de una vez y otra que añade un punto al crecimiento anual permanente. ¿Cuál importa más?",
+              opciones: [
+                "Depende del horizonte político del gobierno que las aplique",
+                "La segunda: en cinco años ya supera a la primera, y después la distancia no deja de crecer",
+                "La primera, porque su efecto es inmediato y seguro",
+                "Ambas por igual: el efecto acumulado es equivalente",
+              ],
+              correcta: 1,
+              porque: [
+                "El horizonte político explica por qué se prefieren las de nivel, no cuál importa más.",
+                "La discusión pública se centra casi siempre en efectos de nivel, que son visibles y acotados, y descuida los de tasa, que son los que a largo plazo deciden la posición de un país.",
+                "La inmediatez es una ventaja real y pequeña frente a un efecto que se compone indefinidamente.",
+                "No son equivalentes: un efecto de nivel se agota y uno de tasa se acumula sin límite.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

@@ -173,6 +173,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un socio presta dinero a su propia sociedad, que después entra en concurso. ¿Dónde cobra?",
+              opciones: [
+                "El último: los créditos de socios significativos quedan subordinados",
+                "Antes que los ordinarios, si el préstamo se documentó en escritura pública",
+                "Como acreedor con privilegio general, por haber sostenido la empresa",
+                "Como acreedor ordinario, igual que cualquier prestamista",
+              ],
+              correcta: 0,
+              porque: [
+                "Y cobrar el último, con los porcentajes habituales de recuperación en el concurso español, significa casi siempre no cobrar. Conviene saberlo antes de firmar, no después.",
+                "La forma del documento no altera la clasificación del crédito.",
+                "No hay privilegio por haber ayudado: la relación con el deudor opera en sentido contrario.",
+                "El ordenamiento no lo trata como a un tercero: es una persona especialmente relacionada con el deudor.",
+              ],
+            },
+            {
+              q: "Una empresa en dificultades retrasa la solicitud de concurso esperando que mejore el negocio. ¿Qué efecto tiene la espera?",
+              opciones: [
+                "Destruye valor cada mes: se pierden proveedores, clientes, trabajadores clave y financiación",
+                "Mejora las opciones de convenio, al reducirse el pasivo con los pagos realizados",
+                "Ninguno relevante: el concurso ordena la situación igual de bien más tarde",
+                "Es neutral, siempre que se mantenga al corriente con Hacienda y la Seguridad Social",
+              ],
+              correcta: 0,
+              porque: [
+                "Lo que llega tarde al juzgado no es una empresa en dificultades, sino un cascarón. Es la razón de fondo de que el concurso español liquide más de lo que salva.",
+                "Pagar a unos mientras no se puede pagar a todos agrava el problema y puede llegar a ser causa de calificación culpable.",
+                "Llega a un negocio distinto y peor: el concurso no restaura lo que ya se ha ido.",
+                "El retraso destruye valor con independencia de a quién se le pague.",
+              ],
+            },
+            {
+              q: "¿Qué relación hay entre no depositar las cuentas anuales y la calificación del concurso?",
+              opciones: [
+                "Solo agrava la sanción administrativa del Registro Mercantil",
+                "Es una presunción de concurso culpable, con posible inhabilitación y condena a cubrir el déficit",
+                "Impide solicitar el concurso hasta regularizar la situación registral",
+                "Ninguna: son obligaciones de ámbitos distintos",
+              ],
+              correcta: 1,
+              porque: [
+                "La sanción registral existe y es lo de menos en este escenario.",
+                "Lo es igual que no llevar contabilidad o cometer irregularidades relevantes en ella. La consecuencia puede alcanzar al patrimonio personal del administrador.",
+                "No impide solicitarlo: el concurso se tramita igual, con la calificación en contra.",
+                "Están conectadas de forma directa, y esa conexión es una de las razones económicas de peso para depositar.",
+              ],
+            },
+            {
+              q: "¿Puede un acreedor disconforme bloquear un plan de reestructuración?",
+              opciones: [
+                "Sí, si su crédito supera el 10 % del pasivo",
+                "No: los planes se aprueban por mayoría simple del pasivo total",
+                "Sí: nadie puede ser obligado a aceptar una quita",
+                "No: la homologación judicial permite arrastrar a acreedores e incluso a clases enteras disidentes, con garantías",
+              ],
+              correcta: 3,
+              porque: [
+                "El peso del crédito influye en la votación por clases, no otorga un veto.",
+                "No se vota por mayoría simple del total: se vota por clases, y ahí está la clave del mecanismo.",
+                "Ese era el problema que el sistema anterior no resolvía: un acreedor pequeño podía hundir un acuerdo que convenía a todos.",
+                "Entre las garantías está que el disidente no reciba menos de lo que obtendría en una liquidación. Sin arrastre, la reestructuración sería inviable en la práctica.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

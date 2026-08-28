@@ -193,6 +193,82 @@ export default {
     },
 
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Cuál de los dos métodos de descomposición, X-11 o SEATS, es el correcto?",
+              opciones: [
+                "Depende de la frecuencia: SEATS para mensuales y X-11 para trimestrales",
+                "SEATS, por derivarse de un modelo estadístico explícito",
+                "Ninguno: no hay superioridad general demostrada, y cada uno tiene ventajas donde el otro flaquea",
+                "X-11, por su robustez acreditada en décadas de uso",
+              ],
+              correcta: 2,
+              porque: [
+                "La frecuencia de la serie no determina cuál conviene.",
+                "Su coherencia teórica y sus errores estándar son ventajas reales, y no lo hacen mejor en todos los casos.",
+                "SEATS aporta errores estándar de cada componente; X-11 funciona donde ningún modelo ajusta bien. La elección es del productor y conviene que sea explícita.",
+                "Su robustez es real, y hay series donde un enfoque basado en modelo describe mejor lo que ocurre.",
+              ],
+            },
+            {
+              q: "¿Qué se elige al optar entre un filtro estacional 3×3 y uno 3×9?",
+              opciones: [
+                "Entre reaccionar rápido a cambios del patrón estacional o mantener una estimación estable y lenta",
+                "Entre corregir o no los efectos de calendario",
+                "Entre una descomposición aditiva y una multiplicativa",
+                "Entre X-11 y SEATS",
+              ],
+              correcta: 0,
+              porque: [
+                "El 3×3 usa pocos años y sigue de cerca los cambios; el 3×9 promedia más y da factores estables que tardan en incorporar un cambio real.",
+                "El calendario se corrige en el pre-ajuste, con regresores, no con el filtro estacional.",
+                "Esa decisión se toma antes, con la transformación de la serie.",
+                "Los filtros estacionales pertenecen a X-11; la elección entre métodos es anterior.",
+              ],
+            },
+            {
+              q: "El ARIMA estimado no admite descomposición en componentes con varianzas no negativas. ¿Qué hace el programa?",
+              opciones: [
+                "Reparte la varianza negativa entre los demás componentes",
+                "Sustituye el modelo por uno próximo que sí admita descomposición",
+                "Cambia automáticamente a X-11",
+                "Detiene el ajuste y devuelve un error",
+              ],
+              correcta: 1,
+              porque: [
+                "Una varianza negativa no tiene sentido y no puede repartirse: hay que evitar que aparezca.",
+                "Es una decisión relevante que ocurre de forma silenciosa: el modelo con el que finalmente se descompone no es el que se estimó.",
+                "El cambio de método sería una decisión del productor, no una sustitución automática.",
+                "Detenerse dejaría sin ajustar series perfectamente publicables.",
+              ],
+            },
+            {
+              q: "Una serie ajustada tiene un aspecto suave y creíble en el gráfico. ¿Es señal de que el ajuste es bueno?",
+              opciones: [
+                "No, pero es el mejor indicio disponible a falta de contrastes formales",
+                "No: los filtros suavizan por construcción, así que cualquier ajuste, bueno o malo, produce una serie de aspecto creíble",
+                "Sí, si además no quedan picos en los mismos trimestres de cada año",
+                "Sí: la suavidad indica que la estacionalidad se ha extraído bien",
+              ],
+              correcta: 1,
+              porque: [
+                "Sí hay contrastes formales, y son precisamente la etapa de diagnóstico del procedimiento.",
+                "Por eso existen los contrastes de estacionalidad residual, de estabilidad y de revisiones: para juzgar con algo que no sea la vista.",
+                "La ausencia de picos evidentes es necesaria y muy insuficiente: hay estacionalidad residual que no se ve a simple vista.",
+                "La suavidad la produce el filtro, no la calidad de la descomposición.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

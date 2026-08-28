@@ -152,6 +152,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Una empresa retribuye a su fuerza de ventas por facturación y no por margen. ¿Por qué suele ocurrir?",
+              opciones: [
+                "Porque la facturación se mide sin discusión y el margen exige un sistema de costes decente",
+                "Porque la facturación es el objetivo prioritario en cualquier empresa",
+                "Porque el margen es información reservada que no puede compartirse",
+                "Porque la normativa laboral impide retribuir sobre magnitudes de resultado",
+              ],
+              correcta: 0,
+              porque: [
+                "Elegir el indicador por facilidad de medición es la razón más frecuente de que un sistema de incentivos produzca ventas que no interesan.",
+                "Casi nunca lo es: interesa la facturación rentable, que es otra cosa.",
+                "El margen puede compartirse por líneas o por familias sin revelar la estructura completa de costes.",
+                "No existe tal impedimento: se retribuye habitualmente sobre márgenes y sobre beneficio.",
+              ],
+            },
+            {
+              q: "Un sistema de variable reparte el bono entre seis objetivos al 15 % cada uno. ¿Qué problema tiene?",
+              opciones: [
+                "Que la suma no llega al 100 %",
+                "Que ninguno pesa lo suficiente para cambiar el comportamiento, y el sistema se convierte en una nómina complicada",
+                "Que los objetivos múltiples son incompatibles entre sí por definición",
+                "Que exige revisar los pesos cada trimestre",
+              ],
+              correcta: 1,
+              porque: [
+                "El reparto aritmético es lo de menos: el problema persistiría con seis objetivos que sumaran exactamente cien.",
+                "Dos o tres indicadores orientan de verdad; seis diluyen la señal hasta que nadie modifica su conducta por ninguno.",
+                "Pueden ser perfectamente compatibles. Lo que falla es la dilución del incentivo, no su coherencia.",
+                "La frecuencia de revisión es una cuestión de gestión, no la razón por la que el sistema no funciona.",
+              ],
+            },
+            {
+              q: "¿Cuándo pueden los incentivos económicos empeorar el resultado?",
+              opciones: [
+                "Cuando el importe del variable supera el 30 % del salario fijo",
+                "Cuando se pagan con periodicidad anual en lugar de trimestral",
+                "En tareas creativas o de calidad difícil de observar, donde pueden desplazar la motivación intrínseca",
+                "Nunca: un incentivo bien diseñado siempre mejora el desempeño",
+              ],
+              correcta: 2,
+              porque: [
+                "La proporción importa para el riesgo que asume el empleado, no para el efecto perverso sobre la motivación.",
+                "La periodicidad afecta a la intensidad de la señal, no a este mecanismo.",
+                "En tareas rutinarias y medibles funcionan bien. En las otras, poner precio a algo que se hacía por interés propio puede sustituir un motivo fuerte por uno débil.",
+                "El propio diseño es el límite: hay tareas donde ningún indicador captura lo que importa.",
+              ],
+            },
+            {
+              q: "Dos empresas ofrecen 40.000 € brutos anuales. ¿Cuesta lo mismo cada empleado a ambas?",
+              opciones: [
+                "Sí: el bruto es el coste para la empresa",
+                "Sí, salvo diferencias en el convenio aplicable",
+                "No: el coste incluye las cotizaciones sociales a cargo de la empresa, que elevan sustancialmente el bruto",
+                "No: depende del tipo de retención de IRPF de cada trabajador",
+              ],
+              correcta: 2,
+              porque: [
+                "El bruto es lo que se pacta con el trabajador; el coste laboral es bastante mayor.",
+                "El convenio puede introducir diferencias, pero lo que separa bruto de coste es la cotización, y opera siempre.",
+                "En España la diferencia es notable, y confundirlas distorsiona tanto la comparación de ofertas como el cálculo del coste de una contratación.",
+                "La retención sale del bruto del trabajador: no la paga la empresa por encima de él.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

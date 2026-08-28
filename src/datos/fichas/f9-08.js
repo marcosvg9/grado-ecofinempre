@@ -158,6 +158,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Una empresa fija sus precios añadiendo un margen del 40 % al coste unitario. ¿Qué falla en el método?",
+              opciones: [
+                "El coste unitario depende del volumen y el volumen depende del precio: el razonamiento es circular, y además ignora lo que el cliente está dispuesto a pagar",
+                "Que el margen del 40 % es demasiado bajo para cubrir la estructura",
+                "Que debería aplicarse sobre el coste completo y no sobre el variable",
+                "Nada: es el método más extendido y el más prudente",
+              ],
+              correcta: 0,
+              porque: [
+                "Para saber el coste unitario hace falta saber cuántas unidades se venderán, y eso depende del precio que se está tratando de fijar.",
+                "El nivel del margen es una cuestión aparte: el método sería igual de circular con cualquier porcentaje.",
+                "La elección de base de coste no rompe la circularidad ni introduce la disposición a pagar del cliente.",
+                "Su extensión no lo hace prudente: deja fuera la única información que determina cuánto se puede cobrar.",
+              ],
+            },
+            {
+              q: "Con un margen del 30 %, se plantea una rebaja de precios del 10 %. ¿Cuánto hay que vender para mantener el beneficio?",
+              opciones: [
+                "Un 10 % más, en proporción a la rebaja",
+                "Un 30 % más, en proporción al margen",
+                "Un 50 % más",
+                "Lo mismo: la rebaja se compensa con el mayor volumen",
+              ],
+              correcta: 2,
+              porque: [
+                "La rebaja no sale del precio sino del margen, que es mucho menor: por eso el volumen necesario es muy superior al porcentaje rebajado.",
+                "El margen no es la respuesta sino el dato con el que se calcula.",
+                "El margen pasa del 30 % al 20 % del precio original, así que hacen falta 30/20 = 1,5 veces el volumen. Es un cálculo de un minuto que casi nunca se hace antes de decidir.",
+                "Suponer que se compensa sola es exactamente lo que la cuenta desmiente.",
+              ],
+            },
+            {
+              q: "Descuentos, rappeles, portes, promociones y plazo de pago se llevan en cuentas distintas. ¿Cómo hay que analizarlos?",
+              opciones: [
+                "Por separado, ya que responden a decisiones comerciales distintas",
+                "Como cascada completa hasta el precio efectivamente cobrado: todos son concesiones de precio",
+                "Solo los que superen el 5 % del importe de la factura",
+                "Junto con los costes de distribución, que es donde acaban imputándose",
+              ],
+              correcta: 1,
+              porque: [
+                "Gestionarlos por separado es lo que hace que nadie vea cuánto se está cediendo en total.",
+                "Solo la cascada completa muestra el precio real de cada operación, y es habitual descubrir que clientes que parecían buenos no lo son.",
+                "Un umbral por partida vuelve a fragmentar lo que hay que mirar junto: muchas concesiones pequeñas suman una grande.",
+                "La imputación contable no es el criterio: son ingresos que se dejan de percibir, no costes de distribuir.",
+              ],
+            },
+            {
+              q: "Los comerciales conceden descuentos con demasiada facilidad. ¿Dónde está la raíz del problema?",
+              opciones: [
+                "En la falta de formación en técnicas de negociación",
+                "En que la competencia fija precios agresivos",
+                "En que su variable depende de la facturación, así que conceder descuentos no les cuesta nada",
+                "En la ausencia de una lista de precios oficial",
+              ],
+              correcta: 2,
+              porque: [
+                "La formación ayuda poco cuando el sistema retributivo premia justo lo contrario de lo que se pide.",
+                "La competencia condiciona el mercado, pero no explica por qué dentro de la empresa nadie defiende el precio.",
+                "El problema de precios suele ser, en el fondo, un problema de incentivos: quien concede el descuento no soporta su coste.",
+                "La lista de precios existe casi siempre; lo que falta es un motivo para respetarla.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

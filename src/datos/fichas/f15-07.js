@@ -192,6 +192,82 @@ export default {
     },
 
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un contraste de estacionalidad residual no rechaza. ¿Puede concluirse que no queda estacionalidad?",
+              opciones: [
+                "Sí, si además el estadístico Q está por debajo de uno",
+                "No, salvo que se haya aplicado también sobre el componente irregular",
+                "Sí: no rechazar equivale a aceptar la hipótesis nula",
+                "No: los contrastes dependen del tamaño muestral y en series cortas tienen poca potencia",
+              ],
+              correcta: 3,
+              porque: [
+                "La Q resume otros aspectos y arrastra la misma limitación de potencia.",
+                "Aplicarlo también al irregular detecta un problema distinto, y no resuelve la falta de potencia.",
+                "No rechazar nunca equivale a aceptar: significa que no hay evidencia suficiente, que es otra cosa.",
+                "En una serie de pocos años el contraste puede no detectar una estacionalidad residual perfectamente real.",
+              ],
+            },
+            {
+              q: "Un analista baja el umbral de detección de atípicos y todos los diagnósticos mejoran. ¿Qué ha ocurrido?",
+              opciones: [
+                "Ha retirado como atípicos partes del comportamiento legítimo de la serie, dejando un irregular artificialmente pequeño",
+                "Ha mejorado la especificación del modelo",
+                "Nada relevante: los diagnósticos no dependen del umbral",
+                "Ha encontrado atípicos reales que antes pasaban desapercibidos",
+              ],
+              correcta: 0,
+              porque: [
+                "Todos los indicadores mejoran porque se ha vaciado de contenido justo lo que miden. Es el caso en que los diagnósticos engañan de la forma más limpia.",
+                "El modelo no ha mejorado: se le ha quitado a la serie lo que le costaba explicar.",
+                "Dependen mucho: capturar más atípicos reduce el irregular y con él casi todos los estadísticos.",
+                "Un umbral laxo detecta atípicos donde solo hay ruido: no todo lo que supera el corte es un episodio real.",
+              ],
+            },
+            {
+              q: "En una serie trimestral, ¿basta con mirar la frecuencia estacional de periodo cuatro?",
+              opciones: [
+                "No, pero el armónico solo importa en series mensuales",
+                "Sí, si la serie ha sido corregida de calendario",
+                "No: el armónico de periodo dos puede ser mayor, como en el ejemplo, 774 frente a 110",
+                "Sí: es la frecuencia estacional propiamente dicha en datos trimestrales",
+              ],
+              correcta: 2,
+              porque: [
+                "En trimestrales el armónico es justamente el caso más relevante, porque solo hay dos frecuencias estacionales.",
+                "La corrección de calendario no traslada potencia de una frecuencia a otra.",
+                "Un diagnóstico que solo mire la frecuencia principal puede dar por limpia una serie con estacionalidad evidente en la otra.",
+                "Es la principal y no la única: el patrón estacional trimestral genera potencia también en su armónico.",
+              ],
+            },
+            {
+              q: "¿Qué prueban los diagnósticos de un ajuste estacional?",
+              opciones: [
+                "Que la descomposición obtenida es la correcta",
+                "Que el modelo elegido es el que genera los datos",
+                "Que los componentes estimados coinciden con los verdaderos",
+                "Ausencia de síntomas, no corrección del resultado: son alarmas que dirigen la revisión manual",
+              ],
+              correcta: 3,
+              porque: [
+                "No existe una descomposición correcta observable: la estacionalidad no se mide, se estima.",
+                "Ningún contraste identifica el proceso generador: solo detecta incoherencias con lo esperado.",
+                "No hay componentes verdaderos con los que comparar; ese es el problema de fondo de toda la validación.",
+                "Pasar todos los contrastes no garantiza un buen ajuste, y suspenderlos indica dónde hay que mirar. Tratarlos como veredictos es pedirles lo que no pueden dar.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

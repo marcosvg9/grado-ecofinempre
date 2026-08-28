@@ -178,6 +178,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un incendio destruye una fábrica. ¿Por qué vía recoge el sistema esa pérdida de patrimonio?",
+              opciones: [
+                "Como una revalorización negativa (B.10.3)",
+                "Por otras variaciones del volumen de activos (B.10.2), junto a hallazgos, catástrofes y reclasificaciones",
+                "Como formación de capital fijo negativa en la cuenta de capital",
+                "Como consumo de capital fijo del ejercicio (K.1)",
+              ],
+              correcta: 1,
+              porque: [
+                "La revalorización recoge cambios de precio de activos que siguen existiendo.",
+                "Es la vía que recoge lo que cambia el patrimonio sin ser ni ahorro ni cambio de precio: el activo sencillamente deja de existir.",
+                "La cuenta de capital registra operaciones entre unidades, y un incendio no es un acuerdo con nadie.",
+                "El K.1 mide el desgaste normal por el uso productivo, no la destrucción súbita por un siniestro.",
+              ],
+            },
+            {
+              q: "Un piso sube un 10 % en un año en el que el nivel general de precios sube un 3 %. ¿Qué parte de la ganancia enriquece realmente a su propietario?",
+              opciones: [
+                "Solo la parte que excede al 3 %: el resto es ganancia neutral y solo mantiene su poder de compra",
+                "El 3 %, que es la parte cierta y no especulativa",
+                "El 10 % completo: es lo que ha subido su patrimonio",
+                "Nada: las ganancias por tenencia no son renta",
+              ],
+              correcta: 0,
+              porque: [
+                "El sistema separa la ganancia neutral, que solo sigue al nivel general, de la real, que refleja un cambio de precio relativo. Confundirlas infla enormemente la sensación de enriquecimiento en periodos de inflación alta.",
+                "La parte neutral es precisamente la que no enriquece: es la que compensa la pérdida de valor del dinero.",
+                "Si todos los precios hubieran subido un 10 %, el propietario podría comprar exactamente lo mismo que antes.",
+                "No son renta en el sentido del sistema, y sí modifican el patrimonio y la capacidad de compra de quien las obtiene.",
+              ],
+            },
+            {
+              q: "El precio de la vivienda sube un 15 % en un año. ¿Qué agregados de las cuentas nacionales lo recogen?",
+              opciones: [
+                "La renta nacional y el ahorro de los hogares",
+                "El consumo, a través de los alquileres imputados",
+                "El PIB, porque aumenta el valor de la producción inmobiliaria",
+                "Ninguno de los grandes agregados de flujo: aparece en los balances, por la vía de la revalorización",
+              ],
+              correcta: 3,
+              porque: [
+                "La renta y el ahorro salen de la secuencia de cuentas corrientes, donde una ganancia por tenencia no entra.",
+                "Los alquileres imputados siguen a los alquileres de mercado y son un efecto indirecto y muy amortiguado.",
+                "El PIB mide lo producido en el año: que suba el precio de pisos ya construidos no produce nada.",
+                "Por eso durante un auge de precios de activos las cuentas de flujos pueden ir con normalidad mientras el patrimonio se infla: la señal está en los balances, no en el PIB.",
+              ],
+            },
+            {
+              q: "Al sumar el patrimonio neto de todos los sectores residentes de un país, ¿qué queda?",
+              opciones: [
+                "El PIB acumulado desde que existen las cuentas nacionales",
+                "El valor de los activos financieros, que son los que tienen precio de mercado",
+                "La suma de todos los activos, financieros y no financieros, del país",
+                "Los activos no financieros más la posición financiera neta frente al resto del mundo",
+              ],
+              correcta: 3,
+              porque: [
+                "El patrimonio es un stock y el PIB un flujo; además el PIB acumulado no descuenta el consumo ni el desgaste.",
+                "Los financieros son justamente los que desaparecen al agregar dentro del país.",
+                "Sumar todos los activos sin restar los pasivos contaría varias veces la misma riqueza.",
+                "Los activos financieros entre residentes se cancelan: el activo de uno es el pasivo de otro. Lo que sobrevive es lo real y lo que se tiene frente a fuera.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

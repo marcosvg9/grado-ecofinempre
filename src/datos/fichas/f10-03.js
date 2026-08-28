@@ -194,6 +194,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un trabajador cuesta a su empresa 40.000 € al año, con una cotización empresarial del 30 %. ¿Cuál es su salario bruto?",
+              opciones: [
+                "30.769 €: la cotización se calcula sobre el bruto, así que el bruto es 40.000 dividido por 1,30",
+                "28.000 €: 40.000 menos el 30 %",
+                "40.000 €: el bruto es lo que cuesta el trabajador",
+                "26.000 €, una vez descontada también la cotización del trabajador",
+              ],
+              correcta: 0,
+              porque: [
+                "El coste es el bruto más su 30 %, es decir, bruto × 1,30. Invertir esa relación es una división, no una resta, y el error altera todo el cálculo de la cuña.",
+                "Restar el 30 % al coste supone que la base de la cotización es el coste total, y no lo es.",
+                "El coste incluye la cotización empresarial, que no forma parte del salario bruto.",
+                "La cotización del trabajador se descuenta del bruto para llegar al líquido, no para llegar al bruto.",
+              ],
+            },
+            {
+              q: "Se discute la carga fiscal sobre el trabajo hablando del IRPF. ¿Qué se deja fuera?",
+              opciones: [
+                "El IVA que el trabajador paga después al consumir su salario",
+                "Nada relevante: el IRPF es el impuesto que grava el salario",
+                "Las cotizaciones sociales, que en el ejemplo aportan el 72 % de la cuña frente al 28 % del IRPF",
+                "Los impuestos autonómicos sobre la renta, que van aparte",
+              ],
+              correcta: 2,
+              porque: [
+                "El IVA es un impuesto sobre el consumo posterior, no parte de la cuña sobre el trabajo.",
+                "El IRPF grava el salario, y no es lo único que separa el coste del trabajador de lo que llega a su bolsillo.",
+                "El debate público invierte las proporciones, en parte porque la cotización empresarial no aparece en la nómina y por tanto es invisible para quien la soporta.",
+                "El tramo autonómico ya forma parte del IRPF: no es una figura distinta.",
+              ],
+            },
+            {
+              q: "«El IVA es regresivo.» ¿Es cierto?",
+              opciones: [
+                "No: los tipos reducidos sobre alimentos lo hacen progresivo",
+                "Sí, sin matices: todos pagan el mismo tipo con independencia de su renta",
+                "Sí, y por eso su recaudación se destina a gasto social",
+                "Depende de la base: es regresivo sobre la renta anual, proporcional sobre el consumo y aproximadamente proporcional sobre la renta de toda la vida",
+              ],
+              correcta: 3,
+              porque: [
+                "Los tipos reducidos suavizan el efecto, y no invierten el signo hasta hacerlo progresivo.",
+                "Que el tipo sea el mismo es precisamente lo que lo hace proporcional sobre el consumo; la regresividad aparece solo al referirlo a la renta anual.",
+                "El destino de la recaudación es una decisión presupuestaria y no cambia la incidencia del impuesto.",
+                "Las tres afirmaciones son correctas y describen cosas distintas. Decir «el IVA es regresivo» sin especificar la base es discutir sin haber fijado el término de comparación.",
+              ],
+            },
+            {
+              q: "¿Es un tipo reducido de IVA un buen instrumento redistributivo?",
+              opciones: [
+                "Sí: abarata bienes básicos que pesan más en el presupuesto de los hogares pobres",
+                "Sí, siempre que se apliquen solo a alimentos y medicamentos",
+                "No: benefician más en euros a quien más consume, que suele ser quien más renta tiene",
+                "Es indiferente: el IVA no admite finalidad redistributiva",
+              ],
+              correcta: 2,
+              porque: [
+                "Pesan más en proporción, sí, y la transferencia en euros va mayoritariamente a los hogares que más gastan.",
+                "Restringir la lista no cambia el mecanismo: quien más compra, más se ahorra.",
+                "En el ejemplo de la ficha, el hogar de 120.000 € paga cuatro veces más IVA que el de renta baja: un tipo reducido le ahorra a él cuatro veces más dinero.",
+                "Admite finalidad redistributiva; lo que ocurre es que la persigue mal comparado con una transferencia directa.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

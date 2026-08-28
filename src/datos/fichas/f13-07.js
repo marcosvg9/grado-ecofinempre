@@ -188,6 +188,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un autónomo paga su cuota mensual a la Seguridad Social. ¿En qué partida se registra?",
+              opciones: [
+                "En D.611, junto a las cotizaciones que pagan los empleadores",
+                "No se registra como cotización: es un gasto de su actividad",
+                "En D.613, con las cotizaciones efectivas a cargo de los hogares",
+                "En D.612, por no haber empleador que la aporte",
+              ],
+              correcta: 2,
+              porque: [
+                "El D.611 recoge las que aporta un empleador, y aquí no hay ninguno.",
+                "Sí es una cotización social, y reduce su renta disponible como tal.",
+                "El autónomo cotiza como hogar, igual que el asalariado por su parte, y por eso comparten epígrafe.",
+                "El D.612 son las imputadas, que no mueven dinero. Esta se paga de verdad.",
+              ],
+            },
+            {
+              q: "¿Qué separa el D.631 del D.632 dentro de las transferencias sociales en especie?",
+              opciones: [
+                "El D.631 son servicios que la administración produce y el D.632 bienes y servicios que compra en el mercado y entrega al hogar",
+                "El D.631 lo entrega el Estado y el D.632 las comunidades autónomas",
+                "El D.631 son prestaciones sanitarias y el D.632 educativas",
+                "El D.631 se valora a precios de mercado y el D.632 por costes",
+              ],
+              correcta: 0,
+              porque: [
+                "La sanidad prestada en un hospital público es D.631; los medicamentos con receta que el hogar retira en una farmacia privada y financia el sistema son D.632.",
+                "El nivel de administración no organiza esta división.",
+                "Sanidad y educación pueden aparecer en ambos epígrafes según se presten con medios propios o concertados.",
+                "Es al revés en cuanto a criterio de valoración, y en todo caso no es lo que los separa.",
+              ],
+            },
+            {
+              q: "Un gobierno concede una ayuda a la compra de vehículos eléctricos. ¿Es una prestación social?",
+              opciones: [
+                "Sí, si se concede en función de la renta del solicitante",
+                "No: es una subvención a los productos, porque abarata un bien concreto",
+                "No: las prestaciones sociales cubren riesgos socialmente reconocidos, y esta persigue un objetivo ambiental",
+                "Sí: es una transferencia pública a los hogares",
+              ],
+              correcta: 2,
+              porque: [
+                "Modular la ayuda por renta la hace más redistributiva y no la convierte en prestación social.",
+                "Si el beneficiario es el hogar y no el productor, no es una subvención al producto.",
+                "Vejez, enfermedad, desempleo, dependencia, familia, vivienda y exclusión son la lista. Una ayuda a la compra de un coche va a transferencias corrientes o de capital, según su finalidad.",
+                "No toda transferencia pública a un hogar es prestación social: hace falta que cubra una contingencia de las reconocidas.",
+              ],
+            },
+            {
+              q: "En el ejemplo de la ficha se cotizan 10.905 € por un trabajador. ¿Cuánto de eso figura en su nómina?",
+              opciones: [
+                "Solo 1.905 €: los 9.000 € de cotización patronal no aparecen en ningún documento que el trabajador reciba",
+                "La mitad, por el reparto legal entre empresa y trabajador",
+                "Nada: las cotizaciones se liquidan al margen de la nómina",
+                "Los 10.905 €, desglosados entre las dos partes",
+              ],
+              correcta: 0,
+              porque: [
+                "Es la razón de que el debate sobre la carga fiscal del trabajo gire en torno al impuesto sobre la renta: la mayor de las dos cargas es literalmente invisible para quien la soporta.",
+                "El reparto legal no es al cincuenta por ciento y, sobre todo, no coincide con quién soporta económicamente la carga.",
+                "La parte del trabajador sí aparece, descontada de su bruto.",
+                "La nómina solo recoge lo que se descuenta al trabajador de su bruto.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

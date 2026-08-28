@@ -183,6 +183,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Una empresa aporta 524.000 € al PIB en la operación y necesita financiar 824.000 €. ¿Por qué difieren las dos cifras?",
+              opciones: [
+                "Porque la diferencia son impuestos que no forman parte del PIB",
+                "Porque el solar sale de su caja aunque no sea producción de nadie: el NP resta en la capacidad de financiación sin haber sumado en el producto",
+                "Porque el PIB se mide en devengo y la financiación en caja",
+                "Porque una parte de la inversión se financia con subvenciones",
+              ],
+              correcta: 1,
+              porque: [
+                "Los impuestos de transmisión son una parte pequeña y, además, sí generan actividad registrable.",
+                "Formación de capital y necesidad de financiación no son lo mismo: la segunda incluye la adquisición de activos que nadie ha producido.",
+                "Ambas magnitudes se registran en devengo.",
+                "El origen de los fondos no explica la brecha entre lo producido y lo que hay que desembolsar.",
+              ],
+            },
+            {
+              q: "¿Cuándo aparece el fondo de comercio (AN.23) en las cuentas nacionales?",
+              opciones: [
+                "Cada año, a medida que la empresa consolida su posición de mercado",
+                "Cuando el auditor lo reconoce en las cuentas anuales",
+                "Solo cuando se materializa en una compraventa: alguien paga por encima del valor de los activos identificables",
+                "Nunca: el SEC no reconoce el fondo de comercio como activo",
+              ],
+              correcta: 2,
+              porque: [
+                "El valor que una empresa genera por sí sola no aflora: no hay transacción que lo revele ni nadie que lo haya producido como activo separable.",
+                "El reconocimiento contable sigue el mismo criterio, y en cuentas nacionales lo decisivo es la operación.",
+                "Es un activo no producido precisamente porque nadie lo fabricó: emerge del precio pagado en una operación concreta.",
+                "Sí lo reconoce, con código propio dentro de los activos no producidos.",
+              ],
+            },
+            {
+              q: "Un comerciante paga un traspaso para quedarse con el local de otro. ¿Qué adquiere en términos del SEC?",
+              opciones: [
+                "Un activo financiero, al tratarse de un derecho contractual",
+                "Un activo no producido de la familia AN.22: contratos, arrendamientos y licencias",
+                "Un activo fijo, porque le permitirá producir durante años",
+                "Un consumo intermedio del ejercicio",
+              ],
+              correcta: 1,
+              porque: [
+                "Los activos financieros tienen siempre un pasivo como contrapartida en otra unidad, y aquí no lo hay.",
+                "El derecho a ocupar ese local en esas condiciones tiene valor, da beneficios y no ha salido de ninguna producción.",
+                "Los activos fijos son producidos: alguien los fabricó o construyó. Un derecho contractual transmisible no lo es.",
+                "No se consume en el ejercicio: sirve durante años, que es lo que le da valor.",
+              ],
+            },
+            {
+              q: "¿Es el subsuelo con reservas de gas un activo en las cuentas nacionales?",
+              opciones: [
+                "No, hasta que el gas se extrae y se vende",
+                "No: solo son activos las cosas que alguien ha producido",
+                "Sí: es un recurso natural (AN.21), un activo no producido con valor económico",
+                "Sí, como existencias del sector energético",
+              ],
+              correcta: 2,
+              porque: [
+                "Las reservas tienen valor económico antes de extraerse: por eso se compran y se venden derechos sobre ellas.",
+                "Esa es la definición de activo fijo, no la de activo. Los no producidos son justamente los que nadie fabricó.",
+                "Da beneficios a su propietario y no salió de una producción: son las dos condiciones que definen un activo no producido.",
+                "Las existencias son bienes producidos que están en almacén; un yacimiento no lo es.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

@@ -172,15 +172,15 @@ export default {
             {
               q: "Un vuelo con asientos libres tiene un coste medio por pasajero de 132 € y un coste marginal de 12 €. Aparece un cliente dispuesto a pagar 60 €. ¿Conviene venderle el asiento?",
               opciones: [
-                "No: 60 € no cubren los 132 € que cuesta llevar a un pasajero",
                 "Sí: el asiento va a volar de todos modos y esos 60 € cubren de sobra los 12 € que añade",
+                "No: 60 € no cubren los 132 € que cuesta llevar a un pasajero",
                 "No, porque vender por debajo del coste medio hunde la tarifa del resto",
                 "Solo si se venden bastantes asientos como para llegar al coste medio",
               ],
-              correcta: 1,
+              correcta: 0,
               porque: [
-                "El coste medio incluye el avión, la tripulación y el combustible base, que ya están comprometidos y no cambian porque suba un pasajero más. Decidir con la media en vez de con el margen cuesta aquí 48 € por cada asiento rechazado.",
                 "En el margen la decisión es entre 60 € y 12 €. Todo lo demás ya está decidido y es idéntico se venda o no se venda ese asiento.",
+                "El coste medio incluye el avión, la tripulación y el combustible base, que ya están comprometidos y no cambian porque suba un pasajero más. Decidir con la media en vez de con el margen cuesta aquí 48 € por cada asiento rechazado.",
                 "Es un argumento comercial legítimo sobre otra cuestión —la política de precios— pero no cambia la aritmética de este asiento concreto. Y si se aplicara sin matices, los aviones volarían medio vacíos.",
                 "Es la media disfrazada de umbral. El coste medio baja precisamente al vender más asientos, así que exigir cubrirlo por adelantado impide la operación que lo haría bajar.",
               ],
@@ -188,33 +188,33 @@ export default {
             {
               q: "¿Qué relación hay entre una magnitud marginal y su media?",
               opciones: [
-                "La media siempre es mayor que la marginal",
-                "La media baja cuando la marginal está por debajo y sube cuando está por encima",
                 "Cuando la marginal es mínima, la media también lo es",
+                "La media siempre es mayor que la marginal",
                 "Ambas alcanzan su mínimo en la misma cantidad producida",
+                "La media baja cuando la marginal está por debajo y sube cuando está por encima",
               ],
-              correcta: 1,
+              correcta: 3,
               porque: [
-                "Depende del tramo: con rendimientos crecientes la marginal está por debajo y con decrecientes por encima. No hay un orden fijo entre ellas.",
-                "Es lo que dice $d\\mathrm{Me}/dx = (\\mathrm{Mg} - \\mathrm{Me})/x$: el signo del cambio de la media lo pone la diferencia entre ambas. Añadir algo peor que el promedio lo baja, y algo mejor lo sube.",
                 "El mínimo de la marginal llega antes. Mientras la marginal siga por debajo de la media, la media sigue bajando aunque la marginal ya haya empezado a subir.",
+                "Depende del tramo: con rendimientos crecientes la marginal está por debajo y con decrecientes por encima. No hay un orden fijo entre ellas.",
                 "La media es mínima donde la marginal la corta, es decir, donde $\\mathrm{Mg} = \\mathrm{Me}$, y ese punto no coincide con el mínimo de la marginal.",
+                "Es lo que dice $d\\mathrm{Me}/dx = (\\mathrm{Mg} - \\mathrm{Me})/x$: el signo del cambio de la media lo pone la diferencia entre ambas. Añadir algo peor que el promedio lo baja, y algo mejor lo sube.",
               ],
             },
             {
               q: "Un hospital empieza a medir a sus servicios por el número de altas y en un año la cifra mejora mucho sin que la salud de los pacientes cambie. ¿Qué ha pasado?",
               opciones: [
                 "Que el indicador estaba mal elegido desde el principio",
-                "Que al convertirse en objetivo dejó de medir lo que medía",
-                "Que la mejora es real pero tardará en verse en la salud",
                 "Que hace falta un indicador complementario para corregirlo",
+                "Que la mejora es real pero tardará en verse en la salud",
+                "Que al convertirse en objetivo dejó de medir lo que medía",
               ],
-              correcta: 1,
+              correcta: 3,
               porque: [
                 "Podía ser un indicador razonable mientras solo se observaba. El problema no está en su elección sino en haberlo convertido en objetivo, que es lo que cambia la conducta de quien es medido.",
-                "Es la ley de Goodhart: un indicador presionado se optimiza por la vía más barata —dar altas antes, seleccionar casos leves— y deja de ser un reflejo de lo que pretendía capturar.",
-                "El retraso explicaría una mejora pequeña, no un salto grande sin ningún cambio clínico. Y no explica por qué el salto coincide justo con el momento en que se empezó a medir.",
                 "Añadir indicadores desplaza el problema en vez de resolverlo: cada nuevo objetivo se optimiza a su vez. Es una mitigación, no una corrección.",
+                "El retraso explicaría una mejora pequeña, no un salto grande sin ningún cambio clínico. Y no explica por qué el salto coincide justo con el momento en que se empezó a medir.",
+                "Es la ley de Goodhart: un indicador presionado se optimiza por la vía más barata —dar altas antes, seleccionar casos leves— y deja de ser un reflejo de lo que pretendía capturar.",
               ],
             },
             {

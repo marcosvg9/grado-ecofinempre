@@ -110,6 +110,21 @@ export default function Repaso({ preguntas, repaso, estudiados, calificar, volve
         </p>
         <p className="tarjetaQ">{enLinea(actual.q)}</p>
 
+        {/* Las de test llegan con opciones: sin ellas la pregunta suele ser
+            incontestable. Se enseñan siempre y al revelar se marca la buena,
+            pero no se pulsan: quien califica sigue siendo el que estudia, y
+            mezclar dos formas de responder en la misma sesión confundiría. */}
+        {actual.opciones && (
+          <ol className="tarjetaOpciones" data-revelado={visible}>
+            {actual.opciones.map((op, k) => (
+              <li key={k} data-correcta={visible && k === actual.correcta}>
+                <span className="tarjetaLetra">{"abcd"[k]}</span>
+                <span>{enLinea(op)}</span>
+              </li>
+            ))}
+          </ol>
+        )}
+
         {!visible ? (
           <button className="boton" onClick={() => setVisible(true)}>
             Ver respuesta <kbd>espacio</kbd>

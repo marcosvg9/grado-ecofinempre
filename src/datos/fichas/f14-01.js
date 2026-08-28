@@ -194,6 +194,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un conflicto mercantil no está regulado por ninguna ley mercantil. ¿A qué se acude?",
+              opciones: [
+                "Directamente al derecho civil, que es el derecho común",
+                "A la analogía con otra ley mercantil que regule un supuesto parecido",
+                "A la jurisprudencia mercantil, que tiene rango de fuente",
+                "A los usos del comercio, y solo después al derecho civil",
+              ],
+              correcta: 3,
+              porque: [
+                "Saltarse los usos invierte la prelación: el civil actúa como supletorio, y solo cuando ni la ley ni los usos resuelven.",
+                "La analogía es una técnica de aplicación, no un escalón de la prelación de fuentes.",
+                "La jurisprudencia interpreta las fuentes; en nuestro sistema no es una de ellas.",
+                "El derecho mercantil nació de los usos de los comerciantes medievales y conserva de aquel origen que la costumbre profesional preceda al derecho común.",
+              ],
+            },
+            {
+              q: "Dos socios firman la escritura de constitución de una sociedad limitada ante notario y aún no la han inscrito. ¿Existe la sociedad?",
+              opciones: [
+                "No existe nada hasta la inscripción: los actos realizados antes son nulos",
+                "Sí, pero solo frente a los socios, no frente a terceros",
+                "No como sociedad limitada: la inscripción es constitutiva y hasta entonces hay una sociedad en formación con otro régimen de responsabilidad",
+                "Sí: la escritura pública basta para que nazca la persona jurídica",
+              ],
+              correcta: 2,
+              porque: [
+                "Los actos no son nulos: la sociedad en formación puede operar, con reglas propias sobre quién responde de lo hecho en ese periodo.",
+                "El problema no es la oponibilidad sino que todavía no ha nacido el tipo social con su limitación de responsabilidad.",
+                "Es el contraste con el empresario individual, para quien la inscripción es potestativa. Tratar la inscripción como un trámite uniforme oculta esa diferencia esencial.",
+                "La escritura es necesaria y no suficiente: en las sociedades de capital el Registro no publica una realidad previa, la crea.",
+              ],
+            },
+            {
+              q: "¿Cómo está organizado el Registro Mercantil?",
+              opciones: [
+                "Por sujetos: cada empresario o sociedad tiene su hoja",
+                "Por bienes, como el Registro de la Propiedad",
+                "Por fecha de constitución",
+                "Por sectores de actividad económica",
+              ],
+              correcta: 0,
+              porque: [
+                "Aquí lo que interesa es quién es cada operador y qué le afecta: administradores, poderes, cuentas, modificaciones estructurales.",
+                "El Registro de la Propiedad se organiza por fincas porque lo que interesa es el historial de cada bien.",
+                "La fecha ordena los asientos dentro de cada hoja, no las hojas entre sí.",
+                "El sector es un dato de la hoja, no el criterio que ordena el archivo.",
+              ],
+            },
+            {
+              q: "Un asiento del Registro Mercantil resulta ser inexacto. ¿Queda protegido quien contrató confiando en él?",
+              opciones: [
+                "No: la inexactitud invalida el asiento desde el origen",
+                "No, salvo que la inexactitud fuera imputable a la propia sociedad",
+                "Solo si consigue demostrar que hizo comprobaciones adicionales",
+                "Sí: por el principio de fe pública, el tercero de buena fe queda protegido aunque el asiento fuese inexacto",
+              ],
+              correcta: 3,
+              porque: [
+                "Si la inexactitud pudiera oponerse al tercero, el Registro dejaría de servir para lo único que sirve: poder fiarse de él sin investigar.",
+                "La imputabilidad importa entre las partes, no para la protección del tercero de buena fe.",
+                "La fe pública existe precisamente para que no haga falta comprobar nada más.",
+                "El Registro no informa: garantiza. Junto al principio de legitimación —el contenido se presume exacto mientras no se declare lo contrario— es lo que hace que contratar con un desconocido sea viable.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

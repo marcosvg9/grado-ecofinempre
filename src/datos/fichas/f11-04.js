@@ -189,6 +189,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Causó el crac bursátil de 1929 la Gran Depresión?",
+              opciones: [
+                "No: el crac fue consecuencia de la Depresión, no su causa",
+                "Sí: la pérdida de riqueza hundió el consumo",
+                "Sí, junto con la especulación con crédito a plazos",
+                "No: las caídas bursátiles son frecuentes y casi nunca producen depresiones; lo decisivo vino después",
+              ],
+              correcta: 3,
+              porque: [
+                "El crac fue anterior a la contracción económica más grave, así que no puede ser su consecuencia.",
+                "El efecto riqueza existió y es de una magnitud muy inferior a la caída que hubo que explicar.",
+                "El crédito para invertir en bolsa agravó el desplome bursátil, no la depresión de la economía real.",
+                "Lo que convirtió una recesión seria en una catástrofe de una década fue el colapso bancario y monetario de los años siguientes.",
+              ],
+            },
+            {
+              q: "La cantidad de dinero se contrajo drásticamente entre 1930 y 1933. ¿Retiró el banco central la base monetaria?",
+              opciones: [
+                "No: la contracción se debió íntegramente a la caída de la demanda de crédito",
+                "Sí, por obligación del patrón oro",
+                "Sí: aplicó una política deliberadamente restrictiva",
+                "No: fue el multiplicador el que se hundió, al subir a la vez el efectivo que quería el público y las reservas que retenían los bancos",
+              ],
+              correcta: 3,
+              porque: [
+                "La demanda de crédito cayó, y el mecanismo dominante fue el pánico bancario.",
+                "El oro limitó la capacidad de reacción, y la caída del dinero vino por la vía del multiplicador.",
+                "No retiró base: la acusación no es de haber contraído sino de no haber compensado el hundimiento del multiplicador.",
+                "Los depositantes querían billetes y los bancos querían reservas, ambos por miedo, y esa doble huida derrumbó el dinero bancario sin que nadie tocara la base.",
+              ],
+            },
+            {
+              q: "Los tipos nominales estaban cerca de cero en 1932. ¿Era expansiva la política monetaria?",
+              opciones: [
+                "Sí: no se puede hacer más que llevar los tipos a cero",
+                "No, porque el banco central mantenía un coeficiente de reservas elevado",
+                "Sí, pero el crédito no llegaba a las empresas",
+                "No: con precios cayendo un 25 %, el tipo de interés real era altísimo",
+              ],
+              correcta: 3,
+              porque: [
+                "Mirar el nominal es justamente lo que hace parecer expansiva una política extraordinariamente dura.",
+                "El coeficiente de reservas no era el instrumento decisivo en aquel episodio.",
+                "El canal del crédito estaba roto, y el problema previo es que el precio real del dinero era prohibitivo.",
+                "Y la deflación multiplicaba además el valor real de todas las deudas, arruinando a deudores solventes en términos nominales.",
+              ],
+            },
+            {
+              q: "¿Qué pesó más en la recuperación estadounidense?",
+              opciones: [
+                "Abandonar el oro y devaluar, es decir, recuperar la capacidad de expandir la oferta monetaria",
+                "El gasto público del New Deal",
+                "El arancel Smoot-Hawley, que protegió a la industria nacional",
+                "La reforma del sistema bancario de 1933",
+              ],
+              correcta: 0,
+              porque: [
+                "Es la lección que más ha marcado la política económica posterior: mientras el compromiso con el oro estuvo vigente, no se podía combatir la deflación.",
+                "El estímulo fiscal del New Deal fue modesto frente al tamaño de la brecha de producción.",
+                "El arancel agravó la contracción del comercio mundial y provocó represalias; no ayudó a la recuperación.",
+                "La reforma bancaria detuvo los pánicos, que era condición necesaria, y no explica por sí sola el giro de la actividad.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

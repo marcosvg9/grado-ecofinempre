@@ -202,6 +202,82 @@ export default {
     },
 
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Qué contiene la matriz de sumas?",
+              opciones: [
+                "Los datos históricos de cada serie de la jerarquía",
+                "Solo ceros y unos que describen qué suma qué",
+                "Las ponderaciones de cada hoja en su agregado",
+                "Las covarianzas entre los errores de previsión",
+              ],
+              correcta: 1,
+              porque: [
+                "No contiene ningún dato: es la misma matriz para cualquier periodo, cualquier variable y cualquier método.",
+                "Describe la estructura de agregación y nada más, y por eso puede escribirse antes de tener un solo dato.",
+                "Las ponderaciones aparecen en algunos métodos de reconciliación, no en la matriz que define la estructura.",
+                "Las covarianzas son la materia prima de la reconciliación óptima, y viven en otra matriz distinta.",
+              ],
+            },
+            {
+              q: "¿Puede aplicarse la formulación matricial a una estructura agrupada, con región y producto cruzados?",
+              opciones: [
+                "Sí, pero perdiendo la garantía de coherencia en los cruces",
+                "Solo si se elige previamente cuál de los dos criterios va primero",
+                "No: exige un árbol en el que cada serie tenga un único padre",
+                "Sí: solo exige que cada serie sea una suma de hojas, y basta añadir una fila por cada agregado que interese",
+              ],
+              correcta: 3,
+              porque: [
+                "La coherencia se mantiene en todos los agregados declarados, cruces incluidos.",
+                "Elegir un orden es justo lo que la formulación evita: en una retícula esa elección sería arbitraria.",
+                "El árbol es un caso particular, no un requisito: lo que hace falta es poder escribir cada serie como suma de hojas.",
+                "Los totales por región y los totales por producto son ambos sumas de las mismas celdas, así que caben en la misma matriz.",
+              ],
+            },
+            {
+              q: "¿Qué exige la condición de invariancia a un método de reconciliación?",
+              opciones: [
+                "Que el resultado no dependa del orden en que se recorra la jerarquía",
+                "Que la suma de los ajustes aplicados sea cero",
+                "Que funcione igual con cualquier número de niveles",
+                "Que devuelva los valores originales cuando se le entrega un conjunto de previsiones ya coherente",
+              ],
+              correcta: 3,
+              porque: [
+                "La independencia del orden es deseable y no es lo que define esta condición.",
+                "La suma de los ajustes no tiene por qué anularse.",
+                "La escalabilidad es una propiedad práctica, no la condición de invariancia.",
+                "Es natural —no tocar lo que ya está bien— y además tiene consecuencia estadística: preserva la insesgadez, y el top-down la incumple.",
+              ],
+            },
+            {
+              q: "¿Puede reconciliarse directamente una jerarquía de tasas de variación?",
+              opciones: [
+                "No: toda la construcción supone que los agregados son sumas de las hojas, y las tasas, ratios e índices no son aditivos",
+                "Sí, ponderando cada tasa por el peso de su serie",
+                "Sí: las tasas se agregan igual que los niveles",
+                "No, salvo que todas las series tengan la misma base",
+              ],
+              correcta: 0,
+              porque: [
+                "Es la misma razón por la que no se puede reconciliar directamente sobre volúmenes encadenados. Hay que trabajar sobre magnitudes aditivas y derivar después las tasas.",
+                "Ponderar es la forma correcta de agregar tasas y no las convierte en aditivas para esta construcción, que exige sumas puras.",
+                "Las tasas no suman: la tasa del total no es la suma de las tasas de sus partes.",
+                "La base común no convierte una tasa en una magnitud aditiva.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

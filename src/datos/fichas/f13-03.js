@@ -171,6 +171,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "El servicio que presta un banco al mantener una cuenta no aparece en ninguna factura. ¿Es consumo intermedio de la empresa cliente?",
+              opciones: [
+                "Solo si el banco lo desglosa en su información a clientes",
+                "Sí: es el SIFMI, un servicio real que se cobra por diferencial de tipos en lugar de por comisión",
+                "No: se registra como renta de la propiedad, junto con los intereses",
+                "No: sin factura no hay operación que registrar",
+              ],
+              correcta: 1,
+              porque: [
+                "El desglose comercial no determina el registro en cuentas nacionales.",
+                "El sistema lo estima y lo imputa, y si no se hiciera el valor añadido de la empresa aparecería inflado y el del banco desaparecería.",
+                "Los intereses sí son renta de la propiedad; el margen del intermediario es producción de servicios y va aparte.",
+                "La ausencia de factura no significa ausencia de servicio: significa que se cobra por otra vía.",
+              ],
+            },
+            {
+              q: "Una empresa gasta 40.000 € en ropa de trabajo obligatoria y 6.000 € en un plan de pensiones para su director. ¿Cómo se clasifica cada cosa?",
+              opciones: [
+                "Ambas como consumo intermedio, por ser gasto corriente de la empresa",
+                "La ropa es consumo intermedio y el plan de pensiones remuneración de asalariados",
+                "La ropa es formación de capital y el plan de pensiones consumo intermedio",
+                "Ambas como remuneración de asalariados",
+              ],
+              correcta: 1,
+              porque: [
+                "El plan de pensiones beneficia a la persona, no al puesto, así que no es un insumo de la producción.",
+                "El criterio de esta frontera es a quién beneficia: si al puesto es P.2, y si a la persona es D.1. La ropa de trabajo cumple una función productiva; el plan de pensiones retribuye a alguien.",
+                "La ropa no dura más de un año en uso repetido de forma que justifique activarla, y el plan de pensiones no es un insumo.",
+                "La ropa la exige el puesto: nadie se la llevaría a casa como retribución.",
+              ],
+            },
+            {
+              q: "¿Dónde van las primas netas de seguro no vida que paga una empresa?",
+              opciones: [
+                "A formación de capital, si cubren activos fijos",
+                "A transferencias corrientes, en su totalidad",
+                "A consumo intermedio, en su totalidad",
+                "Se reparten: el margen del asegurador es consumo intermedio y el resto es transferencia corriente",
+              ],
+              correcta: 3,
+              porque: [
+                "El objeto asegurado no cambia la naturaleza de la prima.",
+                "Tampoco es toda transferencia: la compañía presta un servicio real que hay que reconocer como producción.",
+                "Solo una parte de la prima compra un servicio: el resto es dinero que vuelve al colectivo asegurado.",
+                "Es una de las partidas que más se colocan mal, precisamente porque un único pago se reparte entre dos cuentas distintas.",
+              ],
+            },
+            {
+              q: "¿Coincide el valor añadido que calcula el INE para una empresa con el que sale de sus cuentas anuales?",
+              opciones: [
+                "No: los criterios de activación, amortización y periodificación del plan contable no son los del SEC, y el instituto reconvierte los datos",
+                "Sí: ambas parten de la misma contabilidad",
+                "No, pero la diferencia es siempre inferior al 1 %",
+                "Sí, salvo diferencias por el tratamiento del IVA",
+              ],
+              correcta: 0,
+              porque: [
+                "Es la regla de oro del tema: la contabilidad de empresa no es la contabilidad nacional, y esperar que cuadren lleva a buscar errores donde solo hay criterios diferentes.",
+                "Parten de la misma información y la reordenan con reglas distintas, que responden a preguntas distintas.",
+                "No hay ninguna cota: en empresas con mucha I+D o mucho arrendamiento la diferencia puede ser grande.",
+                "El IVA es una de las diferencias, y ni mucho menos la única.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

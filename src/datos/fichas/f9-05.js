@@ -168,6 +168,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Una empresa anuncia una estrategia nueva y mantiene intacta su estructura. ¿Qué cabe esperar?",
+              opciones: [
+                "Que la estrategia se imponga poco a poco y arrastre a la organización",
+                "Que la organización siga ejecutando lo que su estructura, sus incentivos y sus sistemas de medición le permiten",
+                "Que la transición sea más suave por no añadir cambios simultáneos",
+                "Que el resultado dependa exclusivamente del liderazgo del director general",
+              ],
+              correcta: 1,
+              porque: [
+                "La estructura no se deja arrastrar: es lo que determina qué decisiones son posibles y cuáles no llegan a plantearse.",
+                "Anunciar una estrategia nueva sobre una organización diseñada para la anterior produce el comportamiento anterior con vocabulario nuevo.",
+                "La suavidad es aparente: no hay transición ninguna, porque nada de lo que decide el comportamiento diario ha cambiado.",
+                "El liderazgo influye, pero no puede sostener indefinidamente conductas que la estructura y los incentivos penalizan.",
+              ],
+            },
+            {
+              q: "Se decide aplanar la organización eliminando un nivel jerárquico. ¿Qué hay que hacer además?",
+              opciones: [
+                "Reducir proporcionalmente la plantilla del nivel inferior",
+                "Sustituir la supervisión directa por normalización de resultados o de habilidades",
+                "Revisar el convenio colectivo aplicable",
+                "Nada más: menos niveles significa por sí mismo decisiones más rápidas",
+              ],
+              correcta: 1,
+              porque: [
+                "Reducir plantilla es una decisión distinta y no resuelve cómo se coordinará el trabajo restante.",
+                "Ampliar el ámbito de control hace imposible supervisar de cerca, así que la coordinación tiene que venir de otro mecanismo o desaparece.",
+                "El convenio regula condiciones laborales, no el mecanismo de coordinación.",
+                "Reducir niveles sin sustituir el mecanismo no acelera nada: produce descoordinación con menos jefes.",
+              ],
+            },
+            {
+              q: "Se reorganiza la empresa por completo y se mantiene el sistema de retribución variable. ¿Qué ocurre?",
+              opciones: [
+                "El comportamiento cambia con el organigrama, aunque más lentamente",
+                "Se produce el mismo comportamiento de antes: los incentivos suelen pesar más que las líneas del organigrama",
+                "El sistema de incentivos se adapta solo, al cambiar los responsables",
+                "Mejora la coordinación, aunque no la motivación",
+              ],
+              correcta: 1,
+              porque: [
+                "El organigrama describe dependencias; el variable describe qué le conviene a cada uno. Lo segundo gana.",
+                "Un organigrama nuevo con la misma retribución variable produce exactamente las mismas conductas, dibujadas en otro sitio.",
+                "El sistema no se adapta solo: sigue midiendo y pagando lo mismo mientras nadie lo reescriba.",
+                "La coordinación tampoco mejora si cada área sigue teniendo incentivos para optimizar lo suyo.",
+              ],
+            },
+            {
+              q: "Un equipo de seis personas va lento y se decide duplicarlo a doce. ¿Qué efecto tiene sobre la coordinación?",
+              opciones: [
+                "Se duplica el esfuerzo de coordinación, en proporción al tamaño",
+                "No cambia: la coordinación depende del método de trabajo, no del número",
+                "Se reduce, porque hay más personas para repartir las tareas de enlace",
+                "Se multiplica por más de cuatro: los canales de comunicación crecen con el cuadrado del tamaño",
+              ],
+              correcta: 3,
+              porque: [
+                "Crece más deprisa que el tamaño, porque lo que se multiplica son las parejas que deben entenderse.",
+                "El método ayuda, pero no puede anular el crecimiento cuadrático de los canales.",
+                "Las tareas de enlace aumentan más de lo que aportan las manos nuevas, y por eso el equipo puede acabar aún más lento.",
+                "De seis a doce personas los canales pasan de 15 a 66. Añadir gente a un equipo lento suele retrasarlo todavía más.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

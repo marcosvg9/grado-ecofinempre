@@ -190,6 +190,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Cuándo un pago obligatorio a una administración es la compra de un servicio y no un impuesto?",
+              opciones: [
+                "Cuando hay un servicio identificable y proporcional al uso: entonces es P.3 y no un tributo",
+                "Cuando lo recauda un ayuntamiento en lugar del Estado",
+                "Cuando el pagador puede renunciar a él",
+                "Cuando su importe es reducido",
+              ],
+              correcta: 0,
+              porque: [
+                "Cuando la contraprestación es difusa o el importe no guarda relación con el coste del servicio, vuelve a ser impuesto por mucho que se llame tasa.",
+                "La administración recaudadora es indiferente para la clasificación.",
+                "Muchas tasas son inevitables en la práctica y siguen siendo la compra de un servicio.",
+                "La cuantía no decide: hay tasas altas y tributos pequeños.",
+              ],
+            },
+            {
+              q: "¿Qué recoge el D.59, «otros impuestos corrientes», frente al D.51?",
+              opciones: [
+                "Los impuestos sobre productos que no son IVA",
+                "Los impuestos que recaudan las comunidades autónomas",
+                "Los impuestos periódicos sobre el patrimonio y sobre la tenencia de vehículos por los hogares",
+                "Los impuestos aplazados o fraccionados",
+              ],
+              correcta: 2,
+              porque: [
+                "Los impuestos sobre productos son D.21 y viven en otra familia por completo.",
+                "El nivel de administración no organiza esta clasificación.",
+                "El D.51 grava la renta —IRPF, sociedades, ganancias de capital— y el D.59 recoge los que gravan periódicamente el patrimonio o su tenencia.",
+                "El fraccionamiento afecta al calendario de cobro, no a la clasificación.",
+              ],
+            },
+            {
+              q: "¿En qué cuenta reduce el impuesto sobre sociedades la renta de una empresa?",
+              opciones: [
+                "En la cuenta de explotación, junto a los otros impuestos sobre la producción",
+                "En la cuenta de capital, como transferencia de capital",
+                "En la cuenta de producción, al valorar a precios básicos",
+                "En la cuenta de distribución secundaria: es D.51 y reduce su renta disponible",
+              ],
+              correcta: 3,
+              porque: [
+                "En la de explotación van los D.29, que se pagan aunque haya pérdidas. El de sociedades grava el beneficio.",
+                "Es un impuesto corriente y periódico, no de capital: no es una sucesión ni una donación.",
+                "Los impuestos sobre productos actúan allí; el de sociedades no es uno de ellos.",
+                "Y como las sociedades no tienen consumo final, esa reducción de renta disponible se traduce directamente en menos ahorro.",
+              ],
+            },
+            {
+              q: "Un hogar paga a lo largo del año IRPF, IVA en sus compras, el IBI de su vivienda y un impuesto de sucesiones. ¿Cuántos de ellos reducen su renta disponible?",
+              opciones: [
+                "Tres: todos menos el IVA",
+                "Los cuatro: todos son pagos obligatorios sin contrapartida",
+                "Ninguno: la renta disponible se calcula antes de impuestos",
+                "Solo uno: el IRPF",
+              ],
+              correcta: 3,
+              porque: [
+                "Ni el IBI de la vivienda propia ni el de sucesiones reducen la renta disponible, por razones distintas cada uno.",
+                "Cada uno actúa en una cuenta distinta, y solo algunos llegan a tocar la renta disponible.",
+                "La renta disponible se calcula precisamente después de los impuestos corrientes sobre la renta y el patrimonio.",
+                "El IVA ya estaba dentro del precio de lo que compró; el IBI de la vivienda propia es D.29 porque el propietario es productor de su alojamiento; y el de sucesiones es D.91, que vive en la cuenta de capital y solo reduce el patrimonio neto.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

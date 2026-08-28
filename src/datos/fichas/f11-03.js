@@ -184,6 +184,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Qué es en el fondo una hiperinflación?",
+              opciones: [
+                "El resultado de una espiral de precios y salarios sin control",
+                "Un error técnico de un banco central mal dirigido",
+                "Un síntoma fiscal: un Estado que no puede recaudar ni endeudarse acaba emitiendo, porque es la única vía que no exige convencer a nadie",
+                "Una consecuencia inevitable de los tipos de cambio flotantes",
+              ],
+              correcta: 2,
+              porque: [
+                "La espiral precios-salarios es un mecanismo de propagación, no el origen del gasto que se está monetizando.",
+                "Ningún banco central llega a multiplicar los precios por miles por descuido: la emisión responde a una necesidad de gasto que no encuentra otra vía.",
+                "Por eso estos episodios acompañan a guerras, revoluciones y rupturas del Estado, y no a errores de política monetaria en tiempos normales.",
+                "Ha habido hiperinflaciones con tipos fijos y con flotantes: el régimen cambiario no es la causa.",
+              ],
+            },
+            {
+              q: "Un Estado emite cada vez más dinero para financiarse. ¿Recauda cada vez más?",
+              opciones: [
+                "No: la base del impuesto son los saldos reales que el público mantiene, y esa base se hunde cuando la inflación sube",
+                "Sí, aunque a costa de más inflación",
+                "Sí: cada billete nuevo es poder de compra que el Estado se apropia",
+                "No, porque la emisión está limitada por los estatutos del banco central",
+              ],
+              correcta: 0,
+              porque: [
+                "Tener dinero pasa a ser carísimo y todo el mundo se deshace de él en cuanto lo recibe. Hay un punto a partir del cual emitir más recauda menos.",
+                "La inflación no es solo el coste: es lo que destruye la base sobre la que se recauda.",
+                "Lo es mientras alguien conserve dinero; el problema es que deja de conservarlo.",
+                "En estos episodios los estatutos se cambian o se ignoran: la restricción operativa es económica, no legal.",
+              ],
+            },
+            {
+              q: "¿Cómo terminan las hiperinflaciones?",
+              opciones: [
+                "Con un control de precios que rompa las expectativas",
+                "Gradualmente, a medida que la política monetaria se endurece",
+                "De golpe, cuando cambia el régimen fiscal y se introduce una moneda con respaldo creíble",
+                "Cuando la moneda extranjera sustituye por completo a la nacional",
+              ],
+              correcta: 2,
+              porque: [
+                "Los controles de precios sin ajuste fiscal producen desabastecimiento y mercado negro, y la inflación reaparece al levantarlos.",
+                "El endurecimiento monetario sin ajuste fiscal es insostenible: el gasto sigue ahí y hay que financiarlo.",
+                "Una desaceleración lenta no es un final: sin cerrar el agujero fiscal, la inflación vuelve. Lo que cambia el rumbo es el régimen, no la intensidad.",
+                "La dolarización de hecho es una consecuencia del episodio, no el mecanismo que lo cierra.",
+              ],
+            },
+            {
+              q: "Al restaurar la convertibilidad, elegir la paridad de la moneda, ¿es una decisión técnica?",
+              opciones: [
+                "No: es una decisión distributiva de primer orden entre acreedores y deudores",
+                "Sí, salvo que existan desequilibrios comerciales severos",
+                "No, pero sus efectos se reparten de forma homogénea entre la población",
+                "Sí: se trata de calcular el tipo que equilibra la balanza de pagos",
+              ],
+              correcta: 0,
+              porque: [
+                "Una paridad alta favorece a acreedores y tenedores de deuda pública, y perjudica a deudores y a trabajadores de los sectores expuestos a la competencia exterior.",
+                "La severidad del desequilibrio cambia la magnitud del problema, no su naturaleza distributiva.",
+                "El reparto es cualquier cosa menos homogéneo, y ahí está el conflicto político que rodea siempre a estas decisiones.",
+                "Existe ese cálculo y no es lo que decide: la paridad elegida reparte ganancias y pérdidas entre grupos concretos.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

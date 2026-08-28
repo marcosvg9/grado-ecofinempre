@@ -192,6 +192,82 @@ export default {
     },
 
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Una serie ajustada descargada hace un año no coincide con la actual, y ningún dato bruto se ha corregido. ¿Es posible?",
+              opciones: [
+                "Sí, pero solo en el último año de la serie",
+                "No, salvo que haya cambiado el método de descomposición",
+                "Sí: los factores se reestiman con cada dato nuevo, y con ellos cambia el pasado ya publicado",
+                "No: sin corrección de datos la serie ajustada no puede cambiar",
+              ],
+              correcta: 2,
+              porque: [
+                "El alcance depende de la ventana de revisión que fije la política: puede llegar bastante más atrás.",
+                "El cambio de método lo agravaría, y no hace falta para que ocurra.",
+                "Por eso comparar series descargadas en fechas distintas produce diferencias que no corresponden a ningún cambio económico.",
+                "Buena parte de las revisiones procede del procedimiento, no de los datos: las predicciones se sustituyen por observaciones, el modelo se reestima y los atípicos se reclasifican.",
+              ],
+            },
+            {
+              q: "¿Por qué medir el coste de las revisiones en niveles resulta engañoso?",
+              opciones: [
+                "Porque los niveles se revisan menos que las tasas por construcción",
+                "Porque los niveles no son comparables entre trimestres",
+                "Porque el usuario lee tasas, y una revisión de nivel diminuta puede mover apreciablemente la tasa intertrimestral",
+                "Porque los niveles se publican con menos decimales",
+              ],
+              correcta: 2,
+              porque: [
+                "Se revisa el nivel y la tasa hereda esa revisión amplificada: no es que una se revise menos.",
+                "Los niveles sí son comparables; el problema es que no son lo que se comenta.",
+                "En el ejemplo, una revisión de 0,08 sobre 105 —menos de una décima porcentual del nivel— desplaza la tasa lo suficiente para cambiar el titular.",
+                "El número de decimales no cambia la magnitud de la revisión.",
+              ],
+            },
+            {
+              q: "¿Es la política de ajuste concurrente la mejor por dar la estimación más precisa en cada momento?",
+              opciones: [
+                "No: es la política que peor estima en cada momento",
+                "Da la mejor estimación puntual y el peor perfil de revisiones: para quien modeliza sobre la serie, la base cambia bajo los pies",
+                "Sí, salvo en series con muchos atípicos",
+                "Sí: usar toda la información disponible siempre es preferible",
+              ],
+              correcta: 1,
+              porque: [
+                "Estima muy bien; lo que ocurre es que cambia mucho.",
+                "Reestimarlo todo en cada publicación maximiza la calidad de la estimación actual y hace que el pasado se mueva continuamente.",
+                "El número de atípicos no altera el compromiso de fondo entre precisión y estabilidad.",
+                "La precisión puntual no es el único objetivo de una política de revisiones: la estabilidad también tiene valor de uso.",
+              ],
+            },
+            {
+              q: "Una serie apenas se revisa. ¿Es señal de calidad?",
+              opciones: [
+                "Sí: la estabilidad indica que las estimaciones eran acertadas desde el principio",
+                "No, pero es preferible a una serie muy revisada",
+                "Sí, si además pasa todos los diagnósticos",
+                "No: los factores proyectados no se revisan y pueden estar equivocados durante todo un año",
+              ],
+              correcta: 3,
+              porque: [
+                "Confundir estabilidad con calidad es exactamente el error: una serie puede no moverse porque nadie la está corrigiendo.",
+                "Ninguna de las dos es preferible en abstracto: lo que se exige es publicar la política y respetar el calendario.",
+                "Los diagnósticos se calculan sobre el ajuste, y no detectan que los factores aplicados sean de otro momento.",
+                "Es la política más frágil de todas: elimina las revisiones durante el año a costa de aplicar factores que pueden haber dejado de describir la realidad.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

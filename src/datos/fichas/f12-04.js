@@ -183,6 +183,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Una filial retiene sus beneficios y no reparte dividendo a su matriz extranjera. ¿Cómo lo registra el SEC?",
+              opciones: [
+                "Imputa que la filial los distribuye a la matriz y que esta los reinvierte de inmediato",
+                "Como un aumento de las reservas de la filial, sin efecto en la renta nacional",
+                "Como una transferencia de capital al final del ejercicio",
+                "No lo registra: sin pago no hay operación",
+              ],
+              correcta: 0,
+              porque: [
+                "Es una imputación en dos pasos que deja la renta atribuida a quien tiene derecho a ella y el dinero donde está.",
+                "Las reservas aumentan, y la renta ya se ha generado y pertenece económicamente al propietario extranjero.",
+                "No es capital: es renta de la propiedad del ejercicio.",
+                "Si no se registrara, un grupo podría reducir a voluntad la renta nacional de un país sencillamente no repartiendo dividendos.",
+              ],
+            },
+            {
+              q: "Los intereses de esta cuenta no coinciden con los que aparecen en los contratos. ¿Por qué?",
+              opciones: [
+                "Porque se expresan en términos reales, descontada la inflación",
+                "Porque se netean los cobrados contra los pagados",
+                "Porque están ajustados por SIFMI: se les ha quitado el margen del intermediario financiero, que es producción de servicios y no renta",
+                "Porque se registran en devengo y no en caja",
+              ],
+              correcta: 2,
+              porque: [
+                "Las cuentas nacionales no deflactan los intereses en esta cuenta.",
+                "Se registran por separado los cobrados y los pagados; el neteo no es la razón de la discrepancia.",
+                "El banco cobra al prestatario más de lo que paga al depositante, y esa diferencia retribuye un servicio. El SEC la saca de aquí y la lleva a producción.",
+                "El devengo afecta al momento de registro, no a la cuantía del interés.",
+              ],
+            },
+            {
+              q: "Un país acoge muchas filiales de multinacionales extranjeras. ¿Qué agregado describe mejor la renta de sus residentes?",
+              opciones: [
+                "El valor añadido bruto a precios básicos",
+                "El PIB, que mide toda la actividad económica del país",
+                "La renta nacional, porque el PIB mide producción en el territorio y parte de esa renta sale hacia los propietarios extranjeros",
+                "El PIB per cápita, que corrige por población",
+              ],
+              correcta: 2,
+              porque: [
+                "El valor añadido a precios básicos es una variante del PIB y tiene el mismo problema.",
+                "El PIB mide dónde se produce, no quién se queda el resultado. En estos países la brecha entre ambas cosas es enorme.",
+                "Irlanda es el caso extremo: su PIB y su renta nacional cuentan historias muy distintas sobre lo que reciben sus residentes.",
+                "Corregir por población no corrige la salida de rentas hacia el exterior.",
+              ],
+            },
+            {
+              q: "¿Son igual de fiables todas las partidas de la cuenta de rentas de la propiedad?",
+              opciones: [
+                "No: las más fiables son los dividendos, por estar auditados en las cuentas anuales",
+                "Sí: todas proceden de registros administrativos",
+                "No: los intereses se estiman con los balances financieros del banco central y son sólidos; los dividendos, en buena parte por diferencia",
+                "Sí, salvo en los años de cambio metodológico",
+              ],
+              correcta: 2,
+              porque: [
+                "Los dividendos se obtienen en buena parte por diferencia, que es precisamente lo que los hace menos sólidos.",
+                "Las cuentas nacionales combinan registros, encuestas y estimaciones residuales, y no todo tiene la misma calidad.",
+                "Conviene saber qué partida soporta cuánto peso analítico: no todas están estimadas con la misma solidez.",
+                "Los cambios metodológicos afectan a toda la serie; la desigual fiabilidad entre partidas es permanente.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

@@ -184,6 +184,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Los socios de una limitada quieren imponer al administrador a qué proveedor comprar. ¿Pueden?",
+              opciones: [
+                "No: la junta decide lo esencial y lo estructural, no cómo se administra, salvo que los estatutos prevean instrucciones o autorizaciones",
+                "No: ni siquiera los estatutos pueden atribuir a la junta ninguna intervención en la gestión",
+                "Sí, si el acuerdo se adopta por mayoría reforzada",
+                "Sí: la junta es el órgano soberano y puede decidir sobre cualquier materia",
+              ],
+              correcta: 0,
+              porque: [
+                "El reparto es la frontera que ordena todo el gobierno de la sociedad. Y aunque la junta imparta instrucciones, el administrador sigue vinculando a la sociedad frente a terceros.",
+                "Sí pueden: la ley permite que los estatutos prevean instrucciones o sometan decisiones a autorización de la junta.",
+                "La mayoría con que se adopte un acuerdo no amplía las competencias del órgano que lo adopta.",
+                "La soberanía de la junta no la convierte en órgano de gestión: la ley reparte competencias entre los dos órganos.",
+              ],
+            },
+            {
+              q: "¿Qué es una junta universal?",
+              opciones: [
+                "La que se celebra con todo el capital presente y con acuerdo unánime sobre el orden del día, sin necesidad de convocatoria previa",
+                "La que adopta acuerdos por unanimidad de los asistentes",
+                "La junta ordinaria anual, por ser obligatoria para todas las sociedades",
+                "La convocada por el registrador mercantil a instancia de un socio minoritario",
+              ],
+              correcta: 0,
+              porque: [
+                "Es lo que permite a las sociedades pequeñas funcionar sin el aparato formal de las convocatorias: si están todos y todos aceptan tratar los asuntos, la junta es válida.",
+                "La unanimidad se exige sobre el orden del día, no sobre los acuerdos, que se adoptan por las mayorías ordinarias.",
+                "La ordinaria es la que debe celebrarse dentro de los seis primeros meses del ejercicio para aprobar cuentas; puede ser universal o no.",
+                "Esa es la convocatoria judicial o registral, un supuesto distinto.",
+              ],
+            },
+            {
+              q: "¿Cómo se calculan las mayorías en la junta de una limitada y en la de una anónima?",
+              opciones: [
+                "En la limitada por votos correspondientes a las participaciones y en la anónima por capital",
+                "En ambas por número de socios, un socio un voto",
+                "En la limitada por capital y en la anónima por votos",
+                "En ambas por capital presente en la reunión",
+              ],
+              correcta: 0,
+              porque: [
+                "Es un matiz que rara vez se recuerda y que puede cambiar el resultado de una votación cuando existen participaciones con voto plural o privilegios.",
+                "Un socio un voto es el criterio de las cooperativas, no el de las sociedades de capital.",
+                "Es exactamente el cruce contrario al correcto.",
+                "La anónima sí computa por capital; la limitada no usa el mismo criterio.",
+              ],
+            },
+            {
+              q: "Una sociedad nombra dos administradores mancomunados. ¿Qué significa?",
+              opciones: [
+                "Que se turnan en el cargo por periodos alternos",
+                "Que deben actuar conjuntamente para vincular a la sociedad",
+                "Que forman un consejo de administración de dos miembros",
+                "Que cada uno puede actuar por separado y vincular a la sociedad",
+              ],
+              correcta: 1,
+              porque: [
+                "No hay turnos: la forma del órgano describe cómo se ejercita el cargo, no cuándo.",
+                "Da más control y menos agilidad: cualquier contrato exige la firma de los dos, y un desacuerdo entre ellos bloquea a la sociedad.",
+                "El consejo es otra de las formas posibles, con reglas propias de convocatoria y adopción de acuerdos.",
+                "Actuar por separado es el régimen de los administradores solidarios, la forma opuesta.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

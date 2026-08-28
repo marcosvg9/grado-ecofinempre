@@ -189,6 +189,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "El excedente neto de explotación de las administraciones públicas es cero. ¿Qué informa ese dato?",
+              opciones: [
+                "Que el sector público no genera beneficios, como corresponde a su naturaleza",
+                "Nada económico: es una identidad del método, porque la producción se define como la suma de los costes y luego se restan esos mismos costes",
+                "Que sus servicios se prestan de forma eficiente",
+                "Que su producción se valora exactamente a coste de mercado",
+              ],
+              correcta: 1,
+              porque: [
+                "Suena a conclusión económica y es aritmética: no podría dar otra cosa.",
+                "Si se suman los costes para obtener la producción y después se van restando uno a uno, lo que queda al final es cero por construcción.",
+                "La eficiencia no se puede leer en un número que el método determina de antemano.",
+                "No se valora a coste de mercado sino por sus propios costes, que es distinto y es justamente lo que fuerza el resultado.",
+              ],
+            },
+            {
+              q: "¿Con qué criterio se valoran la producción y los consumos intermedios en la cuenta de producción?",
+              opciones: [
+                "Ambos a precios de mercado, para que el valor añadido sea homogéneo",
+                "La producción a precios de adquisición y los consumos intermedios a precios básicos",
+                "La producción a precios básicos y los consumos intermedios a precios de adquisición",
+                "Ambos a precios básicos",
+              ],
+              correcta: 2,
+              porque: [
+                "Usar el mismo criterio para los dos parece coherente y desvirtúa el valor añadido, porque atribuiría al productor impuestos que no cobra.",
+                "Es exactamente el cruce contrario al correcto.",
+                "El productor recibe el precio básico —sin impuestos sobre productos— y paga por sus insumos el precio de adquisición, impuestos incluidos. Son dos ópticas distintas y ambas correctas.",
+                "Valorar los consumos intermedios a precios básicos ignoraría lo que la empresa realmente desembolsa por ellos.",
+              ],
+            },
+            {
+              q: "Un hospital público mejora sus procesos y atiende a más pacientes con el mismo presupuesto. ¿Cómo lo recoge la contabilidad nacional?",
+              opciones: [
+                "Como un aumento del valor añadido del sector sanidad",
+                "Apenas lo recoge: si el producto se define como el coste de los insumos, la relación entre ambos es casi constante por construcción",
+                "Como una mejora de la productividad, visible en el excedente",
+                "Como un aumento de la producción del sector público",
+              ],
+              correcta: 1,
+              porque: [
+                "El valor añadido tampoco cambia, por la misma razón.",
+                "Por eso juzgar la eficiencia del sector público con su productividad medida en las cuentas nacionales no lleva a ninguna parte: el indicador no puede moverse.",
+                "El excedente de las administraciones es cero por método: no puede reflejar ninguna mejora.",
+                "La producción medida no sube, porque se calcula desde los costes y estos no han cambiado.",
+              ],
+            },
+            {
+              q: "¿Qué es la producción de no mercado?",
+              opciones: [
+                "Aquella cuyo precio no es económicamente significativo, incluidos los pagos parciales como tasas universitarias o entradas de museo",
+                "La que realizan las administraciones públicas y las familias",
+                "La que se presta gratuitamente a la población",
+                "La que no genera valor añadido",
+              ],
+              correcta: 0,
+              porque: [
+                "Lo que la define no es que no se cobre, sino que lo que se cobra no cubre razonablemente el coste. Las tasas universitarias son el ejemplo típico.",
+                "El sector no determina la categoría: las administraciones pueden tener producción de mercado, y las empresas no.",
+                "La gratuidad no es la definición: hay producción de no mercado que se cobra en parte.",
+                "Sí genera valor añadido, valorado por los costes de los factores empleados.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

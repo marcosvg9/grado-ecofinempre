@@ -185,6 +185,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Una sociedad con 50.000 € de capital tiene un patrimonio neto de 55.000 € y obtiene 8.000 € de beneficio. ¿Cuánto puede repartir?",
+              opciones: [
+                "Nada, mientras el patrimonio neto no duplique el capital",
+                "Como máximo 5.000 €: tras el reparto el patrimonio neto no puede quedar por debajo de la cifra de capital",
+                "Los 55.000 € del patrimonio neto, descontada la reserva legal",
+                "Los 8.000 € del beneficio del ejercicio",
+              ],
+              correcta: 1,
+              porque: [
+                "No existe ninguna exigencia de duplicar el capital.",
+                "Esa es la función del capital social: marca cuánto patrimonio queda retenido y no puede salir hacia los socios.",
+                "El patrimonio neto no es dinero repartible: es lo que queda tras restar el pasivo, y la cifra de capital lo retiene.",
+                "Repartir los 8.000 dejaría el neto en 47.000, por debajo de los 50.000 de capital: es justo lo que la regla impide.",
+              ],
+            },
+            {
+              q: "Un socio paga sus gastos personales con la cuenta de la sociedad durante años. ¿Qué riesgo corre?",
+              opciones: [
+                "La nulidad de la sociedad desde su constitución",
+                "Ninguno frente a terceros: es un problema fiscal suyo",
+                "Que se levante el velo por confusión de patrimonios y responda personalmente de las deudas sociales",
+                "Una sanción administrativa por llevar contabilidad desordenada",
+              ],
+              correcta: 2,
+              porque: [
+                "La sociedad sigue siendo válida; lo que se pierde es la separación entre su patrimonio y el del socio.",
+                "Hay un problema fiscal y también uno mercantil, y este último puede costarle su patrimonio.",
+                "El levantamiento del velo no es una rareza doctrinal: es jurisprudencia constante, y su presupuesto habitual es exactamente este. Quien no distingue dos patrimonios difícilmente puede pedir al juez que los distinga.",
+                "La sanción existe y es lo de menos comparado con perder la limitación de responsabilidad.",
+              ],
+            },
+            {
+              q: "¿Hasta dónde responde la sociedad de sus propias deudas?",
+              opciones: [
+                "Hasta el importe de su capital social",
+                "Hasta el importe de su patrimonio neto",
+                "Hasta el capital desembolsado, no el suscrito",
+                "Con todo su patrimonio: la limitación afecta al socio, no a la sociedad",
+              ],
+              correcta: 3,
+              porque: [
+                "El capital es una cifra del pasivo, no un tope de responsabilidad frente a los acreedores.",
+                "El patrimonio neto tampoco limita nada: los acreedores pueden ir contra todos los activos.",
+                "El desembolso pendiente es una deuda del socio con la sociedad, no un límite a la responsabilidad de esta.",
+                "Es la confusión más extendida sobre el nombre «limitada»: lo que está limitado es lo que arriesga el socio, es decir, lo que aportó.",
+              ],
+            },
+            {
+              q: "Una sociedad acumula pérdidas que dejan el patrimonio neto muy por debajo de la mitad del capital, y su administrador no convoca junta ni promueve la disolución. ¿Qué consecuencia tiene?",
+              opciones: [
+                "Los socios pierden su derecho de voto hasta restablecer el equilibrio",
+                "La sociedad se disuelve automáticamente por ministerio de la ley",
+                "El administrador puede acabar respondiendo personalmente de las deudas sociales posteriores",
+                "Ninguna hasta que un acreedor solicite el concurso",
+              ],
+              correcta: 2,
+              porque: [
+                "El derecho de voto no se suspende por esa causa.",
+                "La disolución no opera sola: exige acuerdo de junta o resolución judicial, y es precisamente lo que el administrador debía promover.",
+                "Es una de las grietas prácticas de la responsabilidad limitada: administrar mal la abre por sí solo, sin necesidad de aval ni de fraude.",
+                "La inacción tiene consecuencias antes y con independencia de que alguien pida el concurso.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

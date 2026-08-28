@@ -182,6 +182,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Qué diferencia hay entre el SIFMI y los intereses?",
+              opciones: [
+                "El SIFMI es la parte de los intereses que corresponde a la inflación",
+                "El SIFMI son los intereses de los préstamos y los intereses propiamente dichos, los de los depósitos",
+                "Ninguna: el SIFMI es el nombre técnico de los intereses bancarios",
+                "El SIFMI es un margen —la diferencia entre el tipo aplicado y uno de referencia— y se registra como producción de servicios; los intereses son rentas de la propiedad",
+              ],
+              correcta: 3,
+              porque: [
+                "La inflación no interviene en el cálculo del SIFMI.",
+                "Ambos lados generan SIFMI: el préstamo por lo que cobra de más y el depósito por lo que paga de menos respecto al tipo de referencia.",
+                "Son dos cosas de naturaleza distinta que viajan juntas dentro del mismo tipo de interés, y el sistema las separa.",
+                "Retribuyen cosas distintas: uno paga un servicio que el banco presta, el otro paga el uso del dinero. Por eso van a cuentas distintas.",
+              ],
+            },
+            {
+              q: "Un hogar paga una hipoteca sobre su vivienda habitual. ¿Cómo se registra el SIFMI asociado?",
+              opciones: [
+                "La mitad como consumo final y la mitad como consumo intermedio",
+                "Como consumo final, porque el hogar es un consumidor",
+                "Como consumo intermedio: el hogar es productor del servicio de alojamiento que se imputa a sí mismo",
+                "No se registra: las hipotecas quedan fuera del perímetro del SIFMI",
+              ],
+              correcta: 2,
+              porque: [
+                "No hay reparto a partes iguales: la asignación depende del uso.",
+                "Depende de en qué condición actúa el hogar, y aquí no actúa solo como consumidor.",
+                "Es coherente con los alquileres imputados: si el hogar produce un servicio de alojamiento para sí mismo, el coste financiero de esa producción es un insumo.",
+                "Las hipotecas son préstamos y están de lleno dentro del perímetro.",
+              ],
+            },
+            {
+              q: "¿Son las indemnizaciones que paga una aseguradora un consumo intermedio suyo?",
+              opciones: [
+                "Sí: son un coste necesario para prestar el servicio",
+                "No: son transferencias de capital a los asegurados",
+                "Sí, pero solo la parte que excede a las provisiones dotadas",
+                "No: se detraen de la producción, porque económicamente son dinero que vuelve al colectivo asegurado",
+              ],
+              correcta: 3,
+              porque: [
+                "Es un desembolso necesario y no un insumo adquirido a otro productor, que es lo que define el consumo intermedio.",
+                "Son transferencias corrientes, no de capital, y en todo caso lo relevante aquí es que minoran la producción.",
+                "Las provisiones afectan al momento de registro, no a la naturaleza de la operación.",
+                "La compañía no compra nada con ellas: reparte entre los siniestrados lo que ha recaudado del conjunto. Su servicio es organizar ese reparto, no el reparto mismo.",
+              ],
+            },
+            {
+              q: "Una aseguradora paga primas de reaseguro y cobra del reasegurador cuando hay siniestros. ¿Cómo se registra?",
+              opciones: [
+                "De forma asimétrica: las primas de reaseguro son consumo intermedio suyo, y los cobros y pagos del reaseguro, transferencias corrientes",
+                "Todo como transferencias corrientes, primas incluidas",
+                "Todo como consumo intermedio, cobros incluidos",
+                "Se netean unos contra otros y solo se registra el saldo",
+              ],
+              correcta: 0,
+              porque: [
+                "Es una asimetría fácil de pasar por alto y que altera el valor añadido del sector si se registra mal.",
+                "La prima de reaseguro sí compra un servicio a otro productor, así que es un insumo.",
+                "Los cobros por siniestros no son la compra de ningún servicio.",
+                "El SEC registra los flujos brutos: netear ocultaría el volumen real de la operación.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

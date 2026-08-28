@@ -163,6 +163,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Una planta trabaja al 95 % de su capacidad. ¿Es señal de buena gestión?",
+              opciones: [
+                "Sí: aprovecha al máximo la inversión realizada",
+                "Sí, siempre que la demanda sea estable",
+                "Con variabilidad, no: los tiempos de espera crecen de forma no lineal al acercarse al 100 %, y el servicio empeora mucho",
+                "Depende de si la capacidad se mide en horas o en unidades",
+              ],
+              correcta: 2,
+              porque: [
+                "Aprovechar el activo es un objetivo legítimo que choca con otro: entregar a tiempo. El triángulo de capacidad, inventario y variabilidad no deja tener las dos cosas.",
+                "Con demanda perfectamente estable sí, y esa condición no se cumple casi nunca.",
+                "Una planta al 95 % ofrece un servicio mucho peor que una al 85 %, y la diferencia no es proporcional: la cola se dispara cerca del límite.",
+                "La unidad de medida no altera el comportamiento de las colas.",
+              ],
+            },
+            {
+              q: "Se mejora la productividad de una estación que no es el cuello de botella. ¿Qué se consigue?",
+              opciones: [
+                "Aumentar la producción del sistema en la misma proporción",
+                "Acumular inventario en curso, sin aumentar la salida del sistema",
+                "Reducir el coste unitario total",
+                "Desplazar el cuello de botella a esa estación",
+              ],
+              correcta: 1,
+              porque: [
+                "La salida del sistema la determina el cuello de botella; mejorar otro punto no la mueve.",
+                "Solo se produce antes lo que después tendrá que esperar al cuello. La mejora es real y localmente inútil.",
+                "El coste unitario no baja si no sale más producto; de hecho sube el coste de mantener el inventario acumulado.",
+                "El cuello no se desplaza hacia una estación que acaba de volverse más rápida.",
+              ],
+            },
+            {
+              q: "Se plantea elevar el nivel de servicio del 95 % al 99,9 %. ¿Qué hay que valorar?",
+              opciones: [
+                "Que exige renegociar los plazos con los proveedores",
+                "Que el stock de seguridad casi se duplica: cada punto adicional cuesta mucho más que el anterior",
+                "Que obliga a cambiar el sistema de previsión de demanda",
+                "Nada: un nivel de servicio más alto siempre mejora la posición competitiva",
+              ],
+              correcta: 1,
+              porque: [
+                "Puede hacer falta, pero no es lo que dispara el coste de la decisión.",
+                "El coste crece de forma acelerada, así que elegir el nivel «porque suena bien» compromete cantidades de dinero que nadie ha calculado.",
+                "El sistema de previsión influye en la variabilidad, pero el salto de coste aparece igualmente.",
+                "Mejora el servicio a un coste que puede no compensar. La decisión exige comparar ambas cosas.",
+              ],
+            },
+            {
+              q: "Cada eslabón de una cadena de suministro reacciona a los pedidos del eslabón siguiente. ¿Qué produce?",
+              opciones: [
+                "Una cadena bien coordinada, porque cada uno responde a su cliente directo",
+                "El efecto látigo: cada eslabón amplifica la señal del anterior al no ver la demanda final",
+                "Un ajuste más rápido a los cambios de la demanda real",
+                "Un exceso de capacidad en el eslabón inicial únicamente",
+              ],
+              correcta: 1,
+              porque: [
+                "Responder al cliente directo parece razonable y es justamente el mecanismo que genera la amplificación.",
+                "La solución no es gestionar mejor cada eslabón sino compartir información de demanda final: distinguir señal de ruido antes de ajustar pedidos.",
+                "El ajuste no es más rápido sino más brusco, y en la dirección equivocada la mitad de las veces.",
+                "La amplificación crece a lo largo de toda la cadena, no se concentra en un punto.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

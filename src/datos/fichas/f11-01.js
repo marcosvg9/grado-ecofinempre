@@ -170,6 +170,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Antes de 1800 la renta por habitante apenas se movió. ¿Significa que no hubo progreso técnico?",
+              opciones: [
+                "Sí, salvo en China, que sí innovaba",
+                "No, pero los avances fueron demasiado pequeños para medirse",
+                "No: hubo molinos, arado pesado, rotación de cultivos, imprenta y navegación oceánica; lo que no hubo fue crecimiento sostenido de la renta por habitante",
+                "Sí: sin innovación no puede haber crecimiento",
+              ],
+              correcta: 2,
+              porque: [
+                "China innovó y quedó atrapada en el mismo patrón: población creciente y renta por habitante estancada.",
+                "No eran pequeños: transformaron la agricultura y el transporte. Lo que ocurría es que el excedente se absorbía en más bocas.",
+                "Los avances se traducían en más gente, no en más nivel de vida. Lo que hay que explicar no es la aparición de la técnica sino por qué dejó de convertirse solo en población.",
+                "La relación no es automática: se puede innovar mucho y no elevar el nivel de vida.",
+              ],
+            },
+            {
+              q: "¿Cómo fueron las primeras décadas de la revolución industrial para los trabajadores?",
+              opciones: [
+                "De mejora en el campo y empeoramiento en las ciudades industriales",
+                "De estancamiento salarial pero con jornadas más cortas",
+                "De mejora rápida y generalizada del nivel de vida",
+                "El crecimiento fue modesto, los salarios reales apenas mejoraron, se alargaron las jornadas y cayó la esperanza de vida en las ciudades",
+              ],
+              correcta: 3,
+              porque: [
+                "El campo tampoco mejoró: la presión demográfica y los cercamientos empujaban hacia la ciudad.",
+                "Las jornadas se alargaron, no se acortaron.",
+                "La mejora generalizada llegó, y con varias décadas de retraso respecto al inicio del proceso.",
+                "Leerla como un salto brusco de prosperidad falsea lo que vivió la generación que la atravesó: el despegue fue lento y su primer tramo fue duro.",
+              ],
+            },
+            {
+              q: "Gran Bretaña tenía salarios altos y fue la primera en industrializarse. ¿Prueba que los salarios altos causaron la industrialización?",
+              opciones: [
+                "Sí, y es la explicación aceptada por consenso",
+                "Sí: encarecer el trabajo incentiva sustituirlo por máquinas",
+                "No: los salarios británicos no eran realmente altos en términos reales",
+                "No: una economía ya más productiva paga más, así que la causalidad puede ir en sentido contrario",
+              ],
+              correcta: 3,
+              porque: [
+                "No hay tal consenso: es una de las hipótesis en discusión, precisamente por este problema.",
+                "El mecanismo es plausible y no basta para establecer la dirección de la causa.",
+                "Eran altos en comparación europea; el problema no es el dato sino qué se deduce de él.",
+                "Es un problema de endogeneidad de manual, del tipo que estudia el bloque 4: la variable explicativa puede ser consecuencia de lo que pretende explicar.",
+              ],
+            },
+            {
+              q: "La máquina de vapor era rentable en Newcastle y ruinosa en Milán con la técnica de 1750. ¿Por qué?",
+              opciones: [
+                "Porque el mercado italiano era demasiado pequeño para amortizarla",
+                "Porque consumía carbón a un ritmo enorme, y su precio relativo difería radicalmente entre ambos lugares",
+                "Porque las patentes británicas impedían su uso en el continente",
+                "Porque en Italia no había mano de obra cualificada para operarla",
+              ],
+              correcta: 1,
+              porque: [
+                "El tamaño del mercado influye en otras decisiones, no en si una máquina concreta ahorra o quema dinero.",
+                "Industrializarse no era la opción evidente: solo lo era donde los precios relativos la hacían rentable. La misma técnica da resultados opuestos en sitios distintos.",
+                "Las patentes retrasaron algunas difusiones y no explican una diferencia de rentabilidad tan grande.",
+                "La cualificación se adquiere; el obstáculo era anterior y puramente económico.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

@@ -176,6 +176,82 @@ export default {
       ],
     },
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Aparece el IVA en la cuenta de distribución secundaria?",
+              opciones: [
+                "Sí, en la parte no deducible por las empresas",
+                "Sí: es el principal impuesto corriente que pagan los hogares",
+                "Solo el IVA soportado por las administraciones públicas",
+                "No: aquí solo entran los impuestos corrientes sobre la renta y el patrimonio; el IVA actuó antes, al valorar la producción",
+              ],
+              correcta: 3,
+              porque: [
+                "La deducibilidad afecta a quién soporta el impuesto, no a en qué cuenta se registra.",
+                "Los hogares lo pagan al consumir, y esa operación no se registra en esta cuenta.",
+                "El sector que lo pague no cambia la cuenta en que el impuesto opera.",
+                "Los impuestos sobre productos se descontaron al pasar de precios de adquisición a precios básicos. Buscarlos aquí es buscarlos dos cuentas más tarde de donde actúan.",
+              ],
+            },
+            {
+              q: "¿De dónde viene la mayor parte del efecto redistributivo en los países desarrollados?",
+              opciones: [
+                "De la progresividad del impuesto sobre la renta",
+                "De los impuestos sobre el patrimonio y las sucesiones",
+                "De la imposición indirecta con tipos reducidos",
+                "De las prestaciones, por pura magnitud: las pensiones y el desempleo mueven mucho más dinero hacia abajo del que mueven los impuestos",
+              ],
+              correcta: 3,
+              porque: [
+                "La progresividad importa y su efecto es menor de lo que sugiere el debate público, que gira casi por completo en torno a ella.",
+                "Patrimonio y sucesiones recaudan importes pequeños en comparación.",
+                "Los tipos reducidos benefician más en euros a quien más consume, así que no son un buen instrumento redistributivo.",
+                "El grueso está en el gasto, no en el ingreso. Discutir solo la escala del impuesto es discutir la parte pequeña del mecanismo.",
+              ],
+            },
+            {
+              q: "Los hogares pagan alrededor del 77 % de los impuestos corrientes. ¿Es una anomalía del sistema español?",
+              opciones: [
+                "No, pero el porcentaje es muy inferior en el resto de la Unión Europea",
+                "No: el impuesto sobre la renta de las personas físicas es la figura mayor entre los directos, y lo que las sociedades no pagan aquí lo pagan sus accionistas",
+                "Sí, y se corrige al incluir las cotizaciones sociales",
+                "Sí: refleja la baja tributación efectiva de las grandes empresas",
+              ],
+              correcta: 1,
+              porque: [
+                "El patrón es común en los países desarrollados, no una singularidad española.",
+                "El reparto entre sectores no mide quién soporta la carga: la renta societaria acaba llegando a hogares, que tributan por ella.",
+                "Las cotizaciones son otra partida de la misma cuenta y no cambian el porqué del reparto de los impuestos corrientes.",
+                "La tributación efectiva de las sociedades es un debate real y distinto de por qué esta cifra es alta.",
+              ],
+            },
+            {
+              q: "En las sociedades, la renta disponible coincide casi exactamente con su ahorro. ¿Por qué?",
+              opciones: [
+                "Porque su consumo intermedio ya se descontó en la cuenta de producción",
+                "Porque están obligadas a reinvertir sus beneficios",
+                "Porque no tienen consumo final: todo lo que les queda tras las transferencias corrientes es, por definición, ahorro",
+                "Porque los dividendos se registran en otra cuenta posterior",
+              ],
+              correcta: 2,
+              porque: [
+                "El consumo intermedio se descontó antes, y esa no es la razón por la que estos dos saldos coinciden.",
+                "No hay tal obligación: pueden repartir cuanto quieran, y eso ya está descontado antes de llegar a este saldo.",
+                "El consumo final es un concepto que solo se aplica a hogares, administraciones e instituciones sin fines de lucro. Sin él, renta disponible y ahorro son la misma cifra.",
+                "Los dividendos se registran en la cuenta de rentas de la propiedad, que es anterior, y por eso ya no están.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

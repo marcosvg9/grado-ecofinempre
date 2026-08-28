@@ -196,6 +196,82 @@ export default {
     },
 
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "¿Sobre qué se cobra la comisión de gestión de un fondo?",
+              opciones: [
+                "Sobre la ganancia obtenida, como una participación en el resultado",
+                "Sobre el patrimonio, todos los años, gane o pierda el fondo",
+                "Sobre las aportaciones realizadas, en el momento de suscribir",
+                "Sobre la plusvalía, en el momento del reembolso",
+              ],
+              correcta: 1,
+              porque: [
+                "Eso sería una comisión de éxito, que algunos fondos cobran además de la de gestión, no en su lugar.",
+                "En un año de caída del 10 % con comisión del 1,8 %, el partícipe pierde el 10 % y además paga el 1,8 %. La comisión no depende del resultado.",
+                "Las comisiones de suscripción existen en algunos fondos, pero la de gestión es distinta y es anual.",
+                "El impuesto se paga sobre la plusvalía al reembolsar; la comisión de gestión se ha ido cobrando cada año.",
+              ],
+            },
+            {
+              q: "Entra mucho dinero nuevo en un fondo. ¿Diluye eso a los partícipes que ya estaban?",
+              opciones: [
+                "Sí, igual que una ampliación de capital diluye a los accionistas",
+                "Sí, salvo que el fondo esté cerrado a nuevas suscripciones",
+                "No: se emiten participaciones nuevas al valor liquidativo vigente, de modo que el VL no varía",
+                "Depende de si el gestor logra invertir el dinero rápidamente",
+              ],
+              correcta: 2,
+              porque: [
+                "Es la analogía intuitiva y es falsa: en una ampliación se emiten acciones a un precio que puede no ser el valor real, y aquí no.",
+                "El cierre a suscripciones responde a problemas de capacidad de gestión, no a un riesgo de dilución.",
+                "Es una diferencia esencial con las acciones: entra dinero y se emiten participaciones por el valor exacto que aporta, así que el reparto no cambia.",
+                "La velocidad de inversión afecta al comportamiento del fondo, no al valor liquidativo en el momento de la suscripción.",
+              ],
+            },
+            {
+              q: "Una comisión del 2 % anual, ¿es pequeña frente a una rentabilidad esperada del 7 %?",
+              opciones: [
+                "Sí: se lleva menos de un tercio de la rentabilidad anual",
+                "No: hay que compararla con el resultado acumulado, y en treinta años se lleva una fracción enorme de lo ganado",
+                "Sí, si el fondo bate a su índice",
+                "Es indiferente: lo que importa es la rentabilidad neta que se publica",
+              ],
+              correcta: 1,
+              porque: [
+                "Comparar el 2 % con el 7 % de un año es la comparación equivocada: la comisión también se compone, año tras año.",
+                "Y es la única variable que el inversor controla por completo: la rentabilidad futura es incierta y el coste es seguro.",
+                "Batir al índice un año no compensa un coste que se cobra todos los años, con índice batido o no.",
+                "La rentabilidad neta publicada ya descuenta la comisión, pero eso no la hace pequeña: la esconde.",
+              ],
+            },
+            {
+              q: "¿En qué se diferencia un fondo de inversión de un depósito bancario?",
+              opciones: [
+                "En nada sustancial: ambos están cubiertos por el fondo de garantía de depósitos",
+                "En el plazo: el depósito es a plazo fijo y el fondo no",
+                "En la fiscalidad, que es lo único que cambia",
+                "El depósito es un pasivo del banco con remuneración pactada y garantía; el fondo es un patrimonio separado cuyo valor fluctúa",
+              ],
+              correcta: 3,
+              porque: [
+                "La garantía de depósitos no cubre los fondos de inversión: son cosas jurídicamente distintas.",
+                "Hay depósitos a la vista y fondos que se reembolsan en días: el plazo no es la diferencia de fondo.",
+                "La fiscalidad difiere, pero lo esencial es la naturaleza jurídica y quién soporta el riesgo.",
+                "Que sea patrimonio separado protege al partícipe si quiebra la gestora, y a la vez significa que nadie le garantiza el valor: lo que fluctúa es suyo.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {

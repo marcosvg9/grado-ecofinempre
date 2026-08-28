@@ -199,6 +199,82 @@ export default {
     },
 
     {
+      titulo: "Test",
+      contenido: [
+        {
+          tipo: "test",
+          items: [
+            {
+              q: "Un indicador tiene correlación 0,8 con la variable objetivo. ¿Qué proporción de la incertidumbre elimina?",
+              opciones: [
+                "Menos de lo que sugiere: la reducción de varianza es proporcional al cuadrado de la correlación, y la incertidumbre se mide en desviaciones típicas",
+                "Toda ella, si el indicador cubre el trimestre completo",
+                "El 64 % de la incertidumbre, que es la correlación al cuadrado",
+                "El 80 %, en proporción a la correlación",
+              ],
+              correcta: 0,
+              porque: [
+                "Una correlación de 0,8 es alta para coyuntura y aun así deja bastante más incertidumbre de la que la cifra sugiere a primera vista.",
+                "Ningún indicador elimina toda la incertidumbre: si lo hiciera, sería el dato.",
+                "El 64 % es la reducción de varianza, no de incertidumbre: al pasar a desviaciones típicas se toma la raíz y la mejora es menor.",
+                "La correlación no se traduce uno a uno en reducción de incertidumbre.",
+              ],
+            },
+            {
+              q: "¿Contra qué debe evaluarse un nowcast?",
+              opciones: [
+                "Contra el dato bruto sin ajustar, para eliminar el efecto del procedimiento",
+                "Contra la serie revisada, que es la que refleja lo que realmente ocurrió",
+                "Contra la primera estimación oficial publicada, que es lo que intentaba anticipar",
+                "Contra la media de las previsiones de otros analistas",
+              ],
+              correcta: 2,
+              porque: [
+                "El nowcast anticipa la cifra que se publicará, que es la ajustada.",
+                "Evaluarlo contra la serie revisada le atribuye la responsabilidad de haber anticipado revisiones que nadie podía prever.",
+                "Es coherente con la regla general de evaluar cualquier decisión con la información disponible en su momento.",
+                "El consenso de analistas es una referencia de comparación, no el objetivo del nowcast.",
+              ],
+            },
+            {
+              q: "Se encuentra una regularidad interesante en el tramo de una serie histórica reconstruido por retropredicción. ¿Qué precaución exige?",
+              opciones: [
+                "Ninguna: la retropredicción usa la misma metodología que el resto de la serie",
+                "Que hay que reponderarla por la longitud del periodo reconstruido",
+                "Que puede ser un artefacto del procedimiento, si ese tramo se generó con una relación estimada en el solape",
+                "Que solo es válida si el solape supera los diez años",
+              ],
+              correcta: 2,
+              porque: [
+                "El tramo reconstruido no es una medición: es el resultado de proyectar hacia atrás una relación estimada.",
+                "Ninguna reponderación convierte una estimación en observación.",
+                "La regularidad puede venir de la relación impuesta y no de lo que ocurrió. Y una clasificación suele cambiarse precisamente porque la antigua había dejado de describir bien la realidad.",
+                "Un solape largo mejora la estimación y no elimina la advertencia de fondo.",
+              ],
+            },
+            {
+              q: "¿Qué separa el nowcasting de la previsión?",
+              opciones: [
+                "Que el nowcast estima algo que ya ha ocurrido y se conocerá con certeza en semanas",
+                "Que el nowcast se refiere al trimestre siguiente y la previsión al año",
+                "Que el nowcasting usa modelos de factores y la previsión modelos estructurales",
+                "Que el nowcasting no admite intervalos de confianza",
+              ],
+              correcta: 0,
+              porque: [
+                "Esa diferencia hace que el nowcast sea verificable enseguida, mientras que una previsión a dos años tarda dos años en poder juzgarse.",
+                "El nowcast se refiere al periodo en curso o recién terminado, no al siguiente.",
+                "Las técnicas se solapan: lo que los distingue es el objeto, no la herramienta.",
+                "Sí los admite, y publicarlo sin ellos es precisamente uno de los errores que la ficha señala.",
+              ],
+            },
+          ],
+          nota: "Ninguna opción falsa es relleno: cada una recoge un error documentado en «Errores típicos». Si alguna te ha parecido plausible, ese es el apartado al que volver.",
+        },
+      ],
+    },
+
+    {
       titulo: "Para profundizar",
       contenido: [
         {
