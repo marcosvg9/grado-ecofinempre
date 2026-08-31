@@ -1,5 +1,5 @@
 /* GENERADO POR herramientas/indice-preguntas.mjs — no editar a mano.
-   1572 preguntas de 168 fichas: 900 abiertas y 672 de test.
+   1626 preguntas de 174 fichas: 930 abiertas y 696 de test.
    Para regenerar: node herramientas/indice-preguntas.mjs */
 
 export default [
@@ -9605,6 +9605,660 @@ export default [
    "Permitir especificar la matriz de sumas explícitamente, y no solo árboles anidados",
    "Incluir todos los métodos de reconciliación publicados",
    "Ofrecer una interfaz gráfica para dibujar la jerarquía"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "17.01#0",
+  "codigo": "17.01",
+  "bloque": 17,
+  "nivel": 1,
+  "titulo": "El tributo: elementos, clases y aplicación",
+  "q": "¿Qué diferencia hay entre una operación no sujeta y una exenta, y por qué importa?",
+  "a": "En la no sujeta el hecho no encaja en el hecho imponible: está fuera del impuesto. En la exenta sí se realiza el hecho imponible y la ley dispensa del pago. Importa porque el operador exento suele conservar obligaciones formales y, en el IVA, pierde el derecho a deducir el impuesto soportado, que se le convierte en coste."
+ },
+ {
+  "id": "17.01#1",
+  "codigo": "17.01",
+  "bloque": 17,
+  "nivel": 1,
+  "titulo": "El tributo: elementos, clases y aplicación",
+  "q": "Base imponible 40.000 €, reducción de 3.000 € y deducción de 600 €, con escala del 20 % hasta 20.000 y 35 % después. ¿Cuál es la cuota líquida?",
+  "a": "9.350 €. Base liquidable 37.000; cuota íntegra 20.000 × 20 % + 17.000 × 35 % = 4.000 + 5.950 = 9.950; menos 600 de deducción, 9.350. El tipo medio efectivo es del 23,4 % y el marginal del 35 %."
+ },
+ {
+  "id": "17.01#2",
+  "codigo": "17.01",
+  "bloque": 17,
+  "nivel": 1,
+  "titulo": "El tributo: elementos, clases y aplicación",
+  "q": "¿Por qué una reducción de 3.000 € no vale lo mismo para dos contribuyentes distintos?",
+  "a": "Porque actúa sobre la base y su valor es 3.000 × tipo marginal. A quien esté en el 35 % le ahorra 1.050 €; a quien esté en el 20 %, 600 €. Una deducción de 600 € en cuota, en cambio, vale 600 € para los dos. Colocar un beneficio fiscal en la base o en la cuota es una decisión distributiva."
+ },
+ {
+  "id": "17.01#3",
+  "codigo": "17.01",
+  "bloque": 17,
+  "nivel": 1,
+  "titulo": "El tributo: elementos, clases y aplicación",
+  "q": "Un ayuntamiento cobra por la entrada a su piscina municipal. ¿Es una tasa?",
+  "a": "No: es un precio público. La solicitud es voluntaria y existen piscinas privadas que prestan el mismo servicio, así que faltan las dos notas que caracterizan a la tasa. La consecuencia es procedimental: no se aprueba por ordenanza fiscal ni se impugna por la vía tributaria."
+ },
+ {
+  "id": "17.01#4",
+  "codigo": "17.01",
+  "bloque": 17,
+  "nivel": 1,
+  "titulo": "El tributo: elementos, clases y aplicación",
+  "q": "¿En qué se diferencia la estimación objetiva de la indirecta?",
+  "a": "La objetiva es un régimen al que se accede voluntariamente cuando la ley lo permite, y sustituye los datos reales por módulos. La indirecta es subsidiaria y la aplica la Administración cuando no puede conocer los datos por incumplimiento, resistencia o desaparición de la contabilidad. Una se elige; en la otra se cae."
+ },
+ {
+  "id": "17.01#t0",
+  "codigo": "17.01",
+  "bloque": 17,
+  "nivel": 1,
+  "titulo": "El tributo: elementos, clases y aplicación",
+  "q": "Una operación está exenta de IVA. ¿Qué implica para quien la realiza?",
+  "a": "**Que realiza el hecho imponible, queda dispensado del pago y suele perder el derecho a deducir el IVA soportado.** Y por eso la exención puede ser un perjuicio: el impuesto soportado deja de ser un crédito frente a Hacienda y pasa a ser coste, incorporándose al precio.",
+  "opciones": [
+   "Que queda fuera del impuesto y sin obligación formal alguna",
+   "Que realiza el hecho imponible, queda dispensado del pago y suele perder el derecho a deducir el IVA soportado",
+   "Que puede optar entre repercutir el impuesto o no hacerlo",
+   "Que tributa a tipo cero, conservando el derecho a deducir"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "17.01#t1",
+  "codigo": "17.01",
+  "bloque": 17,
+  "nivel": 1,
+  "titulo": "El tributo: elementos, clases y aplicación",
+  "q": "Un ayuntamiento urbaniza una calle y el valor de los inmuebles colindantes sube. ¿Qué tributo puede exigir a sus propietarios?",
+  "a": "**Una contribución especial, por el aumento de valor derivado de una obra pública.** Es el supuesto exacto de la contribución especial: beneficio o aumento de valor de los bienes como consecuencia de obras públicas o del establecimiento o ampliación de servicios.",
+  "opciones": [
+   "Un impuesto, porque se ha manifestado capacidad económica",
+   "Una tasa, por la prestación de un servicio público",
+   "Una contribución especial, por el aumento de valor derivado de una obra pública",
+   "Ninguno: la revalorización no es un hecho imponible"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "17.01#t2",
+  "codigo": "17.01",
+  "bloque": 17,
+  "nivel": 1,
+  "titulo": "El tributo: elementos, clases y aplicación",
+  "q": "¿Qué tipo gobierna los incentivos de un contribuyente que se plantea trabajar unas horas más?",
+  "a": "**El tipo marginal, que es el que se aplicará al euro adicional.** La decisión de ganar un euro más se toma comparando ese euro con lo que se lleva el impuesto de ese euro, no de todos los anteriores.",
+  "opciones": [
+   "El tipo marginal, que es el que se aplicará al euro adicional",
+   "El tipo medio efectivo, que mide su carga real",
+   "El tipo nominal máximo de la escala",
+   "El tipo de retención que le aplica su pagador"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "17.01#t3",
+  "codigo": "17.01",
+  "bloque": 17,
+  "nivel": 1,
+  "titulo": "El tributo: elementos, clases y aplicación",
+  "q": "La Administración no puede determinar la base imponible porque el obligado ha destruido su contabilidad. ¿Qué método se aplica?",
+  "a": "**Estimación indirecta, que es subsidiaria y no la elige el contribuyente.** Se aplica cuando el incumplimiento, la resistencia a la inspección o la desaparición de los registros impiden conocer la base, y suele acompañarse de sanción.",
+  "opciones": [
+   "Estimación objetiva, sustituyendo los datos reales por módulos",
+   "Estimación directa, reconstruyendo los datos con la información de terceros",
+   "Se anula la liquidación por imposibilidad de determinar la base",
+   "Estimación indirecta, que es subsidiaria y no la elige el contribuyente"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "17.02#0",
+  "codigo": "17.02",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "IRPF I: sujeción, rentas y base imponible",
+  "q": "¿Qué determina si España grava tu renta mundial o solo la obtenida aquí?",
+  "a": "La residencia fiscal: permanencia superior a 183 días en el año natural o radicar en España el núcleo principal de las actividades o intereses económicos, con una presunción basada en la residencia del cónyuge e hijos menores. El residente tributa por renta mundial; el no residente, solo por la de fuente española."
+ },
+ {
+  "id": "17.02#1",
+  "codigo": "17.02",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "IRPF I: sujeción, rentas y base imponible",
+  "q": "Un contribuyente pierde 9.000 € vendiendo acciones y cobra 34.000 € de sueldo. ¿Cuánto rebaja la pérdida su impuesto sobre el sueldo?",
+  "a": "Nada. La pérdida está en la base del ahorro y el sueldo en la general, y las dos bases no se comunican. La pérdida compensa primero otras rentas del ahorro y el remanente queda pendiente hasta cuatro ejercicios; si no aparecen rentas del ahorro, caduca."
+ },
+ {
+  "id": "17.02#2",
+  "codigo": "17.02",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "IRPF I: sujeción, rentas y base imponible",
+  "q": "¿Van a la base del ahorro todas las ganancias patrimoniales?",
+  "a": "No: solo las que derivan de una transmisión. Las que se producen sin transmisión —un premio, una subvención que altera el patrimonio— van a la base general y tributan a la escala progresiva, que puede superar en más de veinte puntos a la tarifa del ahorro."
+ },
+ {
+  "id": "17.02#3",
+  "codigo": "17.02",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "IRPF I: sujeción, rentas y base imponible",
+  "q": "¿Cuándo compensa la tributación conjunta?",
+  "a": "Cuando un miembro de la unidad familiar concentra casi toda la renta y el otro desaprovecharía su mínimo personal y los primeros tramos de la tarifa. Con dos perceptores de renta similar, acumular empuja a tramos altos y suele salir peor que declarar por separado."
+ },
+ {
+  "id": "17.02#4",
+  "codigo": "17.02",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "IRPF I: sujeción, rentas y base imponible",
+  "q": "¿Por qué las aportaciones a un plan de pensiones no valen lo mismo para todos?",
+  "a": "Porque reducen la base imponible general, no la cuota, así que el ahorro es la aportación multiplicada por el tipo marginal del contribuyente. Es el mecanismo de la ficha 17.01: los beneficios colocados en la base son regresivos y los colocados en la cuota no lo son."
+ },
+ {
+  "id": "17.02#t0",
+  "codigo": "17.02",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "IRPF I: sujeción, rentas y base imponible",
+  "q": "Un contribuyente pierde 9.000 € al vender acciones y tiene 34.000 € de rendimientos del trabajo. ¿Qué efecto tiene la pérdida?",
+  "a": "**Compensa rentas del ahorro y el remanente queda pendiente hasta cuatro ejercicios; no toca el sueldo.** Por eso muchos contribuyentes realizan plusvalías latentes en el mismo ejercicio en que materializan pérdidas: para que la pérdida encuentre con qué compensarse antes de caducar.",
+  "opciones": [
+   "Reduce la base general en 9.000 €, rebajando el impuesto sobre el sueldo",
+   "Compensa rentas del ahorro y el remanente queda pendiente hasta cuatro ejercicios; no toca el sueldo",
+   "Se pierde íntegramente en el ejercicio en que se produce",
+   "Reduce la base general con el límite del 25 % de su importe"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "17.02#t1",
+  "codigo": "17.02",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "IRPF I: sujeción, rentas y base imponible",
+  "q": "Un contribuyente gana un premio de 5.000 € que no está exento. ¿A qué base va?",
+  "a": "**A la base general: es una ganancia patrimonial que no deriva de transmisión.** Y la diferencia de tipo es grande: la escala general puede superar en más de veinte puntos a la tarifa del ahorro.",
+  "opciones": [
+   "A la base del ahorro, como cualquier ganancia patrimonial",
+   "A la base del ahorro solo si supera los 6.000 €",
+   "A la base general: es una ganancia patrimonial que no deriva de transmisión",
+   "No tributa: los premios están sujetos a su propio gravamen especial"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "17.02#t2",
+  "codigo": "17.02",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "IRPF I: sujeción, rentas y base imponible",
+  "q": "Un español lleva todo el año trabajando en Alemania, donde reside. ¿Tributa en España por su renta mundial?",
+  "a": "**No: no es residente fiscal, así que solo tributaría por rentas de fuente española.** Como no residente tributaría por el IRNR, y solo por lo obtenido en España, con las reglas de la ficha 17.07.",
+  "opciones": [
+   "Sí: la nacionalidad española determina la sujeción por renta mundial",
+   "Sí, si conserva la vivienda en España",
+   "No: no es residente fiscal, así que solo tributaría por rentas de fuente española",
+   "Depende de si está empadronado en un municipio español"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "17.02#t3",
+  "codigo": "17.02",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "IRPF I: sujeción, rentas y base imponible",
+  "q": "Un matrimonio en el que cada cónyuge gana 24.000 € se plantea declarar conjuntamente. ¿Qué cabe esperar?",
+  "a": "**Que salga peor: acumular ambas rentas en una sola escala progresiva empuja a tramos altos.** Por separado, cada uno recorre la escala desde abajo y aprovecha íntegros los tramos bajos y su mínimo personal. La conjunta renuncia a una de esas dos tarifas.",
+  "opciones": [
+   "Que salga peor: acumular ambas rentas en una sola escala progresiva empuja a tramos altos",
+   "Que salga mejor por la reducción específica de la tributación conjunta",
+   "Que sea indiferente: la escala se aplica igual en ambos casos",
+   "Que no puedan optar: la conjunta exige que un cónyuge no obtenga rentas"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "17.03#0",
+  "codigo": "17.03",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "IRPF II: base liquidable, cuota y gestión",
+  "q": "Base liquidable general 30.000 € y mínimo personal 5.550 €, con escala del 19 / 24 / 30 %. ¿Cuál es la cuota íntegra?",
+  "a": "6.111,00 €. La escala sobre 30.000 da 7.165,50 y la escala sobre 5.550 da 1.054,50; la cuota es la diferencia. Si el mínimo se hubiera restado de la base, la cuota habría sido 5.500,50, es decir, 610,50 € menos."
+ },
+ {
+  "id": "17.03#1",
+  "codigo": "17.03",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "IRPF II: base liquidable, cuota y gestión",
+  "q": "¿Por qué la ley grava el mínimo personal aparte en vez de restarlo de la base?",
+  "a": "Porque así el mínimo se descuenta valorado a los tipos de los primeros tramos y produce el mismo ahorro para todos —1.054,50 € en el ejemplo—. Restado de la base valdría el mínimo por el tipo marginal, y ahorraría 1.665 € a quien esté en el 30 % y más de 2.600 € a quien esté en el 47 %."
+ },
+ {
+  "id": "17.03#2",
+  "codigo": "17.03",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "IRPF II: base liquidable, cuota y gestión",
+  "q": "A un contribuyente le sale a devolver 900 €. ¿Ha pagado menos impuesto que otro al que le sale a ingresar?",
+  "a": "No se puede saber. El impuesto es la cuota líquida; la cuota diferencial solo compara esa cuota con lo ya retenido. Una devolución alta indica que se retuvo por encima de lo debido y que se prestó ese dinero al Estado sin interés."
+ },
+ {
+  "id": "17.03#3",
+  "codigo": "17.03",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "IRPF II: base liquidable, cuota y gestión",
+  "q": "Alguien cobra 11.000 € de un empleador y 10.000 € de otro. ¿Por qué le sale a ingresar?",
+  "a": "Porque cada pagador retuvo como si fuera el único, aplicando el tipo que corresponde a 11.000 y a 10.000 € respectivamente, no a 21.000 €. La suma de retenciones queda por debajo de la cuota del total y la diferencia se regulariza al declarar. No paga más impuesto: lo paga más tarde y de una vez."
+ },
+ {
+  "id": "17.03#4",
+  "codigo": "17.03",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "IRPF II: base liquidable, cuota y gestión",
+  "q": "¿Por qué dos contribuyentes con la misma renta pueden tener cuotas distintas?",
+  "a": "Porque la escala general se compone de una parte estatal y otra autonómica que cada comunidad fija, y porque las deducciones autonómicas son numerosas y muy dispares. La residencia, y no solo la renta, determina la cuota."
+ },
+ {
+  "id": "17.03#t0",
+  "codigo": "17.03",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "IRPF II: base liquidable, cuota y gestión",
+  "q": "¿Cómo opera el mínimo personal y familiar en el IRPF?",
+  "a": "**Se grava a la misma escala y el resultado se descuenta de la cuota íntegra.** Ese rodeo hace que el mínimo valga lo mismo para todos —los tipos de los primeros tramos— en vez de valer el tipo marginal de cada uno.",
+  "opciones": [
+   "Se resta de la base imponible general antes de aplicar la escala",
+   "Se grava a la misma escala y el resultado se descuenta de la cuota íntegra",
+   "Se descuenta de la cuota líquida como una deducción más",
+   "Reduce proporcionalmente la cuota según el tipo medio del contribuyente"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "17.03#t1",
+  "codigo": "17.03",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "IRPF II: base liquidable, cuota y gestión",
+  "q": "A un contribuyente le devuelven 1.200 € y a otro le sale a ingresar 300 €. ¿Quién ha soportado más impuesto?",
+  "a": "**No se puede saber: el impuesto es la cuota líquida, no la diferencial.** La diferencial compara la cuota con lo ya retenido. Para saber quién soporta más carga hay que mirar la cuota líquida de cada uno.",
+  "opciones": [
+   "El segundo, porque termina pagando en lugar de cobrar",
+   "El primero, porque adelantó más dinero durante el año",
+   "No se puede saber: el impuesto es la cuota líquida, no la diferencial",
+   "Los dos igual, si tienen la misma base imponible"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "17.03#t2",
+  "codigo": "17.03",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "IRPF II: base liquidable, cuota y gestión",
+  "q": "Un trabajador cambia de empresa a mitad de año, con 11.000 € de un pagador y 10.000 € de otro. ¿Qué ocurre?",
+  "a": "**Que cada pagador retuvo como si fuera el único, así que faltará retención y la regularización llega al declarar.** Por eso la ley rebaja mucho el umbral de la obligación de declarar cuando hay más de un pagador: para que esa diferencia aflore.",
+  "opciones": [
+   "Que tributa a un tipo superior por tener dos pagadores",
+   "Que cada pagador retuvo como si fuera el único, así que faltará retención y la regularización llega al declarar",
+   "Que puede repartir la renta entre los dos pagadores y aplicar dos veces el mínimo",
+   "Que queda exento de declarar por no superar los 22.000 € con un solo pagador"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "17.03#t3",
+  "codigo": "17.03",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "IRPF II: base liquidable, cuota y gestión",
+  "q": "¿Qué conviene revisar siempre en el borrador de la declaración?",
+  "a": "**Las deducciones autonómicas y las circunstancias personales, que la Administración no siempre conoce.** Son numerosas, cambian con frecuencia y dependen de la residencia y de circunstancias familiares que no siempre constan en los ficheros de la Administración.",
+  "opciones": [
+   "Nada: la Administración dispone de todos los datos necesarios",
+   "Solo los rendimientos del trabajo, que son los que más varían",
+   "Las retenciones, que suelen venir mal calculadas",
+   "Las deducciones autonómicas y las circunstancias personales, que la Administración no siempre conoce"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "17.04#0",
+  "codigo": "17.04",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Impuesto sobre Sociedades",
+  "q": "Resultado antes de impuestos 200.000 €, multa 8.000 €, deterioro no admitido 12.000 €, exceso de amortización fiscal 20.000 €, bases negativas 30.000 €, deducción I+D 5.000 €. ¿Cuál es la cuota líquida?",
+  "a": "37.500 €. La base previa es 200.000 + 8.000 + 12.000 − 20.000 = 200.000; menos 30.000 de bases negativas da 170.000; al 25 % son 42.500 de cuota íntegra, y restando la deducción de 5.000 quedan 37.500 €."
+ },
+ {
+  "id": "17.04#1",
+  "codigo": "17.04",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Impuesto sobre Sociedades",
+  "q": "En ese mismo caso, ¿cuál es el gasto contable por impuesto y por qué no coincide con la cuota?",
+  "a": "47.000 €. Al corriente de 37.500 se suma un diferido neto de 9.500 (−3.000 del activo por el deterioro, +5.000 del pasivo por la amortización, +7.500 por el consumo del activo de la base negativa). Se comprueba directamente: (200.000 + 8.000) × 25 % − 5.000 = 47.000. No coincide con la cuota porque las temporarias y la base negativa desplazan pago en el tiempo sin alterar el coste del ejercicio."
+ },
+ {
+  "id": "17.04#2",
+  "codigo": "17.04",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Impuesto sobre Sociedades",
+  "q": "¿Por qué una diferencia temporaria no afecta al gasto por impuesto y una permanente sí?",
+  "a": "Porque la temporaria acabará computando también en el mundo fiscal, solo que en otro ejercicio: el impuesto corriente y el diferido se mueven en sentidos contrarios y se cancelan. La permanente nunca computará, así que altera el impuesto total que la empresa pagará a lo largo de su vida y aparece íntegra en el gasto."
+ },
+ {
+  "id": "17.04#3",
+  "codigo": "17.04",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Impuesto sobre Sociedades",
+  "q": "Una empresa en pérdidas genera derecho a una deducción por I+D de 50.000 € y solo tiene 6.000 € de cuota. ¿Qué debe hacer?",
+  "a": "Acreditar y documentar la deducción completa. Aplicará 6.000 € este año y arrastrará el resto a ejercicios futuros —hasta dieciocho años en I+D+i—, con la posibilidad adicional de monetizar parte. Lo que no puede recuperarse después es el requisito formal: la documentación debe existir en el ejercicio del gasto."
+ },
+ {
+  "id": "17.04#4",
+  "codigo": "17.04",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Impuesto sobre Sociedades",
+  "q": "¿Por qué la recaudación por Sociedades cae más que el PIB en las crisis y tarda más en recuperarse?",
+  "a": "Porque su base es el beneficio, que al ser un residuo entre ingresos y costes amplifica las oscilaciones de la actividad, y porque las bases negativas acumuladas durante la recesión se compensan después, manteniendo la recaudación deprimida cuando los beneficios ya se han recuperado."
+ },
+ {
+  "id": "17.04#t0",
+  "codigo": "17.04",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Impuesto sobre Sociedades",
+  "q": "¿De qué magnitud parte la base imponible del Impuesto sobre Sociedades?",
+  "a": "**Del resultado contable, corregido por los ajustes que la ley establece.** Esa remisión es el rasgo definitorio del impuesto: la contabilidad manda salvo que la norma fiscal diga lo contrario.",
+  "opciones": [
+   "De una definición autónoma de renta contenida en la ley fiscal",
+   "De los ingresos de explotación del ejercicio",
+   "Del excedente bruto de explotación de la contabilidad nacional",
+   "Del resultado contable, corregido por los ajustes que la ley establece"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "17.04#t1",
+  "codigo": "17.04",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Impuesto sobre Sociedades",
+  "q": "Una sociedad contabiliza un deterioro de créditos que la fiscalidad aún no admite. ¿Qué efecto tiene?",
+  "a": "**Genera una diferencia temporaria y un activo por impuesto diferido.** El gasto acabará siendo deducible más adelante, así que solo cambia el momento y se reconoce el activo por la cuota que se anticipa.",
+  "opciones": [
+   "Genera una diferencia temporaria y un activo por impuesto diferido",
+   "No tiene ningún efecto fiscal hasta que el crédito se declare incobrable",
+   "Genera una diferencia permanente que aumenta el gasto por impuesto",
+   "Reduce directamente la cuota líquida del ejercicio"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "17.04#t2",
+  "codigo": "17.04",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Impuesto sobre Sociedades",
+  "q": "Resultado antes de impuestos 200.000 €, una multa de 8.000 € y una deducción por I+D de 5.000 €, al 25 %. ¿Cuál es el gasto contable por impuesto?",
+  "a": "**47.000 €, el 25 % del resultado más la permanente, menos la deducción.** Las temporarias y las bases negativas se cancelan entre corriente y diferido; solo sobreviven la permanente y la deducción.",
+  "opciones": [
+   "45.000 €, el 25 % del resultado menos la deducción",
+   "50.000 €, el 25 % del resultado contable",
+   "47.000 €, el 25 % del resultado más la permanente, menos la deducción",
+   "37.500 €, la cuota líquida del ejercicio"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "17.04#t3",
+  "codigo": "17.04",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Impuesto sobre Sociedades",
+  "q": "Una empresa con pérdidas acumuladas genera una deducción por I+D muy superior a su cuota. ¿Qué ocurre con el exceso?",
+  "a": "**Se arrastra a ejercicios futuros durante plazos largos, y en algunos casos puede monetizarse.** En I+D+i el plazo llega a dieciocho años, y existe además la opción de cobrarla con descuento sin cuota que minorar.",
+  "opciones": [
+   "Se pierde, porque las deducciones solo operan sobre la cuota del ejercicio",
+   "Solo puede aplicarse si la empresa vuelve a beneficios en los dos ejercicios siguientes",
+   "Se arrastra a ejercicios futuros durante plazos largos, y en algunos casos puede monetizarse",
+   "Se convierte automáticamente en una base imponible negativa adicional"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "17.05#0",
+  "codigo": "17.05",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "IVA I: hecho imponible, devengo y base imponible",
+  "q": "Precio 10.000 €, envases 300 €, transporte 500 €, descuento 200 €, Impuesto Especial 1.200 € y una tasa de 150 € pagada por cuenta del cliente. ¿Cuál es la base imponible y la cuota al 21 %?",
+  "a": "Base 11.800 € y cuota 2.478 €. Los accesorios y el Impuesto Especial entran, el descuento resta y el suplido queda fuera. La factura total es 14.428 €, porque el suplido se reclama al cliente sin IVA."
+ },
+ {
+  "id": "17.05#1",
+  "codigo": "17.05",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "IVA I: hecho imponible, devengo y base imponible",
+  "q": "¿Por qué el IVA se calcula también sobre el Impuesto Especial?",
+  "a": "Porque la base imponible incluye todos los tributos que recaigan sobre la misma operación, con la sola excepción del propio IVA. En el ejemplo son 252 € de IVA sobre otro impuesto, y por eso la carga fiscal de un producto gravado no se obtiene sumando los dos tipos por separado."
+ },
+ {
+  "id": "17.05#2",
+  "codigo": "17.05",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "IVA I: hecho imponible, devengo y base imponible",
+  "q": "Un autónomo factura 40.000 € más 8.400 € de IVA, lo cobra todo y se lo gasta. ¿Qué ha hecho mal?",
+  "a": "Ha tratado como ingreso lo que era un pasivo. Su cifra de negocios fue 40.000 €; los 8.400 € eran dinero ajeno recaudado en nombre de la Hacienda Pública, que contablemente vive en la cuenta 477. Al liquidar deberá ingresar la diferencia con el soportado, la tenga o no."
+ },
+ {
+  "id": "17.05#3",
+  "codigo": "17.05",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "IVA I: hecho imponible, devengo y base imponible",
+  "q": "¿Qué distingue a un suplido de un gasto que se repercute al cliente?",
+  "a": "El nombre que figura en la factura del tercero. Si está a nombre del cliente y se paga por su cuenta sin margen, es un suplido y no forma parte de la base. Si está a nombre del proveedor, es un gasto de su actividad, entra en la base y lleva IVA aunque se repercuta al mismo importe."
+ },
+ {
+  "id": "17.05#4",
+  "codigo": "17.05",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "IVA I: hecho imponible, devengo y base imponible",
+  "q": "¿Por qué una subida del tipo de IVA eleva el PIB nominal?",
+  "a": "Porque el PIB se mide a precios de mercado, que incluyen los impuestos sobre productos, mientras que el valor añadido se mide a precios básicos, que no los incluyen. Sube el agregado sin que se haya producido ninguna unidad adicional, y por eso las comparaciones de PIB nominal exigen atender a los cambios de imposición indirecta."
+ },
+ {
+  "id": "17.05#t0",
+  "codigo": "17.05",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "IVA I: hecho imponible, devengo y base imponible",
+  "q": "Un empresario emite una factura en marzo y la cobra en septiembre. ¿Cuándo se devenga el IVA?",
+  "a": "**En marzo, con la entrega o la prestación, salvo régimen de criterio de caja.** El devengo sigue a la operación, no al pago, y de ahí que haya que ingresar el IVA de facturas todavía no cobradas.",
+  "opciones": [
+   "En septiembre, cuando entra el dinero",
+   "A elección del sujeto pasivo, si lo hace constar en la factura",
+   "En marzo, con la entrega o la prestación, salvo régimen de criterio de caja",
+   "En el momento de emitir la factura, sea cual sea la fecha de la operación"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "17.05#t1",
+  "codigo": "17.05",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "IVA I: hecho imponible, devengo y base imponible",
+  "q": "Una factura incluye 500 € de transporte a cargo del vendedor y 150 € de una tasa pagada en nombre del cliente. ¿Qué entra en la base imponible?",
+  "a": "**El transporte, que es un gasto accesorio; la tasa es un suplido y queda fuera.** El suplido se paga en nombre del cliente y con factura a su nombre, así que no es contraprestación del proveedor.",
+  "opciones": [
+   "Los dos, porque ambos se repercuten al cliente en la misma factura",
+   "Ninguno de los dos, porque no son la contraprestación principal",
+   "La tasa, por ser un tributo sobre la operación; el transporte se factura aparte",
+   "El transporte, que es un gasto accesorio; la tasa es un suplido y queda fuera"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "17.05#t2",
+  "codigo": "17.05",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "IVA I: hecho imponible, devengo y base imponible",
+  "q": "¿Qué diferencia hay entre una operación no sujeta y una exenta?",
+  "a": "**La no sujeta queda fuera del ámbito del impuesto; la exenta entra y la ley la libera del gravamen.** Y esa diferencia decide después el derecho a deducir, que es donde el impuesto se juega su neutralidad.",
+  "opciones": [
+   "La exenta no se declara y la no sujeta sí",
+   "La no sujeta permite deducir el IVA soportado y la exenta nunca lo permite",
+   "Ninguna en la práctica: en ambos casos no se repercute IVA",
+   "La no sujeta queda fuera del ámbito del impuesto; la exenta entra y la ley la libera del gravamen"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "17.05#t3",
+  "codigo": "17.05",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "IVA I: hecho imponible, devengo y base imponible",
+  "q": "Un producto tiene un precio de 10.000 € y soporta 1.200 € de Impuesto Especial. Al 21 %, ¿sobre qué se calcula el IVA?",
+  "a": "**Sobre 11.200 €, porque los tributos sobre la operación forman parte de la base.** Son 2.352 € de cuota, de los cuales 252 € se calculan sobre el Impuesto Especial.",
+  "opciones": [
+   "Sobre 11.200 €, porque los tributos sobre la operación forman parte de la base",
+   "Sobre 10.000 €, porque un impuesto no puede gravar a otro impuesto",
+   "Sobre 10.000 €, aplicando después el Impuesto Especial al resultado",
+   "Sobre 11.200 €, pero a un tipo reducido por tratarse de un consumo ya gravado"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "17.06#0",
+  "codigo": "17.06",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "IVA II: deducción, prorrata y regímenes especiales",
+  "q": "Operaciones con derecho 800.000 € y exentas 200.000 €, con 100.000 € de IVA soportado del que 40.000 € son exclusivos de las operaciones con derecho, 40.000 € de las exentas y 20.000 € comunes. ¿Qué prorrata procede?",
+  "a": "La especial, obligatoriamente. La general deduciría 80.000 € y la especial 40.000 + 0 + 16.000 = 56.000 €. Como 80.000 supera 56.000 × 1,10 = 61.600, la general sobrededuce más del 10 % y la ley impone la especial."
+ },
+ {
+  "id": "17.06#1",
+  "codigo": "17.06",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "IVA II: deducción, prorrata y regímenes especiales",
+  "q": "¿Por qué una exención limitada puede encarecer un servicio en lugar de abaratarlo?",
+  "a": "Porque suprime el derecho a deducir: todo el IVA soportado en compras e inversiones se convierte en coste y se traslada al precio, sin aparecer en la factura. En sectores intensivos en compras, tributar a tipo reducido con derecho pleno a deducir resultaría más barato para el consumidor final."
+ },
+ {
+  "id": "17.06#2",
+  "codigo": "17.06",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "IVA II: deducción, prorrata y regímenes especiales",
+  "q": "Un bien de inversión con 21.000 € de IVA soportado se dedujo al 80 %. Al año siguiente la prorrata definitiva baja al 60 %. ¿Qué procede?",
+  "a": "Regularizar, porque la variación supera diez puntos. El ajuste anual es (21.000 × 0,80 − 21.000 × 0,60) / 5 = 840 € a devolver en cada uno de los años del periodo de regularización, que es de cinco años en general y de diez en terrenos y edificaciones."
+ },
+ {
+  "id": "17.06#3",
+  "codigo": "17.06",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "IVA II: deducción, prorrata y regímenes especiales",
+  "q": "¿Qué distingue a una exención plena de una limitada?",
+  "a": "El derecho a deducir. La plena —exportaciones, entregas intracomunitarias— no repercute pero conserva la deducción, de modo que el bien sale limpio de impuesto y equivale a un tipo cero. La limitada no repercute y tampoco deduce, con lo que rompe la cadena y convierte el soportado en coste."
+ },
+ {
+  "id": "17.06#4",
+  "codigo": "17.06",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "IVA II: deducción, prorrata y regímenes especiales",
+  "q": "¿Por qué el escáner de una clínica dental aparece en las estadísticas por 121.000 € y el de una industria por 100.000 €?",
+  "a": "Porque el SEC incluye el IVA no deducible en el valor de la formación bruta de capital fijo de quien lo soporta, y la clínica no puede deducirlo por realizar operaciones exentas sin derecho. Es la razón de que la inversión de los sectores exentos aparezca inflada frente a la de los gravados para el mismo equipo físico."
+ },
+ {
+  "id": "17.06#t0",
+  "codigo": "17.06",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "IVA II: deducción, prorrata y regímenes especiales",
+  "q": "¿Qué caracteriza a una exención limitada frente a una plena?",
+  "a": "**Que suprime el derecho a deducir el IVA soportado, convirtiéndolo en coste.** Por eso el impuesto acaba escondido en el precio de la sanidad, la educación o los seguros.",
+  "opciones": [
+   "Que exige repercutir el impuesto a un tipo reducido en lugar de al general",
+   "Que obliga a solicitar autorización previa a la Administración",
+   "Que suprime el derecho a deducir el IVA soportado, convirtiéndolo en coste",
+   "Que solo se aplica a una parte del importe de la operación"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "17.06#t1",
+  "codigo": "17.06",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "IVA II: deducción, prorrata y regímenes especiales",
+  "q": "La prorrata general permite deducir 80.000 € y la especial 56.000 €. ¿Qué debe hacer el sujeto pasivo?",
+  "a": "**Aplicar la especial, porque la general excede en más de un 10 % a la especial.** El umbral es 56.000 × 1,10 = 61.600, y 80.000 lo supera: la ley retira el atajo cuando sobrededuce.",
+  "opciones": [
+   "Aplicar la media de las dos, que es el criterio que fija la ley",
+   "Aplicar la general, que es el régimen por defecto salvo renuncia expresa",
+   "Aplicar la especial, porque la general excede en más de un 10 % a la especial",
+   "Elegir libremente, ya que ambas son métodos legalmente admitidos"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "17.06#t2",
+  "codigo": "17.06",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "IVA II: deducción, prorrata y regímenes especiales",
+  "q": "Un bien de inversión se dedujo con una prorrata del 80 % y al año siguiente la definitiva es del 60 %. ¿Qué ocurre?",
+  "a": "**Se regulariza una fracción anual durante el periodo de cinco años, o diez en inmuebles.** Un activo duradero no pertenece a un solo ejercicio, y la regularización reparte la corrección a lo largo de su vida fiscal.",
+  "opciones": [
+   "Se regulariza una fracción anual durante el periodo de cinco años, o diez en inmuebles",
+   "Se recalcula íntegramente la deducción y se devuelve la diferencia de una sola vez",
+   "Se pierde el derecho a deducir por haber cambiado la afectación del bien",
+   "Nada: la deducción del año de compra es definitiva"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "17.06#t3",
+  "codigo": "17.06",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "IVA II: deducción, prorrata y regímenes especiales",
+  "q": "Un autónomo tiene tiques de gasoil, una comida con un cliente y un turismo que dice usar solo para trabajar. ¿Qué puede deducir?",
+  "a": "**Nada con tiques, nada de la atención al cliente, y el vehículo al 50 % salvo prueba en contrario.** Las tres reglas actúan por vías distintas: forma, exclusión expresa y presunción de afectación con carga de la prueba.",
+  "opciones": [
+   "Los tiques y el vehículo al 100 %, pero no la comida con el cliente",
+   "Nada con tiques, nada de la atención al cliente, y el vehículo al 50 % salvo prueba en contrario",
+   "Nada de lo tres, por tratarse de gastos personales",
+   "Todo, porque los tres son gastos reales de la actividad"
   ],
   "correcta": 1
  },

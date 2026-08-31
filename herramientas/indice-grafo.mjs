@@ -37,6 +37,18 @@ for (const b of BLOQUES) {
 const RE = /^(\d{1,2}\.\d{2})\b/;
 
 const archivos = fs.readdirSync(dir).filter((f) => /^f\d+-\d+\.js$/.test(f)).sort();
+
+/* Los códigos que tienen ficha escrita. Un «requiere» puede apuntar a un
+   tema del temario que todavía no la tiene, y esa arista hay que descartarla:
+   el grafo solo contiene fichas, así que un prerrequisito sin ficha nunca
+   llegaría a marcarse como hecho y dejaría a su dependiente esperando para
+   siempre. La ruta lo trataría como un ciclo y lo mandaría al final del
+   temario, que es un fallo silencioso y difícil de ver. Cuando la ficha que
+   falta se escriba, la arista vuelve sola. */
+const conFicha = new Set(
+  archivos.map((f) => f.replace(/^f(\d+)-(\d+)\.js$/, (_, b, t) => `${Number(b)}.${t}`))
+);
+
 const prerrequisitos = {};
 let aristas = 0;
 const descartadas = [];
@@ -48,7 +60,8 @@ for (const archivo of archivos) {
     const m = RE.exec(trozo);
     if (!m) continue;
     const cod = m[1];
-    if (!existe.has(cod)) { descartadas.push(`${f.codigo} → ${cod} (no existe)`); continue; }
+    if (!existe.has(cod)) { descartadas.push(`${f.codigo} → ${cod} (no existe en el temario)`); continue; }
+    if (!conFicha.has(cod)) { descartadas.push(`${f.codigo} → ${cod} (aún sin ficha)`); continue; }
     if (cod === f.codigo) { descartadas.push(`${f.codigo} → sí misma`); continue; }
     if (!codigos.includes(cod)) codigos.push(cod);
   }

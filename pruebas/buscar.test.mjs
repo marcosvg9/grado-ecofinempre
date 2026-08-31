@@ -8,6 +8,7 @@ import { test, describe } from "node:test";
 import assert from "node:assert/strict";
 import { normalizar, trocear, textosDeFicha, consultar, extracto } from "../src/buscar.js";
 import { INDICE, CLAVES, DOCS } from "../src/datos/busqueda.js";
+import { CODIGOS_CON_FICHA } from "../src/datos/fichas/index.js";
 
 const pide = (consulta, limite = 5) =>
   consultar({ indice: INDICE, claves: CLAVES, docs: DOCS, consulta, limite });
@@ -175,8 +176,14 @@ describe("extractos", () => {
 });
 
 describe("salud del índice", () => {
-  test("cubre las 168 fichas", () => {
-    assert.equal(DOCS.length, 168);
+  /* Contra el registro de fichas y no contra un número escrito a mano: el
+     temario crece, y una cifra fija solo prueba que nadie la ha actualizado.
+     Lo que importa es que no falte ninguna ficha en el índice. */
+  test("cubre todas las fichas registradas", () => {
+    assert.equal(DOCS.length, CODIGOS_CON_FICHA.size);
+    const enIndice = new Set(DOCS.map((d) => d.codigo));
+    const ausentes = [...CODIGOS_CON_FICHA].filter((c) => !enIndice.has(c));
+    assert.deepEqual(ausentes, [], "hay fichas sin indexar: falta «npm run indices»");
   });
 
   test("cada posting apunta a un documento que existe", () => {

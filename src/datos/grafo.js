@@ -1,6 +1,6 @@
 /* GENERADO por herramientas/indice-grafo.mjs — no editar a mano.
    Prerrequisitos de cada ficha, tomados del campo «requiere».
-   168 fichas · 363 aristas. */
+   174 fichas · 375 aristas. */
 
 export const PRERREQUISITOS = {
   "1.01": [],
@@ -171,4 +171,10 @@ export const PRERREQUISITOS = {
   "16.08": ["16.04", "16.03", "4.04"],
   "16.09": ["16.04", "16.02", "13.02"],
   "16.10": ["16.08", "16.05", "16.07"],
+  "17.01": ["10.03", "1.03"],
+  "17.02": ["17.01", "10.03"],
+  "17.03": ["17.02", "17.01"],
+  "17.04": ["17.01", "5.09", "5.10"],
+  "17.05": ["17.01", "10.06"],
+  "17.06": ["17.05"],
 };

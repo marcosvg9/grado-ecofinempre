@@ -92,6 +92,21 @@ describe("el grafo real del temario", () => {
     assert.equal(new Set(r.orden).size, n);
   });
 
+  /* Regresión: un «requiere» puede citar un tema del temario que aún no
+     tiene ficha —al escribir el bloque 17, «17.06 requiere 5.11»—. Como el
+     grafo solo contiene fichas, ese prerrequisito no se marca nunca como
+     hecho: la ficha espera indefinidamente, el recorrido lo toma por un
+     ciclo y la manda al final del temario. Costó tres pruebas rojas
+     descubrirlo, así que aquí queda cerrado en la fuente. */
+  test("todo prerrequisito del grafo tiene ficha propia", () => {
+    const conFicha = new Set(Object.keys(PRERREQUISITOS));
+    const colgando = [];
+    for (const [nodo, reqs] of Object.entries(PRERREQUISITOS)) {
+      for (const p of reqs) if (!conFicha.has(p)) colgando.push(`${nodo} → ${p}`);
+    }
+    assert.deepEqual(colgando, [], "hay prerrequisitos que apuntan a temas sin ficha");
+  });
+
   test("ninguna ficha va antes que sus prerrequisitos", () => {
     assert.deepEqual(violaciones(r, PRERREQUISITOS), []);
   });

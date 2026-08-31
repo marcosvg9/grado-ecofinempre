@@ -175,6 +175,12 @@ const CARGADORES = {
   "16.08": () => import("./f16-08.js"),
   "16.09": () => import("./f16-09.js"),
   "16.10": () => import("./f16-10.js"),
+  "17.01": () => import("./f17-01.js"),
+  "17.02": () => import("./f17-02.js"),
+  "17.03": () => import("./f17-03.js"),
+  "17.04": () => import("./f17-04.js"),
+  "17.05": () => import("./f17-05.js"),
+  "17.06": () => import("./f17-06.js"),
 };
 
 /* Codigos con ficha escrita. El plan lo usa para pintar la etiqueta «Ficha»
