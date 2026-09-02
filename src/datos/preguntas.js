@@ -1,5 +1,5 @@
 /* GENERADO POR herramientas/indice-preguntas.mjs — no editar a mano.
-   1626 preguntas de 174 fichas: 930 abiertas y 696 de test.
+   1770 preguntas de 190 fichas: 1010 abiertas y 760 de test.
    Para regenerar: node herramientas/indice-preguntas.mjs */
 
 export default [
@@ -9662,12 +9662,12 @@ export default [
   "q": "Una operación está exenta de IVA. ¿Qué implica para quien la realiza?",
   "a": "**Que realiza el hecho imponible, queda dispensado del pago y suele perder el derecho a deducir el IVA soportado.** Y por eso la exención puede ser un perjuicio: el impuesto soportado deja de ser un crédito frente a Hacienda y pasa a ser coste, incorporándose al precio.",
   "opciones": [
-   "Que queda fuera del impuesto y sin obligación formal alguna",
    "Que realiza el hecho imponible, queda dispensado del pago y suele perder el derecho a deducir el IVA soportado",
    "Que puede optar entre repercutir el impuesto o no hacerlo",
-   "Que tributa a tipo cero, conservando el derecho a deducir"
+   "Que tributa a tipo cero, conservando el derecho a deducir",
+   "Que queda fuera del impuesto y sin obligación formal alguna"
   ],
-  "correcta": 1
+  "correcta": 0
  },
  {
   "id": "17.01#t1",
@@ -9678,12 +9678,12 @@ export default [
   "q": "Un ayuntamiento urbaniza una calle y el valor de los inmuebles colindantes sube. ¿Qué tributo puede exigir a sus propietarios?",
   "a": "**Una contribución especial, por el aumento de valor derivado de una obra pública.** Es el supuesto exacto de la contribución especial: beneficio o aumento de valor de los bienes como consecuencia de obras públicas o del establecimiento o ampliación de servicios.",
   "opciones": [
-   "Un impuesto, porque se ha manifestado capacidad económica",
    "Una tasa, por la prestación de un servicio público",
-   "Una contribución especial, por el aumento de valor derivado de una obra pública",
-   "Ninguno: la revalorización no es un hecho imponible"
+   "Ninguno: la revalorización no es un hecho imponible",
+   "Un impuesto, porque se ha manifestado capacidad económica",
+   "Una contribución especial, por el aumento de valor derivado de una obra pública"
   ],
-  "correcta": 2
+  "correcta": 3
  },
  {
   "id": "17.01#t2",
@@ -9695,9 +9695,9 @@ export default [
   "a": "**El tipo marginal, que es el que se aplicará al euro adicional.** La decisión de ganar un euro más se toma comparando ese euro con lo que se lleva el impuesto de ese euro, no de todos los anteriores.",
   "opciones": [
    "El tipo marginal, que es el que se aplicará al euro adicional",
-   "El tipo medio efectivo, que mide su carga real",
+   "El tipo de retención que le aplica su pagador",
    "El tipo nominal máximo de la escala",
-   "El tipo de retención que le aplica su pagador"
+   "El tipo medio efectivo, que mide su carga real"
   ],
   "correcta": 0
  },
@@ -9710,12 +9710,12 @@ export default [
   "q": "La Administración no puede determinar la base imponible porque el obligado ha destruido su contabilidad. ¿Qué método se aplica?",
   "a": "**Estimación indirecta, que es subsidiaria y no la elige el contribuyente.** Se aplica cuando el incumplimiento, la resistencia a la inspección o la desaparición de los registros impiden conocer la base, y suele acompañarse de sanción.",
   "opciones": [
-   "Estimación objetiva, sustituyendo los datos reales por módulos",
-   "Estimación directa, reconstruyendo los datos con la información de terceros",
    "Se anula la liquidación por imposibilidad de determinar la base",
-   "Estimación indirecta, que es subsidiaria y no la elige el contribuyente"
+   "Estimación indirecta, que es subsidiaria y no la elige el contribuyente",
+   "Estimación directa, reconstruyendo los datos con la información de terceros",
+   "Estimación objetiva, sustituyendo los datos reales por módulos"
   ],
-  "correcta": 3
+  "correcta": 1
  },
  {
   "id": "17.02#0",
@@ -9771,12 +9771,12 @@ export default [
   "q": "Un contribuyente pierde 9.000 € al vender acciones y tiene 34.000 € de rendimientos del trabajo. ¿Qué efecto tiene la pérdida?",
   "a": "**Compensa rentas del ahorro y el remanente queda pendiente hasta cuatro ejercicios; no toca el sueldo.** Por eso muchos contribuyentes realizan plusvalías latentes en el mismo ejercicio en que materializan pérdidas: para que la pérdida encuentre con qué compensarse antes de caducar.",
   "opciones": [
-   "Reduce la base general en 9.000 €, rebajando el impuesto sobre el sueldo",
    "Compensa rentas del ahorro y el remanente queda pendiente hasta cuatro ejercicios; no toca el sueldo",
-   "Se pierde íntegramente en el ejercicio en que se produce",
-   "Reduce la base general con el límite del 25 % de su importe"
+   "Reduce la base general en 9.000 €, rebajando el impuesto sobre el sueldo",
+   "Reduce la base general con el límite del 25 % de su importe",
+   "Se pierde íntegramente en el ejercicio en que se produce"
   ],
-  "correcta": 1
+  "correcta": 0
  },
  {
   "id": "17.02#t1",
@@ -9787,10 +9787,10 @@ export default [
   "q": "Un contribuyente gana un premio de 5.000 € que no está exento. ¿A qué base va?",
   "a": "**A la base general: es una ganancia patrimonial que no deriva de transmisión.** Y la diferencia de tipo es grande: la escala general puede superar en más de veinte puntos a la tarifa del ahorro.",
   "opciones": [
-   "A la base del ahorro, como cualquier ganancia patrimonial",
    "A la base del ahorro solo si supera los 6.000 €",
+   "No tributa: los premios están sujetos a su propio gravamen especial",
    "A la base general: es una ganancia patrimonial que no deriva de transmisión",
-   "No tributa: los premios están sujetos a su propio gravamen especial"
+   "A la base del ahorro, como cualquier ganancia patrimonial"
   ],
   "correcta": 2
  },
@@ -9803,10 +9803,10 @@ export default [
   "q": "Un español lleva todo el año trabajando en Alemania, donde reside. ¿Tributa en España por su renta mundial?",
   "a": "**No: no es residente fiscal, así que solo tributaría por rentas de fuente española.** Como no residente tributaría por el IRNR, y solo por lo obtenido en España, con las reglas de la ficha 17.07.",
   "opciones": [
-   "Sí: la nacionalidad española determina la sujeción por renta mundial",
    "Sí, si conserva la vivienda en España",
+   "Depende de si está empadronado en un municipio español",
    "No: no es residente fiscal, así que solo tributaría por rentas de fuente española",
-   "Depende de si está empadronado en un municipio español"
+   "Sí: la nacionalidad española determina la sujeción por renta mundial"
   ],
   "correcta": 2
  },
@@ -9820,9 +9820,9 @@ export default [
   "a": "**Que salga peor: acumular ambas rentas en una sola escala progresiva empuja a tramos altos.** Por separado, cada uno recorre la escala desde abajo y aprovecha íntegros los tramos bajos y su mínimo personal. La conjunta renuncia a una de esas dos tarifas.",
   "opciones": [
    "Que salga peor: acumular ambas rentas en una sola escala progresiva empuja a tramos altos",
+   "Que no puedan optar: la conjunta exige que un cónyuge no obtenga rentas",
    "Que salga mejor por la reducción específica de la tributación conjunta",
-   "Que sea indiferente: la escala se aplica igual en ambos casos",
-   "Que no puedan optar: la conjunta exige que un cónyuge no obtenga rentas"
+   "Que sea indiferente: la escala se aplica igual en ambos casos"
   ],
   "correcta": 0
  },
@@ -9880,12 +9880,12 @@ export default [
   "q": "¿Cómo opera el mínimo personal y familiar en el IRPF?",
   "a": "**Se grava a la misma escala y el resultado se descuenta de la cuota íntegra.** Ese rodeo hace que el mínimo valga lo mismo para todos —los tipos de los primeros tramos— en vez de valer el tipo marginal de cada uno.",
   "opciones": [
+   "Se descuenta de la cuota líquida como una deducción más",
    "Se resta de la base imponible general antes de aplicar la escala",
    "Se grava a la misma escala y el resultado se descuenta de la cuota íntegra",
-   "Se descuenta de la cuota líquida como una deducción más",
    "Reduce proporcionalmente la cuota según el tipo medio del contribuyente"
   ],
-  "correcta": 1
+  "correcta": 2
  },
  {
   "id": "17.03#t1",
@@ -9896,12 +9896,12 @@ export default [
   "q": "A un contribuyente le devuelven 1.200 € y a otro le sale a ingresar 300 €. ¿Quién ha soportado más impuesto?",
   "a": "**No se puede saber: el impuesto es la cuota líquida, no la diferencial.** La diferencial compara la cuota con lo ya retenido. Para saber quién soporta más carga hay que mirar la cuota líquida de cada uno.",
   "opciones": [
-   "El segundo, porque termina pagando en lugar de cobrar",
    "El primero, porque adelantó más dinero durante el año",
-   "No se puede saber: el impuesto es la cuota líquida, no la diferencial",
-   "Los dos igual, si tienen la misma base imponible"
+   "El segundo, porque termina pagando en lugar de cobrar",
+   "Los dos igual, si tienen la misma base imponible",
+   "No se puede saber: el impuesto es la cuota líquida, no la diferencial"
   ],
-  "correcta": 2
+  "correcta": 3
  },
  {
   "id": "17.03#t2",
@@ -9913,11 +9913,11 @@ export default [
   "a": "**Que cada pagador retuvo como si fuera el único, así que faltará retención y la regularización llega al declarar.** Por eso la ley rebaja mucho el umbral de la obligación de declarar cuando hay más de un pagador: para que esa diferencia aflore.",
   "opciones": [
    "Que tributa a un tipo superior por tener dos pagadores",
-   "Que cada pagador retuvo como si fuera el único, así que faltará retención y la regularización llega al declarar",
    "Que puede repartir la renta entre los dos pagadores y aplicar dos veces el mínimo",
+   "Que cada pagador retuvo como si fuera el único, así que faltará retención y la regularización llega al declarar",
    "Que queda exento de declarar por no superar los 22.000 € con un solo pagador"
   ],
-  "correcta": 1
+  "correcta": 2
  },
  {
   "id": "17.03#t3",
@@ -9928,12 +9928,12 @@ export default [
   "q": "¿Qué conviene revisar siempre en el borrador de la declaración?",
   "a": "**Las deducciones autonómicas y las circunstancias personales, que la Administración no siempre conoce.** Son numerosas, cambian con frecuencia y dependen de la residencia y de circunstancias familiares que no siempre constan en los ficheros de la Administración.",
   "opciones": [
+   "Las deducciones autonómicas y las circunstancias personales, que la Administración no siempre conoce",
    "Nada: la Administración dispone de todos los datos necesarios",
    "Solo los rendimientos del trabajo, que son los que más varían",
-   "Las retenciones, que suelen venir mal calculadas",
-   "Las deducciones autonómicas y las circunstancias personales, que la Administración no siempre conoce"
+   "Las retenciones, que suelen venir mal calculadas"
   ],
-  "correcta": 3
+  "correcta": 0
  },
  {
   "id": "17.04#0",
@@ -9990,11 +9990,11 @@ export default [
   "a": "**Del resultado contable, corregido por los ajustes que la ley establece.** Esa remisión es el rasgo definitorio del impuesto: la contabilidad manda salvo que la norma fiscal diga lo contrario.",
   "opciones": [
    "De una definición autónoma de renta contenida en la ley fiscal",
+   "Del resultado contable, corregido por los ajustes que la ley establece",
    "De los ingresos de explotación del ejercicio",
-   "Del excedente bruto de explotación de la contabilidad nacional",
-   "Del resultado contable, corregido por los ajustes que la ley establece"
+   "Del excedente bruto de explotación de la contabilidad nacional"
   ],
-  "correcta": 3
+  "correcta": 1
  },
  {
   "id": "17.04#t1",
@@ -10005,12 +10005,12 @@ export default [
   "q": "Una sociedad contabiliza un deterioro de créditos que la fiscalidad aún no admite. ¿Qué efecto tiene?",
   "a": "**Genera una diferencia temporaria y un activo por impuesto diferido.** El gasto acabará siendo deducible más adelante, así que solo cambia el momento y se reconoce el activo por la cuota que se anticipa.",
   "opciones": [
-   "Genera una diferencia temporaria y un activo por impuesto diferido",
    "No tiene ningún efecto fiscal hasta que el crédito se declare incobrable",
-   "Genera una diferencia permanente que aumenta el gasto por impuesto",
-   "Reduce directamente la cuota líquida del ejercicio"
+   "Genera una diferencia temporaria y un activo por impuesto diferido",
+   "Reduce directamente la cuota líquida del ejercicio",
+   "Genera una diferencia permanente que aumenta el gasto por impuesto"
   ],
-  "correcta": 0
+  "correcta": 1
  },
  {
   "id": "17.04#t2",
@@ -10021,12 +10021,12 @@ export default [
   "q": "Resultado antes de impuestos 200.000 €, una multa de 8.000 € y una deducción por I+D de 5.000 €, al 25 %. ¿Cuál es el gasto contable por impuesto?",
   "a": "**47.000 €, el 25 % del resultado más la permanente, menos la deducción.** Las temporarias y las bases negativas se cancelan entre corriente y diferido; solo sobreviven la permanente y la deducción.",
   "opciones": [
-   "45.000 €, el 25 % del resultado menos la deducción",
-   "50.000 €, el 25 % del resultado contable",
    "47.000 €, el 25 % del resultado más la permanente, menos la deducción",
-   "37.500 €, la cuota líquida del ejercicio"
+   "37.500 €, la cuota líquida del ejercicio",
+   "50.000 €, el 25 % del resultado contable",
+   "45.000 €, el 25 % del resultado menos la deducción"
   ],
-  "correcta": 2
+  "correcta": 0
  },
  {
   "id": "17.04#t3",
@@ -10037,8 +10037,8 @@ export default [
   "q": "Una empresa con pérdidas acumuladas genera una deducción por I+D muy superior a su cuota. ¿Qué ocurre con el exceso?",
   "a": "**Se arrastra a ejercicios futuros durante plazos largos, y en algunos casos puede monetizarse.** En I+D+i el plazo llega a dieciocho años, y existe además la opción de cobrarla con descuento sin cuota que minorar.",
   "opciones": [
-   "Se pierde, porque las deducciones solo operan sobre la cuota del ejercicio",
    "Solo puede aplicarse si la empresa vuelve a beneficios en los dos ejercicios siguientes",
+   "Se pierde, porque las deducciones solo operan sobre la cuota del ejercicio",
    "Se arrastra a ejercicios futuros durante plazos largos, y en algunos casos puede monetizarse",
    "Se convierte automáticamente en una base imponible negativa adicional"
   ],
@@ -10098,10 +10098,10 @@ export default [
   "q": "Un empresario emite una factura en marzo y la cobra en septiembre. ¿Cuándo se devenga el IVA?",
   "a": "**En marzo, con la entrega o la prestación, salvo régimen de criterio de caja.** El devengo sigue a la operación, no al pago, y de ahí que haya que ingresar el IVA de facturas todavía no cobradas.",
   "opciones": [
-   "En septiembre, cuando entra el dinero",
+   "En el momento de emitir la factura, sea cual sea la fecha de la operación",
    "A elección del sujeto pasivo, si lo hace constar en la factura",
    "En marzo, con la entrega o la prestación, salvo régimen de criterio de caja",
-   "En el momento de emitir la factura, sea cual sea la fecha de la operación"
+   "En septiembre, cuando entra el dinero"
   ],
   "correcta": 2
  },
@@ -10114,9 +10114,9 @@ export default [
   "q": "Una factura incluye 500 € de transporte a cargo del vendedor y 150 € de una tasa pagada en nombre del cliente. ¿Qué entra en la base imponible?",
   "a": "**El transporte, que es un gasto accesorio; la tasa es un suplido y queda fuera.** El suplido se paga en nombre del cliente y con factura a su nombre, así que no es contraprestación del proveedor.",
   "opciones": [
-   "Los dos, porque ambos se repercuten al cliente en la misma factura",
    "Ninguno de los dos, porque no son la contraprestación principal",
    "La tasa, por ser un tributo sobre la operación; el transporte se factura aparte",
+   "Los dos, porque ambos se repercuten al cliente en la misma factura",
    "El transporte, que es un gasto accesorio; la tasa es un suplido y queda fuera"
   ],
   "correcta": 3
@@ -10130,8 +10130,8 @@ export default [
   "q": "¿Qué diferencia hay entre una operación no sujeta y una exenta?",
   "a": "**La no sujeta queda fuera del ámbito del impuesto; la exenta entra y la ley la libera del gravamen.** Y esa diferencia decide después el derecho a deducir, que es donde el impuesto se juega su neutralidad.",
   "opciones": [
-   "La exenta no se declara y la no sujeta sí",
    "La no sujeta permite deducir el IVA soportado y la exenta nunca lo permite",
+   "La exenta no se declara y la no sujeta sí",
    "Ninguna en la práctica: en ambos casos no se repercute IVA",
    "La no sujeta queda fuera del ámbito del impuesto; la exenta entra y la ley la libera del gravamen"
   ],
@@ -10147,9 +10147,9 @@ export default [
   "a": "**Sobre 11.200 €, porque los tributos sobre la operación forman parte de la base.** Son 2.352 € de cuota, de los cuales 252 € se calculan sobre el Impuesto Especial.",
   "opciones": [
    "Sobre 11.200 €, porque los tributos sobre la operación forman parte de la base",
+   "Sobre 11.200 €, pero a un tipo reducido por tratarse de un consumo ya gravado",
    "Sobre 10.000 €, porque un impuesto no puede gravar a otro impuesto",
-   "Sobre 10.000 €, aplicando después el Impuesto Especial al resultado",
-   "Sobre 11.200 €, pero a un tipo reducido por tratarse de un consumo ya gravado"
+   "Sobre 10.000 €, aplicando después el Impuesto Especial al resultado"
   ],
   "correcta": 0
  },
@@ -10207,12 +10207,12 @@ export default [
   "q": "¿Qué caracteriza a una exención limitada frente a una plena?",
   "a": "**Que suprime el derecho a deducir el IVA soportado, convirtiéndolo en coste.** Por eso el impuesto acaba escondido en el precio de la sanidad, la educación o los seguros.",
   "opciones": [
-   "Que exige repercutir el impuesto a un tipo reducido en lugar de al general",
-   "Que obliga a solicitar autorización previa a la Administración",
+   "Que solo se aplica a una parte del importe de la operación",
    "Que suprime el derecho a deducir el IVA soportado, convirtiéndolo en coste",
-   "Que solo se aplica a una parte del importe de la operación"
+   "Que exige repercutir el impuesto a un tipo reducido en lugar de al general",
+   "Que obliga a solicitar autorización previa a la Administración"
   ],
-  "correcta": 2
+  "correcta": 1
  },
  {
   "id": "17.06#t1",
@@ -10223,12 +10223,12 @@ export default [
   "q": "La prorrata general permite deducir 80.000 € y la especial 56.000 €. ¿Qué debe hacer el sujeto pasivo?",
   "a": "**Aplicar la especial, porque la general excede en más de un 10 % a la especial.** El umbral es 56.000 × 1,10 = 61.600, y 80.000 lo supera: la ley retira el atajo cuando sobrededuce.",
   "opciones": [
-   "Aplicar la media de las dos, que es el criterio que fija la ley",
-   "Aplicar la general, que es el régimen por defecto salvo renuncia expresa",
    "Aplicar la especial, porque la general excede en más de un 10 % a la especial",
-   "Elegir libremente, ya que ambas son métodos legalmente admitidos"
+   "Aplicar la general, que es el régimen por defecto salvo renuncia expresa",
+   "Elegir libremente, ya que ambas son métodos legalmente admitidos",
+   "Aplicar la media de las dos, que es el criterio que fija la ley"
   ],
-  "correcta": 2
+  "correcta": 0
  },
  {
   "id": "17.06#t2",
@@ -10239,12 +10239,12 @@ export default [
   "q": "Un bien de inversión se dedujo con una prorrata del 80 % y al año siguiente la definitiva es del 60 %. ¿Qué ocurre?",
   "a": "**Se regulariza una fracción anual durante el periodo de cinco años, o diez en inmuebles.** Un activo duradero no pertenece a un solo ejercicio, y la regularización reparte la corrección a lo largo de su vida fiscal.",
   "opciones": [
+   "Nada: la deducción del año de compra es definitiva",
    "Se regulariza una fracción anual durante el periodo de cinco años, o diez en inmuebles",
    "Se recalcula íntegramente la deducción y se devuelve la diferencia de una sola vez",
-   "Se pierde el derecho a deducir por haber cambiado la afectación del bien",
-   "Nada: la deducción del año de compra es definitiva"
+   "Se pierde el derecho a deducir por haber cambiado la afectación del bien"
   ],
-  "correcta": 0
+  "correcta": 1
  },
  {
   "id": "17.06#t3",
@@ -10255,12 +10255,1320 @@ export default [
   "q": "Un autónomo tiene tiques de gasoil, una comida con un cliente y un turismo que dice usar solo para trabajar. ¿Qué puede deducir?",
   "a": "**Nada con tiques, nada de la atención al cliente, y el vehículo al 50 % salvo prueba en contrario.** Las tres reglas actúan por vías distintas: forma, exclusión expresa y presunción de afectación con carga de la prueba.",
   "opciones": [
-   "Los tiques y el vehículo al 100 %, pero no la comida con el cliente",
    "Nada con tiques, nada de la atención al cliente, y el vehículo al 50 % salvo prueba en contrario",
-   "Nada de lo tres, por tratarse de gastos personales",
-   "Todo, porque los tres son gastos reales de la actividad"
+   "Todo, porque los tres son gastos reales de la actividad",
+   "Los tiques y el vehículo al 100 %, pero no la comida con el cliente",
+   "Nada de lo tres, por tratarse de gastos personales"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "17.07#0",
+  "codigo": "17.07",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Impuesto sobre la Renta de no Residentes",
+  "q": "Un residente cobra 10.000 € de dividendos extranjeros con retención en origen del 15 %, y en España tributarían al 19 %. ¿Cuánto paga aquí y cuál es su carga total?",
+  "a": "Paga 400 € en España y soporta 1.900 € en total, el 19 %. La deducción es el menor entre lo pagado fuera (1.500) y la cuota teórica española (1.900): 1.500. La carga total con el método de imputación es el mayor de los dos tipos, no su suma."
+ },
+ {
+  "id": "17.07#1",
+  "codigo": "17.07",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Impuesto sobre la Renta de no Residentes",
+  "q": "En ese mismo caso, si el país de la fuente retiene el 30 % por no habérsele acreditado la residencia, ¿qué ocurre?",
+  "a": "Retiene 3.000 €, la deducción se topa en 1.900 €, la cuota española queda en cero y la carga total sube al 30 %. Hay 1.100 € que España no deduce y que solo se recuperan iniciando una devolución ante la Administración del país de la fuente."
+ },
+ {
+  "id": "17.07#2",
+  "codigo": "17.07",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Impuesto sobre la Renta de no Residentes",
+  "q": "Alguien se traslada al extranjero el 15 de septiembre. ¿Cómo tributa ese año?",
+  "a": "Como residente por el año completo, incluida la renta obtenida después del traslado, porque ha permanecido 258 días y la residencia no se prorratea. Solo se fracciona el período impositivo en caso de fallecimiento."
+ },
+ {
+  "id": "17.07#3",
+  "codigo": "17.07",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Impuesto sobre la Renta de no Residentes",
+  "q": "Una empresa extranjera factura 100.000 € en España con 70.000 € de gastos. ¿Cuánto tributa con y sin establecimiento permanente?",
+  "a": "Sin EP, el 24 % sobre el importe íntegro: 24.000 €, sin deducir gastos. Con EP, el 25 % sobre la renta neta de 30.000 €: 7.500 €. La carga es 3,2 veces mayor sin establecimiento, y por eso ese concepto concentra tantos litigios."
+ },
+ {
+  "id": "17.07#4",
+  "codigo": "17.07",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Impuesto sobre la Renta de no Residentes",
+  "q": "¿Por qué el PIB de Irlanda supera tanto a su Renta Nacional Bruta?",
+  "a": "Porque el PIB mide la producción dentro del territorio y la RNB la renta de las unidades residentes. Los beneficios de multinacionales producidos en Irlanda se atribuyen a residentes de otros países y salen como rentas primarias, que es la misma materia que grava el IRNR."
+ },
+ {
+  "id": "17.07#t0",
+  "codigo": "17.07",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Impuesto sobre la Renta de no Residentes",
+  "q": "Una persona permanece 258 días en España y se traslada al extranjero el 15 de septiembre. ¿Cómo tributa ese año?",
+  "a": "**Como residente por el año completo, incluida la renta obtenida tras el traslado.** Supera los 183 días, y la residencia es una condición de todo o nada para el año natural entero.",
+  "opciones": [
+   "Como residente hasta septiembre y como no residente el resto del año",
+   "Como no residente, porque al 31 de diciembre ya vivía fuera",
+   "Como residente por el año completo, incluida la renta obtenida tras el traslado",
+   "A su elección, comunicando la fecha de traslado a la Administración"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "17.07#t1",
+  "codigo": "17.07",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Impuesto sobre la Renta de no Residentes",
+  "q": "Un dividendo extranjero de 10.000 € sufre una retención del 30 % en origen y tributaría al 19 % en España. ¿Qué pasa con la diferencia?",
+  "a": "**La deducción se topa en 1.900 € y los 1.100 € restantes solo se reclaman en el país de la fuente.** Por eso el certificado de residencia debe entregarse al pagador antes de la retención, y no después.",
+  "opciones": [
+   "España deduce los 3.000 € íntegros y devuelve el exceso sobre la cuota",
+   "El convenio obliga automáticamente al país de la fuente a devolverlo",
+   "Se compensa con otras rentas del ahorro de los cuatro ejercicios siguientes",
+   "La deducción se topa en 1.900 € y los 1.100 € restantes solo se reclaman en el país de la fuente"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "17.07#t2",
+  "codigo": "17.07",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Impuesto sobre la Renta de no Residentes",
+  "q": "¿Cuál es la diferencia esencial entre tributar con y sin establecimiento permanente?",
+  "a": "**Con establecimiento se tributa por la renta neta; sin él, sobre el importe íntegro y sin deducir gastos.** En el ejemplo, 7.500 € frente a 24.000 € por la misma actividad: de ahí que el concepto genere tantos litigios.",
+  "opciones": [
+   "Con establecimiento se tributa en el país de residencia y sin él en el de la fuente",
+   "Con establecimiento solo tributan las rentas empresariales y sin él únicamente las del capital",
+   "Con establecimiento se tributa por la renta neta; sin él, sobre el importe íntegro y sin deducir gastos",
+   "Sin establecimiento el tipo es siempre superior al general de Sociedades"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "17.07#t3",
+  "codigo": "17.07",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Impuesto sobre la Renta de no Residentes",
+  "q": "¿Qué hace exactamente un convenio de doble imposición?",
+  "a": "**Reparte la potestad de gravar y limita el tipo que puede aplicar el Estado de la fuente.** Y si el resultado del convenio fuera peor que el de la ley interna, se aplicaría la ley interna.",
+  "opciones": [
+   "Crea un impuesto común aplicable en los dos Estados firmantes",
+   "Exime de tributación en el Estado de la fuente a todos los no residentes",
+   "Obliga a repartir la recaudación entre las dos Administraciones al 50 %",
+   "Reparte la potestad de gravar y limita el tipo que puede aplicar el Estado de la fuente"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "17.08#0",
+  "codigo": "17.08",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "Impuestos Especiales y fiscalidad ambiental",
+  "q": "Un producto cuesta 1,50 € antes de impuestos, soporta 0,50 € de Impuesto Especial y un IVA del 21 %. ¿Cuál es el PVP y qué peso tienen los impuestos?",
+  "a": "El PVP es 2,42 €: la base del IVA son 2,00 € y la cuota 0,42 €. La carga fiscal es 0,92 €, el 38,0 % del PVP y el 61,3 % del precio limpio. Además, 0,105 € de ese IVA se calculan sobre el propio Impuesto Especial, porque este forma parte de su base."
+ },
+ {
+  "id": "17.08#1",
+  "codigo": "17.08",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "Impuestos Especiales y fiscalidad ambiental",
+  "q": "El tipo sube de 0,50 a 0,60 € y el precio un 5 %. ¿Qué recaudación resulta con elasticidad −0,4 y con −4?",
+  "a": "Con −0,4 el consumo cae un 2 %, quedan 98 unidades y la recaudación sube a 58,80 €, un 17,6 % más. Con −4 el consumo cae un 20 %, quedan 80 unidades y la recaudación baja a 48,00 €, un 4 % menos. El mismo impuesto recauda más cuanto menos corrige."
+ },
+ {
+  "id": "17.08#2",
+  "codigo": "17.08",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "Impuestos Especiales y fiscalidad ambiental",
+  "q": "¿Por qué se dice que no actualizar un tipo específico equivale a rebajarlo?",
+  "a": "Porque se calcula sobre una magnitud física y no sobre el precio: con inflación, el mismo tipo nominal representa cada año una fracción menor del precio. En el ejemplo, un tipo de 0,50 € pasa del 25 % al 20,8 % del precio cuando este sube de 2,00 a 2,40 €, sin que nadie apruebe rebaja alguna."
+ },
+ {
+  "id": "17.08#3",
+  "codigo": "17.08",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "Impuestos Especiales y fiscalidad ambiental",
+  "q": "¿Qué diferencia hay entre un impuesto ambiental y un mercado de permisos de emisión?",
+  "a": "El impuesto fija el precio de contaminar y deja que el mercado determine la cantidad; el sistema de permisos fija la cantidad y deja que el precio se forme. Bajo certidumbre son equivalentes; bajo incertidumbre no, y la elección depende de si importa más acertar con el coste o con el resultado ambiental."
+ },
+ {
+  "id": "17.08#4",
+  "codigo": "17.08",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "Impuestos Especiales y fiscalidad ambiental",
+  "q": "Los impuestos ambientales sobre PIB caen en un país. ¿Qué puede significar?",
+  "a": "Dos cosas opuestas: que el impuesto ha funcionado y la base gravada se ha reducido, o que el tipo específico se ha erosionado con la inflación sin actualizarse. La ratio por sí sola no las distingue: hay que mirar el tipo real y la cantidad física gravada."
+ },
+ {
+  "id": "17.08#t0",
+  "codigo": "17.08",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "Impuestos Especiales y fiscalidad ambiental",
+  "q": "Un impuesto especial sobre el tabaco recauda cada año más. ¿Qué indica eso sobre su finalidad correctora?",
+  "a": "**Que la demanda es rígida y el consumo apenas cambia: recauda mucho porque corrige poco.** Si el impuesto cumpliera su función, la base se estrecharía y la recaudación tendería a caer.",
+  "opciones": [
+   "Que está funcionando, porque más recaudación implica más consumidores alcanzados",
+   "Nada: recaudación y corrección son magnitudes independientes entre sí",
+   "Que el tipo está por debajo del daño marginal externo y debe reducirse",
+   "Que la demanda es rígida y el consumo apenas cambia: recauda mucho porque corrige poco"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "17.08#t1",
+  "codigo": "17.08",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "Impuestos Especiales y fiscalidad ambiental",
+  "q": "Un tipo específico de 0,50 € grava un producto que pasa de 2,00 a 2,40 € por inflación. ¿Qué ha ocurrido con la carga?",
+  "a": "**Ha caído del 25 % al 20,8 % del precio sin que nadie aprobara una rebaja.** La inactividad legislativa opera aquí como una rebaja continua, y por eso muchos países indexan estos tipos.",
+  "opciones": [
+   "Ha caído del 25 % al 20,8 % del precio sin que nadie aprobara una rebaja",
+   "Ha subido, porque el impuesto acompaña al precio",
+   "No ha cambiado, porque el tipo sigue siendo el mismo",
+   "Ha caído solo si la ley preveía una cláusula de actualización automática"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "17.08#t2",
+  "codigo": "17.08",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "Impuestos Especiales y fiscalidad ambiental",
+  "q": "¿Qué relación hay entre el Impuesto Especial y el IVA sobre un mismo producto?",
+  "a": "**El Impuesto Especial forma parte de la base imponible del IVA, así que la carga conjunta supera la suma de tipos.** En el ejemplo, 0,105 € de los 0,42 € de IVA se calculan sobre el propio Impuesto Especial.",
+  "opciones": [
+   "El Impuesto Especial forma parte de la base imponible del IVA, así que la carga conjunta supera la suma de tipos",
+   "Se aplican sobre la misma base y sus tipos simplemente se suman",
+   "Son alternativos: si se aplica uno no se aplica el otro",
+   "El IVA se aplica primero y el Impuesto Especial sobre el resultado"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "17.08#t3",
+  "codigo": "17.08",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "Impuestos Especiales y fiscalidad ambiental",
+  "q": "¿Cuál es el argumento habitual de la hacienda pública ante la regresividad de estos impuestos?",
+  "a": "**Mantener el impuesto, que fija el precio del daño, y compensar por el lado del gasto o las transferencias.** Es la separación de instrumentos: uno corrige la externalidad y otro redistribuye, sin pedirle a ninguno que haga las dos cosas.",
+  "opciones": [
+   "Negarla: al gravar consumos concretos afectan sobre todo a las rentas altas",
+   "Eliminar el impuesto y sustituirlo por regulación directa de las cantidades",
+   "Mantener el impuesto, que fija el precio del daño, y compensar por el lado del gasto o las transferencias",
+   "Aplicar tipos reducidos a los hogares de renta baja para neutralizarla"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "17.09#0",
+  "codigo": "17.09",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "Imposición autonómica y local",
+  "q": "Un valor catastral pasa de 120.000 a 200.000 € y el ayuntamiento mantiene el tipo del 0,66 %. ¿Qué ocurre con la cuota?",
+  "a": "Pasa de 792 a 1.320 €, un 66,7 % más. El tipo que habría dejado la cuota igual es el 0,396 %, así que mantener el 0,66 % no es una decisión neutra: es la decisión de subir, aunque la ordenanza no se haya tocado."
+ },
+ {
+  "id": "17.09#1",
+  "codigo": "17.09",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "Imposición autonómica y local",
+  "q": "¿Por qué las comunidades apenas tienen tributos propios relevantes?",
+  "a": "Porque la LOFCA les prohíbe gravar hechos imponibles ya gravados por el Estado, y los grandes —renta, consumo, patrimonio, transmisiones— están ocupados. Su poder tributario real no está en crear tributos sino en modular los cedidos: IRPF autonómico, Patrimonio, Sucesiones, ITP-AJD y juego."
+ },
+ {
+  "id": "17.09#2",
+  "codigo": "17.09",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "Imposición autonómica y local",
+  "q": "¿Qué distingue una tasa de un precio público?",
+  "a": "La tasa es un tributo: procede cuando el servicio es de solicitud obligatoria o solo lo presta el sector público, exige rango legal y su importe no puede superar el coste. El precio público no es tributo, procede cuando el servicio es voluntario y concurrente, y debe cubrir al menos el coste. La tasa tiene techo; el precio público, suelo."
+ },
+ {
+  "id": "17.09#3",
+  "codigo": "17.09",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "Imposición autonómica y local",
+  "q": "Alguien compra por 200.000 € y vende por 150.000 €. Con el método objetivo, valor catastral del suelo 60.000 € y coeficiente del 42 %, ¿qué plusvalía municipal resultaba?",
+  "a": "Una base de 25.200 € y una cuota de 7.560 € al 30 %, pese a una pérdida real de 50.000 €. El Tribunal Constitucional anuló ese método por gravar una capacidad económica inexistente, y la reforma permite optar por la plusvalía realmente obtenida."
+ },
+ {
+  "id": "17.09#4",
+  "codigo": "17.09",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "Imposición autonómica y local",
+  "q": "¿Por qué no se pueden sumar sin más los déficits de Estado, comunidades y corporaciones locales?",
+  "a": "Porque entre los subsectores circulan transferencias muy grandes —entregas a cuenta, liquidaciones, mecanismos de liquidez— que desplazan el saldo de uno a otro sin que cambie ninguna política de gasto. El dato comparable es el déficit consolidado del conjunto, donde esas operaciones internas se eliminan."
+ },
+ {
+  "id": "17.09#t0",
+  "codigo": "17.09",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "Imposición autonómica y local",
+  "q": "Tras una revisión catastral la cuota del IBI sube un 66,7 % sin que el pleno apruebe nada. ¿Cómo debe interpretarse?",
+  "a": "**Mantener el tipo cuando la base sube es la decisión de subir: el tipo neutral era el 0,396 %.** La cuota depende de dos factores que pertenecen a Administraciones distintas, y no actuar sobre uno de ellos es una decisión con efectos.",
+  "opciones": [
+   "El Estado ha subido el impuesto, porque el valor catastral lo fija el Catastro",
+   "Mantener el tipo cuando la base sube es la decisión de subir: el tipo neutral era el 0,396 %",
+   "El ayuntamiento ha subido el impuesto, porque la cuota la aprueba el pleno",
+   "No hay subida real, porque el tipo de gravamen no se ha modificado"
   ],
   "correcta": 1
+ },
+ {
+  "id": "17.09#t1",
+  "codigo": "17.09",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "Imposición autonómica y local",
+  "q": "¿Qué pueden hacer las comunidades autónomas con el IVA que se les cede?",
+  "a": "**Recibir un porcentaje de la recaudación, sin ninguna competencia normativa.** Es el ejemplo que separa ceder recaudación de ceder poder normativo, dos cosas que no van siempre juntas.",
+  "opciones": [
+   "Establecer deducciones autonómicas como en el IRPF",
+   "Recibir un porcentaje de la recaudación, sin ninguna competencia normativa",
+   "Fijar tipos propios dentro de las horquillas que marque la ley estatal",
+   "Crear exenciones para sectores de interés regional"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "17.09#t2",
+  "codigo": "17.09",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "Imposición autonómica y local",
+  "q": "Un ayuntamiento quiere cobrar por el uso de una piscina municipal, servicio voluntario que también prestan gimnasios privados. ¿Qué figura procede?",
+  "a": "**Un precio público, que debe cubrir al menos el coste del servicio.** Servicio voluntario y concurrente con el sector privado, y por eso la regla del coste se invierte respecto de la tasa.",
+  "opciones": [
+   "Una tasa, porque la presta una Administración pública",
+   "Un impuesto local, si así lo recoge la ordenanza fiscal",
+   "Una contribución especial, por tratarse de una instalación municipal",
+   "Un precio público, que debe cubrir al menos el coste del servicio"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "17.09#t3",
+  "codigo": "17.09",
+  "bloque": 17,
+  "nivel": 2,
+  "titulo": "Imposición autonómica y local",
+  "q": "Dos herencias equivalentes pagan 60.000 € y 600 € según la comunidad del causante. ¿Qué explica la diferencia?",
+  "a": "**Que Sucesiones es un tributo cedido con amplias competencias normativas, y una comunidad aplica una bonificación del 99 %.** Es el sistema funcionando como fue diseñado: la autonomía de ingreso produce diferencias territoriales, con competencia a la baja como efecto no buscado.",
+  "opciones": [
+   "Que el impuesto es progresivo y una de las bases cae en un tramo inferior",
+   "Que una de las comunidades tiene régimen foral y la otra no",
+   "Que Sucesiones es un tributo cedido con amplias competencias normativas, y una comunidad aplica una bonificación del 99 %",
+   "Que una de las herencias incluye bienes exentos por la normativa estatal"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "17.10#0",
+  "codigo": "17.10",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Armonización fiscal en la Unión Europea",
+  "q": "Una filial obtiene 10.000.000 € de beneficio con un tipo efectivo del 6 %. ¿Cuánto paga el grupo con Pilar Dos y quién lo cobra?",
+  "a": "Paga 1.500.000 € en total: 600.000 € en la jurisdicción de la filial y 900.000 € de impuesto complementario que recauda el Estado de la matriz. Si esa jurisdicción subiera su tipo al 15 %, el grupo pagaría exactamente lo mismo y ella se quedaría los 1.500.000 € íntegros."
+ },
+ {
+  "id": "17.10#1",
+  "codigo": "17.10",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Armonización fiscal en la Unión Europea",
+  "q": "¿Por qué el tipo mínimo global invierte el incentivo a la competencia fiscal?",
+  "a": "Porque por debajo del 15 % la carga total del grupo no depende del tipo local: bajarlo no ahorra nada a la empresa, solo transfiere recaudación a otro fisco. A la jurisdicción de baja tributación le conviene entonces subir al 15 % para quedarse ella ese importe, y varias han introducido impuestos complementarios nacionales por eso."
+ },
+ {
+  "id": "17.10#2",
+  "codigo": "17.10",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Armonización fiscal en la Unión Europea",
+  "q": "¿Por qué se armonizó el IVA en Europa y no el Impuesto sobre Sociedades?",
+  "a": "Porque los impuestos indirectos en cascada obligaban a ajustes en frontera imposibles de calcular con exactitud, así que sin un impuesto común y deducible no había mercado interior. Sociedades no obstruye la circulación, y para varios Estados la fiscalidad ventajosa es su modelo económico: con la regla de unanimidad, quien más pierde puede vetar."
+ },
+ {
+  "id": "17.10#3",
+  "codigo": "17.10",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Armonización fiscal en la Unión Europea",
+  "q": "¿Qué armoniza exactamente la Directiva del IVA y qué deja a cada Estado?",
+  "a": "Armoniza la estructura —hecho imponible, exenciones, reglas de localización— y fija tipos mínimos del 15 % general y 5 % reducido. Los tipos concretos por encima de ese suelo los elige cada Estado, y por eso varían tanto dentro de la Unión."
+ },
+ {
+  "id": "17.10#4",
+  "codigo": "17.10",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Armonización fiscal en la Unión Europea",
+  "q": "¿Por qué el presupuesto europeo usa la Renta Nacional Bruta y no el PIB como regla de reparto?",
+  "a": "Porque el PIB mide la producción dentro del territorio y la RNB la renta de las unidades residentes, que es lo relevante para medir capacidad contributiva. Con el PIB, un país con mucha producción atribuible a no residentes contribuiría de más. La contrapartida es que una revisión metodológica del SEC cambia lo que cada Estado aporta."
+ },
+ {
+  "id": "17.10#t0",
+  "codigo": "17.10",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Armonización fiscal en la Unión Europea",
+  "q": "¿Por qué la imposición indirecta está mucho más armonizada que la directa en la Unión Europea?",
+  "a": "**Porque los impuestos indirectos obstruían el mercado interior y los directos no, y toda norma fiscal exige unanimidad.** Sin un impuesto común y deducible en cadena no se podían suprimir los ajustes fiscales en frontera.",
+  "opciones": [
+   "Porque las directivas fiscales indirectas se aprueban por mayoría cualificada y las directas por unanimidad",
+   "Porque los impuestos directos son competencia exclusiva de los Estados según el Tratado",
+   "Porque los impuestos indirectos obstruían el mercado interior y los directos no, y toda norma fiscal exige unanimidad",
+   "Porque recauda más y por tanto interesa más a la Comisión"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "17.10#t1",
+  "codigo": "17.10",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Armonización fiscal en la Unión Europea",
+  "q": "Una filial con 10.000.000 € de beneficio tributa al 6 % en su jurisdicción. Con Pilar Dos, ¿qué ocurre?",
+  "a": "**El Estado de la matriz cobra 900.000 € de impuesto complementario y el grupo paga 1.500.000 € en total.** Y la clave es que el grupo pagaría lo mismo si la jurisdicción cobrara el 15 %: solo cambia quién recauda.",
+  "opciones": [
+   "Se le aplica una sanción equivalente a la diferencia de tipos",
+   "La filial debe rectificar su declaración local y pagar allí el 15 %",
+   "El Estado de la matriz cobra 900.000 € de impuesto complementario y el grupo paga 1.500.000 € en total",
+   "El grupo queda exento del complemento si la jurisdicción no ha firmado el acuerdo"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "17.10#t2",
+  "codigo": "17.10",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Armonización fiscal en la Unión Europea",
+  "q": "¿Qué es el «recurso propio del IVA» del presupuesto de la Unión?",
+  "a": "**Un porcentaje aplicado a una base de IVA armonizada estadísticamente, que transfiere cada Estado.** Y por eso su cuantía depende de una metodología, no de lo que cada Hacienda haya ingresado ese año.",
+  "opciones": [
+   "Un porcentaje de la recaudación real de IVA que cada Estado ingresa directamente en la Unión",
+   "Un porcentaje aplicado a una base de IVA armonizada estadísticamente, que transfiere cada Estado",
+   "El importe del fraude de IVA que la Comisión reclama a los Estados",
+   "Un IVA europeo que Bruselas cobra a las empresas transfronterizas"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "17.10#t3",
+  "codigo": "17.10",
+  "bloque": 17,
+  "nivel": 3,
+  "titulo": "Armonización fiscal en la Unión Europea",
+  "q": "¿Qué efecto tiene el tipo mínimo global sobre la competencia fiscal entre Estados?",
+  "a": "**La desplaza hacia subvenciones, créditos fiscales cualificados y ayudas a la inversión.** El terreno de juego cambia porque las reglas tratan esos instrumentos de otro modo que una rebaja de tipo.",
+  "opciones": [
+   "La intensifica, al fijar un suelo que los países tratan de esquivar bajando otros impuestos",
+   "La elimina, porque todos los países pasan a aplicar el mismo tipo efectivo",
+   "No la afecta, porque los grupos siguen pudiendo localizar beneficios donde quieran",
+   "La desplaza hacia subvenciones, créditos fiscales cualificados y ayudas a la inversión"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "18.01#0",
+  "codigo": "18.01",
+  "bloque": 18,
+  "nivel": 1,
+  "titulo": "El presupuesto público: concepto y principios",
+  "q": "Un programa con crédito de 10.000.000 € compromete 10.400.000 €, y una tasa prevista en 12.000.000 € recauda 10.800.000 €. ¿Qué consecuencias tiene cada desvío?",
+  "a": "El exceso de gasto de 400.000 € es un acto nulo de pleno derecho, con responsabilidad personal, salvo que se hubiera tramitado antes una modificación de crédito. El defecto de ingreso de 1.200.000 € no infringe nada: la previsión de ingresos es una estimación, no una autorización."
+ },
+ {
+  "id": "18.01#1",
+  "codigo": "18.01",
+  "bloque": 18,
+  "nivel": 1,
+  "titulo": "El presupuesto público: concepto y principios",
+  "q": "¿Qué significa que los créditos de gasto sean limitativos y vinculantes?",
+  "a": "Que fijan un máximo que no puede rebasarse y un destino que no puede alterarse. Es el principio de especialidad en sus tres dimensiones: la finalidad concreta, el importe y el ejercicio. Sin él, la autorización parlamentaria sería una cifra global repartible a discreción del Ejecutivo."
+ },
+ {
+  "id": "18.01#2",
+  "codigo": "18.01",
+  "bloque": 18,
+  "nivel": 1,
+  "titulo": "El presupuesto público: concepto y principios",
+  "q": "¿Por qué el presupuesto siempre cuadra y sin embargo hay déficit?",
+  "a": "Porque el equilibrio contable del documento se consigue incluyendo la emisión de deuda entre los ingresos. El saldo que informa del déficit es el de las operaciones no financieras, no la diferencia entre los totales de ingreso y gasto, que por construcción es cero."
+ },
+ {
+  "id": "18.01#3",
+  "codigo": "18.01",
+  "bloque": 18,
+  "nivel": 1,
+  "titulo": "El presupuesto público: concepto y principios",
+  "q": "¿Qué cambia realmente cuando un presupuesto se prorroga?",
+  "a": "No se paraliza el Estado: se congela la estructura de prioridades del ejercicio anterior y se desplaza poder del Parlamento al Gobierno, porque la adaptación a la realidad se hace mediante modificaciones de crédito administrativas en lugar de mediante una ley debatida y enmendada."
+ },
+ {
+  "id": "18.01#4",
+  "codigo": "18.01",
+  "bloque": 18,
+  "nivel": 1,
+  "titulo": "El presupuesto público: concepto y principios",
+  "q": "¿Por qué el déficit de la liquidación presupuestaria no coincide con el del SEC?",
+  "a": "Porque el presupuesto se ejecuta en criterio administrativo y la contabilidad nacional mide en devengo económico. La IGAE publica un ajuste que traduce un saldo en el otro, con partidas como los intereses devengados y no pagados o la reclasificación de entes. Las dos cifras son correctas y miden cosas distintas."
+ },
+ {
+  "id": "18.01#t0",
+  "codigo": "18.01",
+  "bloque": 18,
+  "nivel": 1,
+  "titulo": "El presupuesto público: concepto y principios",
+  "q": "¿Cuál es la diferencia esencial entre el estado de gastos y el de ingresos de un presupuesto?",
+  "a": "**El de gastos es limitativo y vinculante; el de ingresos es una mera estimación.** Gastar por encima del crédito es nulo de pleno derecho; recaudar menos de lo previsto no infringe nada.",
+  "opciones": [
+   "El de gastos se ejecuta en devengo y el de ingresos en caja",
+   "Ninguna: ambos son previsiones que se ajustan durante el ejercicio",
+   "El de ingresos lo aprueba el Parlamento y el de gastos el Gobierno",
+   "El de gastos es limitativo y vinculante; el de ingresos es una mera estimación"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "18.01#t1",
+  "codigo": "18.01",
+  "bloque": 18,
+  "nivel": 1,
+  "titulo": "El presupuesto público: concepto y principios",
+  "q": "Un órgano necesita gastar más de lo autorizado en un programa. ¿Qué procede?",
+  "a": "**Tramitar previamente una modificación de crédito por el procedimiento que corresponda.** Suplemento, transferencia, generación o ampliación, cada una con su órgano competente, y siempre antes de comprometer el gasto.",
+  "opciones": [
+   "Gastar y justificar el exceso en la liquidación del ejercicio",
+   "Tramitar previamente una modificación de crédito por el procedimiento que corresponda",
+   "Trasladar el exceso al presupuesto del ejercicio siguiente",
+   "Compensarlo con la mayor recaudación obtenida en otro concepto de ingreso"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "18.01#t2",
+  "codigo": "18.01",
+  "bloque": 18,
+  "nivel": 1,
+  "titulo": "El presupuesto público: concepto y principios",
+  "q": "¿Qué protege el principio de universalidad?",
+  "a": "**Que todos los ingresos y gastos figuren por su importe íntegro, sin compensarse entre sí.** Un ingreso neteado contra un gasto es un gasto que el Parlamento no llega a ver ni a autorizar.",
+  "opciones": [
+   "Que el presupuesto se apruebe antes del inicio del ejercicio",
+   "Que ningún ingreso quede afectado a una finalidad concreta",
+   "Que todos los ingresos y gastos figuren por su importe íntegro, sin compensarse entre sí",
+   "Que exista un único documento presupuestario para todo el sector público"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "18.01#t3",
+  "codigo": "18.01",
+  "bloque": 18,
+  "nivel": 1,
+  "titulo": "El presupuesto público: concepto y principios",
+  "q": "Un ministerio ejecuta el 70 % de su crédito de inversión. ¿Qué puede concluirse?",
+  "a": "**Que puede haber ahorro o incapacidad de gestión, y el crédito no ejecutado se anula al cierre.** El dato por sí solo no distingue las dos causas, y esa ambigüedad es justo lo que hay que tener presente al leerlo.",
+  "opciones": [
+   "Que ha incumplido el presupuesto, porque los créditos son vinculantes",
+   "Que ha sido prudente y ha ahorrado un 30 % del gasto previsto",
+   "Que el crédito restante se acumulará al del ejercicio siguiente",
+   "Que puede haber ahorro o incapacidad de gestión, y el crédito no ejecutado se anula al cierre"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "18.02#0",
+  "codigo": "18.02",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Los Presupuestos Generales del Estado: el ciclo",
+  "q": "Crédito definitivo 5.000.000 €, autorizado 4.800.000 €, comprometido 4.500.000 €, obligaciones 4.200.000 € y pagos 3.900.000 €. ¿Cuál es el grado de ejecución?",
+  "a": "El 84,0 %, calculado sobre las obligaciones reconocidas (4.200.000 / 5.000.000). Con los pagos saldría un 78 %, que no mide ejecución sino velocidad de tesorería. Quedan además 300.000 € de obligaciones pendientes de pago."
+ },
+ {
+  "id": "18.02#1",
+  "codigo": "18.02",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Los Presupuestos Generales del Estado: el ciclo",
+  "q": "¿Por qué retrasar el pago de facturas no reduce el déficit en términos del SEC?",
+  "a": "Porque la contabilidad nacional imputa en devengo, cuando la prestación se ha realizado, igual que la fase O de obligación reconocida. Retrasar el pago solo desplaza la fase P: mejora la caja del Tesoro y empeora el período medio de pago, pero el gasto ya está computado."
+ },
+ {
+  "id": "18.02#2",
+  "codigo": "18.02",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Los Presupuestos Generales del Estado: el ciclo",
+  "q": "Un grupo parlamentario quiere aumentar en 200 millones un programa financiándolo con deuda. ¿Puede?",
+  "a": "No sin la conformidad del Gobierno, que el artículo 134.6 exige para toda enmienda que aumente créditos o disminuya ingresos. Sí podría hacerlo si minorara otra partida en el mismo importe, porque entonces no se incrementan los créditos totales: el Parlamento reasigna dentro del techo, pero no lo eleva."
+ },
+ {
+  "id": "18.02#3",
+  "codigo": "18.02",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Los Presupuestos Generales del Estado: el ciclo",
+  "q": "¿Qué distingue la fase de autorización de la de compromiso?",
+  "a": "La autorización reserva crédito para una finalidad, sin destinatario todavía; el compromiso o disposición acuerda el gasto con un tercero concreto, tras la adjudicación. Un programa con mucha autorización y poco compromiso suele indicar licitaciones que no se cerraron a tiempo, no ahorro."
+ },
+ {
+  "id": "18.02#4",
+  "codigo": "18.02",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Los Presupuestos Generales del Estado: el ciclo",
+  "q": "¿Cuándo se toma realmente la decisión de mayor calado del presupuesto?",
+  "a": "Antes de que empiece el ciclo formal, al aprobarse el techo de gasto no financiero junto con los objetivos de estabilidad. Ese techo fija cuánto hay que repartir; el debate parlamentario posterior versa sobre la distribución, no sobre el volumen."
+ },
+ {
+  "id": "18.02#t0",
+  "codigo": "18.02",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Los Presupuestos Generales del Estado: el ciclo",
+  "q": "¿Con qué magnitud se mide el gasto ejecutado de un ejercicio?",
+  "a": "**Con las obligaciones reconocidas, la fase O de la secuencia A-D-O-P.** Registra el gasto cuando la prestación se ha realizado y acreditado, que es lo que se compara con el crédito.",
+  "opciones": [
+   "Con los compromisos adquiridos con terceros tras la adjudicación",
+   "Con las obligaciones reconocidas, la fase O de la secuencia A-D-O-P",
+   "Con los pagos realizados, porque son la salida efectiva de dinero",
+   "Con el crédito autorizado, que es el límite aprobado por las Cortes"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "18.02#t1",
+  "codigo": "18.02",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Los Presupuestos Generales del Estado: el ciclo",
+  "q": "Una enmienda aumenta 200 millones un programa y minora otro en la misma cuantía. ¿Requiere conformidad del Gobierno?",
+  "a": "**No, porque no incrementa los créditos totales del presupuesto.** El Parlamento puede reasignar libremente dentro del techo; lo que no puede es elevarlo.",
+  "opciones": [
+   "No, porque no incrementa los créditos totales del presupuesto",
+   "Sí, porque toda enmienda al estado de gastos la requiere",
+   "No, porque las enmiendas parciales nunca la requieren",
+   "Sí, salvo que el Senado la haya aprobado previamente"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "18.02#t2",
+  "codigo": "18.02",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Los Presupuestos Generales del Estado: el ciclo",
+  "q": "¿Qué son las «facturas en el cajón» desde el punto de vista de la contabilidad nacional?",
+  "a": "**Gasto realizado y no reconocido en presupuesto, que el SEC sí computa como gasto.** El hecho económico ocurrió, así que genera gasto para el SEC aunque el expediente no se tramitara: de ahí una partida fija del ajuste.",
+  "opciones": [
+   "Compromisos adquiridos que no llegaron a ejecutarse dentro del ejercicio",
+   "Obligaciones reconocidas que quedan pendientes de pago al cierre",
+   "Gasto realizado y no reconocido en presupuesto, que el SEC sí computa como gasto",
+   "Pagos aplazados que reducen el déficit del ejercicio"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "18.02#t3",
+  "codigo": "18.02",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Los Presupuestos Generales del Estado: el ciclo",
+  "q": "¿Cuándo debe presentarse el proyecto de Presupuestos ante el Congreso?",
+  "a": "**Al menos tres meses antes de que expire el presupuesto vigente.** Es decir, antes del 1 de octubre, para que las Cortes dispongan de tiempo de tramitación.",
+  "opciones": [
+   "Al menos tres meses antes de que expire el presupuesto vigente",
+   "Dentro de los treinta días siguientes a la aprobación del techo de gasto",
+   "En el primer periodo de sesiones de cada año natural",
+   "Antes del 31 de diciembre del ejercicio anterior"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "18.03#0",
+  "codigo": "18.03",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Estructuras presupuestarias: orgánica, económica y por programas",
+  "q": "Un presupuesto tiene 186.000 de ingresos no financieros, 195.000 de gastos no financieros, 21.000 de emisión y 12.000 de amortización. ¿Cuál es el déficit y cómo se financia?",
+  "a": "El déficit es de 9.000 millones, la diferencia entre los capítulos 1 a 7 de cada lado. Se financia con una variación neta de pasivos de 9.000 (21.000 emitidos menos 12.000 amortizados). El documento cuadra en 207.000 por ambos lados, porque la emisión se calcula para que cuadre."
+ },
+ {
+  "id": "18.03#1",
+  "codigo": "18.03",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Estructuras presupuestarias: orgánica, económica y por programas",
+  "q": "¿Por qué las tres clasificaciones son necesarias y no redundantes?",
+  "a": "Porque responden a preguntas distintas: la orgánica dice quién gasta y permite exigir responsabilidad; la económica dice en qué se gasta y permite calcular el saldo; la de programas dice para qué se gasta y permite comparar finalidades cruzando los organigramas. Ninguna puede responder a las preguntas de las otras."
+ },
+ {
+  "id": "18.03#2",
+  "codigo": "18.03",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Estructuras presupuestarias: orgánica, económica y por programas",
+  "q": "¿Qué significa que un presupuesto tenga ahorro bruto negativo?",
+  "a": "Que los ingresos corrientes de los capítulos 1 a 5 no cubren el gasto corriente de los capítulos 1 a 4, es decir, que se está financiando con deuda el funcionamiento ordinario y no la inversión. Es el indicador de alarma clásico de cualquier hacienda pública."
+ },
+ {
+  "id": "18.03#3",
+  "codigo": "18.03",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Estructuras presupuestarias: orgánica, económica y por programas",
+  "q": "¿Por qué Eurostat vigila las operaciones del capítulo 8?",
+  "a": "Porque los préstamos y aportaciones de capital no computan como gasto no financiero y pueden sacar operaciones del déficit presupuestario aunque salga dinero de la caja. Si el préstamo no es realmente recuperable, debe reclasificarse como transferencia del capítulo 7 y sí computar."
+ },
+ {
+  "id": "18.03#4",
+  "codigo": "18.03",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Estructuras presupuestarias: orgánica, económica y por programas",
+  "q": "¿Por qué el gasto en intereses del presupuesto no coincide con el del SEC?",
+  "a": "Porque el SEC los registra en devengo, imputándolos al periodo en que se generan, y el presupuesto por vencimiento del cupón. La brecha es estructural en cualquier año con emisiones a descuento o cupones largos, y forma parte del ajuste de contabilidad nacional."
+ },
+ {
+  "id": "18.03#t0",
+  "codigo": "18.03",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Estructuras presupuestarias: orgánica, económica y por programas",
+  "q": "Un presupuesto suma 207.000 millones de ingreso y 207.000 de gasto. ¿Qué se deduce?",
+  "a": "**Nada sobre el déficit: cuadra por construcción, porque la emisión de deuda figura como ingreso.** El déficit hay que buscarlo en el saldo de los capítulos 1 a 7, que aquí es de −9.000 millones.",
+  "opciones": [
+   "Que está equilibrado y no hay déficit",
+   "Nada sobre el déficit: cuadra por construcción, porque la emisión de deuda figura como ingreso",
+   "Que el ahorro bruto es exactamente cero",
+   "Que los capítulos 8 y 9 están a cero en ambos lados"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "18.03#t1",
+  "codigo": "18.03",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Estructuras presupuestarias: orgánica, económica y por programas",
+  "q": "El Estado concede un préstamo de 2.000 millones a una empresa pública. ¿Cómo afecta al déficit presupuestario?",
+  "a": "**No lo afecta, al ser capítulo 8, salvo que se reclasifique por no ser recuperable.** Por eso Eurostat comprueba si es un préstamo verdadero o una transferencia encubierta que debería ir al capítulo 7.",
+  "opciones": [
+   "Lo reduce, porque genera un derecho de cobro futuro",
+   "Lo aumenta en 2.000 millones, porque sale dinero de la caja",
+   "No lo afecta, al ser capítulo 8, salvo que se reclasifique por no ser recuperable",
+   "Lo aumenta solo en la parte de intereses no percibidos"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "18.03#t2",
+  "codigo": "18.03",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Estructuras presupuestarias: orgánica, económica y por programas",
+  "q": "Un ministerio gestiona 30.000 millones, de los que 27.000 son transferencias corrientes. ¿Qué puede afirmarse?",
+  "a": "**Que gestiona ese importe pero lo ejecutan terceros: hay que mirar la clasificación por programas.** Es la única clasificación que cruza los organigramas y responde a cuánto se dedica realmente a una finalidad.",
+  "opciones": [
+   "Que su presupuesto está mal clasificado, porque las transferencias son capítulo 7",
+   "Que gestiona ese importe pero lo ejecutan terceros: hay que mirar la clasificación por programas",
+   "Que su gestión es ineficiente por dedicar tan poco a actividad propia",
+   "Que su política es la mayor del Estado en volumen de gasto"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "18.03#t3",
+  "codigo": "18.03",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Estructuras presupuestarias: orgánica, económica y por programas",
+  "q": "¿Qué agrupa la clasificación económica en sus capítulos 1 a 4?",
+  "a": "**Las operaciones corrientes: personal, bienes y servicios, gastos financieros y transferencias corrientes.** Son el gasto que se repite cada año, frente a los capítulos 6 y 7, que crean activos.",
+  "opciones": [
+   "Los gastos de los ministerios, frente a los de los organismos autónomos",
+   "Las operaciones no financieras en su conjunto",
+   "Las operaciones corrientes: personal, bienes y servicios, gastos financieros y transferencias corrientes",
+   "Los programas de gasto social, frente a los de gasto productivo"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "18.04#0",
+  "codigo": "18.04",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Estabilidad presupuestaria y reglas fiscales",
+  "q": "Gasto computable de 100.000 millones y tasa de referencia del 2,6 %. ¿Cuál es el techo, y qué pasa si se aprueba una subida permanente de ingresos de 1.000 millones?",
+  "a": "El techo es 102.600 millones, con un margen de 2.600. Con una subida permanente de ingresos de 1.000 millones el techo sube a 103.600. Si el ingreso extra fuera puntual, el techo no se movería: la regla solo admite ajuste por medidas permanentes."
+ },
+ {
+  "id": "18.04#1",
+  "codigo": "18.04",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Estabilidad presupuestaria y reglas fiscales",
+  "q": "¿Por qué la regla de gasto es más robusta que el objetivo de déficit estructural?",
+  "a": "Porque opera sobre una variable observable y controlable por el Gobierno, mientras que el déficit estructural depende del PIB potencial y de la brecha de producción, que no se observan, se estiman con error y se revisan a la baja justo en las recesiones."
+ },
+ {
+  "id": "18.04#2",
+  "codigo": "18.04",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Estabilidad presupuestaria y reglas fiscales",
+  "q": "¿Por qué es un acierto de diseño que las reglas tengan cláusula de escape?",
+  "a": "Porque ante un shock imprevisible una regla sin excepción se rompe de hecho y pierde credibilidad para el futuro. Preverla dentro de la norma, con supuestos tasados y duración limitada, permite que la regla siga siendo creíble al reactivarse. La dificultad está en desactivarla, no en activarla."
+ },
+ {
+  "id": "18.04#3",
+  "codigo": "18.04",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Estabilidad presupuestaria y reglas fiscales",
+  "q": "¿Qué condición hace que la ratio de deuda se reduzca sin superávit primario?",
+  "a": "Que el tipo de interés implícito sea inferior al crecimiento nominal de la economía. Entonces el superávit primario necesario para estabilizar la deuda es negativo, es decir, la ratio baja incluso con déficit primario. Si la relación se invierte, la misma deuda exige superávit."
+ },
+ {
+  "id": "18.04#4",
+  "codigo": "18.04",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Estabilidad presupuestaria y reglas fiscales",
+  "q": "¿Por qué la clasificación de una empresa pública dentro del sector Administraciones Públicas puede afectar al cumplimiento de las reglas?",
+  "a": "Porque los objetivos se miden en contabilidad nacional sobre el sector S.13. Si la empresa no cubre con ventas al menos la mitad de sus costes de producción, se clasifica dentro y su déficit y su deuda computan. Por eso la sectorización la deciden Eurostat y el INE, y no el Gobierno sujeto a la regla."
+ },
+ {
+  "id": "18.04#t0",
+  "codigo": "18.04",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Estabilidad presupuestaria y reglas fiscales",
+  "q": "Una administración obtiene 1.000 millones extra por una privatización. ¿Cómo afecta a su techo de gasto?",
+  "a": "**No lo modifica: solo lo ajustan las medidas permanentes de ingreso.** Es el mecanismo que impide consolidar gasto permanente sobre ingresos que van a desaparecer.",
+  "opciones": [
+   "Lo eleva en la parte proporcional al crecimiento potencial",
+   "Lo eleva en 1.000 millones, porque son ingresos disponibles",
+   "Lo reduce, al tratarse de una operación de capítulo 8",
+   "No lo modifica: solo lo ajustan las medidas permanentes de ingreso"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "18.04#t1",
+  "codigo": "18.04",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Estabilidad presupuestaria y reglas fiscales",
+  "q": "¿Por qué el déficit estructural es difícil de usar como regla operativa?",
+  "a": "**Porque depende del PIB potencial y de la brecha de producción, que no se observan y se revisan mucho.** Y se revisan a la baja precisamente en las recesiones, reclasificando como estructural lo que parecía cíclico.",
+  "opciones": [
+   "Porque solo puede calcularse al cerrar el ejercicio",
+   "Porque depende del PIB potencial y de la brecha de producción, que no se observan y se revisan mucho",
+   "Porque no distingue entre gasto corriente y de capital",
+   "Porque el marco europeo lo eliminó en la reforma de 2024"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "18.04#t2",
+  "codigo": "18.04",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Estabilidad presupuestaria y reglas fiscales",
+  "q": "Un gobierno quiere bajar impuestos de forma permanente en 1.000 millones. ¿Qué le exige la regla de gasto?",
+  "a": "**Reducir su techo de gasto en esos mismos 1.000 millones.** Por eso la regla ata las dos mitades del sesgo deficitario y no solo a quien quiere gastar más.",
+  "opciones": [
+   "Nada: la regla limita el gasto, no los ingresos",
+   "Reducir su techo de gasto en esos mismos 1.000 millones",
+   "Someterlo a autorización previa de la Comisión Europea",
+   "Compensarlo con deuda, que no computa en el gasto computable"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "18.04#t3",
+  "codigo": "18.04",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Estabilidad presupuestaria y reglas fiscales",
+  "q": "¿Qué indica que el tipo de interés implícito de la deuda sea inferior al crecimiento nominal?",
+  "a": "**Que la ratio de deuda se reduce aunque haya déficit primario.** El superávit primario necesario para estabilizarla es negativo: la deuda se diluye con el crecimiento.",
+  "opciones": [
+   "Que la deuda deja de computar a efectos del límite del 60 %",
+   "Que los intereses dejan de figurar en el capítulo 3 del presupuesto",
+   "Que el país no puede tener déficit estructural",
+   "Que la ratio de deuda se reduce aunque haya déficit primario"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "18.05#0",
+  "codigo": "18.05",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Presupuestos autonómicos y locales",
+  "q": "Gasto de 20.000 millones, de ellos 14.000 rígidos, e ingresos modulables de 2.000. ¿Qué esfuerzo exige un ajuste de 1.000 millones por cada vía?",
+  "a": "Recortando solo el gasto no comprometido, un 16,7 % sobre una base de 6.000. Recortando linealmente el total, un 5 %, con sanidad y educación dentro. Subiendo los tributos modulables, un 50 % sobre una base de 2.000. La base del ingreso es la más pequeña, y por eso el ajuste se desplaza al gasto."
+ },
+ {
+  "id": "18.05#1",
+  "codigo": "18.05",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Presupuestos autonómicos y locales",
+  "q": "¿Por qué las entidades locales han presentado en conjunto mejores saldos que el resto de subsectores?",
+  "a": "Porque la ley les prohíbe presentar un presupuesto con déficit inicial, una restricción que opera antes de la aprobación y es más dura que cualquier objetivo negociado. Parte del resultado, sin embargo, es inversión que no se hizo, y conviene evaluar el marco por el saldo que logró y por el gasto que impidió."
+ },
+ {
+  "id": "18.05#2",
+  "codigo": "18.05",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Presupuestos autonómicos y locales",
+  "q": "Un ayuntamiento sin deuda tiene superávit y remanente positivo. ¿Puede destinarlo a inversión?",
+  "a": "No libremente. La regla de gasto limita el crecimiento del gasto computable con independencia de cómo se financie, y el destino del superávit está tasado: primero obligaciones pendientes de aplicar a presupuesto, después amortizar deuda y, bajo condiciones, inversiones financieramente sostenibles."
+ },
+ {
+  "id": "18.05#3",
+  "codigo": "18.05",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Presupuestos autonómicos y locales",
+  "q": "¿Por qué no pueden sumarse los presupuestos del Estado y de las comunidades?",
+  "a": "Porque el mismo euro se contaría dos veces: como transferencia del capítulo 4 en el presupuesto estatal y como gasto de personal y bienes en el autonómico que lo ejecuta. La magnitud con sentido económico es el conjunto consolidado, donde las operaciones internas se eliminan."
+ },
+ {
+  "id": "18.05#4",
+  "codigo": "18.05",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Presupuestos autonómicos y locales",
+  "q": "¿Qué problema añade el desfase de las entregas a cuenta?",
+  "a": "Que los recursos se calculan sobre previsiones y se liquidan dos años después, así que una liquidación negativa obliga a ajustar en el ejercicio corriente por decisiones tomadas dos años antes. Es una fuente de inestabilidad ajena a la gestión de quien presupuesta."
+ },
+ {
+  "id": "18.05#t0",
+  "codigo": "18.05",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Presupuestos autonómicos y locales",
+  "q": "¿En qué consiste la asimetría entre autonomía de gasto y de ingreso de las comunidades?",
+  "a": "**Ejecutan el grueso del gasto social con una capacidad de decisión sobre el ingreso mucho menor.** Por eso, ante un ajuste, el margen está casi todo en el gasto y casi nada en el ingreso.",
+  "opciones": [
+   "Deciden sus ingresos libremente y su gasto viene fijado por el Estado",
+   "Gastan e ingresan por igual, pero con distinto calendario",
+   "Ejecutan el grueso del gasto social con una capacidad de decisión sobre el ingreso mucho menor",
+   "Ejecutan poco gasto pero recaudan muchos tributos propios"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "18.05#t1",
+  "codigo": "18.05",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Presupuestos autonómicos y locales",
+  "q": "Un ayuntamiento sin deuda y con superávit quiere invertir su remanente. ¿Qué se lo impide?",
+  "a": "**La regla de gasto, que limita el gasto computable con independencia de cómo se financie.** Y el destino del superávit está además tasado, con la amortización de deuda antes que la inversión.",
+  "opciones": [
+   "La regla de gasto, que limita el gasto computable con independencia de cómo se financie",
+   "La prohibición de presentar presupuestos con déficit inicial",
+   "Nada: el remanente positivo es de libre disposición",
+   "La necesidad de autorización previa del Ministerio de Hacienda para toda inversión"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "18.05#t2",
+  "codigo": "18.05",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Presupuestos autonómicos y locales",
+  "q": "¿Por qué el ajuste autonómico tiende a concentrarse en inversión y gasto corriente no sanitario?",
+  "a": "**Porque el resto del gasto es rígido a corto plazo y ahí el recorte produce menos ruido inmediato.** Y es también donde más deterioro acumula, porque la inversión aplazada vuelve como reposición más cara.",
+  "opciones": [
+   "Porque el resto del gasto es rígido a corto plazo y ahí el recorte produce menos ruido inmediato",
+   "Porque la ley prohíbe recortar sanidad y educación",
+   "Porque son las únicas partidas de las que la comunidad es competente",
+   "Porque son las partidas mejor evaluadas y por tanto más fáciles de priorizar"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "18.05#t3",
+  "codigo": "18.05",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Presupuestos autonómicos y locales",
+  "q": "¿Qué obliga a hacer un remanente de tesorería negativo?",
+  "a": "**Reaccionar en el ejercicio siguiente reduciendo gastos, concertando crédito o presupuestando con superávit.** La ley tasa las tres vías, y la elección entre ellas es la única decisión que queda al gobierno local.",
+  "opciones": [
+   "Suspender la ejecución del presupuesto hasta su corrección",
+   "Nada, mientras el presupuesto del ejercicio se haya liquidado en equilibrio",
+   "Reaccionar en el ejercicio siguiente reduciendo gastos, concertando crédito o presupuestando con superávit",
+   "Devolver al Estado la parte no ejecutada de las transferencias recibidas"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "18.06#0",
+  "codigo": "18.06",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Sistema de financiación de las Comunidades Autónomas",
+  "q": "Dos comunidades con igual población ajustada tienen capacidades de 1.200 y 800. ¿Qué recursos les deja el Fondo de Garantía?",
+  "a": "1.050 y 950. Cada una aporta el 75 % de su capacidad (900 y 600), la bolsa de 1.500 se reparte por población ajustada (750 cada una) y se suma al 25 % no aportado. La diferencia se reduce de 400 a 100 y el orden se conserva, porque el 25 % sin nivelar preserva la ventaja de quien más capacidad tiene."
+ },
+ {
+  "id": "18.06#1",
+  "codigo": "18.06",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Sistema de financiación de las Comunidades Autónomas",
+  "q": "¿Qué es el problema de la ordinalidad y qué lo provoca?",
+  "a": "Que una comunidad con mayor capacidad fiscal por habitante ajustado acabe con menos recursos por habitante ajustado que otra con menor capacidad. No lo provoca el Fondo de Garantía, que preserva el orden, sino los fondos de suficiencia y convergencia y las cláusulas de statu quo acumuladas en cada reforma."
+ },
+ {
+  "id": "18.06#2",
+  "codigo": "18.06",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Sistema de financiación de las Comunidades Autónomas",
+  "q": "¿Qué es la población ajustada y por qué no es la empadronada?",
+  "a": "Es la población corregida por los factores que encarecen prestar los servicios: estructura de edad ponderada por el gasto sanitario de cada tramo, población escolar, superficie, dispersión e insularidad. Reconoce que atender a mil personas mayores dispersas cuesta más que a mil jóvenes concentrados."
+ },
+ {
+  "id": "18.06#3",
+  "codigo": "18.06",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Sistema de financiación de las Comunidades Autónomas",
+  "q": "¿Por qué un sistema que debía revisarse en 2014 sigue vigente?",
+  "a": "Porque el volumen de recursos está acotado y la negociación es de suma cero, así que reformarlo exige que alguien pierda, y ninguna comunidad lo acepta. La única vía practicada ha sido añadir dinero nuevo del Estado, que requiere margen fiscal. Además no hay acuerdo sobre el criterio: cada posición invoca un principio distinto y todos están reconocidos en el sistema."
+ },
+ {
+  "id": "18.06#4",
+  "codigo": "18.06",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Sistema de financiación de las Comunidades Autónomas",
+  "q": "¿Reduce el déficit de una comunidad recibir liquidez de un mecanismo extraordinario del Estado?",
+  "a": "No. Es una operación financiera, capítulo 8, que resuelve la tesorería pero no altera el saldo no financiero. Y en contabilidad nacional los recursos del sistema se imputan al ejercicio al que corresponden, no a aquel en que se cobran."
+ },
+ {
+  "id": "18.06#t0",
+  "codigo": "18.06",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Sistema de financiación de las Comunidades Autónomas",
+  "q": "¿Qué porcentaje de su capacidad tributaria aporta cada comunidad al Fondo de Garantía?",
+  "a": "**El 75 %, quedando el resto ligado a su propia capacidad fiscal.** Ese 25 % sin nivelar es lo que hace que el Fondo preserve el orden entre territorios.",
+  "opciones": [
+   "El 50 %, en simetría con la cesión del IRPF y del IVA",
+   "Un porcentaje variable negociado cada año en el Consejo de Política Fiscal y Financiera",
+   "El 75 %, quedando el resto ligado a su propia capacidad fiscal",
+   "El 100 %, que después se reparte íntegramente por población ajustada"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "18.06#t1",
+  "codigo": "18.06",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Sistema de financiación de las Comunidades Autónomas",
+  "q": "Tras el Fondo de Garantía, A tiene 1.050 y B 950; tras los demás fondos, A tiene 950 y B 1.100. ¿Qué ilustra?",
+  "a": "**El problema de la ordinalidad, provocado por los fondos añadidos y el statu quo.** Son las capas posteriores, que responden a acuerdos históricos, las que reordenan.",
+  "opciones": [
+   "Que la comunidad B tiene mayor población ajustada que A",
+   "El problema de la ordinalidad, provocado por los fondos añadidos y el statu quo",
+   "Un error de cálculo, porque la nivelación no puede invertir el orden",
+   "El funcionamiento normal del Fondo de Garantía, que iguala recursos"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "18.06#t2",
+  "codigo": "18.06",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Sistema de financiación de las Comunidades Autónomas",
+  "q": "¿Qué recoge la población ajustada que no recoge la empadronada?",
+  "a": "**El coste diferencial de prestar los servicios: edad, superficie, dispersión e insularidad.** Atender a mil mayores dispersos cuesta más que a mil jóvenes concentrados, y el reparto lo reconoce.",
+  "opciones": [
+   "La población activa, que es la que sostiene la recaudación",
+   "El coste diferencial de prestar los servicios: edad, superficie, dispersión e insularidad",
+   "La población corregida por los movimientos migratorios del último año",
+   "La población equivalente a tiempo completo de los usuarios de los servicios"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "18.06#t3",
+  "codigo": "18.06",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Sistema de financiación de las Comunidades Autónomas",
+  "q": "¿Por qué las cláusulas de statu quo dificultan reformar el sistema?",
+  "a": "**Porque garantizan que nadie pierda, y con recursos acotados eso convierte cada revisión en suma cero.** Y como también arrastran decisiones de reformas anteriores, el resultado deja de responder a un criterio explicable.",
+  "opciones": [
+   "Porque impiden que el Estado aporte recursos adicionales al modelo",
+   "Porque están recogidas en la Constitución y requieren reforma constitucional",
+   "Porque exigen unanimidad formal en el Consejo de Política Fiscal y Financiera",
+   "Porque garantizan que nadie pierda, y con recursos acotados eso convierte cada revisión en suma cero"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "18.07#0",
+  "codigo": "18.07",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Haciendas locales: recursos y suficiencia",
+  "q": "Un hogar paga 600 € de IBI y 1.800 € de IVA al año, y percibe el IBI como el impuesto más gravoso. ¿Por qué?",
+  "a": "Por ilusión fiscal: la carga percibida depende de cómo se paga, no solo de cuánto. El IBI llega en un recibo único, atribuible y con fecha; el IVA se fracciona en cientos de compras y se disuelve en el precio. La visibilidad convierte una carga tres veces menor en un agravio mayor."
+ },
+ {
+  "id": "18.07#1",
+  "codigo": "18.07",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Haciendas locales: recursos y suficiencia",
+  "q": "¿Por qué el IBI es, en teoría, el impuesto local ideal?",
+  "a": "Porque grava una base inmóvil por definición: el suelo no se deslocaliza, así que el impuesto no distorsiona la localización de la actividad ni puede eludirse trasladando la base a otra jurisdicción. Además capitaliza en el valor del suelo el beneficio de los servicios municipales."
+ },
+ {
+  "id": "18.07#2",
+  "codigo": "18.07",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Haciendas locales: recursos y suficiencia",
+  "q": "Si el 64 % de los ingresos de un ayuntamiento son tributos propios y tasas y el 30 % una transferencia, ¿por qué tiende a reclamar más transferencia antes que subir el IBI?",
+  "a": "Porque los recursos que controla son los que tienen coste político y el que no controla no le cuesta nada reclamar. La corresponsabilidad fiscal choca con un incentivo muy fuerte en sentido contrario, y por eso la vía menos costosa acaba siendo la más ejercida."
+ },
+ {
+  "id": "18.07#3",
+  "codigo": "18.07",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Haciendas locales: recursos y suficiencia",
+  "q": "¿Qué son las competencias impropias y qué problema financiero generan?",
+  "a": "Servicios que los ayuntamientos prestan sin tenerlos legalmente atribuidos —refuerzo escolar, ayudas sociales, orientación laboral— porque son la administración a la que la gente acude primero. Generan gasto real y recurrente sin financiación asignada, porque el sistema reparte recursos según competencias formales."
+ },
+ {
+  "id": "18.07#4",
+  "codigo": "18.07",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Haciendas locales: recursos y suficiencia",
+  "q": "¿Por qué el IBI se clasifica en el SEC en dos rúbricas distintas?",
+  "a": "Porque el SEC clasifica por naturaleza económica y no por el nombre del tributo. Pagado por un hogar es D.59, otros impuestos corrientes, y no afecta al PIB a precios de mercado; pagado por una empresa sobre un inmueble afecto es D.29, impuesto sobre la producción, y sí entra en la diferencia entre precios básicos y de mercado."
+ },
+ {
+  "id": "18.07#t0",
+  "codigo": "18.07",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Haciendas locales: recursos y suficiencia",
+  "q": "¿Qué explica que el IBI genere más rechazo que impuestos de mayor cuantía?",
+  "a": "**Su visibilidad: recibo único, importe atribuible y administración identificable.** Es la ilusión fiscal: la carga percibida depende de cómo se paga, no solo de cuánto.",
+  "opciones": [
+   "Que se exige aunque el inmueble no genere renta alguna",
+   "Que su base la fija el Estado y no el ayuntamiento que lo cobra",
+   "Su visibilidad: recibo único, importe atribuible y administración identificable",
+   "Que su tipo es superior al de la mayoría de figuras del sistema"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "18.07#t1",
+  "codigo": "18.07",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Haciendas locales: recursos y suficiencia",
+  "q": "¿Por qué la teoría de la imposición considera al IBI un buen impuesto local?",
+  "a": "**Porque su base es inmóvil y no puede deslocalizarse a otra jurisdicción.** El suelo no se traslada, así que el impuesto no distorsiona la localización de la actividad ni se elude cambiando de municipio.",
+  "opciones": [
+   "Porque su base es inmóvil y no puede deslocalizarse a otra jurisdicción",
+   "Porque su recaudación es estable frente al ciclo inmobiliario",
+   "Porque es progresivo respecto de la renta del contribuyente",
+   "Porque su gestión corresponde íntegramente al municipio que lo cobra"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "18.07#t2",
+  "codigo": "18.07",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Haciendas locales: recursos y suficiencia",
+  "q": "Un ayuntamiento financia un programa de refuerzo escolar. ¿Cómo se califica ese gasto?",
+  "a": "**Como competencia impropia: gasto real sin financiación asignada en el sistema.** El sistema reparte recursos por competencias formales, así que este gasto se paga detrayendo de lo propio.",
+  "opciones": [
+   "Como competencia impropia: gasto real sin financiación asignada en el sistema",
+   "Como contribución especial, al beneficiar a un colectivo determinado",
+   "Como gasto en competencia delegada, financiado por la comunidad autónoma",
+   "Como gasto irregular, que la intervención debe reparar"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "18.07#t3",
+  "codigo": "18.07",
+  "bloque": 18,
+  "nivel": 2,
+  "titulo": "Haciendas locales: recursos y suficiencia",
+  "q": "¿Cómo participan en los tributos del Estado los municipios de menos de 75.000 habitantes que no son capital?",
+  "a": "**Por variables: población ponderada, esfuerzo fiscal e inverso de la capacidad tributaria.** Es el modelo con componente de nivelación explícito, frente al de cesión, que vincula el recurso a la actividad del municipio.",
+  "opciones": [
+   "Mediante convenios bilaterales negociados con el Ministerio de Hacienda",
+   "Por cesión de un porcentaje territorializado de IRPF, IVA e Impuestos Especiales",
+   "Por variables: población ponderada, esfuerzo fiscal e inverso de la capacidad tributaria",
+   "A través de las diputaciones provinciales, que reparten a su criterio"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "18.08#0",
+  "codigo": "18.08",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Control y fiscalización: IGAE, Tribunal de Cuentas y AIReF",
+  "q": "¿Qué distingue a los tres controles por el momento en que actúan?",
+  "a": "La AIReF actúa antes de que el presupuesto se vote, verificando la previsión que lo sustenta. La IGAE actúa antes de cada acto de gasto, con la función interventora, y durante la ejecución. El Tribunal de Cuentas actúa dos o tres años después del cierre. Solo los dos primeros intervienen cuando el daño todavía es evitable."
+ },
+ {
+  "id": "18.08#1",
+  "codigo": "18.08",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Control y fiscalización: IGAE, Tribunal de Cuentas y AIReF",
+  "q": "Una Intervención formula un reparo, el gestor discrepa y la discrepancia se resuelve a favor de este. ¿Ha fallado el control?",
+  "a": "No. El sistema no busca impedir el gasto discutido sino que quede constancia de quién lo decidió y contra qué advertencia. Esa constancia es después decisiva para apreciar la negligencia grave que exige la responsabilidad contable, y la IGAE debe informar anualmente de esas resoluciones al Consejo de Ministros y al Tribunal de Cuentas."
+ },
+ {
+  "id": "18.08#2",
+  "codigo": "18.08",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Control y fiscalización: IGAE, Tribunal de Cuentas y AIReF",
+  "q": "¿Qué tres elementos exige la responsabilidad contable?",
+  "a": "Un menoscabo efectivo y cuantificable en los caudales públicos, dolo o negligencia grave, e infracción de una norma. Si falta cualquiera de los tres no hay responsabilidad, y por eso un gasto inútil pero legal y correctamente tramitado queda fuera del alcance de esta jurisdicción."
+ },
+ {
+  "id": "18.08#3",
+  "codigo": "18.08",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Control y fiscalización: IGAE, Tribunal de Cuentas y AIReF",
+  "q": "¿Por qué la omisión de fiscalización previa es más preocupante que un reparo?",
+  "a": "Porque elude el único control capaz de impedir un gasto antes de comprometerlo. Cuando se contrata primero y se tramita después, no hay reparo que formular: el asunto acaba en convalidación o reconocimiento extrajudicial de créditos, con la decisión ya tomada. Un reparo, en cambio, indica que el sistema está funcionando."
+ },
+ {
+  "id": "18.08#4",
+  "codigo": "18.08",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Control y fiscalización: IGAE, Tribunal de Cuentas y AIReF",
+  "q": "¿En qué sentido el INE ejerce una función de control fiscal?",
+  "a": "En que decide, bajo metodología de Eurostat, qué entidades entran en el sector Administraciones Públicas y cómo se registra cada operación, y los objetivos de estabilidad se miden sobre esas definiciones. Opera sobre la magnitud y no sobre la conducta, y por eso la independencia estadística es un asunto de disciplina fiscal."
+ },
+ {
+  "id": "18.08#t0",
+  "codigo": "18.08",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Control y fiscalización: IGAE, Tribunal de Cuentas y AIReF",
+  "q": "¿Cuál es el único control capaz de impedir que un gasto concreto llegue a comprometerse?",
+  "a": "**La función interventora de la IGAE, mediante el reparo suspensivo.** Actúa antes del acto y detiene la tramitación hasta que se subsane o se resuelva la discrepancia.",
+  "opciones": [
+   "La fiscalización del Tribunal de Cuentas sobre la Cuenta General",
+   "La función interventora de la IGAE, mediante el reparo suspensivo",
+   "La auditoría pública posterior del órgano de control externo autonómico",
+   "El informe de la AIReF sobre las líneas fundamentales del presupuesto"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "18.08#t1",
+  "codigo": "18.08",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Control y fiscalización: IGAE, Tribunal de Cuentas y AIReF",
+  "q": "Un gasto resulta inútil pero fue legal, correctamente tramitado y sin menoscabo cuantificable. ¿Genera responsabilidad contable?",
+  "a": "**No: faltan el menoscabo cuantificable y la infracción de norma que la jurisdicción exige.** Los tres elementos son necesarios y aquí faltan dos, de ahí archivos que sorprenden a la opinión pública.",
+  "opciones": [
+   "Sí, porque el perjuicio para el interés público es evidente",
+   "Sí, si el Tribunal de Cuentas lo recoge en su informe de fiscalización",
+   "No: faltan el menoscabo cuantificable y la infracción de norma que la jurisdicción exige",
+   "Solo si el gasto superó el crédito autorizado en el programa"
+  ],
+  "correcta": 2
+ },
+ {
+  "id": "18.08#t2",
+  "codigo": "18.08",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Control y fiscalización: IGAE, Tribunal de Cuentas y AIReF",
+  "q": "¿Qué mecanismo articula la influencia de la AIReF?",
+  "a": "**El principio de cumplir o explicar: apartarse de sus valoraciones obliga a motivarlo públicamente.** Actúa en el único momento en que una objeción puede cambiar la decisión sin coste: antes de la votación.",
+  "opciones": [
+   "La aprobación previa de las previsiones macroeconómicas del Gobierno",
+   "El principio de cumplir o explicar: apartarse de sus valoraciones obliga a motivarlo públicamente",
+   "La imposición de sanciones económicas a las administraciones incumplidoras",
+   "La facultad de suspender la tramitación de un presupuesto que considere irreal"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "18.08#t3",
+  "codigo": "18.08",
+  "bloque": 18,
+  "nivel": 3,
+  "titulo": "Control y fiscalización: IGAE, Tribunal de Cuentas y AIReF",
+  "q": "¿Qué indicador informa mejor sobre la salud de un sistema de control interno?",
+  "a": "**El volumen de gasto realizado omitiendo la fiscalización previa.** Es gasto que eludió el único control capaz de detenerlo, y no deja rastro de reparo ni discrepancia.",
+  "opciones": [
+   "El número de informes de fiscalización publicados cada año",
+   "El número de condenas dictadas por el Tribunal de Cuentas",
+   "El importe total de las modificaciones de crédito aprobadas",
+   "El volumen de gasto realizado omitiendo la fiscalización previa"
+  ],
+  "correcta": 3
  },
  {
   "id": "2.01#0",
@@ -15038,6 +16346,442 @@ export default [
    "Para desglosar las reservas por su origen legal"
   ],
   "correcta": 2
+ },
+ {
+  "id": "5.11#0",
+  "codigo": "5.11",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Contabilidad del IVA: soportado, repercutido y prorrata",
+  "q": "Una empresa compra por 60.000 € y vende por 100.000 €, al 21 %. ¿Qué liquidación resulta y cuál es su cifra de negocios?",
+  "a": "Repercute 21.000 y soporta 12.600, así que ingresa 8.400 € en la cuenta 4750. Su cifra de negocios es 100.000 €: el IVA no entra en la cuenta de resultados por ningún lado, porque nace y muere entre cuentas del grupo 4."
+ },
+ {
+  "id": "5.11#1",
+  "codigo": "5.11",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Contabilidad del IVA: soportado, repercutido y prorrata",
+  "q": "Con una prorrata del 80 % sobre 12.600 € de IVA soportado, ¿qué cambia?",
+  "a": "Solo 10.080 € van a la cuenta 472; los 2.520 € restantes son mayor valor del bien adquirido o gasto del ejercicio. La liquidación sube a 10.920 € porque se deduce menos. La prorrata encarece la compra y aumenta lo que se ingresa a la vez."
+ },
+ {
+  "id": "5.11#2",
+  "codigo": "5.11",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Contabilidad del IVA: soportado, repercutido y prorrata",
+  "q": "Una clínica exenta compra un escáner por 100.000 € más 21.000 € de IVA. ¿Por cuánto entra en balance y qué consecuencias tiene?",
+  "a": "Por 121.000 €, sin cuenta 472, porque no puede deducir. La amortización, el valor neto contable y el resultado de una futura venta se calculan sobre esa cifra, así que el IVA no deducible se arrastra durante toda la vida útil y empeora estructuralmente sus ratios de rentabilidad sobre activos."
+ },
+ {
+  "id": "5.11#3",
+  "codigo": "5.11",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Contabilidad del IVA: soportado, repercutido y prorrata",
+  "q": "Un bien de inversión con 21.000 € de IVA se dedujo al 80 % y la prorrata definitiva del año siguiente baja al 60 %. ¿Cómo se contabiliza el ajuste?",
+  "a": "El ajuste anual es (21.000 × 0,80 − 21.000 × 0,60) / 5 = 840 € a devolver, y se lleva a la cuenta 6342 como gasto del ejercicio. No se modifica el valor del activo, que quedó fijado al darlo de alta."
+ },
+ {
+  "id": "5.11#4",
+  "codigo": "5.11",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Contabilidad del IVA: soportado, repercutido y prorrata",
+  "q": "¿Por qué el SEC y el PGC tratan igual el IVA no deducible?",
+  "a": "Porque ambos preguntan si el impuesto es un coste real de quien lo paga. El deducible no se registra como coste porque se recupera; el no deducible se incorpora al valor de los consumos intermedios y de la formación bruta de capital fijo, igual que el PGC lo activa en el precio de adquisición."
+ },
+ {
+  "id": "5.11#t0",
+  "codigo": "5.11",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Contabilidad del IVA: soportado, repercutido y prorrata",
+  "q": "Una empresa factura 100.000 € más 21.000 € de IVA. ¿Cuál es su cifra de negocios?",
+  "a": "**100.000 €: el IVA nace en la cuenta 477 y nunca entra en resultados.** Por eso el PGC lo sitúa entero en el grupo 4 y no lo deja entrar ni en el 6 ni en el 7.",
+  "opciones": [
+   "100.000 €, salvo que aplique el régimen de criterio de caja",
+   "100.000 €: el IVA nace en la cuenta 477 y nunca entra en resultados",
+   "121.000 €, que es lo que efectivamente cobra del cliente",
+   "121.000 € si el cliente ha pagado, y 100.000 € si no"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "5.11#t1",
+  "codigo": "5.11",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Contabilidad del IVA: soportado, repercutido y prorrata",
+  "q": "Una entidad con prorrata del 80 % soporta 12.600 € de IVA al comprar maquinaria. ¿Cómo se registra?",
+  "a": "**10.080 € en la 472 y 2.520 € como mayor valor de la maquinaria.** La cuota se parte en dos naturalezas distintas, y la no deducible sigue al bien que se compró.",
+  "opciones": [
+   "10.080 € en la 472 y 2.520 € como mayor valor de la maquinaria",
+   "12.600 € en la cuenta 472, y se regulariza el exceso al cierre",
+   "10.080 € en la 472 y 2.520 € como gasto financiero del ejercicio",
+   "12.600 € como mayor valor de la maquinaria, sin usar la 472"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "5.11#t2",
+  "codigo": "5.11",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Contabilidad del IVA: soportado, repercutido y prorrata",
+  "q": "¿Dónde se lleva la regularización posterior de un bien de inversión por variación de la prorrata?",
+  "a": "**A las cuentas 6342 o 6392, como gasto o ingreso del ejercicio.** Reabrir el valor del activo cada año haría ilegibles la amortización y las comparaciones entre ejercicios.",
+  "opciones": [
+   "A mayor o menor valor del inmovilizado afectado",
+   "A las cuentas 6342 o 6392, como gasto o ingreso del ejercicio",
+   "A la cuenta 472, ajustando el crédito frente a Hacienda",
+   "A reservas, por tratarse de la corrección de un ejercicio anterior"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "5.11#t3",
+  "codigo": "5.11",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Contabilidad del IVA: soportado, repercutido y prorrata",
+  "q": "Un comerciante minorista en recargo de equivalencia soporta IVA y recargo en sus compras. ¿Qué hace con ellos?",
+  "a": "**Los incorpora íntegramente al valor de la mercancía: no deduce ni liquida.** Es el caso extremo de la regla de la ficha: sin derecho a deducir, el impuesto es coste.",
+  "opciones": [
+   "Los incorpora íntegramente al valor de la mercancía: no deduce ni liquida",
+   "Deduce el IVA y activa solo el recargo como mayor valor",
+   "Los deduce en su liquidación trimestral como cualquier empresario",
+   "Los lleva a la 472 y solicita su devolución al cierre del ejercicio"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "5.12#0",
+  "codigo": "5.12",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Subvenciones, donaciones y legados. Inversiones inmobiliarias",
+  "q": "Subvención de 100.000 € para una máquina de 250.000 € amortizable en 10 años, con tipo del 25 %. ¿Cómo se reconoce y qué efecto anual tiene?",
+  "a": "Entra como 75.000 € en patrimonio neto (cuenta 130) y 25.000 € en la cuenta 479 por el efecto impositivo. Cada año se imputan 10.000 € a resultados por la 746 y se amortizan 25.000 €, con un efecto neto de −15.000 €. La ayuda abarata el activo, no lo regala."
+ },
+ {
+  "id": "5.12#1",
+  "codigo": "5.12",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Subvenciones, donaciones y legados. Inversiones inmobiliarias",
+  "q": "¿Por qué la norma difiere la imputación de las subvenciones en lugar de reconocerlas al cobrarlas?",
+  "a": "Por el principio de correlación entre ingresos y gastos. Si se imputaran íntegras, bastaría concentrar ayudas en un ejercicio para transformar la imagen de una empresa sin que hubiera cambiado su capacidad de generar beneficios: el resultado dependería del calendario administrativo de quien concede."
+ },
+ {
+  "id": "5.12#2",
+  "codigo": "5.12",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Subvenciones, donaciones y legados. Inversiones inmobiliarias",
+  "q": "¿Cuándo una subvención es pasivo y cuándo patrimonio neto?",
+  "a": "Es pasivo mientras existan condiciones pendientes cuyo incumplimiento obligue a devolverla, porque entonces es una deuda. Pasa a patrimonio neto cuando el acuerdo de concesión es firme y las condiciones se han cumplido, registrada neta del efecto impositivo."
+ },
+ {
+  "id": "5.12#3",
+  "codigo": "5.12",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Subvenciones, donaciones y legados. Inversiones inmobiliarias",
+  "q": "¿Qué determina que un edificio sea inmovilizado material, existencia o inversión inmobiliaria?",
+  "a": "Su destino, no su naturaleza. Es inmovilizado material si se usa en la producción o para fines administrativos, existencia si se destina a la venta en el curso ordinario del negocio, e inversión inmobiliaria si se posee para obtener rentas o plusvalías. Si el destino cambia, se reclasifica por el valor contable, sin generar resultado."
+ },
+ {
+  "id": "5.12#4",
+  "codigo": "5.12",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Subvenciones, donaciones y legados. Inversiones inmobiliarias",
+  "q": "¿Por qué el SEC registra la inversión por su importe total y la subvención de capital aparte?",
+  "a": "Por la misma razón que el PGC activa la máquina por 250.000 € y lleva la ayuda al patrimonio neto: netear una contra otra ocultaría a la vez cuánto se invirtió y cuánto se subvencionó. Las de capital son D.92 y no afectan a la FBCF; las de explotación son D.3 y sí afectan al paso de precios de mercado a precios básicos."
+ },
+ {
+  "id": "5.12#t0",
+  "codigo": "5.12",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Subvenciones, donaciones y legados. Inversiones inmobiliarias",
+  "q": "Una empresa cobra en diciembre 100.000 € de subvención para una nave amortizable en veinte años. ¿Cómo afecta al resultado del ejercicio?",
+  "a": "**Lo mejora en unos 5.000 €: se imputa al ritmo de la amortización de la nave.** El resto permanece en patrimonio neto, visible en el balance pero no en la cuenta de resultados.",
+  "opciones": [
+   "Lo mejora en 75.000 €, una vez descontado el efecto impositivo",
+   "No lo afecta en absoluto hasta que la nave se venda",
+   "Lo mejora en 100.000 €, porque el cobro se ha producido",
+   "Lo mejora en unos 5.000 €: se imputa al ritmo de la amortización de la nave"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "5.12#t1",
+  "codigo": "5.12",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Subvenciones, donaciones y legados. Inversiones inmobiliarias",
+  "q": "Una subvención de 100.000 € se reconoce con un tipo impositivo del 25 %. ¿Cómo se registra inicialmente?",
+  "a": "**75.000 € en patrimonio neto y 25.000 € en la cuenta 479, pasivo por diferencia temporaria.** Es la mecánica de las diferencias temporarias: lo que va a tributar después se reconoce ahora.",
+  "opciones": [
+   "100.000 € como ingreso diferido en el pasivo corriente",
+   "100.000 € en patrimonio neto, y el impuesto se reconocerá al imputarla",
+   "75.000 € en patrimonio neto y 25.000 € como gasto por impuesto del ejercicio",
+   "75.000 € en patrimonio neto y 25.000 € en la cuenta 479, pasivo por diferencia temporaria"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "5.12#t2",
+  "codigo": "5.12",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Subvenciones, donaciones y legados. Inversiones inmobiliarias",
+  "q": "Una empresa alquila a terceros un edificio que antes usaba como oficinas. ¿Qué procede?",
+  "a": "**Reclasificarlo a inversiones inmobiliarias por su valor contable, sin generar resultado.** La empresa no ha vendido nada: una decisión interna sobre el uso no puede producir beneficios.",
+  "opciones": [
+   "Reclasificarlo a inversiones inmobiliarias por su valor razonable, reconociendo la diferencia",
+   "Reclasificarlo a existencias, al haber cambiado su afectación",
+   "Mantenerlo en inmovilizado material, porque la naturaleza del bien no ha cambiado",
+   "Reclasificarlo a inversiones inmobiliarias por su valor contable, sin generar resultado"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "5.12#t3",
+  "codigo": "5.12",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Subvenciones, donaciones y legados. Inversiones inmobiliarias",
+  "q": "Un socio dona 50.000 € a su sociedad. ¿Cómo se registra?",
+  "a": "**Como aportación a los fondos propios, sin pasar nunca por resultados.** Es la misma frontera que separa las operaciones de capital de las de explotación en la ficha 5.13.",
+  "opciones": [
+   "Como aportación a los fondos propios, sin pasar nunca por resultados",
+   "Como subvención en patrimonio neto, imputable a resultados con el tiempo",
+   "Como pasivo, hasta que se acuerde su devolución o capitalización",
+   "Como ingreso del ejercicio en el grupo 74"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "5.13#0",
+  "codigo": "5.13",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Patrimonio neto y operaciones de capital",
+  "q": "Una sociedad con 40.000 acciones y 600.000 € de patrimonio neto amplía 10.000 acciones a 10 €. ¿Cuánto vale el derecho de suscripción?",
+  "a": "1,00 €. El valor teórico pasa de 15,00 € (600.000/40.000) a 14,00 € (700.000/50.000). Quien suscribe gana 4,00 € por acción, y necesita cuatro derechos que le cuestan exactamente 4,00 €: la compensación es exacta y no hay ninguna ganga."
+ },
+ {
+  "id": "5.13#1",
+  "codigo": "5.13",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Patrimonio neto y operaciones de capital",
+  "q": "Una empresa compra acciones propias por 50.000 € y las vende por 70.000 €. ¿Dónde van los 20.000 €?",
+  "a": "A reservas, nunca a la cuenta de resultados. Si operar con acciones propias generara beneficio contable, una sociedad podría mejorar su cuenta de resultados sin vender un solo producto. El patrimonio neto sí crece 20.000 €; el resultado del ejercicio, no."
+ },
+ {
+  "id": "5.13#2",
+  "codigo": "5.13",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Patrimonio neto y operaciones de capital",
+  "q": "¿Por qué existe la prima de emisión?",
+  "a": "Porque si una sociedad con reservas acumuladas emitiera al nominal, los nuevos socios adquirirían por poco una participación en un patrimonio que vale mucho más por acción, diluyendo a los antiguos. La prima cobra esa diferencia y va a la cuenta 110 como reserva, nunca como ingreso."
+ },
+ {
+  "id": "5.13#3",
+  "codigo": "5.13",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Patrimonio neto y operaciones de capital",
+  "q": "¿Qué diferencia hay entre una reducción de capital por pérdidas y una con devolución de aportaciones?",
+  "a": "En la reducción por pérdidas no sale dinero: se reconoce contablemente un desequilibrio que ya se había producido y que ya pasó por resultados. En la reducción con devolución salen fondos hacia los socios y el patrimonio neto disminuye efectivamente. Persiguen finalidades opuestas."
+ },
+ {
+  "id": "5.13#4",
+  "codigo": "5.13",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Patrimonio neto y operaciones de capital",
+  "q": "¿Cuándo una aportación de capital del Estado a una empresa pública computa como déficit?",
+  "a": "Cuando no hay expectativa realista de recuperarla, por ejemplo si cubre pérdidas recurrentes. Entonces Eurostat la reclasifica de operación financiera F.5 a transferencia de capital D.9 y sí computa. La prueba del inversor privado es la misma pregunta contable de esta ficha: si es una operación con el propietario o un gasto disfrazado."
+ },
+ {
+  "id": "5.13#t0",
+  "codigo": "5.13",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Patrimonio neto y operaciones de capital",
+  "q": "Una sociedad vende acciones propias con un margen de 20.000 €. ¿Dónde se registra?",
+  "a": "**En reservas: operar con acciones propias no genera resultado.** De lo contrario una sociedad podría fabricar beneficios operando consigo misma, sin vender nada a terceros.",
+  "opciones": [
+   "En reservas: operar con acciones propias no genera resultado",
+   "Como menor gasto financiero del ejercicio en que se produce",
+   "Como resultado extraordinario, por su carácter no recurrente",
+   "Como ingreso financiero del ejercicio, al proceder de instrumentos de patrimonio"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "5.13#t1",
+  "codigo": "5.13",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Patrimonio neto y operaciones de capital",
+  "q": "Valor teórico antes de una ampliación: 15 €. Después: 14 €. La proporción es de una nueva por cada cuatro antiguas y se emite a 10 €. ¿Qué gana quien suscribe?",
+  "a": "**Nada: gana 4,00 € y paga 4,00 € por los cuatro derechos necesarios.** Paga 10 € más 4 € de derechos: exactamente los 14 € que vale la acción tras la ampliación.",
+  "opciones": [
+   "4,00 € por acción, ya que compra a 10 € algo que vale 14 €",
+   "Nada: gana 4,00 € y paga 4,00 € por los cuatro derechos necesarios",
+   "5,00 € por acción, la diferencia entre el precio de emisión y el valor teórico previo",
+   "1,00 € por acción, el valor del derecho de suscripción"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "5.13#t2",
+  "codigo": "5.13",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Patrimonio neto y operaciones de capital",
+  "q": "¿Qué efecto tiene sobre el patrimonio neto una ampliación de capital liberada con cargo a reservas?",
+  "a": "**No lo modifica: solo traspasa un importe de reservas a capital.** El accionista acaba con más acciones, cada una de menor valor teórico, y lo mismo que antes.",
+  "opciones": [
+   "No lo modifica: solo traspasa un importe de reservas a capital",
+   "Lo aumenta por el valor teórico de las nuevas acciones",
+   "Lo aumenta por el valor nominal de las acciones emitidas",
+   "Lo reduce, porque las reservas dejan de estar disponibles"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "5.13#t3",
+  "codigo": "5.13",
+  "bloque": 5,
+  "nivel": 2,
+  "titulo": "Patrimonio neto y operaciones de capital",
+  "q": "¿Cómo se registra el reparto de un dividendo?",
+  "a": "**Como distribución de resultados aprobada en junta, sin pasar por resultados.** Y el dividendo a cuenta figura en la cuenta 557, minorando el patrimonio neto hasta la aprobación definitiva.",
+  "opciones": [
+   "Como distribución de resultados aprobada en junta, sin pasar por resultados",
+   "Como menor ingreso del ejercicio en que se acuerda",
+   "Como gasto del grupo 6, al suponer una salida de recursos",
+   "Como gasto financiero, por retribuir a los aportantes de fondos"
+  ],
+  "correcta": 0
+ },
+ {
+  "id": "5.14#0",
+  "codigo": "5.14",
+  "bloque": 5,
+  "nivel": 1,
+  "titulo": "Cuentas a cobrar, a pagar y de personal",
+  "q": "Salario bruto 2.000 €, retención 300 €, cotización del trabajador 130 € y patronal 630 €. ¿Cómo queda el asiento?",
+  "a": "Al debe, 640 por 2.000 € y 642 por 630 €. Al haber, 4751 por 300 €, 476 por 760 € —las dos cotizaciones juntas— y bancos por 1.570 €. Cuadra en 2.630 €, que es el coste de empresa."
+ },
+ {
+  "id": "5.14#1",
+  "codigo": "5.14",
+  "bloque": 5,
+  "nivel": 1,
+  "titulo": "Cuentas a cobrar, a pagar y de personal",
+  "q": "¿Cuánto vale la cuña fiscal en ese caso y por qué importa que sea invisible?",
+  "a": "1.060 €, el 40,3 % del coste de empresa. No pasa por las manos de la empresa ni del trabajador: va de la nómina directamente a Hacienda y a la Seguridad Social. La cotización patronal es probablemente la mayor carga asociada a un trabajador y casi nadie la percibe como propia, porque nunca aparece como algo que haya cobrado y perdido."
+ },
+ {
+  "id": "5.14#2",
+  "codigo": "5.14",
+  "bloque": 5,
+  "nivel": 1,
+  "titulo": "Cuentas a cobrar, a pagar y de personal",
+  "q": "Una empresa descuenta 100.000 € en efectos y recibe 97.000 €. ¿Puede dar de baja los clientes?",
+  "a": "No. El descuento es financiación con recurso: si el cliente no paga, el banco devuelve el efecto. El derecho pasa a la cuenta 4311 y nace una deuda en la 5208 por el nominal anticipado. Darlo de baja borraría del balance un riesgo vivo y reduciría el endeudamiento aparente."
+ },
+ {
+  "id": "5.14#3",
+  "codigo": "5.14",
+  "bloque": 5,
+  "nivel": 1,
+  "titulo": "Cuentas a cobrar, a pagar y de personal",
+  "q": "¿Qué distingue a un proveedor de un acreedor por prestación de servicios?",
+  "a": "La relación con la actividad, no el importe ni el plazo. Es proveedor quien suministra bienes o servicios que forman parte del objeto propio de la empresa; acreedor, quien suministra lo demás. La misma factura va a una cuenta o a otra según a qué se dedique quien la recibe."
+ },
+ {
+  "id": "5.14#4",
+  "codigo": "5.14",
+  "bloque": 5,
+  "nivel": 1,
+  "titulo": "Cuentas a cobrar, a pagar y de personal",
+  "q": "¿Qué magnitud del sueldo mide la remuneración de asalariados D.1 del SEC?",
+  "a": "El coste de empresa: D.11 sueldos y salarios más D.12 cotizaciones a cargo del empleador, los 2.630 € del ejemplo. Además D.11 se registra en bruto, antes de retenciones y cotizaciones del trabajador, que reaparecen después como D.51 y D.61 en la distribución secundaria."
+ },
+ {
+  "id": "5.14#t0",
+  "codigo": "5.14",
+  "bloque": 5,
+  "nivel": 1,
+  "titulo": "Cuentas a cobrar, a pagar y de personal",
+  "q": "En un asiento de nómina con 130 € de cotización del trabajador y 630 € de cotización patronal, ¿qué importe va a la cuenta 476?",
+  "a": "**760 €: la cuenta recoge las dos cotizaciones, la del trabajador y la de la empresa.** Son dos conceptos de naturaleza distinta con el mismo acreedor, y por eso comparten cuenta.",
+  "opciones": [
+   "130 €, que es lo retenido al trabajador y se ingresa por él",
+   "630 €, la parte que constituye gasto de la empresa",
+   "0 €: las cotizaciones se registran en la cuenta 4751 junto con las retenciones",
+   "760 €: la cuenta recoge las dos cotizaciones, la del trabajador y la de la empresa"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "5.14#t1",
+  "codigo": "5.14",
+  "bloque": 5,
+  "nivel": 1,
+  "titulo": "Cuentas a cobrar, a pagar y de personal",
+  "q": "Una empresa descuenta efectos por 100.000 € y recibe 97.000 €. ¿Cómo se registra?",
+  "a": "**Manteniendo el derecho en la cuenta 4311 y reconociendo una deuda en la 5208.** Es financiación garantizada con el papel, no una realización del crédito.",
+  "opciones": [
+   "Como cobro: baja de clientes por 100.000 € y 3.000 € a gastos financieros",
+   "Manteniendo el derecho en la cuenta 4311 y reconociendo una deuda en la 5208",
+   "Como venta del crédito, reconociendo una pérdida de 3.000 €",
+   "Como anticipo de clientes, hasta que el efecto venza"
+  ],
+  "correcta": 1
+ },
+ {
+  "id": "5.14#t2",
+  "codigo": "5.14",
+  "bloque": 5,
+  "nivel": 1,
+  "titulo": "Cuentas a cobrar, a pagar y de personal",
+  "q": "Una asesoría factura a un fabricante de muebles. ¿En qué cuenta se registra la deuda?",
+  "a": "**En acreedores por prestación de servicios (410): no es del objeto propio de la actividad.** El fabricante de muebles compra madera a proveedores; la asesoría es acreedor.",
+  "opciones": [
+   "En proveedores (400), por tratarse de un suministro recurrente",
+   "Depende del importe: proveedores si supera el umbral de relevancia",
+   "En deudores varios (440), al no ser una operación comercial",
+   "En acreedores por prestación de servicios (410): no es del objeto propio de la actividad"
+  ],
+  "correcta": 3
+ },
+ {
+  "id": "5.14#t3",
+  "codigo": "5.14",
+  "bloque": 5,
+  "nivel": 1,
+  "titulo": "Cuentas a cobrar, a pagar y de personal",
+  "q": "¿Qué magnitud debe usarse para comparar costes laborales entre empresas o países?",
+  "a": "**El coste de empresa, que incluye la cotización patronal.** En el ejemplo, 2.630 € frente a los 2.000 € del bruto, y es lo que mide el D.1 del SEC.",
+  "opciones": [
+   "El coste de empresa, que incluye la cotización patronal",
+   "La media entre bruto y líquido, para neutralizar diferencias fiscales",
+   "El salario bruto, que figura en el contrato y es homogéneo",
+   "El líquido percibido, que mide el poder adquisitivo real"
+  ],
+  "correcta": 0
  },
  {
   "id": "6.01#0",
